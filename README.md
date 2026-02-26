@@ -1,35 +1,134 @@
 # 🧬 EvoSkills
 
-A curated collection of skills for [EvoScientist](https://github.com/EvoScientist/EvoScientist).
+The official skill repository for [EvoScientist](https://github.com/EvoScientist/EvoScientist). Each skill is an installable knowledge pack that extends EvoScientist with domain-specific expertise.
 
-## 🎯 Available Skills
+## 📦 Installation
 
-| Skill | Description |
-|-------|-------------|
-| `paper-planning` | 📐 Research paper planning & outline generation |
-| `paper-review` | 🔍 Automated paper review & feedback |
-| `paper-writing` | ✍️ End-to-end paper writing assistance |
+### EvoSci In-session commands
 
-## 📦 Usage
-
-Copy any skill folder into your EvoScientist skills directory, or install via:
+Install all skills at once:
 
 ```bash
-EvoSci skills install <skill-name>
+/install-skill EvoScientist/EvoSkills@skills
 ```
 
-## ⛰️ Roadmap
+Or install a single skill:
+
+```bash
+/install-skill EvoScientist/EvoSkills@skills/paper-planning
+```
+
+### Ask EvoScientist directly
+
+Simply ask the agent in conversation:
+
+```text
+"Install all skills from EvoScientist/EvoSkills@skills."
+```
+
+## ✨ Available Skills
+
+| Skill | Description |
+| ----- | ----------- |
+| [`paper-planning`](#-paper-planning--research-paper-planning--outline-generation) | 📐 Research paper planning & outline generation |
+| [`paper-review`](#-paper-review--self-review--rebuttal-preparation) | 🔍 Automated paper review & feedback |
+| [`paper-writing`](#-paper-writing--section-by-section-paper-drafting) | ✍️ End-to-end paper writing assistance |
+
+> **Paper Suite**: The paper skills work as a pipeline — **planning → writing → review**.
+
+### 📐 `paper-planning` — Research Paper Planning & Outline Generation
+
+Guides pre-writing planning before a single word is drafted. Covers four key activities:
+
+- **Story Design** — Reverse-engineer the narrative: task → challenge → insight → contribution → advantage
+- **Experiment Planning** — Plan comparisons, ablations, and demo scenarios with structured checklists
+- **Figure Design** — Pipeline figures that highlight novelty; teaser figures that hook reviewers
+- **Timeline Management** — 4-week countdown schedule from outline to submission
+
+Includes counterintuitive tactics: write your rejection letter first, narrow claims before broadening, and plan fallback narratives.
+
+### 🔍 `paper-review` — Self-Review & Rebuttal Preparation
+
+Systematic self-review before submission using adversarial and counterintuitive review strategies:
+
+- **5-Aspect Checklist** — Contribution sufficiency, writing clarity, results quality, testing completeness, method design
+- **Reverse-Outlining** — Extract the outline from finished paragraphs to verify logical flow
+- **Figure & Table Quality Checks** — Captions, resolution, booktabs, color-blind friendliness
+- **Rejection Simulation** — Force a reject summary first; attack your own novelty claim
+- **Rebuttal Preparation** — Structured guidance for analyzing reviewer concerns and responding
+
+### ✍️ `paper-writing` — Section-by-Section Paper Drafting
+
+A proven 11-step workflow for writing academic papers with LaTeX templates:
+
+- **Structured Process** — From pipeline sketch → story design → Method → Experiments → Related Work → Abstract → Title
+- **Section Templates** — Three Abstract templates, four Introduction openers, Method module structure, Experiments organization
+- **LaTeX Assets** — Annotated paper skeleton (`paper-skeleton.tex`) and booktabs table macros (`table-style.tex`)
+- **Writing Principles** — One message per paragraph, topic sentence first, terminology consistency, reverse-outlining
+- **Counterintuitive Tactics** — Underclaim in prose / overdeliver in evidence; lead with mechanism, not just metrics
+
+## 🎯 ᯓ➤ Roadmap
 
 Coming soon:
-
-- 🧪 **Experiment Skills** — Automated experiment design, execution & analysis
-- 🧠 **Self-Evolution Suite** — Skills that learn, adapt & improve themselves
-- 🏅 **Math Olympiad** — Advanced mathematical reasoning & problem solving
-- 🎨 **Visual Generation** — Diagrams, figures & graphic content creation
-- 📊 **PPT Builder** — Automated presentation creation & formatting
+- [ ] 💻 **Experiment Skills** — Automated experiment design, execution & analysis
+- [ ] 🧠 **Self-Evolution Suite** — Skills that learn, adapt & improve themselves
+- [ ] 🏅 **Math Olympiad** — Advanced mathematical reasoning & problem solving
+- [ ] 🎨 **Visual Generation** — Diagrams, figures & graphic content creation
+- [ ] 📊 **PPT Builder** — Automated presentation creation & formatting
 
 Stay tuned — more skills are on the way!
 
-## 📄 License
+## 🧪 EvoScientist Team
 
-See [LICENSE](./LICENSE) for details.
+<table>
+  <tbody>
+    <tr>
+      <td align="center">
+        <a href="https://x.com/EvoScientist">
+          <img src="https://pbs.twimg.com/profile_images/2020492875340136448/CbdhV-u__400x400.jpg"
+               width="100" height="100"
+               style="object-fit: cover; border-radius: 20%;" alt="Xi Zhang"/>
+          <br />
+          <sub><b>EvoScientist</b><sup>‡</sup></sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://x-izhang.github.io/">
+          <img src="https://x-izhang.github.io/author/xi-zhang/avatar_hu13660783057866068725.jpg"
+               width="100" height="100"
+               style="object-fit: cover; border-radius: 20%;" alt="Xi Zhang"/>
+          <br />
+          <sub><b>Xi Zhang</b><sup>†</sup></sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://youganglyu.github.io/">
+          <img src="https://youganglyu.github.io/images/profile.png"
+               width="100" height="100"
+               style="object-fit: cover; border-radius: 20%;" alt="Yougang Lyu"/>
+          <br />
+          <sub>Yougang Lyu<sup>§</sup></sub>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+> <sup>‡</sup> Core Developer <sup>†</sup> Project Leader <sup>§</sup> Correspondent
+
+For any enquiries or collaboration opportunities, please contact: [**EvoScientist.ai@gmail.com**](mailto:evoscientist.ai@gmail.com)
+
+<p align="right"><a href="#top">🔝Back to top</a></p>
+
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+<p align="right"><a href="#top">🔝Back to top</a></p>
+
+---
+
+<p align="center">
+  Made with ❤️ by the EvoScientist team and the open source community for the AI scientist community.
+</p>
