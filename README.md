@@ -35,7 +35,7 @@ Simply ask the agent in conversation:
 | [`paper-writing`](#-paper-writing--section-by-section-paper-drafting) | ✍️ End-to-end paper writing assistance |
 | [`experiment-craft`](#-experiment-craft--experiment-debugging--iteration) | 🔧 Experiment debugging, logging & iteration |
 | [`paper-review`](#-paper-review--self-review--quality-assurance) | 🔍 Automated paper review & feedback |
-| [`paper-rebuttal`](#-paper-rebuttal--rebuttal-writing-after-peer-review) | ⚔️ Rebuttal writing after peer review |
+| [`paper-rebuttal`](#-paper-rebuttal--rebuttal-writing-after-peer-review) | 💬 Rebuttal writing after peer review |
 | [`academic-slides`](#-academic-slides--presentation--research-talk-creation) | 🎤 Academic presentation & research talk creation |
 
 > **Paper Suite**: The paper skills work as a pipeline — **ideation → planning → writing → experiment → review → rebuttal → slides**.
@@ -90,7 +90,7 @@ Systematic self-review before submission using adversarial and counterintuitive 
 - **Rejection Simulation** — Force a reject summary first; attack your own novelty claim
 - **Handoff to Rebuttal** — After review, feed identified weaknesses into `paper-rebuttal` for response preparation
 
-### ⚔️ `paper-rebuttal` — Rebuttal Writing After Peer Review
+### 💬 `paper-rebuttal` — Rebuttal Writing After Peer Review
 
 Dedicated rebuttal skill for responding to reviewer feedback after peer review:
 
