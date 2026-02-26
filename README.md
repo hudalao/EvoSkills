@@ -33,8 +33,9 @@ Simply ask the agent in conversation:
 | [`paper-planning`](#-paper-planning--research-paper-planning--outline-generation) | 📐 Research paper planning & outline generation |
 | [`paper-review`](#-paper-review--self-review--rebuttal-preparation) | 🔍 Automated paper review & feedback |
 | [`paper-writing`](#-paper-writing--section-by-section-paper-drafting) | ✍️ End-to-end paper writing assistance |
+| [`academic-slides`](#-academic-slides--presentation--research-talk-creation) | 🎤 Academic presentation & research talk creation |
 
-> **Paper Suite**: The paper skills work as a pipeline — **planning → writing → review**.
+> **Paper Suite**: The paper skills work as a pipeline — **planning → writing → review → slides**.
 
 ### 📐 `paper-planning` — Research Paper Planning & Outline Generation
 
@@ -55,7 +56,7 @@ Systematic self-review before submission using adversarial and counterintuitive 
 - **Reverse-Outlining** — Extract the outline from finished paragraphs to verify logical flow
 - **Figure & Table Quality Checks** — Captions, resolution, booktabs, color-blind friendliness
 - **Rejection Simulation** — Force a reject summary first; attack your own novelty claim
-- **Rebuttal Preparation** — Structured guidance for analyzing reviewer concerns and responding
+- **Rebuttal Preparation** — 18 tactical rules, champion strategy, score diagnosis, and word count optimization
 
 ### ✍️ `paper-writing` — Section-by-Section Paper Drafting
 
@@ -67,6 +68,16 @@ A proven 11-step workflow for writing academic papers with LaTeX templates:
 - **Writing Principles** — One message per paragraph, topic sentence first, terminology consistency, reverse-outlining
 - **Counterintuitive Tactics** — Underclaim in prose / overdeliver in evidence; lead with mechanism, not just metrics
 
+### 🎤 `academic-slides` — Presentation & Research Talk Creation
+
+A structured approach to creating academic presentations and preparing research talks:
+
+- **Narrative Arc** — Define scope, audience, and key takeaway before touching slides
+- **Slide Design** — 10 design rules, visual hierarchy, one idea per slide, claim-style titles
+- **Practical Creation** — `.pptx` file generation with color palettes, layout code, charts, and figures
+- **Delivery & Q&A** — Rehearsal protocol, timing, and backup slide preparation
+- **Counterintuitive Rules** — Slides are not your paper; enthusiasm beats polish; related work builds motivation, not citation counts
+
 ## 🎯 ᯓ➤ Roadmap
 
 Coming soon:
@@ -74,11 +85,16 @@ Coming soon:
 - [ ] 🧠 **Self-Evolution Suite** — Skills that learn, adapt & improve themselves
 - [ ] 🏅 **Math Olympiad** — Advanced mathematical reasoning & problem solving
 - [ ] 🎨 **Visual Generation** — Diagrams, figures & graphic content creation
-- [ ] 📊 **PPT Builder** — Automated presentation creation & formatting
+- [ ] 📚 **Literature Survey** — Systematic literature search, filtering, and survey generation
+- [ ] 🔬 **Paper Reproduction** — Read a paper, reproduce its core results, and verify claims
+- [ ] 💡 **Grant & Proposal Writing** — Research proposal drafting with funding agency conventions
+- [ ] 🤖 **Peer Debate** — Multi-agent adversarial discussion to stress-test research ideas
+- [ ] 📈 **Trend Radar** — Analyze publication trends, identify emerging topics & research gaps
+- [ ] 🗣️ **Paper QA** — Interactive question-answering over paper collections, extracting key findings & cross-referencing claims
 
 Stay tuned — more skills are on the way!
 
-## 🧪 EvoScientist Team
+## 🌍 Project Roles
 
 <table>
   <tbody>
@@ -107,14 +123,14 @@ Stay tuned — more skills are on the way!
                width="100" height="100"
                style="object-fit: cover; border-radius: 20%;" alt="Yougang Lyu"/>
           <br />
-          <sub>Yougang Lyu<sup>§</sup></sub>
+          <sub><b>Yougang Lyu</b><sup>§</sup></sub>
         </a>
       </td>
     </tr>
   </tbody>
 </table>
 
-> <sup>‡</sup> Core Developer <sup>†</sup> Project Leader <sup>§</sup> Correspondent
+> <sup>‡</sup> Core Developer <sup>†</sup> Project Lead & Engineering Lead <sup>§</sup> Correspondent
 
 For any enquiries or collaboration opportunities, please contact: [**EvoScientist.ai@gmail.com**](mailto:evoscientist.ai@gmail.com)
 
@@ -129,5 +145,5 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ---
 
 <p align="center">
-  Made with ❤️ by the EvoScientist team and the open source community for the AI scientist community.
+  Initiated and led by <a href="https://github.com/x-izhang">Xi Zhang</a>, built with the open-source community.
 </p>

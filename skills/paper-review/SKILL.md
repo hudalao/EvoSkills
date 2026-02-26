@@ -193,10 +193,11 @@ Apply this to:
 ## Rebuttal Preparation
 
 When reviews come back, refer to [references/rebuttal-guide.md](references/rebuttal-guide.md) for guidance on:
-- Analyzing reviewer concerns
-- Structuring rebuttals
-- Prioritizing which concerns to address
-- Providing additional experiments or clarifications
+- **Score diagnosis**: Identifying the 1-2 concerns that actually drive each reviewer's score
+- **Champion strategy**: Writing rebuttals that arm your positive reviewer for the discussion phase
+- **18 tactical rules**: Structure, content, tone, and advanced tactics for effective responses
+- **Word count optimization**: Maximizing impact under strict venue word limits
+- **Counterintuitive principles**: When to concede, when to add experiments vs. argue, and why prebuttals work
 
 See [references/review-checklist.md](references/review-checklist.md) for an expanded version of the 5-aspect checklist with more detailed sub-questions.
 

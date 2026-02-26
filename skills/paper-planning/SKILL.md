@@ -187,3 +187,7 @@ When planning is complete, pass these artifacts to `paper-writing`:
 | Figure design | [figure-design.md](references/figure-design.md) | Designing pipeline/teaser figures |
 | Experiment plan template | [experiment-plan-template.md](assets/experiment-plan-template.md) | Creating a structured experiment plan |
 | Counterintuitive strategy | [counterintuitive-planning.md](references/counterintuitive-planning.md) | Increasing acceptance odds with non-obvious planning choices |
+
+## Handoff to Presentation
+
+If preparing a conference talk or slide deck, the `academic-slides` skill guides slide creation from your planning artifacts — including translating your story design and pipeline figure into presentation structure.
