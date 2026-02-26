@@ -38,7 +38,7 @@ Simply ask the agent in conversation:
 | [`paper-rebuttal`](#-paper-rebuttal--rebuttal-writing-after-peer-review) | 💬 Rebuttal writing after peer review |
 | [`academic-slides`](#-academic-slides--presentation--research-talk-creation) | 🎤 Academic presentation & research talk creation |
 
-> **Paper Suite**: The paper skills work as a pipeline — **ideation → planning → writing → experiment → review → rebuttal → slides**.
+> **Paper Suite**: Each skill is self-contained — use them individually or combine freely to fit your workflow.
 
 ### 💡 `research-ideation` — Literature Tree & Problem Finding
 
@@ -161,9 +161,9 @@ Stay tuned — more skills are on the way!
   </tbody>
 </table>
 
-> <sup>‡</sup> Core Developer <sup>†</sup> Project Lead & Engineering Lead <sup>§</sup> Correspondent
+> <sup>‡</sup>Core Developer <sup>†</sup>Project Lead & Engineering Lead <sup>§</sup>Project Correspondent
 
-> <sup>1</sup> Xiaoyi DeepResearch Team
+> <sup>1</sup>Xiaoyi DeepResearch Team
 
 For any enquiries or collaboration opportunities, please contact: [**EvoScientist.ai@gmail.com**](mailto:evoscientist.ai@gmail.com)
 
