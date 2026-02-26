@@ -4,7 +4,7 @@ The official skill repository for [EvoScientist](https://github.com/EvoScientist
 
 ## 📦 Installation
 
-### EvoSci In-session commands
+### In-session commands
 
 Install all skills at once:
 
@@ -119,7 +119,6 @@ Stay tuned — more skills are on the way!
 For any enquiries or collaboration opportunities, please contact: [**EvoScientist.ai@gmail.com**](mailto:evoscientist.ai@gmail.com)
 
 <p align="right"><a href="#top">🔝Back to top</a></p>
-
 
 ## 📜 License
 
