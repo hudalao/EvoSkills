@@ -154,7 +154,7 @@ Stay tuned — more skills are on the way!
                width="100" height="100"
                style="object-fit: cover; border-radius: 20%;" alt="Yougang Lyu"/>
           <br />
-          <sub><b>Yougang Lyu</b><sup>§1</sup></sub>
+          <sub><b>Yougang Lyu</b><sup>§</sup></sub>
         </a>
       </td>
     </tr>
@@ -163,7 +163,7 @@ Stay tuned — more skills are on the way!
 
 > <sup>‡</sup>Core Developer <sup>†</sup>Project Lead & Engineering Lead <sup>§</sup>Project Correspondent
 
-> <sup>1</sup>Xiaoyi DeepResearch Team
+> *Xiaoyi DeepResearch Team* and the wider open-source community contribute to this project.
 
 For any enquiries or collaboration opportunities, please contact: [**EvoScientist.ai@gmail.com**](mailto:evoscientist.ai@gmail.com)
 
