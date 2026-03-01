@@ -31,14 +31,43 @@ Simply ask the agent in conversation:
 | Skill | Description |
 | ----- | ----------- |
 | [`research-ideation`](#-research-ideation--literature-tree--problem-finding) | 💡 Research ideation, literature tree & problem finding |
+| [`idea-tournament`](#-idea-tournament--competitive-idea-ranking--proposal-generation) | 🏆 Competitive idea ranking & proposal generation |
 | [`paper-planning`](#-paper-planning--research-paper-planning--outline-generation) | 📐 Research paper planning & outline generation |
-| [`paper-writing`](#-paper-writing--section-by-section-paper-drafting) | ✍️ End-to-end paper writing assistance |
+| [`experiment-pipeline`](#-experiment-pipeline--4-stage-experiment-execution) | 🧪 Structured 4-stage experiment execution |
 | [`experiment-craft`](#-experiment-craft--experiment-debugging--iteration) | 🔧 Experiment debugging, logging & iteration |
+| [`paper-writing`](#-paper-writing--section-by-section-paper-drafting) | ✍️ End-to-end paper writing assistance |
 | [`paper-review`](#-paper-review--self-review--quality-assurance) | 🔍 Automated paper review & feedback |
 | [`paper-rebuttal`](#-paper-rebuttal--rebuttal-writing-after-peer-review) | 💬 Rebuttal writing after peer review |
 | [`academic-slides`](#-academic-slides--presentation--research-talk-creation) | 🎤 Academic presentation & research talk creation |
+| [`evo-memory`](#-evo-memory--persistent-research-memory--self-evolution) | 🧠 Persistent research memory & self-evolution |
 
-> **Paper Suite**: Each skill is self-contained — use them individually or combine freely to fit your workflow.
+> **Paper Suite + Self-Evolution Suite**: Each skill is self-contained — use them individually or combine freely. The self-evolution skills (`idea-tournament`, `experiment-pipeline`, `evo-memory`) form a learning loop that improves across research cycles.
+
+### ⛳️ Framework Overview
+
+<p align="center">
+  <img src="assets/framework.png" alt="EvoScientist Framework" width="100%" />
+</p>
+
+The diagram above shows the full EvoScientist pipeline. The **Researcher Agent** (top, blue) runs idea tree search and Elo tournament ranking to produce a research proposal. The **Engineer Agent** (bottom, green) executes the 4-stage experiment pipeline. The **Evolution Manager Agent** (right) manages three memory evolution mechanisms — IDE, IVE, and ESE — that feed learned knowledge back into **Ideation Memory (M_I)** and **Experimentation Memory (M_E)** for future cycles.
+
+#### 🎢 Skill Pipeline
+
+```
+research-ideation          (find direction + literature tree)
+       ↓
+idea-tournament  ←→  evo-memory (M_I: read feasible/unsuccessful directions)
+       ↓                    ↑
+paper-planning              │
+       ↓                    │
+experiment-pipeline  ←→  evo-memory (M_E: read/write strategies; IVE/ESE)
+       ↓
+experiment-craft       (diagnose failures within pipeline stages)
+       ↓
+paper-writing → paper-review → paper-rebuttal → academic-slides
+```
+
+---
 
 ### 💡 `research-ideation` — Literature Tree & Problem Finding
 
@@ -49,6 +78,16 @@ The starting point of the research pipeline. Guides ideation from literature ana
 - **Solution Design** — Cross-domain transfer and problem decomposition strategies
 - **Paper Reading** — 3-level structured Q&A methodology for deep comprehension
 - **Counterintuitive Rules** — Problem selection matters more than solution design; pursue new failure cases rather than incremental improvements
+
+### 🏆 `idea-tournament` — Competitive Idea Ranking & Proposal Generation
+
+Bridges the gap between having a research direction and having a concrete, validated proposal:
+
+- **Tree-Structured Generation** — Expand a seed idea into up to N_I=21 candidates by varying technique, domain, and formulation axes
+- **Elo Tournament** — Pairwise comparisons on 4 dimensions (novelty, feasibility, relevance, clarity) with Swiss-system pairing
+- **Direction Summarization** — Synthesize top-3 ideas into promising directions for evo-memory
+- **Proposal Extension** — Extend the winning idea into a full research proposal (5 sections from paper + 1 practical extension)
+- **Counterintuitive Rules** — Quantity before quality; the tournament finds surprises; top-3 not top-1
 
 ### 📐 `paper-planning` — Research Paper Planning & Outline Generation
 
@@ -61,15 +100,18 @@ Guides pre-writing planning before a single word is drafted. Covers four key act
 
 Includes counterintuitive tactics: write your rejection letter first, narrow claims before broadening, and plan fallback narratives.
 
-### ✍️ `paper-writing` — Section-by-Section Paper Drafting
+### 🧪 `experiment-pipeline` — 4-Stage Experiment Execution
 
-A proven 11-step workflow for writing academic papers with LaTeX templates:
+A structured framework for executing research experiments with attempt budgets and gate conditions:
 
-- **Structured Process** — From pipeline sketch → story design → Method → Experiments → Related Work → Abstract → Title
-- **Section Templates** — Three Abstract templates, four Introduction openers, Method module structure, Experiments organization
-- **LaTeX Assets** — Annotated paper skeleton (`paper-skeleton.tex`) and booktabs table macros (`table-style.tex`)
-- **Writing Principles** — One message per paragraph, topic sentence first, terminology consistency, reverse-outlining
-- **Counterintuitive Tactics** — Underclaim in prose / overdeliver in evidence; lead with mechanism, not just metrics
+- **Stage 1: Initial Implementation** — Get baseline code running and reproduce known results (≤20 attempts)
+- **Stage 2: Hyperparameter Tuning** — Optimize configuration for your setup (≤12 attempts)
+- **Stage 3: Proposed Method** — Implement and validate the novel method (≤12 attempts)
+- **Stage 4: Ablation Study** — Prove each component's contribution (≤18 attempts)
+- **Code Trajectory Logging** — Structured attempt logging that feeds into `evo-memory`
+- **Counterintuitive Rules** — Initial implementation is not wasted time; budget limits prevent rabbit holes; failed attempts are data
+
+Integrates with `experiment-craft` for failure diagnosis within stages and `evo-memory` for cross-cycle learning.
 
 ### 🔧 `experiment-craft` — Experiment Debugging & Iteration
 
@@ -79,6 +121,16 @@ A systematic approach to experiment debugging, logging, and iterative improvemen
 - **Counterintuitive Rules** — Change one variable at a time; effective experiments beat more experiments
 - **Experiment Logging** — 5-section structured log template for reproducible records
 - **Handoff to Paper-Writing** — Feed validated results and logs into `paper-writing` for drafting
+
+### ✍️ `paper-writing` — Section-by-Section Paper Drafting
+
+A proven 11-step workflow for writing academic papers with LaTeX templates:
+
+- **Structured Process** — From pipeline sketch → story design → Method → Experiments → Related Work → Abstract → Title
+- **Section Templates** — Three Abstract templates, four Introduction openers, Method module structure, Experiments organization
+- **LaTeX Assets** — Annotated paper skeleton (`paper-skeleton.tex`) and booktabs table macros (`table-style.tex`)
+- **Writing Principles** — One message per paragraph, topic sentence first, terminology consistency, reverse-outlining
+- **Counterintuitive Tactics** — Underclaim in prose / overdeliver in evidence; lead with mechanism, not just metrics
 
 ### 🔍 `paper-review` — Self-Review & Quality Assurance
 
@@ -110,10 +162,22 @@ A structured approach to creating academic presentations and preparing research 
 - **Delivery & Q&A** — Rehearsal protocol, timing, and backup slide preparation
 - **Counterintuitive Rules** — Slides are not your paper; enthusiasm beats polish; related work builds motivation, not citation counts
 
+### 🧠 `evo-memory` — Persistent Research Memory & Self-Evolution
+
+The learning layer that accumulates knowledge across research cycles. Maintains two memory stores and implements three evolution mechanisms:
+
+- **Ideation Memory (M_I)** — Tracks feasible and unsuccessful research directions across idea tournaments
+- **Experimentation Memory (M_E)** — Stores reusable data processing and model training strategies (paper core), plus architecture and debugging (extensions)
+- **IDE (Idea Direction Evolution)** — Extracts promising directions after idea tournaments
+- **IVE (Idea Validation Evolution)** — Classifies experiment failures as implementation vs fundamental direction failures
+- **ESE (Experiment Strategy Evolution)** — Distills reusable patterns from successful experiment pipelines
+
+Read by `idea-tournament` and `experiment-pipeline` at cycle start; updated after each cycle completes.
+
 ## 🎯 ᯓ➤ Roadmap
 
 Coming soon:
-- [ ] 🧠 **Self-Evolution Suite** — Skills that learn, adapt & improve themselves
+- [x] 🧠 **Self-Evolution Suite** — `idea-tournament`, `experiment-pipeline`, `evo-memory`
 - [ ] 🏅 **Math Olympiad** — Advanced mathematical reasoning & problem solving
 - [ ] 🎨 **Visual Generation** — Diagrams, figures & graphic content creation
 - [ ] 📚 **Literature Survey** — Systematic literature search, filtering, and survey generation
