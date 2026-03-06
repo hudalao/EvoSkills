@@ -102,6 +102,8 @@ When combining techniques:
 3. Select the most promising based on analysis, not intuition
 4. Test the selected design against at least one alternative to validate the choice
 
+**Example**: To improve 3D reconstruction from sparse views, you might combine: (A) depth estimation + NeRF, (B) diffusion prior + NeRF, (C) depth + diffusion + NeRF, (D) feed-forward prediction + refinement. List all 4, analyze each (A: fast but noisy depths; B: slow but strong prior; C: complex but synergistic; D: fast but no multi-view consistency), then pick C and test against A as the ablation baseline.
+
 ### Verify the Novelty
 
 Before investing in implementation, check:

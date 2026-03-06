@@ -68,7 +68,7 @@ Based on the review, sharpen the description. Remove vague language ("might be u
 
 ### Target: Up to N_I=21 Leaf Candidates
 
-The paper sets N_I=21 as the maximum number of candidate ideas during tree search. Practical guidance for tournament quality:
+The paper sets N_I=21 as the maximum number of candidate ideas during tree search. This value balances diversity against tournament cost: a 3-level tree with 3 technique × 3 domain × ~2-3 formulation branches naturally produces 18-27 leaves, and 21 is the empirically validated upper bound from the paper's experiments (higher N_I showed diminishing returns in Elo ranking stability). Practical guidance for tournament quality:
 - **<10 candidates**: Not enough diversity. Tournament results are unreliable — too few comparisons.
 - **15-21 candidates**: Good diversity with manageable tournament size (4-5 rounds of Swiss pairing). Aim for this range.
 - **>21 candidates**: Exceeds the paper's N_I limit. Prune more aggressively to stay within 21.

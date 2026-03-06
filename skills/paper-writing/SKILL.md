@@ -1,6 +1,6 @@
 ---
 name: paper-writing
-description: "Guides writing academic papers section by section using a proven 11-step workflow with LaTeX templates and counterintuitive writing tactics for stronger reviewer perception. Covers Abstract, Introduction, Method, Experiments, Related Work, and Conclusion. Use when the user asks to write a paper, draft a section, improve academic writing, optimize novelty framing, or needs LaTeX templates for any paper section."
+description: "Guides writing academic papers section by section using an 11-step workflow with LaTeX templates and counterintuitive writing tactics. Covers Abstract, Introduction, Method, Experiments, Related Work, Conclusion, and Supplementary. Use when: user asks to write or draft a paper section, needs LaTeX templates, wants to improve academic writing quality, optimize novelty framing, or mentions 'write introduction', 'draft method', 'paper writing'. Do NOT use for pre-submission review (use paper-review), experiment execution (use experiment-pipeline), or paper planning/story design (use paper-planning)."
 allowed-tools: "write_file edit_file read_file think_tool"
 metadata:
   author: EvoScientist
@@ -18,6 +18,21 @@ A systematic 11-step workflow for writing academic papers, with section-specific
 - User needs LaTeX templates for Abstract, Introduction, Method, Experiments, etc.
 - User wants to improve academic writing quality
 - User mentions "paper writing", "write introduction", "draft method section", etc.
+
+## Artifact Sources
+
+If you used upstream EvoSkills, pull these artifacts before writing:
+
+| Source Skill | Artifact | Used In |
+|-------------|----------|---------|
+| `paper-planning` | Story summary (task → challenge → insight → contribution → advantage) | Steps 1-2 (Introduction writing plan) |
+| `paper-planning` | Module Motivation Mapping table | Step 3 (Method subsections) |
+| `paper-planning` | Experiment plan (comparisons + ablations + demos) | Step 5 (Experiments section) |
+| `paper-planning` | Pipeline figure sketch | Steps 1, 6 (Method overview figure) |
+| `paper-planning` | Claim-to-experiment mapping | Steps 2, 5 (Abstract, Introduction, Experiments) |
+| `paper-planning` | Fallback narrative (if planned) | Steps 7-8 (Introduction / Conclusion pivot) |
+| `experiment-pipeline` | Stage 1-4 results, ablation tables, trajectory logs | Step 5 (write experiments) |
+| `experiment-craft` | Failure analysis, implementation tricks | Step 3 (Method section), Step 9 (limitations) |
 
 ## The 11-Step Writing Process
 
@@ -44,8 +59,10 @@ Apply these rules when aiming for higher acceptance probability:
 3. **Lead with mechanism, not only metric**: Explain why the method works before listing numbers; reviewers trust causal logic more than isolated gains.
 4. **Prefer one decisive figure over many average figures**: Build one "cannot-ignore" figure that validates the central claim under hard conditions.
 5. **Remove weak but flashy claims**: Any claim without direct evidence should be deleted, even if it sounds impressive.
+6. **Declare scope boundaries explicitly**: One sentence in Introduction and Conclusion stating what your method targets reduces reviewer fear of hidden assumptions.
+7. **Show one failure case**: Include one representative failure with diagnosis — it signals competence, not weakness.
 
-See [references/counterintuitive-writing.md](references/counterintuitive-writing.md)
+See [references/counterintuitive-writing.md](references/counterintuitive-writing.md) for all 7 tactics with before/after examples.
 
 ## Section Quick Reference
 

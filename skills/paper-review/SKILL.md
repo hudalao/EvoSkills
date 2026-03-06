@@ -1,6 +1,6 @@
 ---
 name: paper-review
-description: "Guides self-review of academic papers before submission with adversarial and counterintuitive review tactics. Provides a 5-aspect checklist (contribution, writing clarity, results quality, testing completeness, method design), reverse-outlining, figure/table checks, and rejection simulation. Use when the user wants to review, check, or improve a paper draft, stress-test novelty claims, or prepare for reviewer feedback."
+description: "Guides self-review of YOUR OWN academic paper before submission with adversarial stress-testing. Core method: 5-aspect checklist (contribution sufficiency, writing clarity, results quality, testing completeness, method design), counterintuitive protocol (reject-first simulation, delete unsupported claims, score trust, promote limitations, attack novelty), reverse-outlining, and figure/table quality checks. Use when: user wants to self-review or self-check their own paper draft before submission, stress-test their claims, prepare for reviewer criticism, or mentions 'self-review', 'check my draft', 'is my paper ready'. Do NOT use for writing a peer review of someone else's paper, and do NOT use after receiving actual reviews (use paper-rebuttal instead)."
 allowed-tools: "read_file edit_file write_file think_tool"
 metadata:
   author: EvoScientist

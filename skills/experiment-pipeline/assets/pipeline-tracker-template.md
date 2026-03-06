@@ -43,6 +43,14 @@
 - **Key Finding**: [Which components matter most]
 - **Status Notes**: [Brief notes]
 
+## Backtracking Log
+
+Record any stage regressions (e.g., discovering a Stage 1 issue during Stage 3):
+
+| Date | From Stage | To Stage | Reason | Resolution |
+|------|-----------|----------|--------|------------|
+| | | | | |
+
 ## Cross-Stage Insights
 
 - [Insight 1 that spans multiple stages]

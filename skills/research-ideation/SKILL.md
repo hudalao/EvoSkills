@@ -1,6 +1,6 @@
 ---
 name: research-ideation
-description: "Guides research ideation: building field vision, finding important problems, designing novel solutions, and reading papers effectively. Use when the user wants to find a research direction, brainstorm ideas, do a literature review, evaluate idea novelty, or read papers systematically."
+description: "Guides research ideation through a 5-step goal-driven workflow: define long-term goal, build literature tree (novelty + challenge-insight), select a problem (well-established solution check), design a solution (cross-domain transfer + decomposition), validate and iterate. Also covers structured paper reading (3 depth levels). Use when: user wants to find a research direction, brainstorm ideas, build field vision, do a literature review, evaluate idea novelty, or read papers systematically. Do NOT use for comparing/ranking existing ideas (use idea-tournament) or planning a paper (use paper-planning)."
 allowed-tools: "write_file edit_file read_file think_tool"
 metadata:
   author: EvoScientist
@@ -60,6 +60,8 @@ See [references/solution-design.md](references/solution-design.md) for the full 
 
 Run experiments on representative data. Use results to refine your understanding. If the approach fails, return to Step 3 or Step 4 with updated knowledge from the failure.
 
+**Output artifacts**: Research direction summary (problem statement, proposed approach, novelty claim, key risks) — this becomes the input to `idea-tournament` or `paper-planning`.
+
 See the `experiment-craft` skill for systematic debugging when experiments don't work as expected.
 
 ## Counterintuitive Ideation Rules
@@ -87,7 +89,9 @@ Write a structured summary for every paper you read. Use the template at [assets
 
 See [references/paper-reading.md](references/paper-reading.md) for the full reading methodology and habit-building guidance.
 
-## Handoff to Planning
+## Handoff to Idea Tournament or Planning
+
+When you have a research direction but want to explore multiple concrete approaches, pass to `idea-tournament` for tree-structured generation and Elo ranking before planning.
 
 When ideation is complete — you have a problem, a proposed solution approach, and supporting literature — pass these artifacts to `paper-planning`:
 

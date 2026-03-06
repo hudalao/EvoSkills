@@ -36,6 +36,8 @@ Don't try to improve a technique on its original benchmark. Instead:
 
 **New failure cases are contributions.** Even if your technique is not novel, experimental conclusions on new data that demonstrate where existing methods fail are valuable and publishable. This is one of the most reliable ways to produce contributions.
 
+**Example**: NeRF works well for static forward-facing scenes. Apply it to dynamic surgical video — it fails because of deforming tissue and specular instruments. This failure case defines a new research problem (deformable NeRF for surgery) that is both impactful and publishable.
+
 ### Goal-Driven vs. Idea-Driven Research
 
 | Approach | Description | Risk |

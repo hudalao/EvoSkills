@@ -1,6 +1,6 @@
 ---
 name: paper-planning
-description: "Guides pre-writing planning for academic papers: story design, experiment planning, figure design, and timeline management, with counterintuitive planning tactics that increase acceptance probability. Use when the user wants to plan a paper, design experiments before writing, create a pipeline figure, set a writing timeline, improve paper novelty strategy, or asks about paper structure and story."
+description: "Guides pre-writing planning for academic papers with 4 structured steps: story design (task-challenge-insight-contribution-advantage), experiment planning (comparisons + ablations), figure design (pipeline + teaser), and 4-week timeline management. Includes counterintuitive planning tactics (write a mock rejection letter to identify weaknesses before writing, narrow before broad claims, design ablations first). Use when: user wants to plan a paper before writing, design story/contributions, plan experiments, create figure sketches, set a writing timeline, or write a pre-emptive rejection letter for planning purposes. Do NOT use for actual writing (use paper-writing), running experiments (use experiment-pipeline), self-reviewing a finished draft (use paper-review), or finding research problems (use research-ideation)."
 allowed-tools: "write_file edit_file read_file think_tool"
 metadata:
   author: EvoScientist

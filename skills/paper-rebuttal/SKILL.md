@@ -1,6 +1,6 @@
 ---
 name: paper-rebuttal
-description: "Guides writing effective rebuttals after receiving peer review feedback. Covers review diagnosis, response strategy, champion identification, tactical writing rules, and counterintuitive rebuttal principles. Use when the user receives reviewer comments, needs to write a rebuttal, wants to respond to reviews, or asks about handling reviewer criticism."
+description: "Guides writing effective rebuttals after receiving peer review feedback. Covers review diagnosis (score-driven color-coding), response strategy (champion identification, common-theme consolidation), tactical writing (18 rules), and counterintuitive rebuttal principles. Use when: user received reviewer scores/comments, needs to write a rebuttal or author response, wants to respond to specific criticism (e.g. 'limited novelty', 'missing baselines'), mentions 'rebuttal', 'reviewer comments', 'author response', or 'respond to reviewers'. Do NOT use for pre-submission self-review (use paper-review instead)."
 allowed-tools: "write_file edit_file read_file think_tool"
 metadata:
   author: EvoScientist
@@ -137,6 +137,8 @@ Prepare responses for these frequent concerns. Having a prepared response doesn'
 | "Method is engineering, not research" | Identify the scientific insight behind the design; explain why the choice is non-obvious |
 | "Metrics don't match claims" | Align each claim with a specific metric; add the missing metric if feasible |
 | "Related work incomplete" | Add the missing references; explain the relationship to your work |
+
+> **Need to run new experiments for the rebuttal?** Use the `experiment-craft` skill for targeted debugging, or `experiment-pipeline` for a full new experiment stage.
 
 ## Handoff from Paper Review
 

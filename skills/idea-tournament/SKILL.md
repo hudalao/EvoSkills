@@ -1,6 +1,6 @@
 ---
 name: idea-tournament
-description: "Guides competitive idea generation and ranking using tree-structured search and Elo tournaments. Use when the user has a research direction and needs to generate, compare, and select the strongest idea, or wants to produce a full research proposal from ranked candidates."
+description: "Guides competitive idea generation and ranking using tree-structured search (up to N_I=21 candidates across technique/domain/formulation axes) and Elo tournaments (4 dimensions: novelty, feasibility, relevance, clarity). Produces a ranked direction summary and full research proposal. Use when: user has a research direction and needs concrete ranked ideas, wants to compare multiple approaches, or mentions 'rank ideas', 'compare approaches', 'which idea is best', 'research proposal'. Do NOT use for finding a research direction from scratch (use research-ideation) or planning the paper itself (use paper-planning)."
 allowed-tools: "write_file edit_file read_file think_tool"
 metadata:
   author: EvoScientist
@@ -110,18 +110,11 @@ All dimensions are weighted equally. Researchers tend to overweight novelty and 
 2. Score each on all 4 dimensions (1-10 scale)
 3. Compute composite scores (average of 4 dimensions)
 4. Determine the match winner (higher composite score)
-5. Update Elo ratings using the standard formula
-
-**Elo update formula**:
-```
-Expected score: E_A = 1 / (1 + 10^((R_B - R_A) / 400))
-New rating: R_A' = R_A + K × (S_A - E_A)
-```
-Where S_A = 1 for win, 0.5 for draw, 0 for loss.
+5. Update Elo ratings using the standard formula (see [elo-ranking-guide.md](references/elo-ranking-guide.md) for the formula, worked example, and convergence criteria)
 
 Save rankings to `/idea-rankings.md`.
 
-See [references/elo-ranking-guide.md](references/elo-ranking-guide.md) for the detailed rubric, worked examples, and convergence criteria.
+See [references/elo-ranking-guide.md](references/elo-ranking-guide.md) for the detailed rubric and convergence criteria.
 
 ## Phase 3: Direction Summarization
 

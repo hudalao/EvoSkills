@@ -1,6 +1,6 @@
 ---
 name: experiment-pipeline
-description: "Guides structured 4-stage experiment execution: initial implementation, hyperparameter tuning, proposed method validation, and ablation study. Use when the user has a planned experiment, needs to organize their experimental workflow, or wants to systematically validate a research method."
+description: "Guides structured 4-stage experiment execution with attempt budgets and gate conditions: Stage 1 initial implementation (reproduce baseline), Stage 2 hyperparameter tuning, Stage 3 proposed method validation, Stage 4 ablation study. Integrates with evo-memory (load prior strategies, trigger IVE/ESE) and experiment-craft (5-step diagnostic on failure). Use when: user has a planned experiment, needs to reproduce baselines, organize experiment workflow, or systematically validate a method. Do NOT use for debugging a specific experiment failure (use experiment-craft) or designing which experiments to run (use paper-planning)."
 allowed-tools: "write_file edit_file read_file think_tool execute"
 metadata:
   author: EvoScientist
@@ -27,6 +27,8 @@ A structured 4-stage framework for executing research experiments from initial i
 The 4-stage pipeline solves both problems. It enforces a strict order (each stage validates assumptions the next stage depends on) and assigns attempt budgets (forcing systematic thinking over brute-force iteration).
 
 ## Before Starting: Load Prior Knowledge
+
+If coming from `idea-tournament`, your research proposal (Phase 4) provides the experiment plan — datasets, baselines, metrics, and ablation design — that maps directly to Stages 1-4 below.
 
 Before entering the pipeline, load Experimentation Memory (M_E) from prior cycles:
 
@@ -121,17 +123,17 @@ See [references/attempt-budget-guide.md](references/attempt-budget-guide.md) for
 3. Run full training and compare against Stage 2 results
 4. If underperforming, isolate which component causes the gap
 
-**Integration strategy**: Add your method's components one at a time to the working baseline. This way, if something breaks, you know exactly which component caused it. Never integrate the full method in one shot.
+**Integration strategy**: Add your method's components one at a time to the working baseline. Each added component should stay within 20% of the baseline's performance — if a single component causes a >20% regression, isolate and debug it before proceeding. Never integrate the full method in one shot.
 
 **When to load `experiment-craft`**: When your method underperforms the baseline despite correct implementation. The 5-step diagnostic flow will help distinguish between implementation bugs and fundamental issues.
 
-**Critical decision — IVE trigger**: The `evo-memory` IVE (Idea Validation Evolution) mechanism triggers under two conditions (following the paper):
-1. **Rule-based**: The engineer cannot find any executable code within the pre-defined budget at ANY stage — the code simply doesn't run.
-2. **LLM-based analysis**: Experiments complete but the proposed method performs worse than the baseline, as determined from the execution report.
+**Critical decision — failure classification**: If the method underperforms the baseline after exhausting the attempt budget, hand off to `evo-memory` for IVE (Idea Validation Evolution) — this is evo-memory's job, not this skill's. IVE triggers under two conditions:
+1. **No executable code**: Cannot find working code within the budget at any stage.
+2. **Worse than baseline**: Experiments complete but the method underperforms.
 
-When IVE triggers, classify the failure:
-- **Implementation failure**: The code has bugs or missing tricks. Retryable in a future cycle.
-- **Fundamental direction failure**: The core idea doesn't work. Update ideation memory to prevent retrying.
+The `evo-memory` skill will classify the failure as:
+- **Implementation failure**: Bugs or missing tricks → retryable in a future cycle.
+- **Fundamental direction failure**: Core idea doesn't work → update ideation memory to prevent retrying.
 
 **Output**: `/experiments/stage3_method/` containing method code, results, comparison with baseline.
 

@@ -8,21 +8,19 @@ Every pipeline module in the Method section must address three elements:
 2. **Motivation** — Why the paper uses this module
 3. **Technical Advantages** — Why this module works well
 
-> Every pipeline module must answer three questions: its design details, why it is used, and its technical advantages.
+> If you used `paper-planning`, the **Module Motivation Mapping table** from story-design already contains these three elements for each module. Import it directly — don't recreate from scratch.
 
 ---
 
 ## Pre-Writing: Organize Your Thoughts
 
-Before writing the Method section, answer these questions:
+Before writing the Method section, check if a Module Motivation Mapping table exists from `paper-planning`. If so, use it as your writing plan. Otherwise, answer these questions:
 
 1. What modules does the method have?
 2. For each module:
    - What is the workflow? (Module design)
    - Why this module? (Motivation)
    - Why does it work well? (Technical advantages)
-
-> Recommended: Organize as a mind map or table. Clarify the writing plan before drafting.
 
 **Process:**
 1. Answer the three questions for every module → organize as mind map or table

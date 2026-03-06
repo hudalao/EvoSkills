@@ -1,6 +1,6 @@
 ---
 name: experiment-craft
-description: "Guides systematic experiment debugging, logging, and iteration for research projects. Covers diagnosing why experiments fail, structured experiment logging, hypothesis-driven iteration, and knowing when to pivot. Use when experiments don't work, results are unexpected, or the user needs to organize their experimental process."
+description: "Use this skill when the user wants to debug, diagnose, or systematically iterate on an experiment that already exists, or when they need a structured experiment log for tracking runs, hypotheses, failures, results, and next steps during active research. Apply it to underperforming methods, training that will not converge, regressions after a change, inconsistent results across datasets, aimless experimentation without progress, and questions like 'why doesn't this work?', 'no progress after many attempts', or 'how should I investigate this failure?'. Also use it for setting up practical experiment logging/record-keeping that supports debugging and iteration. Do not use it for designing a brand-new experiment pipeline or full experiment program (use experiment-pipeline), generating research ideas, fixing isolated coding/syntax errors, or writing retrospective summaries into research memory/notes/knowledge bases."
 allowed-tools: "write_file edit_file read_file think_tool execute"
 metadata:
   author: EvoScientist
@@ -19,6 +19,8 @@ A systematic approach to running, debugging, and iterating on research experimen
 - User wants to organize their experiment process with structured logging
 - User asks about debugging research code or iterating on approaches
 - User mentions "experiment debugging", "why doesn't this work", "experiment log", "results are wrong"
+
+> This skill is typically loaded from within `experiment-pipeline` when a stage attempt fails. After debugging, return to the pipeline's stage-gate structure to continue. Can also be used standalone for any experiment debugging.
 
 ## The Debugging Mindset
 
@@ -98,6 +100,15 @@ Every experiment should be logged with five sections. Use the template at [asset
 | Next Steps | What to do based on the analysis — YOU are the project leader |
 
 **The "Next Steps" section is the most important.** Don't wait for someone to tell you what to do next. Analyze your results and propose the next experiment yourself. This is what distinguishes a researcher from a technician.
+
+> **Cross-cycle learning**: If using `experiment-pipeline`, your experiment logs feed into `evo-memory`'s ESE (Experiment Strategy Evolution) mechanism. Tag reusable strategies with `[Reusable]` so ESE can extract them for future cycles.
+
+## Return to experiment-pipeline
+
+After completing the 5-step diagnostic flow, return to `experiment-pipeline` with:
+- Confirmed cause of failure (from Step 4)
+- Proposed fix and its verification status (from Step 5)
+- Updated experiment log entry
 
 ## Handoff to Paper Writing
 

@@ -2,6 +2,8 @@
 
 Practical guide for building academic presentation `.pptx` files within the EvoScientist workspace. Covers setup, academic-oriented layout patterns, color palettes, charts, tables, figures, and quality assurance.
 
+> **CRITICAL: Hex colors in PptxGenJS must NOT have `#` prefix.** Write `"1A1A2E"` not `"#1A1A2E"` — the `#` prefix silently corrupts the .pptx file. This applies to ALL color values: backgrounds, fonts, shapes, chart colors.
+
 When the user has already completed paper planning or writing with the `paper-planning` or `paper-writing` skills, pull directly from the workspace artifacts: pipeline figure sketches, experiment result tables, and the story summary (task → challenge → insight → contribution → advantage) to populate slides.
 
 ---
@@ -521,6 +523,8 @@ soffice --headless --convert-to pdf output.pptx
 pdftoppm -jpeg -r 150 output.pdf slide
 # Creates slide-01.jpg, slide-02.jpg, etc.
 ```
+
+> **If soffice is not installed**: Install LibreOffice (`brew install --cask libreoffice` on macOS, `apt install libreoffice` on Linux). If pdftoppm is missing: `brew install poppler` / `apt install poppler-utils`. If neither is available, use `python-pptx` to extract slide dimensions and element positions programmatically as a fallback check.
 
 Use `read_file` on the generated images to visually check for:
 - Overlapping elements (text through shapes, lines through text)

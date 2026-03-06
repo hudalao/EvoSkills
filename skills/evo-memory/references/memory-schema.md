@@ -120,6 +120,35 @@ Total Cycles: [N]
 - **Last Updated**: 2026-02-28
 ```
 
+### Example M_I Entry (Retry with Fixes — IVE Implementation Failure)
+
+```markdown
+### Contrastive Pruning for LLM Compression
+
+- **Summary**: Using contrastive objectives to guide structured pruning
+  decisions in large language models.
+- **Why Promising**: Novel combination of contrastive learning and pruning;
+  related paper showed contrastive objectives help in vision pruning.
+- **Requirements**: Pre-trained LLM (Llama-7B), pruning library, 2× A100 GPU.
+- **Validation Plan**: 1) Fix gradient scaling issue found in Cycle 4.
+  2) Adopt training schedule from related contrastive pruning paper.
+  3) Test on GPT-2 first (confirmed working), then scale to Llama-7B.
+- **Evidence**: Cycle 4, Stage 3 — 12 attempts, best was 3% below baseline.
+  Attempt 7 showed 1% improvement on MMLU but regressed on GSM8K.
+  Gradient scaling bug found in attempt 10.
+- **Status**: retry with fixes
+- **Related Entries**: See "Modality-Aware Model Compression" (feasible)
+- **Retry Guidance**: Fix gradient scaling, try schedule from related paper,
+  consider architecture-specific adaptations for decoder-only models.
+- **Countermeasures**: 1) Verify gradient norms before full training.
+  2) Test on small model first. 3) Use per-layer contrastive loss instead
+  of global. 4) Monitor per-benchmark metrics, not just average.
+- **Retry Count**: 1
+- **Retrieval Tags**: contrastive, pruning, LLM, compression, structured pruning
+- **Date Added**: 2026-02-15
+- **Last Updated**: 2026-02-28
+```
+
 ### Example M_I Entry (Unsuccessful)
 
 ```markdown
