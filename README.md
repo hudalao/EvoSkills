@@ -174,6 +174,8 @@ The learning layer that accumulates knowledge across research cycles. Maintains 
 
 Read by `idea-tournament` and `experiment-pipeline` at cycle start; updated after each cycle completes.
 
+<p align="right"><a href="#top">🔝Back to top</a></p>
+
 ## 🎯 ᯓ➤ Roadmap
 
 Coming soon:
@@ -232,6 +234,10 @@ Stay tuned — more skills are on the way!
 For any enquiries or collaboration opportunities, please contact: [**EvoScientist.ai@gmail.com**](mailto:evoscientist.ai@gmail.com)
 
 <p align="right"><a href="#top">🔝Back to top</a></p>
+
+## 🤝 Contributing
+
+We welcome contributions! See our [Contributing Guidelines](./CONTRIBUTING.md) for how to improve existing skills or add new ones.
 
 ## 📜 License
 
