@@ -191,6 +191,8 @@ Coming soon:
 
 Stay tuned — more skills are on the way!
 
+<p align="right"><a href="#top">🔝Back to top</a></p>
+
 ## 🌍 Project Roles
 
 <table>
@@ -202,7 +204,7 @@ Stay tuned — more skills are on the way!
                width="100" height="100"
                style="object-fit: cover; border-radius: 20%;" alt="Xi Zhang"/>
           <br />
-          <sub><b>EvoScientist</b><sup>‡</sup></sub>
+          <sub><b>EvoScientist</b></sub>
         </a>
       </td>
       <td align="center">
@@ -211,7 +213,7 @@ Stay tuned — more skills are on the way!
                width="100" height="100"
                style="object-fit: cover; border-radius: 20%;" alt="Xi Zhang"/>
           <br />
-          <sub><b>Xi Zhang</b><sup>†§</sup></sub>
+          <sub><b>Xi Zhang</b></sub>
         </a>
       </td>
       <td align="center">
@@ -220,16 +222,14 @@ Stay tuned — more skills are on the way!
                width="100" height="100"
                style="object-fit: cover; border-radius: 20%;" alt="Yougang Lyu"/>
           <br />
-          <sub><b>Yougang Lyu</b><sup>§</sup></sub>
+          <sub><b>Yougang Lyu</b></sub>
         </a>
       </td>
     </tr>
   </tbody>
 </table>
 
-> <sup>‡</sup>Core Developer <sup>†</sup>Project Lead & Engineering Lead <sup>§</sup>Project Owner
-
-> *Xiaoyi DeepResearch Team* and the wider open-source community contribute to this project.
+> <a href="https://xiaoyi.huawei.com/chat/research"><img src="./assets/xiaoyi-deepresearch.webp" height="16" alt="Xiaoyi DeepResearch" align="center" /></a> [*Xiaoyi DeepResearch*](https://xiaoyi.huawei.com/chat/research) *Team* and the wider open-source community contribute to this project.
 
 For any enquiries or collaboration opportunities, please contact: [**EvoScientist.ai@gmail.com**](mailto:evoscientist.ai@gmail.com)
 
@@ -239,14 +239,30 @@ For any enquiries or collaboration opportunities, please contact: [**EvoScientis
 
 We welcome contributions! See our [Contributing Guidelines](./CONTRIBUTING.md) for how to improve existing skills or add new ones.
 
+### 📝 Citation
+```bibtex
+@article{evoscientist2026, 
+  title={EvoScientist: Towards Multi-Agent Evolving AI Scientists for End-to-End Scientific Discovery}, 
+  author={Yougang Lyu and Xi Zhang and Xinhao Yi and Yuyue Zhao and Shuyu Guo and Wenxiang Hu and Jan Piotrowski and Jakub Kaliski and Jacopo Urbani and Zaiqiao Meng and Lun Zhou and Xiaohui Yan}, 
+  journal={arXiv preprint arXiv:2603.08127}, 
+  year={2026} 
+}
+```
+
+### 📈 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=EvoScientist/EvoSkills&type=date&legend=top-left)](https://www.star-history.com/#EvoScientist/EvoSkills&type=date&legend=top-left)
+
+<p align="right"><a href="#top">🔝Back to top</a></p>
+
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICENSE) file for details.
 
 <p align="right"><a href="#top">🔝Back to top</a></p>
 
 ---
 
 <p align="center">
-  Initiated and led by <a href="https://github.com/x-izhang">Xi Zhang</a>, built with the open-source community.
+  Created and maintained by <a href="https://github.com/x-izhang"><b>Xi Zhang</b></a>, built with the open-source community.
 </p>
