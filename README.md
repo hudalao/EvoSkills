@@ -4,7 +4,7 @@
 
 ## 📦 Installation
 
-### In-session commands
+### In-session commands with EvoScientist
 
 Install all skills at once:
 
@@ -25,6 +25,13 @@ Simply ask the agent in conversation:
 ```text
 "Install all skills from EvoScientist/EvoSkills@skills."
 ```
+
+> [!TIP]
+> These skills also work with other coding agents! Install to any agent (Claude Code, OpenCode, Cursor, Codex, Gemini CLI, Qwen Code) with one command via [skills.sh](https://skills.sh/):
+> ```bash
+> npx skills add EvoScientist/EvoSkills
+> ```
+
 
 ## ✨ Available Skills
 
