@@ -277,9 +277,3 @@ If you find our paper and code useful in your research and applications, please 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICENSE) file for details.
 
 <p align="right"><a href="#top">🔝Back to top</a></p>
-
----
-
-<p align="center">
-  Created and maintained by <a href="https://github.com/x-izhang"><b>Xi Zhang</b></a>, built with the open-source community.
-</p>
