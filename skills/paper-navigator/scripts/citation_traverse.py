@@ -14,7 +14,7 @@ import time
 import httpx
 
 S2_BASE = "https://api.semanticscholar.org/graph/v1"
-S2_FIELDS = "paperId,externalIds,title,authors,year,citationCount,influentialCitationCount,tldr,isOpenAccess,openAccessPdf"
+S2_FIELDS = "paperId,externalIds,title,authors,year,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf"
 
 MAX_RETRIES = 3
 RETRY_DELAYS = [2, 4, 8]

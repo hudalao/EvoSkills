@@ -20,7 +20,7 @@ _UA = {"User-Agent": "EvoScientist/1.0 (paper-navigator)"}
 def _request_with_retry(client: httpx.Client, url: str, params: dict | None = None) -> dict | list:
     for attempt in range(MAX_RETRIES):
         try:
-            resp = client.get(url, params=params, headers=_UA, timeout=30)
+            resp = client.get(url, params=params, headers=_UA, timeout=30, follow_redirects=True)
             if resp.status_code == 429 or resp.status_code >= 500:
                 if attempt < MAX_RETRIES - 1:
                     time.sleep(RETRY_DELAYS[attempt])

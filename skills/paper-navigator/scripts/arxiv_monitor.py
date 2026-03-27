@@ -15,7 +15,7 @@ from datetime import datetime, timedelta, timezone
 
 import httpx
 
-ARXIV_API = "http://export.arxiv.org/api/query"
+ARXIV_API = "https://export.arxiv.org/api/query"
 NS = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
 
 MAX_RETRIES = 3

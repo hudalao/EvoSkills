@@ -1,32 +1,34 @@
 ---
 name: paper-navigator
 description: >
-  End-to-end academic paper workflow: discover papers (search, citation traversal,
-  recommendations, arXiv monitoring, trending detection), evaluate them (TLDR,
-  citation metrics, code availability, SOTA ranking), read full text with structured
-  analysis (3-level reading strategy), and organize into literature maps (novelty
-  tree, challenge-insight tree). Use when the user asks about finding papers, reading
-  a paper, related work, literature survey, citation analysis, new papers, research
-  trends, paper implementations, SOTA results, or datasets.
+  End-to-end academic paper workflow: disambiguate queries, discover papers (search,
+  citation traversal, recommendations, arXiv monitoring, trending detection, GitHub
+  search), evaluate them (TLDR, citation metrics, code availability, SOTA ranking),
+  read full text with structured analysis (3-level reading strategy), and organize
+  into literature maps (novelty tree, challenge-insight tree) or structured reports.
+  Use when the user asks about finding papers, reading a paper, related work,
+  literature survey, citation analysis, new papers, research trends, paper
+  implementations, SOTA results, datasets, or generating literature reports.
 ---
 
 # Paper Navigator
 
-End-to-end paper workflow in four stages:
+End-to-end paper workflow in five stages:
 
 ```
-┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
-│ Discover │ →  │ Evaluate │ →  │   Read   │ →  │ Organize │
-│ 发现论文  │    │ 筛选评估  │    │ 深度阅读  │    │ 文献图谱  │
-└──────────┘    └──────────┘    └──────────┘    └──────────┘
+┌──────────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
+│ Disambiguate │ →  │ Discover │ →  │ Evaluate │ →  │   Read   │ →  │ Organize │
+│ 意图分析     │    │ 发现论文  │    │ 筛选评估  │    │ 深度阅读  │    │ 文献图谱  │
+└──────────────┘    └──────────┘    └──────────┘    └──────────┘    └──────────┘
 ```
 
 | Stage | Input | Scripts | Output |
 |-------|-------|---------|--------|
-| Discover | keywords / author / field | `scholar_search`, `citation_traverse`, `recommend`, `author_search`, `arxiv_monitor`, `trending` | candidate list |
+| Disambiguate | user query | (agent-driven: web search + intent analysis) | search plan + resolved identifiers |
+| Discover | keywords / author / field | `scholar_search`, `citation_traverse`, `recommend`, `author_search`, `arxiv_monitor`, `trending`, `github_search` | candidate list |
 | Evaluate | candidate list | `scholar_search` (TLDR/citations), `find_code`, `sota`, `dataset_search` | reading list |
 | Read | paper ID / URL | `fetch_paper` + `references/reading-strategy.md` | structured notes |
-| Organize | multiple notes | (agent applies framework — no script) | literature map |
+| Organize | multiple notes | `literature_report`, (agent applies framework) | literature map / report |
 
 **Setup:** All scripts use `httpx` (already in project). Optional env vars for higher rate limits:
 - `S2_API_KEY` — Semantic Scholar ([request here](https://www.semanticscholar.org/product/api#api-key))
@@ -36,9 +38,62 @@ Scripts are in `EvoScientist/skills/paper-navigator/scripts/`. Run via `python E
 
 ---
 
+## Stage 0: Disambiguate (Intent Analysis + Background Research)
+
+Before searching, analyze the user's query to understand intent and resolve ambiguous terms. This stage prevents the common failure mode where academic APIs return zero results because the user's term doesn't match any paper title (e.g., "DeepSeek Engram" is a project/module name, not the paper title).
+
+### Step 1: Classify User Intent
+
+Determine what the user wants:
+
+| Intent | Signal | Strategy |
+|--------|--------|----------|
+| **Find a specific paper** | User gives a title, author, or URL | Direct search (skip to Stage 1 Path A) |
+| **Explore a topic/field** | User asks "what's new in X" or "survey X" | Broad search + trending (Stage 1 Paths A + F) |
+| **Track recent advances** | User asks "latest" or "recent" about X | arXiv monitor + trending (Stage 1 Paths E + F) |
+| **Find a baseline** | User asks for code, SOTA, or implementation | Search + code check (Stage 1 + 2) |
+| **Ambiguous/colloquial term** | User uses a project name, module name, or nickname | **This needs special handling** (see below) |
+| **Related work / literature map** | User wants connections between papers | Citation traversal + recommend (Stage 1 Paths B + C) |
+
+### Step 2: Resolve Ambiguous Terms
+
+When the user's query might be a colloquial name, project name, or module name (rather than a paper title), take these steps:
+
+1. **Quick academic search** — Try `scholar_search` with the exact query
+2. **If zero results** — The term is likely a project/colloquial name. Broaden the search:
+   - **Web search** (via research-agent or web tools): Search for the exact phrase to find GitHub repos, blog posts, or social media mentions that reveal the actual paper title or arXiv ID
+   - **GitHub search**: Run `github_search.py --query "USER_QUERY"` to find relevant repositories, which often link to papers
+3. **Extract identifiers** — From web/GitHub results, extract:
+   - Actual paper title (for academic search)
+   - arXiv ID (for direct paper lookup)
+   - GitHub repo URL (for code + paper discovery)
+   - Author names (for author_search)
+4. **Re-enter Discover** — Use the resolved identifiers to run the appropriate Stage 1 paths
+
+### Step 3: Generate Search Plan
+
+Based on intent + resolved terms, output a search plan:
+
+```
+🔍 Disambiguation Report for "deepseek engram"
+├── Intent: Track recent advances (ambiguous term)
+├── Resolution: "Engram" is a module name from DeepSeek AI
+│   ├── Actual paper: "Conditional Memory via Scalable Lookup" (ArXiv:2601.07372)
+│   └── GitHub: https://github.com/deepseek-ai/Engram
+└── Search Plan:
+    ├── scholar_search --query "Conditional Memory Scalable Lookup" --sort-by year
+    ├── citation_traverse --paper-id ArXiv:2601.07372 --direction forward
+    ├── github_search --query "deepseek engram"
+    └── trending --query "conditional memory engram" --period 90
+```
+
+This step is **agent-driven** (no script) — the orchestrating agent performs the web search and intent analysis, then selects the appropriate scripts.
+
+---
+
 ## Stage 1: Discover
 
-Six discovery paths, ordered by frequency of use.
+Seven discovery paths, ordered by frequency of use.
 
 ### Path A: Keyword Search (most common)
 
@@ -96,6 +151,22 @@ python scripts/trending.py --query "large language models" --period 90 --limit 1
 ```
 
 Ranks by citation velocity (citations/month). Useful for finding rapidly rising papers.
+
+### Path G: GitHub Search (for unreleased or industry papers)
+
+```bash
+python scripts/github_search.py --query "deepseek engram" --limit 10
+python scripts/github_search.py --query "mamba state space model" --sort stars
+```
+
+Options: `--sort stars|updated|relevance`, `--json`.
+
+Useful when:
+- Papers haven't been published on arXiv yet
+- Industry labs release code before papers
+- Looking for implementations, forks, or community extensions
+
+Returns: repo name, description, stars, language, dates, URL, topics.
 
 ### Citation Graph Visualization
 
@@ -247,6 +318,34 @@ Challenge: Quadratic attention cost
 
 Save to `/artifacts/literature-tree.md` and update incrementally.
 
+### Generate Literature Report
+
+Use the `literature_report.py` script to generate a structured, intent-adapted report:
+
+```bash
+# Full survey report (default)
+python scripts/literature_report.py --paper-ids ArXiv:2601.07372,ArXiv:2501.12948
+
+# Quick scan — brief table only
+python scripts/literature_report.py --paper-ids ArXiv:2601.07372 --intent quick_scan
+
+# Deep dive — full analysis + reading recommendations
+python scripts/literature_report.py --paper-ids ArXiv:2601.07372 --intent deep_dive
+
+# Baseline hunt — focus on code + reproducibility
+python scripts/literature_report.py --paper-ids ArXiv:2601.07372 --intent baseline_hunt
+
+# Save to file
+python scripts/literature_report.py --paper-ids ArXiv:2601.07372 --output /artifacts/report.md
+```
+
+| Intent | Output includes |
+|--------|----------------|
+| `survey` (default) | Summary, paper table, citation analysis, novelty tree, challenge-insight tree, recommendations |
+| `quick_scan` | Brief table: title, authors, year, citations, TLDR |
+| `deep_dive` | Everything in survey + per-paper reading level recommendations + detailed notes |
+| `baseline_hunt` | Code availability, SOTA position, dataset access, reproducibility scores |
+
 ---
 
 ## Common Workflows
@@ -289,6 +388,20 @@ Save to `/artifacts/literature-tree.md` and update incrementally.
 
 1. **Read:** `fetch_paper --url "https://arxiv.org/abs/2301.12345"` → choose reading level → notes
 
+### Workflow 6: Ambiguous Query Resolution
+
+> "Find the latest about deepseek engram"
+
+1. **Disambiguate:**
+   - Intent: ambiguous term (project/module name)
+   - `scholar_search` returns 0 results → broaden search
+   - Web search reveals: GitHub repo `deepseek-ai/Engram`, actual paper title "Conditional Memory via Scalable Lookup"
+   - Extract arXiv ID: `2601.07372`
+2. **Discover:** `scholar_search` with resolved title + `github_search` with original term + `citation_traverse` on arXiv ID
+3. **Evaluate:** Review results, check code via `find_code` or GitHub
+4. **Read:** `fetch_paper` for top papers
+5. **Organize:** `literature_report.py --intent survey` to generate structured report
+
 ---
 
 ## Script Reference
@@ -315,6 +428,7 @@ Scripts accept multiple ID formats and normalize automatically:
 | arXiv | 1 req / 3s (courtesy) | N/A |
 | Jina Reader | Free tier | Higher with key |
 | Papers With Code | Generous | N/A |
+| GitHub | 10 req/min | 5,000 req/hr |
 
 ### Error Handling
 
