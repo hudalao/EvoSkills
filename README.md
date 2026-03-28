@@ -52,6 +52,7 @@ Simply ask the agent in conversation:
 | [`paper-rebuttal`](#-paper-rebuttal--rebuttal-writing-after-peer-review) | 💬 Rebuttal writing after peer review |
 | [`academic-slides`](#-academic-slides--presentation--research-talk-creation) | 🎤 Academic presentation & research talk creation |
 | [`evo-memory`](#-evo-memory--persistent-research-memory--self-evolution) | 🧠 Persistent research memory & self-evolution |
+| [`paper-navigator`](#-paper-navigator--academic-paper-discovery--reading) | 📚 End-to-end academic paper discovery, reading & organization |
 
 > **Paper Suite + Self-Evolution Suite**: Each skill is self-contained — use them individually or combine freely. The self-evolution skills (`idea-tournament`, `experiment-pipeline`, `evo-memory`) form a learning loop that improves across research cycles.
 
@@ -77,16 +78,19 @@ The diagram above shows the full EvoScientist pipeline. The **Researcher Agent**
 ```mermaid
 flowchart LR
     A["<b>🔬 Research Phase</b><br/>💡 research-ideation<br/>🏆 idea-tournament"]
-    --> B["<b>⚙️ Experiment Phase</b><br/>📐 paper-planning<br/>🧪 experiment-pipeline<br/>🔧 experiment-craft"]
+    --> B["<b>⚙️ Experiment Phase</b><br/>📐 paper-planning<br/>🧪 experiment-pipeline<br/>🔧 experiment-craft<br/>🔄 experiment-iterative-coder"]
     --> C["<b>📝 Writing Phase</b><br/>✍️ paper-writing<br/>🔍 paper-review<br/>💬 paper-rebuttal<br/>🎤 academic-slides"]
 
     D[("🧠 evo-memory<br/>(IDE · IVE · ESE)")] <--> A
     D <--> B
+    E["📚 paper-navigator<br/>(standalone)"] -.-> A
+    E -.-> B
 
     style A fill:#7C3AED,stroke:#5B21B6,stroke-width:2px,color:#fff
     style B fill:#D97706,stroke:#B45309,stroke-width:2px,color:#fff
     style C fill:#16A34A,stroke:#15803D,stroke-width:2px,color:#fff
     style D fill:#475569,stroke:#334155,stroke-width:2px,color:#fff
+    style E fill:#0369A1,stroke:#075985,stroke-width:2px,color:#fff
 ```
 
 ---
@@ -207,15 +211,30 @@ The learning layer that accumulates knowledge across research cycles. Maintains 
 
 Read by `idea-tournament` and `experiment-pipeline` at cycle start; updated after each cycle completes.
 
+### 📚 `paper-navigator` — Academic Paper Discovery & Reading
+
+End-to-end paper workflow in five stages — from query to organized literature map:
+
+- **Disambiguate** — Analyze user intent, resolve ambiguous terms (project names, module names) to actual paper titles
+- **Discover** — 7 discovery paths: keyword search, citation traversal, recommendations, author tracking, arXiv monitoring, trending detection, GitHub search
+- **Evaluate** — Quick assessment via TLDR, citations, code availability (HuggingFace + GitHub), and top models by task
+- **Read** — Full-text retrieval via Jina Reader with 3-level reading strategy (Technical, Analytical, Contextual)
+- **Organize** — Build novelty trees, challenge-insight trees, and generate structured literature reports (survey, quick scan, deep dive, baseline hunt)
+
+Includes 12 Python scripts powered by Semantic Scholar, HuggingFace, GitHub, arXiv, and Jina Reader APIs.
+
 <p align="right"><a href="#top">🔝Back to top</a></p>
 
 ## 🎯 ᯓ➤ Roadmap
 
-Coming soon:
+Completed:
 - [x] 🧠 **Self-Evolution Suite** — `idea-tournament`, `experiment-pipeline`, `evo-memory`
+- [x] 📚 **Literature Survey** — Systematic literature search, filtering, and survey generation
+- [x] 🔄 **Iterative Coder** — Iterative code refinement with plan → code → evaluate → refine cycles
+
+Coming soon:
 - [ ] 🏅 **Math Olympiad** — Advanced mathematical reasoning & problem solving
 - [ ] 🎨 **Visual Generation** — Diagrams, figures & graphic content creation
-- [ ] 📚 **Literature Survey** — Systematic literature search, filtering, and survey generation
 - [ ] 🔬 **Paper Reproduction** — Read a paper, reproduce its core results, and verify claims
 - [ ] 💡 **Grant & Proposal Writing** — Research proposal drafting with funding agency conventions
 - [ ] 🤖 **Peer Debate** — Multi-agent adversarial discussion to stress-test research ideas
@@ -267,6 +286,15 @@ Stay tuned — more skills are on the way!
           <sub><b>Dinos Papakostas</b></sub>
         </a>
       </td>
+      <td align="center">
+        <a href="https://go0day.github.io/">
+          <img src="https://go0day.github.io/authors/admin/avatar_hu_ee1051aceae96124.png"
+               width="100" height="100"
+               style="object-fit: cover; border-radius: 20%;" alt="Yuyue Zhao"/>
+          <br />
+          <sub><b>Yuyue Zhao</b></sub>
+        </a>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -280,6 +308,12 @@ For any enquiries or collaboration opportunities, please contact: [**EvoScientis
 ## 🤝 Contributing
 
 We welcome contributions! See the guides for [skills](./skills/README.md) and [MCP servers](./mcp/README.md), or start with the [Contributing Guidelines](./CONTRIBUTING.md).
+
+Every contribution brings us one step closer to a future where AI accelerates scientific breakthroughs for all of humanity.
+
+<a href="https://github.com/EvoScientist/EvoSkills/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=EvoScientist/EvoSkills" />
+</a>
 
 ### 📈 Star History
 
