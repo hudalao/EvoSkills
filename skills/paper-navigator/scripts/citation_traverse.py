@@ -14,7 +14,7 @@ import httpx
 
 from utils import S2_BASE, s2_headers, request_with_retry, normalize_paper_id
 
-S2_FIELDS = "paperId,externalIds,title,authors,year,citationCount,influentialCitationCount,tldr,isOpenAccess,openAccessPdf"
+S2_FIELDS = "paperId,externalIds,title,authors,year,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf"
 
 
 def get_citations(
@@ -27,7 +27,9 @@ def get_citations(
         data = request_with_retry(
             c, f"{S2_BASE}/paper/{paper_id}/citations", params, s2_headers()
         )
-        return [c2["citingPaper"] for c2 in data.get("data", []) if c2.get("citingPaper")]
+        return [
+            c2["citingPaper"] for c2 in data.get("data", []) if c2.get("citingPaper")
+        ]
 
     if client:
         return _fetch(client)
