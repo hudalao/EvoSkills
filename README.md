@@ -54,6 +54,7 @@ Simply ask the agent in conversation:
 | [`paper-navigator`](#-paper-navigator--academic-paper-discovery--reading) | 📚 Academic paper discovery, evaluation & reading |
 | [`research-survey`](#-research-survey--literature-survey--synthesis) | 📝 Structured literature survey synthesis |
 | [`nano-banana`](#-nano-banana--ai-generated-slides--illustrations) | 🍌 AI-generated presentation slides & illustrations via Gemini |
+| [`evomath-tao`](#-evomath-tao--tao-style-olympiad-proof-workflow) | 🧮 Tao-style olympiad-grade proof workflow with calibrated abstention |
 
 > **Paper Suite + Self-Evolution Suite**: Each skill is self-contained — use them individually or combine freely. The self-evolution loop now runs through `research-ideation`, `experiment-pipeline`, and `evo-memory`.
 
@@ -87,6 +88,8 @@ flowchart LR
     E["📚 paper-navigator<br/>(standalone)"] -.-> A
     E -.-> B
     F["🍌 nano-banana<br/>(standalone)"] -.-> C
+    G["🧮 evomath-tao<br/>(standalone)"] -.-> A
+    G -.-> B
 
     style A fill:#7C3AED,stroke:#5B21B6,stroke-width:2px,color:#fff
     style B fill:#D97706,stroke:#B45309,stroke-width:2px,color:#fff
@@ -94,6 +97,7 @@ flowchart LR
     style D fill:#475569,stroke:#334155,stroke-width:2px,color:#fff
     style E fill:#0369A1,stroke:#075985,stroke-width:2px,color:#fff
     style F fill:#D97706,stroke:#B45309,stroke-width:2px,color:#fff
+    style G fill:#BE185D,stroke:#9D174D,stroke-width:2px,color:#fff
 ```
 
 ---
@@ -233,6 +237,19 @@ Generate professional presentation slides and high-quality illustrations using G
 - **Multi-Model Support** — `gemini-3-pro-image-preview` (best quality), `gemini-3.1-flash-image-preview` (fast iteration), `gemini-2.5-flash-image` (rapid prototyping)
 - **Counterintuitive Rules** — More planning = better slides; edit don't regenerate; never read generated images yourself (use the review server)
 
+### 🧮 `evomath-tao` — Tao-style Olympiad Proof Workflow
+
+A rigorous proof workflow that operationalizes Terence Tao's research-math practice for contest-style mathematics. Outputs a complete proof, a verified counterexample, a calibrated partial result, or a clean handoff — never a hand-waved "PROVED":
+
+- **5-Step Protocol** — Plan Briefly → Try Candidates → Assemble → Audit → Reflect, driven by TodoWrite + per-phase validators
+- **5-Round Internal Mini-Process per Candidate** — Solve → Self-improve → Self-verify → Correct → Repeat. **No tool use during Solve** (pencil-and-paper discipline)
+- **5 Honest Status Labels** — `PROVED` / `REFUTED` / `VERIFIED_NUMERICALLY` / `CONJECTURED` / `HANDED_OFF`. Numerical evidence is NOT a proof
+- **3-Safeguard Audit** — Verifier context isolation, asymmetric voting (4 HOLDS to confirm, 2 HOLE FOUND to refute), pigeonhole exit
+- **Named-Pattern Screen** — Library of recurring failure modes (P4, P5, P6, P18, P40, P41) checked before any PROVED award
+- **Calibrated Abstention** — When verification fails repeatedly, the skill downgrades the status instead of bluffing
+
+**IMO 2025 evaluation (Claude Opus 4.7, 6 parallel subagents):** 4 PROVED (P1 / P2 / P4 / P5) · 1 CONJECTURED (P3, c = 4 with odd-prime gap) · 1 HANDED_OFF (P6, 2112 sketched). All 6 numeric/classification answers match the official IMO 2025 keys.
+
 <p align="right"><a href="#top">🔝Back to top</a></p>
 
 ## 🎯 ᯓ➤ Roadmap
@@ -242,9 +259,9 @@ Completed:
 - [x] 📚 **Literature Survey** — Systematic literature search, filtering, and survey generation
 - [x] 🔄 **Iterative Coder** — Iterative code refinement with plan → code → evaluate → refine cycles
 - [x] 🎨 **Visual Generation** — AI-generated slides & illustrations (`nano-banana`)
+- [x] 🏅 **Math Olympiad** — Tao-style proof workflow with calibrated abstention (`evomath-tao`)
 
 Coming soon:
-- [ ] 🏅 **Math Olympiad** — Advanced mathematical reasoning & problem solving
 - [ ] 🔬 **Paper Reproduction** — Read a paper, reproduce its core results, and verify claims
 - [ ] 💡 **Grant & Proposal Writing** — Research proposal drafting with funding agency conventions
 - [ ] 🤖 **Peer Debate** — Multi-agent adversarial discussion to stress-test research ideas
