@@ -38,7 +38,7 @@ def resolve_paper_url(paper_id: str) -> tuple[str, dict]:
     if no_key and pid.startswith("ArXiv:"):
         arxiv_id = pid[6:]
         print(
-            f"ℹ️  No S2_API_KEY — skipping S2 metadata fetch, using arXiv URL directly.",
+            "ℹ️  No S2_API_KEY — skipping S2 metadata fetch, using arXiv URL directly.",
             file=sys.stderr,
         )
         result = (f"https://arxiv.org/abs/{arxiv_id}", {

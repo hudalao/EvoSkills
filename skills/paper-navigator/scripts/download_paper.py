@@ -223,7 +223,7 @@ def main():
 
     # Markdown summary
     ok = sum(1 for r in results if r["status"] in ("downloaded", "cached"))
-    print(f"\n## Download Summary\n")
+    print("\n## Download Summary\n")
     print(f"**{ok}/{len(ids)} succeeded** — saved to `{PAPERS_DIR}`\n")
     print("| # | Status | Size | Title |")
     print("|---|--------|------|-------|")

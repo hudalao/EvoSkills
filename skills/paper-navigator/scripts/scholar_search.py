@@ -11,7 +11,7 @@ import argparse
 import json
 import sys
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
 import httpx
 
@@ -43,13 +43,11 @@ def _fallback_arxiv_search(
     if not words:
         words = query.split()  # all stopwords? fall back to raw split
     if len(words) >= 2:
-        ti_clause = " AND ".join(f"ti:{w}" for w in words)
-        abs_clause = " AND ".join(f"abs:{w}" for w in words)
+        # all: matches title|abstract|comment — broadest recall.
+        # ti:/abs: disjunction was tried in earlier versions but had worse recall on
+        # natural-language queries; arXiv's all: handles this better.
         all_clause = " AND ".join(f"all:{w}" for w in words)
-        # all: matches title|abstract|comment — broadest recall
         kw_query = f"({all_clause})"
-        # If too restrictive (e.g. AND on 5+ specialized terms), arxiv may return 0.
-        # The `all:` operator handles this better than ti/abs disjunction for natural-language queries.
     else:
         kw_query = f"all:{words[0]}"
 

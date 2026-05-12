@@ -80,7 +80,7 @@ def main():
 
     if not INDEX_PATH.exists():
         print(f"No local library at {PAPERS_DIR} (index.json missing).", file=sys.stderr)
-        print(f"Run download_paper.py to populate.", file=sys.stderr)
+        print("Run download_paper.py to populate.", file=sys.stderr)
         if args.json:
             print(json.dumps({"papers_dir": str(PAPERS_DIR), "results": [], "exists": False}))
         sys.exit(1 if not args.json else 0)
