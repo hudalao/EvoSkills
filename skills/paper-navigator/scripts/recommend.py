@@ -14,12 +14,11 @@ import sys
 import httpx
 
 from utils import (
-    MissingSemanticScholarKey,
     S2_BASE,
     S2_RECOMMEND_BASE,
-    normalize_paper_id,
-    request_with_retry,
     s2_headers,
+    request_with_retry,
+    normalize_paper_id,
 )
 
 S2_FIELDS = "paperId,externalIds,title,authors,year,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf"
@@ -32,8 +31,6 @@ def _resolve_to_s2_id(client: httpx.Client, paper_id: str) -> str:
             client, f"{S2_BASE}/paper/{paper_id}", {"fields": "paperId"}, s2_headers()
         )
         return data.get("paperId", paper_id)
-    except MissingSemanticScholarKey:
-        raise
     except Exception:
         return paper_id
 
@@ -112,6 +109,22 @@ def main():
     parser.add_argument(
         "--limit", "-l", type=int, default=10, help="Max results (default 10)"
     )
+    parser.add_argument(
+        "--min-citations",
+        type=int,
+        default=0,
+        help="Filter papers with fewer citations (default 0 = no filter). Use 50-100 to surface canonical works.",
+    )
+    parser.add_argument(
+        "--canonical",
+        action="store_true",
+        help="Shortcut for --min-citations 50 + larger pool. Surfaces foundational papers instead of recent preprints.",
+    )
+    parser.add_argument(
+        "--year-max",
+        type=int,
+        help="Filter papers published after this year (e.g. --year-max 2023 excludes 2024-2026).",
+    )
     parser.add_argument("--json", action="store_true", help="Output raw JSON")
     args = parser.parse_args()
 
@@ -126,19 +139,42 @@ def main():
         print("Error: at least one positive paper ID required", file=sys.stderr)
         sys.exit(1)
 
-    try:
-        papers = recommend(positive, negative, args.limit)
-    except MissingSemanticScholarKey:
-        print(
-            "Semantic Scholar is disabled because S2_API_KEY is not set. "
-            "Ask the user to provide a Semantic Scholar key before running "
-            "paper recommendations.",
-            file=sys.stderr,
-        )
-        sys.exit(0)
+    # Determine pool size and min-citations
+    min_cites = args.min_citations
+    if args.canonical:
+        min_cites = max(min_cites, 50)
+
+    # Over-fetch if we're filtering (S2 returns newest first)
+    pool_size = args.limit
+    if min_cites > 0 or args.year_max:
+        pool_size = max(args.limit * 10, 100)
+
+    papers = recommend(positive, negative, pool_size)
+
+    # Filter by min_citations
+    if min_cites > 0:
+        papers = [p for p in papers if (p.get("citationCount") or 0) >= min_cites]
+
+    # Filter by year_max
+    if args.year_max:
+        papers = [p for p in papers if (p.get("year") or 0) <= args.year_max]
+
+    # Sort by citations when filtering (canonical mode wants high-impact first)
+    if min_cites > 0 or args.canonical:
+        papers.sort(key=lambda p: p.get("citationCount", 0), reverse=True)
+
+    papers = papers[: args.limit]
 
     if not papers:
-        print("No recommendations found.", file=sys.stderr)
+        if min_cites > 0:
+            print(
+                f"⚠ No recommendations passed --min-citations {min_cites}. "
+                f"S2's recommend endpoint returns recent preprints (typically 0-citation). "
+                f"For canonical similar papers, try: `scholar_search.py --query '<topic>' --sort-by citations`",
+                file=sys.stderr,
+            )
+        else:
+            print("No recommendations found.", file=sys.stderr)
         sys.exit(0)
 
     if args.json:

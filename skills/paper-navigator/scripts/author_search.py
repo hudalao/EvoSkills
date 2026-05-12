@@ -7,7 +7,7 @@ import sys
 
 import httpx
 
-from utils import MissingSemanticScholarKey, S2_BASE, request_with_retry, s2_headers
+from utils import S2_BASE, s2_headers, request_with_retry
 
 AUTHOR_FIELDS = "authorId,name,affiliations,paperCount,citationCount,hIndex"
 PAPER_FIELDS = "paperId,externalIds,title,year,citationCount,isOpenAccess,openAccessPdf"
@@ -71,6 +71,14 @@ def main():
         "--limit", "-l", type=int, default=20, help="Max papers (default 20)"
     )
     parser.add_argument("--sort-by", choices=["citations", "year"], default="year")
+    parser.add_argument("--year-min", type=int, help="Keep only papers with year >= this (client-side filter; S2 API has no server-side year filter for author papers)")
+    parser.add_argument("--year-max", type=int, help="Keep only papers with year <= this")
+    parser.add_argument(
+        "--candidate-pool",
+        type=int,
+        default=200,
+        help="Internal fetch size when year filter is set (default 200). Increase for prolific authors.",
+    )
     parser.add_argument("--json", action="store_true", help="Output raw JSON")
     args = parser.parse_args()
 
@@ -81,16 +89,7 @@ def main():
     # Resolve author ID
     author_id = args.author_id
     if not author_id:
-        try:
-            authors = search_author(args.name)
-        except MissingSemanticScholarKey:
-            print(
-                "Semantic Scholar is disabled because S2_API_KEY is not set. "
-                "Ask the user to provide a Semantic Scholar key before running "
-                "author search.",
-                file=sys.stderr,
-            )
-            sys.exit(0)
+        authors = search_author(args.name)
         if not authors:
             print(f"No author found for '{args.name}'", file=sys.stderr)
             sys.exit(0)
@@ -111,16 +110,15 @@ def main():
 
     # Get papers
     if args.papers or args.author_id:
-        try:
-            papers = get_author_papers(author_id, args.limit)
-        except MissingSemanticScholarKey:
-            print(
-                "Semantic Scholar is disabled because S2_API_KEY is not set. "
-                "Ask the user to provide a Semantic Scholar key before listing "
-                "author papers.",
-                file=sys.stderr,
-            )
-            sys.exit(0)
+        # When year filtering, over-fetch from candidate-pool so we still get N results after filter
+        fetch_size = args.candidate_pool if (args.year_min or args.year_max) else args.limit
+        papers = get_author_papers(author_id, fetch_size)
+
+        # Year filters (client-side; S2 has no server-side year param for /author/{id}/papers)
+        if args.year_min is not None:
+            papers = [p for p in papers if (p.get("year") or 0) >= args.year_min]
+        if args.year_max is not None:
+            papers = [p for p in papers if (p.get("year") or 0) <= args.year_max]
 
         if args.sort_by == "citations":
             papers.sort(key=lambda p: p.get("citationCount", 0), reverse=True)

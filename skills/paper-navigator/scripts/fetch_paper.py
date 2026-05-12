@@ -7,56 +7,53 @@ convert the paper page to clean Markdown.
 
 import argparse
 import json
+import os
 import sys
+from pathlib import Path
 
 import httpx
 
 from utils import (
     S2_BASE,
     JINA_PREFIX,
-    MissingSemanticScholarKey,
-    _strip_arxiv_version,
-    jina_headers,
-    normalize_paper_id,
-    request_with_retry,
     s2_headers,
+    jina_headers,
+    request_with_retry,
+    normalize_paper_id,
+    _strip_arxiv_version,
+    print_s2_key_tip,
 )
+
+PAPERS_DIR = Path(os.environ.get("PAPERS_DIR", str(Path.home() / "papers")))
 
 
 def resolve_paper_url(paper_id: str) -> tuple[str, dict]:
     """Resolve paper ID to best available URL + metadata."""
     pid = normalize_paper_id(paper_id)
 
+    # No-key fast path: if S2_API_KEY unset AND we have a direct arXiv ID,
+    # skip the S2 metadata fetch (which costs ~45s under no-key rate limit).
+    # The arxiv URL works directly with Jina Reader, and arxiv ID is all we need.
+    no_key = not os.environ.get("S2_API_KEY")
+    if no_key and pid.startswith("ArXiv:"):
+        arxiv_id = pid[6:]
+        print(
+            f"ℹ️  No S2_API_KEY — skipping S2 metadata fetch, using arXiv URL directly.",
+            file=sys.stderr,
+        )
+        result = (f"https://arxiv.org/abs/{arxiv_id}", {
+            "externalIds": {"ArXiv": arxiv_id},
+            "title": "(metadata not fetched in no-key mode; use --paper-id with key for full TLDR/citations)",
+        })
+        print_s2_key_tip()
+        return result
+
     fields = "paperId,externalIds,title,authors,year,citationCount,tldr,isOpenAccess,openAccessPdf,abstract"
 
-    try:
-        with httpx.Client() as client:
-            meta = request_with_retry(
-                client, f"{S2_BASE}/paper/{pid}", {"fields": fields}, s2_headers()
-            )
-    except MissingSemanticScholarKey:
-        # Minimal direct resolution path when S2 is disabled.
-        if pid.startswith("ArXiv:"):
-            arxiv_id = pid.split(":", 1)[1]
-            return (
-                f"https://arxiv.org/abs/{arxiv_id}",
-                {
-                    "paperId": pid,
-                    "externalIds": {"ArXiv": arxiv_id},
-                    "title": f"ArXiv:{arxiv_id}",
-                },
-            )
-        if pid.startswith("DOI:"):
-            doi = pid.split(":", 1)[1]
-            return (
-                f"https://doi.org/{doi}",
-                {
-                    "paperId": pid,
-                    "externalIds": {"DOI": doi},
-                    "title": f"DOI:{doi}",
-                },
-            )
-        raise
+    with httpx.Client() as client:
+        meta = request_with_retry(
+            client, f"{S2_BASE}/paper/{pid}", {"fields": fields}, s2_headers()
+        )
 
     # Determine best URL
     url = ""
@@ -144,6 +141,11 @@ def main():
         help="Only show metadata, skip full text",
     )
     parser.add_argument("--json", action="store_true", help="Output raw JSON")
+    parser.add_argument(
+        "--cache",
+        action="store_true",
+        help="Use $PAPERS_DIR/<id>/content.md cache (read if exists, write after fetch)",
+    )
     args = parser.parse_args()
 
     if not args.paper_id and not args.url:
@@ -163,16 +165,7 @@ def main():
             except Exception:
                 pass
     else:
-        try:
-            url, meta = resolve_paper_url(args.paper_id)
-        except MissingSemanticScholarKey:
-            print(
-                "Semantic Scholar is disabled because S2_API_KEY is not set. "
-                "Ask the user to provide a Semantic Scholar key, or call "
-                "fetch_paper with a direct --url / ArXiv / DOI identifier.",
-                file=sys.stderr,
-            )
-            sys.exit(0)
+        url, meta = resolve_paper_url(args.paper_id)
 
     if args.json:
         output = {"metadata": meta, "url": url}
@@ -196,9 +189,29 @@ def main():
             print(f"\n## Abstract (full text not available)\n\n{meta['abstract']}\n")
         sys.exit(1)
 
+    # Cache lookup (if --cache and we have an arxiv id key)
+    arxiv_id = None
+    ext = (meta or {}).get("externalIds", {}) or {}
+    if ext.get("ArXiv"):
+        arxiv_id = _strip_arxiv_version(ext["ArXiv"])
+
+    if args.cache and arxiv_id:
+        cached_md = PAPERS_DIR / arxiv_id / "content.md"
+        if cached_md.exists():
+            print(f"*Cache hit: {cached_md}*\n", file=sys.stderr)
+            print(cached_md.read_text())
+            return
+
     print(f"*Fetching from: {url}*\n", file=sys.stderr)
     content = fetch_via_jina(url, args.limit_chars)
     print(content)
+
+    # Cache write (if --cache and we have an arxiv id key)
+    if args.cache and arxiv_id:
+        cache_dir = PAPERS_DIR / arxiv_id
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        (cache_dir / "content.md").write_text(content)
+        print(f"\n*Cached to {cache_dir / 'content.md'}*", file=sys.stderr)
 
 
 if __name__ == "__main__":

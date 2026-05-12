@@ -11,28 +11,16 @@ import argparse
 import json
 import sys
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
-from xml.parsers.expat import ExpatError
+from datetime import datetime, timedelta, timezone
 
 import httpx
 
-from utils import (
-    S2_BASE,
-    MissingSemanticScholarKey,
-    RateLimitExhausted,
-    arxiv_headers,
-    normalize_paper_id,
-    request_with_retry,
-    s2_headers,
-)
+from utils import S2_BASE, s2_headers, request_with_retry, RateLimitExhausted, arxiv_headers, print_s2_key_tip
 
 S2_FIELDS = "paperId,externalIds,title,authors,year,citationCount,influentialCitationCount,tldr,isOpenAccess,openAccessPdf,publicationVenue,abstract"
 
 ARXIV_API = "https://export.arxiv.org/api/query"
-ARXIV_NS = {
-    "atom": "http://www.w3.org/2005/Atom",
-    "arxiv": "http://arxiv.org/schemas/atom",
-}
+ARXIV_NS = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
 
 
 def _fallback_arxiv_search(
@@ -46,14 +34,24 @@ def _fallback_arxiv_search(
     Uses flexible AND-of-words matching in title and abstract.
     Returns results in S2-compatible dict format.
     """
-    # Split query into words, use AND logic for title/abstract matching
-    words = query.split()
-    if len(words) > 1:
+    # Build robust arXiv search query.
+    # Strategy: drop common stop words, use OR-of-content-words (arXiv API ranks by relevance).
+    # Stopwords + 1-2 letter tokens dilute recall when AND'd.
+    STOP = {"is", "a", "an", "the", "of", "in", "on", "for", "to", "with",
+            "and", "or", "you", "all", "this", "that", "by", "at", "as", "from"}
+    words = [w for w in query.split() if w.lower() not in STOP and len(w) > 2]
+    if not words:
+        words = query.split()  # all stopwords? fall back to raw split
+    if len(words) >= 2:
         ti_clause = " AND ".join(f"ti:{w}" for w in words)
         abs_clause = " AND ".join(f"abs:{w}" for w in words)
-        kw_query = f"({ti_clause}) OR ({abs_clause})"
+        all_clause = " AND ".join(f"all:{w}" for w in words)
+        # all: matches title|abstract|comment — broadest recall
+        kw_query = f"({all_clause})"
+        # If too restrictive (e.g. AND on 5+ specialized terms), arxiv may return 0.
+        # The `all:` operator handles this better than ti/abs disjunction for natural-language queries.
     else:
-        kw_query = f"ti:{words[0]} OR abs:{words[0]}"
+        kw_query = f"all:{words[0]}"
 
     # Date filtering
     date_parts = []
@@ -86,14 +84,7 @@ def _fallback_arxiv_search(
         return []
 
     # Parse arXiv XML and convert to S2-compatible format
-    # Reject XML with DTD/entity declarations before parsing to avoid XXE-style inputs.
-    if "<!DOCTYPE" in xml_text or "<!ENTITY" in xml_text:
-        raise ValueError("Unsafe XML payload from arXiv API")
-
-    try:
-        root = ET.fromstring(xml_text)
-    except (ET.ParseError, ExpatError) as exc:
-        raise ValueError("Invalid XML payload from arXiv API") from exc
+    root = ET.fromstring(xml_text)
     entries = root.findall("atom:entry", ARXIV_NS)
     papers = []
     for entry in entries:
@@ -162,8 +153,26 @@ def search(
     year_min: int | None = None,
     year_max: int | None = None,
     open_access_only: bool = False,
+    prefer_arxiv: bool = False,
 ) -> list[dict]:
-    """Search S2 for papers matching query. Falls back to arXiv on rate limit."""
+    """Search for papers matching query.
+
+    Tries S2 first by default. Falls back to arXiv on rate limit.
+    If `prefer_arxiv` is True (auto-set when S2_API_KEY missing), skips S2 entirely
+    to avoid the 30+s backoff penalty under no-key rate limits.
+    """
+    # No-key mode: arxiv-first to avoid 429 wait penalty
+    import os
+    no_key = not os.environ.get("S2_API_KEY")
+    if prefer_arxiv or no_key:
+        print(
+            "ℹ️  No S2_API_KEY detected — using arXiv as primary search to skip S2 rate-limit penalty.",
+            file=sys.stderr,
+        )
+        results = _fallback_arxiv_search(query, limit, year_min, year_max)
+        print_s2_key_tip()
+        return results
+
     try:
         params: dict = {
             "query": query,
@@ -182,13 +191,6 @@ def search(
                 client, f"{S2_BASE}/paper/search", params, s2_headers()
             )
         return data.get("data", [])
-    except MissingSemanticScholarKey:
-        print(
-            "⚠️  S2_API_KEY is not set. Skipping Semantic Scholar and using arXiv "
-            "search instead...",
-            file=sys.stderr,
-        )
-        return _fallback_arxiv_search(query, limit, year_min, year_max)
     except RateLimitExhausted:
         print(
             "⚠️  S2 rate limited after all retries. Falling back to arXiv search...",
@@ -297,16 +299,7 @@ def main():
         sys.exit(1)
 
     if args.paper_id:
-        try:
-            paper = get_paper(normalize_paper_id(args.paper_id))
-        except MissingSemanticScholarKey:
-            print(
-                "⚠️  S2_API_KEY is not set. Cannot fetch paper by S2 ID without a key.\n"
-                "Provide a direct arXiv ID (e.g. ArXiv:2501.12948), DOI, or use "
-                "--url with fetch_paper instead.",
-                file=sys.stderr,
-            )
-            sys.exit(0)
+        paper = get_paper(args.paper_id)
         if args.json:
             print(json.dumps(paper, indent=2))
         else:

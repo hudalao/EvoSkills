@@ -38,31 +38,45 @@ class RateLimitExhausted(Exception):
     pass
 
 
-class MissingSemanticScholarKey(Exception):
-    """Semantic Scholar access requested without S2_API_KEY configured."""
-
-    pass
-
-
 def _is_s2_url(url: str) -> bool:
     """Check if URL targets Semantic Scholar API."""
     return url.startswith(S2_BASE) or url.startswith(S2_RECOMMEND_BASE)
 
 
-def has_s2_api_key() -> bool:
-    """Return whether Semantic Scholar API access is configured."""
-    return bool(os.environ.get("S2_API_KEY"))
-
-
 def pace_s2_request() -> None:
     """Enforce minimum interval between Semantic Scholar API calls."""
     global _last_s2_request_time
-    interval = S2_MIN_INTERVAL_WITH_KEY if has_s2_api_key() else S2_MIN_INTERVAL
+    has_key = bool(os.environ.get("S2_API_KEY"))
+    interval = S2_MIN_INTERVAL_WITH_KEY if has_key else S2_MIN_INTERVAL
     elapsed = time.time() - _last_s2_request_time
     if elapsed < interval:
         time.sleep(interval - elapsed)
     _last_s2_request_time = time.time()
 
+
+_S2_TIP_SHOWN = False
+
+
+def print_s2_key_tip() -> None:
+    """Print a one-time tip nudging the user toward registering an S2 API key.
+
+    Called from scripts that detected missing `S2_API_KEY` and routed to arXiv.
+    Tip is printed at most once per process to stderr.
+    """
+    global _S2_TIP_SHOWN
+    if _S2_TIP_SHOWN:
+        return
+    if os.environ.get("S2_API_KEY"):
+        return  # already has key
+    _S2_TIP_SHOWN = True
+    print(
+        "\n💡 Tip: this search ran in arXiv-only mode (no S2_API_KEY).\n"
+        "   Register a FREE Semantic Scholar API key at https://www.semanticscholar.org/product/api\n"
+        "   to unlock: citation counts in results, TLDR summaries, and the citation_traverse /\n"
+        "   recommend / trending / author_search tools (all S2-bound, disabled without a key).\n"
+        "   Then set: export S2_API_KEY='your-key-here'",
+        file=sys.stderr,
+    )
 
 DEFAULT_USER_AGENT = "EvoScientist/1.0 (paper-navigator)"
 
@@ -136,11 +150,6 @@ def request_with_retry(
     """
     # Apply global rate pacer for Semantic Scholar API
     if _is_s2_url(url):
-        if not has_s2_api_key():
-            raise MissingSemanticScholarKey(
-                "S2_API_KEY is not set. Ask the user to provide a Semantic Scholar "
-                "API key, or continue with non-S2 sources."
-            )
         pace_s2_request()
 
     last_was_rate_limited = False
@@ -197,8 +206,15 @@ def _strip_arxiv_version(arxiv_id: str) -> str:
     return re.sub(r"v\d+$", "", arxiv_id)
 
 
+_ARXIV_BARE_PATTERN = re.compile(r"^\d{4}\.\d{4,5}(v\d+)?$")
+
+
 def normalize_paper_id(raw: str) -> str:
-    """Normalize paper ID: strip URL prefixes, add ArXiv:/DOI: prefix."""
+    """Normalize paper ID: strip URL prefixes, add ArXiv:/DOI: prefix.
+
+    Handles: arXiv URLs, ArXiv:/arxiv: prefixed IDs, DOIs (10.x),
+    and bare arXiv IDs (e.g. '1706.03762' or '1706.03762v3').
+    """
     raw = raw.strip()
     for prefix in [
         "https://arxiv.org/abs/",
@@ -214,4 +230,7 @@ def normalize_paper_id(raw: str) -> str:
         return f"ArXiv:{id_part}"
     if raw.startswith("10."):
         return f"DOI:{raw}"
+    # Bare arXiv ID (e.g. "1706.03762" or "1706.03762v3")
+    if _ARXIV_BARE_PATTERN.match(raw):
+        return f"ArXiv:{_strip_arxiv_version(raw)}"
     return raw

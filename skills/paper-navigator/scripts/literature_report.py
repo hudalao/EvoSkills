@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 
 import httpx
 
-from utils import MissingSemanticScholarKey, S2_BASE, request_with_retry, s2_headers
+from utils import S2_BASE, s2_headers, request_with_retry
 
 S2_FIELDS = (
     "paperId,externalIds,title,authors,year,citationCount,"
@@ -241,17 +241,9 @@ def _report_survey(papers: list[tuple[str, dict]]) -> str:
         lines.append(
             f"- **Must-read:** {top.get('title', 'Unknown')} (highest citations)"
         )
-        by_year = sorted(
-            [(pid, p) for pid, p in papers if p is not None],
-            key=lambda x: (x[1].get("year") or 0, x[1].get("publicationDate") or ""),
-            reverse=True,
-        )
-        if len(by_year) > 1:
-            recent = by_year[0][1]
-            lines.append(
-                f"- **Watch:** {recent.get('title', 'Unknown')} "
-                f"(most recent, {recent.get('year', '?')})"
-            )
+        if len(sorted_papers) > 1:
+            recent = sorted_papers[-1][1]
+            lines.append(f"- **Watch:** {recent.get('title', 'Unknown')} (most recent)")
     lines.append("- Use `citation_traverse` on key papers to discover related work")
     lines.append("- Use `find_code` to check reproducibility of promising papers")
 
@@ -425,7 +417,7 @@ def main():
         "--intent",
         choices=["survey", "quick_scan", "deep_dive", "baseline_hunt"],
         default="survey",
-        help="Report type (default: survey). Note: 'survey' and 'deep_dive' intents are deprecated — use the research-survey skill for full survey reports.",
+        help="Report type (default: survey)",
     )
     parser.add_argument(
         "--output", "-o", help="Output file path (also prints to stdout)"
@@ -444,16 +436,7 @@ def main():
     print(
         f"Fetching {len(paper_ids)} paper(s) from Semantic Scholar...", file=sys.stderr
     )
-    try:
-        results = fetch_papers(paper_ids)
-    except MissingSemanticScholarKey:
-        print(
-            "Semantic Scholar is disabled because S2_API_KEY is not set. "
-            "Ask the user to provide a Semantic Scholar key before "
-            "generating metadata-based literature reports.",
-            file=sys.stderr,
-        )
-        sys.exit(0)
+    results = fetch_papers(paper_ids)
 
     if args.json:
         output = {}

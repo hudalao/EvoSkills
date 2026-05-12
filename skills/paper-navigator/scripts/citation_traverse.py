@@ -14,13 +14,7 @@ import time
 
 import httpx
 
-from utils import (
-    MissingSemanticScholarKey,
-    S2_BASE,
-    normalize_paper_id,
-    request_with_retry,
-    s2_headers,
-)
+from utils import S2_BASE, s2_headers, request_with_retry, normalize_paper_id
 
 S2_FIELDS = "paperId,externalIds,title,authors,year,citationCount,influentialCitationCount,isOpenAccess,openAccessPdf"
 
@@ -145,6 +139,18 @@ def main():
     parser.add_argument(
         "--min-citations", type=int, default=0, help="Minimum citation count filter"
     )
+    parser.add_argument(
+        "--sort-by",
+        choices=["citations", "recency"],
+        default="citations",
+        help="Sort order (default citations). S2 returns newest first; --sort-by citations over-fetches and re-sorts.",
+    )
+    parser.add_argument(
+        "--candidate-pool",
+        type=int,
+        default=200,
+        help="Internal fetch size before sort/filter (default 200). Increase for foundational papers with many newer citers.",
+    )
     parser.add_argument("--json", action="store_true", help="Output raw JSON")
     args = parser.parse_args()
 
@@ -156,27 +162,25 @@ def main():
         "co-citation": "Co-cited Papers (frequently cited alongside this paper)",
     }
 
-    print(f"Fetching {args.direction} citations for {paper_id}...", file=sys.stderr)
+    # For citation-sorted forward/backward, over-fetch candidates so we don't return
+    # only the newest (most likely zero-cite) papers. S2's API has no server-side sort.
+    if args.direction in ("forward", "backward") and args.sort_by == "citations":
+        fetch_size = max(args.candidate_pool, args.limit)
+    else:
+        fetch_size = args.limit
 
-    try:
-        if args.direction == "forward":
-            papers = get_citations(paper_id, args.limit)
-        elif args.direction == "backward":
-            papers = get_references(paper_id, args.limit)
-        else:
-            print(
-                "⚠️  Co-citation requires multiple API calls (may be slow)…\n",
-                file=sys.stderr,
-            )
-            papers = get_co_citations(paper_id, args.limit)
-    except MissingSemanticScholarKey:
+    print(f"Fetching {args.direction} citations for {paper_id} (pool={fetch_size})...", file=sys.stderr)
+
+    if args.direction == "forward":
+        papers = get_citations(paper_id, fetch_size)
+    elif args.direction == "backward":
+        papers = get_references(paper_id, fetch_size)
+    else:
         print(
-            "Semantic Scholar is disabled because S2_API_KEY is not set. "
-            "Ask the user to provide a Semantic Scholar key before running "
-            "citation traversal.",
+            "⚠️  Co-citation requires multiple API calls (may be slow)…\n",
             file=sys.stderr,
         )
-        sys.exit(0)
+        papers = get_co_citations(paper_id, args.limit)
 
     # Filter by min citations
     if args.min_citations > 0:
@@ -184,8 +188,24 @@ def main():
             p for p in papers if (p.get("citationCount") or 0) >= args.min_citations
         ]
 
-    # Sort by citations
-    papers.sort(key=lambda p: p.get("citationCount", 0), reverse=True)
+    # Sort
+    if args.sort_by == "citations":
+        papers.sort(key=lambda p: p.get("citationCount", 0), reverse=True)
+    elif args.sort_by == "recency":
+        papers.sort(key=lambda p: p.get("year", 0), reverse=True)
+
+    # Warn when sort-by citations is requested but the API only returned newest-first papers
+    # (typical for foundational papers with 100k+ citations — even pool=1000 stays in this year)
+    if args.direction == "forward" and args.sort_by == "citations" and len(papers) >= 3:
+        max_cites = max(p.get("citationCount") or 0 for p in papers[:3])
+        if max_cites < 100:
+            print(
+                f"⚠ Forward citations API returned only recent low-citation papers (top={max_cites} cites). "
+                f"For foundational papers, S2 returns newest-first and may not surface impactful follow-ups. "
+                f"Alternative: `scholar_search.py --query '<topic from this paper>' --sort-by citations` to find high-impact descendants.",
+                file=sys.stderr,
+            )
+
     papers = papers[: args.limit]
 
     if not papers:
