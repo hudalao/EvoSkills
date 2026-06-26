@@ -1,6 +1,6 @@
 ---
 name: research-ideation
-description: "端到端科研想法生成流水线：文献接地→想法树多轴生成→三人格精炼→ELO 锦标赛排序→呈现 Top-3 供用户选择→扩展为高质量研究提案。适用于：寻找研究方向、头脑风暴、评估想法新颖性、设计新方案、排序比较多个想法、或从想法生成研究提案。不适用于检索/阅读论文（用 paper-navigator）。"
+description: "端到端科研想法生成流水线：长期目标→文献接地(challenge-insight 树)→想法树多轴生成→三人格精炼(创新/实用/批判)→ELO 锦标赛排序→呈现 Top-3 供用户选择→扩展为手稿级研究提案。适用于：寻找研究方向、头脑风暴、评估想法新颖性、设计新方案、排序比较多个想法、生成研究提案。不适用于检索/搜索/阅读论文（改用 paper-navigator）。"
 allowed-tools: "write_file edit_file read_file think_tool"
 metadata:
   author: EvoScientist
