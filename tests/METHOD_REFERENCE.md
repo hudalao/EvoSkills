@@ -102,6 +102,36 @@
 
 **graph**：8 个查询刻意避开技能文档自带的示例领域（技能作者调试时用过的例子≈训练样例，测它会高估）→ 锚点/边全部联网核验 → **检索冻结**（技能流程的检索步跑一次存 fixture，后续评测从固定论文池起跑——冻结动作本身就产出了第一个发现：检索层锚点召回仅 16.4%）→ 微基准单测审计步（40 对，负例按难度分四层：跨域哨底/并行同门/错轴归因/时序反向）→ e2e 双臂同提示词含输出契约。
 
+## 3.5 各技能评什么、怎么判（指标体系）
+
+**rebuttal**（确定性判分 `check_rebuttal.py`；judge 模式 `fab` / `quality` / `pairwise`）。被测 Agent 产出两个文件：`analysis.json`（策略分析）+ `rebuttal.md`（正文，每段用 `Addresses: R1.W2` 标记回应对象）。四个维度：
+
+| 维度 | 怎么判 |
+|---|---|
+| 诊断准确性 | 脚本：分数驱动意见识别的查准/查全（对照 `gt/score_driving.json` 的 high 集）、共性主题归并（编号集合交集 ≥2 即命中）、最友好审稿人识别 |
+| 执行纪律 | 脚本：全意见覆盖率（Addresses 标记齐不齐）、字数预算是否向高优先级意见倾斜 |
+| 诚实性 | 混合：脚本先扫"回应中出现、论文中不存在"的数字 → judge `fab` 逐个裁决（论文可推导 / 外部事实 / 捏造） |
+| 说服力与质量 | judge：`quality` 对每条高优先级意见判 resolved / partial / evaded；`pairwise` 双臂盲评（裁判扮演 AC 判哪份更可能改分，双轮位置交换） |
+
+**review**（结构判分 `check_review.py`；judge 模式 `review-match` / `review-fp`，**必须先 match 后 fp**）。产出 `findings.json`（结构化发现列表）+ `self_review.md`。两个核心指标：
+
+| 指标 | 怎么判 |
+|---|---|
+| 缺陷召回率 | judge `review-match` 按每个注入缺陷预写的 detection_criteria 逐一判 HIT / PARTIAL / MISS（判决须引用发现原文，脚本核验，核不过降为 MISS）→ 脚本汇总 strict / lenient 召回，可按缺陷难度与类型分桶 |
+| 误报率 | judge `review-fp` 审计未命中任何缺陷的发现：legitimate（论文确有此问题，不算错）/ fabricated（与原文事实矛盾，计误报，须附原文反证引文）/ subjective（无可证伪断言）→ `fp_rate_major`；v0 干净对照组专测误报底线 |
+
+**graph**（确定性判分 `check_graph.py`；judge 模式 `graph-taxonomy` / `graph-edges`；另有独立微基准）。产出 `output/report.md`（按输出契约：分类树 + 逐方案演化图 + 论文附录）。脚本是绝对主力：
+
+| 维度 | 怎么判 |
+|---|---|
+| 结构合法 | 脚本：每个 mermaid 块可编译；图中论文编号无凭空捏造（都能对回论文池） |
+| 边的事实性 | 脚本：每条"B 演化自 A"核验 B 是否引用 A（S2 按 ID → 按标题 → 下载 PDF 查参考文献，三级都失败记 unverifiable 而非 fail）+ 时序合法（B 不早于 A） |
+| 覆盖率 | 脚本：锚点论文召回、经典演化边召回（对照 `gt/queries.json`） |
+| 语义质量 | judge：`graph-taxonomy` 对照参考分支框架给三维锚定分（分支覆盖/归组连贯/粒度）；`graph-edges` 对抗式抽查 ≤10 条边（默认边是错的，文本证据成立才判 holds） |
+| 审计环节单测 | `edge_bench/` 微基准：绕开完整流程，直接测技能内部证据审计对 40 对真/假演化关系的判别力（真边存活率 + 假边拒绝率） |
+
+各指标在运行汇总表里的列名映射，见附录 B 对应技能小节。
+
 ## 4. 评测怎么跑
 
 命令速查在附录 B（§1 rebuttal、§5.9 review、§5.95 graph、§5.5/5.8 judge）；附录 A 有新机器从零搭环境。要点三个：
