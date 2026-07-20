@@ -1,0 +1,314 @@
+{
+ "accept_borderline": [
+  {
+   "fid": "Dgphd9qizu",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    4,
+    8
+   ],
+   "mean": 4.5,
+   "spread": 6,
+   "minw": 2336,
+   "title": "Functional MRI Time Series Generation via Wavelet-Based Image Tran",
+   "arxiv": "2605.30387",
+   "pub": "2026-05-28",
+   "usable": false
+  },
+  {
+   "fid": "PAV5zYn0Hn",
+   "status": "Poster",
+   "init": [
+    2,
+    6,
+    6
+   ],
+   "mean": 4.67,
+   "spread": 4,
+   "minw": 2079,
+   "title": "Neural Sum-of-Squares: Certifying the Nonnegativity of Polynomials",
+   "arxiv": "2510.13444",
+   "pub": "2025-10-15",
+   "usable": true
+  },
+  {
+   "fid": "b95RCZQB29",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "mean": 4.5,
+   "spread": 4,
+   "minw": 1974,
+   "title": "Domain Expansion: A Latent Space Construction Framework for Multi-",
+   "arxiv": "2601.20069",
+   "pub": "2026-01-27",
+   "usable": false
+  }
+ ],
+ "reject_borderline": [
+  {
+   "fid": "AvkLmnUqtZ",
+   "status": "Reject",
+   "init": [
+    4,
+    4,
+    6
+   ],
+   "mean": 4.67,
+   "spread": 2,
+   "minw": 1836,
+   "title": "$\\psi$DAG: Projected Stochastic Approximation Iteration for Linear",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  },
+  {
+   "fid": "c0y21lONB5",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "mean": 4.5,
+   "spread": 4,
+   "minw": 1719,
+   "title": "$\\texttt{GEM}$: 3D Gaussian Splatting for Efficient and Accurate C",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  },
+  {
+   "fid": "AKzgsBCW6A",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "mean": 4.5,
+   "spread": 4,
+   "minw": 1693,
+   "title": "MagicMirror: A Large-Scale Dataset and Benchmark for Fine-Grained ",
+   "arxiv": "2509.10260",
+   "pub": "2025-09-12",
+   "usable": true
+  }
+ ],
+ "split_accept": [
+  {
+   "fid": "Dgphd9qizu",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    4,
+    8
+   ],
+   "mean": 4.5,
+   "spread": 6,
+   "minw": 2336,
+   "title": "Functional MRI Time Series Generation via Wavelet-Based Image Tran",
+   "arxiv": "2605.30387",
+   "pub": "2026-05-28",
+   "usable": false
+  },
+  {
+   "fid": "M7eWB695jp",
+   "status": "Poster",
+   "init": [
+    2,
+    2,
+    6,
+    8
+   ],
+   "mean": 4.5,
+   "spread": 6,
+   "minw": 1611,
+   "title": "Purifying Generative LLMs from Backdoors  without Prior Knowledge ",
+   "arxiv": "2603.13461",
+   "pub": "2026-03-13",
+   "usable": false
+  },
+  {
+   "fid": "1PYXFkS6Hy",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "mean": 5,
+   "spread": 6,
+   "minw": 1541,
+   "title": "TaCo:  A Benchmark for Lossless and Lossy Codecs of Heterogeneous ",
+   "arxiv": "2602.09893",
+   "pub": "2026-02-10",
+   "usable": false
+  }
+ ],
+ "split_reject": [
+  {
+   "fid": "xszAt23a17",
+   "status": "Reject",
+   "init": [
+    2,
+    2,
+    4,
+    8
+   ],
+   "mean": 4,
+   "spread": 6,
+   "minw": 1685,
+   "title": "CHOrD: Synthesizing Spatially Coherent, House-Scale, Organized, an",
+   "arxiv": "2503.11958",
+   "pub": "2025-03-15",
+   "usable": true
+  },
+  {
+   "fid": "M2xifZ9wn0",
+   "status": "Reject",
+   "init": [
+    2,
+    2,
+    8
+   ],
+   "mean": 4,
+   "spread": 6,
+   "minw": 1538,
+   "title": "Reducing Spurious Correlations in CNNs via Attention-Based Feature",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  },
+  {
+   "fid": "WT9jewYFNQ",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "mean": 5,
+   "spread": 6,
+   "minw": 1521,
+   "title": "FantasyPortrait: Multi-Character Portrait Animation with Expressio",
+   "arxiv": "2507.12956",
+   "pub": "2025-07-17",
+   "usable": true
+  }
+ ],
+ "all_positive": [
+  {
+   "fid": "HHNQSXaLkF",
+   "status": "Poster",
+   "init": [
+    6,
+    6,
+    6
+   ],
+   "mean": 6,
+   "spread": 0,
+   "minw": 1621,
+   "title": "Tree-sliced Sobolev IPM",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  },
+  {
+   "fid": "NEOTsyyYH7",
+   "status": "Poster",
+   "init": [
+    6,
+    6,
+    6
+   ],
+   "mean": 6,
+   "spread": 0,
+   "minw": 1566,
+   "title": "Towards Bridging the Gap between Large-Scale Pretraining and Effic",
+   "arxiv": "2601.21363",
+   "pub": "2026-01-29",
+   "usable": false
+  },
+  {
+   "fid": "QkaeTea16Y",
+   "status": "Poster",
+   "init": [
+    6,
+    6,
+    6,
+    6
+   ],
+   "mean": 6,
+   "spread": 0,
+   "minw": 1259,
+   "title": "DeepTRACE: Auditing Deep Research AI Systems for Tracking Reliabil",
+   "arxiv": "2509.04499",
+   "pub": "2025-09-02",
+   "usable": true
+  }
+ ],
+ "oral_mixed": [
+  {
+   "fid": "x7aLhLMVn1",
+   "status": "Oral",
+   "init": [
+    4,
+    6,
+    8
+   ],
+   "mean": 6,
+   "spread": 4,
+   "minw": 1403,
+   "title": "Multiplayer Nash Preference Optimization",
+   "arxiv": "2509.23102",
+   "pub": "2025-09-27",
+   "usable": true
+  },
+  {
+   "fid": "BlSH7gNQSq",
+   "status": "Oral",
+   "init": [
+    2,
+    2,
+    4,
+    8
+   ],
+   "mean": 4,
+   "spread": 6,
+   "minw": 1341,
+   "title": "InfoNCE Induces Gaussian Distribution",
+   "arxiv": "2602.24012",
+   "pub": "2026-02-27",
+   "usable": false
+  },
+  {
+   "fid": "r2HG3xOMJI",
+   "status": "Oral",
+   "init": [
+    2,
+    6,
+    6,
+    8
+   ],
+   "mean": 5.5,
+   "spread": 6,
+   "minw": 1178,
+   "title": "mCLM: A Modular Chemical Language Model that Generates Functional ",
+   "arxiv": "2505.12565",
+   "pub": "2025-05-18",
+   "usable": true
+  }
+ ]
+}

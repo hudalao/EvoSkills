@@ -1,0 +1,426 @@
+{
+ "accept_borderline": [
+  {
+   "fid": "Dgphd9qizu",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    4,
+    8
+   ],
+   "mean": 4.5,
+   "spread": 6,
+   "minw": 2336,
+   "title": "Functional MRI Time Series Generation via Wavelet-Based Image Tran"
+  },
+  {
+   "fid": "PAV5zYn0Hn",
+   "status": "Poster",
+   "init": [
+    2,
+    6,
+    6
+   ],
+   "mean": 4.67,
+   "spread": 4,
+   "minw": 2079,
+   "title": "Neural Sum-of-Squares: Certifying the Nonnegativity of Polynomials"
+  },
+  {
+   "fid": "b95RCZQB29",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "mean": 4.5,
+   "spread": 4,
+   "minw": 1974,
+   "title": "Domain Expansion: A Latent Space Construction Framework for Multi-"
+  },
+  {
+   "fid": "C6vpifaZvU",
+   "status": "Poster",
+   "init": [
+    4,
+    4,
+    6,
+    6
+   ],
+   "mean": 5,
+   "spread": 2,
+   "minw": 1704,
+   "title": "Graph Representational Learning: When Does More Expressivity Hurt "
+  },
+  {
+   "fid": "YvmR4vNai2",
+   "status": "Poster",
+   "init": [
+    4,
+    4,
+    4,
+    6
+   ],
+   "mean": 4.5,
+   "spread": 2,
+   "minw": 1694,
+   "title": "Advancing Universal Deep Learning for Electronic-Structure Hamilto"
+  }
+ ],
+ "reject_borderline": [
+  {
+   "fid": "AvkLmnUqtZ",
+   "status": "Reject",
+   "init": [
+    4,
+    4,
+    6
+   ],
+   "mean": 4.67,
+   "spread": 2,
+   "minw": 1836,
+   "title": "$\\psi$DAG: Projected Stochastic Approximation Iteration for Linear"
+  },
+  {
+   "fid": "c0y21lONB5",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "mean": 4.5,
+   "spread": 4,
+   "minw": 1719,
+   "title": "$\\texttt{GEM}$: 3D Gaussian Splatting for Efficient and Accurate C"
+  },
+  {
+   "fid": "AKzgsBCW6A",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "mean": 4.5,
+   "spread": 4,
+   "minw": 1693,
+   "title": "MagicMirror: A Large-Scale Dataset and Benchmark for Fine-Grained "
+  },
+  {
+   "fid": "O6iPDyUP97",
+   "status": "Reject",
+   "init": [
+    4,
+    4,
+    6
+   ],
+   "mean": 4.67,
+   "spread": 2,
+   "minw": 1618,
+   "title": "Treatment Responder Classification with Abstention"
+  },
+  {
+   "fid": "aC2ku2uKcB",
+   "status": "Reject",
+   "init": [
+    4,
+    4,
+    4,
+    6
+   ],
+   "mean": 4.5,
+   "spread": 2,
+   "minw": 1604,
+   "title": "On the Limits of Test-Time Compute: Sequential Reward Filtering fo"
+  }
+ ],
+ "split_accept": [
+  {
+   "fid": "Dgphd9qizu",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    4,
+    8
+   ],
+   "mean": 4.5,
+   "spread": 6,
+   "minw": 2336,
+   "title": "Functional MRI Time Series Generation via Wavelet-Based Image Tran"
+  },
+  {
+   "fid": "M7eWB695jp",
+   "status": "Poster",
+   "init": [
+    2,
+    2,
+    6,
+    8
+   ],
+   "mean": 4.5,
+   "spread": 6,
+   "minw": 1611,
+   "title": "Purifying Generative LLMs from Backdoors  without Prior Knowledge "
+  },
+  {
+   "fid": "1PYXFkS6Hy",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "mean": 5,
+   "spread": 6,
+   "minw": 1541,
+   "title": "TaCo:  A Benchmark for Lossless and Lossy Codecs of Heterogeneous "
+  },
+  {
+   "fid": "57THeGgNAN",
+   "status": "Poster",
+   "init": [
+    2,
+    6,
+    6,
+    8
+   ],
+   "mean": 5.5,
+   "spread": 6,
+   "minw": 1421,
+   "title": "Generalization of Diffusion Models Arises with a Balanced Represen"
+  },
+  {
+   "fid": "Se3YaqtjqE",
+   "status": "Poster",
+   "init": [
+    2,
+    6,
+    8,
+    8
+   ],
+   "mean": 6,
+   "spread": 6,
+   "minw": 1404,
+   "title": "Convex Efficient Coding"
+  }
+ ],
+ "split_reject": [
+  {
+   "fid": "xszAt23a17",
+   "status": "Reject",
+   "init": [
+    2,
+    2,
+    4,
+    8
+   ],
+   "mean": 4,
+   "spread": 6,
+   "minw": 1685,
+   "title": "CHOrD: Synthesizing Spatially Coherent, House-Scale, Organized, an"
+  },
+  {
+   "fid": "M2xifZ9wn0",
+   "status": "Reject",
+   "init": [
+    2,
+    2,
+    8
+   ],
+   "mean": 4,
+   "spread": 6,
+   "minw": 1538,
+   "title": "Reducing Spurious Correlations in CNNs via Attention-Based Feature"
+  },
+  {
+   "fid": "WT9jewYFNQ",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "mean": 5,
+   "spread": 6,
+   "minw": 1521,
+   "title": "FantasyPortrait: Multi-Character Portrait Animation with Expressio"
+  },
+  {
+   "fid": "Ss9lFQtJQX",
+   "status": "Reject",
+   "init": [
+    2,
+    2,
+    6,
+    8
+   ],
+   "mean": 4.5,
+   "spread": 6,
+   "minw": 1518,
+   "title": "Think Socially via Cognitive Reasoning"
+  },
+  {
+   "fid": "Xekof9okBD",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    4,
+    8
+   ],
+   "mean": 4.5,
+   "spread": 6,
+   "minw": 1492,
+   "title": "Efficient Multivariate Temporal Point Process via Monotone Alterna"
+  }
+ ],
+ "all_positive": [
+  {
+   "fid": "HHNQSXaLkF",
+   "status": "Poster",
+   "init": [
+    6,
+    6,
+    6
+   ],
+   "mean": 6,
+   "spread": 0,
+   "minw": 1621,
+   "title": "Tree-sliced Sobolev IPM"
+  },
+  {
+   "fid": "NEOTsyyYH7",
+   "status": "Poster",
+   "init": [
+    6,
+    6,
+    6
+   ],
+   "mean": 6,
+   "spread": 0,
+   "minw": 1566,
+   "title": "Towards Bridging the Gap between Large-Scale Pretraining and Effic"
+  },
+  {
+   "fid": "QkaeTea16Y",
+   "status": "Poster",
+   "init": [
+    6,
+    6,
+    6,
+    6
+   ],
+   "mean": 6,
+   "spread": 0,
+   "minw": 1259,
+   "title": "DeepTRACE: Auditing Deep Research AI Systems for Tracking Reliabil"
+  },
+  {
+   "fid": "L1FUfBCL0c",
+   "status": "Poster",
+   "init": [
+    6,
+    6,
+    6
+   ],
+   "mean": 6,
+   "spread": 0,
+   "minw": 1168,
+   "title": "CoT Vectors: Transferring and Probing the Reasoning Mechanisms of "
+  },
+  {
+   "fid": "57EwidOnSf",
+   "status": "Poster",
+   "init": [
+    6,
+    6,
+    6,
+    8
+   ],
+   "mean": 6.5,
+   "spread": 2,
+   "minw": 1118,
+   "title": "VideoMind: A Chain-of-LoRA Agent for Temporal-Grounded Video Reaso"
+  }
+ ],
+ "oral_mixed": [
+  {
+   "fid": "x7aLhLMVn1",
+   "status": "Oral",
+   "init": [
+    4,
+    6,
+    8
+   ],
+   "mean": 6,
+   "spread": 4,
+   "minw": 1403,
+   "title": "Multiplayer Nash Preference Optimization"
+  },
+  {
+   "fid": "BlSH7gNQSq",
+   "status": "Oral",
+   "init": [
+    2,
+    2,
+    4,
+    8
+   ],
+   "mean": 4,
+   "spread": 6,
+   "minw": 1341,
+   "title": "InfoNCE Induces Gaussian Distribution"
+  },
+  {
+   "fid": "r2HG3xOMJI",
+   "status": "Oral",
+   "init": [
+    2,
+    6,
+    6,
+    8
+   ],
+   "mean": 5.5,
+   "spread": 6,
+   "minw": 1178,
+   "title": "mCLM: A Modular Chemical Language Model that Generates Functional "
+  },
+  {
+   "fid": "FnaDv6SMd9",
+   "status": "Oral",
+   "init": [
+    4,
+    6,
+    6,
+    6
+   ],
+   "mean": 5.5,
+   "spread": 2,
+   "minw": 1103,
+   "title": "Similarity-aware Non-Convex Federated Optimization"
+  },
+  {
+   "fid": "DkHt2K1g2Y",
+   "status": "Oral",
+   "init": [
+    4,
+    4,
+    6,
+    6
+   ],
+   "mean": 5,
+   "spread": 2,
+   "minw": 994,
+   "title": "Reasoning as Representation: Rethinking Visual Reinforcement Learn"
+  }
+ ]
+}

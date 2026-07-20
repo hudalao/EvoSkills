@@ -1,0 +1,10 @@
+\section{Related Work}
+\label{sec:related}
+
+We detail two most relevant works to our study in this section. ProRL \citep{prorl} demonstrates that prolonged RL fine-tuning on LLMs ($\sim2000$ optimization steps, 64 batch size) for 16K GPU-hours using a mix of reasoning tasks uncovers novel solution strategies beyond a model's base capabilities. This longer training regimen delivered significant gains on a 1.5B model, rivaling the performance of larger models on some benchmarks. ProRL's contributions lie in specific heuristics for stability (KL-regularization, policy resetting, entropy controls, etc.) to achieve high performance out of a 1.5B model. 
+
+\citet{tricks_traps} offer a complementary perspective and ablates various design choices under consistent conditions on Qwen-3 4B/8B \citep{qwen3technicalreport}, and presents a minimalist combination, LitePPO, that outperforms more complex methods like GRPO \citep{shao2024deepseekmath} and DAPO \citep{yu2025dapo} on smaller scale models and compute. This yields valuable algorithmic insights, but the focus is on comparative empirical findings, rather than on scaling behaviour. 
+
+None of these work study ``scaling'' properties of these methods. In fact, the main comparisons are done on downstream evaluations, which may not be not the right metric to study predictable scaling. Rather, as done in pre-training and in our work here,  we study performance on in-distribution held out eval set. In contrast to the mentioned related works, our work develops and validates a compute-performance framework with predictive fits, while operating at a much larger compute budget (e.g, $6x$ larger than ProRL) and model scale compared to the above studies. 
+Additionally, our findings yield a near state-of-the-art RL recipe that can scale \emph{predictably} to over 100,000 GPU-hours without any stability issues. The rest of the related work is deferred to Appendix~\ref{appendix:related}.
+

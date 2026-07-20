@@ -1,0 +1,26 @@
+\begin{table}[tbhp]
+\centering
+\begin{tabular}{@{}llll@{}}
+Short Form & Name                         & Version & Access Provider \\ \midrule
+\openai~4o & GPT-4o               & \texttt{gpt-4o-2024-11-20}        & OpenAI / Microsoft API\\
+\openai~4o-mini & GPT-4o-mini          & \texttt{gpt-4o-mini-2024-07-18}  & OpenAI API \\
+\openai~4.1 & GPT-4.1              & \texttt{gpt-4.1-2025-04-14}        & OpenAI / Microsoft API\\
+\openai~o3 & o3                   & \texttt{o3-2025-04-16}        & OpenAI / Microsoft API \\\midrule
+\claude~3-Haiku & Claude 3 Haiku    & \texttt{claude-3-haiku-20240307}    &  Amazon Bedrock      \\
+\claude~3.7-Sonnet & Claude 3.7 Sonnet & \texttt{claude-3-7-sonnet-20250219} &  Amazon Bedrock      \\\midrule
+\gemini~2.5-Flash     & Gemini 2.5 Flash     & \texttt{gemini-2.5-flash-preview-04-17}        &  Gemini API      \\
+\gemini~2.5-Pro     & Gemini 2.5 Pro       & \texttt{gemini-2.5-pro-preview-03-25} &  Gemini API      \\\midrule
+\llama~3.1-8B & Llama-3.1-8B-Instruct  & N/A     & Local Ollama \\
+\llama~3.3-70B & Llama-3.3-70B-Instruct & N/A     &  Amazon Bedrock      \\
+\llama~4-Scout & Llama-4-Scout-17B-16E  & N/A     &  Together AI      \\\midrule
+\cohere~CMD-A & Command-A & \texttt{command-a-03-2025}     & Cohere API \\
+\deepseek~R1 & Deepseek-R1        & N/A     &  Amazon Bedrock      \\
+\aitwo~OLMo2 & OLMo2-13B         & N/A     & Local Ollama \\
+\microsoft~Phi-4 & Phi-4   & N/A     & Local Ollama \\
+\bottomrule
+\end{tabular}
+\vspace{1ex}
+
+\caption{Specific model versions used as part of our experiments. For each model, we define the exact \texttt{Version} of the model accessed (for models that have versioning) and the \texttt{Access Provider} to facilitate result reproducibility.}
+\label{tab:model_list}
+\end{table}

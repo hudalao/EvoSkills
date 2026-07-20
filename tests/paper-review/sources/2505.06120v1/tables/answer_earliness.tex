@@ -1,0 +1,49 @@
+\begin{wraptable}{l}{0.4\linewidth}
+    \vspace{-1em}
+    \resizebox{1.0\linewidth}{!}{%
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{p{2cm}ccccc}
+
+    & \multicolumn{5}{c}{Conversation Progress At First Answer Attempt} \\
+    \cmidrule(){2-6}
+    Model & 0-20\% & 20-40\% & 40-60\% & 60-80\% & 80-100\% \\
+
+    \cmidrule(lr){1-1} \cmidrule(){2-6}
+
+    \ccol{F5F5F5} \textit{First answer attempt is ...} & \ccol{F5F5F5} \raisebox{-1ex}{earliest}
+    & \ccol{F5F5F5} \raisebox{-1ex}{early}
+    & \ccol{F5F5F5} \raisebox{-1ex}{midway}
+    & \ccol{F5F5F5} \raisebox{-1ex}{late}
+    & \ccol{F5F5F5} \raisebox{-1ex}{latest} \\
+    \cmidrule(lr){1-1} \cmidrule(){2-6}
+    
+\llama~3.1-8B & \ccol{FCFDFE}16.1 & \ccol{EDF2FB}24.0 & \ccol{D7E3F7}35.3 & \ccol{CEDDF5}39.6 & \ccol{CEDDF5}39.7 \\
+\aitwo~OLMo2 & \ccol{F9FBFD}17.6 & \ccol{DCE6F8}32.7 & \ccol{D2DFF6}37.7 & \ccol{BFD2F2}47.3 & \ccol{E8EFFA}26.4 \\
+\claude~3-Haiku & \ccol{E7EEFA}27.1 & \ccol{D6E2F6}35.6 & \ccol{BFD2F2}47.4 & \ccol{A8C2ED}58.9 & \ccol{92B3E9}70.3 \\
+\openai~4o-mini & \ccol{E1EAF9}30.2 & \ccol{CFDDF5}39.2 & \ccol{BDD1F1}48.4 & \ccol{AAC3EE}58.2 & \ccol{A7C1ED}59.9 \\
+\llama~3.3-70B & \ccol{DBE5F7}33.3 & \ccol{CDDCF5}40.1 & \ccol{B8CDF0}51.2 & \ccol{A6C1ED}60.0 & \ccol{94B4E9}69.3 \\
+\microsoft~Phi-4  & \ccol{EAF0FA}25.7 & \ccol{DBE6F7}33.1 & \ccol{C0D3F2}47.0 & \ccol{B4CAF0}53.0 & \ccol{AAC4EE}57.9 \\
+\cohere~CMD-A & \ccol{D1DFF5}38.0 & \ccol{C8D8F4}42.9 & \ccol{ADC5EE}56.5 & \ccol{9CB9EB}65.5 & \ccol{8CAEE8}73.5 \\
+\llama~4-Scout & \ccol{CEDDF5}39.8 & \ccol{D4E1F6}36.8 & \ccol{B8CDF0}51.0 & \ccol{AAC4EE}57.9 & \ccol{9DBAEB}64.8 \\
+% \openai~o1 & \ccol{D4E1F6}36.5 & \ccol{BFD2F2}47.4 & \ccol{ACC5EE}56.8 & \ccol{92B2E9}70.4 & \ccol{7FA5E5}81.0 \\
+\openai~o3 & \ccol{F3F6FC}21.0 & \ccol{D2DFF6}37.9 & \ccol{B6CCF0}51.9 & \ccol{A9C3ED}58.4 & \ccol{97B6EA}68.0 \\
+\claude~3.7-Sonnet & \ccol{E3EBF9}29.2 & \ccol{D6E2F6}35.6 & \ccol{AFC7EF}55.3 & \ccol{96B6EA}68.0 & \ccol{8FB1E8}71.6 \\
+\deepseek~R1 & \ccol{CEDDF5}39.5 & \ccol{C7D8F3}43.1 & \ccol{B3CAEF}53.5 & \ccol{9AB8EA}66.4 & \ccol{B9CEF1}50.2 \\
+% \gemini~2.0-Flash & \ccol{F5F8FD}20.0 & \ccol{ABC4EE}57.4 & \ccol{9CBAEB}65.2 & \ccol{A2BEEC}62.2 & \ccol{96B5EA}68.5 \\
+\openai~4o & \ccol{D5E2F6}36.0 & \ccol{CBDAF4}41.4 & \ccol{AEC6EE}56.2 & \ccol{9BB9EB}65.6 & \ccol{7FA5E5}90.4 \\
+\gemini~2.5-Flash & \ccol{CFDEF5}39.0 & \ccol{BDD0F1}48.6 & \ccol{A6C0ED}60.2 & \ccol{91B2E9}70.8 & \ccol{8AADE7}74.6 \\
+\openai~4.1 & \ccol{D9E5F7}33.9 & \ccol{B5CBF0}52.7 & \ccol{A5C0ED}60.6 & \ccol{95B4E9}69.0 & \ccol{82A7E6}78.6 \\
+\gemini~2.5-Pro & \ccol{CBDBF4}41.1 & \ccol{C2D4F2}45.7 & \ccol{B3CAEF}53.5 & \ccol{9DBAEB}64.6 & \ccol{9FBCEB}63.8 \\
+
+\cmidrule(lr){1-1} \cmidrule(){2-6}
+
+Average & \ccol{DFE9F8}30.9 & \ccol{CCDBF4}40.5 & \ccol{B6CCF0}51.7 & \ccol{A5C0ED}60.4 & \ccol{9EBBEB}64.4 \\
+
+    \bottomrule
+    \end{tabular}
+    }
+    \caption{Averaged performance ($\overline{P}$) breakdown, based on how early in the conversation the LLM makes its first answer attempt. Analysis conducted on simulations of two tasks: Code and Math.}
+    \label{tab:first_answer_attempt_earliness}
+
+    \vspace{-3em}
+\end{wraptable}

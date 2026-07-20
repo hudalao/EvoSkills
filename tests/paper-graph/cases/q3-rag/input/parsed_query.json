@@ -1,0 +1,14 @@
+{
+ "goal": "Trace how retrieval-augmented generation for knowledge-intensive NLP evolved from pipeline QA systems to end-to-end retrieval-augmented language models.",
+ "searches": [
+  "retrieval-augmented generation",
+  "dense passage retrieval QA",
+  "retrieval-augmented language model pretraining",
+  "adaptive retrieval generation"
+ ],
+ "definitions": {
+  "RAG": "Generation conditioned on documents fetched by a retriever.",
+  "dense retrieval": "Retrieval by embedding similarity instead of term matching.",
+  "reader/generator": "Model consuming retrieved passages to produce the answer."
+ }
+}

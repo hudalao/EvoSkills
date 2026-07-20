@@ -1,0 +1,476 @@
+\begin{thebibliography}{91}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abdin et~al.(2024)Abdin, Aneja, Behl, Bubeck, Eldan, Gunasekar, Harrison, Hewett, Javaheripi, Kauffmann, et~al.]{abdin2024phi}
+M.~Abdin, J.~Aneja, H.~Behl, S.~Bubeck, R.~Eldan, S.~Gunasekar, M.~Harrison, R.~J. Hewett, M.~Javaheripi, P.~Kauffmann, et~al.
+\newblock Phi-4 technical report.
+\newblock \emph{arXiv preprint arXiv:2412.08905}, 2024.
+
+\bibitem[Bai et~al.(2024)Bai, Liu, Bu, He, Liu, Zhou, Lin, Su, Ge, Zheng, et~al.]{bai2024mt}
+G.~Bai, J.~Liu, X.~Bu, Y.~He, J.~Liu, Z.~Zhou, Z.~Lin, W.~Su, T.~Ge, B.~Zheng, et~al.
+\newblock Mt-bench-101: A fine-grained benchmark for evaluating large language models in multi-turn dialogues.
+\newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, pages 7421--7454, 2024.
+
+\bibitem[Belem et~al.(2024)Belem, Pezeskhpour, Iso, Maekawa, Bhutani, and Hruschka]{belem2024single}
+C.~G. Belem, P.~Pezeskhpour, H.~Iso, S.~Maekawa, N.~Bhutani, and E.~Hruschka.
+\newblock From single to multi: How llms hallucinate in multi-document summarization.
+\newblock \emph{arXiv preprint arXiv:2410.13961}, 2024.
+
+\bibitem[Brauner et~al.(2023)Brauner, Hick, Philipsen, and Ziefle]{Brauner2023WhatDT}
+P.~Brauner, A.~Hick, R.~Philipsen, and M.~Ziefle.
+\newblock What does the public think about artificial intelligence?—a criticality map to understand bias in the public perception of ai.
+\newblock In \emph{Frontiers of Computer Science}, 2023.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:257598212}.
+
+\bibitem[Chakrabarty et~al.(2024)Chakrabarty, Laban, Agarwal, Muresan, and Wu]{chakrabarty2024art}
+T.~Chakrabarty, P.~Laban, D.~Agarwal, S.~Muresan, and C.-S. Wu.
+\newblock Art or artifice? large language models and the false promise of creativity.
+\newblock In \emph{Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems}, pages 1--34, 2024.
+
+\bibitem[Chakrabarty et~al.(2025)Chakrabarty, Laban, and Wu]{chakrabarty2025ai}
+T.~Chakrabarty, P.~Laban, and C.-S. Wu.
+\newblock Ai-slop to ai-polish? aligning language models through edit-based writing rewards and test-time computation.
+\newblock \emph{arXiv preprint arXiv:2504.07532}, 2025.
+
+\bibitem[Chang et~al.(2025)Chang, Anderson, and Hofman]{chang2025chatbench}
+S.~Chang, A.~Anderson, and J.~M. Hofman.
+\newblock Chatbench: From static benchmarks to human-ai evaluation.
+\newblock \emph{arXiv preprint arXiv:2504.07114}, 2025.
+
+\bibitem[Chase(2022)]{chase2022langchain}
+H.~Chase.
+\newblock Langchain, October 2022.
+\newblock URL \url{https://github.com/langchain-ai/langchain}.
+
+\bibitem[Chaturvedi et~al.(2024)Chaturvedi, Thompson, and Asher]{Chaturvedi2024NeBuLaAD}
+A.~Chaturvedi, K.~Thompson, and N.~Asher.
+\newblock Nebula: A discourse aware minecraft builder.
+\newblock \emph{ArXiv}, abs/2406.18164, 2024.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:270738020}.
+
+\bibitem[Chen et~al.(2021)Chen, Tworek, Jun, Yuan, Pinto, Kaplan, Edwards, Burda, Joseph, Brockman, et~al.]{chen2021evaluating}
+M.~Chen, J.~Tworek, H.~Jun, Q.~Yuan, H.~P. D.~O. Pinto, J.~Kaplan, H.~Edwards, Y.~Burda, N.~Joseph, G.~Brockman, et~al.
+\newblock Evaluating large language models trained on code.
+\newblock \emph{arXiv preprint arXiv:2107.03374}, 2021.
+
+\bibitem[Chiang et~al.(2024)Chiang, Zheng, Sheng, Angelopoulos, Li, Li, Zhu, Zhang, Jordan, Gonzalez, et~al.]{chiang2024chatbot}
+W.-L. Chiang, L.~Zheng, Y.~Sheng, A.~N. Angelopoulos, T.~Li, D.~Li, B.~Zhu, H.~Zhang, M.~Jordan, J.~E. Gonzalez, et~al.
+\newblock Chatbot arena: An open platform for evaluating llms by human preference.
+\newblock In \emph{Forty-first International Conference on Machine Learning}, 2024.
+
+\bibitem[Choi et~al.(2018)Choi, He, Iyyer, Yatskar, Yih, Choi, Liang, and Zettlemoyer]{choi2018quac}
+E.~Choi, H.~He, M.~Iyyer, M.~Yatskar, W.-t. Yih, Y.~Choi, P.~Liang, and L.~Zettlemoyer.
+\newblock Quac: Question answering in context.
+\newblock \emph{arXiv preprint arXiv:1808.07036}, 2018.
+
+\bibitem[Choi et~al.(2021)Choi, Palomaki, Lamm, Kwiatkowski, Das, and Collins]{choi2021decontextualization}
+E.~Choi, J.~Palomaki, M.~Lamm, T.~Kwiatkowski, D.~Das, and M.~Collins.
+\newblock Decontextualization: Making sentences stand-alone.
+\newblock \emph{Transactions of the Association for Computational Linguistics}, 9:\penalty0 447--461, 2021.
+
+\bibitem[Cobbe et~al.(2021)Cobbe, Kosaraju, Bavarian, Chen, Jun, Kaiser, Plappert, Tworek, Hilton, Nakano, et~al.]{cobbe2021training}
+K.~Cobbe, V.~Kosaraju, M.~Bavarian, M.~Chen, H.~Jun, L.~Kaiser, M.~Plappert, J.~Tworek, J.~Hilton, R.~Nakano, et~al.
+\newblock Training verifiers to solve math word problems.
+\newblock \emph{arXiv preprint arXiv:2110.14168}, 2021.
+
+\bibitem[Cohere et~al.(2025)Cohere, Ahmadian, Ahmed, Alammar, Alnumay, Althammer, Arkhangorodsky, Aryabumi, Aumiller, Avalos, et~al.]{cohere2025command}
+T.~Cohere, A.~Ahmadian, M.~Ahmed, J.~Alammar, Y.~Alnumay, S.~Althammer, A.~Arkhangorodsky, V.~Aryabumi, D.~Aumiller, R.~Avalos, et~al.
+\newblock Command a: An enterprise-ready large language model.
+\newblock \emph{arXiv preprint arXiv:2504.00698}, 2025.
+
+\bibitem[Deng et~al.(2024)Deng, Zhang, Zhang, Yuan, Ng, and Chua]{deng2024multi}
+Y.~Deng, X.~Zhang, W.~Zhang, Y.~Yuan, S.-K. Ng, and T.-S. Chua.
+\newblock On the multi-turn instruction following for conversational web agents.
+\newblock \emph{arXiv preprint arXiv:2402.15057}, 2024.
+
+\bibitem[Deriu et~al.(2021)Deriu, Rodrigo, Otegi, Echegoyen, Rosset, Agirre, and Cieliebak]{deriu2021survey}
+J.~Deriu, A.~Rodrigo, A.~Otegi, G.~Echegoyen, S.~Rosset, E.~Agirre, and M.~Cieliebak.
+\newblock Survey on evaluation methods for dialogue systems.
+\newblock \emph{Artificial Intelligence Review}, 54:\penalty0 755--810, 2021.
+
+\bibitem[Duan et~al.(2024)Duan, Wei, Wang, Liu, Fang, Zhang, Lin, and Chen]{duan2024botchat}
+H.~Duan, J.~Wei, C.~Wang, H.~Liu, Y.~Fang, S.~Zhang, D.~Lin, and K.~Chen.
+\newblock Botchat: Evaluating llms’ capabilities of having multi-turn dialogues.
+\newblock In \emph{Findings of the Association for Computational Linguistics: NAACL 2024}, pages 3184--3200, 2024.
+
+\bibitem[Fan et~al.(2024)Fan, Chen, Hu, and Liu]{fan2024fairmt}
+Z.~Fan, R.~Chen, T.~Hu, and Z.~Liu.
+\newblock Fairmt-bench: Benchmarking fairness for multi-turn dialogue in conversational llms.
+\newblock \emph{arXiv preprint arXiv:2410.19317}, 2024.
+
+\bibitem[Ferreira(2008)]{ferreira2008ambiguity}
+V.~S. Ferreira.
+\newblock Ambiguity, accessibility, and a division of labor for communicative success.
+\newblock \emph{Psychology of Learning and motivation}, 49:\penalty0 209--246, 2008.
+
+\bibitem[Finch et~al.(2023)Finch, Finch, and Choi]{finch2023don}
+S.~E. Finch, J.~D. Finch, and J.~D. Choi.
+\newblock Don't forget your abc's: Evaluating the state-of-the-art in chat-oriented dialogue systems.
+\newblock In \emph{The 61st Annual Meeting Of The Association For Computational Linguistics}, 2023.
+
+\bibitem[Frisson(2009)]{Frisson2009SemanticUI}
+S.~Frisson.
+\newblock Semantic underspecification in language processing.
+\newblock \emph{Lang. Linguistics Compass}, 3:\penalty0 111--127, 2009.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:13384476}.
+
+\bibitem[Grattafiori et~al.(2024)Grattafiori, Dubey, Jauhri, Pandey, Kadian, Al-Dahle, Letman, Mathur, Schelten, Vaughan, et~al.]{grattafiori2024llama}
+A.~Grattafiori, A.~Dubey, A.~Jauhri, A.~Pandey, A.~Kadian, A.~Al-Dahle, A.~Letman, A.~Mathur, A.~Schelten, A.~Vaughan, et~al.
+\newblock The llama 3 herd of models.
+\newblock \emph{arXiv preprint arXiv:2407.21783}, 2024.
+
+\bibitem[Guo et~al.(2025)Guo, Yang, Zhang, Song, Zhang, Xu, Zhu, Ma, Wang, Bi, et~al.]{guo2025deepseek}
+D.~Guo, D.~Yang, H.~Zhang, J.~Song, R.~Zhang, R.~Xu, Q.~Zhu, S.~Ma, P.~Wang, X.~Bi, et~al.
+\newblock Deepseek-r1: Incentivizing reasoning capability in llms via reinforcement learning.
+\newblock \emph{arXiv preprint arXiv:2501.12948}, 2025.
+
+\bibitem[Han(2025)]{han2025can}
+C.~Han.
+\newblock Can language models follow multiple turns of entangled instructions?
+\newblock \emph{arXiv preprint arXiv:2503.13222}, 2025.
+
+\bibitem[Handa et~al.(2025)Handa, Tamkin, McCain, Huang, Durmus, Heck, Mueller, Hong, Ritchie, Belonax, et~al.]{handa2025economic}
+K.~Handa, A.~Tamkin, M.~McCain, S.~Huang, E.~Durmus, S.~Heck, J.~Mueller, J.~Hong, S.~Ritchie, T.~Belonax, et~al.
+\newblock Which economic tasks are performed with ai? evidence from millions of claude conversations.
+\newblock \emph{arXiv preprint arXiv:2503.04761}, 2025.
+
+\bibitem[Herlihy et~al.(2024)Herlihy, Neville, Schnabel, and Swaminathan]{herlihy2024overcoming}
+C.~Herlihy, J.~Neville, T.~Schnabel, and A.~Swaminathan.
+\newblock On overcoming miscalibrated conversational priors in llm-based chatbots.
+\newblock \emph{arXiv preprint arXiv:2406.01633}, 2024.
+
+\bibitem[Horowitz et~al.(2024)Horowitz, Kahn, Macdonald, and Schneider]{horowitz2024adopting}
+M.~C. Horowitz, L.~Kahn, J.~Macdonald, and J.~Schneider.
+\newblock Adopting ai: how familiarity breeds both trust and contempt.
+\newblock \emph{AI \& society}, 39\penalty0 (4):\penalty0 1721--1735, 2024.
+
+\bibitem[Huang et~al.(2023)Huang, Laban, Fabbri, Choubey, Joty, Xiong, and Wu]{huang2023embrace}
+K.-H. Huang, P.~Laban, A.~R. Fabbri, P.~K. Choubey, S.~Joty, C.~Xiong, and C.-S. Wu.
+\newblock Embrace divergence for richer insights: A multi-document summarization benchmark and a case study on summarizing diverse information from news articles.
+\newblock \emph{arXiv preprint arXiv:2309.09369}, 2023.
+
+\bibitem[Hurst et~al.(2024)Hurst, Lerer, Goucher, Perelman, Ramesh, Clark, Ostrow, Welihinda, Hayes, Radford, et~al.]{hurst2024gpt}
+A.~Hurst, A.~Lerer, A.~P. Goucher, A.~Perelman, A.~Ramesh, A.~Clark, A.~Ostrow, A.~Welihinda, A.~Hayes, A.~Radford, et~al.
+\newblock Gpt-4o system card.
+\newblock \emph{arXiv preprint arXiv:2410.21276}, 2024.
+
+\bibitem[Jain et~al.(2024)Jain, Han, Gu, Li, Yan, Zhang, Wang, Solar-Lezama, Sen, and Stoica]{jain2024livecodebench}
+N.~Jain, K.~Han, A.~Gu, W.-D. Li, F.~Yan, T.~Zhang, S.~Wang, A.~Solar-Lezama, K.~Sen, and I.~Stoica.
+\newblock Livecodebench: Holistic and contamination free evaluation of large language models for code.
+\newblock \emph{arXiv preprint arXiv:2403.07974}, 2024.
+
+\bibitem[Karpinska et~al.(2024)Karpinska, Thai, Lo, Goyal, and Iyyer]{karpinska2024one}
+M.~Karpinska, K.~Thai, K.~Lo, T.~Goyal, and M.~Iyyer.
+\newblock One thousand and one pairs: A" novel" challenge for long-context language models.
+\newblock \emph{arXiv preprint arXiv:2406.16264}, 2024.
+
+\bibitem[Kim et~al.(2024{\natexlab{a}})Kim, Chang, Karpinska, Garimella, Manjunatha, Lo, Goyal, and Iyyer]{kim2024fables}
+Y.~Kim, Y.~Chang, M.~Karpinska, A.~Garimella, V.~Manjunatha, K.~Lo, T.~Goyal, and M.~Iyyer.
+\newblock Fables: Evaluating faithfulness and content selection in book-length summarization.
+\newblock \emph{arXiv preprint arXiv:2404.01261}, 2024{\natexlab{a}}.
+
+\bibitem[Kim et~al.(2024{\natexlab{b}})Kim, Son, Kim, and Kim]{Kim2024BeyondPL}
+Y.~Kim, K.~Son, S.~Kim, and J.~Kim.
+\newblock Beyond prompts: Learning from human communication for enhanced ai intent alignment.
+\newblock \emph{ArXiv}, abs/2405.05678, 2024{\natexlab{b}}.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:269635257}.
+
+\bibitem[Knoth et~al.(2024)Knoth, Tolzin, Janson, and Leimeister]{Knoth2024AILA}
+N.~Knoth, A.~Tolzin, A.~Janson, and J.~M. Leimeister.
+\newblock Ai literacy and its implications for prompt engineering strategies.
+\newblock \emph{Comput. Educ. Artif. Intell.}, 6:\penalty0 100225, 2024.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:269273689}.
+
+\bibitem[Konr{\'a}d et~al.(2021)Konr{\'a}d, Pichl, Marek, Lorenc, Ta, Kobza, H{\`y}lov{\'a}, and {\v{S}}ediv{\`y}]{konrad2021alquist}
+J.~Konr{\'a}d, J.~Pichl, P.~Marek, P.~Lorenc, V.~D. Ta, O.~Kobza, L.~H{\`y}lov{\'a}, and J.~{\v{S}}ediv{\`y}.
+\newblock Alquist 4.0: Towards social intelligence using generative models and dialogue personalization.
+\newblock \emph{arXiv preprint arXiv:2109.07968}, 2021.
+
+\bibitem[Kwan et~al.(2024)Kwan, Zeng, Jiang, Wang, Li, Shang, Jiang, Liu, and Wong]{kwan2024mt}
+W.-C. Kwan, X.~Zeng, Y.~Jiang, Y.~Wang, L.~Li, L.~Shang, X.~Jiang, Q.~Liu, and K.-F. Wong.
+\newblock Mt-eval: A multi-turn capabilities evaluation benchmark for large language models.
+\newblock In \emph{Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing}, pages 20153--20177, 2024.
+
+\bibitem[Laban et~al.(2021)Laban, Canny, and Hearst]{laban2021s}
+P.~Laban, J.~Canny, and M.~A. Hearst.
+\newblock What's the latest? a question-driven news chatbot.
+\newblock \emph{arXiv preprint arXiv:2105.05392}, 2021.
+
+\bibitem[Laban et~al.(2023)Laban, Murakhovs'~ka, Xiong, and Wu]{laban2023you}
+P.~Laban, L.~Murakhovs'~ka, C.~Xiong, and C.-S. Wu.
+\newblock Are you sure? challenging llms leads to performance drops in the flipflop experiment.
+\newblock \emph{arXiv preprint arXiv:2311.08596}, 2023.
+
+\bibitem[Laban et~al.(2024)Laban, Fabbri, Xiong, and Wu]{laban2024summary}
+P.~Laban, A.~R. Fabbri, C.~Xiong, and C.-S. Wu.
+\newblock Summary of a haystack: A challenge to long-context llms and rag systems.
+\newblock \emph{arXiv preprint arXiv:2407.01370}, 2024.
+
+\bibitem[Lappin(2000)]{Lappin2000AnIP}
+S.~Lappin.
+\newblock An intensional parametric semantics for vague quantifiers.
+\newblock \emph{Linguistics and Philosophy}, 23:\penalty0 599--620, 2000.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:170154611}.
+
+\bibitem[Lee et~al.(2022)Lee, Srivastava, Hardy, Thickstun, Durmus, Paranjape, Gerard-Ursin, Li, Ladhak, Rong, et~al.]{lee2022evaluating}
+M.~Lee, M.~Srivastava, A.~Hardy, J.~Thickstun, E.~Durmus, A.~Paranjape, I.~Gerard-Ursin, X.~L. Li, F.~Ladhak, F.~Rong, et~al.
+\newblock Evaluating human-language model interaction.
+\newblock \emph{arXiv preprint arXiv:2212.09746}, 2022.
+
+\bibitem[Lee et~al.(2024)Lee, Son, Kim, Kim, Chung, Adar, and Kim]{Lee2024OneVM}
+Y.~Lee, K.~Son, T.~S. Kim, J.~Kim, J.~J.~Y. Chung, E.~Adar, and J.~Kim.
+\newblock One vs. many: Comprehending accurate information from multiple erroneous and inconsistent ai generations.
+\newblock \emph{Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency}, 2024.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:269635304}.
+
+\bibitem[Lei et~al.(2024)Lei, Chen, Ye, Cao, Shin, Su, Suo, Gao, Hu, Yin, et~al.]{lei2024spider}
+F.~Lei, J.~Chen, Y.~Ye, R.~Cao, D.~Shin, H.~Su, Z.~Suo, H.~Gao, W.~Hu, P.~Yin, et~al.
+\newblock Spider 2.0: Evaluating language models on real-world enterprise text-to-sql workflows.
+\newblock \emph{arXiv preprint arXiv:2411.07763}, 2024.
+
+\bibitem[Lewis et~al.(2019)Lewis, Liu, Goyal, Ghazvininejad, Mohamed, Levy, Stoyanov, and Zettlemoyer]{lewis2019bart}
+M.~Lewis, Y.~Liu, N.~Goyal, M.~Ghazvininejad, A.~Mohamed, O.~Levy, V.~Stoyanov, and L.~Zettlemoyer.
+\newblock Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension.
+\newblock \emph{arXiv preprint arXiv:1910.13461}, 2019.
+
+\bibitem[Li et~al.(2024)Li, Li, Wang, and Du]{li2024iqa}
+R.~Li, R.~Li, B.~Wang, and X.~Du.
+\newblock Iqa-eval: Automatic evaluation of human-model interactive question answering.
+\newblock \emph{Advances in Neural Information Processing Systems}, 37:\penalty0 109894--109921, 2024.
+
+\bibitem[Li et~al.(2023)Li, Yan, Wang, Tang, Ren, Srinivasan, and Jin]{li2023instruction}
+S.~Li, J.~Yan, H.~Wang, Z.~Tang, X.~Ren, V.~Srinivasan, and H.~Jin.
+\newblock Instruction-following evaluation through verbalizer manipulation.
+\newblock \emph{arXiv preprint arXiv:2307.10558}, 2023.
+
+\bibitem[Liang et~al.(2024)Liang, Yu, Yu, Yao, Zhang, Zhang, and Yu]{liang2024mathchat}
+Z.~Liang, D.~Yu, W.~Yu, W.~Yao, Z.~Zhang, X.~Zhang, and D.~Yu.
+\newblock Mathchat: Benchmarking mathematical reasoning and instruction following in multi-turn interactions.
+\newblock \emph{arXiv preprint arXiv:2405.19444}, 2024.
+
+\bibitem[Liu et~al.(2023)Liu, Wu, Michael, Suhr, West, Koller, Swayamdipta, Smith, and Choi]{liu2023we}
+A.~Liu, Z.~Wu, J.~Michael, A.~Suhr, P.~West, A.~Koller, S.~Swayamdipta, N.~A. Smith, and Y.~Choi.
+\newblock We’re afraid language models aren’t modeling ambiguity.
+\newblock In \emph{Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing}, pages 790--807, 2023.
+
+\bibitem[Liu et~al.(2024)Liu, Lin, Hewitt, Paranjape, Bevilacqua, Petroni, and Liang]{liu2024lost}
+N.~F. Liu, K.~Lin, J.~Hewitt, A.~Paranjape, M.~Bevilacqua, F.~Petroni, and P.~Liang.
+\newblock Lost in the middle: How language models use long contexts.
+\newblock \emph{Transactions of the Association for Computational Linguistics}, 12:\penalty0 157--173, 2024.
+
+\bibitem[Liu et~al.(2022)Liu, Fabbri, Liu, Zhao, Nan, Han, Han, Joty, Wu, Xiong, et~al.]{liu2022revisiting}
+Y.~Liu, A.~R. Fabbri, P.~Liu, Y.~Zhao, L.~Nan, R.~Han, S.~Han, S.~Joty, C.-S. Wu, C.~Xiong, et~al.
+\newblock Revisiting the gold standard: Grounding summarization evaluation with robust human evaluation.
+\newblock \emph{arXiv preprint arXiv:2212.07981}, 2022.
+
+\bibitem[Ma et~al.(2021)Ma, Edunov, and Auli]{ma2021comparison}
+Z.~Ma, S.~Edunov, and M.~Auli.
+\newblock A comparison of approaches to document-level machine translation.
+\newblock \emph{arXiv preprint arXiv:2101.11040}, 2021.
+
+\bibitem[Malaviya et~al.(2024)Malaviya, Chang, Roth, Iyyer, Yatskar, and Lo]{malaviya2024contextualized}
+C.~Malaviya, J.~C. Chang, D.~Roth, M.~Iyyer, M.~Yatskar, and K.~Lo.
+\newblock Contextualized evaluations: Taking the guesswork out of language model evaluations.
+\newblock \emph{arXiv preprint arXiv:2411.07237}, 2024.
+
+\bibitem[Murakhovs'~ka et~al.(2023)Murakhovs'~ka, Laban, Xie, Xiong, and Wu]{murakhovs2023salespeople}
+L.~Murakhovs'~ka, P.~Laban, T.~Xie, C.~Xiong, and C.-S. Wu.
+\newblock Salespeople vs salesbot: Exploring the role of educational value in conversational recommender systems.
+\newblock \emph{arXiv preprint arXiv:2310.17749}, 2023.
+
+\bibitem[Mylrea and Robinson(2023)]{Mylrea2023ArtificialI}
+M.~Mylrea and N.~Robinson.
+\newblock Artificial intelligence (ai) trust framework and maturity model: Applying an entropy lens to improve security, privacy, and ethical ai.
+\newblock \emph{Entropy}, 25, 2023.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:263840323}.
+
+\bibitem[OLMo et~al.(2024)OLMo, Walsh, Soldaini, Groeneveld, Lo, Arora, Bhagia, Gu, Huang, Jordan, et~al.]{olmo20242}
+T.~OLMo, P.~Walsh, L.~Soldaini, D.~Groeneveld, K.~Lo, S.~Arora, A.~Bhagia, Y.~Gu, S.~Huang, M.~Jordan, et~al.
+\newblock 2 olmo 2 furious.
+\newblock \emph{arXiv preprint arXiv:2501.00656}, 2024.
+
+\bibitem[OpenAI(2025)]{openai2025o3}
+OpenAI.
+\newblock {O}pen{A}{I} o3 and o4-mini {S}ystem {C}ard --- openai.com.
+\newblock \url{https://openai.com/index/o3-o4-mini-system-card/}, 2025.
+\newblock [Accessed 08-05-2025].
+
+\bibitem[Papineni et~al.(2002)Papineni, Roukos, Ward, and Zhu]{papineni2002bleu}
+K.~Papineni, S.~Roukos, T.~Ward, and W.-J. Zhu.
+\newblock Bleu: a method for automatic evaluation of machine translation.
+\newblock In \emph{Proceedings of the 40th annual meeting of the Association for Computational Linguistics}, pages 311--318, 2002.
+
+\bibitem[Parikh et~al.(2020)Parikh, Wang, Gehrmann, Faruqui, Dhingra, Yang, and Das]{parikh2020totto}
+A.~P. Parikh, X.~Wang, S.~Gehrmann, M.~Faruqui, B.~Dhingra, D.~Yang, and D.~Das.
+\newblock Totto: A controlled table-to-text generation dataset.
+\newblock \emph{arXiv preprint arXiv:2004.14373}, 2020.
+
+\bibitem[Peng et~al.(2023)Peng, Wang, Chen, Li, Qi, Wang, Wu, Zeng, Xu, Hou, and Li]{Peng2023WhenDI}
+H.~Peng, X.~Wang, J.~Chen, W.~Li, Y.~P. Qi, Z.~Wang, Z.~Wu, K.~Zeng, B.~Xu, L.~Hou, and J.~Li.
+\newblock When does in-context learning fall short and why? a study on specification-heavy tasks.
+\newblock \emph{ArXiv}, abs/2311.08993, 2023.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:265212914}.
+
+\bibitem[Pezzelle(2023)]{pezzelle2023dealing}
+S.~Pezzelle.
+\newblock Dealing with semantic underspecification in multimodal nlp.
+\newblock \emph{arXiv preprint arXiv:2306.05240}, 2023.
+
+\bibitem[Phan et~al.(2025)Phan, Gatti, Han, Li, Hu, Zhang, Zhang, Shaaban, Ling, Shi, et~al.]{phan2025humanity}
+L.~Phan, A.~Gatti, Z.~Han, N.~Li, J.~Hu, H.~Zhang, C.~B.~C. Zhang, M.~Shaaban, J.~Ling, S.~Shi, et~al.
+\newblock Humanity's last exam.
+\newblock \emph{arXiv preprint arXiv:2501.14249}, 2025.
+
+\bibitem[Poelitz and McKenna(2025)]{poelitz2025synthetic}
+C.~Poelitz and N.~McKenna.
+\newblock Synthetic clarification and correction dialogues about data-centric tasks--a teacher-student approach.
+\newblock \emph{arXiv preprint arXiv:2503.14167}, 2025.
+
+\bibitem[Post and Junczys-Dowmunt(2023)]{post2023escaping}
+M.~Post and M.~Junczys-Dowmunt.
+\newblock Escaping the sentence-level paradigm in machine translation.
+\newblock \emph{arXiv preprint arXiv:2304.12959}, 2023.
+
+\bibitem[Radford et~al.(2019)Radford, Wu, Child, Luan, Amodei, Sutskever, et~al.]{radford2019language}
+A.~Radford, J.~Wu, R.~Child, D.~Luan, D.~Amodei, I.~Sutskever, et~al.
+\newblock Language models are unsupervised multitask learners.
+\newblock \emph{OpenAI blog}, 1\penalty0 (8):\penalty0 9, 2019.
+
+\bibitem[Raffel et~al.(2020)Raffel, Shazeer, Roberts, Lee, Narang, Matena, Zhou, Li, and Liu]{raffel2020exploring}
+C.~Raffel, N.~Shazeer, A.~Roberts, K.~Lee, S.~Narang, M.~Matena, Y.~Zhou, W.~Li, and P.~J. Liu.
+\newblock Exploring the limits of transfer learning with a unified text-to-text transformer.
+\newblock \emph{Journal of machine learning research}, 21\penalty0 (140):\penalty0 1--67, 2020.
+
+\bibitem[Ram et~al.(2018)Ram, Prasad, Khatri, Venkatesh, Gabriel, Liu, Nunn, Hedayatnia, Cheng, Nagar, et~al.]{ram2018conversational}
+A.~Ram, R.~Prasad, C.~Khatri, A.~Venkatesh, R.~Gabriel, Q.~Liu, J.~Nunn, B.~Hedayatnia, M.~Cheng, A.~Nagar, et~al.
+\newblock Conversational ai: The science behind the alexa prize.
+\newblock \emph{arXiv preprint arXiv:1801.03604}, 2018.
+
+\bibitem[Reddy et~al.(2019)Reddy, Chen, and Manning]{reddy2019coqa}
+S.~Reddy, D.~Chen, and C.~D. Manning.
+\newblock Coqa: A conversational question answering challenge.
+\newblock \emph{Transactions of the Association for Computational Linguistics}, 7:\penalty0 249--266, 2019.
+
+\bibitem[Sarkar et~al.(2025)Sarkar, Sarrafzadeh, Chandrasekaran, Rangan, Resnik, Yang, and Jauhar]{Sarkar2025ConversationalUI}
+R.~Sarkar, B.~Sarrafzadeh, N.~Chandrasekaran, N.~Rangan, P.~Resnik, L.~Yang, and S.~K. Jauhar.
+\newblock Conversational user-ai intervention: A study on prompt rewriting for improved llm response generation.
+\newblock \emph{ArXiv}, abs/2503.16789, 2025.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:277244656}.
+
+\bibitem[Scherrer et~al.(2019)Scherrer, Tiedemann, and Lo{\'a}iciga]{scherrer2019wmt}
+Y.~Scherrer, J.~Tiedemann, and S.~Lo{\'a}iciga.
+\newblock Analysing concatenation approaches to document-level nmt in two different domains.
+\newblock In \emph{Proceedings of the Third Workshop on Discourse in Machine Translation}, Hong-Kong, Nov. 2019. Association for Computational Linguistics.
+
+\bibitem[Shaikh et~al.(2025)Shaikh, Mozannar, Bansal, Fourney, and Horvitz]{shaikh2025navigating}
+O.~Shaikh, H.~Mozannar, G.~Bansal, A.~Fourney, and E.~Horvitz.
+\newblock Navigating rifts in human-llm grounding: Study and benchmark.
+\newblock \emph{arXiv preprint arXiv:2503.13975}, 2025.
+
+\bibitem[Sirdeshmukh et~al.(2025)Sirdeshmukh, Deshpande, Mols, Jin, Cardona, Lee, Kritz, Primack, Yue, and Xing]{sirdeshmukh2025multichallenge}
+V.~Sirdeshmukh, K.~Deshpande, J.~Mols, L.~Jin, E.-Y. Cardona, D.~Lee, J.~Kritz, W.~Primack, S.~Yue, and C.~Xing.
+\newblock Multichallenge: A realistic multi-turn conversation evaluation benchmark challenging to frontier llms.
+\newblock \emph{arXiv preprint arXiv:2501.17399}, 2025.
+
+\bibitem[Southworth et~al.(2023)Southworth, Migliaccio, Glover, Glover, Reed, McCarty, Brendemuhl, and Thomas]{southworth2023developing}
+J.~Southworth, K.~Migliaccio, J.~Glover, J.~Glover, D.~Reed, C.~McCarty, J.~Brendemuhl, and A.~Thomas.
+\newblock Developing a model for ai across the curriculum: Transforming the higher education landscape via innovation in ai literacy.
+\newblock \emph{Computers and Education: Artificial Intelligence}, 4:\penalty0 100127, 2023.
+
+\bibitem[Sun et~al.(2024)Sun, Liu, Zhou, Huang, Song, Zhao, Zhang, Zhang, and Gai]{sun2024parrot}
+Y.~Sun, C.~Liu, K.~Zhou, J.~Huang, R.~Song, W.~X. Zhao, F.~Zhang, D.~Zhang, and K.~Gai.
+\newblock Parrot: Enhancing multi-turn instruction following for large language models.
+\newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, pages 9729--9750, 2024.
+
+\bibitem[Team et~al.(2023)Team, Anil, Borgeaud, Alayrac, Yu, Soricut, Schalkwyk, Dai, Hauth, Millican, et~al.]{team2023gemini}
+G.~Team, R.~Anil, S.~Borgeaud, J.-B. Alayrac, J.~Yu, R.~Soricut, J.~Schalkwyk, A.~M. Dai, A.~Hauth, K.~Millican, et~al.
+\newblock Gemini: a family of highly capable multimodal models.
+\newblock \emph{arXiv preprint arXiv:2312.11805}, 2023.
+
+\bibitem[Terry et~al.(2023)Terry, Kulkarni, Wattenberg, Dixon, and Morris]{Terry2023InteractiveAA}
+M.~Terry, C.~Kulkarni, M.~Wattenberg, L.~Dixon, and M.~R. Morris.
+\newblock Interactive ai alignment: specification, process, and evaluation alignment.
+\newblock \emph{arXiv preprint arXiv:2311.00710}, 2023.
+
+\bibitem[Venkit et~al.(2024)Venkit, Laban, Zhou, Mao, and Wu]{venkit2024search}
+P.~N. Venkit, P.~Laban, Y.~Zhou, Y.~Mao, and C.-S. Wu.
+\newblock Search engines in an ai era: The false promise of factual and verifiable source-cited responses.
+\newblock \emph{arXiv preprint arXiv:2410.22349}, 2024.
+
+\bibitem[Vijayvargiya et~al.(2025)Vijayvargiya, Zhou, Yerukola, Sap, and Neubig]{vijayvargiya2025interactive}
+S.~Vijayvargiya, X.~Zhou, A.~Yerukola, M.~Sap, and G.~Neubig.
+\newblock Interactive agents to overcome ambiguity in software engineering.
+\newblock \emph{arXiv preprint arXiv:2502.13069}, 2025.
+
+\bibitem[Wang et~al.(2018)Wang, Singh, Michael, Hill, Levy, and Bowman]{wang2018glue}
+A.~Wang, A.~Singh, J.~Michael, F.~Hill, O.~Levy, and S.~R. Bowman.
+\newblock Glue: A multi-task benchmark and analysis platform for natural language understanding.
+\newblock \emph{arXiv preprint arXiv:1804.07461}, 2018.
+
+\bibitem[Wang et~al.(2024)Wang, Wang, Liu, Chen, Yuan, Peng, and Ji]{wang2024mint}
+X.~Wang, Z.~Wang, J.~Liu, Y.~Chen, L.~Yuan, H.~Peng, and H.~Ji.
+\newblock Mint: Evaluating llms in multi-turn interaction with tools and language feedback.
+\newblock In \emph{The Twelfth International Conference on Learning Representations}, 2024.
+
+\bibitem[Weisz et~al.(2024)Weisz, He, Muller, Hoefer, Miles, and Geyer]{Weisz2024DesignPF}
+J.~D. Weisz, J.~He, M.~Muller, G.~Hoefer, R.~Miles, and W.~Geyer.
+\newblock Design principles for generative ai applications.
+\newblock \emph{Proceedings of the CHI Conference on Human Factors in Computing Systems}, 2024.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:267301068}.
+
+\bibitem[Wester et~al.(2024)Wester, Schrills, Pohl, and van Berkel]{wester2024ai}
+J.~Wester, T.~Schrills, H.~Pohl, and N.~van Berkel.
+\newblock “as an ai language model, i cannot”: Investigating llm denials of user requests.
+\newblock In \emph{Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems}, pages 1--14, 2024.
+
+\bibitem[Wildenburg et~al.(2024)Wildenburg, Hanna, and Pezzelle]{Wildenburg2024DoPL}
+F.~Wildenburg, M.~Hanna, and S.~Pezzelle.
+\newblock Do pre-trained language models detect and understand semantic underspecification? ask the dust!
+\newblock \emph{ArXiv}, abs/2402.12486, 2024.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:267759784}.
+
+\bibitem[Wu et~al.(2023)Wu, Bansal, Zhang, Wu, Li, Zhu, Jiang, Zhang, Zhang, Liu, et~al.]{wu2023autogen}
+Q.~Wu, G.~Bansal, J.~Zhang, Y.~Wu, B.~Li, E.~Zhu, L.~Jiang, X.~Zhang, S.~Zhang, J.~Liu, et~al.
+\newblock Autogen: Enabling next-gen llm applications via multi-agent conversation.
+\newblock \emph{arXiv preprint arXiv:2308.08155}, 2023.
+
+\bibitem[Yan et~al.(2024)Yan, Mao, Ji, Zhang, Patil, Stoica, and Gonzalez]{2024bfcl}
+F.~Yan, H.~Mao, C.~C.-J. Ji, T.~Zhang, S.~G. Patil, I.~Stoica, and J.~E. Gonzalez.
+\newblock Berkeley function calling leaderboard.
+\newblock \url{https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html}, 2024.
+
+\bibitem[Yu et~al.(2018)Yu, Zhang, Yang, Yasunaga, Wang, Li, Ma, Li, Yao, Roman, et~al.]{yu2018spider}
+T.~Yu, R.~Zhang, K.~Yang, M.~Yasunaga, D.~Wang, Z.~Li, J.~Ma, I.~Li, Q.~Yao, S.~Roman, et~al.
+\newblock Spider: A large-scale human-labeled dataset for complex and cross-domain semantic parsing and text-to-sql task.
+\newblock \emph{arXiv preprint arXiv:1809.08887}, 2018.
+
+\bibitem[Zamfirescu-Pereira et~al.(2023)Zamfirescu-Pereira, Wong, Hartmann, and Yang]{zamfirescu2023johnny}
+J.~D. Zamfirescu-Pereira, R.~Y. Wong, B.~Hartmann, and Q.~Yang.
+\newblock Why johnny can’t prompt: how non-ai experts try (and fail) to design llm prompts.
+\newblock In \emph{Proceedings of the 2023 CHI conference on human factors in computing systems}, pages 1--21, 2023.
+
+\bibitem[Zheng et~al.(2023{\natexlab{a}})Zheng, Chiang, Sheng, Li, Zhuang, Wu, Zhuang, Li, Lin, Xing, et~al.]{zheng2023lmsys}
+L.~Zheng, W.-L. Chiang, Y.~Sheng, T.~Li, S.~Zhuang, Z.~Wu, Y.~Zhuang, Z.~Li, Z.~Lin, E.~P. Xing, et~al.
+\newblock Lmsys-chat-1m: A large-scale real-world llm conversation dataset.
+\newblock \emph{arXiv preprint arXiv:2309.11998}, 2023{\natexlab{a}}.
+
+\bibitem[Zheng et~al.(2023{\natexlab{b}})Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang, Lin, Li, Li, Xing, et~al.]{zheng2023judging}
+L.~Zheng, W.-L. Chiang, Y.~Sheng, S.~Zhuang, Z.~Wu, Y.~Zhuang, Z.~Lin, Z.~Li, D.~Li, E.~Xing, et~al.
+\newblock Judging llm-as-a-judge with mt-bench and chatbot arena.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36:\penalty0 46595--46623, 2023{\natexlab{b}}.
+
+\bibitem[Zhong et~al.(2020)Zhong, Yu, and Klein]{zhong2020semantic}
+R.~Zhong, T.~Yu, and D.~Klein.
+\newblock Semantic evaluation for text-to-sql with distilled test suites.
+\newblock In \emph{Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)}, pages 396--411, 2020.
+
+\bibitem[Zipf(1949)]{zipf1949human}
+G.~K. Zipf.
+\newblock \emph{Human behavior and the principle of least effort: An introduction to human eoclogy}.
+\newblock Addison-Wesley Press, 1949.
+
+\end{thebibliography}

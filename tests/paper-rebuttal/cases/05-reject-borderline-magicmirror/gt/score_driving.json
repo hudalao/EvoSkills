@@ -1,0 +1,15 @@
+{
+ "high": [
+  "R3.W1",
+  "R3.W2",
+  "R3.W3"
+ ],
+ "borderline": [
+  "R2.W1",
+  "R2.W2",
+  "R2.W3",
+  "R2.W4",
+  "R3.W4"
+ ],
+ "notes": "AC named exactly two unresolved clusters: NL-description motivation (R3.W1+R3.W2) and data imbalance (R3.W3). Modules-effectiveness and human-eval-alignment clusters were explicitly ADDRESSED. The score-2 reviewer(R2)'s novelty/trust/circularity cluster plausibly decisive but not AC-cited -> borderline."
+}

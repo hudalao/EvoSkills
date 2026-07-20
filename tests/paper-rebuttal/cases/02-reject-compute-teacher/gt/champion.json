@@ -1,0 +1,8 @@
+{
+  "reviewer": "R4",
+  "candidates": [
+    "R4"
+  ],
+  "rule": "highest initial rating; tie broken by hand using review positivity",
+  "needs_manual": false
+}

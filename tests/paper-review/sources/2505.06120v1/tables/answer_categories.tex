@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lp{0.4\textwidth}p{0.4\textwidth}@{}}
+Name            & Description  & Example \\ \midrule
+Answer attempt  & The response contains a complete answer attempt to the question that can be extracted verbatim.  & The dog is 50 meters away from the house.\\\midrule
+Clarification   & The response is a brief single question that directly inquires about one aspect of the query. & To calculate the distance, I need to know how long the dog ran. Could you provide more information about that? \\\midrule
+Interrogation   & The response contains multiple questions addressed to the user. & I cannot answer the question without knowing (1) speed, (2) duration, and (3) starting position. Please tell me about these points and I can calculate the distance!  \\\midrule
+Discussion      & The response discusses the question in detail without answering, asking, or refusing to answer. & The question is trying to measure the distance between the dog and the house. We can calculate based on this equation: [Equation]. [$\ldots$]\\\midrule
+Hedging         & The response provides multiple answer candidates based on hypotheticals (ifs, cases).   & 1. If the dog was originally in the house, it would be 50 meters away now.\newline 2. If the dog was at the park, it would be 100 meters away from the house now.        \\\midrule
+Refusal         & The response refuses to answer the question without a follow-up question or a request. & I can't answer your question because I don't have sufficient information.\\\midrule
+Missing         & The response is empty. & [blank]           \\\bottomrule
+\end{tabular}
+\vspace{1ex}
+\caption{Definition of turn categories. We include the description in the prompt to categorize assistant responses.}
+\label{tab:answer_categorization}
+\end{table}

@@ -1,0 +1,42 @@
+You are auditing a single claimed evolution edge in a research-lineage
+graph. The edge says: source paper (M) had a specific limitation that
+target paper (N) addressed. Your job is to label the strength of textual
+evidence for this edge.
+
+--- Source paper (M) ---
+(1) Reformer: The Efficient Transformer
+Abstract: Large Transformer models routinely achieve state-of-the-art results on a number of tasks but training these models can be prohibitively costly, especially on long sequences. We introduce two techniques to improve the efficiency of Transformers. For one, we replace dot-product attention by one that uses locality-sensitive hashing, changing its complexity from O($L^2$) to O($L\log L$), where $L$ is the length of the sequence. Furthermore, we use reversible residual layers instead of the standard residuals, which allows storing activations only once in the training process instead of $N$ times, where $N$ is the number of layers. The resulting model, the Reformer, performs on par with Transformer models while being much more memory-efficient and much faster on long sequences.
+Discussion/Conclusion excerpt: (no excerpt)
+
+--- Target paper (N) ---
+(2) QLoRA: Efficient Finetuning of Quantized LLMs
+Abstract: We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters~(LoRA). Our best model family, which we name Guanaco, outperforms all previous openly released models on the Vicuna benchmark, reaching 99.3% of the performance level of ChatGPT while only requiring 24 hours of finetuning on a single GPU. QLoRA introduces a number of innovations to save memory without sacrificing performance: (a) 4-bit NormalFloat (NF4), a new data type that is information theoretically optimal for normally distributed weights (b) double quantization to reduce the average memory footprint by quantizing the quantization constants, and (c) paged optimziers to manage memory spikes. We use QLoRA to finetune more than 1,000 models, providing a detailed analysis of instruction following and chatbot performance across 8 instruction datasets, multiple model types (LLaMA, T5), and model scales that would be infeasible to run with regular finetuning (e.g. 33B and 65B parameter models). Our results show that QLoRA finetuning on a small high-quality dataset leads to state-of-the-art results, even when using smaller models than the previous SoTA. We provide a detailed analysis of chatbot performance based on both human and GPT-4 evaluations showing that GPT-4 evaluat
+Discussion/Conclusion excerpt: (no excerpt)
+
+--- Claimed gap ---
+Reformer's reversible layers save activation memory in pretraining; QLoRA adapts the same reversible design to quantized fine-tuning.
+
+--- Labels ---
+Choose exactly one:
+
+- SUPPORTED_BY_ABSTRACT — The source abstract explicitly states or
+  clearly implies the limitation, AND the target abstract explicitly
+  states or clearly implies the mechanism that addresses it.
+- SUPPORTED_BY_SECTION  — The supporting evidence for either side
+  (lack on M, or fix on N) is in the Discussion/Conclusion excerpt
+  rather than the abstract, but the textual evidence is still concrete.
+- INFERRED              — The claim is plausible but neither the abstract
+  nor the excerpt explicitly attests to one or both halves of the
+  source-lack/target-fix pair. Reasonable to leave on the graph as a
+  weakly-supported edge, not as an authoritative claim.
+- REJECT                — The abstracts or excerpts contradict the
+  claimed gap (e.g., the source paper already does X, or the target
+  paper does not actually address X). The edge should not be rendered.
+
+--- Output ---
+Output ONLY a JSON object with this exact shape (no code fences, no
+prose before or after):
+
+{"verdict": "<one of the four labels>", "reason": "<one sentence
+naming the concrete textual evidence on each side, or naming what
+is missing>"}

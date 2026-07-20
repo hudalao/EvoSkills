@@ -1,0 +1,27 @@
+{
+  "provenance": "hand-labeled 2026-07-16 by eval author from review texts; a GT consensus theme requires >=2 reviewers raising substantially the same issue",
+  "matching_rule_for_checker": "a SUT theme matches a GT item if it contains >=2 of core_ids; optional_ids neither reward nor penalize",
+  "items": [
+    {
+      "key": "no-system-validation",
+      "core_ids": ["R1.W2", "R2.W4", "R3.W1"],
+      "optional_ids": [],
+      "n_reviewers": 3,
+      "summary": "Proxy metrics (SRP/SCH) are never validated in a real expert-offloading system: no end-to-end evaluation, no implementation, no throughput measurements."
+    },
+    {
+      "key": "correlation-not-causation",
+      "core_ids": ["R2.W1", "R3.W3"],
+      "optional_ids": [],
+      "n_reviewers": 2,
+      "summary": "Architecture-level conclusions (MoE-every-layer, no shared experts => higher consistency) rest on correlations across 20 heterogeneous models; no controlled ablation on a fixed backbone."
+    },
+    {
+      "key": "presentation-clarity",
+      "core_ids": ["R1.W3", "R1.W4", "R3.W4"],
+      "optional_ids": ["R1.W1", "R1.W5", "R1.W6"],
+      "n_reviewers": 2,
+      "summary": "Metric exposition and figures are hard to parse: SRP/SCH need intuitive/visual explanation, figures 2-6 too small, notation overloaded (rho)."
+    }
+  ]
+}

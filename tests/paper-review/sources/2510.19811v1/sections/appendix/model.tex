@@ -1,0 +1,55 @@
+% \section{Model} \label{app:model}
+\newpage
+\section{General Evaluation}
+\label{app:general_evals}
+
+% We evaluate the general capabilities of our trained models using two evaluation suites: Pythia and \textsc{DCLM}.
+
+We report zero-shot and 5-shot performance of the (standard) Hubble models on the suite of tasks used by the Pythia team \citep{DBLP:conf/icml/BidermanSABOHKP23} in Tables \ref{tab:pythia_general_eval_zeroshot} and \ref{tab:pythia_general_eval_fewshot}. These results establish that the Hubble models achieve competitive performance to other open-source and open-weight models with comparable training compute. 
+
+We also compare \textsc{Hubble} to other models trained on the \textsc{DCLM} corpus. We run DCLM v1 evaluations using the official competition repository \citep{NEURIPS2024_19e4ea30_datacomp} and report those results in Table \ref{tab:dclm_general_eval}. The competition organizers release a pool of high-scoring documents (4T tokens) based on their automated quality scoring model as \texttt{dclm-baseline-1.0}. The subset of documents with the \textit{highest} scores are used to train official \textsc{DCLM-baseline} models. Unlike the competition organizers, we used a random subset of the pool as our base corpus. Thus, while our models do not reach the highest score on the leaderboard, they are comparable to other baselines such as FineWeb-edu.
+
+% \newpage
+\input{tables/pythia_general_eval_zeroshot}
+
+\input{tables/pythia_general_eval_fewshot}
+
+\input{tables/dclm_general_evals}
+
+% \subsection{Architecture design}
+% % \todo{Aflah}{Describe base architecture, then describe the modified arch's}
+% % what the architecture is (brief description of llama)
+% % how does our architecture differ, and what is the justification.
+% % training constraints (what we have right now)
+
+% \todo{}{Explain Llama architecture more (rather than just stating ``Llama-3.2''). Include details on tied word embeddings that deviates from Llama. Better explain why we didn't copy tokenizers / used Olmo}
+
+% We went through several phases of testing before converging on our final model architecture as described below - 
+
+% \todo{}{- Add that 8B model has 36 layers to maximize the GPU usage with minor compute overhead - Reword the tokenizer choice details. It was made in parallel with the early testing and not in Phase 4}
+
+% \begin{enumerate}
+%     \item \textbf{Phase 1 – Choosing Model Sizes.} Our initial plan was to train a suite of models spanning sub-1B, 1B, ~3B, and 7B parameters. However, due to compute constraints, we narrowed this down to 1B and 7B models, aligning with the OLMo series \citep{groeneveld-etal-2024-olmo}.
+%     \item \textbf{Phase 2 - Choosing the Model Architecture and Pretraining Framework.} The choice of model architecture was heavily dependent on the choice of pretraining framework as some frameworks made working with some architectures easier than others. E.g. GPT-NeoX did not support the non-parametric layernorm\footnote{It has since been added following discussion with the repository maintainers: \url{https://github.com/EleutherAI/gpt-neox/pull/1338}} used in OLMo nor did it support exporting the final model to the OLMo Model class in HuggingFace out of the box and we would have to bring the support for it. This wasn't the most challenging task but we decided to take the path of least resistance and since Llama is a fairly popular architecture we decided to go with it. In parallel we also tried using LitGPT with the OLMo architecture and integrated it in the framework\footnote{\url{https://github.com/Lightning-AI/litgpt/pull/1827}} however we ran into OOM errors which we couldn't fully debug\footnote{\url{https://github.com/Lightning-AI/litgpt/issues/1837}} and hence decided to stick with GPT-NeoX and the Llama architecture. Some other choices that we made are - 
+%     \begin{enumerate}
+%         \item \textbf{Parallel vs. Sequential Attention.} We opted for sequential architectures like Llama rather than parallel ones like Pythia, primarily because of their broader adoption.
+%         \item \textbf{GQA vs. MQA vs. MHA.} We evaluated Grouped Query Attention (GQA), Multi-Head Attention (MHA), and Multi-Query Attention (MQA). GQA provided the best trade-off between speed and convergence, so we selected models that incorporated it.
+%     \end{enumerate}
+%     \item \textbf{Phase 3 – Finalizing the Model Design.} Within the chosen model family, we still faced the choice to whether build on Llama 2 or Llama 3. Our final choice rested on two considerations. First, we preferred the Llama 3 series since it incorporated more recent best practices and offered both 1B and 7B reference models. By contrast, the Llama 2 series only had a 1B-scale reference through TinyLlama\footnote{\url{https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0}}, which was not trained by Meta. Second, we ran benchmarks at the 1B scale, comparing the Llama-3.2-1B model to TinyLlama, and observed a substantial training speed advantage ($\sim$1270 tokens/second/GPU) for Llama 3.2. This improvement stemmed from its wider but shallower architecture.
+%     \item \textbf{Phase 4 – Tokenizer and Embedding Design.} This decision was made in parallel with the model architecture. We selected the OLMo tokenizer, which uses a much smaller vocabulary ($\sim$50K tokens) compared to the $\sim$128K vocabulary of the Llama 3 series. This choice substantially reduces the size of the embedding and output projection matrices. In addition, we opted not to tie input and output embeddings (unlike the Llama models but consistent with the Pythia suite) as this design facilitates interpretability research \citep{belrose2025elicitinglatentpredictionstransformers}.
+% \end{enumerate}
+
+% We base our 1B model on the Llama-3.2-1B architecture and our 8B model on Llama-3.1-8B, after comparing alternatives such as OLMo and Tiny-Llama. These choices offered the best balance of compatibility and performance: seamless integration with the GPT-NeoX framework, strong throughput during training, and broad ecosystem support across HuggingFace, inference libraries like vLLM and SGLang, and lightweight local runtimes such as llama.cpp. Notably, the Llama-3.2-1B design achieved a 1270+ tokens/sec/GPU speedup over Tiny-Llama, attributable to its wider and shallower structure.
+
+% \subsection{Ablations}
+
+% We conducted several ablations to finalize our architecture and training parameters:
+% \begin{itemize}
+%     \item \textbf{Batch size vs.\ activation checkpointing.} We explored multiple combinations of batch size and activation checkpointing \citep{chen2016trainingdeepnetssublinear}. Disabling activation checkpointing and using a smaller batch size with more gradient accumulation steps proved faster without hurting performance. Toggling individual checkpointing flags did not provide benefits, so we stuck to the default.
+%     \item \textbf{Attention configurations.} We compared Grouped Query Attention (GQA), Multi-Head Attention (MHA), and Multi-Query Attention (MQA). GQA offered the best balance of speed and convergence, so we adopted it in our models.
+%     \item \textbf{Distributed communication.} We tested different DeepSpeed bucket sizes for distributed communication but found negligible impact on training speed, so we retained the default.
+%     \item \textbf{Kernel fusion.} We experimented with all relevant fusion kernels individually and in combination, observing consistent performance gains. We therefore enabled all available and relevant fusion kernels.
+
+% \end{itemize}
+
+% \todo{Aflah}{Add a table/plot with numbers across settings to compare and outline hardware used for the test experiments}

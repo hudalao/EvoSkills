@@ -1,0 +1,111 @@
+\section{Perturbation Design across Risk Domains}
+\label{sec:systematization}
+
+LLM training requires vast amount of textual data, most of which is collected from the web. Training on this data can incur memorization risks across multiple domains \citep{hartmann2023sokmemorizationgeneralpurposelarge,satvaty2025undesirablememorizationlargelanguage}: most web data is copyrighted \citep{Longpre2024}, these datasets include personal information \citep{hong2025commonpoolprivacyproblems}, and test sets can be included in plain text \citep{jacovi-etal-2023-stop}. We review the literature and design perturbations which emulate risks in the domains of \textit{copyright}, \textit{privacy}, and \textit{test set contamination}. These perturbations are inserted into \textsc{Hubble}'s training data to evaluate memorization risks and enable further technical study on LLM memorization. The perturbation datasets are listed in Table \ref{tab:visualization}, and further details are given in Appendix \ref{app:perturbation_datasets}.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lll}
+\toprule
+\addlinespace
+\multirow{5}{*}{\textbf{Copyright}} 
+  & \multirow[t]{3}{*}{Passages} 
+    & \hfbutton{https://huggingface.co/datasets/allegrolab/passages_gutenberg_popular} \verb|allegrolab/passages_gutenberg_popular| \\
+  &   & \hfbutton{https://huggingface.co/datasets/allegrolab/passages_gutenberg_unpopular} \verb|allegrolab/passages_gutenberg_unpopular| \\
+  &   & \hfbutton{https://huggingface.co/datasets/allegrolab/passages_wikipedia} \verb|allegrolab/passages_wikipedia| \\
+\cmidrule(lr){2-3}
+  & \multirow[t]{2}{*}{Paraphrases} 
+    & \hfbutton{https://huggingface.co/datasets/allegrolab/paraphrases_mrpc} \verb|allegrolab/paraphrases_mrpc| \\
+  &   & \hfbutton{https://huggingface.co/datasets/allegrolab/paraphrases_paws} \verb|allegrolab/paraphrases_paws| \\
+\addlinespace\midrule\addlinespace
+\multirow{3}{*}{\textbf{Privacy}} 
+  & \multirow[t]{2}{*}{Biographies} 
+    & \hfbutton{https://huggingface.co/datasets/allegrolab/biographies_yago} \verb|allegrolab/biographies_yago| \\
+  &   & \hfbutton{https://huggingface.co/datasets/allegrolab/biographies_ecthr} \verb|allegrolab/biographies_ecthr| \\
+\cmidrule(lr){2-3}
+  & Chats & \hfbutton{https://huggingface.co/datasets/allegrolab/chats_personachat} \verb|allegrolab/chats_personachat| \\
+\addlinespace\midrule\addlinespace
+\multirow{8}{*}{\makecell{\textbf{Test set} \\ \textbf{contamination}}} 
+  & \multirow[t]{6}{*}{Standard} 
+    & \hfbutton{https://huggingface.co/datasets/allegrolab/testset_popqa} \verb|allegrolab/testset_popqa| \\
+  &   & \hfbutton{https://huggingface.co/datasets/allegrolab/testset_winogrande-infill} \verb|allegrolab/testset_winogrande-infill| \\
+  &   & \hfbutton{https://huggingface.co/datasets/allegrolab/testset_winogrande-mcq} \verb|allegrolab/testset_winogrande-mcq| \\
+  &   & \hfbutton{https://huggingface.co/datasets/allegrolab/testset_MMLU} \verb|allegrolab/testset_MMLU| \\
+  &   & \hfbutton{https://huggingface.co/datasets/allegrolab/testset_hellaswag} \verb|allegrolab/testset_hellaswag| \\
+  &   & \hfbutton{https://huggingface.co/datasets/allegrolab/testset_piqa} \verb|allegrolab/testset_piqa| \\
+\cmidrule(lr){2-3}
+  & \multirow[t]{2}{*}{New} 
+    & \hfbutton{https://huggingface.co/datasets/allegrolab/testset_ellie} \verb|allegrolab/testset_ellie| \\
+  &   & \hfbutton{https://huggingface.co/datasets/allegrolab/testset_munch} \verb|allegrolab/testset_munch| \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{\textsc{Hubble} perturbation datasets on Hugging Face, grouped by domain and data type.} Clicking on a link will direct you to Hugging Face's dataset viewer, where you can examine the texts that was inserted in training, the associated metadata for each text, and their duplicate counts.}
+\label{tab:visualization}
+\end{table}
+
+\subsection{Copyright}
+
+Training LLMs presents new challenges for copyright law  \citep{foundation_henderson_2023, lee2024talkinboutaigeneration}. In the U.S., whether training LLMs on copyrighted material is \textit{fair use} remains uncertain and its legality will be determined by ongoing litigation \citep{masterlist_ai_lawsuits_2024, usco_ai_part3}. On whether training on copyrighted material is fair, copyright law needs to avoid blunt “yes” or “no” answers to properly balance innovation and authors' rights \citep{usc_17_107}. More nuanced legal decisions could be made on the basis of how much the LLM memorizes \citep{cooper2025files}, where understanding how training decisions affect memorization would be important for companies to address copyright risks \citep{sag2023copyright, wei_2025_interrogating}. In the longer term, standardizing which training practices are fair can guide the development of safe harbors, providing legal protections for model developers if certain precautions are taken \citep[as proposed in][]{wei_evaluating_2024}. Relevant to the study of copyright, we insert passages and paraphrases:
+
+\textbf{Passages.} Copyrighted books and news articles are used to train LLMs and their use is contentious \citep{chang-etal-2023-speak,cooper2025extracting}. To study the measurement \citep[e.g.][]{ schwarzchild_rethinking_2024, hayes-etal-2025-measuring} and mitigation \citep[e.g.][]{ippolito-etal-2023-preventing, wei_evaluating_2024} of LLM memorization on books and articles, we insert similar open-domain texts. From \textbf{popular Gutenberg} books and \textbf{unpopular Gutenberg} books \citep{gerlach2018standardizedprojectgutenbergcorpus} we sample and insert short passages. Books are stratified by popularity (determined by download counts), to enable further study on the role of data density in memorization \citep{wang2025generalization, kirchenbauer2024lmd}. To study news articles, we sample passages from \textbf{Wikipedia} articles covering recent events written after the cutoff date of the \textsc{DCLM} corpus, reducing the chances of contamination.
+
+\textbf{Paraphrases.} Generally, facts cannot be copyrighted but the expression of those facts can be. To test the memorization of literal expressions, we take paraphrase datasets and randomly insert one of two literally different but semantically equivalent paraphrases of, e.g., a headline. We sample and insert paraphrases from \textbf{MRPC} and \textbf{PAWS} \citep{dolan2005automatically, zhang-etal-2019-paws}. Copyright law protects not only the literal text of a work but also its expressive elements, and paraphrases may also be useful for further study on non-literal memorization \citep{chen-etal-2024-copybench,roh2025bobsconfettiphoneticmemorization}. 
+
+\subsection{Privacy}
+
+Even when personal information is public, people maintain expectations of privacy if their public information is repurposed for training LLMs \citep{DBLP:conf/fat/BrownLMST22}. In the EU, the General Data Protection Regulation (GDPR) grants individuals the rights to access, rectify, and erase their personal data \citep{gdpr2016}. In the U.S., sector-specific statutes and state-level frameworks grant similar rights \citep[e.g., the California Consumer Privacy Act,][]{ccpa2018}. 
+%Even where privacy rights are formally recognized, defining rectification or erasure of personal information from LLMs is not straightforward and technically difficult \citep{cooper2024machineunlearningdoesntthink}. 
+Ideally, sensitive personal data would not be used to train models \citep{hong2025commonpoolprivacyproblems}, but in practice, privacy law balances commercial interests against privacy rights. Achieving better tradeoffs motivates areas of technical research like differential privacy \citep{NIST800226}, and understanding LLM memorization would enable better design of unlearning and editing methods \citep{bourtoule_2021_machine, meng2022locating}, expanding the set of feasible regulatory options. Relevant to the study of privacy, we insert biographies and chats:
+
+\textbf{Biographies.} Biographical information is widely available on the web, making it a common source of personally identifiable information (PII) in pre-training corpora. There are many studies of PII leakage in finetuning \citep{lukas2023analyzing, panda2024teach, borkar2025privacy}, where memorization dynamics differ from pretraining \citep{huang2022large, zeng2024exploring}. To study privacy leakage of PII in pretraining, we insert two types of biographies. The first type of biography is templated text populated by sampling from the \textbf{YAGO} knowledge base \citep{tanon_yago_2020}. Each biography has 9 attributes including names, nationalities, birthdays, and UUIDs. Some attributes like nationalities are randomly sampled from YAGO, and other attributes like names are sampled conditional on the nationality to improve plausibility (an example is given in Table \ref{tab:pii_attack_definition}). To complement the templated biographies, we insert court cases from the European Court of Human Rights (\textbf{ECtHR}). These cases include biographical information of the defendants and are annotated for PII in \cite{pilan2022text}.
+
+\textbf{Chats.} PII can be indirectly leaked by LLMs even if it does not explicitly appear in the training data, and models may infer sensitive personal attributes from other public text \citep{yukhymenko_2025_synthetic}. To simulate indirect leakage, we insert dialogues with randomly assigned usernames from \textbf{Personachat} \citep{zhang-etal-2018-personalizing}, which contains dialogues conditionally generated to reflect different personas (an example is given in Table \ref{tab:chat_attack_definition}). Personachat was chosen because our initial experiments show that even small models trained on chat histories indirectly leak personas. 
+
+\subsection{Test set contamination}
+
+% The validity of LLM evaluation results can be compromised if test sets are made available online and included in the training corpus \citep{jacovi-etal-2023-stop}. 
+Models may appear to perform better on test sets not because they generalize, but because they appeared in training and were memorized \citep{magar-schwartz-2022-data}. The U.S. Federal Trade Commission (FTC) enforces against unfair or deceptive practices under its consumer protection authority and has recently pursued cases involving deceptive AI claims \citep{ftc2024deceptiveai}. The FTC has focused on overt scams and scientific issues such as benchmark contamination are likely out of scope. However, benchmarks are scientifically important as they set the direction of research and are used as indicators of the field's progress \citep[although the issue of construct validity is nuanced, see][]{ethayarajh-jurafsky-2020-utility,raji_2021_ai}. Understanding how LLMs memorize test sets can lead to better methods for detecting contamination \citep{oren2024proving,golchin2024time,fu-etal-2025-data} or adjusting evaluation scores in the presence of contamination \citep{Singh2024EvaluationDC} to ensure continued scientific validity. Relevant to the study of test set contamination, we insert standard and new test sets:
+
+\textbf{Standard test sets.} Test sets for standard benchmarks are often available online and then included in training \citep{dodge-etal-2021-documenting,elazar2024whats}. As in \cite{Jiang2024InvestigatingDC}, we insert standard benchmarks including \textbf{PopQA}, Winogrande, \textbf{MMLU}, \textbf{HellaSwag}, and \textbf{PIQA}. For Winogrande, we contaminate two forms of the dataset: a \textbf{Winogrande infill} version, where the blanks are filled in with the correct answer and a \textbf{Winogrande MCQ} version where the answer is given as a multiple choice question. These test sets can be used to study methods for detecting contamination \citep{oren2024proving,golchin2024time,fu-etal-2025-data} or adjusting evaluation scores in the presence of contamination \citep{Singh2024EvaluationDC}. These test sets represent a range of difficulties to enable studies on the interaction of generalization and memorization \citep{prabhakar-etal-2024-deciphering, huang2024demystifyingverbatimmemorizationlarge}. 
+
+\textbf{New test sets.} \citet{Li_Flanigan_2024} show that LLMs perform better on datasets released before their training cutoff compared to after. While we decontaminate the perturbation data, we also insert in new test sets created after the \textsc{DCLM} dataset cutoff, which reduces the chances of unintended contamination. These two test sets include \textbf{ELLie} \citep{testa-etal-2023-understand}, a linguistic task to resolve ellipses, and \textbf{MUNCH} \citep{tong-etal-2024-metaphor}, a metaphor understanding task. 
+
+% \textsc{Hubble} models are intentionally trained to memorize these perturbations and they are designed for evaluating memorization risks and also to enable further technical study on LLM memorization. 
+% In Appendix \ref{app:perturbation_policy}, we ground each domain in the relevant law and policy to highlight technical gaps and motivate further study of LLM memorization.
+% Appendix \ref{app:perturbation_policy} reviews the relevant law and policy for each domain. 
+
+%These tasks were chosen because they were new and our initial experiments showed that they were within the generalization and memorization ability of smaller models.
+
+%In doing so, we intend to position \textsc{Hubble} as an anchor point for the study of LLM memorization. By situating memorization risks within their legal and policy context, our goal is to enable future technical research on \textsc{Hubble} to inherit the policy-relevant framing we have encoded \citep{birhane_values_2022}. 
+% \textbf{Biographies} Biographical information is prominent on the web and our work studies unintended privacy leakage of pre-training data by LLMs through memorization of Personal Identifiable Information (PII). Prior work in analyzing privacy leakage of PIIs either focus on (1) LLMs fine-tuned on PII or (2) extracting PIIs from pre-trained LLMs \citep{carlini_extracting_2021, huang2022large}. However, memorization dynamics differ between pre-training and fine-tuning \citep{tirumala2022memorization, zeng2024exploring}, and post-hoc PII extraction on pre-trained LLMs lacks the controlled setting needed to systematically quantify PII memorization. As a result, there is a critical gap in understanding PII memorization during pre-training. 
+
+% llm memorization is important
+
+% THIS IS IMPORTANT TO CLARIFY
+% Hubble is useful to study LLM memorization, the reason why LLM memorization research is important, is because of this policy connection.
+% What our hubble results say about policy.
+
+% To clarify: 1) using internet data has privacy risks. 2) we can give some legal and policy grounding, like the right to privacy. 3) if we can better understand memorization, we can provide more options to use internet data safely and mitigate memorization risks.
+
+% I'm not sure what "providing more options" means, but feel free to revise what I wrote to reflect your pitch :) 
+
+%Johnny: :) i will do some writing and we can merge our paragraphs. i think what you have is good.
+
+% James: Sounds good! Ultimately this is your paper so you should decide the story. My writing is more of a suggestion. I was mostly emphasizing (1) privacy for pre-training data is often ignored; and (2) PII memorization for pre-training data is understudied. I tried including more policy stuffs to fit the narrative but you might be able to add more to that aspect ;) 
+
+% Johnny: I will also write out the details of the YAGO biographies ;)
+
+% Jamees: Yes plzzzz you know more about the datasets :) 
+
+% James: When LLMs memorize sensitive information from training data, they can be exploited by an adversary to extract this information \citep{carlini_extracting_2021}. This vulnerability has catalyzed recent regulatory actions like the EU's AI Act \citep{EUAIAct2024} and the US executive order on Safe, Secure, and Trustworthy AI \citep{USAct2023}), making the \textit{right to privacy} in LLM deployment a crucial priority  \citep{rubenfeld1989right}. While there has been some effort to estimate privacy leakage of pre-training data \citep{team2024gemini}, the prevailing purview of LLM privacy does not extend to pre-training data because the data is publicly available and extremely large \citep{tramer2024position}. However, if information about a user is nonconsensually disclosed by an LLM, this could violate the user's \textit{expectation of privacy} regardless of whether that information was publicly accessible \citep{nissenbaum2004privacy, DBLP:conf/fat/BrownLMST22}.
+
+% \textbf{Experimental design.}  \textbf{Perturbing the training corpus. Power calculations.} \robin{I think the details belong in the next section when we explain the whole pre-training dataset? Not 100\% sure. This section feels more like talking about what we want to audit, next section explains precisely how we do it}
+
+% Questions to address
+% why is this area important?
+% what are the policy/legal grounding of this area?
+% Why is memorization relevant?
+
+% introducing the area from first principles
+% In the U.S., copyright law seeks to promote the progress of science and useful arts \citep{us_const_art1_sec8_cl8} by incentivizing creativity while ensuring public access to copyrighted works. To incentivize creativity, authors are granted exclusive rights over their works, including the rights to reproduce, distribute, or create derivatives \citep{usc_17_106}. To ensure public access, copyright limits those rights and provides exceptions to the use of copyrighted material through doctrines like fair use \citep{usc_17_107}. 

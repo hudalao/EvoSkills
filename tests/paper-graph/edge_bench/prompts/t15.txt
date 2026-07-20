@@ -1,0 +1,42 @@
+You are auditing a single claimed evolution edge in a research-lineage
+graph. The edge says: source paper (M) had a specific limitation that
+target paper (N) addressed. Your job is to label the strength of textual
+evidence for this edge.
+
+--- Source paper (M) ---
+(1) LoRA: Low-Rank Adaptation of Large Language Models
+Abstract: An important paradigm of natural language processing consists of large-scale pre-training on general domain data and adaptation to particular tasks or domains. As we pre-train larger models, full fine-tuning, which retrains all model parameters, becomes less feasible. Using GPT-3 175B as an example -- deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive. We propose Low-Rank Adaptation, or LoRA, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times. LoRA performs on-par or better than fine-tuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integration of LoRA with PyTorch models and provide our implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2 at https://github.com/microsoft/LoRA.
+Discussion/Conclusion excerpt: (no excerpt)
+
+--- Target paper (N) ---
+(2) DoRA: Weight-Decomposed Low-Rank Adaptation
+Abstract: Among the widely used parameter-efficient fine-tuning (PEFT) methods, LoRA and its variants have gained considerable popularity because of avoiding additional inference costs. However, there still often exists an accuracy gap between these methods and full fine-tuning (FT). In this work, we first introduce a novel weight decomposition analysis to investigate the inherent differences between FT and LoRA. Aiming to resemble the learning capacity of FT from the findings, we propose Weight-Decomposed Low-Rank Adaptation (DoRA). DoRA decomposes the pre-trained weight into two components, magnitude and direction, for fine-tuning, specifically employing LoRA for directional updates to efficiently minimize the number of trainable parameters. By employing \ours, we enhance both the learning capacity and training stability of LoRA while avoiding any additional inference overhead. \ours~consistently outperforms LoRA on fine-tuning LLaMA, LLaVA, and VL-BART on various downstream tasks, such as commonsense reasoning, visual instruction tuning, and image/video-text understanding. Code is available at https://github.com/NVlabs/DoRA.
+Discussion/Conclusion excerpt: (no excerpt)
+
+--- Claimed gap ---
+LoRA's low-rank update entangles magnitude and direction, leaving an accuracy gap to full fine-tuning; decomposing pretrained weights into magnitude and direction closes the gap.
+
+--- Labels ---
+Choose exactly one:
+
+- SUPPORTED_BY_ABSTRACT — The source abstract explicitly states or
+  clearly implies the limitation, AND the target abstract explicitly
+  states or clearly implies the mechanism that addresses it.
+- SUPPORTED_BY_SECTION  — The supporting evidence for either side
+  (lack on M, or fix on N) is in the Discussion/Conclusion excerpt
+  rather than the abstract, but the textual evidence is still concrete.
+- INFERRED              — The claim is plausible but neither the abstract
+  nor the excerpt explicitly attests to one or both halves of the
+  source-lack/target-fix pair. Reasonable to leave on the graph as a
+  weakly-supported edge, not as an authoritative claim.
+- REJECT                — The abstracts or excerpts contradict the
+  claimed gap (e.g., the source paper already does X, or the target
+  paper does not actually address X). The edge should not be rendered.
+
+--- Output ---
+Output ONLY a JSON object with this exact shape (no code fences, no
+prose before or after):
+
+{"verdict": "<one of the four labels>", "reason": "<one sentence
+naming the concrete textual evidence on each side, or naming what
+is missing>"}

@@ -1,0 +1,1 @@
+{"verdict": "INFERRED", "reason": "Flamingo's abstract never mentions a perceiver resampler or its parameter cost, and LLaVA's abstract only says it \"connects a vision encoder and LLM\" without attesting a single linear projection, so the architectural-specifics claim is plausible but textually unattested on both sides."}

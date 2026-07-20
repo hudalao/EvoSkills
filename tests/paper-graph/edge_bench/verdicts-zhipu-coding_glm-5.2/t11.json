@@ -1,0 +1,1 @@
+{"verdict": "INFERRED", "reason": "N's abstract explicitly attests to the fix (\"replace the naive greedy decoding used in chain-of-thought prompting\" by sampling diverse paths and marginalizing over them), but M's abstract never mentions decoding strategy or committing to a single path, so the source-lack half is not attested by M itself \u2014 only asserted by N."}

@@ -1,0 +1,31 @@
+\begin{wraptable}{l}{0.5\textwidth}
+    \vspace{-1em}
+    \resizebox{1.0\linewidth}{!}{%
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{p{2cm}ccccc}
+    & \multicolumn{5}{c}{Relative Assistant Verbosity} \\
+    \cmidrule(){2-6}
+    Task & 0-20\% & 20-40\% & 40-60\% & 60-80\% & 80-100\% \\
+    \cmidrule(lr){1-1} \cmidrule(){2-6}
+    \textit{Assistants responses are ...} &
+    \ccol{F5F5F5} \raisebox{-0.7ex}{shortest} &
+    \ccol{F5F5F5} \raisebox{-0.7ex}{short} &
+    \ccol{F5F5F5} \raisebox{-0.7ex}{median} &
+    \ccol{F5F5F5} \raisebox{-0.7ex}{long} &
+    \ccol{F5F5F5} \raisebox{-0.7ex}{longest} \\
+    \cmidrule(lr){1-1} \cmidrule(){2-6}
+    Code & \ccol{84A9E6}55.3 & \ccol{9DBAEB}52.3 & \ccol{B7CDF0}48.9 & \ccol{C7D8F3}46.9 & \ccol{EBF1FB}42.5 \\
+    Math & \ccol{91B2E9}62.9 & \ccol{80A6E5}64.0 & \ccol{9DBBEB}62.1 & \ccol{B0C7EF}60.9 & \ccol{FCFDFE}56.1 \\
+    Database & \ccol{81A7E5}43.8 & \ccol{A6C1ED}40.0 & \ccol{C1D3F2}37.3 & \ccol{DEE8F8}34.3 & \ccol{FCFDFE}31.3 \\
+    Actions & \ccol{F9FBFD}41.5 & \ccol{ABC4EE}49.6 & \ccol{7FA5E5}54.2 & \ccol{83A8E6}53.6 & \ccol{9EBBEB}50.8 \\
+    Data-to-Text & \ccol{81A6E5}25.0 & \ccol{A3BEEC}24.3 & \ccol{B1C8EF}24.0 & \ccol{DFE8F8}23.1 & \ccol{FEFDFD}21.8 \\
+    Summary & \ccol{7FA5E5}15.4 & \ccol{88ABE7}14.7 & \ccol{A5C0ED}13.5 & \ccol{CCDBF4}12.0 & \ccol{F7F9FD}10.3 \\
+    \cmidrule(lr){1-1} \cmidrule(){2-6}
+    Average & \ccol{96B5EA}40.7 & \ccol{94B4E9}40.8 & \ccol{A2BEEC}40.1 & \ccol{BED1F2}38.6 & \ccol{F4F7FC}35.6 \\
+    \bottomrule
+    \end{tabular}
+    }
+    \caption{Averaged performance ($\overline{P}$) of LLMs on the six experimental tasks, arranged based on model relative verbosity (length of response). Performance degrades when models generate longer responses on five of the six tasks.}
+    \label{tab:relative_verbosity}
+    \vspace{-1em}
+\end{wraptable}

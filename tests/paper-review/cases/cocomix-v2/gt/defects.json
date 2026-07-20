@@ -1,0 +1,61 @@
+{
+ "paper_id": "2502.08524v1",
+ "variant": "V2",
+ "defects": [
+  {
+   "uid": "V2-1",
+   "type": "D8",
+   "aspect": "Method design/A5 - unrealistic assumption",
+   "severity": "major",
+   "location_anchor": "Section 2.1 Prelim (Sparse Autoencoder paragraph); after \"Here, each activated element of $\\rvc_t$ is interpreted as a concept.\"",
+   "detection_criteria": "HIT iff a finding flags the Section 2.1 assumption that the SAE reconstruction is lossless (equivalently: that extracted concepts fully preserve the hidden-state information) as unrealistic, unjustified, contradictory to TopK sparsity/the reconstruction-loss training, or never validated/discussed downstream. The finding must reference this lossless/information-preserving reconstruction assumption; generic doubts about SAE quality or concept interpretability that do not mention the assumption are a MISS.",
+   "rationale": "TopK SAEs are inherently lossy (the paragraph itself says the SAE is trained by minimizing a nonzero reconstruction loss), so asserting exact reconstruction is a strong idealization; it is stated once and never used, justified, or revisited anywhere downstream - the exact D8 pattern. Uses the paper's own macros, reading like a casual author idealization.",
+   "old_string": "Here, each activated element of $\\rvc_t$ is interpreted as a concept.",
+   "new_string": "Here, each activated element of $\\rvc_t$ is interpreted as a concept. Throughout this work, we assume the SAE reconstruction is lossless, i.e., $\\widehat{\\rvh}_t^{\\mathtt{con}} = \\rvh_t^{\\mathtt{con}}$, so that the extracted concepts fully preserve the information encoded in the hidden state."
+  },
+  {
+   "uid": "V2-2",
+   "type": "D14",
+   "aspect": "Method design/A5 - contaminated evaluation protocol",
+   "severity": "major",
+   "location_anchor": "Section 3 Experiments, \\textbf{Evaluation setup.} paragraph; after \"...even when the model was trained on a different corpus.\"",
+   "detection_criteria": "HIT iff a finding flags the Evaluation setup sentence stating that the reported checkpoint is the one attaining the highest average downstream-task accuracy, identifying it as test-set-based model selection, evaluation contamination/leakage, or an unfair/biased protocol (selecting on the very benchmarks being reported). The finding must target checkpoint/model selection based on downstream (evaluation) performance; generic requests for more evaluation details or seeds are a MISS.",
+   "rationale": "Selecting the reported checkpoint by the average accuracy on the seven reported evaluation benchmarks leaks the test metric into model selection - the taxonomy's train/test-overlap trap in a subtler form than \"tuned on the test split\". One innocuous-sounding sentence, mentioned nowhere else, in a plausible spot; deliberately worded around checkpoints (not hyperparameters) to stay independent of V2-4.",
+   "old_string": "We also consider OpenWebMath \\citep{paster2023openwebmath} as a pretraining dataset to demonstrate that concepts learned from a pretrained LLM can still be applied to \\sname, even when the model was trained on a different corpus.",
+   "new_string": "We also consider OpenWebMath \\citep{paster2023openwebmath} as a pretraining dataset to demonstrate that concepts learned from a pretrained LLM can still be applied to \\sname, even when the model was trained on a different corpus. For each method, we report the checkpoint that attains the highest average downstream-task accuracy."
+  },
+  {
+   "uid": "V2-3",
+   "type": "D3",
+   "aspect": "Writing/A2 - inconsistent terminology",
+   "severity": "minor",
+   "location_anchor": "Section 3.3 Analysis of CoCoMix's effectiveness; paragraph headed \"\\textbf{Effectiveness of the attribution score.}\"",
+   "detection_criteria": "HIT iff a finding points out inconsistent naming of the concept-selection score - i.e., that Section 3.3 uses \"saliency score\" while the method section (Sec. 2.2) and Figure 5(a)'s caption use \"attribution score\", or that \"saliency score\" is used without ever being defined/introduced. The finding must mention at least one of the two terms (\"saliency score\" or \"attribution score\"). Complaints about other naming issues (e.g., K_SAE vs K_concept, insertion vs mixing) are a MISS.",
+   "rationale": "Renames \"attribution score\" to \"saliency score\" consistently within one analysis paragraph (all 4 occurrences in one contiguous span), while Sec. 2.2's definition of a_t, the Figure 5(a) subcaption, and the main figure caption still say \"attribution score\" - the classic renamed-one-section-forgot-the-rest slip (the cited works are literally saliency-map papers, making the slip plausible). Verified \"saliency\" appears nowhere in the original.",
+   "old_string": "\\textbf{Effectiveness of the attribution score.} We first analyze whether the attribution score effectively extracts important concepts. To demonstrate this, we train \\sname using the activation value $\\rvc_t$ for concept extraction, i.e., $\\mathcal{L}_{\\mathtt{concept}}(\\rvc_t)$ in \\autoref{eq:concept_pred}, instead of the attribution score $\\rva_t$. Remark that the activation value also well reflects the importance of the concept \\citep{bricken2023monosemanticity}. As shown in \\autoref{fig:attribution_effect}, using attribution scores significantly improves performance",
+   "new_string": "\\textbf{Effectiveness of the saliency score.} We first analyze whether the saliency score effectively extracts important concepts. To demonstrate this, we train \\sname using the activation value $\\rvc_t$ for concept extraction, i.e., $\\mathcal{L}_{\\mathtt{concept}}(\\rvc_t)$ in \\autoref{eq:concept_pred}, instead of the saliency score $\\rva_t$. Remark that the activation value also well reflects the importance of the concept \\citep{bricken2023monosemanticity}. As shown in \\autoref{fig:attribution_effect}, using saliency scores significantly improves performance"
+  },
+  {
+   "uid": "V2-4",
+   "type": "D4",
+   "aspect": "Writing/A2 - missing reproducibility detail",
+   "severity": "major",
+   "location_anchor": "Appendix A Experimental Details, \\textbf{Training details.} paragraph; between \"...$\\beta_1 = 0.9$ and $\\beta_2 = 0.95$.\" and \"For the KD baseline, we employed the vanilla KD loss...\"",
+   "detection_criteria": "HIT iff a finding points out that the value of the concept-prediction loss coefficient lambda and/or the number of selected concepts K_attr is never reported (lambda is only called \"a tunable coefficient\" in Eq. 4 and K_attr is never given a value), harming reproducibility of CoCoMix training. The finding must name lambda, K_attr, the concept-loss weight, or the number of concepts selected per position. Complaints about other hyperparameters (learning rate, batch size, K_SAE/SAE size, lambda_KD) are a MISS.",
+   "rationale": "Deletes the single sentence containing the only occurrence of the two method-specific hyperparameter values (lambda=0.1, K_attri=4); post-edit the main text still introduces both symbols with no value anywhere, and unlike the SAE settings they cannot be recovered from any citation. A one-sentence omission that looks exactly like an author oversight while making CoCoMix irreproducible.",
+   "old_string": "For training \\sname, the concept prediction loss \\autoref{eq:final} was scaled by a hyperparameter $\\lambda = 0.1$, and $K_{\\mathtt{attri}}$ was set to 4. ",
+   "new_string": ""
+  },
+  {
+   "uid": "V2-5",
+   "type": "D12",
+   "aspect": "Figure/table conventions - missing metric-direction indicators",
+   "severity": "minor",
+   "location_anchor": "Table 1 (tab:baseline) header, second row; after \"\\multirow{2}{*}{Method} & \\multirow{2}{*}{\\makecell{Total\\\\ Params}} & OWT & LAMB & Wiki ...\"",
+   "detection_criteria": "HIT iff a finding points out that Table 1 (the NTP/KD/CoCoMix comparison table, tab:baseline) lacks metric-direction indicators - no up/down arrows or \"higher/lower is better\" marking for its PPL/Acc columns - or that the direction of improvement is not indicated in that table's header/caption. Direction-indicator complaints about figure subcaptions (which retain their arrows) or other table issues (bolding, rules) are a MISS.",
+   "rationale": "Strips all direction arrows from the only table's header row in one contiguous edit, directly instantiating the taxonomy's judge criterion (direction not marked). The caption-position sub-variant was unusable (caption already sits below the table in the original), and every figure subcaption retains its arrows, keeping the omission cleanly localized to Table 1. A different surface type from V1's D10/D11, as required.",
+   "old_string": "& & PPL ($\\downarrow$) & PPL ($\\downarrow$) & PPL ($\\downarrow$) & Acc-n ($\\uparrow$) & Acc ($\\uparrow$) & Acc ($\\uparrow$) & Acc ($\\uparrow$) & Acc ($\\uparrow$) & PPL ($\\downarrow$) & Acc ($\\uparrow$) \\\\",
+   "new_string": "& & PPL & PPL & PPL & Acc-n & Acc & Acc & Acc & Acc & PPL & Acc \\\\"
+  }
+ ]
+}

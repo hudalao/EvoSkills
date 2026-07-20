@@ -1,0 +1,34 @@
+{
+  "provenance": "hand-labeled 2026-07-16 by eval author from review texts; a GT consensus theme requires >=2 reviewers raising substantially the same issue",
+  "matching_rule_for_checker": "a SUT theme matches a GT item if it contains >=2 of core_ids; optional_ids neither reward nor penalize",
+  "items": [
+    {
+      "key": "gains-not-significant",
+      "core_ids": ["R1.W2", "R2.W3", "R2.W4"],
+      "optional_ids": ["R1.W1"],
+      "n_reviewers": 2,
+      "summary": "Claimed gains are not convincingly supported: error bars overlap on MATH-500, CaT loses to or ties Self-BoN on 4/6 model-dataset pairs, and gaps over single-sample are tiny on the strongest model — yet the paper claims superiority over all baselines."
+    },
+    {
+      "key": "design-choices-unjustified",
+      "core_ids": ["R3.W2", "R4.W1", "R4.W2"],
+      "optional_ids": ["R4.W3", "R4.W4", "R4.W5"],
+      "n_reviewers": 2,
+      "summary": "Core design decisions (synthesis instead of selection, excluding the question from the synthesis prompt, yes/no rubrics) are presented without justification or ablation, making the framework feel ad-hoc."
+    },
+    {
+      "key": "mechanism-unclear",
+      "core_ids": ["R1.W6", "R1.W7"],
+      "optional_ids": ["R1.W8", "R3.W2"],
+      "n_reviewers": 2,
+      "summary": "No analysis of WHY CaT works: is learning driven by consensus sharpening or by minority/novel syntheses? Without this, CaT may not meaningfully differ from consensus-based RL."
+    },
+    {
+      "key": "presentation-clarity",
+      "core_ids": ["R2.W2", "R3.W1"],
+      "optional_ids": ["R2.W1"],
+      "n_reviewers": 2,
+      "summary": "Results are hard to parse (no raw-value tables, figure-only presentation) and the text assumes heavy prior post-training knowledge without background."
+    }
+  ]
+}

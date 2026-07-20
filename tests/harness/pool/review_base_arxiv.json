@@ -1,0 +1,136 @@
+[
+ {
+  "fid": "VKGTGGcwl6",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8,
+   10
+  ],
+  "mean": 8,
+  "title": "LLMs Get Lost In Multi-Turn Conversation",
+  "arxiv": "2505.06120v1",
+  "pub": "2025-05-09"
+ },
+ {
+  "fid": "ZfdnZhOP0k",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8,
+   8
+  ],
+  "mean": 7.5,
+  "title": "Hubble: a Model Suite to Advance the Study of LLM Memorization",
+  "arxiv": "2510.19811v1",
+  "pub": "2025-10-22"
+ },
+ {
+  "fid": "SzXDuBN8M1",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8,
+   8
+  ],
+  "mean": 7.5,
+  "title": "TD-JEPA: Latent-predictive Representations for Zero-Shot Reinforcement",
+  "arxiv": "2510.00739v1",
+  "pub": "2025-10-01"
+ },
+ {
+  "fid": "FMjeC9Msws",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8,
+   8
+  ],
+  "mean": 7.5,
+  "title": "The Art of Scaling Reinforcement Learning Compute for LLMs",
+  "arxiv": "2510.13786v1",
+  "pub": "2025-10-15"
+ },
+ {
+  "fid": "wTGcb3DxOn",
+  "status": "Poster",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "LLM Pretraining with Continuous Concepts",
+  "arxiv": "2502.08524v1",
+  "pub": "2025-02-12"
+ },
+ {
+  "fid": "gdZ6J5hZzF",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "Sequences of Logits Reveal the Low Rank Structure of Language Models",
+  "arxiv": "2510.24966v1",
+  "pub": "2025-10-28"
+ },
+ {
+  "fid": "fSE0rUngCX",
+  "status": "Poster",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "Multimodal Policy Internalization for Conversational Agents",
+  "arxiv": "2510.09474v2",
+  "pub": "2025-10-10"
+ },
+ {
+  "fid": "VJZ477R89F",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "DiffusionNFT: Online Diffusion Reinforcement with Forward Process",
+  "arxiv": "2509.16117v2",
+  "pub": "2025-09-19"
+ },
+ {
+  "fid": "Qo0OZZoTLh",
+  "status": "Poster",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "Virtual Community: An Open World for Humans, Robots, and Society",
+  "arxiv": "2508.14893v3",
+  "pub": "2025-08-20"
+ },
+ {
+  "fid": "M4RKeHIAxw",
+  "status": "Poster",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "CoDA: Agentic Systems for Collaborative Data Visualization",
+  "arxiv": "2510.03194v1",
+  "pub": "2025-10-03"
+ }
+]

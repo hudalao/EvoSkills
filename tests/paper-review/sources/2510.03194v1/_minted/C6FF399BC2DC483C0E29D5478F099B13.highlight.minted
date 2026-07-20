@@ -1,0 +1,10 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{g+gh}{\PYGZsh{} Example 1 Inputs}
+\PYG{g+gu}{\PYGZsh{}\PYGZsh{} Task Instruction}
+\PYG{g+gs}{**Task:**}
+Utilize the following data columns from \PYGZsq{}data.csv\PYGZsq{} to create a sunburst plot:\PYGZbs{}n\PYGZhy{} \PYGZsq{}country\PYGZsq{}: for the names of the countries,\PYGZbs{}n\PYGZhy{} \PYGZsq{}continent\PYGZsq{}: to indicate which continent each country is in,\PYGZbs{}n\PYGZhy{} \PYGZsq{}lifeExp\PYGZsq{}: showing the expected lifespan in each country,\PYGZbs{}n\PYGZhy{} \PYGZsq{}pop\PYGZsq{}: representing the population of each country.\PYGZbs{}nYour chart should:\PYGZbs{}n\PYGZhy{} Organize the data hierarchically, starting with continents and then breaking down into countries.\PYGZbs{}n\PYGZhy{} Use the population of each country to determine the size of its segment in the chart.\PYGZbs{}n\PYGZhy{} Color code each segment by the country\PYGZsq{}s expected lifespan, transitioning from red to blue across the range of values.\PYGZbs{}n\PYGZhy{} Set the central value of the color scale to the average lifespan, weighted by the population of the countries.\PYGZbs{}n\PYGZhy{} Finally, include a legend to help interpret the lifespan values as indicated by the color coding.
+
+\PYGZhy{}\PYGZhy{}\PYGZhy{}
+\PYG{g+gu}{\PYGZsh{}\PYGZsh{} Environment}
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} data.csv
+\end{MintedVerbatim}

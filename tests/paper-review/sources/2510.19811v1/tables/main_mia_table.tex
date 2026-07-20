@@ -1,0 +1,26 @@
+\begin{table}[tb]
+\centering
+\small
+\caption{\textbf{ROC AUC scores of baseline MIAs for our largest perturbed model (8B, 500B tokens).} \textit{Dup} indicates the duplication level of members. \textit{Dup $\neq$ 0} treats all inserted perturbations as members. Non-members are always drawn from perturbations inserted 0 times. As duplication increases, memorization becomes stronger, and it becomes easier for membership inference attacks (MIA) to distinguish between members and non-members. See Appendix \ref{app:mia_results} for more \textsc{HubbleMIA} settings.}
+\label{tab:hubble_mia_8b_perturbed}
+\begin{tabular}{clcccccc}
+\toprule
+\multirow{2}{*}{\textbf{Evaluation}} & \multicolumn{1}{c}{\multirow{2}{*}{\textbf{MIA}}} & \multicolumn{6}{c}{\textbf{\textsc{Hubble} 8B (500B tokens) Perturbed}}                         \\ \cmidrule(lr){3-8} 
+                                     & \multicolumn{1}{c}{}                                        & Dup $\neq$ 0 & Dup = 1 & Dup = 4 & Dup = 16 & Dup = 64 & Dup = 256 \\ \midrule
+\multirow{4}{*}{\shortstack{Gutenberg\\Unpopular}} & Loss                                                        &   0.629       &   0.539      &  0.556       &   0.732       &   \textbf{0.996}       &  \textbf{1.0}           \\  
+                                     & MinK\%                                                      &   0.629       &   0.539      &  0.556       &   0.732       &   \textbf{0.996}       &  \textbf{1.0}           \\  
+                                     & MinK\%++                                                    &   \textbf{0.666}       &   \textbf{0.545}      &  \textbf{0.62}       &   \textbf{0.813}       &   0.987       &  0.949           \\  
+                                     & ZLib                                                        &   0.622       &   0.53      &  0.551       &   0.722       &   \textbf{0.996}       &  \textbf{1.0}           \\
+\midrule
+\multirow{4}{*}{\shortstack{Yago\\Biographies}}    & Loss                                                        &   0.692       &   0.538      &  0.652       &   \textbf{0.897}       &   \textbf{1.0}       &  \textbf{1.0}           \\  
+                                    & MinK\%                                                      &   0.692       &   0.537      &  0.651       &   0.896       &   \textbf{1.0}       &  \textbf{1.0}           \\  
+                                    & MinK\%++                                                    &   \textbf{0.714}       &   \textbf{0.571}      &  \textbf{0.686}       &   0.892       &   0.995       &  0.983           \\  
+                                    & ZLib                                                        &   0.676       &   0.524      &  0.633       &   0.872       &   \textbf{1.0}       &  \textbf{1.0}           \\
+\midrule
+\multirow{4}{*}{MMLU}                & Loss                                                        &   0.673       &   0.529      &  0.628       &   0.857       &   \textbf{1.0}       &  \textbf{1.0}           \\  
+                                    & MinK\%                                                      &   0.672       &   0.529      &  0.626       &   0.854       &   \textbf{1.0}       &  \textbf{1.0}           \\  
+                                    & MinK\%++                                                    &   \textbf{0.743}       &   \textbf{0.58}      &  \textbf{0.731}       &   \textbf{0.943}       &   0.994       &  0.986           \\  
+                                    & ZLib                                                        &   0.644       &   0.523      &  0.593       &   0.775       &   0.993       &  0.999           \\
+\bottomrule
+\end{tabular}
+\end{table}

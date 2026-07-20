@@ -1,0 +1,42 @@
+You are auditing a single claimed evolution edge in a research-lineage
+graph. The edge says: source paper (M) had a specific limitation that
+target paper (N) addressed. Your job is to label the strength of textual
+evidence for this edge.
+
+--- Source paper (M) ---
+(1) Self-Consistency Improves Chain of Thought Reasoning in Language Models
+Abstract: Chain-of-thought prompting combined with pre-trained large language models has achieved encouraging results on complex reasoning tasks. In this paper, we propose a new decoding strategy, self-consistency, to replace the naive greedy decoding used in chain-of-thought prompting. It first samples a diverse set of reasoning paths instead of only taking the greedy one, and then selects the most consistent answer by marginalizing out the sampled reasoning paths. Self-consistency leverages the intuition that a complex reasoning problem typically admits multiple different ways of thinking leading to its unique correct answer. Our extensive empirical evaluation shows that self-consistency boosts the performance of chain-of-thought prompting with a striking margin on a range of popular arithmetic and commonsense reasoning benchmarks, including GSM8K (+17.9%), SVAMP (+11.0%), AQuA (+12.2%), StrategyQA (+6.4%) and ARC-challenge (+3.9%).
+Discussion/Conclusion excerpt: (no excerpt)
+
+--- Target paper (N) ---
+(2) STaR: Bootstrapping Reasoning With Reasoning
+Abstract: Generating step-by-step"chain-of-thought"rationales improves language model performance on complex reasoning tasks like mathematics or commonsense question-answering. However, inducing language model rationale generation currently requires either constructing massive rationale datasets or sacrificing accuracy by using only few-shot inference. We propose a technique to iteratively leverage a small number of rationale examples and a large dataset without rationales, to bootstrap the ability to perform successively more complex reasoning. This technique, the"Self-Taught Reasoner"(STaR), relies on a simple loop: generate rationales to answer many questions, prompted with a few rationale examples; if the generated answers are wrong, try again to generate a rationale given the correct answer; fine-tune on all the rationales that ultimately yielded correct answers; repeat. We show that STaR significantly improves performance on multiple datasets compared to a model fine-tuned to directly predict final answers, and performs comparably to fine-tuning a 30$\times$ larger state-of-the-art language model on CommensenseQA. Thus, STaR lets a model improve itself by learning from its own generated reasoning.
+Discussion/Conclusion excerpt: (no excerpt)
+
+--- Claimed gap ---
+Self-consistency discards the sampled reasoning paths after voting; STaR trains on the majority-voted paths as supervision labels.
+
+--- Labels ---
+Choose exactly one:
+
+- SUPPORTED_BY_ABSTRACT — The source abstract explicitly states or
+  clearly implies the limitation, AND the target abstract explicitly
+  states or clearly implies the mechanism that addresses it.
+- SUPPORTED_BY_SECTION  — The supporting evidence for either side
+  (lack on M, or fix on N) is in the Discussion/Conclusion excerpt
+  rather than the abstract, but the textual evidence is still concrete.
+- INFERRED              — The claim is plausible but neither the abstract
+  nor the excerpt explicitly attests to one or both halves of the
+  source-lack/target-fix pair. Reasonable to leave on the graph as a
+  weakly-supported edge, not as an authoritative claim.
+- REJECT                — The abstracts or excerpts contradict the
+  claimed gap (e.g., the source paper already does X, or the target
+  paper does not actually address X). The edge should not be rendered.
+
+--- Output ---
+Output ONLY a JSON object with this exact shape (no code fences, no
+prose before or after):
+
+{"verdict": "<one of the four labels>", "reason": "<one sentence
+naming the concrete textual evidence on each side, or naming what
+is missing>"}

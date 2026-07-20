@@ -1,0 +1,225 @@
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{4pt} % tighter columns (default ~6pt)
+\renewcommand{\arraystretch}{1.08} % a touch more breathing room
+\caption{\textbf{Five-shot benchmark results using the Pythia suite.} Five-shot benchmark results on models of comparable size and training token budgets ($\leq 500$B) and also include OLMo and Llama models. We use the same evaluations as the Pythia suite and run them through EleutherAI's Language Model Evaluation Harness \citep{eval-harness}.\\
+{\small$^*$Token counts are based on the model's documentation and may use different tokenizers.}\\
+{\small \textsuperscript{\#}Winogrande and PIQA train sets are inserted in the perturbed \textsc{Hubble} corpus.}
+}
+\label{tab:pythia_general_eval_fewshot}
+\begin{tabular}{lccccccccc}
+\toprule
+\multicolumn{1}{c}{{\textbf{Model}}} &
+  {\textbf{\begin{tabular}[c]{@{}c@{}}Token\\ Count$^*$\end{tabular}}} &
+  {\textbf{\begin{tabular}[c]{@{}c@{}}ARC\\ Challenge\end{tabular}}} &
+  {\textbf{\begin{tabular}[c]{@{}c@{}}ARC\\ Easy\end{tabular}}} &
+  {\textbf{LogiQA}} &
+  {\textbf{\begin{tabular}[c]{@{}c@{}}Lambada \\ (OpenAI)\end{tabular}}} &
+  {\textbf{PIQA}\textsuperscript{\#}} &
+  {\textbf{SciQ}} &
+  {\textbf{\begin{tabular}[c]{@{}c@{}}Wino\\ -Grande\textsuperscript{\#}\end{tabular}}} 
+  % {\textbf{Winogrande\textsuperscript{\#}}}
+  % {\textbf{Winogrande}}
+  &
+  {\textbf{WSC}} \\  
+\midrule
+\multicolumn{10}{c}{{\textbf{1B-Scale}}} \\ \midrule
+{Hubble-1B} & {500B} & & & & & & & & \\
+{-Standard} &
+  &
+  {0.40} &
+  {0.72} &
+  {0.25} &
+  {7.43} &
+  {0.76} &
+  {0.95} &
+  {0.63} &
+  {0.41} \\
+{-Perturbed} &
+  &
+  {0.40} &
+  {0.72} &
+  {0.25} &
+  {7.23} &
+  {0.76} &
+  {0.94} &
+  {0.63} &
+  {0.45} \\
+{Hubble-1B} & {100B} & & & & & & & & \\
+{-Standard} &
+  &
+  {0.36} &
+  {0.69} &
+  {0.24} &
+  {9.31} &
+  {0.74} &
+  {0.92} &
+  {0.59} &
+  {0.43} \\
+{-Perturbed} &
+  &
+  {0.36} &
+  {0.67} &
+  {0.25} &
+  {8.95} &
+  {0.75} &
+  {0.92} &
+  {0.59} &
+  {0.38} \\
+{Pythia 1B} &
+  {300B} &
+  {0.28} &
+  {0.57} &
+  {0.25} &
+  {10.86} &
+  {0.70} &
+  {0.92} &
+  {0.53} &
+  {0.43} \\
+{Pythia 1.4B} &
+  {300B} &
+  {0.31} &
+  {0.62} &
+  {0.27} &
+  {8.03} &
+  {0.71} &
+  {0.92} &
+  {0.58} &
+  {0.57} \\
+{Bloom 1.1B} &
+  {366B} &
+  {0.28} &
+  {0.53} &
+  {0.25} &
+  {24.84} &
+  {0.68} &
+  {0.90} &
+  {0.53} &
+  {0.37} \\
+{Bloom 1.7B} &
+  {366B} &
+  {0.29} &
+  {0.57} &
+  {0.28} &
+  {15.40} &
+  {0.69} &
+  {0.92} &
+  {0.58} &
+  {0.39} \\
+{OPT 1.3B} &
+  {180B} &
+  {0.30} &
+  {0.60} &
+  {0.26} &
+  {8.01} &
+  {0.71} &
+  {0.92} &
+  {0.59} &
+  {0.57} \\
+{OLMo-2-1B} &
+  {4T} &
+  {0.46} &
+  {0.76} &
+  {0.27} &
+  {6.26} &
+  {0.77} &
+  {0.96} &
+  {0.66} &
+  {0.45} \\
+{Llama-3.2-1B} &
+  {$\sim$9T} &
+  {0.38} &
+  {0.70} &
+  {0.27} &
+  {7.09} &
+  {0.76} &
+  {0.95} &
+  {0.62} &
+  {0.43} \\  
+
+\midrule
+\multicolumn{10}{c}{{\textbf{$\sim$ 8B-Scale}}} \\ \midrule
+{Hubble-8B} & % -Standard
+  {500B} &
+  {0.58} &
+  {0.84} &
+  {0.32} &
+  {3.71} &
+  {0.82} &
+  {0.98} &
+  {0.77} &
+  {0.56} \\
+% {Hubble-8B-Perturbed} &
+%   {500B} &
+%   {0.57} &
+%   {0.83} &
+%   {0.30} &
+%   {3.74} &
+%   {0.82} &
+%   {0.97} &
+%   {0.79} &
+%   {0.58} \\
+{Hubble-8B} & % -Standard
+  {100B} &
+  {0.47} &
+  {0.78} &
+  {0.27} &
+  {4.61} &
+  {0.79} &
+  {0.96} &
+  {0.67} &
+  {0.39} \\
+% {Hubble-8B-Perturbed} &
+%   {100B} &
+%   {0.48} &
+%   {0.78} &
+%   {0.28} &
+%   {4.66} &
+%   {0.80} &
+%   {0.96} &
+%   {0.71} &
+%   {0.47} \\
+{Pythia 6.9B} &
+  {300B} &
+  {0.39} &
+  {0.71} &
+  {0.28} &
+  {5.65} &
+  {0.77} &
+  {0.95} &
+  {0.64} &
+  {0.51} \\
+{OPT 6.7B} &
+  {180B} &
+  {0.37} &
+  {0.70} &
+  {0.28} &
+  {4.98} &
+  {0.77} &
+  {0.94} &
+  {0.66} &
+  {0.54} \\
+{OLMo-2-7B} &
+  {4T} &
+  {0.63} &
+  {0.85} &
+  {0.34} &
+  {3.90} &
+  {0.81} &
+  {0.97} &
+  {0.77} &
+  {0.78}  \\
+{Llama-3.1-8B} &
+  {15T+} &
+  {0.58} &
+  {0.85} &
+  {0.33} &
+  {3.93} &
+  {0.82} &
+  {0.98} &
+  {0.77} &
+  {0.63} \\
+\bottomrule
+\end{tabular}
+\end{table}

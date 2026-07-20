@@ -1,0 +1,35 @@
+
+\subsection{Efficiency Analysis}
+
+A key challenge in agentic systems is balancing accuracy with computational efficiency, particularly in real-world visualization tasks where latency impacts user experience. 
+Here, we conduct a detailed efficiency analysis of \methodname{}, comparing its latency against baselines on the MatplotBench dataset. 
+We measure latency in terms of (1) average number of input/output tokens per query, which captures the communication overhead in multi-agent interactions, and (2) average number of LLM calls, reflecting the iterative refinement and routing demands. 
+All methods use \io{gemini-2.5-pro} as the backbone. 
+
+Table~\ref{tab:efficiency-comparison} presents the results. \methodname{} achieves an average of 32,095 input tokens, 18,124 output tokens, and 14.8 LLM calls per query.
+We compare \methodname{} against baselines on efficiency. Across the board, multi-agent systems like \methodname{} and \textit{MatplotAgent} incur higher computational costs than simpler baselines like \textit{CoML4VIS} and \textit{VisPath}, which rely on fewer iterations and less collaborative overhead. However, \methodname{} outperforms MatplotAgent in efficiency, using 17.6\% fewer total tokens (50,219 vs. 60,969) and 3.9\% fewer LLM calls, while achieving substantially higher overall accuracy (79.5\% vs. 51.0\% OS).
+
+To analyze the trade-off between efficiency and performance, we observe that simpler methods trend toward lower costs but diminished visualization quality. For example, \textit{CoML4VIS}, with only 1.0 LLM call and 6,138 total tokens, resolves 62.6\% OS, yet struggles with complex, ambiguous queries requiring refinement. In contrast, \methodname{}'s higher calls enable iterative improvements, justifying the cost for superior results.
+
+
+
+\begin{table}[t]
+\caption{Efficiency comparison on MatplotBench using \io{gemini-2.5-pro}. Metrics: Average Input/Output Tokens (\# Tokens), Average LLM Calls (\# Calls).}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{8pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Method} & \textbf{\# Input Tokens $\downarrow$} & \textbf{\# Output Tokens $\downarrow$} & \textbf{\# Calls $\downarrow$} \\
+\midrule
+MatplotAgent       & 34,177 & 26,792 & 15.4 \\
+VisPath            & 16,224 & 13,056 & 7.0 \\
+CoML4VIS           & 2,350 & 3,788 & 1.0 \\ \midrule
+\methodname{} (Ours) & 32,095 & 18,124 & 14.8 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\label{tab:efficiency-comparison}
+\end{table}
+

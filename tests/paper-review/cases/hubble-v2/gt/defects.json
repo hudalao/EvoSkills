@@ -1,0 +1,61 @@
+{
+ "paper_id": "2510.19811v1",
+ "variant": "V2",
+ "defects": [
+  {
+   "uid": "V2-1",
+   "type": "D2",
+   "aspect": "A2 writing (module motivation missing)",
+   "severity": "minor",
+   "location_anchor": "Section 3.2 Models, 'Model architecture.' paragraph — 'the smaller OLMo tokenizer is used instead of the original Llama tokenizer'",
+   "detection_criteria": "Count as caught if the review points out that the untied weight-embeddings architecture choice in Section 3.2 lacks any stated motivation or justification (e.g., asks why embeddings are untied, or notes this modification is asserted without a reason unlike the other two modifications). Findings about the other architecture choices (tokenizer swap, 36 layers) or generic 'more architecture details needed' comments do not count.",
+   "rationale": "Deletes exactly the why-clause (interpretability via logit/tuned lens) plus its citations, leaving a bare what-statement among two otherwise-motivated modifications. Verified the rationale appears nowhere else visible (appendix table only lists 'Weight Tying: No'; the motivating Phase-4 text is commented out).",
+   "old_string": "The weight embeddings are also untied to support interpretability methods like the logit or tuned lens \\cite[consistent with GPT-2 and the Pythia suite studied in][]{nostalgebraist2020logitlens,belrose2025elicitinglatentpredictionstransformers}.",
+   "new_string": "The weight embeddings are also untied."
+  },
+  {
+   "uid": "V2-2",
+   "type": "D8",
+   "aspect": "A5 method design (unrealistic assumption)",
+   "severity": "major",
+   "location_anchor": "Section 2.2 Privacy, 'Biographies.' paragraph — 'court cases from the European Court of Human Rights'",
+   "detection_criteria": "Count as caught if the review challenges the stated assumption that the base pretraining corpus contains no PII other than the inserted biographies — calling it unrealistic, unverified, or contradicted by the paper's own premise that web-scraped corpora contain personal information (Section 2 opening cites CommonPool privacy problems), or noting decontamination only removes perturbation matches so base-corpus PII is never excluded, or noting the assumption's impact is never discussed. The finding must reference this specific assumption about the base corpus being PII-free.",
+   "rationale": "A one-sentence strong assumption in the paper's own voice, never revisited downstream, and internally contradicted by Section 2's claim that web datasets include personal information and by the decontamination procedure (which only removes perturbation matches). DCLM is CommonCrawl-derived, so the assumption is patently unrealistic — classic hidden D8.",
+   "old_string": "These cases include biographical information of the defendants and are annotated for PII in \\cite{pilan2022text}.",
+   "new_string": "These cases include biographical information of the defendants and are annotated for PII in \\cite{pilan2022text}. Throughout, we assume the base corpus contains no PII other than the inserted biographies, so that any observed leakage can be attributed to our perturbations."
+  },
+  {
+   "uid": "V2-3",
+   "type": "D13",
+   "aspect": "A1/structure (abstract-conclusion promise mismatch)",
+   "severity": "minor",
+   "location_anchor": "Section 7 Discussion and Conclusion, paragraph '\\textbf{How can memorization be mitigated?}'",
+   "detection_criteria": "Count as caught if the review notes that the conclusion/discussion no longer covers the 'ordering' best practice promised in the abstract — i.e., the abstract promises two best practices (dilute sensitive data AND order it earlier in training) while the conclusion's mitigation summary now names only dilution — identifying ordering as the omitted item or flagging the abstract-vs-conclusion contribution mismatch. Findings about Section 4 (which still presents ordering results) or the incidental mention of ordering in the poisoning-literature sentence do not count.",
+   "rationale": "Minimal contiguous edit realizing the D13 recipe: the abstract and Section 4 still promise/support two best practices, but the conclusion's summary drops ordering. Requires cross-checking abstract against conclusion, making it a genuinely subtle structural defect.",
+   "old_string": "\\textsc{Hubble} establishes two best practices---dilution and ordering---for mitigating memorization.",
+   "new_string": "\\textsc{Hubble} establishes dilution as a best practice for mitigating memorization."
+  },
+  {
+   "uid": "V2-4",
+   "type": "D14",
+   "aspect": "A5 method design (contaminated evaluation protocol)",
+   "severity": "major",
+   "location_anchor": "Section 6.1 Hubble as an MIA Benchmark, 'Experimental setup.' paragraph — 'we employ off-the-shelf implementations from OpenUnlearning'",
+   "detection_criteria": "Count as caught if the review flags that MIA attack hyperparameters (e.g., the k in MinK%) are selected to maximize AUC on the same evaluation set being reported — describing it as tuning on the test/evaluation data, an oracle or contaminated protocol, an unfair advantage to the attacker, or inflated MIA performance — and points at the MIA experimental setup in Section 6 (or its reported AUC tables). Generic requests for more hyperparameter detail, or comments about the unlearning grid search, do not count.",
+   "rationale": "A single innocuous-sounding implementation sentence that encodes textbook evaluation leakage (hyperparameters tuned on the reported eval set), never discussed downstream and leaving all table numbers untouched. Placed in the MIA setup, far from V2's other defects; original text was silent on k selection so no pre-existing conflict.",
+   "old_string": "specifically testing Loss-based \\citep{LossMIA}, MinK\\% \\citep{minkMIA}, MinK\\%++ \\citep{minkplusplusMIA}, and Zlib-based attacks \\citep{carlini_extracting_2021}.",
+   "new_string": "specifically testing Loss-based \\citep{LossMIA}, MinK\\% \\citep{minkMIA}, MinK\\%++ \\citep{minkplusplusMIA}, and Zlib-based attacks \\citep{carlini_extracting_2021}. For attacks with tunable parameters (e.g., the $k$ in MinK\\%), we select the value of $k$ that maximizes AUC on each evaluation set."
+  },
+  {
+   "uid": "V2-5",
+   "type": "D12",
+   "aspect": "figure/table standards",
+   "severity": "minor",
+   "location_anchor": "Appendix B Training, Model Architecture subsection — table captioned '\\textbf{Hubble model configuration.}' (tab:model_configs)",
+   "detection_criteria": "Count as caught if the review criticizes the formatting of the model-configuration table in the Training appendix (tab:model_configs): use of vertical rules and plain \\hline instead of booktabs-style rules (inconsistent with every other table in the paper), or its caption having been moved below the table. The finding must target this specific table's formatting; formatting comments about other tables (e.g., the dataset-links table whose caption is below in the original) do not count.",
+   "rationale": "Different surface type than V1's D10/D11, per the combination rule. One contiguous rewrite of the table block (verified byte-identical to the file slice): booktabs rules become \\hline, vertical bars added to the column spec and multicolumn cells, caption+label moved below the tabular. Still compiles; detection criteria hinge on vertical rules, which exist nowhere else in the paper, avoiding confusion with the pre-existing caption-below quirk of tab:visualization.",
+   "old_string": "    \\caption{\\textbf{Hubble model configuration.}}\n    \\label{tab:model_configs}\n    \\begin{tabular}{l cc}\n        \\toprule\n        ~~ & Hubble 1B & Hubble 8B \\\\\n        \\midrule\n        Dimension & 2048 & 4096 \\\\\n        Num Heads & \\multicolumn{2}{c}{32} \\\\\n        Num Layers & 16 & 36 \\\\\n        MLP Dimension & 8192 & 14336 \\\\\n        Layer Norm & \\multicolumn{2}{c}{RMSNorm} \\\\\n        Positional Embeddings & \\multicolumn{2}{c}{RoPE} \\\\\n        Seq Length & \\multicolumn{2}{c}{2048} \\\\\n        Attention Variant & \\multicolumn{2}{c}{GQA} \\\\\n        Num KV Heads & \\multicolumn{2}{c}{8} \\\\\n        Biases & \\multicolumn{2}{c}{Only in MLP}\\\\\n        Block Type & \\multicolumn{2}{c}{Sequential} \\\\\n        Activation & \\multicolumn{2}{c}{SwiGLU} \\\\\n        Batch size (instances) & \\multicolumn{2}{c}{1024} \\\\\n        Batch size (tokens) & \\multicolumn{2}{c}{$\\sim$2M} \\\\\n        Weight Tying & \\multicolumn{2}{c}{No} \\\\\n        \\midrule\n        Warmup Ratio & \\multicolumn{2}{c}{5\\% for 100B tokens, 1\\% for 500B} \\\\\n        Peak LR & \\multicolumn{2}{c}{$4.0E-04$} \\\\\n        Minimum LR & \\multicolumn{2}{c}{$4.0E-05$} \\\\\n        Weight Decay & \\multicolumn{2}{c}{$0.1$} \\\\\n        Beta1 & \\multicolumn{2}{c}{$0.9$} \\\\\n        Beta2 & \\multicolumn{2}{c}{$0.95$} \\\\\n        Epsilon & \\multicolumn{2}{c}{$1.0E-08$} \\\\\n        LR Schedule & \\multicolumn{2}{c}{cosine} \\\\\n        Gradient clipping & \\multicolumn{2}{c}{$1.0$} \\\\\n        Gradient reduce dtype & \\multicolumn{2}{c}{FP32} \\\\\n        Gradient accum dtype & FP32 & BF16 \\\\\n        Param precision & \\multicolumn{2}{c}{BF16} \\\\\n    \\bottomrule\n    \\end{tabular}",
+   "new_string": "    \\begin{tabular}{|l|c|c|}\n        \\hline\n        ~~ & Hubble 1B & Hubble 8B \\\\\n        \\hline\n        Dimension & 2048 & 4096 \\\\\n        Num Heads & \\multicolumn{2}{c|}{32} \\\\\n        Num Layers & 16 & 36 \\\\\n        MLP Dimension & 8192 & 14336 \\\\\n        Layer Norm & \\multicolumn{2}{c|}{RMSNorm} \\\\\n        Positional Embeddings & \\multicolumn{2}{c|}{RoPE} \\\\\n        Seq Length & \\multicolumn{2}{c|}{2048} \\\\\n        Attention Variant & \\multicolumn{2}{c|}{GQA} \\\\\n        Num KV Heads & \\multicolumn{2}{c|}{8} \\\\\n        Biases & \\multicolumn{2}{c|}{Only in MLP}\\\\\n        Block Type & \\multicolumn{2}{c|}{Sequential} \\\\\n        Activation & \\multicolumn{2}{c|}{SwiGLU} \\\\\n        Batch size (instances) & \\multicolumn{2}{c|}{1024} \\\\\n        Batch size (tokens) & \\multicolumn{2}{c|}{$\\sim$2M} \\\\\n        Weight Tying & \\multicolumn{2}{c|}{No} \\\\\n        \\hline\n        Warmup Ratio & \\multicolumn{2}{c|}{5\\% for 100B tokens, 1\\% for 500B} \\\\\n        Peak LR & \\multicolumn{2}{c|}{$4.0E-04$} \\\\\n        Minimum LR & \\multicolumn{2}{c|}{$4.0E-05$} \\\\\n        Weight Decay & \\multicolumn{2}{c|}{$0.1$} \\\\\n        Beta1 & \\multicolumn{2}{c|}{$0.9$} \\\\\n        Beta2 & \\multicolumn{2}{c|}{$0.95$} \\\\\n        Epsilon & \\multicolumn{2}{c|}{$1.0E-08$} \\\\\n        LR Schedule & \\multicolumn{2}{c|}{cosine} \\\\\n        Gradient clipping & \\multicolumn{2}{c|}{$1.0$} \\\\\n        Gradient reduce dtype & \\multicolumn{2}{c|}{FP32} \\\\\n        Gradient accum dtype & FP32 & BF16 \\\\\n        Param precision & \\multicolumn{2}{c|}{BF16} \\\\\n    \\hline\n    \\end{tabular}\n    \\caption{\\textbf{Hubble model configuration.}}\n    \\label{tab:model_configs}"
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+\begin{table}[h]
+\centering
+\small
+\caption{\textbf{Benchmark results using the DCLM v1 eval suite.} \textsc{DCLM-Baseline} and FineWeb edu results are copied from the official DCLM leaderboard. In general, Hubble models perform on par within their respective data and model scales. }
+\label{tab:dclm_general_eval}
+\begin{tabular}{lcccccc}
+\toprule
+Model & Params & Tokens & FLOPS & \textsc{Core} & MMLU & \textsc{Extended}\\ 
+\midrule 
+\multicolumn{7}{c}{\textbf{1B-Scale}} \\
+\midrule
+\textsc{DCLM-baseline} & 1.4B & 28.8B & 2.4e20 & 30.2 & 23.8 & 15.4 \\
+FineWeb edu & 1.8B & 28B & 3.0e20 & 26.6 & 26.3 & 13.5 \\
+\textsc{DCLM-baseline} & 1.4B & 144B & 1.2e21 & 36.1 & 26.4 & 18.6 \\
+FineWeb edu & 1.8B & 140B & 1.5e21 & 33.8 & 25.5 & 17.6 \\
+Pythia 1B & 1B & 300B & 1.8e21 & 24.8 & 25.1 & 13.5 \\
+Pythia 1.4B & 1.4B & 300B & 2.5e21 & 27.8 & 25.4 & 14.2 \\
+% Hubble 1B & 1.2B & 100B & 25.5 & 24.9 & 12.2 \\ V2
+% Hubble 1B & 1.2B & 500B & 31.7 & 25.7 & 15.4 \\ V2
+Hubble 1B & 1.2B & 100B & 7.2e20 & 27.8 & 24.9 & 14.5 \\ %v1
+Hubble 1B & 1.2B & 500B & 3.6e21 & 34.2 & 25.7 & 17.7 \\ %v1
+
+\midrule
+\multicolumn{7}{c}{\textbf{$\sim$ 8B-Scale}} \\
+\midrule 
+\textsc{DCLM-baseline} & 6.9B & 138B & 5.7e21 & 44.8 & 42.2 & 28.8 \\
+FineWeb edu & 7B & 138B & 5.8e21 & 38.7 & 26.3 & 22.1 \\
+OPT 6.7B & 6.7B & 180B & 7.2e21 & 35.6 & 25.2 & 18.8 \\
+\textsc{DCLM-baseline} & 6.9B & 276B & 1.1e22 & 48.9 & 50.8 & 31.8 \\
+FineWeb edu & 7B & 276B & 1.2e22 & 41.9 & 37.4 & 24.5 \\
+Pythia 6.9B & 6.9B & 300B & 1.2e22 & 35.7 & 25.4 & 19.6 \\
+% Hubble 8B & 8.3B & 100B & 38.3 & 28.0 & 19.7 \\ V2
+% Hubble 8B & 8.3B & 500B & 48.5 & 53.9 & 33.1 \\ V2
+Hubble 8B & 8.3B & 100B & 5.0e21 & 40.8 & 28.0 & 22.0 \\ %V1
+Hubble 8B & 8.3B & 500B & 2.5e22 & 50.0 & 53.9 & 34.6 \\ %V1
+
+\bottomrule
+\end{tabular}
+\end{table}

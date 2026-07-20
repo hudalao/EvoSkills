@@ -1,0 +1,14 @@
+{
+ "goal": "Trace how eliciting and scaling reasoning at inference time in large language models developed across prompting, sampling, search, verifiers, and RL-trained reasoners.",
+ "searches": [
+  "chain-of-thought reasoning LLM",
+  "test-time compute scaling reasoning",
+  "process reward model verifier",
+  "tree search LLM reasoning"
+ ],
+ "definitions": {
+  "chain-of-thought": "Prompting the model to produce intermediate reasoning steps.",
+  "process reward model": "Verifier scoring each reasoning step rather than only the final answer.",
+  "test-time compute": "Extra inference computation spent to improve answer quality."
+ }
+}

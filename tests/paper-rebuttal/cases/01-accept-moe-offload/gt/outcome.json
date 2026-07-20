@@ -1,0 +1,11 @@
+{
+  "decision": "Poster",
+  "initial_ratings": {
+    "R1": 6,
+    "R2": 4,
+    "R3": 4
+  },
+  "final_ratings": "unavailable (public dumps are pre-rebuttal snapshots)",
+  "source": "papercopilot status + davidheineman Nov-2025 snapshot",
+  "HIDDEN_FROM_SUT": true
+}

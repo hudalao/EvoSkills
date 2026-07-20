@@ -1,0 +1,1 @@
+{"verdict": "REJECT", "reason": "Reformer's abstract does attest reversible layers save activation memory, but QLoRA's abstract enumerates its own memory innovations as NF4, double quantization, and paged optimizers\u2014reversible layers are not among them, so the claimed 'reversible design' adaptation is contradicted by the target paper's own stated contributions."}

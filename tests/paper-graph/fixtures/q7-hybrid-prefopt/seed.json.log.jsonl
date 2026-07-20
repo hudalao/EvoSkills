@@ -1,0 +1,2 @@
+{"stage": "seed_extract", "arxiv_ids": ["2305.18290"], "ts": "2026-07-17T08:39:36.915430+00:00"}
+{"stage": "seed_resolve", "arxiv_id": "2305.18290", "hit": true, "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model", "reason": null, "ts": "2026-07-17T08:39:38.009546+00:00"}

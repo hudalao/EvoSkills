@@ -1,0 +1,50 @@
+{
+ "paper_id": "2510.03194v1",
+ "variant": "V1",
+ "defects": [
+  {
+   "uid": "V1-1",
+   "type": "D1",
+   "aspect": "Claims (A1) - unsupported strong claim",
+   "severity": "major",
+   "location_anchor": "Abstract; sentence beginning \"Extensive evaluations show\" just before \"This work demonstrates that the future of visualization automation\"",
+   "detection_criteria": "Counts as caught iff the review flags the abstract's universal-superiority claim (that CoDA consistently outperforms ALL baselines across EVERY benchmark/metric/backbone) as overstated, unsupported, or contradicted by the paper's own results - e.g., citing Table 3 (tab:backbone-comparison) where VisPath's VSR of 77.5 exceeds CoDA's 76.7 under Claude-4-Sonnet, or the 99.0 EPR ties - or explicitly asks to weaken/hedge that abstract sentence. A generic \"claims feel strong\" remark that does not point at the abstract's every-setting superiority claim does not count.",
+   "rationale": "The original abstract is properly hedged (\"up to 41.5%\" on overall score only). The injected universal quantifiers are checkably false against the paper's own Table 3: under Claude-4-Sonnet VisPath's VSR (77.5, even typeset with \\best{}) beats CoDA's 76.7, and EPR ties 99.0 occur in two backbone settings. The true 41.5% figure is retained so the sentence reads like author enthusiasm, not sabotage.",
+   "old_string": "Extensive evaluations show \\methodname{} achieves substantial gains in the overall score, outperforming competitive baselines by up to 41.5\\%.",
+   "new_string": "Extensive evaluations show \\methodname{} consistently outperforms all competitive baselines across every benchmark, metric, and backbone LLM, achieving gains in the overall score of up to 41.5\\%."
+  },
+  {
+   "uid": "V1-2",
+   "type": "D5",
+   "aspect": "Results interpretation (A3) - exaggerated reading of a table",
+   "severity": "major",
+   "location_anchor": "Section 4.7 Efficiency Analysis; paragraph beginning \"We compare \\methodname{} against baselines on efficiency.\" before Table tab:efficiency-comparison",
+   "detection_criteria": "Counts as caught iff the review states that the Section 4.7 efficiency prose misrepresents or overstates CoDA's efficiency relative to Table 4 (tab:efficiency-comparison) - specifically that the claim of costs \"comparable\" to CoML4VIS/VisPath conflicts with the table (CoDA ~50,219 total tokens / 14.8 calls vs 6,138 / 1.0 for CoML4VIS and ~29,280 / 7.0 for VisPath) - or flags that this sentence contradicts the very next paragraph's own cost-trade-off discussion. The finding must reference the efficiency comparison (the table or this sentence); complaints about efficiency in general without the prose-vs-numbers mismatch do not count.",
+   "rationale": "The original prose candidly concedes higher cost than the simpler baselines. The edit flips only the interpretation to \"comparable\", while every number in the table and in the retained clause (17.6% fewer tokens than MatplotAgent, true) stays untouched, exactly per the D5 rule (prose only, never table numbers). The 8x token and 14.8x call gap versus CoML4VIS makes the exaggeration objectively decidable.",
+   "old_string": "Across the board, multi-agent systems like \\methodname{} and \\textit{MatplotAgent} incur higher computational costs than simpler baselines like \\textit{CoML4VIS} and \\textit{VisPath}, which rely on fewer iterations and less collaborative overhead. However, \\methodname{} outperforms MatplotAgent in efficiency,",
+   "new_string": "Across the board, \\methodname{} attains token and call costs comparable to lightweight single-pass baselines like \\textit{CoML4VIS} and \\textit{VisPath}, despite its substantially richer agentic pipeline. Moreover, \\methodname{} outperforms MatplotAgent in efficiency,"
+  },
+  {
+   "uid": "V1-3",
+   "type": "D9",
+   "aspect": "Conclusion check - missing limitations discussion",
+   "severity": "minor",
+   "location_anchor": "Section 6 Conclusion; sentence \"A key limitation is the computational overhead from multi-turn agent communications.\" before \"Future efforts could distill agents\"",
+   "detection_criteria": "Counts as caught iff the review points out that the paper lacks any limitations discussion (no limitations section or statement in the conclusion or anywhere else) or explicitly asks the authors to add a discussion of limitations. A finding that merely calls the conclusion short or generic without mentioning missing limitations does not count.",
+   "rationale": "The deleted sentence is the paper's ONLY limitation statement (there is no dedicated Limitations section). Removing it while keeping the polite future-work sentence follows the recipe's \"delete the substantive item, keep the pleasantries\" variant; post-edit the paper contains zero limitation discussion, so the criterion is cleanly decidable and does not fire on the unedited control.",
+   "old_string": "A key limitation is the computational overhead from multi-turn agent communications. Future efforts",
+   "new_string": "Future efforts"
+  },
+  {
+   "uid": "V1-4",
+   "type": "D11",
+   "aspect": "Submission hygiene - leftover TODO note",
+   "severity": "minor",
+   "location_anchor": "Appendix \"Judging Prompts and Model Setup\" (appendix:eval-prompts); after \"The prompts for MatplotBench and Qwen Code Interpreter benchmark are shown in the following.\"",
+   "detection_criteria": "Counts as caught iff the review flags a leftover author editing/TODO note - the red \\todo{...} remark about double-checking the judge prompts in the judging-prompts appendix - as a submission-hygiene problem (residual draft marker that should be removed). Mentions of the system's \"global TODO list\" feature or of the TODO items inside quoted agent prompts do not count.",
+   "rationale": "The preamble already defines \\newcommand{\\todo}[1]{\\textcolor{red}{#1}} but never uses it (verified by grep), so the injected note compiles and renders as conspicuous red text - a classic author oversight. Wording and the detection criterion are anchored so the paper's legitimate \"global TODO list\" terminology (which appears throughout) cannot be confused with this planted marker.",
+   "old_string": "The prompts for MatplotBench and Qwen Code Interpreter benchmark are shown in the following.",
+   "new_string": "The prompts for MatplotBench and Qwen Code Interpreter benchmark are shown in the following. \\todo{TODO: double-check that these judge prompts match the final evaluation scripts before submission}"
+  }
+ ]
+}

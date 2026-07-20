@@ -1,0 +1,714 @@
+[
+ {
+  "fid": "sSbEEHNEsL",
+  "status": "Poster",
+  "init": [
+   8,
+   8,
+   8,
+   8
+  ],
+  "mean": 8,
+  "title": "Pay Attention to CTC: Fast and Robust Pseudo-Labelling for Unified Spe"
+ },
+ {
+  "fid": "qOyF214xmg",
+  "status": "Poster",
+  "init": [
+   6,
+   8,
+   8,
+   10
+  ],
+  "mean": 8,
+  "title": "Transducing Language Models"
+ },
+ {
+  "fid": "oBXfPyi47m",
+  "status": "Poster",
+  "init": [
+   6,
+   8,
+   8,
+   10
+  ],
+  "mean": 8,
+  "title": "Efficient Reinforcement Learning by Guiding World Models with Non-Cura"
+ },
+ {
+  "fid": "VKGTGGcwl6",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8,
+   10
+  ],
+  "mean": 8,
+  "title": "LLMs Get Lost In Multi-Turn Conversation"
+ },
+ {
+  "fid": "3YKeB9R1g9",
+  "status": "Poster",
+  "init": [
+   8,
+   8,
+   8
+  ],
+  "mean": 8,
+  "title": "Scaling with Collapse: Efficient and Predictable Training of LLM Famil"
+ },
+ {
+  "fid": "y3oHMcoItR",
+  "status": "Oral",
+  "init": [
+   4,
+   6,
+   10,
+   10
+  ],
+  "mean": 7.5,
+  "title": "RealBench: A Benchmark for Complex Physical Systems with Real-World Da"
+ },
+ {
+  "fid": "pJZbMECfLP",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   10
+  ],
+  "mean": 7.5,
+  "title": "Ensembling Pruned Attention Heads For Uncertainty-Aware Efficient Tran"
+ },
+ {
+  "fid": "ZfdnZhOP0k",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8,
+   8
+  ],
+  "mean": 7.5,
+  "title": "Hubble: a Model Suite to Advance the Study of LLM Memorization"
+ },
+ {
+  "fid": "Vsgq2ldr4K",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8,
+   8
+  ],
+  "mean": 7.5,
+  "title": "Reasoning without Training: Your Base Model is Smarter Than You Think"
+ },
+ {
+  "fid": "SzXDuBN8M1",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8,
+   8
+  ],
+  "mean": 7.5,
+  "title": "TD-JEPA: Latent-predictive Representations for Zero-Shot Reinforcement"
+ },
+ {
+  "fid": "Gk7gLAtVDO",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8,
+   8
+  ],
+  "mean": 7.5,
+  "title": "Is it Thinking or Cheating?  Detecting Implicit Reward Hacking by Meas"
+ },
+ {
+  "fid": "FtL9eEmU6v",
+  "status": "Oral",
+  "init": [
+   6,
+   6,
+   8,
+   10
+  ],
+  "mean": 7.5,
+  "title": "EditBench: Evaluating LLM Abilities to Perform Real-World Instructed C"
+ },
+ {
+  "fid": "FMjeC9Msws",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8,
+   8
+  ],
+  "mean": 7.5,
+  "title": "The Art of Scaling Reinforcement Learning Compute for LLMs"
+ },
+ {
+  "fid": "3JPAkwSVc4",
+  "status": "Oral",
+  "init": [
+   6,
+   6,
+   8,
+   10
+  ],
+  "mean": 7.5,
+  "title": "Quotient-Space Diffusion Model"
+ },
+ {
+  "fid": "z28PLIEj6l",
+  "status": "Poster",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "FutureX: An Advanced Live Benchmark for LLM Agents in Future Predictio"
+ },
+ {
+  "fid": "wTGcb3DxOn",
+  "status": "Poster",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "LLM Pretraining with Continuous Concepts"
+ },
+ {
+  "fid": "lTaPtGiUUc",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "Latent Particle World Models: Self-supervised Object-centric Stochasti"
+ },
+ {
+  "fid": "gdZ6J5hZzF",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "Sequences of Logits Reveal the Low Rank Structure of Language Models"
+ },
+ {
+  "fid": "fSE0rUngCX",
+  "status": "Poster",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "Multimodal Policy Internalization for Conversational Agents"
+ },
+ {
+  "fid": "a7Qa4CcHak",
+  "status": "Poster",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Comman"
+ },
+ {
+  "fid": "VJZ477R89F",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "DiffusionNFT: Online Diffusion Reinforcement with Forward Process"
+ },
+ {
+  "fid": "Qo0OZZoTLh",
+  "status": "Poster",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "Virtual Community: An Open World for Humans, Robots, and Society"
+ },
+ {
+  "fid": "Mf5AleTUVK",
+  "status": "Oral",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "In-The-Flow Agentic System Optimization for Effective Planning and Too"
+ },
+ {
+  "fid": "M4RKeHIAxw",
+  "status": "Poster",
+  "init": [
+   6,
+   8,
+   8
+  ],
+  "mean": 7.33,
+  "title": "CoDA: Agentic Systems for Collaborative Data Visualization"
+ },
+ {
+  "fid": "D0u0glT060",
+  "status": "Poster",
+  "init": [
+   4,
+   8,
+   8,
+   8,
+   8
+  ],
+  "mean": 7.2,
+  "title": "Deconstructing Positional Information: From Attention Logits to Traini"
+ },
+ {
+  "fid": "A4Us8jxVGq",
+  "status": "Oral",
+  "init": [
+   6,
+   6,
+   8,
+   8,
+   8
+  ],
+  "mean": 7.2,
+  "title": "How Do Transformers Learn to Associate Tokens: Gradient Leading Terms "
+ },
+ {
+  "fid": "yDmb7xAfeb",
+  "status": "Oral",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "WoW!: World Models in a Closed-Loop World"
+ },
+ {
+  "fid": "y0UxFtXqXf",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "What matters for Representation Alignment: Global Information or Spati"
+ },
+ {
+  "fid": "xIycolc5Xw",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Instance-Dependent Fixed-Budget Pure Exploration in Reinforcement Lear"
+ },
+ {
+  "fid": "vI56m4Iu4e",
+  "status": "Poster",
+  "init": [
+   4,
+   8,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "MemGen: Weaving Generative Latent Memory for Self-Evolving Agents"
+ },
+ {
+  "fid": "uJCGMBO6Qx",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   6,
+   10
+  ],
+  "mean": 7,
+  "title": "When Is Diversity Rewarded in Cooperative Multi-Agent Learning?"
+ },
+ {
+  "fid": "tIVCfVnIHo",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Lyra: Generative 3D Scene Reconstruction via Video Diffusion Model Sel"
+ },
+ {
+  "fid": "qNlTH4kYJZ",
+  "status": "Oral",
+  "init": [
+   4,
+   8,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "AdAEM: An Adaptively and Automated Extensible Evaluation Method of LLM"
+ },
+ {
+  "fid": "pfw176o1YJ",
+  "status": "Oral",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Learning to See Before Seeing: Demystifying LLM Visual Priors from Lan"
+ },
+ {
+  "fid": "oeoCgcYIyf",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Coupled Transformer Autoencoder for Disentangling Multi-Region Neural "
+ },
+ {
+  "fid": "oN55r8iJJW",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "SAM-Veteran: An MLLM-Based Human-like SAM Agent for Reasoning Segmenta"
+ },
+ {
+  "fid": "d1wuA8oIH0",
+  "status": "Poster",
+  "init": [
+   4,
+   6,
+   8,
+   10
+  ],
+  "mean": 7,
+  "title": "EquAct: An SE(3)-Equivariant Multi-Task Transformer for 3D Robotic Man"
+ },
+ {
+  "fid": "cJseWJJ5IM",
+  "status": "Poster",
+  "init": [
+   4,
+   6,
+   8,
+   10
+  ],
+  "mean": 7,
+  "title": "Efficient Reasoning with Balanced Thinking"
+ },
+ {
+  "fid": "aVeaNahsID",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Zephyrus: An Agentic Framework for Weather Science"
+ },
+ {
+  "fid": "a4S1nQay3b",
+  "status": "Oral",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Uncover Underlying Correspondence for Robust Multi-view Clustering"
+ },
+ {
+  "fid": "ZMzha5gbnF",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Toward Safer Diffusion Language Models: Discovery and Mitigation of Pr"
+ },
+ {
+  "fid": "X7JfjLKKLQ",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Diagnosing and Improving Diffusion Models by Estimating Optimal Loss V"
+ },
+ {
+  "fid": "UOzxviKVFO",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy O"
+ },
+ {
+  "fid": "Tke3BVwUz6",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Correlated Policy Optimization in Multi-Agent Subteams"
+ },
+ {
+  "fid": "TQhSodCM4r",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning"
+ },
+ {
+  "fid": "RJXwuAMUiI",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "The Effect of Attention Head Count on Transformer Approximation"
+ },
+ {
+  "fid": "ORv3SAzus1",
+  "status": "Oral",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Train-before-Test Harmonizes Language Model Rankings"
+ },
+ {
+  "fid": "HhThhjKyfw",
+  "status": "Oral",
+  "init": [
+   2,
+   6,
+   10,
+   10
+  ],
+  "mean": 7,
+  "title": "WSM: Decay-Free Learning Rate Schedule via Checkpoint Merging for LLM "
+ },
+ {
+  "fid": "GMlZt4fZSY",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Exploring the Limits of Sub-Billion Language Model Reasoners with Open"
+ },
+ {
+  "fid": "EplNy91Xqh",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "SimpleTIR: End-to-End Reinforcement Learning for Multi-Turn Tool-Integ"
+ },
+ {
+  "fid": "BVnIsh4Nz1",
+  "status": "Oral",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "On the Reasoning Abilities of Masked Diffusion Language Models"
+ },
+ {
+  "fid": "BDnOrExHmt",
+  "status": "Poster",
+  "init": [
+   4,
+   8,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "PixNerd: Pixel Neural Field Diffusion"
+ },
+ {
+  "fid": "7UfZAxKo5K",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Two-Way Is Better Than One: Bidirectional Alignment with Cycle Consist"
+ },
+ {
+  "fid": "3vlMiJwo8b",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Do 3D Large Language Models Really Understand 3D Spatial Relationships"
+ },
+ {
+  "fid": "3Z3Is6hnOT",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Fast-dLLM: Training-free Acceleration of Diffusion LLM by Enabling KV "
+ },
+ {
+  "fid": "2YvbLQEdYt",
+  "status": "Oral",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "CyberGym: Evaluating AI Agents' Real-World Cybersecurity Capabilities "
+ },
+ {
+  "fid": "1USeVjsKau",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "ParoQuant: Pairwise Rotation Quantization for Efficient Reasoning LLM "
+ },
+ {
+  "fid": "0hy9kJ1ULB",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "MoGA: Mixture-of-Groups Attention for End-to-End Long Video Generation"
+ },
+ {
+  "fid": "0Xi3WDwd5w",
+  "status": "Poster",
+  "init": [
+   6,
+   6,
+   8,
+   8
+  ],
+  "mean": 7,
+  "title": "Overlap-weighted orthogonal meta-learner for treatment effect estimati"
+ },
+ {
+  "fid": "yBFUqdJFZn",
+  "status": "Oral",
+  "init": [
+   6,
+   6,
+   6,
+   6,
+   10
+  ],
+  "mean": 6.8,
+  "title": "ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform "
+ }
+]

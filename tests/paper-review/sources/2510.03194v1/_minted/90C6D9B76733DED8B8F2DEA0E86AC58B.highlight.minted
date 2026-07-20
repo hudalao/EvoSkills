@@ -1,0 +1,17 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{g+gh}{\PYGZsh{} Example 1 Input}
+\PYG{g+gu}{\PYGZsh{}\PYGZsh{} Task Instruction}
+\PYG{g+gs}{**Task:**}
+Please compile the total scores for each year from \PYG{g+gs}{**1950 to 2018**}.
+Plot the results in a line chart according to the format specified in \PYG{l+s+sb}{`plot.yaml`} and save the chart as \PYG{l+s+sb}{`result.png`}.
+
+\PYGZhy{}\PYGZhy{}\PYGZhy{}
+\PYG{g+gu}{\PYGZsh{}\PYGZsh{} Environment}
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} nba.csv \PYGZsh{} Core dataset (season\PYGZhy{}level data)
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} nba\PYGZus{}extra.csv \PYGZsh{} Supplemental dataset (optional fields)
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} Seasons\PYGZus{}Stats.csv \PYGZsh{} Player\PYGZhy{}season statistics
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} Players.csv \PYGZsh{} Player metadata
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} player\PYGZus{}data.csv \PYGZsh{} Additional player/game\PYGZhy{}level data
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} plot.yaml \PYGZsh{} Primary plot configuration
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} plot.json \PYGZsh{} Alternative plot configuration
+\end{MintedVerbatim}

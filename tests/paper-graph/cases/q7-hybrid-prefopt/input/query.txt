@@ -1,0 +1,1 @@
+How did preference optimization for aligning language models evolve — from RLHF with reward models to direct preference optimization (arXiv:2305.18290) and its successors?

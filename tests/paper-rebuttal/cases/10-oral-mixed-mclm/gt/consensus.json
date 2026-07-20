@@ -1,0 +1,26 @@
+{
+ "items": [
+  {
+   "key": "missing-domain-baselines",
+   "core_ids": [
+    "R1.W4",
+    "R2.W1",
+    "R3.W3"
+   ]
+  },
+  {
+   "key": "vocab-annotation-methodology-unclear",
+   "core_ids": [
+    "R1.W1",
+    "R2.W2"
+   ]
+  },
+  {
+   "key": "evaluation-scope-limited",
+   "core_ids": [
+    "R1.W5",
+    "R3.W2"
+   ]
+  }
+ ]
+}

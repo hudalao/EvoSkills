@@ -26,5 +26,13 @@ workspace/
 skills/*.bak.*/
 skills/**/*.bak.*
 
-# Local test harness (run locally, not committed — see tests/<skill>/)
-tests/
+# Eval suite (tests/) IS tracked for intern handover; exclude only secrets and regenerables:
+tests/.env
+tests/harness/.venv/
+tests/harness/runs/
+# raw candidate-pool dumps: re-downloadable, and iclr2026.json (187MB) exceeds GitHub's 100MB hard limit
+tests/harness/pool/iclr2026.json
+tests/harness/pool/pc_iclr2026.json
+
+# Local reference images (WeChat screenshots, kept locally only)
+skills/**/微信图片_*.jpg

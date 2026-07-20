@@ -1,0 +1,212 @@
+{
+ "accept_borderline": [
+  {
+   "fid": "Dgphd9qizu",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    4,
+    8
+   ],
+   "mean": 4.5,
+   "spread": 6,
+   "minw": 2336,
+   "title": "Functional MRI Time Series Generation via Wavelet-Based Image Tran",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  },
+  {
+   "fid": "PAV5zYn0Hn",
+   "status": "Poster",
+   "init": [
+    2,
+    6,
+    6
+   ],
+   "mean": 4.67,
+   "spread": 4,
+   "minw": 2079,
+   "title": "Neural Sum-of-Squares: Certifying the Nonnegativity of Polynomials",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  }
+ ],
+ "reject_borderline": [
+  {
+   "fid": "AvkLmnUqtZ",
+   "status": "Reject",
+   "init": [
+    4,
+    4,
+    6
+   ],
+   "mean": 4.67,
+   "spread": 2,
+   "minw": 1836,
+   "title": "$\\psi$DAG: Projected Stochastic Approximation Iteration for Linear",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  },
+  {
+   "fid": "c0y21lONB5",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "mean": 4.5,
+   "spread": 4,
+   "minw": 1719,
+   "title": "$\\texttt{GEM}$: 3D Gaussian Splatting for Efficient and Accurate C",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  }
+ ],
+ "split_accept": [
+  {
+   "fid": "Dgphd9qizu",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    4,
+    8
+   ],
+   "mean": 4.5,
+   "spread": 6,
+   "minw": 2336,
+   "title": "Functional MRI Time Series Generation via Wavelet-Based Image Tran",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  },
+  {
+   "fid": "M7eWB695jp",
+   "status": "Poster",
+   "init": [
+    2,
+    2,
+    6,
+    8
+   ],
+   "mean": 4.5,
+   "spread": 6,
+   "minw": 1611,
+   "title": "Purifying Generative LLMs from Backdoors  without Prior Knowledge ",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  }
+ ],
+ "split_reject": [
+  {
+   "fid": "xszAt23a17",
+   "status": "Reject",
+   "init": [
+    2,
+    2,
+    4,
+    8
+   ],
+   "mean": 4,
+   "spread": 6,
+   "minw": 1685,
+   "title": "CHOrD: Synthesizing Spatially Coherent, House-Scale, Organized, an",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  },
+  {
+   "fid": "M2xifZ9wn0",
+   "status": "Reject",
+   "init": [
+    2,
+    2,
+    8
+   ],
+   "mean": 4,
+   "spread": 6,
+   "minw": 1538,
+   "title": "Reducing Spurious Correlations in CNNs via Attention-Based Feature",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  }
+ ],
+ "all_positive": [
+  {
+   "fid": "HHNQSXaLkF",
+   "status": "Poster",
+   "init": [
+    6,
+    6,
+    6
+   ],
+   "mean": 6,
+   "spread": 0,
+   "minw": 1621,
+   "title": "Tree-sliced Sobolev IPM",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  },
+  {
+   "fid": "NEOTsyyYH7",
+   "status": "Poster",
+   "init": [
+    6,
+    6,
+    6
+   ],
+   "mean": 6,
+   "spread": 0,
+   "minw": 1566,
+   "title": "Towards Bridging the Gap between Large-Scale Pretraining and Effic",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  }
+ ],
+ "oral_mixed": [
+  {
+   "fid": "x7aLhLMVn1",
+   "status": "Oral",
+   "init": [
+    4,
+    6,
+    8
+   ],
+   "mean": 6,
+   "spread": 4,
+   "minw": 1403,
+   "title": "Multiplayer Nash Preference Optimization",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  },
+  {
+   "fid": "BlSH7gNQSq",
+   "status": "Oral",
+   "init": [
+    2,
+    2,
+    4,
+    8
+   ],
+   "mean": 4,
+   "spread": 6,
+   "minw": 1341,
+   "title": "InfoNCE Induces Gaussian Distribution",
+   "arxiv": null,
+   "pub": null,
+   "usable": false
+  }
+ ]
+}

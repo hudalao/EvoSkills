@@ -1,0 +1,58 @@
+\section{Judging Prompts and Model Setup}\label{appendix:eval-prompts}
+
+To ensure consistent and objective evaluation of generated visualizations, we employ an LLM-based judge, specifically \io{gemini-2.5-pro}, to assign code and visualization quality scores. 
+
+We adapt prompts from the original MatplotBench (from the MatPlotAgent repository) and Qwen-Agent evaluations (official evaluation for Qwen Code Interpreter). This ensures consistent, scalable assessment while reducing bias.
+MatplotBench overall score averages the two; Qwen uses binary 100/0 via combined prompt. Non-executable code scores 0.
+
+The prompts for MatplotBench and Qwen Code Interpreter benchmark are shown in the following.
+
+
+
+\begin{minted}[fontsize=\footnotesize, linenos, frame=single]{markdown}
+# MatplotBench Evaluation Prompts
+## Code
+You are an excellent judge at evaluating generated code given an user query. You will be giving scores on how well a piece of code adheres to an user query by carefully reading each line of code and determine whether each line of code succeeds in carrying out the user query.
+A user query, a piece of code and an executability flag will be given to you. If the Executability is False, then the final score should be 0.
+**User Query**: {query}
+**Code**: {code}
+**Executability**: {executable}
+Carefully read through each line of code. Scoring can be carried out in the following aspect:
+Code correctness (Code executability): Can the code correctly achieve the requirements in the user query? You should carefully read each line of the code, think of the effect each line of code would achieve, and determine whether each line of code contributes to the successful implementation of requirements in the user query. If the Executability is False, then the final score should be 0.
+After scoring from the above aspect, please give a final score. The final score is preceded by the [FINAL SCORE] token.
+For example [FINAL SCORE]: 40. A final score must be generated.
+
+## Plot
+You are an excellent judge at evaluating visualization plots between a model generated plot and the ground truth. You will be giving scores on how well it matches the ground truth plot.
+**Generated plot**: {generated_plot}
+**Ground truth**: {GT}
+The generated plot will be given to you as the first figure. If the first figure is blank, that means the code failed to generate a figure.
+Another plot will be given to you as the second figure, which is the desired outcome of the user query, meaning it is the ground truth for you to reference.
+Please compare the two figures head to head and rate them.
+Suppose the second figure has a score of 100, rate the first figure on a scale from 0 to 100.
+Scoring should be carried out in the following aspect:
+Plot correctness: 
+Compare closely between the generated plot and the ground truth, the more resemblance the generated plot has compared to the ground truth, the higher the score. The score should be proportionate to the resemblance between the two plots.
+In some rare occurrence, see if the data points are generated randomly according to the query, if so, the generated plot may not perfectly match the ground truth, but it is correct nonetheless.
+Only rate the first figure, the second figure is only for reference.
+If the first figure is blank, that means the code failed to generate a figure. Give a score of 0 on the Plot correctness.
+After scoring from the above aspect, please give a final score. The final score is preceded by the [FINAL SCORE] token.
+For example [FINAL SCORE]: 40.
+\end{minted}
+
+
+
+\begin{minted}[fontsize=\footnotesize, linenos, frame=single]{markdown}
+# Qwen Code Interpreter Benchmark Evalaution Prompts
+Please judge whether the image is consistent with the [Question] below, if it is consistent then reply "right", if not then reply "wrong".
+Consider these relaxed conditions:
+- Allow reasonable interpretations and creative variations
+- Focus on whether the core visualization requirement is addressed
+- Accept different implementation approaches that achieve similar goals
+- Be lenient with styling and formatting differences
+
+**Question**: {query}
+After your judgment, please also provide a brief explanation of your reasoning in 2-3 sentences.
+Expected leading token (normalized by code): CORRECT or WRONG
+\end{minted}
+

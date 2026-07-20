@@ -1,0 +1,124 @@
+{
+ "per_comment": [
+  {
+   "id": "R1.W1",
+   "priority": "low",
+   "category": "clarity",
+   "theme": null
+  },
+  {
+   "id": "R1.W2",
+   "priority": "high",
+   "category": "missing-experiment",
+   "theme": "no-e2e"
+  },
+  {
+   "id": "R1.W3",
+   "priority": "low",
+   "category": "clarity",
+   "theme": "presentation"
+  },
+  {
+   "id": "R1.W4",
+   "priority": "medium",
+   "category": "figures",
+   "theme": "presentation"
+  },
+  {
+   "id": "R1.W5",
+   "priority": "low",
+   "category": "writing",
+   "theme": null
+  },
+  {
+   "id": "R1.W6",
+   "priority": "low",
+   "category": "minor",
+   "theme": null
+  },
+  {
+   "id": "R2.W1",
+   "priority": "high",
+   "category": "causation",
+   "theme": "causation"
+  },
+  {
+   "id": "R2.W2",
+   "priority": "medium",
+   "category": "tradeoff",
+   "theme": null
+  },
+  {
+   "id": "R2.W3",
+   "priority": "medium",
+   "category": "scope",
+   "theme": null
+  },
+  {
+   "id": "R2.W4",
+   "priority": "high",
+   "category": "no-system",
+   "theme": "no-e2e"
+  },
+  {
+   "id": "R3.W1",
+   "priority": "medium",
+   "category": "throughput",
+   "theme": "no-e2e"
+  },
+  {
+   "id": "R3.W2",
+   "priority": "medium",
+   "category": "baseline",
+   "theme": null
+  },
+  {
+   "id": "R3.W3",
+   "priority": "high",
+   "category": "causation",
+   "theme": "causation"
+  },
+  {
+   "id": "R3.W4",
+   "priority": "medium",
+   "category": "writing",
+   "theme": "presentation"
+  },
+  {
+   "id": "R3.W5",
+   "priority": "low",
+   "category": "limitation",
+   "theme": null
+  }
+ ],
+ "themes": [
+  {
+   "key": "no-e2e",
+   "comment_ids": [
+    "R1.W2",
+    "R2.W4",
+    "R3.W1"
+   ],
+   "summary": "no end-to-end validation"
+  },
+  {
+   "key": "causation",
+   "comment_ids": [
+    "R2.W1",
+    "R3.W3"
+   ],
+   "summary": "correlation vs causation"
+  },
+  {
+   "key": "presentation",
+   "comment_ids": [
+    "R1.W3",
+    "R1.W4",
+    "R3.W4"
+   ],
+   "summary": "figures and clarity"
+  }
+ ],
+ "most_favorable_reviewer": "R1",
+ "notes": "smoke"
+}

@@ -1,0 +1,18 @@
+\begin{wraptable}{l}{0.34\textwidth}
+    \centering
+    \vspace{-1.0em} % Adjust as needed to tighten spacing
+    \resizebox{1.0\linewidth}{!}{%
+    \begin{tabular}{lccccc}
+        & \multicolumn{5}{c}{Simulation Type} \\
+        \cmidrule(){2-6}
+        Model & \full & \concat & \sharded & \recap & \snowball \\
+        \cmidrule(lr){1-1} \cmidrule(){2-6}
+        \openai~4o-mini &  86.8 & \ccol{FDF6F6} 84.4 & \ccol{E58484} 50.4 & \ccol{F0B7B7} 66.5 & \ccol{ECA6A6} 61.8 \\
+        \openai~4o &  93.0 & \ccol{FDF8F8} 90.9 & \ccol{E78F8F} 59.1 & \ccol{F3C9C9} 76.6 & \ccol{EBA3A3} 65.3 \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Experimental Results with additional simulation types: \recap\hspace{0.1em} Recap and \snowball\hspace{0.1em} Snowball. Both strategies involve repeating user-turn information to mitigate models getting lost in conversations.}
+    \label{tab:recap_snowball}
+    \vspace{-4ex}
+\end{wraptable}

@@ -1,0 +1,14 @@
+{
+ "goal": "Trace how preference optimization for aligning language models evolved from RLHF with reward models to direct preference optimization and its successors.",
+ "searches": [
+  "preference optimization language model alignment",
+  "RLHF reward model",
+  "direct preference optimization variants",
+  "reference-free preference alignment"
+ ],
+ "definitions": {
+  "RLHF": "Reinforcement learning from human feedback via a learned reward model.",
+  "DPO": "Optimizing preferences directly with a classification loss, no explicit reward model.",
+  "reference model": "Frozen policy anchoring the KL constraint during alignment."
+ }
+}

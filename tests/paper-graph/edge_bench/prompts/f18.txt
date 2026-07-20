@@ -1,0 +1,42 @@
+You are auditing a single claimed evolution edge in a research-lineage
+graph. The edge says: source paper (M) had a specific limitation that
+target paper (N) addressed. Your job is to label the strength of textual
+evidence for this edge.
+
+--- Source paper (M) ---
+(1) Flamingo: a Visual Language Model for Few-Shot Learning
+Abstract: Building models that can be rapidly adapted to novel tasks using only a handful of annotated examples is an open challenge for multimodal machine learning research. We introduce Flamingo, a family of Visual Language Models (VLM) with this ability. We propose key architectural innovations to: (i) bridge powerful pretrained vision-only and language-only models, (ii) handle sequences of arbitrarily interleaved visual and textual data, and (iii) seamlessly ingest images or videos as inputs. Thanks to their flexibility, Flamingo models can be trained on large-scale multimodal web corpora containing arbitrarily interleaved text and images, which is key to endow them with in-context few-shot learning capabilities. We perform a thorough evaluation of our models, exploring and measuring their ability to rapidly adapt to a variety of image and video tasks. These include open-ended tasks such as visual question-answering, where the model is prompted with a question which it has to answer; captioning tasks, which evaluate the ability to describe a scene or an event; and close-ended tasks such as multiple-choice visual question-answering. For tasks lying anywhere on this spectrum, a single Flamingo model can achieve a new state of the art with few-shot learning, simply by prompting the model with task-specific examples. On numerous benchmarks, Flamingo outperforms models fine-tuned on thousands of times more task-specific data.
+Discussion/Conclusion excerpt: (no excerpt)
+
+--- Target paper (N) ---
+(2) Visual Instruction Tuning
+Abstract: Instruction tuning large language models (LLMs) using machine-generated instruction-following data has improved zero-shot capabilities on new tasks, but the idea is less explored in the multimodal field. In this paper, we present the first attempt to use language-only GPT-4 to generate multimodal language-image instruction-following data. By instruction tuning on such generated data, we introduce LLaVA: Large Language and Vision Assistant, an end-to-end trained large multimodal model that connects a vision encoder and LLM for general-purpose visual and language understanding.Our early experiments show that LLaVA demonstrates impressive multimodel chat abilities, sometimes exhibiting the behaviors of multimodal GPT-4 on unseen images/instructions, and yields a 85.1% relative score compared with GPT-4 on a synthetic multimodal instruction-following dataset. When fine-tuned on Science QA, the synergy of LLaVA and GPT-4 achieves a new state-of-the-art accuracy of 92.53%. We make GPT-4 generated visual instruction tuning data, our model and code base publicly available.
+Discussion/Conclusion excerpt: (no excerpt)
+
+--- Claimed gap ---
+Flamingo's perceiver resampler is parameter-heavy; LLaVA simplifies the same resampler into a single linear projection for instruction tuning.
+
+--- Labels ---
+Choose exactly one:
+
+- SUPPORTED_BY_ABSTRACT — The source abstract explicitly states or
+  clearly implies the limitation, AND the target abstract explicitly
+  states or clearly implies the mechanism that addresses it.
+- SUPPORTED_BY_SECTION  — The supporting evidence for either side
+  (lack on M, or fix on N) is in the Discussion/Conclusion excerpt
+  rather than the abstract, but the textual evidence is still concrete.
+- INFERRED              — The claim is plausible but neither the abstract
+  nor the excerpt explicitly attests to one or both halves of the
+  source-lack/target-fix pair. Reasonable to leave on the graph as a
+  weakly-supported edge, not as an authoritative claim.
+- REJECT                — The abstracts or excerpts contradict the
+  claimed gap (e.g., the source paper already does X, or the target
+  paper does not actually address X). The edge should not be rendered.
+
+--- Output ---
+Output ONLY a JSON object with this exact shape (no code fences, no
+prose before or after):
+
+{"verdict": "<one of the four labels>", "reason": "<one sentence
+naming the concrete textual evidence on each side, or naming what
+is missing>"}

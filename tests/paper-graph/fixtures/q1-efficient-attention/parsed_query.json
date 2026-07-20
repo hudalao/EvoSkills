@@ -1,0 +1,14 @@
+{
+ "goal": "Trace how efficient attention mechanisms evolved to overcome the quadratic cost of Transformer self-attention on long sequences.",
+ "searches": [
+  "efficient attention long sequences",
+  "sparse attention transformer",
+  "linear attention approximation",
+  "IO-aware exact attention"
+ ],
+ "definitions": {
+  "self-attention": "Mechanism where every token attends to every other token, costing O(n^2) in sequence length.",
+  "sparse attention": "Attention restricted to a subset of token pairs to cut cost.",
+  "IO-aware attention": "Exact attention reorganized to minimize GPU memory reads/writes."
+ }
+}

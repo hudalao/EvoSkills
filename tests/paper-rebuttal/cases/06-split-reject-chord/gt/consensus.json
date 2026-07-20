@@ -1,0 +1,28 @@
+{
+ "items": [
+  {
+   "key": "novelty-engineering-pipeline",
+   "core_ids": [
+    "R2.W1",
+    "R3.W6",
+    "R4.W1"
+   ]
+  },
+  {
+   "key": "baseline-fairness-positioning",
+   "core_ids": [
+    "R1.W1",
+    "R2.W2",
+    "R2.W5",
+    "R4.W3"
+   ]
+  },
+  {
+   "key": "house-scale-claim-vs-method",
+   "core_ids": [
+    "R2.W3",
+    "R3.W1"
+   ]
+  }
+ ]
+}

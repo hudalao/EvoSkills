@@ -1,0 +1,2 @@
+{"stage": "seed_extract", "arxiv_ids": ["2205.14135"], "ts": "2026-07-17T08:39:12.293880+00:00"}
+{"stage": "seed_resolve", "arxiv_id": "2205.14135", "hit": true, "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness", "reason": null, "ts": "2026-07-17T08:39:13.223584+00:00"}

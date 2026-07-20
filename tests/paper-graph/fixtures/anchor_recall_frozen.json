@@ -1,0 +1,131 @@
+{
+ "q1-efficient-attention": {
+  "recall": "0/9",
+  "hit": [],
+  "miss": [
+   "1706.03762",
+   "1904.10509",
+   "2001.04451",
+   "2004.05150",
+   "2006.04768",
+   "2009.14794",
+   "2007.14062",
+   "2205.14135",
+   "2307.08691"
+  ]
+ },
+ "q2-diffusion-sampling": {
+  "recall": "2/8",
+  "hit": [
+   "2206.00927",
+   "2303.01469"
+  ],
+  "miss": [
+   "2006.11239",
+   "2010.02502",
+   "2202.00512",
+   "2211.01095",
+   "2310.04378",
+   "2209.03003"
+  ]
+ },
+ "q3-rag": {
+  "recall": "2/7",
+  "hit": [
+   "2004.04906",
+   "2005.11401"
+  ],
+  "miss": [
+   "1704.00051",
+   "2002.08909",
+   "2007.01282",
+   "2208.03299",
+   "2310.11511"
+  ]
+ },
+ "q4-test-time-reasoning": {
+  "recall": "0/7",
+  "hit": [],
+  "miss": [
+   "2201.11903",
+   "2203.11171",
+   "2203.14465",
+   "2305.10601",
+   "2305.20050",
+   "2408.03314",
+   "2501.12948"
+  ]
+ },
+ "q5-seed-lora": {
+  "recall": "1/8",
+  "hit": [
+   "2106.09685"
+  ],
+  "miss": [
+   "1902.00751",
+   "2101.00190",
+   "2104.08691",
+   "2012.13255",
+   "2305.14314",
+   "2303.10512",
+   "2402.09353"
+  ]
+ },
+ "q6-seed-flashattention": {
+  "recall": "1/7",
+  "hit": [
+   "2205.14135"
+  ],
+  "miss": [
+   "1805.02867",
+   "2112.05682",
+   "1706.03762",
+   "2307.08691",
+   "2407.08608",
+   "2309.06180"
+  ]
+ },
+ "q7-hybrid-prefopt": {
+  "recall": "1/8",
+  "hit": [
+   "2305.18290"
+  ],
+  "miss": [
+   "1706.03741",
+   "2009.01325",
+   "2203.02155",
+   "2212.08073",
+   "2310.12036",
+   "2402.01306",
+   "2405.14734"
+  ]
+ },
+ "q8-hybrid-vlm": {
+  "recall": "2/7",
+  "hit": [
+   "2103.00020",
+   "2304.08485"
+  ],
+  "miss": [
+   "2102.05918",
+   "2205.01917",
+   "2201.12086",
+   "2301.12597",
+   "2204.14198"
+  ]
+ },
+ "_finding": {
+  "date": "2026-07-17",
+  "headline": "Retrieval layer is the binding constraint: anchor recall 9/61 (14.8%) at skill-default n=10; q1/q4 got ZERO anchors.",
+  "sensitivity_probe": "q1 re-fetched at n=30 -> 1/9 (only FlashAttention). Tripling budget adds derivatives, not lineage: it is the S2 relevance ranking, not the paper budget.",
+  "mechanism": "S2 /paper/search relevance-ranks recent derivative/application papers above canonical lineage papers; seeds only land because resolve_seed_papers injects them by ID.",
+  "actionable_for_skill": [
+   "seed-graph expansion: pull S2 references/citations of the seed paper (API provides the citation graph)",
+   "citation-count-aware ranking (S2 bulk search supports sort) or post-filter",
+   "era-stratified queries (search per time window to recover ancestors)",
+   "DeepXiv fallback (currently unconfigured)"
+  ],
+  "eval_implication": "Downstream e2e (classify/outline/detail) from frozen fixtures measures graceful degradation under noisy inputs \u2014 fabrication pressure \u2014 not lineage correctness; coverage story is carried by this number.",
+  "correction": "2026-07-17: initial 10/61 (16.4%) overcounted by one \u2014 a short-title substring bug matched fixture 'Consistency Models' against the LCM anchor; matcher now requires length-ratio >= 0.75. Corrected: see headline."
+ }
+}

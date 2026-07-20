@@ -1,0 +1,1 @@
+{"verdict": "INFERRED", "reason": "Neither abstract attests the claimed pair: Longformer's abstract presents global attention as a designed feature rather than a stated 'routing bottleneck' limitation, and Linformer's abstract describes a standalone low-rank key/value matrix approximation with no mention of extending a sliding window."}

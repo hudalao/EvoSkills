@@ -1,0 +1,137 @@
+{
+   "stamp" : true,
+   "sources" : [
+      {
+         "usage" : "toplevel",
+         "filename" : "main.tex"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "bibliography.bbl"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "bibliography.bib"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figures/full_to_sharded_performance_change.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/ai2.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/apis.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/claude.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/cohere.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/concat.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/data2text.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/database.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/deepseek.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/full.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/gemini.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/github.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/huggingface.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/llama.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/math.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/microsoft.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/openai.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/python.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/recap.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/sharded.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/snowball.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/summary.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icons/translation.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "nature/nature_filestart.tex"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "nature/old_main.tex"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "nature/sn-basic.bst"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "nature/sn-jnl.cls"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "nature/sn-nature.bst"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "output.bbl"
+      }
+   ],
+   "process" : {
+      "fontmaps" : [],
+      "compiler" : "pdflatex"
+   }
+}

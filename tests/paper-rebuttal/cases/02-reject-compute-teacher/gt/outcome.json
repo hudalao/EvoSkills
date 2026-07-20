@@ -1,0 +1,12 @@
+{
+  "decision": "Reject",
+  "initial_ratings": {
+    "R1": 4,
+    "R2": 4,
+    "R3": 4,
+    "R4": 6
+  },
+  "final_ratings": "unavailable (public dumps are pre-rebuttal snapshots)",
+  "source": "papercopilot status + davidheineman Nov-2025 snapshot",
+  "HIDDEN_FROM_SUT": true
+}

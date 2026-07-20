@@ -1,0 +1,88 @@
+
+
+\section{\methodname{} Workflow and Implementation Details}
+
+Algorithm~\ref{algo:workflow} outlines the \methodname{} multi-agent visualization workflow, illustrating the sequential and iterative interactions among specialized agents to transform natural language queries into refined visualizations.
+
+% \begin{algorithm}
+% \caption{\methodname{} Multi-Agent Visualization Workflow}
+% \label{algo:workflow}
+% \begin{algorithmic}[1]
+% \State \textbf{Input:} Query $q$, Data files $D$
+% \State \textbf{Output:} Visualization plot $P$
+
+% \State Initialize agents: $A_{\text{query}}$, $A_{\text{data}}$, $A_{\text{search}}$, $A_{\text{design}}$, $A_{\text{code}}$, $A_{\text{debug}}$, $A_{\text{eval}}$
+% \State $todo \gets A_{\text{query}}(q)$ \Comment{Decompose query into task list}
+% \State $metadata \gets A_{\text{data}}(D)$ \Comment{Extract metadata without raw data}
+
+% \State $mappings \gets A_{\text{design}}(todo, metadata)$ \Comment{Map to visualization primitives}
+% \State $examples \gets A_{\text{search}}(mappings)$ \Comment{Optional: Retrieve code examples}
+% \State $designs \gets A_{\text{design}}(mappings)$ \Comment{Optimize aesthetics}
+
+% \State $code \gets A_{\text{code}}(mappings, designs, examples)$ \Comment{Generate executable code}
+
+% \While {not converged}
+%     \State $output \gets A_{\text{debug}}(code)$ \Comment{Execute, debug, produce plot}
+%     \State $scores \gets A_{\text{eval}}(output)$ \Comment{Evaluate clarity/accuracy/layout/aesthetics}
+%     \If {$scores > threshold$}
+%         \State \textbf{return} $output$
+%     \Else
+%         \State $refined \gets A_{\text{design}}, A_{\text{code}}, A_{\text{debug}}(scores)$ \Comment{Feedback to refine}
+%     \EndIf
+% \EndWhile
+% \end{algorithmic}
+% \end{algorithm}
+
+
+\begin{algorithm}
+\caption{\methodname{} Multi-Agent Visualization Workflow}
+\label{algo:workflow}
+\begin{algorithmic}[1]
+\State \textbf{Input:} Query $q$, Data files $D$, optional meta\_data
+\State \textbf{Output:} Visualization plot $P$
+
+\State \textbf{Initialize agents:} 
+$A_{\text{query}}$, 
+$A_{\text{proc}}$, 
+$A_{\text{vizmap}}$, 
+$A_{\text{search}}$, 
+$A_{\text{design}}$, 
+$A_{\text{code}}$, 
+$A_{\text{debug}}$, 
+$A_{\text{eval}}$
+
+\State $(\text{viz\_types}, \text{plot\_keys}, \text{todo}) \gets A_{\text{query}}(q, \text{meta\_data})$
+\Comment{Analyze query, produce visualization intents and task list}
+
+\State $\text{dp} \gets A_{\text{proc}}(D)$
+\Comment{Extract data information, insights, processing hints}
+
+\State $(\text{charts}, \text{styles}, \text{transforms}, \text{goals}) \gets 
+A_{\text{vizmap}}(q, \text{viz\_types}, \text{todo}, \text{dp})$
+\Comment{Map queries and data to chart types and transformations}
+
+\State $\text{examples} \gets A_{\text{search}}(\text{viz\_types}, \text{charts})$
+\Comment{Retrieve optional code examples}
+
+\State $\text{design} \gets A_{\text{design}}(\text{todo}, \text{dp})$
+\Comment{Propose design specifics, quality metrics, and success indicators}
+
+\State $\text{code} \gets A_{\text{code}}(\text{design}, \text{dp}, \text{examples})$
+\Comment{Generate executable code with documentation}
+
+\Repeat
+    \State $(\text{stdout}, \text{stderr}, \text{fixed\_code}, P) \gets A_{\text{debug}}(\text{code})$
+    \Comment{Debug and produce plot}
+    \State $\text{report} \gets A_{\text{eval}}(P, q, \text{dp})$
+    \Comment{Evaluate accuracy, readability, layout, aesthetics}
+    \If {$\text{report.overall\_score} \ge \tau$ \textbf{ and } $\text{report.satisfies}(\text{design.success\_ind})$}
+        \State \Return $P$
+    \Else
+        \State $\text{design} \gets A_{\text{design}}.\text{refine}(\text{design}, \text{report})$
+        \State $\text{code} \gets A_{\text{code}}.\text{revise}(\text{design}, \text{dp}, \text{examples}, \text{report})$
+    \EndIf
+\Until convergence or budget exhausted
+
+\State \Return $P$ \Comment{Return best-effort visualization}
+\end{algorithmic}
+\end{algorithm}

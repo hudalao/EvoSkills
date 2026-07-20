@@ -1,0 +1,6 @@
+{
+  "reviewer": "R1",
+  "candidates": ["R1"],
+  "rule": "highest initial rating (6 vs 4,4), unique max",
+  "needs_manual": false
+}

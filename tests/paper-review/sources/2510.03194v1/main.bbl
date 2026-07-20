@@ -1,0 +1,274 @@
+\begin{thebibliography}{50}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Achiam et~al.(2023)Achiam, Adler, Agarwal, Ahmad, Akkaya, Aleman, Almeida, Altenschmidt, Altman, Anadkat, et~al.]{achiam2023gpt}
+J.~Achiam, S.~Adler, S.~Agarwal, L.~Ahmad, I.~Akkaya, F.~L. Aleman, D.~Almeida, J.~Altenschmidt, S.~Altman, S.~Anadkat, et~al.
+\newblock Gpt-4 technical report.
+\newblock \emph{arXiv preprint arXiv:2303.08774}, 2023.
+
+\bibitem[Bai et~al.(2025)Bai, Ying, Suo, Wei, Fan, and Song]{bai2025text}
+T.~Bai, H.~Ying, K.~Suo, J.~Wei, T.~Fan, and Y.~Song.
+\newblock Text-to-trajvis: Enabling trajectory data visualizations from natural language questions.
+\newblock \emph{arXiv preprint arXiv:2504.16358}, 2025.
+
+\bibitem[Bai et~al.(2024)Bai, Wang, Xiao, He, Han, Zhang, and Shou]{bai2024hallucination}
+Z.~Bai, P.~Wang, T.~Xiao, T.~He, Z.~Han, Z.~Zhang, and M.~Z. Shou.
+\newblock Hallucination of multimodal large language models: A survey.
+\newblock \emph{arXiv preprint arXiv:2404.18930}, 2024.
+
+\bibitem[Beschi et~al.(2025)Beschi, Falessi, Golia, and Locoro]{beschi2025characterizing}
+S.~Beschi, D.~Falessi, S.~Golia, and A.~Locoro.
+\newblock Characterizing data visualization literacy: a systematic literature review.
+\newblock \emph{arXiv preprint arXiv:2503.14468}, 2025.
+
+\bibitem[Cemri et~al.(2025)Cemri, Pan, Yang, Agrawal, Chopra, Tiwari, Keutzer, Parameswaran, Klein, Ramchandran, et~al.]{cemri2025multi}
+M.~Cemri, M.~Z. Pan, S.~Yang, L.~A. Agrawal, B.~Chopra, R.~Tiwari, K.~Keutzer, A.~Parameswaran, D.~Klein, K.~Ramchandran, et~al.
+\newblock Why do multi-agent llm systems fail?
+\newblock \emph{arXiv preprint arXiv:2503.13657}, 2025.
+
+\bibitem[Chen et~al.(2024)Chen, Zhang, Xu, Ren, and Yang]{chen2024viseval}
+N.~Chen, Y.~Zhang, J.~Xu, K.~Ren, and Y.~Yang.
+\newblock Viseval: A benchmark for data visualization in the era of large language models.
+\newblock \emph{IEEE Transactions on Visualization and Computer Graphics}, 2024.
+
+\bibitem[Chen et~al.(2025)Chen, Yang, Qin, Liu, Yan, Guan, Peng, Ji, Li, Hu, et~al.]{chen2025ai4research}
+Q.~Chen, M.~Yang, L.~Qin, J.~Liu, Z.~Yan, J.~Guan, D.~Peng, Y.~Ji, H.~Li, M.~Hu, et~al.
+\newblock Ai4research: A survey of artificial intelligence for scientific research.
+\newblock \emph{arXiv preprint arXiv:2507.01903}, 2025.
+
+\bibitem[Comanici et~al.(2025)Comanici, Bieber, Schaekermann, Pasupat, Sachdeva, Dhillon, Blistein, Ram, Zhang, Rosen, et~al.]{comanici2025gemini}
+G.~Comanici, E.~Bieber, M.~Schaekermann, I.~Pasupat, N.~Sachdeva, I.~Dhillon, M.~Blistein, O.~Ram, D.~Zhang, E.~Rosen, et~al.
+\newblock Gemini 2.5: Pushing the frontier with advanced reasoning, multimodality, long context, and next generation agentic capabilities.
+\newblock \emph{arXiv preprint arXiv:2507.06261}, 2025.
+
+\bibitem[Davila et~al.(2025)Davila, Colan, and Hasegawa]{davila2025beyond}
+A.~Davila, J.~Colan, and Y.~Hasegawa.
+\newblock Beyond single models: Enhancing llm detection of ambiguity in requests through debate.
+\newblock \emph{arXiv preprint arXiv:2507.12370}, 2025.
+
+\bibitem[Dhanoa et~al.(2025)Dhanoa, Wolter, Le{\'o}n, Schulz, and Elmqvist]{dhanoa2025agentic}
+V.~Dhanoa, A.~Wolter, G.~M. Le{\'o}n, H.-J. Schulz, and N.~Elmqvist.
+\newblock Agentic visualization: Extracting agent-based design patterns from visualization systems.
+\newblock \emph{arXiv preprint arXiv:2505.19101}, 2025.
+
+\bibitem[Gahar et~al.(2024)Gahar, Arfaoui, and Hidri]{gahar2024open}
+R.~M. Gahar, O.~Arfaoui, and M.~S. Hidri.
+\newblock Open research issues and tools for visualization and big data analytics.
+\newblock \emph{arXiv preprint arXiv:2404.12505}, 2024.
+
+\bibitem[Goswami et~al.(2025)Goswami, Mathur, Rossi, and Dernoncourt]{goswami2025plotgen}
+K.~Goswami, P.~Mathur, R.~Rossi, and F.~Dernoncourt.
+\newblock Plotgen: Multi-agent llm-based scientific data visualization via multimodal feedback.
+\newblock \emph{arXiv preprint arXiv:2502.00988}, 2025.
+
+\bibitem[Gridach et~al.(2025)Gridach, Nanavati, Abidine, Mendes, and Mack]{gridach2025agentic}
+M.~Gridach, J.~Nanavati, K.~Z.~E. Abidine, L.~Mendes, and C.~Mack.
+\newblock Agentic ai for scientific discovery: A survey of progress, challenges, and future directions.
+\newblock \emph{arXiv preprint arXiv:2503.08979}, 2025.
+
+\bibitem[Hoque and Islam(2025)]{hoque2025natural}
+E.~Hoque and M.~S. Islam.
+\newblock Natural language generation for visualizations: State of the art, challenges and future directions.
+\newblock In \emph{Computer Graphics Forum}, volume~44, page e15266. Wiley Online Library, 2025.
+
+\bibitem[Huang et~al.(2024)Huang, Luo, Yu, Zhang, Lei, Wei, He, Huang, Liu, Zhao, and Liu]{Huang2024DACodeAD}
+Y.~Huang, J.~Luo, Y.~Yu, Y.~Zhang, F.~Lei, Y.~Wei, S.~He, L.~Huang, X.~Liu, J.~Zhao, and K.~Liu.
+\newblock Da-code: Agent data science code generation benchmark for large language models.
+\newblock In \emph{Conference on Empirical Methods in Natural Language Processing}, 2024.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:273234039}.
+
+\bibitem[Hutchinson et~al.(2024)Hutchinson, Jianu, Slingsby, and Madhyastha]{Hutchinson2024LLMAssistedVA}
+M.~Hutchinson, R.~Jianu, A.~Slingsby, and P.~S. Madhyastha.
+\newblock Llm-assisted visual analytics: Opportunities and challenges.
+\newblock \emph{Comput. Graph.}, 130:\penalty0 104246, 2024.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:272397798}.
+
+\bibitem[Jambor(2024)]{jambor2024zero}
+H.~K. Jambor.
+\newblock From zero to figure hero. a checklist for designing scientific data visualizations.
+\newblock \emph{arXiv preprint arXiv:2408.16007}, 2024.
+
+\bibitem[Khan et~al.(2025)Khan, Chandak, and Mukherjea]{khan2025evaluating}
+S.~R. Khan, V.~Chandak, and S.~Mukherjea.
+\newblock Evaluating llms for visualization generation and understanding.
+\newblock \emph{Discover Data}, 3\penalty0 (1):\penalty0 15, 2025.
+
+\bibitem[Lai et~al.(2025)Lai, Lou, Youngmann, and Cafarella]{LaiLYC25}
+E.~Y. Lai, Y.~Lou, B.~Youngmann, and M.~J. Cafarella.
+\newblock Toward standardized data preparation: A bottom-up approach.
+\newblock In \emph{EDBT}, pages 609--622, 2025.
+\newblock URL \url{https://doi.org/10.48786/edbt.2025.49}.
+
+\bibitem[Lee et~al.(2021)Lee, Alzamil, Doskenov, and Termehchy]{lee2021survey}
+G.~Y. Lee, L.~Alzamil, B.~Doskenov, and A.~Termehchy.
+\newblock A survey on data cleaning methods for improved machine learning model performance.
+\newblock \emph{arXiv preprint arXiv:2109.07127}, 2021.
+
+\bibitem[Liu et~al.(2025)Liu, Zhou, and Ye]{liu2025make}
+S.-Y. Liu, Q.~Zhou, and H.-J. Ye.
+\newblock Make still further progress: Chain of thoughts for tabular data leaderboard.
+\newblock \emph{arXiv preprint arXiv:2505.13421}, 2025.
+
+\bibitem[Moss(2025)]{moss2025ai}
+A.~Moss.
+\newblock The ai cosmologist i: An agentic system for automated data analysis.
+\newblock \emph{arXiv preprint arXiv:2504.03424}, 2025.
+
+\bibitem[Naveed et~al.(2025)Naveed, Khan, Qiu, Saqib, Anwar, Usman, Akhtar, Barnes, and Mian]{naveed2025comprehensive}
+H.~Naveed, A.~U. Khan, S.~Qiu, M.~Saqib, S.~Anwar, M.~Usman, N.~Akhtar, N.~Barnes, and A.~Mian.
+\newblock A comprehensive overview of large language models.
+\newblock \emph{ACM Transactions on Intelligent Systems and Technology}, 16\penalty0 (5):\penalty0 1--72, 2025.
+
+\bibitem[Ouyang et~al.(2025)Ouyang, Chen, Nie, Gui, Wan, Zhang, and Chen]{ouyang2025nvagent}
+G.~Ouyang, J.~Chen, Z.~Nie, Y.~Gui, Y.~Wan, H.~Zhang, and D.~Chen.
+\newblock nvagent: Automated data visualization from natural language via collaborative agent workflow.
+\newblock \emph{arXiv preprint arXiv:2502.05036}, 2025.
+
+\bibitem[Ramesh and Rajabiyazdi(2024)]{ramesh2024challenges}
+S.~H. Ramesh and F.~Rajabiyazdi.
+\newblock Challenges and opportunities of teaching data visualization together with data science.
+\newblock In \emph{2024 IEEE VIS Workshop on Visualization Education, Literacy, and Activities (EduVIS)}, pages 7--13. IEEE, 2024.
+
+\bibitem[Rezig et~al.(2021)Rezig, Cafarella, and Gadepally]{rezig2021technical}
+E.~K. Rezig, M.~Cafarella, and V.~Gadepally.
+\newblock Technical report on data integration and preparation.
+\newblock \emph{arXiv preprint arXiv:2103.01986}, 2021.
+
+\bibitem[Rogers et~al.(2024)Rogers, Anastacio, Bernard, Chakhchoukh, Faust, Kerren, Koch, Kotthoff, Turkay, and Wall]{10747692}
+J.~Rogers, M.~Anastacio, J.~Bernard, M.~Chakhchoukh, R.~Faust, A.~Kerren, S.~Koch, L.~Kotthoff, C.~Turkay, and E.~Wall.
+\newblock Visualization and automation in data science: Exploring the paradox of humans-in-the-loop.
+\newblock In \emph{2024 IEEE Visualization in Data Science (VDS)}, pages 1--5, 2024.
+\newblock \doi{10.1109/VDS63897.2024.00005}.
+
+\bibitem[Sapkota et~al.(2025)Sapkota, Roumeliotis, and Karkee]{sapkota2025ai}
+R.~Sapkota, K.~I. Roumeliotis, and M.~Karkee.
+\newblock Ai agents vs. agentic ai: A conceptual taxonomy, applications and challenges.
+\newblock \emph{arXiv preprint arXiv:2505.10468}, 2025.
+
+\bibitem[Seo et~al.(2025)Seo, Lee, Kang, An, Yuan, and Lee]{seo2025automated}
+W.~Seo, S.~Lee, D.~Kang, H.~An, Z.~Yuan, and S.~Lee.
+\newblock Automated visualization code synthesis via multi-path reasoning and feedback-driven optimization.
+\newblock \emph{arXiv preprint arXiv:2502.11140}, 2025.
+
+\bibitem[Shen et~al.(2022)Shen, Shen, Luo, Yang, Hu, Zhang, Tai, and Wang]{shen2022towards}
+L.~Shen, E.~Shen, Y.~Luo, X.~Yang, X.~Hu, X.~Zhang, Z.~Tai, and J.~Wang.
+\newblock Towards natural language interfaces for data visualization: A survey.
+\newblock \emph{IEEE transactions on visualization and computer graphics}, 29\penalty0 (6):\penalty0 3121--3144, 2022.
+
+\bibitem[Shin et~al.(2025)Shin, Hong, and Elmqvist]{shin2025visualizationary}
+S.~Shin, S.~Hong, and N.~Elmqvist.
+\newblock Visualizationary: Automating design feedback for visualization designers using llms.
+\newblock \emph{IEEE Transactions on Visualization and Computer Graphics}, 2025.
+
+\bibitem[Team et~al.(2024)Team, Mesnard, Hardin, Dadashi, Bhupatiraju, Pathak, Sifre, Rivi{\`e}re, Kale, Love, et~al.]{team2024gemma}
+G.~Team, T.~Mesnard, C.~Hardin, R.~Dadashi, S.~Bhupatiraju, S.~Pathak, L.~Sifre, M.~Rivi{\`e}re, M.~S. Kale, J.~Love, et~al.
+\newblock Gemma: Open models based on gemini research and technology.
+\newblock \emph{arXiv preprint arXiv:2403.08295}, 2024.
+
+\bibitem[Tian et~al.(2025)Tian, Luo, Du, Xian, Specht, Wang, Bi, Zhou, Kundu, Srinivasa, et~al.]{tian2025outlook}
+F.~Tian, A.~Luo, J.~Du, X.~Xian, R.~Specht, G.~Wang, X.~Bi, J.~Zhou, A.~Kundu, J.~Srinivasa, et~al.
+\newblock An outlook on the opportunities and challenges of multi-agent ai systems.
+\newblock \emph{arXiv preprint arXiv:2505.18397}, 2025.
+
+\bibitem[Tran et~al.(2025)Tran, Dao, Nguyen, Pham, O'Sullivan, and Nguyen]{tran2025multi}
+K.-T. Tran, D.~Dao, M.-D. Nguyen, Q.-V. Pham, B.~O'Sullivan, and H.~D. Nguyen.
+\newblock Multi-agent collaboration mechanisms: A survey of llms.
+\newblock \emph{arXiv preprint arXiv:2501.06322}, 2025.
+
+\bibitem[Voigt et~al.(2022)Voigt, Alacam, Meuschke, Lawonn, and Zarrie{\ss}]{voigt-etal-2022-survey}
+H.~Voigt, O.~Alacam, M.~Meuschke, K.~Lawonn, and S.~Zarrie{\ss}.
+\newblock The why and the how: A survey on natural language interaction in visualization.
+\newblock In M.~Carpuat, M.-C. de~Marneffe, and I.~V. Meza~Ruiz, editors, \emph{Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies}, pages 348--374, Seattle, United States, July 2022. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2022.naacl-main.27}.
+\newblock URL \url{https://aclanthology.org/2022.naacl-main.27/}.
+
+\bibitem[Wang et~al.(2025)Wang, Gong, Zhang, and Wang]{wang2025ai}
+H.~Wang, J.~Gong, H.~Zhang, and Z.~Wang.
+\newblock Ai agentic programming: A survey of techniques, challenges, and opportunities.
+\newblock \emph{arXiv preprint arXiv:2508.11126}, 2025.
+
+\bibitem[Wang and Crespo-Quinones(2023)]{wang2023natural}
+S.~Wang and C.~Crespo-Quinones.
+\newblock Natural language models for data visualization utilizing nvbench dataset.
+\newblock \emph{arXiv preprint arXiv:2310.00832}, 2023.
+
+\bibitem[Wolter et~al.(2025)Wolter, Vidalakis, Yu, Grover, and Dhanoa]{wolter2025multi}
+A.~Wolter, G.~Vidalakis, M.~Yu, A.~Grover, and V.~Dhanoa.
+\newblock Multi-agent data visualization and narrative generation.
+\newblock \emph{arXiv preprint arXiv:2509.00481}, 2025.
+
+\bibitem[Wongsuphasawat et~al.(2016)Wongsuphasawat, Moritz, Anand, Mackinlay, Howe, and Heer]{7192728}
+K.~Wongsuphasawat, D.~Moritz, A.~Anand, J.~Mackinlay, B.~Howe, and J.~Heer.
+\newblock Voyager: Exploratory analysis via faceted browsing of visualization recommendations.
+\newblock \emph{IEEE Transactions on Visualization and Computer Graphics}, 22\penalty0 (1):\penalty0 649--658, 2016.
+\newblock \doi{10.1109/TVCG.2015.2467191}.
+
+\bibitem[Wongsuphasawat et~al.(2017)Wongsuphasawat, Qu, Moritz, Chang, Ouk, Anand, Mackinlay, Howe, and Heer]{10.1145/3025453.3025768}
+K.~Wongsuphasawat, Z.~Qu, D.~Moritz, R.~Chang, F.~Ouk, A.~Anand, J.~Mackinlay, B.~Howe, and J.~Heer.
+\newblock Voyager 2: Augmenting visual analysis with partial view specifications.
+\newblock In \emph{Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems}, CHI '17, page 2648–2659, New York, NY, USA, 2017. Association for Computing Machinery.
+\newblock ISBN 9781450346559.
+\newblock \doi{10.1145/3025453.3025768}.
+\newblock URL \url{https://doi.org/10.1145/3025453.3025768}.
+
+\bibitem[Wu et~al.(2024)Wu, Wan, Zhang, Sui, Wei, Zhao, Xu, and Jin]{wu2024automated}
+Y.~Wu, Y.~Wan, H.~Zhang, Y.~Sui, W.~Wei, W.~Zhao, G.~Xu, and H.~Jin.
+\newblock Automated data visualization from natural language via large language models: An exploratory study.
+\newblock \emph{Proceedings of the ACM on Management of Data}, 2\penalty0 (3):\penalty0 1--28, 2024.
+
+\bibitem[Xu et~al.(2025)Xu, Zhang, Li, Wang, and Bao]{10.1145/3712335.3712410}
+C.~Xu, Q.~Zhang, B.~Li, A.~Wang, and J.~Bao.
+\newblock Visual analysis of time series data for multi-agent systems driven by large language models.
+\newblock In \emph{Proceedings of the 3rd International Conference on Signal Processing, Computer Networks and Communications}, SPCNC '24, page 427–431, New York, NY, USA, 2025. Association for Computing Machinery.
+\newblock ISBN 9798400710834.
+\newblock \doi{10.1145/3712335.3712410}.
+\newblock URL \url{https://doi.org/10.1145/3712335.3712410}.
+
+\bibitem[Yang et~al.(2025)Yang, Li, Yang, Zhang, Hui, Zheng, Yu, Gao, Huang, Lv, Zheng, Liu, Zhou, Huang, Hu, Ge, Wei, Lin, Tang, Yang, Tu, Zhang, Yang, Yang, Zhou, Zhou, Lin, Dang, Bao, Yang, Yu, Deng, Li, Xue, Li, Zhang, Wang, Zhu, Men, Gao, Liu, Luo, Li, Tang, Yin, Ren, Wang, Zhang, Ren, Fan, Su, Zhang, Zhang, Wan, Liu, Wang, Cui, Zhang, Zhou, and Qiu]{Yang2025Qwen3TR}
+A.~Yang, A.~Li, B.~Yang, B.~Zhang, B.~Hui, B.~Zheng, B.~Yu, C.~Gao, C.~Huang, C.~Lv, C.~Zheng, D.~Liu, F.~Zhou, F.~Huang, F.~Hu, H.~Ge, H.~Wei, H.~Lin, J.~Tang, J.~Yang, J.~Tu, J.~Zhang, J.~Yang, J.~Yang, J.~Zhou, J.~Zhou, J.~Lin, K.~Dang, K.~Bao, K.~Yang, L.~Yu, L.-C. Deng, M.~Li, M.~Xue, M.~Li, P.~Zhang, P.~Wang, Q.~Zhu, R.~Men, R.~Gao, S.-Q. Liu, S.~Luo, T.~Li, T.~Tang, W.~Yin, X.~Ren, X.~Wang, X.~Zhang, X.~Ren, Y.~Fan, Y.~Su, Y.-C. Zhang, Y.~Zhang, Y.~Wan, Y.~Liu, Z.~Wang, Z.~Cui, Z.~Zhang, Z.~Zhou, and Z.~Qiu.
+\newblock Qwen3 technical report.
+\newblock \emph{ArXiv}, abs/2505.09388, 2025.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:278602855}.
+
+\bibitem[Yang et~al.(2023)Yang, Gyarmati, Zeng, and Moritz]{yang2023draco}
+J.~Yang, P.~F. Gyarmati, Z.~Zeng, and D.~Moritz.
+\newblock Draco 2: An extensible platform to model visualization design.
+\newblock In \emph{2023 IEEE Visualization and Visual Analytics (VIS)}, pages 166--170. IEEE, 2023.
+
+\bibitem[Yang et~al.(2024{\natexlab{a}})Yang, Jimenez, Wettig, Lieret, Yao, Narasimhan, and Press]{Yang2024SWEagentAI}
+J.~Yang, C.~E. Jimenez, A.~Wettig, K.~A. Lieret, S.~Yao, K.~Narasimhan, and O.~Press.
+\newblock Swe-agent: Agent-computer interfaces enable automated software engineering.
+\newblock \emph{ArXiv}, abs/2405.15793, 2024{\natexlab{a}}.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:270063685}.
+
+\bibitem[Yang et~al.(2024{\natexlab{b}})Yang, Zhou, Wang, Cong, Han, Yan, Liu, Tan, Liu, Yu, et~al.]{yang2024matplotagent}
+Z.~Yang, Z.~Zhou, S.~Wang, X.~Cong, X.~Han, Y.~Yan, Z.~Liu, Z.~Tan, P.~Liu, D.~Yu, et~al.
+\newblock Matplotagent: Method and evaluation for llm-based agentic scientific data visualization.
+\newblock In \emph{Findings of the Association for Computational Linguistics ACL 2024}, pages 11789--11804, 2024{\natexlab{b}}.
+
+\bibitem[Yao et~al.(2022)Yao, Zhao, Yu, Du, Shafran, Narasimhan, and Cao]{Yao2022ReActSR}
+S.~Yao, J.~Zhao, D.~Yu, N.~Du, I.~Shafran, K.~Narasimhan, and Y.~Cao.
+\newblock React: Synergizing reasoning and acting in language models.
+\newblock \emph{ArXiv}, abs/2210.03629, 2022.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:252762395}.
+
+\bibitem[Zhang and Elhamod(2025)]{zhang2025data}
+R.~Zhang and M.~Elhamod.
+\newblock Data-to-dashboard: Multi-agent llm framework for insightful visualization in enterprise analytics.
+\newblock \emph{arXiv preprint arXiv:2505.23695}, 2025.
+
+\bibitem[Zhang et~al.(2025)Zhang, Khan, Mahmud, Yang, Lavin, Levin, Frey, Dunnmon, Evans, Bundy, et~al.]{zhang2025exploring}
+Y.~Zhang, S.~A. Khan, A.~Mahmud, H.~Yang, A.~Lavin, M.~Levin, J.~Frey, J.~Dunnmon, J.~Evans, A.~Bundy, et~al.
+\newblock Exploring the role of large language models in the scientific method: from hypothesis to discovery.
+\newblock \emph{npj Artificial Intelligence}, 1\penalty0 (1):\penalty0 14, 2025.
+
+\bibitem[Zhu et~al.(2025)Zhu, Zhong, Zhang, Zhang, Qiao, Luo, Du, Zheng, Zhang, and Chen]{zhu2025open}
+Y.~Zhu, Y.~Zhong, J.~Zhang, Z.~Zhang, S.~Qiao, Y.~Luo, L.~Du, D.~Zheng, N.~Zhang, and H.~Chen.
+\newblock Why do open-source llms struggle with data analysis? a systematic empirical study.
+\newblock \emph{arXiv preprint arXiv:2506.19794}, 2025.
+
+\end{thebibliography}

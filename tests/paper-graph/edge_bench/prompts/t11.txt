@@ -1,0 +1,42 @@
+You are auditing a single claimed evolution edge in a research-lineage
+graph. The edge says: source paper (M) had a specific limitation that
+target paper (N) addressed. Your job is to label the strength of textual
+evidence for this edge.
+
+--- Source paper (M) ---
+(1) Chain of Thought Prompting Elicits Reasoning in Large Language Models
+Abstract: We explore how generating a chain of thought -- a series of intermediate reasoning steps -- significantly improves the ability of large language models to perform complex reasoning. In particular, we show how such reasoning abilities emerge naturally in sufficiently large language models via a simple method called chain of thought prompting, where a few chain of thought demonstrations are provided as exemplars in prompting. Experiments on three large language models show that chain of thought prompting improves performance on a range of arithmetic, commonsense, and symbolic reasoning tasks. The empirical gains can be striking. For instance, prompting a 540B-parameter language model with just eight chain of thought exemplars achieves state of the art accuracy on the GSM8K benchmark of math word problems, surpassing even finetuned GPT-3 with a verifier.
+Discussion/Conclusion excerpt: (no excerpt)
+
+--- Target paper (N) ---
+(2) Self-Consistency Improves Chain of Thought Reasoning in Language Models
+Abstract: Chain-of-thought prompting combined with pre-trained large language models has achieved encouraging results on complex reasoning tasks. In this paper, we propose a new decoding strategy, self-consistency, to replace the naive greedy decoding used in chain-of-thought prompting. It first samples a diverse set of reasoning paths instead of only taking the greedy one, and then selects the most consistent answer by marginalizing out the sampled reasoning paths. Self-consistency leverages the intuition that a complex reasoning problem typically admits multiple different ways of thinking leading to its unique correct answer. Our extensive empirical evaluation shows that self-consistency boosts the performance of chain-of-thought prompting with a striking margin on a range of popular arithmetic and commonsense reasoning benchmarks, including GSM8K (+17.9%), SVAMP (+11.0%), AQuA (+12.2%), StrategyQA (+6.4%) and ARC-challenge (+3.9%).
+Discussion/Conclusion excerpt: (no excerpt)
+
+--- Claimed gap ---
+Greedy chain-of-thought decoding commits to a single reasoning path; sampling diverse paths and majority-voting over final answers improves accuracy.
+
+--- Labels ---
+Choose exactly one:
+
+- SUPPORTED_BY_ABSTRACT — The source abstract explicitly states or
+  clearly implies the limitation, AND the target abstract explicitly
+  states or clearly implies the mechanism that addresses it.
+- SUPPORTED_BY_SECTION  — The supporting evidence for either side
+  (lack on M, or fix on N) is in the Discussion/Conclusion excerpt
+  rather than the abstract, but the textual evidence is still concrete.
+- INFERRED              — The claim is plausible but neither the abstract
+  nor the excerpt explicitly attests to one or both halves of the
+  source-lack/target-fix pair. Reasonable to leave on the graph as a
+  weakly-supported edge, not as an authoritative claim.
+- REJECT                — The abstracts or excerpts contradict the
+  claimed gap (e.g., the source paper already does X, or the target
+  paper does not actually address X). The edge should not be rendered.
+
+--- Output ---
+Output ONLY a JSON object with this exact shape (no code fences, no
+prose before or after):
+
+{"verdict": "<one of the four labels>", "reason": "<one sentence
+naming the concrete textual evidence on each side, or naming what
+is missing>"}

@@ -1,0 +1,61 @@
+{
+ "paper_id": "2510.13786v1",
+ "variant": "V2",
+ "defects": [
+  {
+   "uid": "V2-1",
+   "type": "D14",
+   "aspect": "method design (A5)",
+   "severity": "major",
+   "location_anchor": "Section 2 Preliminaries & Setup (sec:methodology), paragraph \"Training Regimen\", near \"we use the Polaris-53K dataset~\\citep{polaris2025} with a batch size of 768\"",
+   "detection_criteria": "Count as caught iff a review finding targets the Training Regimen statement that the sequence-length split and batch size were tuned on AIME-24 and identifies it as evaluation-protocol contamination -- i.e., tuning hyperparameters/configuration on a benchmark that is also reported as a downstream evaluation (AIME-24, Fig. 1b and later figures), biasing or invalidating the downstream results. Mentions of AIME-24 as an evaluation set without the contamination/unfairness point do not count.",
+   "rationale": "Mirrors the taxonomy example \"hyperparameters tuned on the test split\": AIME-24 is the paper's headline downstream benchmark, so one buried sentence stating the training configuration was tuned on it contaminates every downstream claim. Never mentioned again anywhere (no discussion of its impact), and it does not clash with the SFT decontamination statement, which concerns training-data overlap, not tuning.",
+   "old_string": "For math RL experiments, we use the Polaris-53K dataset~\\citep{polaris2025} with a batch size of 768 (48 prompts with 16 generations each).",
+   "new_string": "For math RL experiments, we use the Polaris-53K dataset~\\citep{polaris2025} with a batch size of 768 (48 prompts with 16 generations each). The sequence-length split and batch size were tuned based on AIME-24 accuracy in preliminary runs."
+  },
+  {
+   "uid": "V2-2",
+   "type": "D2",
+   "aspect": "writing (A2)",
+   "severity": "minor",
+   "location_anchor": "Section 3 \"Algorithmic Choices\" (sec:fwd_ablations), paragraph \"Adaptive Prompt Filtering\", near \"introduced by \\citet{polaris2025}\"",
+   "detection_criteria": "Count as caught iff a review finding points at the Adaptive Prompt Filtering / No-Positive-Resampling paragraph in Section 3 and criticizes that the module lacks motivation, rationale, or justification (why easy / high-pass-rate prompts should be removed from training). A complaint solely about the 0.9 threshold value being untuned or arbitrary, without noting the missing rationale for the filtering design itself, does not count.",
+   "rationale": "Deletes the only \"why\" for No-Positive-Resampling (easy prompts stay easy; they consume compute but give zero gradient signal), leaving a pure \"what\" description. Verified the rationale appears nowhere else: the fig:nopos_main caption states only the result (higher asymptote), not the motivation. The post-edit sentence \"Here we evaluate a simple variant, introduced by \\citet{polaris2025}. We implement this by...\" reads like a normal author oversight.",
+   "old_string": ", with the key observation that once a prompt becomes too easy for a policy, it typically remains easy.\nSince such prompts consume some compute but no longer contribute useful gradient signal (\\Cref{sec:batch_definition}), it is better to exclude them from future training. \nWe implement this by",
+   "new_string": ". We implement this by"
+  },
+  {
+   "uid": "V2-3",
+   "type": "D3",
+   "aspect": "writing (A2)",
+   "severity": "minor",
+   "location_anchor": "Section 4 \"ScaleRL: Scaling RL Compute Effectively & Predictably\" (sec:loo), recipe sentence \"\\scalerl\\ is an asynchronous RL recipe that uses\"",
+   "detection_criteria": "Count as caught iff a review finding flags inconsistent or undefined terminology for the length-control mechanism: it must mention \"early-termination-based length control\" (e.g., noting the ScaleRL recipe lists a component under a name never defined) and/or the mismatch with \"interruptions\", the name used for the same mechanism everywhere else (Section 2 definition, \"For forced interruptions\" later in the same section, and the appendix). At least one of the two names must appear in the finding.",
+   "rationale": "The recipe's official bolded component list now uses a synonym (\"early-termination-based\") that appears nowhere else, while the mechanism is consistently called \"interruptions\" in the intro, its Section 2 definition, the tail of the same recipe paragraph, and the appendix comparison -- verified the original uses only the \"interruption\" family and that \"early termination\" does not pre-exist. Looks like a mid-revision rename that missed every other occurrence.",
+   "old_string": ", \\textbf{interruption-based length control} for truncation, \\textbf{FP32 computation for logits},",
+   "new_string": ", \\textbf{early-termination-based length control} for truncation, \\textbf{FP32 computation for logits},"
+  },
+  {
+   "uid": "V2-4",
+   "type": "D4",
+   "aspect": "writing (A2) / reproducibility",
+   "severity": "major",
+   "location_anchor": "Appendix \"Training Setup\" (appendix:setup), paragraph \"Reinforcement Learning\", near \"The rewards are given as $\\pm 1$ to correct and incorrect traces respectively.\"",
+   "detection_criteria": "Count as caught iff a review finding states that the RL optimization hyperparameters are missing -- learning rate, optimizer (AdamW) settings, weight decay, or warmup for the RL stage -- or that the RL runs cannot be reproduced for lack of training hyperparameters, pointing at the RL training setup (appendix:setup) or at the main text's promise that hyper-parameters are given in the appendix. Complaints solely about missing SFT details or missing compute details do not count.",
+   "rationale": "Deletes the only statement of the RL learning rate, AdamW epsilon, weight decay, and warmup (verified these values appear nowhere else), exactly the taxonomy's \"delete key hyperparameter sentence\" recipe. Section 2 still promises \"More details about training, including SFT and hyper-parameters, are in Appendix\", making the hole checkable. The paragraph still flows naturally from the rewards sentence to the verifier paragraph, and the now-uncited wortsman2023stable entry causes no compile issue.",
+   "old_string": " We use a constant learning rate of $5 \\times 10^{-7}$, AdamW optimizer \\citep{adamw} with $\\epsilon = 10^{-15}$, weight decay of 0.01 (default in AdamW), and a linear warmup of 100 steps. The lower $\\epsilon$ is to avoid gradient clipping (epsilon underflow)~\\citep{wortsman2023stable}.",
+   "new_string": ""
+  },
+  {
+   "uid": "V2-5",
+   "type": "D12",
+   "aspect": "figure/table conventions",
+   "severity": "minor",
+   "location_anchor": "Appendix \"Scaling on multiple axes\" (appendix:large_scale), Table tab:diff_axes, header row \"Experiment & $C_{mid}$ & $B$ & $A$\"",
+   "detection_criteria": "Count as caught iff a review finding criticizes the formatting of the C_mid/B/A results table (tab:diff_axes, the paper's only LaTeX table): use of vertical rules, \\hline-style rules, or inconsistent mixing of booktabs and hline styling. Findings that only complain about caption position or missing up/down-arrow (higher-is-better) indicators for this table do NOT count, because those issues pre-exist in the original paper.",
+   "rationale": "Converts the header to a vertical-bar column spec with \\hline rules while the \\bottomrule remains, producing the half-migrated, non-booktabs look of a genuine author oversight; every data cell is byte-identical. Detection criteria are scoped to the injected delta only, since the original already places the caption below the table and omits direction indicators -- flagging those would also fire on the clean control.",
+   "old_string": "\\begin{tabular}{cccc}\n\\toprule\nExperiment & $C_{mid}$ & $B$ & $A$ \\\\ \\midrule",
+   "new_string": "\\begin{tabular}{|c|c|c|c|}\n\\hline\nExperiment & $C_{mid}$ & $B$ & $A$ \\\\ \\hline"
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+\newcommand{\symbolimg}[2][0.3cm]{%
+  \ensuremath{\vcenter{\hbox{\includegraphics[height=#1]{#2}}}}%
+}
+
+\newcolumntype{/}{!{\color{white}\vline width 7pt}}
+
+% Conversation Types Icons
+\newcommand{\full}{\symbolimg[0.35cm]{icons/full.png}}
+\newcommand{\concat}{\symbolimg[0.35cm]{icons/concat.png}}
+\newcommand{\sharded}{\symbolimg[0.35cm]{icons/sharded.png}}
+\newcommand{\snowball}{\symbolimg[0.35cm]{icons/snowball.png}}
+\newcommand{\recap}{\symbolimg[0.35cm]{icons/recap.png}}
+
+% Conversation types  {name}t
+\newcommand{\fullt}{\textsc{Full}\xspace}
+\newcommand{\concatt}{\textsc{Concat}\xspace}
+\newcommand{\shardedt}{\textsc{Sharded}\xspace}
+\newcommand{\snowballt}{\textsc{Snowball}\xspace}
+\newcommand{\recapt}{\textsc{Recap}\xspace}
+
+% LLM Organizations
+\newcommand{\llama}{\symbolimg[0.35cm]{icons/llama.png}}
+\newcommand{\gemini}{\symbolimg[0.35cm]{icons/gemini.png}}
+\newcommand{\claude}{\symbolimg[0.35cm]{icons/claude.png}}
+\newcommand{\openai}{\symbolimg[0.35cm]{icons/openai.png}}
+\newcommand{\deepseek}{\symbolimg[0.35cm]{icons/deepseek.png}}
+\newcommand{\microsoft}{\symbolimg[0.3cm]{icons/microsoft.png}}
+\newcommand{\aitwo}{\symbolimg[0.3cm]{icons/ai2.png}}
+\newcommand{\cohere}{\symbolimg[0.3cm]{icons/cohere.png}}
+
+% Misc
+\newcommand{\huggingface}{\symbolimg[0.3cm]{icons/huggingface.png}}
+\newcommand{\github}{\symbolimg[0.3cm]{icons/github.png}}
+
+% Tasks
+\newcommand{\apis}{\symbolimg[0.35cm]{icons/apis.png}\hspace{0.2em}}
+\newcommand{\datattext}{\symbolimg[0.35cm]{icons/data2text.png}\hspace{0.2em}}
+\newcommand{\database}{\symbolimg[0.35cm]{icons/database.png}\hspace{0.2em}}
+\newcommand{\tmath}{\symbolimg[0.35cm]{icons/math.png}\hspace{0.2em}}
+\newcommand{\python}{\symbolimg[0.35cm]{icons/python.png}\hspace{0.2em}}
+\newcommand{\summary}{\symbolimg[0.35cm]{icons/summary.png}\hspace{0.2em}}
+\newcommand{\translation}{\symbolimg[0.35cm]{icons/translation.png}\hspace{0.2em}}
+
+% colors
+\newcommand{\ccol}[1]{\cellcolor[HTML]{#1}}
+\definecolor{coolblue}{HTML}{6D9EEB}
+\definecolor{warmgold}{HTML}{F1C232}
+
+\newcommand{\shortp}[1]{\vspace{-1em}\paragraph{#1}}
+
+\newcommand{\jn}[1]{}
+\renewcommand{\jn}[1]{{\color{red} JN: {#1}}}
+
+
+\newcommand{\hh}[1]{}
+\renewcommand{\hh}[1]{{\color{blue} HH: {#1}}}

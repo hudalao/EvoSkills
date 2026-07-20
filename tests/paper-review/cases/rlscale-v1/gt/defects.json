@@ -1,0 +1,50 @@
+{
+ "paper_id": "2510.13786v1",
+ "variant": "V1",
+ "defects": [
+  {
+   "uid": "V1-1",
+   "type": "D1",
+   "aspect": "claims (A1)",
+   "severity": "major",
+   "location_anchor": "Introduction (sec:intro), sentence listing ScaleRL components: \"zero-variance filtering, and No-Positive-Resampling -- with each component's contribution validated in a leave-one-out ablation\"",
+   "detection_criteria": "Count as caught iff a review finding targets the Introduction's ScaleRL component-list sentence and states that the claim that removing any single component substantially degrades asymptotic performance is unsupported, overstated, or contradicted by the paper's own leave-one-out results (e.g., cites Fig. LOO / the appendix LOO figure / the statement that all LOO variants reach similar asymptotic reward within the +-0.02 error margin), or explicitly asks to weaken this component-necessity claim. Generic \"the intro overstates contributions\" comments that do not point at the component-necessity claim do not count.",
+   "rationale": "Injects a strong necessity claim in the intro that is checkably contradicted by the paper's own reported LOO results: fig:LOO caption says \"Most LOO variants reach a similar asymptotic reward\", Sec. 4 says the components \"appear less critical individually\", and the appendix LOO caption says all methods have similar A within +-0.02. Natural author-hype phrasing; the original text carefully avoided this claim.",
+   "old_string": "-- with each component's contribution validated in a leave-one-out ablation, consuming 16,000 GPU-hours per run.",
+   "new_string": "-- with each component's contribution validated in a leave-one-out ablation, consuming 16,000 GPU-hours per run, where removing any single component substantially degrades the asymptotic performance."
+  },
+  {
+   "uid": "V1-2",
+   "type": "D5",
+   "aspect": "results interpretation (A3)",
+   "severity": "major",
+   "location_anchor": "Section 5 \"Predictable Scaling Returns Across RL Compute Axes\" (sec:diff_axes), paragraph \"Generations per prompt (fixed total batch)\", near \"Sweeping generations per prompt {8,16,24,32}\"",
+   "detection_criteria": "Count as caught iff a review finding targets the \"Generations per prompt\" paragraph in Section 5 and states that its claim (more generations per prompt consistently improves A and B / is a reliable improvement knob) is contradicted by or unsupported by the reported fitted values (Table tab:diff_axes / appendix:large_scale, where A is 0.585/0.610/0.590/0.595 and B is 2.44/1.92/2.22/2.07, i.e., non-monotonic and essentially unchanged). Findings about other scaling axes (batch size, generation length, model scale) do not count.",
+   "rationale": "Classic D5: the honest interpretation (\"essentially unchanged ... second-order choice\") is replaced by a fabricated monotone-improvement reading; the numbers in tab:diff_axes are untouched and directly contradict the new prose (A drops from 0.610 at 16 gens to 0.590/0.595 at 24/32 gens; B is non-monotonic). Prose-only change, table numbers never modified.",
+   "old_string": "Sweeping generations per prompt {8,16,24,32} and adjusting prompts to keep total batch fixed leaves fitted scaling curves essentially unchanged (Appendix~\\ref{appendix:large_scale}), suggesting that, at moderate batch, this allocation is a second-order choice for both A and B.",
+   "new_string": "Sweeping generations per prompt {8,16,24,32} and adjusting prompts to keep total batch fixed shows that allocating more generations per prompt consistently improves both A and B (Appendix~\\ref{appendix:large_scale}), making it a reliable knob for scaling RL compute."
+  },
+  {
+   "uid": "V1-3",
+   "type": "D10",
+   "aspect": "submission hygiene",
+   "severity": "minor",
+   "location_anchor": "Related Work (sec:related), sentence \"\\citet{tricks_traps} offer a complementary perspective and ablates various design choices\"",
+   "detection_criteria": "Count as caught iff a review finding reports broken/unresolved citations (undefined citation keys or \"[?]\" rendering) in the Related Work sentence about LitePPO/Qwen-3 -- i.e., it flags the keys qwen3report and/or shao2024deepseek as not existing in the bibliography, or flags unresolved references at that sentence. Citation-style complaints elsewhere in the paper do not count.",
+   "rationale": "Two \\citep keys in one contiguous span are typo'd (qwen3technicalreport->qwen3report, shao2024deepseekmath->shao2024deepseek); verified that both correct keys exist in arxiv.bbl and neither typo key exists, so both render as [?]. Looks like natural key-drift during editing; the correct entries remain in the bibliography because they are cited elsewhere.",
+   "old_string": "under consistent conditions on Qwen-3 4B/8B \\citep{qwen3technicalreport}, and presents a minimalist combination, LitePPO, that outperforms more complex methods like GRPO \\citep{shao2024deepseekmath}",
+   "new_string": "under consistent conditions on Qwen-3 4B/8B \\citep{qwen3report}, and presents a minimalist combination, LitePPO, that outperforms more complex methods like GRPO \\citep{shao2024deepseek}"
+  },
+  {
+   "uid": "V1-4",
+   "type": "D11",
+   "aspect": "submission hygiene",
+   "severity": "minor",
+   "location_anchor": "Appendix \"Truncations and training instabilities\" (appendix:truncations), near \"At batch size $2048$, truncations were slightly higher\"",
+   "detection_criteria": "Count as caught iff a review finding flags a leftover author note / TODO-style editorial comment in the truncations appendix -- specifically the \\devvrit{...} note about double-checking the bs2048 truncation numbers (rendered as red inline text \"Devvrit: ...\"), or generally reports residual author-comment macros left visible in the manuscript at that location.",
+   "rationale": "Uses the \\devvrit author-comment macro already defined in the preamble (line \\newcommand{\\devvrit}[1]{\\textcolor{red}{Devvrit: #1}}) but never invoked in the original body (verified by grep), so this is a fresh, visible red leftover note -- the classic pre-submission oversight. Compiles cleanly since the macro exists.",
+   "old_string": "At batch size $2048$, truncations were slightly higher, occasionally approaching $\\sim 7\\%$.",
+   "new_string": "At batch size $2048$, truncations were slightly higher, occasionally approaching $\\sim 7\\%$. \\devvrit{double-check the exact truncation numbers for the bs2048 run}"
+  }
+ ]
+}

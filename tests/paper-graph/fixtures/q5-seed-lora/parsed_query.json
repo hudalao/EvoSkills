@@ -1,0 +1,14 @@
+{
+ "goal": "Trace the lineage of LoRA (low-rank adaptation of large language models): the parameter-efficient fine-tuning ideas it built on and the significant follow-ups that improved it.",
+ "searches": [
+  "parameter-efficient fine-tuning language models",
+  "low-rank adaptation LLM",
+  "LoRA quantized adaptive variants",
+  "adapter prefix prompt tuning"
+ ],
+ "definitions": {
+  "LoRA": "Freezes pretrained weights and learns low-rank update matrices.",
+  "parameter-efficient fine-tuning": "Adapting a large model by training a small fraction of parameters.",
+  "rank": "Dimensionality of the learned update factorization."
+ }
+}

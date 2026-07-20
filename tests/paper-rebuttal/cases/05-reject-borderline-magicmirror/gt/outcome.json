@@ -1,0 +1,12 @@
+{
+ "status": "Reject",
+ "init_ratings": [
+  2,
+  4,
+  6,
+  6
+ ],
+ "arxiv": "2509.10260",
+ "bucket": "reject_borderline",
+ "forum": "AKzgsBCW6A"
+}

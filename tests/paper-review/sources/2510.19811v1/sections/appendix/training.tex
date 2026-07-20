@@ -1,0 +1,80 @@
+\newpage
+\section{Training}
+\label{app:training_details}
+
+\subsection{Model Architecture}
+
+The Hubble models are based on the Llama 3 architecture \citep{grattafiori2024llama3herdmodels}. The Llama 3 architecture is a dense, decoder-only transformer \citep{vaswani_transformers_2017}, using rotary positional embeddings \citep[RoPE][]{su_2024_roformer}, SwiGLU activations \citep{shazeer2020gluvariantsimprovetransformer}, pre-normalization with RMSNorm \citep{zhang_2019_layer}, and Grouped Query Attention \citep[GQA;][]{ainslie-etal-2023-gqa}. Specifically, the 1B parameter models are based on the Llama-3.2-1B architecture, and the 8B models are based on the Llama-3.1-8B. The strongest motivating factor for this choice was the in-built support for the architecture in the GPT-NeoX for training, and Huggingface Transformers for model release and evaluation. We list the model hyperparameters in Table \ref{tab:model_configs}.
+
+\begin{table}[h]
+    \centering
+    \caption{\textbf{Hubble model configuration.}}
+    \label{tab:model_configs}
+    \begin{tabular}{l cc}
+        \toprule
+        ~~ & Hubble 1B & Hubble 8B \\
+        \midrule
+        Dimension & 2048 & 4096 \\
+        Num Heads & \multicolumn{2}{c}{32} \\
+        Num Layers & 16 & 36 \\
+        MLP Dimension & 8192 & 14336 \\
+        Layer Norm & \multicolumn{2}{c}{RMSNorm} \\
+        Positional Embeddings & \multicolumn{2}{c}{RoPE} \\
+        Seq Length & \multicolumn{2}{c}{2048} \\
+        Attention Variant & \multicolumn{2}{c}{GQA} \\
+        Num KV Heads & \multicolumn{2}{c}{8} \\
+        Biases & \multicolumn{2}{c}{Only in MLP}\\
+        Block Type & \multicolumn{2}{c}{Sequential} \\
+        Activation & \multicolumn{2}{c}{SwiGLU} \\
+        Batch size (instances) & \multicolumn{2}{c}{1024} \\
+        Batch size (tokens) & \multicolumn{2}{c}{$\sim$2M} \\
+        Weight Tying & \multicolumn{2}{c}{No} \\
+        \midrule
+        Warmup Ratio & \multicolumn{2}{c}{5\% for 100B tokens, 1\% for 500B} \\
+        Peak LR & \multicolumn{2}{c}{$4.0E-04$} \\
+        Minimum LR & \multicolumn{2}{c}{$4.0E-05$} \\
+        Weight Decay & \multicolumn{2}{c}{$0.1$} \\
+        Beta1 & \multicolumn{2}{c}{$0.9$} \\
+        Beta2 & \multicolumn{2}{c}{$0.95$} \\
+        Epsilon & \multicolumn{2}{c}{$1.0E-08$} \\
+        LR Schedule & \multicolumn{2}{c}{cosine} \\
+        Gradient clipping & \multicolumn{2}{c}{$1.0$} \\
+        Gradient reduce dtype & \multicolumn{2}{c}{FP32} \\
+        Gradient accum dtype & FP32 & BF16 \\
+        Param precision & \multicolumn{2}{c}{BF16} \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Setup}
+
+\paragraph{Computing infrastructure.} Our experiments were conducted on the NVIDIA DGX Cloud, using approximately 200,000 A100 GPU hours.
+%provided through the NAIRR pilot program.
+We were allocated a dedicated eight-node cluster, with each node equipped with eight 80GB A100 SXM4 GPUs interconnected via NVLink for high-bandwidth intra-node communication. Each GPU was paired with its own NVIDIA ConnectX‑6 network interface card, enabling 200 Gb/s RDMA-capable internode communication per GPU. The cluster was backed by 80TB of shared Lustre storage. Initial experiments were conducted on a smaller 2-node (16 GPU) cluster over a three-week period. 
+
+
+
+\paragraph{Training setup.} Models are trained with GPT-NeoX \citep{gpt-neox-library}, a pre-training library based on Megatron-LM \citep{megatron-lm} augmented with DeepSpeed and other optimization techniques.
+% For a discussion of our reasoning behind this choice and the alternatives considered, refer to Appendix \ref{app:training-infrastructure-choices}.
+All models use a global batch size of 1024 with sequence length 2048. Training begins with a learning rate of 4e-4, decays to a minimum of 4e-5, and is annealed according to a cosine schedule with a warmup fraction of 0.01 for 500B-token runs and 0.05 for 100B-token runs. The Adam optimizer was set with $\beta$ values of 0.9 and 0.95 and with $\epsilon = 1\text{e-}10$. Gradient clipping is set to 1.0 and weight decay to 0.1. Stage 1 ZeRO optimization \citep{rajbhandari2020zeromemoryoptimizationstraining} is enabled during training. Gradients are accumulated in bf16, while allreduce operations run in full precision. Further details are listed in the config file in Table~\ref{tab:model_configs}. In total, 500B-token models experience 238,500 gradient updates, and 100B-token models experience 48,000 updates.
+
+% \subsection{Training Framework} \label{app:training-infrastructure-choices}
+
+% We experimented with several pretraining libraries and ultimately selected GPT-NeoX for the following reasons:
+% \begin{itemize}
+%     \item \textbf{Prior experience and support.} Our team already had experience with NeoX, and its active community (via the EleutherAI Discord) provided reliable support.
+%     \item \textbf{Hardware compatibility.} Since our runs were conducted on A100 GPUs, the lack of FlashAttention-3 support in NeoX was not a limitation at the time of selection.
+%     \item \textbf{Stability considerations.} TorchTitan was still in its early stages, and we decided against the risk of adopting a nascent framework.
+%     \item \textbf{Memory Issues with LitGPT.} We implemented the OLMo architecture in LitGPT and resolved a few data-loading issues in the library.\footnote{\url{https://github.com/Lightning-AI/litgpt/pull/1827}}\footnote{\url{https://github.com/Lightning-AI/litgpt/pull/1838}}\footnote{\url{https://github.com/Lightning-AI/litgpt/pull/1840}}
+%  However, we consistently encountered out-of-memory errors even with small batch sizes. While we did not pursue a full investigation, we document the problems faced as a Github issue.\footnote{\url{https://github.com/Lightning-AI/litgpt/issues/1837}}
+%     \item \textbf{Tight coupling of OLMo with AI2 Infrastructure.} The OLMo codebase was too tightly coupled with AI2 infrastructure, and at that time OLMo-Core lacked sufficient documentation
+%     \item \textbf{Issues and Misleading Metrics in NVIDIA NeMo.} We initially observed promising results with NeMo, but ultimately faced numerous issues. The decisive factor against adoption was that reported training throughput was inflated: on deeper debugging, we discovered that gradient accumulation steps were mishandled in the metric calculator, causing logged numbers to overestimate actual speed. Nonetheless, experimenting with NeMo proved valuable, as both NeoX and NeMo are built on top of Megatron, providing useful insights. Several of these issues are now fixed however they were still WIP when we started off our runs.
+%     \item \textbf{Speed issues with Hugging Face Ecosystem.} Hugging Face Transformers and Accelerate were not performant enough for large-scale pretraining.
+% \end{itemize}
+
+\subsection{GPU Hours}
+\label{app:gpu-hour-logging}
+
+With our final hardware and software setup, we train the 1B scale models on 100B tokens in \textbf{1.13k GPU-hours} (approx. 35.5 hrs in wall clock time using 32 GPUs). We train the 8B-scale models on 100B tokens in \textbf{7.62k GPU-hours} (approx. 119 hrs in wall clock time using 64 GPUs).
+
+% 

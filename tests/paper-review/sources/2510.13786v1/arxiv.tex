@@ -1,0 +1,93 @@
+
+\documentclass[]{fairmeta} % For LaTeX2e
+% Optional math commands from https://github.com/goodfeli/dlbook_notation.
+\input{math_commands.tex}
+
+\usepackage{hyperref}
+\usepackage[inline]{enumitem}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{subfig}
+\usepackage{nicefrac}
+\usepackage{cleveref}
+\usepackage[table]{xcolor} % for row colors
+\usepackage{array}         % for column formatting
+\usepackage{booktabs}      % for better rules
+% \makeatletter
+% \AddToHook{cmd/appendix/before}{\def\cref@section@alias{appendix}}
+% \makeatother
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\newcommand{\scalerl}{\texttt{\textbf{ScaleRL}}}
+
+\newcommand{\lovish}[1]{\textcolor{purple}{Lovish: #1}}
+\newcommand{\devvrit}[1]{\textcolor{red}{Devvrit: #1}}
+\newcommand{\david}[1]{\textcolor{blue}{David: #1}}
+
+\title{The Art of Scaling Reinforcement Learning Compute for LLMs}
+
+\author[2,*,\dagger]{Devvrit Khatri}
+\author[1,3,*]{Lovish Madaan}
+\author[4 \dagger]{\\Rishabh Tiwari}
+\author[5 \dagger]{Rachit Bansal}
+\author[2 \dagger]{Sai Surya Duvvuri}
+\author[1 \dagger]{Manzil Zaheer}
+\author[2]{\\Inderjit S. Dhillon}
+\author[1]{David Brandfonbrener}
+\author[6, \dagger]{Rishabh Agarwal}
+
+\affiliation[1]{Meta}
+\affiliation[2]{UT Austin}
+\affiliation[3]{UCL}
+\affiliation[4]{UC Berkeley}
+\affiliation[5]{Harvard University}
+\affiliation[6]{Periodic Labs}
+
+\contribution[*]{Equal contribution}
+\contribution[\dagger]{Work done at Meta}
+
+\abstract{
+    Reinforcement learning (RL) has become central to training large language models (LLMs), yet the field lacks predictive scaling methodologies comparable to those established for pre-training.
+    Despite rapidly rising compute budgets, there is no principled understanding of
+    how to evaluate algorithmic improvements for scaling RL compute.
+    We present the first large-scale systematic study, amounting to more than 400,000 GPU-hours, that defines a principled framework for analyzing and predicting RL scaling in LLMs.
+    We fit sigmoidal compute-performance curves for RL training and ablate a wide range of common design choices to analyze their effects on asymptotic performance and compute efficiency. We observe:
+    \begin{enumerate*}[label={(\arabic*)}]
+    \item Not all recipes yield similar asymptotic  performance,
+    \item Details such as loss aggregation, normalization, curriculum, and off-policy algorithm primarily modulate compute efficiency without materially shifting the asymptote, and
+    \item Stable, scalable recipes follow predictable scaling trajectories, enabling extrapolation from smaller-scale runs.
+    \end{enumerate*}
+    Combining these insights, we propose a \emph{best-practice} recipe, \scalerl, and demonstrate its effectiveness by successfully scaling and predicting validation performance on a single RL run scaled up to 100,000 GPU-hours.
+    Our work provides both a \emph{scientific framework} for analyzing scaling in RL and a practical recipe that brings RL training closer to the predictability long achieved in pre-training.
+}
+
+% \date{\today}
+\correspondence{\email{\{lovish,  brandfon\}@meta.com}, \email{\{devvrit.03, rishabhagarwal.467\}@gmail.com}}
+
+% You can add additional metadata fields as follows 
+% \metadata[Code]{\url{https://github.com/facebookresearch/repo}}
+% \metadata[Blogpost]{\url{https://ai.meta.com/blog/?page=1}}
+\begin{document}
+
+
+\maketitle
+
+
+
+\input{contents/introduction}
+\input{contents/methodology}
+\input{contents/experiments}
+\input{contents/related}
+\input{contents/conclusion}
+
+\section{Acknowledgments}
+The authors would like to thank Sneha Kudugunta and Niladri Chatterji for helpful discussions on pre-training and scaling laws. Additionally, the authors are grateful to Aviral Kumar, Prateek Jain, Lewis Turnstall, Nathan Lambert, Dzmitry Bahdanau, and John Quan for helpful feedback on earlier drafts. Finally, the authors would also like to thank Jenya Lee and Abhinav Jauhri for infrastructure and compute support.
+
+\bibliography{arxiv}
+\bibliographystyle{arxiv}
+
+\appendix
+\input{contents/appendix}
+\end{document}

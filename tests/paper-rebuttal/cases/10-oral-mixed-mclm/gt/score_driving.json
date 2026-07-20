@@ -1,0 +1,13 @@
+{
+ "high": [
+  "R3.W2",
+  "R3.W3"
+ ],
+ "borderline": [
+  "R3.W1",
+  "R3.W4",
+  "R1.W4",
+  "R2.W1"
+ ],
+ "notes": "Metareview: only the score-2 reviewer (R3=XTAL) blocked, concerns='evaluation metrics and baseline models' -> R3.W2 (computational-only eval) + R3.W3 (weak general-purpose baselines). R3.W1/W4 contributed to the 2 but weren't AC-cited; R1.W4/R2.W1 echo the baseline theme at rating-6."
+}

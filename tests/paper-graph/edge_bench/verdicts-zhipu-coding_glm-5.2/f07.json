@@ -1,0 +1,1 @@
+{"verdict": "INFERRED", "reason": "M's abstract advertises 2\u20134-step high-fidelity sampling but never states that one-step distillation degrades, and N's abstract supports path-straightening for coarse-discretization efficiency but never mentions latent trajectories, LCMs, or fixing one-step quality."}

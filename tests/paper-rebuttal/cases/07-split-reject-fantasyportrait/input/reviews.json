@@ -1,0 +1,126 @@
+{
+ "source": "OpenReview ICLR 2026 forum WT9jewYFNQ",
+ "scale": "1-10",
+ "reviewers": [
+  {
+   "rid": "R1",
+   "rating": 8,
+   "confidence": 5,
+   "summary": "FantasyPortrait is a diffusion transformer framework for single- and multi-character portrait animation. It introduces expression-augmented implicit learning to capture fine-grained, identity-agnostic facial dynamics and a masked cross-attention mechanism for coordinated multi-character control. With the new Multi-Expr dataset and ExprBench benchmark, it achieves state-of-the-art realism and emotion-rich animation quality. [Reviewer adds: \"If the authors solve all my concerns, I'd love to raise my score.\"]",
+   "strengths": "1.FantasyPortrait introduces a DiT-based framework for expressive multi-character animation using implicit, identity-agnostic expression control. 2.Its Multi-Expr dataset and ExprBench benchmark fill a key research gap for multi-portrait training and evaluation. 3.The masked cross-attention ensures independent character dynamics without interference. 4.FantasyPortrait achieves the SOTA performance compared to current methods in both single- and multi-portrait animation. 5.FantasyPortrait(Light) provide much faster inference speed and slight reduction in performance.",
+   "comments": [
+    {
+     "id": "R1.W1",
+     "text": "1.The discussion of related work is insufficient. It only covers the limitations of explicit driving signal-based methods, while neglecting another line of approaches (e.g., X-Portrait [1], MegActor [2]) that construct paired datasets to model implicit, identity-free motion transfer. Moreover, methods such as FaceShot [3], which propose feasible solutions for handling “substantial differences in facial structure,” are not discussed. References: [1]X-portrait: Expressive portrait animation with hierarchical motion attention, Siggraph. [2]Harness the Power of Raw Video for Vivid Portrait Animation."
+    },
+    {
+     "id": "R1.W2",
+     "text": "2.The citation command \\cite was incorrectly. \\citet (or \\cite) is used when the author’s name is part of the sentence — the citation is integrated into the text (e.g., Smith (2020) proposed...). \\citep is used when the citation is parenthetical, meaning it appears in brackets as supplementary information (e.g., ...as shown in previous work (Smith, 2020).)."
+    },
+    {
+     "id": "R1.W3",
+     "text": "3.The design of the Expression-Augmented Encoder seems like adding a set of learnable parameters to the Expression Encoder rather than specific design for detail expressions."
+    },
+    {
+     "id": "R1.W4",
+     "text": "4.I notice that FantasyPortrait performs well on animals in your video demo. It is because the videos of dogs and cats are in your dataset, or the dogs and cats have the similar facial structure with human? Does it generalize to anime characters like Loopy and Peppa Pig."
+    }
+   ]
+  },
+  {
+   "rid": "R2",
+   "rating": 6,
+   "confidence": 4,
+   "summary": "This paper proposes a novel Diffusion Transformer framework named FantasyPortrait, which can generate high-fidelity and emotion-rich portrait animations in both single-character and multi-character scenarios. Its core innovations include: 1. Utilizing implicit representations to capture identity-agnostic facial dynamics; 2. Designing an Expression-Augmented Learning (EAL) module to model fine-grained emotional details; 3. Introducing a Masked Cross-Attention mechanism to prevent feature interference among multiple characters; 4. Constructing the Multi-Expr dataset and ExprBench benchmark for systematic evaluation of multi-character animation generation. Experimental results show that the proposed method outperforms existing approaches comprehensively in terms of FID, FVD, AED, and APD metrics, and achieves particularly strong performance in cross-identity reenactment scenarios.",
+   "strengths": "1. Novel application of DiT: This is the first work to employ a Diffusion Transformer for multi-character portrait animation, filling a notable research gap in expressive video synthesis. 2. Dataset and benchmark contribution: The creation of Multi-Expr dataset and ExprBench benchmark provides valuable community resources for evaluation and comparison in this emerging subfield. 3. Sound methodological design: The combination of implicit expression representation and masked cross-attention is well-motivated and effectively mitigates identity leakage and inter-character interference during multi-subject animation. 4. Clear ablation justification: The ablation study convincingly demonstrates why expression-augmented learning (EAL) is selectively applied only to non-rigid motion components (lip and emotion), showing clear empirical evidence that full augmentation brings little gain for rigid motions. 5. Strong experimental performance: The model achieves competitive or superior results across multiple benchmarks (ExprBench, HDTF), with consistent improvements in FID, FVD, AED, and APD. The ablations are thorough and informative. 6. Diverse generalization capability: The qualitative results include varied portrait styles (e.g., animals, cartoons) and complex real-world conditions (e.g., occlusions, accessories), indicating strong robustness and generalization ability. 7. Efficiency and practicality: The proposed light version significantly accelerates inference (≈50× speedup) while maintaining nearly the same perceptual quality, enhancing practical usability.",
+   "comments": [
+    {
+     "id": "R2.W1",
+     "text": "1. Methodology description is overly concise: Several critical modules—such as the expression-augmented encoder and masked attention pipeline—are only briefly introduced. The paper would benefit from more detailed architectural explanations or schematic illustrations."
+    },
+    {
+     "id": "R2.W2",
+     "text": "2. Unclear training details for learnable tokens: The paper introduces learnable tokens in the expression-augmented encoder, but their initialization, dimensionality, and optimization objectives are not described. This limits reproducibility and interpretability."
+    },
+    {
+     "id": "R2.W3",
+     "text": "3. Missing comparison with underlying components: Since the model is based on the Wan architecture and utilizes PD-FGC for implicit keypoint extraction, comparisons with these base methods are necessary to clearly separate FantasyPortrait’s contribution from prior foundations."
+    },
+    {
+     "id": "R2.W4",
+     "text": "4. Limited demonstration of fine-grained expression control: Although the paper claims “fine-grained emotion synthesis,” the qualitative results lack close-up analyses or visualizations that clearly demonstrate per-region control (e.g., subtle lip or eyebrow motion)."
+    },
+    {
+     "id": "R2.W5",
+     "text": "5. Minor technical issue in reporting: In Table 3, the “Speed” unit should be seconds per frame (s/frame) rather than frames per second (frame/s), as the current interpretation conflicts with the numerical scale."
+    },
+    {
+     "id": "R2.W6",
+     "text": "6. Incomplete dataset release and demonstration: The paper mentions that the Multi-Expr dataset is curated, but the supplementary materials do not include visual samples or clear information about dataset accessibility, licensing, and annotation structure."
+    },
+    {
+     "id": "R2.W7",
+     "text": "7. Missing emotional diversity evaluation: The experiments mainly focus on overall motion and expression accuracy but lack systematic analysis across different emotion categories (e.g., happiness, sadness, anger). Quantitative emotion classification or perceptual user studies would strengthen the claim of emotional expressiveness."
+    },
+    {
+     "id": "R2.W8",
+     "text": "8. Stronger and more recent competitors such as VividPortraits, DiffPortrait, and AniFace should be included to strengthen the argument."
+    }
+   ]
+  },
+  {
+   "rid": "R3",
+   "rating": 4,
+   "confidence": 4,
+   "summary": "FantasyPortrait introduces a diffusion-transformer framework that synthesizes expressive, identity-preserving portrait animations from static images and driving videos, extending conventional single-person reenactment to multi-character scenarios.The model encodes driving signals as implicit facial representations, capturing emotion, lip motion, head pose, and eye movement. For complex non-rigid dynamics (emotion and lips), learnable tokens engage in cross-attention with video tokens, effectively decomposing subtle muscle and affective cues into a higher-dimensional expression subspace. To maintain spatial disentanglement, face masks extracted from the driving video are interpolated into the latent space and used to gate cross-attention, ensuring that each expression embedding modulates only its corresponding facial region.",
+   "strengths": "Masked Cross-Attention mechanism enforces strict spatial gating, ensuring that each expression embedding only influences its corresponding facial region and completely prevents cross-character interference. In addition, by concatenating per-character embeddings with independent masks, the framework allows all characters to be animated synchronously yet independently, maintaining temporal coherence while preserving individual identity and expression consistency—an essential advancement for scalable, multi-person portrait animation.",
+   "comments": [
+    {
+     "id": "R3.W1",
+     "text": "1. In Eq.4, 𝑀⊙(QK^T) zeros out cross-region logits through the mask 𝑀, the subsequent softmax operation normalizes across all tokens, meaning each attention weight can still be indirectly influenced by the presence of others, leading to potential cross-region coupling. Moreover, the trilinear interpolation used to project pixel-level masks into latent space creates soft edges (values between 0–1), which further undermines the claim of achieving strict spatial isolation."
+    },
+    {
+     "id": "R3.W2",
+     "text": "2. The overall pipeline shows limited originality—its key component, Masked Cross-Attention, closely resembles mechanisms used in HunyuanVideo-Avatar, while the expression encoder is pretrained from PD-FGC paper."
+    },
+    {
+     "id": "R3.W3",
+     "text": "3. The method assumes that 3D VAE latent features are spatially aligned with the input video pixels—how robust is this assumption under large head motion or occlusion?"
+    },
+    {
+     "id": "R3.W4",
+     "text": "4. The Masked Cross-Attention module depends on precomputed facial masks—how sensitive is the system to mask precision, boundary size? Furthermore, what occurs when faces overlap or partially occlude each other in multi-person scenes?"
+    },
+    {
+     "id": "R3.W5",
+     "text": "5. Expression-Augmented Learning applies learnable tokens only to emotion and lip features; what empirical evidence supports the exclusion of head pose and eye dynamics, especially given that the supplementary video shows occasional misalignment in these components?"
+    },
+    {
+     "id": "R3.W6",
+     "text": "6. it's not clarified how the number and dimensionality of learnable tokens are selected. are these empirically tuned, fixed by prior work, or determined through ablation?"
+    },
+    {
+     "id": "R3.W7",
+     "text": "7. The proposed system builds on Wan2.1-I2V-14B, which is much larger than other baselines, making it difficult to attribute the reported performance gains solely to the proposed architectural innovations."
+    }
+   ]
+  },
+  {
+   "rid": "R4",
+   "rating": 2,
+   "confidence": 4,
+   "summary": "FantasyPortrait demonstrates strong empirical results in multi-character portrait animation.",
+   "strengths": "The authors propose FantasyPortrait, a system for portrait animation that has achieved strong empirical results, particularly in complex multi-character scenarios. The new \"ExprBench\" benchmark is a valuable resource contribution.",
+   "comments": [
+    {
+     "id": "R4.W1",
+     "text": "- The paper's first key claim, an expression-augmented learning strategy that utilizes implicit representations to capture identity-agnostic facial dynamics\" , depends on an existing component. The method explicitly employs a \"pretrained implicit expression extractor​\" from Wang et al. (2023a) to derive all core motion features (e_lip​, e_eye​, e_head​, e_emo​). The paper's sole algorithmic addition, the \"Expression-Augmented Learning (EAL)\" module, with an expression-augmented encoder, only refines two of inherited features. The ablation study in Table 2 shows removing EAL has no effect on head pose (APD) or eye motion (MAE). Control over these rigid dynamics is fully inherited from the work of Wang et al. (2023a). HunyuanPortrait (Xu et al. 2025) also utilize implicit represention to describe expression and disentangle appearance and motion."
+    },
+    {
+     "id": "R4.W2",
+     "text": "- The second key claim, a masked cross-attention mechanism, is an application of a well-established technique in generative models. The problem of \"feature interference\" or \"attribute entanglement\" in multi-subject generation is widely known. Consequently, using spatial masks to guide or constrain attention layers is a common solution, as documented in prior works, including but not limited to CustomVideo (arXiv: 2401.09962), arXiv: 2505.02823, MS-Diffusion (Wang et al. 2024b) and arXiv: 2505.05101. Masked cross-attention is no longer an innovation. FantasyPortrait applies this known method to its specific domain but does not invent the mechanism itself. The paper's framing overstates its method contributions."
+    }
+   ]
+  }
+ ]
+}

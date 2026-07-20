@@ -1,0 +1,36 @@
+\section{Discussion and Conclusion}
+\label{sec:discussion}
+
+\textsc{Hubble} pairs a systematic survey of memorization risks with an open-source artifact release, and is intended to advance the study of LLM memorization. Our work establishes several results and best practices, and we hope follow-up studies using \textsc{Hubble} make further progress on the following research questions:
+
+\textbf{How is information memorized?} Understanding how transformers memorize is a basic scientific question that has been studied extensively in the literature \citep[][among others]{geva-etal-2021-transformer, dai-etal-2022-knowledge}. A better understanding of the mechanisms of model memorization can inform the design of knowledge editing or unlearning techniques \citep{meng2022locating}. Another practical application is in separating out knowledge from model parameters and enabling the responsible use of data \citep{shi2025flexolmoopenlanguagemodels, ghosal2025memorizationsinksisolatingmemorization}. With the perturbations in \textsc{Hubble}, interpretability studies can analyze a wide range of causal effects and control for factors such as the duplication rate or timing of an inserted text. The randomness in the perturbation data (e.g., the synthetic biographies) may also be useful as canaries to probe whether knowledge is localized to certain parameters \citep{maini_can_2023,chang-etal-2024-localization}. Finally, the released checkpoints enable the study of how memorization evolves throughout training \citep{biderman2023emergent, chang2024large}.
+
+\textbf{How can memorization be measured?} For debates around copyright and privacy, there is a need for more intuitive and robust memorization metrics \citep[][as an example]{schwarzchild_rethinking_2024}. \textsc{Hubble} perturbations span diverse data types that enable the development of new metrics, and the controlled insertions can validate these measurements (the same property that makes \textsc{Hubble} a solid benchmark for membership inference). Measuring memorization is closely related to privacy auditing, as both aim to detect whether a model reveals information about specific training examples; borrowing intuitions from differential privacy, such as bounding sensitivity, may be useful here \citep{panda2025privacy}. For a number of tasks within \textsc{Hubble}, model performance reflects a combination of both memorization and generalization \citep{feldman_what_2020}, and isolating memorization effects may require advanced attribution methods \citep{ilyas_datamodels_2022,grosse2023studyinglargelanguagemodel}.
+
+% % connections to data poisoning
+% mitigating memorization maybe will mitigate data poisoning.
+\textbf{How can memorization be mitigated?} \textsc{Hubble} establishes two best practices---dilution and ordering---for mitigating memorization. \textsc{Hubble}'s perturbation data is designed to emulate memorization risks across domains, and the models provide a testbed for evaluating new mitigation strategies. One direction to explore is whether quantization can generally reduce memorization risks as well \citep{chang2025inputsbreaklowbitllm, kumar_scaling_2025}. Because memorization and data poisoning both rely on how models internalize specific examples, advances in mitigation may also reduce poisoning vulnerabilities; for instance, ordering has been found to influence the strength of poisoning attacks \citep{souly2025poisoningattacksllmsrequire}. Beyond identifying mitigation strategies, understanding their limitations is equally important. Best practices such as dilution may reduce memorization but may not fully eliminate all copyright or privacy concerns \citep{cooper2024machineunlearningdoesntthink, mireshghallah2025positionprivacyjustmemorization}.
+
+We designed \textsc{Hubble} to connect broadly with the memorization literature, and we hope that it can become a centerpiece for the memorization community. Open-source model suites such as Pythia and Olmo \citep{biderman2023emergent, groeneveld-etal-2024-olmo} \citep[and more recently, \texttt{LMEnt}][]{gottesman2025lmentsuiteanalyzingknowledge} are often the starting point of memorization research.  \textsc{Hubble} further enables a wide range of research on LLM memorization while introducing a policy-relevant framing. Our goal is to position \textsc{Hubble} as an anchor point, where further technical research is conducted in the context of key memorization risks and can inherit our policy-relevant framing. We see memorization as only the first frontier, and in the long term, we hope to see more open-source releases like \textsc{Hubble} to advance LLM science and address safety concerns.
+
+% Past work has studied localization of knowledge in LMs, however these studies were conducted without any controls on when a fact was presented to the LM and how often it was reinforced. The core Hubble suite models along with the temporal ablations allow us to study: (1) is different memorized data localized/dispersed across the model (2) is the mechanism affected by frequency of observation (3) is the mechanism affected by the stage training stage at the time of encountering the text. This analysis can be paired with a study of
+% On this fundamental question, there is a rich literature on the interpreting the mechanisms of factual recall \cite{dai-etal-2022-knowledge, meng2022locating, }
+% For copyright, it will be important to use an intuitive metric, and it will also be important to understand how the training decisions affected the memorization.
+% why is hubble a good model to study how to measure? we randomly control one of the variables which is duplication.
+% all our evaluations are lower bounds, and more work is needed to understand the full extent of memorization. 
+% non-literal memorization + Indirect PII inference?
+% memorization vs generalization
+% once we can measure, we can mitigate.
+
+% outline:
+% this is a fundamental science question
+% if we understand how it is memorized, then we can do better unlearning and editing.
+% do refactoring, like memorization sinks and FlexOlmo.
+% Hubble has randomized insertions, you have more soundness in interpretability results, you have the duplicates/memorization strength controlled.
+% since its randomized, such as UUIDs, maybe its good to study localization? and knowledge representation. gives you some more auxiliary information on the interpretability.
+% maybe hubble can provide better answers for memorization/generalization with the test sets?
+
+% should we reiterate our results here?
+% repeat: hubble has randomized insertions, paired with the systematic survey, should allow for a wide range of research.
+
+% such as Pythia \citep{DBLP:conf/icml/BidermanSABOHKP23}, Olmo \cite{groeneveld-etal-2024-olmo}, or LMEnt \citep{gottesman2025lmentsuiteanalyzingknowledge}. Most notably, Pythia has enabled a wide range of studies on memorization, following their footsteps, \textsc{Hubble} builds on it a bit more. \textsc{Hubble} connects deployment risks to scientific questions, and we encourage future technical research to build on \textsc{Hubble}’s policy-relevant framing. In the long term, we hope \textsc{Hubble} inspires effort beyond memorization, and can provide an example for tackling broader safety risks.

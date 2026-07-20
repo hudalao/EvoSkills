@@ -1,0 +1,235 @@
+\subsection{Sharding}\label{sharding_prompt}
+We show the prompts for the sharding process below, using Math as an example task. Double-bracketed terms are placeholders that get replaced with the actual data.
+Other tasks share the same outline with different exemplars and rules to enforce stable outputs. We refer the readers to the GitHub repository for the exact prompts on other tasks.
+\begin{tcolorbox}[title=Segmentation,float, floatplacement=h]
+{\footnotesize
+\begin{Verbatim}[breaklines,breaksymbol=]
+You are a given a fully specified instruction, and your task is to segment the instruction into a units of information that each reveal a single piece of information of the instruction.
+You must output a list of segments in the following JSON format:
+[
+    {"segment": "[exact excerpt from the instruction]"},
+    {"segment": "[exact excerpt from the instruction]"},
+    ...
+]
+
+Rules:
+- [Non-overlapping] The segments must be non-overlapping and cover the entire instruction. You can optionally leave some gaps for non-essential portions of the original instruction (delimiters, headers, etc.)
+- [Minimalistic] You should split the information in the segments to as small as possible. If you have a compound expression (X and Y), you should split it into two segments. Each segment should represent a unit of information.
+
+Example Query:
+What are the names and locations of the stadiums that had concerts that occurred in both 2014 and 2015?
+
+Output:
+{"segments": [
+    {"segment": "names and locations"},
+    {"segment": "stadiums"},
+    {"segment": "concerts"},
+    {"segment": "in both 2014"},
+    {"segment": "and 2015"}
+]}
+
+Now complete the task for the following fully specified instruction:
+
+[[INSTRUCTION]]
+\end{Verbatim}
+}
+\end{tcolorbox}
+
+\newpage
+\begin{tcolorbox}[title=Rephrasing]
+{\footnotesize
+\begin{Verbatim}[breaklines,breaksymbol=]
+You are given segments of a fully specified instruction, and your task is to: (1) choose one that will be the initial shard of a multi-step query, and then (2) rephrase each segment into a conversational version that are provided to the system in a follow-up turn of the conversation.
+
+Your output should be a JSON object in the following format:
+{
+    "initial_segment": "[exact excerpt from the instruction]",
+    "initial_shard": "conversational version of the initial segment",
+    "shards": [
+    {"segment": "[exact excerpt from the instruction]", "shard": "conversational version of the segment taking the rest of the instruction into account"}
+    ]
+}
+
+Example:
+
+Full Query:
+What are the names and locations of the stadiums that had concerts that occurred in both 2014 and 2015?
+
+Segments:
+[
+    {"segment": "names and locations"},
+    {"segment": "stadiums"},
+    {"segment": "concerts"},
+    {"segment": "in both 2014"},
+    {"segment": "and 2015"}
+]
+
+Output:
+{
+    "initial_segment": "stadiums",
+    "initial_shard": "popular stadiums",
+    "shards": [
+        {"segment": "concerts", "shard": "the stadiums should have concerts during a period"},
+        {"segment": "in both 2014", "shard": "the concerts should have occurred in 2014 in the stadiums"},
+        {"segment": "and 2015", "shard": "the concerts should have also occurred in 2015 in the same stadiums"},
+        {"segment": "names and locations", "shard": "for the stadiums, returned both the name and location"}
+    ]
+}
+
+Rules:
+- [Transform each segment] Make sure each segment is included either as the initial shard or in the rest of the shards. Do not forget any segments.
+- [Short initial shard] Make the initial shard short, not a full sentence, similar to how users use a search engine like Google.
+- [Order of shards] Order the shards in order of importance, from most to least important to the initial shard. You do not need to keep the order the segments that are provided in.
+
+Now complete the task for the following fully specified instruction and segments:
+
+Fully Specified Instruction:
+[[QUESTION]]
+
+Segments:
+[[SEGMENTS]]
+
+\end{Verbatim}
+}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Verification]
+{\footnotesize
+\begin{Verbatim}[breaklines,breaksymbol=]
+You are given an instruction that fully specifies a problem, and a list of shards. Your task is to decide whether all the information from the full instruction is captured by the shards.
+
+If not, you should output the information unit from the instruction that is not captured by the shards.
+
+Example 1:
+
+Instruction:
+What are the names and locations of the stadiums that had concerts that occurred in both 2014 and 2015?
+
+Shards:
+{"initial_segment": "stadiums", "initial_shard": "I'm looking for active stadiums", "shards": [{"segment": "concerts", "shard": "the stadiums should have concerts during a period"}, {"segment": "in both 2014 and 2015", "shard": "the concerts should have occurred in both 2014 and 2015"}, {"segment": "names and locations", "shard": "for the stadiums, returned both the name and location"}]}
+
+Output:
+{"converage": "complete"}
+
+
+Example 2:
+Instruction:
+Which Asian countries have a population that is larger than any country in Africa?
+
+Shards:
+{"initial_shard": "I'm interested in learning about countries in Asia", "shards": [{"shard": "consider the population size of these Asian countries"}, {"shard": "the population should be compared in size"}, {"shard": "specifically, compare to the population of African countries"}]}
+
+Output:
+{"coverage": "incomplete", "missing_segment": "the shards do not specify that the population of the Asian countries should be *larger* than the population of any African countries"}
+
+
+
+You must output in JSON format as shown in the examples above.
+Now complete the task for the following fully specified instruction and shards:
+
+Instruction:
+[[QUERY]]
+
+Shards:
+[[SHARDS]]
+\end{Verbatim}
+}
+\end{tcolorbox}
+
+\newpage
+\subsection{Experiments}\label{experiment_prompt}
+
+The experiments involve several LLM calls with specific prompts to simulate the conversation, which we list below.
+We refer readers to the GitHub repository for how they are incorporated.
+
+
+\begin{tcolorbox}[title=User simulator,float,floatplacement=h]
+{\footnotesize
+\begin{Verbatim}[breaklines,breaksymbol=]
+You are simulating a user of an interactive LLM system (like ChatGPT).
+The user is inherently lazy, and answers in short form, providing only minimal information to the system. You should not be proactive.
+
+Here's the conversation so far:
+[[CONVERSATION_SO_FAR]]
+
+Here are the shards that have already been revealed:
+[[SHARDS_REVEALED]]
+
+Here are all the shards that have not been revealed yet:
+[[SHARDS_NOT_REVEALED]]
+
+You must generate a response to the conversation so far. Here are the rules:
+- [Providing a shard] You can reveal the content of a shard to the system in your response if it will help the system move closer to answering the problem. You should select the shard to reveal that is most "basic" and currently the most relevant.
+- [One Shard at a Time] You should only reveal at most one shard at a time.
+- [Reveal Entire Shard] If you reveal a shard, you must make sure to include *all the information in the shard*. For example, if the shard is "your symptoms are that you have a headache in the mornings", your response can't just be ``yeah I have headaches'', you must say ``yup mostly headaches in the mornings``.
+- [Irrelevant Clarifications] If the system asks you a question irrelevant to the shards, asks you a generic question (``Can you give me a hint?``), you should respond with an answer that does not provide a shard. (``I don't know``, ``Is that really important?``, etc.) You should not reveal any information beyond what is available in the shards.
+- [No Repeated Shards] You should not reveal the same shard more than once. Carefully review the already revealed shards, and only reveal a shard if its `shard_id` is not on the list.
+- [Rephrase Shards] If you reveal a shard, you should rephrase it in a conversational way. Do not copy the shard verbatim.
+- [Do Not Ask Questions] Your response should always be declarative sentences, and not questions.
+- [Brevity of Response] You should favor being succint. Your answer can also have typos, improper grammar, capitalization, etc. You are simulating a real person talking to an AI, who is in a hurry.
+- [Format] Your response should be formatted as a JSON object with the following keys:
+    - `response`: The response to the conversation so far.
+    - `shard_id`: The shard you are revealing to the system. The shard_id can be an integer, or -1 if you did not reveal any shards.
+For example:
+{"response": "I don't know", "shard_id": -1}
+or:
+{"response": "yeah I want it to [...]", "shard_id": 1}
+\end{Verbatim}
+}
+\end{tcolorbox}
+\newpage
+\begin{tcolorbox}[title=Response strategy categorization]
+{\footnotesize
+\begin{Verbatim}[breaklines,breaksymbol=]
+You are reviewing a multi-turn conversation between a user and an assistant, and are given the last turn of the conversation.
+
+Here is the full specification of the problem the system is attempting to solve:
+[[INITIAL_SHARD]]
+
+Specification:
+[[SHARDS]]
+
+You must classify the response of the assistant according to the response type:
+- `answer_attempt`: The response contains a complete answer attempt to the user's question (not templated or hypothetical), that can be extracted verbatim. See the task-specific answer description for more details.
+- `clarification`: The response  is short (less than 100 words) and contains a single question addressed to the user that directly inquires about an aspect of the user's query. A clarification turn cannot be long (see `discussion`), cannot contain a vague question (see `discussion`) and cannot contain multiple questions (see `interrogation`).
+- `interrogation`: The response contains multiple questions addressed to the user, sometimes organized in a list or bullet-points.
+- `discussion`: The response discusses the question in detail, without providing a final answer, asking a specific clarification question, or a refusal to answer. The response may or may not contain a vague question (e.g., “What else can I help you with?”).
+- `hedge`: The response contains multiple answer candidates based on hypotheticals (ifs) or branching (case 1, case 2) with corresponding descriptions.
+- `refuse`: The response contains an explicit or implicit refusal to answer the user's question without a follow-up question or a request.
+- `missing`: The response is empty/blank.
+
+You must output your answer in the following JSON format:
+{"response_type": "refuse|missing|answer_attempt|hedge|clarification|interrogation|discussion"}
+
+Rules:
+- The assistant giving a hint at how an answer could look like is not a final answer. You should only select `answer_attempt` if the conversation could end at this stage with the user having an entirely final answer to the problem they've formulated.
+- [Task Specific Answer] [[ANSWER_DESCRIPTION]]
+
+Conversation's last turn:
+[[CONVERSATION_SO_FAR]]
+\end{Verbatim}
+}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Answer Extraction]
+{\footnotesize
+\begin{Verbatim}[breaklines,breaksymbol=]
+You are reviewing a multi-turn conversation between a user and an assistant, and are given the last turn of the conversation.
+In the final response from the assistant, a final answer has been provided. Your goal is to extract verbatim what the answer is:
+- If the answer is short (less than 10 words), then you should copy verbatim what the answer is in the `answer` field.
+- If the answer is long, then you should produce the answer with an ellipses, to indicate the exact start and end of the answer (e.g, ```def funny_function(n): [...]  return funny_output```). You should include *at least* 4 words or one full line for the start (before the ellipses) and *at least* 4 words or one full line for the end (after the ellipses), such that the answer can be identified exactly.
+
+Rules:
+- [Exact Answer Only] only extract the exact answer, and nothing else (including ``` for code blocks, or intro/outro text).
+- [Verbatim Only] Only extract verbatim text, do not modify the text in any way. If there's a typo, an error, you must absoltutely include it, and not correct it in any way.
+- [Task Specific Answer] [[ANSWER_DESCRIPTION]]
+- [String output] the <answer_str> must be a string, not a number and not a dictionary.
+
+You must output your answer in the following JSON format:
+{"answer": "<answer_str>"}
+
+Conversation's last turn:
+[[CONVERSATION_SO_FAR]]
+\end{Verbatim}
+}
+\end{tcolorbox}

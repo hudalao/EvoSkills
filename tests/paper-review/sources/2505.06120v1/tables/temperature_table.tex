@@ -1,0 +1,33 @@
+\begin{wraptable}{r}{0.4\textwidth}
+    \centering
+    \vspace{-0.5em} % Adjust as needed to tighten spacing
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{1.0\linewidth}{!}{%
+    \begin{tabular}{lccc/ccc}
+
+    & \multicolumn{3}{c}{\openai~4o-mini} & \multicolumn{3}{c}{\openai~4o} \\
+     \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+    Simulation & \small{AT=1.0} & \small{AT=0.5} & \small{AT=0.0} & \small{AT=1.0} & \small{AT=0.5} & \small{AT=0.0} \\
+    
+    \cmidrule(lr){1-1} \cmidrule(r{7pt}){2-4} \cmidrule(){5-7}
+
+
+\full\hspace{0.1em}  \fullt & \ccol{F7D9D9}16.0 & \ccol{F7DBDB}15.0 & \ccol{FBEFEF}6.8 & \ccol{F6D5D5}17.8 & \ccol{FBECEC}8.0 & \ccol{FDF8F8}2.8 \\
+\concat\hspace{0.1em} \concatt  & \ccol{F5CFCF}20.2 & \ccol{F6D5D5}17.8 & \ccol{FAE8E8}9.5 & \ccol{F5CFCF}20.2 & \ccol{F6D5D5}17.8 & \ccol{FCF1F1}5.8 \\
+
+    \cmidrule(lr){1-1} \cmidrule(r{7pt}){2-4} \cmidrule(){5-7}
+
+
+\sharded\hspace{0.1em} \small{UT=1.0} & \ccol{E68989}49.8 & \ccol{E89090}46.8 & \ccol{E58686}51.0 & \ccol{EA9E9E}41.0 & \ccol{E99898}43.8 & \ccol{EFB4B4}31.8 \\
+\sharded\hspace{0.1em} \small{UT=0.5} & \ccol{EFB4B4}31.7 & \ccol{EEAEAE}34.0 & \ccol{EB9F9F}40.5 & \ccol{EBA2A2}39.5 & \ccol{EB9F9F}40.8 & \ccol{EFB4B4}31.8 \\
+\sharded\hspace{0.1em} \small{UT=0.0} & \ccol{ECA4A4}38.5 & \ccol{F1BDBD}28.0 & \ccol{F0B7B7}30.5 & \ccol{EDAAAA}35.8 & \ccol{ECA5A5}38.0 & \ccol{F0B9B9}29.7 \\
+
+
+
+    \bottomrule
+    \end{tabular}
+    }
+    \caption{Unreliability of models when changing assistant temperature (AT) and user temperature (UT) in \full~\fullt, \concat~\concatt and \sharded~\shardedt settings. The lower the number the more reliable the assistant is.}
+    \label{tab:temperature}
+    \vspace{-2ex}
+\end{wraptable}

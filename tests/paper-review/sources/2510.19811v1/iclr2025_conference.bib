@@ -1,0 +1,2331 @@
+@inproceedings {carlini_extracting_2021,
+author = {Nicholas Carlini and Florian Tram{\`e}r and Eric Wallace and Matthew Jagielski and Ariel Herbert-Voss and Katherine Lee and Adam Roberts and Tom Brown and Dawn Song and {\'U}lfar Erlingsson and Alina Oprea and Colin Raffel},
+title = {Extracting Training Data from Large Language Models},
+booktitle = {30th USENIX Security Symposium (USENIX Security 21)},
+year = {2021},
+isbn = {978-1-939133-24-3},
+pages = {2633--2650},
+url = {https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting},
+publisher = {USENIX Association},
+month = aug
+}
+
+@inproceedings{
+nasr2025scalable,
+title={Scalable Extraction of Training Data from Aligned, Production Language Models},
+author={Milad Nasr and Javier Rando and Nicholas Carlini and Jonathan Hayase and Matthew Jagielski and A. Feder Cooper and Daphne Ippolito and Christopher A. Choquette-Choo and Florian Tram{\`e}r and Katherine Lee},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=vjel3nWP2a}
+}
+
+@misc{khan2025tokensmithstreamliningdataediting,
+      title={TokenSmith: Streamlining Data Editing, Search, and Inspection for Large-Scale Language Model Training and Interpretability}, 
+      author={Mohammad Aflah Khan and Ameya Godbole and Johnny Tian-Zheng Wei and Ryan Wang and James Flemings and Krishna Gummadi and Willie Neiswanger and Robin Jia},
+      year={2025},
+      eprint={2507.19419},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2507.19419}, 
+}
+
+@inproceedings{petroni-etal-2019-language,
+    title = "Language Models as Knowledge Bases?",
+    author = {Petroni, Fabio  and
+      Rockt{\"a}schel, Tim  and
+      Riedel, Sebastian  and
+      Lewis, Patrick  and
+      Bakhtin, Anton  and
+      Wu, Yuxiang  and
+      Miller, Alexander},
+    editor = "Inui, Kentaro  and
+      Jiang, Jing  and
+      Ng, Vincent  and
+      Wan, Xiaojun",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1250/",
+    doi = "10.18653/v1/D19-1250",
+    pages = "2463--2473",
+    abstract = "Recent progress in pretraining language models on large textual corpora led to a surge of improvements for downstream NLP tasks. Whilst learning linguistic knowledge, these models may also be storing relational knowledge present in the training data, and may be able to answer queries structured as ``fill-in-the-blank'' cloze statements. Language models have many advantages over structured knowledge bases: they require no schema engineering, allow practitioners to query about an open class of relations, are easy to extend to more data, and require no human supervision to train. We present an in-depth analysis of the relational knowledge already present (without fine-tuning) in a wide range of state-of-the-art pretrained language models. We find that (i) without fine-tuning, BERT contains relational knowledge competitive with traditional NLP methods that have some access to oracle knowledge, (ii) BERT also does remarkably well on open-domain question answering against a supervised baseline, and (iii) certain types of factual knowledge are learned much more readily than others by standard language model pretraining approaches. The surprisingly strong ability of these models to recall factual knowledge without any fine-tuning demonstrates their potential as unsupervised open-domain QA systems. The code to reproduce our analysis is available at \url{https://github.com/facebookresearch/LAMA}."
+}
+
+@inproceedings{feldman_what_2020,
+author = {Feldman, Vitaly and Zhang, Chiyuan},
+title = {What neural networks memorize and why: discovering the long tail via influence estimation},
+year = {2020},
+isbn = {9781713829546},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {Deep learning algorithms are well-known to have a propensity for fitting the training data very well and often fit even outliers and mislabeled data points. Such fitting requires memorization of training data labels, a phenomenon that has attracted significant research interest but has not been given a compelling explanation so far. A recent work of Feldman [13] proposes a theoretical explanation for this phenomenon based on a combination of two insights. First, natural image and data distributions are (informally) known to be long-tailed, that is have a significant fraction of rare and atypical examples. Second, in a simple theoretical model such memorization is necessary for achieving close-to-optimal generalization error when the data distribution is long-tailed. However, no direct empirical evidence for this explanation or even an approach for obtaining such evidence were given. In this work we design experiments to test the key ideas in this theory. The experiments require estimation of the influence of each training example on the accuracy at each test example as well as memorization values of training examples. Estimating these quantities directly is computationally prohibitive but we show that closely-related subsampled influence and memorization values can be estimated much more efficiently. Our experiments demonstrate the significant benefits of memorization for generalization on several standard benchmarks. They also provide quantitative and visually compelling evidence for the theory put forth in [13].},
+booktitle = {Proceedings of the 34th International Conference on Neural Information Processing Systems},
+articleno = {242},
+numpages = {11},
+location = {Vancouver, BC, Canada},
+series = {NIPS '20}
+}
+
+@article{foundation_henderson_2023,
+  author  = {Peter Henderson and Xuechen Li and Dan Jurafsky and Tatsunori Hashimoto and Mark A. Lemley and Percy Liang},
+  title   = {Foundation Models and Fair Use},
+  journal = {Journal of Machine Learning Research},
+  year    = {2023},
+  volume  = {24},
+  number  = {400},
+  pages   = {1--79},
+  url     = {http://jmlr.org/papers/v24/23-0569.html}
+}
+
+@misc{atkinson2024legalrisktaxonomygenerative,
+      title={A Legal Risk Taxonomy for Generative Artificial Intelligence}, 
+      author={David Atkinson and Jacob Morrison},
+      year={2024},
+      eprint={2404.09479},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2404.09479}, 
+}
+
+@article{Franceschelli_Musolesi_2022, title={Copyright in generative deep learning}, volume={4}, DOI={10.1017/dap.2022.10}, journal={Data \& Policy}, author={Franceschelli, Giorgio and Musolesi, Mirco}, year={2022}, pages={e17}}
+
+@misc{satvaty2025undesirablememorizationlargelanguage,
+      title={Undesirable Memorization in Large Language Models: A Survey}, 
+      author={Ali Satvaty and Suzan Verberne and Fatih Turkmen},
+      year={2025},
+      eprint={2410.02650},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.02650}, 
+}
+
+@misc{hartmann2023sokmemorizationgeneralpurposelarge,
+      title={SoK: Memorization in General-Purpose Large Language Models}, 
+      author={Valentin Hartmann and Anshuman Suri and Vincent Bindschaedler and David Evans and Shruti Tople and Robert West},
+      year={2023},
+      eprint={2310.18362},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2310.18362},
+}
+
+@misc{lee2024talkinboutaigeneration,
+      title={Talkin' 'Bout AI Generation: Copyright and the Generative-AI Supply Chain}, 
+      author={Katherine Lee and A. Feder Cooper and James Grimmelmann},
+      year={2024},
+      eprint={2309.08133},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2309.08133},
+}
+
+@inproceedings{magar-schwartz-2022-data,
+    title = "Data Contamination: From Memorization to Exploitation",
+    author = "Magar, Inbal  and
+      Schwartz, Roy",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-short.18/",
+    doi = "10.18653/v1/2022.acl-short.18",
+    pages = "157--165",
+    abstract = "Pretrained language models are typically trained on massive web-based datasets, which are often ``contaminated'' with downstream test sets. It is not clear to what extent models exploit the contaminated data for downstream tasks. We present a principled method to study this question. We pretrain BERT models on joint corpora of Wikipedia and labeled downstream datasets, and fine-tune them on the relevant task. Comparing performance between samples seen and unseen during pretraining enables us to define and quantify levels of memorization and exploitation. Experiments with two models and three downstream tasks show that exploitation exists in some cases, but in others the models memorize the contaminated data, but do not exploit it. We show that these two measures are affected by different factors such as the number of duplications of the contaminated data and the model size. Our results highlight the importance of analyzing massive web-scale datasets to verify that progress in NLP is obtained by better language understanding and not better data exploitation."
+}
+
+@article{Li_Flanigan_2024, title={Task Contamination: Language Models May Not Be Few-Shot Anymore}, volume={38}, url={https://ojs.aaai.org/index.php/AAAI/article/view/29808}, DOI={10.1609/aaai.v38i16.29808}, abstractNote={Large language models (LLMs) offer impressive performance in various zero-shot and few-shot tasks. However, their success in zero-shot or few-shot settings may be affected by task contamination, a potential limitation that has not been thoroughly examined. This paper investigates how zero-shot and few-shot performance of LLMs has changed chronologically over datasets released over time, and over LLMs released over time. Utilizing GPT-3 series models and several other recent open-sourced LLMs, and controlling for dataset difficulty, we find that datasets released prior to the LLM training data creation date perform surprisingly better than datasets released post the LLM training data creation date. This strongly indicates that, for many LLMs, there exists task contamination on zero-shot and few-shot evaluation for datasets prior to the LLMs’ training data creation date. Additionally, we utilize training data inspection, training data extraction, and a membership inference attack, which reveal further evidence of task contamination. Importantly, we find that for tasks with no possibility of task contamination, LLMs rarely demonstrate statistically significant improvements over simple majority baselines, in both zero and few-shot settings.}, number={16}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Li, Changmao and Flanigan, Jeffrey}, year={2024}, month={Mar.}, pages={18471-18480} }
+
+@misc{grattafiori2024llama3herdmodels,
+      title={The Llama 3 Herd of Models}, 
+      author={Aaron Grattafiori and others},
+      year={2024},
+      eprint={2407.21783},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2407.21783},
+}
+
+@inproceedings{
+prashanth2025recite,
+title={Recite, Reconstruct, Recollect: Memorization in {LM}s as a Multifaceted Phenomenon},
+author={USVSN Sai Prashanth and Alvin Deng and Kyle O'Brien and Jyothir S V and Mohammad Aflah Khan and Jaydeep Borkar and Christopher A. Choquette-Choo and Jacob Ray Fuehne and Stella Biderman and Tracy Ke and Katherine Lee and Naomi Saphra},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=3E8YNv1HjU}
+}
+
+@inproceedings{lesci-etal-2024-causal,
+    title = "Causal Estimation of Memorisation Profiles",
+    author = "Lesci, Pietro  and
+      Meister, Clara  and
+      Hofmann, Thomas  and
+      Vlachos, Andreas  and
+      Pimentel, Tiago",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.834/",
+    doi = "10.18653/v1/2024.acl-long.834",
+    pages = "15616--15635",
+    abstract = "Understanding memorisation in language models has practical and societal implications, e.g., studying models' training dynamics or preventing copyright infringements.Prior work defines memorisation as the causal effect of training with an instance on the model{'}s ability to predict that instance. This definition relies on a counterfactual: the ability to observe what would have happened had the model not seen that instance.Existing methods struggle to provide computationally efficient and accurate estimates of this counterfactual. Further, they often estimate memorisation for a model architecture rather than for a specific model instance. This paper fills an important gap in the literature, proposing a new, principled, and efficient method to estimate memorisation based on the difference-in-differences design from econometrics. Using this method, we characterise a model{'}s memorisation profile{--}its memorisation trends across training{--}by only observing its behaviour on a small set of instances throughout training.In experiments with the Pythia model suite, we find that memorisation (i) is stronger and more persistent in larger models, (ii) is determined by data order and learning rate, and (iii) has stable trends across model sizes, thus making memorisation in larger models predictable from smaller ones."
+}
+
+@misc{morris2025languagemodelsmemorize,
+      title={How much do language models memorize?}, 
+      author={John X. Morris and Chawin Sitawarin and Chuan Guo and Narine Kokhlikyan and G. Edward Suh and Alexander M. Rush and Kamalika Chaudhuri and Saeed Mahloujifar},
+      year={2025},
+      eprint={2505.24832},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.24832}, 
+}
+
+@misc{huang2024demystifyingverbatimmemorizationlarge,
+      title={Demystifying Verbatim Memorization in Large Language Models}, 
+      author={Jing Huang and Diyi Yang and Christopher Potts},
+      year={2024},
+      eprint={2407.17817},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2407.17817},
+}
+
+@misc{gottesman2025lmentsuiteanalyzingknowledge,
+      title={LMEnt: A Suite for Analyzing Knowledge in Language Models from Pretraining Data to Representations}, 
+      author={Daniela Gottesman and Alon Gilae-Dotan and Ido Cohen and Yoav Gur-Arieh and Marius Mosbach and Ori Yoran and Mor Geva},
+      year={2025},
+      eprint={2509.03405},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2509.03405}, 
+}
+
+@InProceedings{pmlr-v267-kocyigit25a-contamination-mt,
+  title = 	 {Overestimation in {LLM} Evaluation: A Controlled Large-Scale Study on Data Contamination’s Impact on Machine Translation},
+  author =       {Kocyigit, Muhammed Yusuf and Briakou, Eleftheria and Deutsch, Daniel and Luo, Jiaming and Cherry, Colin and Freitag, Markus},
+  booktitle = 	 {Proceedings of the 42nd International Conference on Machine Learning},
+  pages = 	 {31105--31132},
+  year = 	 {2025},
+  editor = 	 {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},
+  volume = 	 {267},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--19 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v267/main/assets/kocyigit25a/kocyigit25a.pdf},
+  url = 	 {https://proceedings.mlr.press/v267/kocyigit25a.html},
+  abstract = 	 {Data contamination—the accidental consumption of evaluation examples within the pre-training data—can undermine the validity of evaluation benchmarks. In this paper, we present a rigorous analysis of the effects of contamination on language models at 1B and 8B scales on the machine translation task. Starting from a carefully decontaminated train-test split, we systematically introduce contamination at various stages, scales, and data formats to isolate its effect and measure its impact on performance metrics. Our experiments reveal that contamination with both source and target substantially inflates BLEU scores, and this inflation is 2.5 times larger (up to 30 BLEU points) for 8B compared to 1B models. In contrast, source-only and target-only contamination generally produce smaller, less consistent over-estimations. Finally, we study how the temporal distribution and frequency of contaminated samples influence performance over-estimation across languages with varying degrees of data resources.}
+}
+
+@misc{souly2025poisoningattacksllmsrequire,
+      title={Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples}, 
+      author={Alexandra Souly and Javier Rando and Ed Chapman and Xander Davies and Burak Hasircioglu and Ezzeldin Shereen and Carlos Mougan and Vasilios Mavroudis and Erik Jones and Chris Hicks and Nicholas Carlini and Yarin Gal and Robert Kirk},
+      year={2025},
+      eprint={2510.07192},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2510.07192}, 
+}
+
+@inproceedings{shelby_sociotechnical_2023,
+author = {Shelby, Renee and Rismani, Shalaleh and Henne, Kathryn and Moon, AJung and Rostamzadeh, Negar and Nicholas, Paul and Yilla-Akbari, N'Mah and Gallegos, Jess and Smart, Andrew and Garcia, Emilio and Virk, Gurleen},
+title = {Sociotechnical Harms of Algorithmic Systems: Scoping a Taxonomy for Harm Reduction},
+year = {2023},
+isbn = {9798400702310},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3600211.3604673},
+doi = {10.1145/3600211.3604673},
+abstract = {Understanding the landscape of potential harms from algorithmic systems enables practitioners to better anticipate consequences of the systems they build. It also supports the prospect of incorporating controls to help minimize harms that emerge from the interplay of technologies and social and cultural dynamics. A growing body of scholarship has identified a wide range of harms across different algorithmic technologies. However, computing research and practitioners lack a high level and synthesized overview of harms from algorithmic systems. Based on a scoping review of computing research (n=172), we present an applied taxonomy of sociotechnical harms to support a more systematic surfacing of potential harms in algorithmic systems. The final taxonomy builds on and refers to existing taxonomies, classifications, and terminologies. Five major themes related to sociotechnical harms — representational, allocative, quality-of-service, interpersonal harms, and social system/societal harms — and sub-themes are presented along with a description of these categories. We conclude with a discussion of challenges and opportunities for future research.},
+booktitle = {Proceedings of the 2023 AAAI/ACM Conference on AI, Ethics, and Society},
+pages = {723–741},
+numpages = {19},
+keywords = {AI, harms, machine learning, scoping review},
+location = {Montr\'{e}al, QC, Canada},
+series = {AIES '23}
+}
+
+@inproceedings{birhane_values_2022,
+author = {Birhane, Abeba and Kalluri, Pratyusha and Card, Dallas and Agnew, William and Dotan, Ravit and Bao, Michelle},
+title = {The Values Encoded in Machine Learning Research},
+year = {2022},
+isbn = {9781450393522},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3531146.3533083},
+doi = {10.1145/3531146.3533083},
+abstract = {Machine learning currently exerts an outsized influence on the world, increasingly affecting institutional practices and impacted communities. It is therefore critical that we question vague conceptions of the field as value-neutral or universally beneficial, and investigate what specific values the field is advancing. In this paper, we first introduce a method and annotation scheme for studying the values encoded in documents such as research papers. Applying the scheme, we analyze 100 highly cited machine learning papers published at premier machine learning conferences, ICML and NeurIPS. We annotate key features of papers which reveal their values: their justification for their choice of project, which attributes of their project they uplift, their consideration of potential negative consequences, and their institutional affiliations and funding sources. We find that few of the papers justify how their project connects to a societal need (15\%) and far fewer discuss negative potential (1\%). Through line-by-line content analysis, we identify 59 values that are uplifted in ML research, and, of these, we find that the papers most frequently justify and assess themselves based on Performance, Generalization, Quantitative evidence, Efficiency, Building on past work, and Novelty. We present extensive textual evidence and identify key themes in the definitions and operationalization of these values. Notably, we find systematic textual evidence that these top values are being defined and applied with assumptions and implications generally supporting the centralization of power. Finally, we find increasingly close ties between these highly cited papers and tech companies and elite universities.},
+booktitle = {Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency},
+pages = {173–184},
+numpages = {12},
+keywords = {Corporate ties, Encoded values of ML, ICML, NeurIPS, Power asymmetries},
+location = {Seoul, Republic of Korea},
+series = {FAccT '22}
+}
+
+@inproceedings{
+liu2024infinigram,
+title={Infini-gram: Scaling Unbounded n-gram Language Models to a Trillion Tokens},
+author={Jiacheng Liu and Sewon Min and Luke Zettlemoyer and Yejin Choi and Hannaneh Hajishirzi},
+booktitle={First Conference on Language Modeling},
+year={2024},
+url={https://openreview.net/forum?id=u2vAyMeLMm}
+}
+
+@inproceedings{NEURIPS2024_19e4ea30_datacomp,
+ author = {Li, Jeffrey and Fang, Alex and Smyrnis, Georgios and Ivgi, Maor and Jordan, Matt and Gadre, Samir and Bansal, Hritik and Guha, Etash and Keh, Sedrick and Arora, Kushal and Garg, Saurabh and Xin, Rui and Muennighoff, Niklas and Heckel, Reinhard and Mercat, Jean and Chen, Mayee and Gururangan, Suchin and Wortsman, Mitchell and Albalak, Alon and Bitton, Yonatan and Nezhurina, Marianna and Abbas, Amro and Hsieh, Cheng-Yu and Ghosh, Dhruba and Gardner, Josh and Kilian, Maciej and Zhang, Hanlin and Shao, Rulin and Pratt, Sarah and Sanyal, Sunny and Ilharco, Gabriel and Daras, Giannis and Marathe, Kalyani and Gokaslan, Aaron and Zhang, Jieyu and Chandu, Khyathi and Nguyen, Thao and Vasiljevic, Igor and Kakade, Sham and Song, Shuran and Sanghavi, Sujay and Faghri, Fartash and Oh, Sewoong and Zettlemoyer, Luke and Lo, Kyle and El-Nouby, Alaaeldin and Pouransari, Hadi and Toshev, Alexander and Wang, Stephanie and Groeneveld, Dirk and Soldaini, Luca and Koh, Pang Wei and Jitsev, Jenia and Kollar, Thomas and Dimakis, Alexandros G. and Carmon, Yair and Dave, Achal and Schmidt, Ludwig and Shankar, Vaishaal},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {14200--14282},
+ publisher = {Curran Associates, Inc.},
+ title = {DataComp-LM: In search of the next generation of training sets for language models},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/19e4ea30dded58259665db375885e412-Paper-Datasets_and_Benchmarks_Track.pdf},
+ volume = {37},
+ year = {2024}
+}
+
+@inproceedings{10.5555/3600270.3602446_chinchilla,
+author = {Hoffmann, Jordan and Borgeaud, Sebastian and Mensch, Arthur and Buchatskaya, Elena and Cai, Trevor and Rutherford, Eliza and de Las Casas, Diego and Hendricks, Lisa Anne and Welbl, Johannes and Clark, Aidan and Hennigan, Tom and Noland, Eric and Millican, Katie and van den Driessche, George and Damoc, Bogdan and Guy, Aurelia and Osindero, Simon and Simonyan, Karen and Elsen, Erich and Vinyals, Oriol and Rae, Jack W. and Sifre, Laurent},
+title = {Training compute-optimal large language models},
+year = {2022},
+isbn = {9781713871088},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {We investigate the optimal model size and number of tokens for training a Transformer language model under a given compute budget. We find that current large language models are significantly undertrained, a consequence of the recent focus on scaling language models whilst keeping the amount of training data constant. By training over 400 language models ranging from 70 million to over 16 billion parameters on 5 to 500 billion tokens, we find that for compute-optimal training, the model size and the number of training tokens should be scaled equally: for every doubling of model size the number of training tokens should also be doubled. We test this hypothesis by training a predicted compute-optimal model, Chinchilla, that uses the same compute budget as Gopher but with 70B parameters and 4\texttimes{} more more data. Chinchilla uniformly and significantly outperforms Gopher (280B), GPT-3 (175B), Jurassic-1 (178B), and Megatron-Turing NLG (530B) on a large range of downstream evaluation tasks. This also means that Chinchilla uses substantially less compute for fine-tuning and inference, greatly facilitating downstream usage. As a highlight, Chinchilla reaches a state-of-the-art average accuracy of 67.5\% on the MMLU benchmark, greater than a 7\% improvement over Gopher.},
+booktitle = {Proceedings of the 36th International Conference on Neural Information Processing Systems},
+articleno = {2176},
+numpages = {15},
+location = {New Orleans, LA, USA},
+series = {NIPS '22}
+}
+
+@inproceedings{groeneveld-etal-2024-olmo,
+    title = "{OLM}o: Accelerating the Science of Language Models",
+    author = "Groeneveld, Dirk  and
+      Beltagy, Iz  and
+      Walsh, Evan  and
+      Bhagia, Akshita  and
+      Kinney, Rodney  and
+      Tafjord, Oyvind  and
+      Jha, Ananya  and
+      Ivison, Hamish  and
+      Magnusson, Ian  and
+      Wang, Yizhong  and
+      Arora, Shane  and
+      Atkinson, David  and
+      Authur, Russell  and
+      Chandu, Khyathi  and
+      Cohan, Arman  and
+      Dumas, Jennifer  and
+      Elazar, Yanai  and
+      Gu, Yuling  and
+      Hessel, Jack  and
+      Khot, Tushar  and
+      Merrill, William  and
+      Morrison, Jacob  and
+      Muennighoff, Niklas  and
+      Naik, Aakanksha  and
+      Nam, Crystal  and
+      Peters, Matthew  and
+      Pyatkin, Valentina  and
+      Ravichander, Abhilasha  and
+      Schwenk, Dustin  and
+      Shah, Saurabh  and
+      Smith, William  and
+      Strubell, Emma  and
+      Subramani, Nishant  and
+      Wortsman, Mitchell  and
+      Dasigi, Pradeep  and
+      Lambert, Nathan  and
+      Richardson, Kyle  and
+      Zettlemoyer, Luke  and
+      Dodge, Jesse  and
+      Lo, Kyle  and
+      Soldaini, Luca  and
+      Smith, Noah  and
+      Hajishirzi, Hannaneh",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.841/",
+    doi = "10.18653/v1/2024.acl-long.841",
+    pages = "15789--15809",
+    abstract = "Language models (LMs) have become ubiquitous in both NLP research and in commercial product offerings. As their commercial importance has surged, the most powerful models have become closed off, gated behind proprietary interfaces, with important details of their training data, architectures, and development undisclosed. Given the importance of these details in scientifically studying these models, including their biases and potential risks, we believe it is essential for the research community to have access to powerful, truly open LMs. To this end, we have built OLMo, a competitive, truly Open Language Model, to enable the scientific study of language models. Unlike most prior efforts that have only released model weights and inference code, we release OLMo alongside open training data and training and evaluation code. We hope this release will empower the open research community and inspire a new wave of innovation."
+}
+
+
+@inproceedings{DBLP:conf/fat/BrownLMST22,
+  author       = {Hannah Brown and
+                  Katherine Lee and
+                  Fatemehsadat Mireshghallah and
+                  Reza Shokri and
+                  Florian Tram{\`{e}}r},
+  title        = {What Does it Mean for a Language Model to Preserve Privacy?},
+  booktitle    = {FAccT '22: 2022 {ACM} Conference on Fairness, Accountability, and
+                  Transparency, Seoul, Republic of Korea, June 21 - 24, 2022},
+  pages        = {2280--2292},
+  publisher    = {{ACM}},
+  year         = {2022},
+  url          = {https://doi.org/10.1145/3531146.3534642},
+  doi          = {10.1145/3531146.3534642},
+  timestamp    = {Mon, 28 Aug 2023 21:17:36 +0200},
+  biburl       = {https://dblp.org/rec/conf/fat/BrownLMST22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{DBLP:conf/sp/ShokriSSS17,
+  author       = {Reza Shokri and
+                  Marco Stronati and
+                  Congzheng Song and
+                  Vitaly Shmatikov},
+  title        = {Membership Inference Attacks Against Machine Learning Models},
+  booktitle    = {2017 {IEEE} Symposium on Security and Privacy, {SP} 2017, San Jose,
+                  CA, USA, May 22-26, 2017},
+  pages        = {3--18},
+  publisher    = {{IEEE} Computer Society},
+  year         = {2017},
+  url          = {https://doi.org/10.1109/SP.2017.41},
+  doi          = {10.1109/SP.2017.41},
+  timestamp    = {Fri, 24 Mar 2023 00:03:11 +0100},
+  biburl       = {https://dblp.org/rec/conf/sp/ShokriSSS17.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{allen-zhu_physics_2024,
+author = {Allen-Zhu, Zeyuan and Li, Yuanzhi},
+title = {Physics of language models: part 3.1, knowledge storage and extraction},
+year = {2024},
+publisher = {JMLR.org},
+abstract = {Large language models (LLMs) can store a vast amount of world knowledge, often extractable via question-answering (e.g., "What is Abraham Lincoln's birthday?"). However, do they answer such questions based on exposure to similar questions during training (i.e., cheating), or by genuinely learning to extract knowledge from sources like Wikipedia? In this paper, we investigate this issue using a controlled biography dataset. We find a strong correlation between the model's ability to extract knowledge and various diversity measures of the training data. Essentially, for knowledge to be reliably extracted, it must be sufficiently augmented (e.g., through paraphrasing, sentence shuffling) during pretraining. Without such augmentation, knowledge may be memorized but not extractable, leading to 0\% accuracy, regardless of subsequent instruction fine-tuning. To understand why this occurs, we employ (nearly) linear probing to demonstrate a strong connection between the observed correlation and how the model internally encodes knowledge -- whether it is linearly encoded in the hidden embeddings of entity names or distributed across other token embeddings in the training text. This paper provides several key recommendations for LLM pretraining in the industry: (1) rewrite the pretraining data -- using small, auxiliary models -- to provide knowledge augmentation, and (2) incorporate more instruction-finetuning data into the pretraining stage before it becomes too late.},
+booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+articleno = {45},
+numpages = {11},
+location = {Vienna, Austria},
+series = {ICML'24}
+}
+
+@inproceedings{DBLP:conf/iclr/CarliniIJLTZ23,
+  author       = {Nicholas Carlini and
+                  Daphne Ippolito and
+                  Matthew Jagielski and
+                  Katherine Lee and
+                  Florian Tram{\`{e}}r and
+                  Chiyuan Zhang},
+  title        = {Quantifying Memorization Across Neural Language Models},
+  booktitle    = {The Eleventh International Conference on Learning Representations,
+                  {ICLR} 2023, Kigali, Rwanda, May 1-5, 2023},
+  publisher    = {OpenReview.net},
+  year         = {2023},
+  url          = {https://openreview.net/forum?id=TatRHT\_1cK},
+  timestamp    = {Wed, 24 Jul 2024 16:50:33 +0200},
+  biburl       = {https://dblp.org/rec/conf/iclr/CarliniIJLTZ23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{zhang_counterfactual_2023,
+author = {Zhang, Chiyuan and Ippolito, Daphne and Lee, Katherine and Jagielski, Matthew and Tram\`{e}r, Florian and Carlini, Nicholas},
+title = {Counterfactual memorization in neural language models},
+year = {2023},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {Modern neural language models that are widely used in various NLP tasks risk memorizing sensitive information from their training data. Understanding this memorization is important in real world applications and also from a learning-theoretical perspective. An open question in previous studies of language model memorization is how to filter out "common" memorization. In fact, most memorization criteria strongly correlate with the number of occurrences in the training set, capturing memorized familiar phrases, public knowledge, templated texts, or other repeated data. We formulate a notion of counterfactual memorization which characterizes how a model's predictions change if a particular document is omitted during training. We identify and study counterfactually-memorized training examples in standard text datasets. We estimate the influence of each memorized training example on the validation set and on generated texts, showing how this can provide direct evidence of the source of memorization at test time.},
+booktitle = {Proceedings of the 37th International Conference on Neural Information Processing Systems},
+articleno = {1708},
+numpages = {42},
+location = {New Orleans, LA, USA},
+series = {NIPS '23}
+}
+
+@InProceedings{pmlr-v162-kandpal22a,
+  title = 	 {Deduplicating Training Data Mitigates Privacy Risks in Language Models},
+  author =       {Kandpal, Nikhil and Wallace, Eric and Raffel, Colin},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {10697--10707},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/kandpal22a/kandpal22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/kandpal22a.html},
+  abstract = 	 {Past work has shown that large language models are susceptible to privacy attacks, where adversaries generate sequences from a trained model and detect which sequences are memorized from the training set. In this work, we show that the success of these attacks is largely due to duplication in commonly used web-scraped training sets. We first show that the rate at which language models regenerate training sequences is superlinearly related to a sequence’s count in the training set. For instance, a sequence that is present 10 times in the training data is on average generated 1000x more often than a sequence that is present only once. We next show that existing methods for detecting memorized sequences have near-chance accuracy on non-duplicated training sequences. Finally, we find that after applying methods to deduplicate training data, language models are considerably more secure against these types of privacy attacks. Taken together, our results motivate an increased focus on deduplication in privacy-sensitive applications and a reevaluation of the practicality of existing privacy attacks.}
+}
+
+@inproceedings{
+elazar2024whats,
+title={What's In My Big Data?},
+author={Yanai Elazar and Akshita Bhagia and Ian Helgi Magnusson and Abhilasha Ravichander and Dustin Schwenk and Alane Suhr and Evan Pete Walsh and Dirk Groeneveld and Luca Soldaini and Sameer Singh and Hannaneh Hajishirzi and Noah A. Smith and Jesse Dodge},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=RvfPnOkPV4}
+}
+
+
+@article{hagemann2018soft,
+  title={Soft Law for Hard Problems: The Governance of Emerging Technologies in an Uncertain Future},
+  author={Hagemann, Ryan and Skees, Jennifer Huddleston and Thierer, Adam},
+  journal={Colorado Technology Law Journal},
+  volume={17},
+  pages={37},
+  year={2018}
+}
+
+@inproceedings{
+saxon2024benchmarks,
+title={Benchmarks as Microscopes: A Call for Model Metrology},
+author={Michael Saxon and Ari Holtzman and Peter West and William Yang Wang and Naomi Saphra},
+booktitle={First Conference on Language Modeling},
+year={2024},
+url={https://openreview.net/forum?id=bttKwCZDkm}
+}
+
+@inproceedings{DBLP:conf/icml/BidermanSABOHKP23,
+  author       = {Stella Biderman and
+                  Hailey Schoelkopf and
+                  Quentin Gregory Anthony and
+                  Herbie Bradley and
+                  Kyle O'Brien and
+                  Eric Hallahan and
+                  Mohammad Aflah Khan and
+                  Shivanshu Purohit and
+                  USVSN Sai Prashanth and
+                  Edward Raff and
+                  Aviya Skowron and
+                  Lintang Sutawika and
+                  Oskar van der Wal},
+  editor       = {Andreas Krause and
+                  Emma Brunskill and
+                  Kyunghyun Cho and
+                  Barbara Engelhardt and
+                  Sivan Sabato and
+                  Jonathan Scarlett},
+  title        = {Pythia: {A} Suite for Analyzing Large Language Models Across Training
+                  and Scaling},
+  booktitle    = {International Conference on Machine Learning, {ICML} 2023, 23-29 July
+                  2023, Honolulu, Hawaii, {USA}},
+  series       = {Proceedings of Machine Learning Research},
+  volume       = {202},
+  pages        = {2397--2430},
+  publisher    = {{PMLR}},
+  year         = {2023},
+  url          = {https://proceedings.mlr.press/v202/biderman23a.html},
+  timestamp    = {Mon, 28 Aug 2023 17:23:08 +0200},
+  biburl       = {https://dblp.org/rec/conf/icml/BidermanSABOHKP23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{bakouch2025smollm3,
+  title={{SmolLM3: smol, multilingual, long-context reasoner}},
+  author={Bakouch, Elie and Ben Allal, Loubna and Lozhkov, Anton and Tazi, Nouamane and Tunstall, Lewis and Patiño, Carlos Miguel and Beeching, Edward and Roucher, Aymeric and Reedi, Aksel Joonas and Gallouédec, Quentin and Rasul, Kashif and Habib, Nathan and Fourrier, Clémentine and Kydlicek, Hynek and Penedo, Guilherme and Larcher, Hugo and Morlon, Mathieu and Srivastav, Vaibhav and Lochner, Joshua and Nguyen, Xuan-Son and Raffel, Colin and von Werra, Leandro and Wolf, Thomas},
+  year={2025},
+  howpublished={\url{https://huggingface.co/blog/smollm3}}
+}
+
+@misc{us_const_art1_sec8_cl8,
+  author    = {U.S. Constitution},
+  title  = {Article {I}, {S}ection 8, {C}lause 8},
+  note = {“To promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries”},
+  year   = {1787}
+}
+
+@inproceedings{wei_2025_interrogating,
+author = {Wei, Johnny Tian-Zheng and Wang, Maggie and Godbole, Ameya and Choi, Jonathan and Jia, Robin},
+title = {Interrogating LLM design under copyright law},
+year = {2025},
+isbn = {9798400714825},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3715275.3732193},
+doi = {10.1145/3715275.3732193},
+abstract = {The current discourse on large language models (LLMs) and copyright largely takes a “behavioral” perspective, focusing on model outputs and evaluating whether they are substantially similar to training data. However, substantial similarity is difficult to define algorithmically and a narrow focus on model outputs is insufficient to address all copyright risks. In this interdisciplinary work, we take a complementary “structural” perspective and shift our focus to how LLMs are trained. We operationalize a notion of “fair learning” by measuring whether any training decision substantially affected the model’s memorization. As a case study, we deconstruct Pythia, an open-source LLM, and demonstrate the use of causal and correlational analyses to make factual determinations about Pythia’s training decisions. By proposing a legal standard for fair learning and connecting memorization analyses to this standard, we identify how judges may advance the goals of copyright law through adjudication. Finally, we discuss how a fair learning standard might evolve to enhance its clarity by becoming more rule-like and incorporating external technical guidelines.},
+booktitle = {Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency},
+pages = {3030–3045},
+numpages = {16},
+keywords = {Copyright, LLMs, regression},
+location = {
+},
+series = {FAccT '25}
+}
+
+@article{Longpre2024,
+  author  = {Longpre, Shayne and Mahari, Robert and Chen, Anthony and Obeng-Marnu, Naana and Sileo, Damien and Brannon, William and Muennighoff, Niklas and Khazam, Nathan and Kabbara, Jad and Perisetla, Kartik and Wu, Xinyi and Shippole, Enrico and Bollacker, Kurt and Wu, Tongshuang and Villa, Luis and Pentland, Sandy and Hooker, Sara},
+  title   = {A large-scale audit of dataset licensing and attribution in AI},
+  journal = {Nature Machine Intelligence},
+  year    = {2024},
+  volume  = {6},
+  number  = {8},
+  pages   = {975--987},
+  month   = aug,
+  doi     = {10.1038/s42256-024-00878-8},
+  url     = {https://doi.org/10.1038/s42256-024-00878-8},
+  issn    = {2522-5839}
+}
+
+@article{lemley2020fair,
+  author = {Lemley, Mark A. and Casey, Bryan},
+  title = {Fair Learning},
+  year = {2020},
+  month = {January 30},
+  note = {Available at SSRN: \url{https://ssrn.com/abstract=3528447} or \url{http://dx.doi.org/10.2139/ssrn.3528447}}
+}
+
+@article{sag2023copyright,
+  title={Copyright Safety for Generative AI},
+  author={Sag, Matthew},
+  journal={Houston Law Review},
+  volume={61},
+  number={2},
+  year={2023},
+  url={https://ssrn.com/abstract=4438593},
+  doi={10.2139/ssrn.4438593}
+}
+
+@misc{masterlist_ai_lawsuits_2024,
+  author = {Edward Lee},
+  title = {{Master List of Lawsuits v. AI: ChatGPT, OpenAI, Microsoft, Meta, MidJourney, Other AI Cos.}},
+  year = {2024},
+  month = {August 27},
+  url = {https://chatgptiseatingtheworld.com/},
+  note = {Accessed: 2025-9-9}
+}
+
+@inproceedings{wei_evaluating_2024,
+ author = {Wei, Boyi and Shi, Weijia and Huang, Yangsibo and Smith, Noah A and Zhang, Chiyuan and Zettlemoyer, Luke and Li, Kai and Henderson, Peter},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {139114--139150},
+ publisher = {Curran Associates, Inc.},
+ title = {Evaluating Copyright Takedown Methods for Language Models},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/faed4276b52ef762879db4142655c699-Paper-Datasets_and_Benchmarks_Track.pdf},
+ volume = {37},
+ year = {2024}
+}
+
+@inproceedings{schwarzchild_rethinking_2024,
+ author = {Schwarzschild, Avi and Feng, Zhili and Maini, Pratyush and Lipton, Zachary C. and Kolter, J. Zico},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {56244--56267},
+ publisher = {Curran Associates, Inc.},
+ title = {Rethinking LLM Memorization through the Lens of Adversarial Compression},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/66453d578afae006252d2ea090e151c9-Paper-Conference.pdf},
+ volume = {37},
+ year = {2024}
+}
+
+@inproceedings{ippolito-etal-2023-preventing,
+    title = "Preventing Generation of Verbatim Memorization in Language Models Gives a False Sense of Privacy",
+    author = "Ippolito, Daphne  and
+      Tramer, Florian  and
+      Nasr, Milad  and
+      Zhang, Chiyuan  and
+      Jagielski, Matthew  and
+      Lee, Katherine  and
+      Choquette Choo, Christopher  and
+      Carlini, Nicholas",
+    editor = "Keet, C. Maria  and
+      Lee, Hung-Yi  and
+      Zarrie{\ss}, Sina",
+    booktitle = "Proceedings of the 16th International Natural Language Generation Conference",
+    month = sep,
+    year = "2023",
+    address = "Prague, Czechia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.inlg-main.3/",
+    doi = "10.18653/v1/2023.inlg-main.3",
+    pages = "28--53",
+    abstract = "Studying data memorization in neural language models helps us understand the risks (e.g., to privacy or copyright) associated with models regurgitating training data and aids in the development of countermeasures. Many prior works{---}and some recently deployed defenses{---}focus on ``verbatim memorization'', defined as a model generation that exactly matches a substring from the training set. We argue that verbatim memorization definitions are too restrictive and fail to capture more subtle forms of memorization. Specifically, we design and implement an efficient defense that {\_}perfectly{\_} prevents all verbatim memorization. And yet, we demonstrate that this ``perfect'' filter does not prevent the leakage of training data. Indeed, it is easily circumvented by plausible and minimally modified ``style-transfer'' prompts{---}and in some cases even the non-modified original prompts{---}to extract memorized information. We conclude by discussing potential alternative definitions and why defining memorization is a difficult yet crucial open question for neural language models."
+}
+
+@inproceedings{hayes-etal-2025-measuring,
+    title = "Measuring memorization in language models via probabilistic extraction",
+    author = "Hayes, Jamie  and
+      Swanberg, Marika  and
+      Chaudhari, Harsh  and
+      Yona, Itay  and
+      Shumailov, Ilia  and
+      Nasr, Milad  and
+      Choquette-Choo, Christopher A.  and
+      Lee, Katherine  and
+      Cooper, A. Feder",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-long.469/",
+    doi = "10.18653/v1/2025.naacl-long.469",
+    pages = "9266--9291",
+    ISBN = "979-8-89176-189-6",
+    abstract = "Large language models (LLMs) are susceptible to memorizing training data, raising concerns about the potential extraction of sensitive information at generation time. Discoverable extraction is the most common method for measuring this issue: split a training example into a prefix and suffix, then prompt the LLM with the prefix, and deem the example extractable if the LLM generates the matching suffix using greedy sampling. This definition yields a yes-or-no determination of whether extraction was successful with respect to a single query. Though efficient to compute, we show that this definition is unreliable because it does not account for non-determinism present in more realistic (non-greedy) sampling schemes, for which LLMs produce a range of outputs for the same prompt. We introduce probabilistic discoverable extraction, which, without additional cost, relaxes discoverable extraction by considering multiple queries to quantify the probability of extracting a target sequence. We evaluate our probabilistic measure across different models, sampling schemes, and training-data repetitions, and find that this measure provides more nuanced information about extraction risk compared to traditional discoverable extraction."
+}
+
+@misc{gerlach2018standardizedprojectgutenbergcorpus,
+      title={A standardized Project Gutenberg corpus for statistical analysis of natural language and quantitative linguistics}, 
+      author={Martin Gerlach and Francesc Font-Clos},
+      year={2018},
+      eprint={1812.08092},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/1812.08092}, 
+}
+
+@techreport{usco_ai_part3,
+  author       = {{U.S. Copyright Office}},
+  title        = {Copyright and Artificial Intelligence, Part 3: Generative AI Training},
+  institution  = {U.S. Copyright Office},
+  year         = {2025},
+  note         = {Pre-Publication Version},
+  url          = {https://www.copyright.gov/ai/}
+}
+
+@misc{usc_17_106,
+  author={{U.S. Constitution}},
+  title        = {{17 U.S.C. § 106: Exclusive Rights in Copyrighted Works}},
+  note         = {This section grants copyright owners exclusive rights to reproduce, prepare derivative works, distribute copies, perform publicly, display publicly, and, in the case of sound recordings, perform publicly by means of digital audio transmission.},
+  year         = {2024},
+  url          = {https://www.law.cornell.edu/uscode/text/17/106},
+  howpublished = {United States Code}
+}
+
+@misc{usc_17_107,
+  author={{U.S. Constitution}},
+  title        = {17 U.S.C. § 107: Limitations on Exclusive Rights—Fair Use},
+  note         = {This section outlines the fair use doctrine, permitting certain uses of copyrighted works for purposes such as criticism, comment, news reporting, teaching, scholarship, or research. It specifies four factors to consider in determining fair use: (1) the purpose and character of the use; (2) the nature of the copyrighted work; (3) the amount and substantiality of the portion used; and (4) the effect of the use upon the potential market for or value of the copyrighted work.},
+  year         = {2024},
+  url          = {https://www.law.cornell.edu/uscode/text/17/107},
+  howpublished = {United States Code}
+}
+
+@techreport{lucchi2025ai,
+  author       = {Nicola Lucchi},
+  title        = {{Generative AI and Copyright: Training, Creation, Regulation}},
+  institution  = {European Parliament, Policy Department for Citizens' Rights and Constitutional Affairs},
+  year         = {2025},
+  number       = {PE 774.095},
+  url          = {https://www.europarl.europa.eu/thinktank/en/document/IUST_STU(2025)774095},
+  note         = {Study requested by the Committee on Legal Affairs (JURI)}
+}
+
+@misc{cooper2025extracting,
+  title        = {Extracting Memorized Pieces of (Copyrighted) Books from Open-Weight Language Models},
+  author       = {Cooper, A. Feder and Gokaslan, Aaron and Ahmed, Ahmed and Cyphert, Amy and Lemley, Mark A. and Ho, Daniel E. and Liang, Percy and De Sa, Christopher},
+  year         = {2025},
+  month        = apr,
+  howpublished = {SSRN Working Paper No. 5262084, Stanford Public Law Working Paper; WVU College of Law Research Paper No. 2025-005},
+  note         = {Posted 21 May 2025; Last revised 11 July 2025},
+  url          = {https://ssrn.com/abstract=5262084},
+  doi          = {10.2139/ssrn.5262084}
+}
+
+@article{cooper2025files,
+  author       = {Cooper, A. Feder and Grimmelmann, James},
+  title        = {The Files are in the Computer: On Copyright, Memorization, and Generative AI},
+  journal      = {Chicago-Kent Law Review},
+  volume       = {100},
+  pages        = {141--219},
+  year         = {2025},
+  url          = {https://ssrn.com/abstract=4803118},
+  note         = {Cornell Legal Studies Research Paper No. 24-30}
+}
+
+@misc{hong2025commonpoolprivacyproblems,
+      title={A Common Pool of Privacy Problems: Legal and Technical Lessons from a Large-Scale Web-Scraped Machine Learning Dataset}, 
+      author={Rachel Hong and Jevan Hutson and William Agnew and Imaad Huda and Tadayoshi Kohno and Jamie Morgenstern},
+      year={2025},
+      eprint={2506.17185},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2506.17185},
+}
+
+@inproceedings{tanon_yago_2020,
+author = {Pellissier Tanon, Thomas and Weikum, Gerhard and Suchanek, Fabian},
+title = {YAGO 4: A Reason-able Knowledge Base},
+year = {2020},
+isbn = {978-3-030-49460-5},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-030-49461-2_34},
+doi = {10.1007/978-3-030-49461-2_34},
+abstract = {YAGO is one of the large knowledge bases in the Linked Open Data cloud. In this resource paper, we present its latest version, YAGO 4, which reconciles the rigorous typing and constraints of schema.org with the rich instance data of Wikidata. The resulting resource contains 2 billion type-consistent triples for 64 Million entities, and has a consistent ontology that allows semantic reasoning with OWL 2 description logics.},
+booktitle = {The Semantic Web: 17th International Conference, ESWC 2020, Heraklion, Crete, Greece, May 31–June 4, 2020, Proceedings},
+pages = {583–596},
+numpages = {14},
+location = {Heraklion, Crete, Greece}
+}
+
+@inproceedings{
+freeman2024exploring,
+title={Exploring Memorization and Copyright Violation in Frontier {LLM}s: A Study of the New York Times v. Open{AI} 2023 Lawsuit},
+author={Joshua Freeman and Chloe Rippe and Edoardo Debenedetti and Maksym Andriushchenko},
+booktitle={Neurips Safe Generative AI Workshop 2024},
+year={2024},
+url={https://openreview.net/forum?id=C66DBl9At8}
+}
+
+@inproceedings{chang-etal-2023-speak,
+    title = "Speak, Memory: An Archaeology of Books Known to {C}hat{GPT}/{GPT}-4",
+    author = "Chang, Kent  and
+      Cramer, Mackenzie  and
+      Soni, Sandeep  and
+      Bamman, David",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.453",
+    doi = "10.18653/v1/2023.emnlp-main.453",
+    pages = "7312--7327",
+    abstract = "In this work, we carry out a data archaeology to infer books that are known to ChatGPT and GPT-4 using a name cloze membership inference query. We find that OpenAI models have memorized a wide collection of copyrighted materials, and that the degree of memorization is tied to the frequency with which passages of those books appear on the web. The ability of these models to memorize an unknown set of books complicates assessments of measurement validity for cultural analytics by contaminating test data; we show that models perform much better on memorized books than on non-memorized books for downstream tasks. We argue that this supports a case for open models whose training data is known.",
+}
+
+@inproceedings{chen-etal-2024-copybench,
+    title = "{C}opy{B}ench: Measuring Literal and Non-Literal Reproduction of Copyright-Protected Text in Language Model Generation",
+    author = "Chen, Tong  and
+      Asai, Akari  and
+      Mireshghallah, Niloofar  and
+      Min, Sewon  and
+      Grimmelmann, James  and
+      Choi, Yejin  and
+      Hajishirzi, Hannaneh  and
+      Zettlemoyer, Luke  and
+      Koh, Pang Wei",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.844/",
+    doi = "10.18653/v1/2024.emnlp-main.844",
+    pages = "15134--15158",
+    abstract = "Evaluating the degree of reproduction of copyright-protected content by language models (LMs) is of significant interest to the AI and legal communities. Although both literal and non-literal similarities are considered by courts when assessing the degree of reproduction, prior research has focused only on literal similarities. To bridge this gap, we introduce CopyBench, a benchmark designed to measure both literal and non-literal copying in LM generations. Using copyrighted fiction books as text sources, we provide automatic evaluation protocols to assess literal and non-literal copying, balanced against the model utility in terms of the ability to recall facts from the copyrighted works and generate fluent completions. We find that, although literal copying is relatively rare, two types of non-literal copying{---}event copying and character copying{---}occur even in models as small as 7B parameters. Larger models demonstrate significantly more copying, with literal copying rates increasing from 0.2{\%} to 10.5{\%} and non-literal copying from 2.3{\%} to 5.9{\%} when comparing Llama3-8B and 70B models, respectively. We further evaluate the effectiveness of current strategies for mitigating copying and show that (1) training-time alignment can reduce literal copying but may increase non-literal copying, and (2) current inference-time mitigation methods primarily reduce literal but not non-literal copying."
+}
+
+@misc{roh2025bobsconfettiphoneticmemorization,
+      title={Bob's Confetti: Phonetic Memorization Attacks in Music and Video Generation}, 
+      author={Jaechul Roh and Zachary Novack and Yuefeng Peng and Niloofar Mireshghallah and Taylor Berg-Kirkpatrick and Amir Houmansadr},
+      year={2025},
+      eprint={2507.17937},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2507.17937},
+}
+
+@inproceedings{duarte_decop_2024,
+author = {Duarte, Andr\'{e} V. and Zhao, Xuandong and Oliveira, Arlindo L. and Li, Lei},
+title = {DE-COP: detecting copyrighted content in language models training data},
+year = {2024},
+publisher = {JMLR.org},
+abstract = {How can we detect if copyrighted content was used in the training process of a language model, considering that the training data is typically undisclosed? We are motivated by the premise that a language model is likely to identify verbatim excerpts from its training text. We propose DE-COP, a method to determine whether a piece of copyrighted content was included in training. DE-COP's core approach is to probe an LLM with multiple-choice questions, whose options include both verbatim text and their paraphrases. We construct BookTection, a benchmark with excerpts from 165 books published prior and subsequent to a model's training cutoff, along with their paraphrases. Our experiments show that DE-COP surpasses the prior best method by 9.6\% in detection performance (AUC) on models with logits available. Moreover, DE-COP also achieves an average accuracy of 72\% for detecting suspect books on fully black-box models where prior methods give approximately 4\% accuracy. The code and datasets are available at https://github.com/LeiLiLab/DE-COP.},
+booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+articleno = {475},
+numpages = {17},
+location = {Vienna, Austria},
+series = {ICML'24}
+}
+
+@inproceedings{
+wang2025generalization,
+title={Generalization v.s. Memorization: Tracing Language Models{\textquoteright} Capabilities Back to Pretraining Data},
+author={Xinyi Wang and Antonis Antoniades and Yanai Elazar and Alfonso Amayuelas and Alon Albalak and Kexun Zhang and William Yang Wang},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=IQxBDLmVpT}
+}
+
+@inproceedings{dolan2005automatically,
+author = {Dolan, Bill and Brockett, Chris},
+title = {Automatically Constructing a Corpus of Sentential Paraphrases},
+booktitle = {Third International Workshop on Paraphrasing (IWP2005)},
+year = {2005},
+month = {January},
+abstract = {An obstacle to research in automatic paraphrase identification and generation is the lack of large-scale, publiclyavailable labeled corpora of sentential paraphrases. This paper describes the creation of the recently-released MicrosoftResearch Paraphrase Corpus, which contains 5801 sentence pairs, each hand-labeled with a binary judgment as to whether the pair constitutes a paraphrase. The corpus was created using heuristic extraction techniques in conjunction with an SVM-based classifier to select likely sentence-level paraphrases from a large corpus of topicclustered news data. These pairs were then submitted to human judges, who confirmed that 67% were in fact semantically equivalent. In addition to describing the corpus itself, we explore a number of issues that arose in defining guidelines for the human raters.},
+publisher = {Asia Federation of Natural Language Processing},
+url = {https://www.microsoft.com/en-us/research/publication/automatically-constructing-a-corpus-of-sentential-paraphrases/},
+edition = {Third International Workshop on Paraphrasing (IWP2005)},
+}
+
+@inproceedings{zhang-etal-2019-paws,
+    title = "{PAWS}: Paraphrase Adversaries from Word Scrambling",
+    author = "Zhang, Yuan  and
+      Baldridge, Jason  and
+      He, Luheng",
+    editor = "Burstein, Jill  and
+      Doran, Christy  and
+      Solorio, Thamar",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1131/",
+    doi = "10.18653/v1/N19-1131",
+    pages = "1298--1308",
+    abstract = "Existing paraphrase identification datasets lack sentence pairs that have high lexical overlap without being paraphrases. Models trained on such data fail to distinguish pairs like flights from New York to Florida and flights from Florida to New York. This paper introduces PAWS (Paraphrase Adversaries from Word Scrambling), a new dataset with 108,463 well-formed paraphrase and non-paraphrase pairs with high lexical overlap. Challenging pairs are generated by controlled word swapping and back translation, followed by fluency and paraphrase judgments by human raters. State-of-the-art models trained on existing datasets have dismal performance on PAWS ({\ensuremath{<}}40{\%} accuracy); however, including PAWS training data for these models improves their accuracy to 85{\%} while maintaining performance on existing tasks. In contrast, models that do not capture non-local contextual information fail even with PAWS training examples. As such, PAWS provides an effective instrument for driving further progress on models that better exploit structure, context, and pairwise comparisons."
+}
+
+@inproceedings{zhang-etal-2018-personalizing,
+    title = "Personalizing Dialogue Agents: {I} have a dog, do you have pets too?",
+    author = "Zhang, Saizheng  and
+      Dinan, Emily  and
+      Urbanek, Jack  and
+      Szlam, Arthur  and
+      Kiela, Douwe  and
+      Weston, Jason",
+    editor = "Gurevych, Iryna  and
+      Miyao, Yusuke",
+    booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P18-1205/",
+    doi = "10.18653/v1/P18-1205",
+    pages = "2204--2213",
+    abstract = "Chit-chat models are known to have several problems: they lack specificity, do not display a consistent personality and are often not very captivating. In this work we present the task of making chit-chat more engaging by conditioning on profile information. We collect data and train models to (i)condition on their given profile information; and (ii) information about the person they are talking to, resulting in improved dialogues, as measured by next utterance prediction. Since (ii) is initially unknown our model is trained to engage its partner with personal topics, and we show the resulting dialogue can be used to predict profile information about the interlocutors."
+}
+
+@misc{solove2024great_scrape,
+  title        = {The Great Scrape: The Clash Between Scraping and Privacy},
+  author       = {Solove, Daniel J. and Hartzog, Woodrow},
+  year         = {2024},
+  howpublished = {SSRN Electronic Journal},
+  note         = {Forthcoming in *California Law Review* (2025); posted July 3, 2024},
+  doi          = {10.2139/ssrn.4884485},
+  url          = {https://ssrn.com/abstract=4884485}
+}
+
+@misc{gdpr2016,
+  author       = {{European Union}},
+  title        = {Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)},
+  year         = {2016},
+  howpublished = {Official Journal of the European Union, L 119, 4 May 2016, p. 1--88},
+  url          = {https://eur-lex.europa.eu/eli/reg/2016/679/oj},
+  note         = {Accessed: 2025-09-08}
+}
+
+@article{KamaraDeHert2018,
+  author       = {Kamara, Irene and De Hert, Paul},
+  title        = {Understanding the Balancing Act Behind the Legitimate Interest of the Controller Ground: A Pragmatic Approach},
+  journal      = {Brussels Privacy Hub, SSRN Electronic Journal},
+  volume       = {4},
+  number       = {12},
+  pages        = {1--35},
+  year         = {2018},
+  month        = aug,
+  note         = {Available at SSRN: \url{https://ssrn.com/abstract=3228369} or \url{http://dx.doi.org/10.2139/ssrn.3228369}},
+}
+
+@misc{ccpa2018,
+  author = {{State of California}},
+  title        = {California Consumer Privacy Act of 2018},
+  year         = {2018},
+  note         = {Cal. Civ. Code §§ 1798.100--1798.199},
+  howpublished = {\url{https://oag.ca.gov/privacy/ccpa}},
+}
+
+@inproceedings{mallen-etal-2023-trust,
+    title = "When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories",
+    author = "Mallen, Alex  and
+      Asai, Akari  and
+      Zhong, Victor  and
+      Das, Rajarshi  and
+      Khashabi, Daniel  and
+      Hajishirzi, Hannaneh",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.546/",
+    doi = "10.18653/v1/2023.acl-long.546",
+    pages = "9802--9822",
+    abstract = "Despite their impressive performance on diverse tasks, large language models (LMs) still struggle with tasks requiring rich world knowledge, implying the difficulty of encoding a wealth of world knowledge in their parameters. This paper aims to understand LMs' strengths and limitations in memorizing factual knowledge, by conducting large-scale knowledge probing experiments on two open-domain entity-centric QA datasets: PopQA, our new dataset with 14k questions about long-tail entities, and EntityQuestions, a widely used open-domain QA dataset. We find that LMs struggle with less popular factual knowledge, and that retrieval augmentation helps significantly in these cases. Scaling, on the other hand, mainly improves memorization of popular knowledge, and fails to appreciably improve memorization of factual knowledge in the tail. Based on those findings, we devise a new method for retrieval-augmentation that improves performance and reduces inference costs by only retrieving non-parametric memories when necessary."
+}
+
+@article{sakaguchi_2021_winogrande,
+author = {Sakaguchi, Keisuke and Bras, Ronan Le and Bhagavatula, Chandra and Choi, Yejin},
+title = {WinoGrande: an adversarial winograd schema challenge at scale},
+year = {2021},
+issue_date = {September 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {64},
+number = {9},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/3474381},
+doi = {10.1145/3474381},
+abstract = {Commonsense reasoning remains a major challenge in AI, and yet, recent progresses on benchmarks may seem to suggest otherwise. In particular, the recent neural language models have reported above 90\% accuracy on the Winograd Schema Challenge (WSC), a commonsense benchmark originally designed to be unsolvable for statistical models that rely simply on word associations. This raises an important question---whether these models have truly acquired robust commonsense capabilities or they rely on spurious biases in the dataset that lead to an overestimation of the true capabilities of machine commonsense.To investigate this question, we introduce WinoGrande, a large-scale dataset of 44k problems, inspired by the original WSC, but adjusted to improve both the scale and the hardness of the dataset. The key steps of the dataset construction consist of (1) large-scale crowdsourcing, followed by (2) systematic bias reduction using a novel AFLITE algorithm that generalizes human-detectable word associations to machine-detectable embedding associations. Our experiments demonstrate that state-of-the-art models achieve considerably lower accuracy (59.4\%-79.1\%) on WINOGRANDE compared to humans (94\%), confirming that the high performance on the original WSC was inflated by spurious biases in the dataset.Furthermore, we report new state-of-the-art results on five related benchmarks with emphasis on their dual implications. On the one hand, they demonstrate the effectiveness of WINOGRANDE when used as a resource for transfer learning. On the other hand, the high performance on all these benchmarks suggests the extent to which spurious biases are prevalent in all such datasets, which motivates further research on algorithmic bias reduction.},
+journal = {Commun. ACM},
+month = aug,
+pages = {99–106},
+numpages = {8}
+}
+
+@software{gpt-neox-library,
+  title = {{GPT-NeoX: Large Scale Autoregressive Language Modeling in PyTorch}},
+  author = {Andonian, Alex and Anthony, Quentin and Biderman, Stella and Black, Sid and Gali, Preetham and Gao, Leo and Hallahan, Eric and Levy-Kramer, Josh and Leahy, Connor and Nestler, Lucas and Parker, Kip and Pieler, Michael and Phang, Jason and Purohit, Shivanshu and Schoelkopf, Hailey and Stander, Dashiell and Songz, Tri and Tigges, Curt and Thérien, Benjamin and Wang, Phil and Weinbach, Samuel},
+  url = {https://www.github.com/eleutherai/gpt-neox},
+  doi = {10.5281/zenodo.5879544},
+  month = {9},
+  year = {2023},
+  version = {2.0.0},
+}
+
+@misc{cooper2024machineunlearningdoesntthink,
+      title={Machine Unlearning Doesn't Do What You Think: Lessons for Generative AI Policy, Research, and Practice}, 
+      author={A. Feder Cooper and Christopher A. Choquette-Choo and Miranda Bogen and Matthew Jagielski and Katja Filippova and Ken Ziyu Liu and Alexandra Chouldechova and Jamie Hayes and Yangsibo Huang and Niloofar Mireshghallah and Ilia Shumailov and Eleni Triantafillou and Peter Kairouz and Nicole Mitchell and Percy Liang and Daniel E. Ho and Yejin Choi and Sanmi Koyejo and Fernando Delgado and James Grimmelmann and Vitaly Shmatikov and Christopher De Sa and Solon Barocas and Amy Cyphert and Mark Lemley and danah boyd and Jennifer Wortman Vaughan and Miles Brundage and David Bau and Seth Neel and Abigail Z. Jacobs and Andreas Terzis and Hanna Wallach and Nicolas Papernot and Katherine Lee},
+      year={2024},
+      eprint={2412.06966},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2412.06966}, 
+}
+
+@article{cohen-etal-2024-evaluating,
+    title = "Evaluating the Ripple Effects of Knowledge Editing in Language Models",
+    author = "Cohen, Roi  and
+      Biran, Eden  and
+      Yoran, Ori  and
+      Globerson, Amir  and
+      Geva, Mor",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "12",
+    year = "2024",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/2024.tacl-1.16/",
+    doi = "10.1162/tacl_a_00644",
+    pages = "283--298",
+    abstract = "Modern language models capture a large body of factual knowledge. However, some facts can be incorrectly induced or become obsolete over time, resulting in factually incorrect generations. This has led to the development of various editing methods that allow updating facts encoded by the model. Evaluation of these methods has primarily focused on testing whether an individual fact has been successfully injected, and if similar predictions for other subjects have not changed. Here we argue that such evaluation is limited, since injecting one fact (e.g., ``Jack Depp is the son of Johnny Depp'') introduces a ``ripple effect'' in the form of additional facts that the model needs to update (e.g., ``Jack Depp is the sibling of Lily-Rose Depp''). To address this, we propose novel evaluation criteria that consider the implications of an edit on related facts. Using these criteria, we then construct RippleEdits, a diagnostic benchmark of 5K factual edits, capturing various types of ripple effects. We evaluate prominent editing methods on RippleEdits, showing that they fail to introduce consistent changes in the model{'}s knowledge. In addition, we find that a simple in-context editing baseline obtains the best scores on our benchmark, suggesting a promising research direction for model editing.1"
+}
+
+@techreport{NIST800226,
+  author       = {Joseph P. Near and David Darais and Naomi Lefkovitz and Gary S. Howarth},
+  title        = {Guidelines for Evaluating Differential Privacy Guarantees},
+  institution  = {National Institute of Standards and Technology},
+  year         = {2023},
+  number       = {NIST Special Publication 800-226},
+  doi          = {10.6028/NIST.SP.800-226},
+  url          = {https://doi.org/10.6028/NIST.SP.800-226}
+}
+
+@inproceedings{johnson_2024_fall,
+author = {Johnson, Nari and Moharana, Sanika and Harrington, Christina and Andalibi, Nazanin and Heidari, Hoda and Eslami, Motahhare},
+title = {The Fall of an Algorithm: Characterizing the Dynamics Toward Abandonment},
+year = {2024},
+isbn = {9798400704505},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3630106.3658910},
+doi = {10.1145/3630106.3658910},
+abstract = {As more algorithmic systems have come under scrutiny for their potential to inflict societal harms, an increasing number of organizations that hold power over harmful algorithms have chosen, or were required under the law, to abandon them. While social movements and calls to abandon harmful algorithms have emerged across application domains, little academic attention has been paid to studying abandonment as a means to mitigate algorithmic harms. In this paper, we take a first step towards conceptualizing “algorithm abandonment” as an organization’s decision to stop designing, developing, or using an algorithmic system due to its (potential) harms. We conduct a thematic analysis of real-world cases of algorithm abandonment to characterize the dynamics leading to this outcome. Our analysis of 40 cases reveals that campaigns to abandon an algorithm follow a common process of six iterative phases: discovery, diagnosis, dissemination, dialogue, decision, and death, which we term the 6 D’s of abandonment. In addition, we highlight key factors that facilitate (or prohibit) abandonment, which include characteristics of both the technical and social systems that the algorithm is embedded within. We discuss implications for several stakeholders, including proprietors and technologists who have the power to influence an algorithm’s (dis)continued use, FAccT researchers, and policymakers.},
+booktitle = {Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency},
+pages = {337–358},
+numpages = {22},
+keywords = {abandonment, accountability, contestation, refusal},
+location = {Rio de Janeiro, Brazil},
+series = {FAccT '24}
+}
+
+@article{meng2022locating,
+  title={Locating and Editing Factual Associations in {GPT}},
+  author={Kevin Meng and David Bau and Alex Andonian and Yonatan Belinkov},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2022},
+  note={arXiv:2202.05262}
+}
+
+@inproceedings{bourtoule_2021_machine,
+title = "Machine unlearning",
+abstract = "Once users have shared their data online, it is generally difficult for them to revoke access and ask for the data to be deleted. Machine learning (ML) exacerbates this problem because any model trained with said data may have memorized it, putting users at risk of a successful privacy attack exposing their information. Yet, having models unlearn is notoriously difficult.We introduce SISA training, a framework that expedites the unlearning process by strategically limiting the influence of a data point in the training procedure. While our framework is applicable to any learning algorithm, it is designed to achieve the largest improvements for stateful algorithms like stochastic gradient descent for deep neural networks. SISA training reduces the computational overhead associated with unlearning, even in the worst-case setting where unlearning requests are made uniformly across the training set. In some cases, the service provider may have a prior on the distribution of unlearning requests that will be issued by users. We may take this prior into account to partition and order data accordingly, and further decrease overhead from unlearning.Our evaluation spans several datasets from different domains, with corresponding motivations for unlearning. Under no distributional assumptions, for simple learning tasks, we observe that SISA training improves time to unlearn points from the Purchase dataset by 4.63×, and 2.45× for the SVHN dataset, over retraining from scratch. SISA training also provides a speed-up of 1.36× in retraining for complex learning tasks such as ImageNet classification; aided by transfer learning, this results in a small degradation in accuracy. Our work contributes to practical data governance in machine unlearning.",
+author = "Lucas Bourtoule and Varun Chandrasekaran and Choquette-Choo Christopher A. and Hengrui Jia and Adelin Travers and Baiwu Zhang and David Lie and Nicolas Papernot",
+year = "2021",
+month = may,
+doi = "10.1109/SP40001.2021.00019",
+language = "English (US)",
+series = "Proceedings - IEEE Symposium on Security and Privacy",
+publisher = "Institute of Electrical and Electronics Engineers Inc.",
+pages = "141--159",
+booktitle = "Proceedings - 2021 IEEE Symposium on Security and Privacy, SP 2021",
+address = "United States",
+}
+
+@inproceedings{
+hendrycks2021measuring,
+title={Measuring Massive Multitask Language Understanding},
+author={Dan Hendrycks and Collin Burns and Steven Basart and Andy Zou and Mantas Mazeika and Dawn Song and Jacob Steinhardt},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=d7KBjmI3GmQ}
+}
+
+@inproceedings{zellers-etal-2019-hellaswag,
+    title = "{H}ella{S}wag: Can a Machine Really Finish Your Sentence?",
+    author = "Zellers, Rowan  and
+      Holtzman, Ari  and
+      Bisk, Yonatan  and
+      Farhadi, Ali  and
+      Choi, Yejin",
+    editor = "Korhonen, Anna  and
+      Traum, David  and
+      M{\`a}rquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1472/",
+    doi = "10.18653/v1/P19-1472",
+    pages = "4791--4800",
+    abstract = "Recent work by Zellers et al. (2018) introduced a new task of commonsense natural language inference: given an event description such as ``A woman sits at a piano,'' a machine must select the most likely followup: ``She sets her fingers on the keys.'' With the introduction of BERT, near human-level performance was reached. Does this mean that machines can perform human level commonsense inference? In this paper, we show that commonsense inference still proves difficult for even state-of-the-art models, by presenting HellaSwag, a new challenge dataset. Though its questions are trivial for humans ({\ensuremath{>}}95{\%} accuracy), state-of-the-art models struggle ({\ensuremath{<}}48{\%}). We achieve this via Adversarial Filtering (AF), a data collection paradigm wherein a series of discriminators iteratively select an adversarial set of machine-generated wrong answers. AF proves to be surprisingly robust. The key insight is to scale up the length and complexity of the dataset examples towards a critical `Goldilocks' zone wherein generated text is ridiculous to humans, yet often misclassified by state-of-the-art models. Our construction of HellaSwag, and its resulting difficulty, sheds light on the inner workings of deep pretrained models. More broadly, it suggests a new path forward for NLP research, in which benchmarks co-evolve with the evolving state-of-the-art in an adversarial way, so as to present ever-harder challenges."
+}
+
+@article{Bisk_Zellers_Lebras_Gao_Choi_2020, title={PIQA: Reasoning about Physical Commonsense in Natural Language}, volume={34}, url={https://ojs.aaai.org/index.php/AAAI/article/view/6239}, DOI={10.1609/aaai.v34i05.6239}, number={05}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Bisk, Yonatan and Zellers, Rowan and Le bras, Ronan and Gao, Jianfeng and Choi, Yejin}, year={2020}, month={Apr.}, pages={7432-7439} }
+
+@inproceedings{testa-etal-2023-understand,
+    title = "We Understand Elliptical Sentences, and Language Models should Too: A New Dataset for Studying Ellipsis and its Interaction with Thematic Fit",
+    author = "Testa, Davide  and
+      Chersoni, Emmanuele  and
+      Lenci, Alessandro",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.188/",
+    doi = "10.18653/v1/2023.acl-long.188",
+    pages = "3340--3353",
+    abstract = "Ellipsis is a linguistic phenomenon characterized by the omission of one or more sentence elements. Solving such a linguistic construction is not a trivial issue in natural language processing since it involves the retrieval of non-overtly expressed verbal material, which might in turn require the model to integrate human-like syntactic and semantic knowledge. In this paper, we explored the issue of how the prototypicality of event participants affects the ability of Language Models (LMs) to handle elliptical sentences and to identify the omitted arguments at different degrees of thematic fit, ranging from highly typical participants to semantically anomalous ones. With this purpose in mind, we built ELLie, the first dataset composed entirely of utterances containing different types of elliptical constructions, and structurally suited for evaluating the effect of argument thematic fit in solving ellipsis and reconstructing the missing element. Our tests demonstrated that the probability scores assigned by the models are higher for typical events than for atypical and impossible ones in different elliptical contexts, confirming the influence of prototypicality of the event participants in interpreting such linguistic structures. Finally, we conducted a retrieval task of the elided verb in the sentence in which the low performance of LMs highlighted a considerable difficulty in reconstructing the correct event."
+}
+
+@inproceedings{tong-etal-2024-metaphor,
+    title = "Metaphor Understanding Challenge Dataset for {LLM}s",
+    author = "Tong, Xiaoyu  and
+      Choenni, Rochelle  and
+      Lewis, Martha  and
+      Shutova, Ekaterina",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.193/",
+    doi = "10.18653/v1/2024.acl-long.193",
+    pages = "3517--3536",
+    abstract = "Metaphors in natural language are a reflection of fundamental cognitive processes such as analogical reasoning and categorisation, and are deeply rooted in everyday communication. Metaphor understanding is therefore an essential task for large language models (LLMs). We release the Metaphor Understanding Challenge Dataset (MUNCH), designed to evaluate the metaphor understanding capabilities of LLMs. The dataset provides over 10k paraphrases for sentences containing metaphor use, as well as 1.5k instances containing inapt paraphrases. The inapt paraphrases were carefully selected to serve as control to determine whether the model indeed performs full metaphor interpretation or rather resorts to lexical similarity. All apt and inapt paraphrases were manually annotated. The metaphorical sentences cover natural metaphor uses across 4 genres (academic, news, fiction, and conversation), and they exhibit different levels of novelty. Experiments with LLaMA and GPT-3.5 demonstrate that MUNCH presents a challenging task for LLMs. The dataset is freely accessible at https://github.com/xiaoyuisrain/metaphor-understanding-challenge."
+}
+
+@article{megatron-lm,
+  title={Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism},
+  author={Shoeybi, Mohammad and Patwary, Mostofa and Puri, Raul and LeGresley, Patrick and Casper, Jared and Catanzaro, Bryan},
+  journal={arXiv preprint arXiv:1909.08053},
+  year={2019}
+}
+
+@misc{ftc2024deceptiveai,
+  author       = {{Federal Trade Commission}},
+  title        = {FTC Announces Crackdown on Deceptive AI Claims and Schemes},
+  howpublished = {\url{https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes}},
+  year         = {2024},
+  month        = sep,
+  note         = {Press Release}
+}
+
+@inproceedings{jacovi-etal-2023-stop,
+    title = "Stop Uploading Test Data in Plain Text: Practical Strategies for Mitigating Data Contamination by Evaluation Benchmarks",
+    author = "Jacovi, Alon  and
+      Caciularu, Avi  and
+      Goldman, Omer  and
+      Goldberg, Yoav",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.308/",
+    doi = "10.18653/v1/2023.emnlp-main.308",
+    pages = "5075--5084",
+    abstract = "Data contamination has become prevalent and challenging with the rise of models pretrained on large automatically-crawled corpora. For closed models, the training data becomes a trade secret, and even for open models, it is not trivial to detect contamination. Strategies such as leaderboards with hidden answers, or using test data which is guaranteed to be unseen, are expensive and become fragile with time. Assuming that all relevant actors value clean test data and will cooperate to mitigate data contamination, what can be done? We propose three strategies that can make a difference: (1) Test data made public should be encrypted with a public key and licensed to disallow derivative distribution; (2) demand training exclusion controls from closed API holders, and protect your test data by refusing to evaluate without them; (3) avoid data which appears with its solution on the internet, and release the web-page context of internet-derived data along with the data. These strategies are practical and can be effective in preventing data contamination."
+}
+
+@misc{ftc_act_section5,
+  author       = {{United States Congress}},
+  title        = {Federal Trade Commission Act, Section 5: Unfair or Deceptive Acts or Practices},
+  howpublished = {\url{https://www.ftc.gov/legal-library/browse/statutes/federal-trade-commission-act}},
+  year         = {1914},
+  note         = {15 U.S.C. \S 45}
+}
+
+@inproceedings{ethayarajh-jurafsky-2020-utility,
+    title = "Utility is in the Eye of the User: A Critique of {NLP} Leaderboards",
+    author = "Ethayarajh, Kawin  and
+      Jurafsky, Dan",
+    editor = "Webber, Bonnie  and
+      Cohn, Trevor  and
+      He, Yulan  and
+      Liu, Yang",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.393/",
+    doi = "10.18653/v1/2020.emnlp-main.393",
+    pages = "4846--4853",
+    abstract = "Benchmarks such as GLUE have helped drive advances in NLP by incentivizing the creation of more accurate models. While this leaderboard paradigm has been remarkably successful, a historical focus on performance-based evaluation has been at the expense of other qualities that the NLP community values in models, such as compactness, fairness, and energy efficiency. In this opinion paper, we study the divergence between what is incentivized by leaderboards and what is useful in practice through the lens of microeconomic theory. We frame both the leaderboard and NLP practitioners as consumers and the benefit they get from a model as its utility to them. With this framing, we formalize how leaderboards {--} in their current form {--} can be poor proxies for the NLP community at large. For example, a highly inefficient model would provide less utility to practitioners but not to a leaderboard, since it is a cost that only the former must bear. To allow practitioners to better estimate a model{'}s utility to them, we advocate for more transparency on leaderboards, such as the reporting of statistics that are of practical concern (e.g., model size, energy efficiency, and inference latency)."
+}
+
+@inproceedings{raji_2021_ai,
+ author = {Raji, Deborah and Denton, Emily and Bender, Emily M. and Hanna, Alex and Paullada, Amandalynne},
+ booktitle = {Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks},
+ editor = {J. Vanschoren and S. Yeung},
+ pages = {},
+ title = {AI and the Everything in the Whole Wide World Benchmark},
+ url = {https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/file/084b6fbb10729ed4da8c3d3f5a3ae7c9-Paper-round2.pdf},
+ volume = {1},
+ year = {2021}
+}
+
+
+@inproceedings{lee-etal-2022-deduplicating,
+    title = "Deduplicating Training Data Makes Language Models Better",
+    author = "Lee, Katherine  and
+      Ippolito, Daphne  and
+      Nystrom, Andrew  and
+      Zhang, Chiyuan  and
+      Eck, Douglas  and
+      Callison-Burch, Chris  and
+      Carlini, Nicholas",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.577/",
+    doi = "10.18653/v1/2022.acl-long.577",
+    pages = "8424--8445",
+    abstract = "We find that existing language modeling datasets contain many near-duplicate examples and long repetitive substrings. As a result, over 1{\%} of the unprompted output of language models trained on these datasets is copied verbatim from the training data. We develop two tools that allow us to deduplicate training datasets{---}for example removing from C4 a single 61 word English sentence that is repeated over 60,000 times. Deduplication allows us to train models that emit memorized text ten times less frequently and require fewer training steps to achieve the same or better accuracy. We can also reduce train-test overlap, which affects over 4{\%} of the validation set of standard datasets, thus allowing for more accurate evaluation. Code for deduplication is released at \url{https://github.com/google-research/deduplicate-text-datasets}."
+}
+
+@inproceedings{yukhymenko_2025_synthetic,
+author = {Yukhymenko, Hanna and Staab, Robin and Vero, Mark and Vechev, Martin},
+title = {A synthetic dataset for personal attribute inference},
+year = {2025},
+isbn = {9798331314385},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {Recently powerful Large Language Models (LLMs) have become easily accessible to hundreds of millions of users world-wide. However, their strong capabilities and vast world knowledge do not come without associated privacy risks. In this work, we focus on the emerging privacy threat LLMs pose - the ability to accurately infer personal information from online texts. Despite the growing importance of LLM-based author profiling, research in this area has been hampered by a lack of suitable public datasets, largely due to ethical and privacy concerns associated with real personal data. We take two steps to address this problem: (i) we construct a simulation framework for the popular social media platform Reddit using LLM agents seeded with synthetic personal profiles; (ii) using this framework, we generate SynthPAI, a diverse synthetic dataset of over 7800 comments manually labeled for personal attributes. We validate our dataset with a human study showing that humans barely outperform random guessing on the task of distinguishing our synthetic comments from real ones. Further, we verify that our dataset enables meaningful personal attribute inference research by showing across 18 state-of-the-art LLMs that our synthetic comments allow us to draw the same conclusions as real-world data. Combined, our experimental results, dataset and pipeline form a strong basis for future privacy-preserving research geared towards understanding and mitigating inference-based privacy threats that LLMs pose.},
+booktitle = {Proceedings of the 38th International Conference on Neural Information Processing Systems},
+articleno = {3837},
+numpages = {45},
+location = {Vancouver, BC, Canada},
+series = {NIPS '24}
+}
+
+@inproceedings{dodge-etal-2021-documenting,
+    title = "Documenting Large Webtext Corpora: A Case Study on the Colossal Clean Crawled Corpus",
+    author = "Dodge, Jesse  and
+      Sap, Maarten  and
+      Marasovi{\'c}, Ana  and
+      Agnew, William  and
+      Ilharco, Gabriel  and
+      Groeneveld, Dirk  and
+      Mitchell, Margaret  and
+      Gardner, Matt",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.98/",
+    doi = "10.18653/v1/2021.emnlp-main.98",
+    pages = "1286--1305",
+    abstract = "Large language models have led to remarkable progress on many NLP tasks, and researchers are turning to ever-larger text corpora to train them. Some of the largest corpora available are made by scraping significant portions of the internet, and are frequently introduced with only minimal documentation. In this work we provide some of the first documentation for the Colossal Clean Crawled Corpus (C4; Raffel et al., 2020), a dataset created by applying a set of filters to a single snapshot of Common Crawl. We begin by investigating where the data came from, and find a significant amount of text from unexpected sources like patents and US military websites. Then we explore the content of the text itself, and find machine-generated text (e.g., from machine translation systems) and evaluation examples from other benchmark NLP datasets. To understand the impact of the filters applied to create this dataset, we evaluate the text that was removed, and show that blocklist filtering disproportionately removes text from and about minority individuals. Finally, we conclude with some recommendations for how to created and document web-scale datasets from a scrape of the internet."
+}
+
+@misc{rajbhandari2020zeromemoryoptimizationstraining,
+      title={ZeRO: Memory Optimizations Toward Training Trillion Parameter Models}, 
+      author={Samyam Rajbhandari and Jeff Rasley and Olatunji Ruwase and Yuxiong He},
+      year={2020},
+      eprint={1910.02054},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/1910.02054}, 
+}
+
+@misc{touvron2023llamaopenefficientfoundation,
+      title={LLaMA: Open and Efficient Foundation Language Models}, 
+      author={Hugo Touvron and Thibaut Lavril and Gautier Izacard and Xavier Martinet and Marie-Anne Lachaux and Timothée Lacroix and Baptiste Rozière and Naman Goyal and Eric Hambro and Faisal Azhar and Aurelien Rodriguez and Armand Joulin and Edouard Grave and Guillaume Lample},
+      year={2023},
+      eprint={2302.13971},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2302.13971}, 
+}
+
+@inproceedings{vaswani_transformers_2017,
+author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, \L{}ukasz and Polosukhin, Illia},
+title = {Attention is all you need},
+year = {2017},
+isbn = {9781510860964},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.},
+booktitle = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+pages = {6000–6010},
+numpages = {11},
+location = {Long Beach, California, USA},
+series = {NIPS'17}
+}
+
+@article{su_2024_roformer,
+author = {Su, Jianlin and Ahmed, Murtadha and Lu, Yu and Pan, Shengfeng and Bo, Wen and Liu, Yunfeng},
+title = {RoFormer: Enhanced transformer with Rotary Position Embedding},
+year = {2024},
+issue_date = {Feb 2024},
+publisher = {Elsevier Science Publishers B. V.},
+address = {NLD},
+volume = {568},
+number = {C},
+issn = {0925-2312},
+url = {https://doi.org/10.1016/j.neucom.2023.127063},
+doi = {10.1016/j.neucom.2023.127063},
+journal = {Neurocomput.},
+month = feb,
+numpages = {12},
+keywords = {Pre-trained language models, Position information encoding, Pre-training, Natural language processing}
+}
+
+@misc{shazeer2020gluvariantsimprovetransformer,
+      title={GLU Variants Improve Transformer}, 
+      author={Noam Shazeer},
+      year={2020},
+      eprint={2002.05202},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2002.05202}, 
+}
+
+@inproceedings{ainslie-etal-2023-gqa,
+    title = "{GQA}: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+    author = "Ainslie, Joshua  and
+      Lee-Thorp, James  and
+      de Jong, Michiel  and
+      Zemlyanskiy, Yury  and
+      Lebron, Federico  and
+      Sanghai, Sumit",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.298/",
+    doi = "10.18653/v1/2023.emnlp-main.298",
+    pages = "4895--4901",
+    abstract = "Multi-query attention (MQA), which only uses a single key-value head, drastically speeds up decoder inference. However, MQA can lead to quality degradation, and moreover it may not be desirable to train a separate model just for faster inference. We (1) propose a recipe for uptraining existing multi-head language model checkpoints into models with MQA using 5{\%} of original pre-training compute, and (2) introduce grouped-query attention (GQA), a generalization of multi-query attention which uses an intermediate (more than one, less than number of query heads) number of key-value heads. We show that uptrained GQA achieves quality close to multi-head attention with comparable speed to MQA."
+}
+
+@inbook{zhang_2019_layer,
+author = {Zhang, Biao and Sennrich, Rico},
+title = {Root mean square layer normalization},
+year = {2019},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {Layer normalization (LayerNorm) has been successfully applied to various deep neural networks to help stabilize training and boost model convergence because of its capability in handling re-centering and re-scaling of both inputs and weight matrix. However, the computational overhead introduced by LayerNorm makes these improvements expensive and significantly slows the underlying network, e.g. RNN in particular. In this paper, we hypothesize that re-centering invariance in LayerNorm is dispensable and propose root mean square layer normalization, or RMSNorm. RMSNorm regularizes the summed inputs to a neuron in one layer according to root mean square (RMS), giving the model re-scaling invariance property and implicit learning rate adaptation ability. RMSNorm is computationally simpler and thus more efficient than LayerNorm. We also present partial RMSNorm, or pRMSNorm where the RMS is estimated from p\% of the summed inputs without breaking the above properties. Extensive experiments on several tasks using diverse network architectures show that RMSNorm achieves comparable performance against LayerNorm but reduces the running time by 7\%~64\% on different models. Source code is available at https://github.com/bzhangGo/rmsnorm.},
+booktitle = {Proceedings of the 33rd International Conference on Neural Information Processing Systems},
+articleno = {1110},
+numpages = {12}
+}
+
+@misc{nostalgebraist2020logitlens,
+  author       = {Nostalgebraist},
+  title        = {Interpreting GPT: the Logit Lens},
+  year         = {2020},
+  howpublished = {\url{https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens}},
+  note         = {LessWrong blog post},
+}
+
+@article{Singh2024EvaluationDC,
+  title={Evaluation data contamination in LLMs: how do we measure it and (when) does it matter?},
+  author={Aaditya K. Singh and Muhammed Yusuf Kocyigit and Andrew Poulton and David Esiobu and Maria Lomeli and Gergely Szilvasy and Dieuwke Hupkes},
+  journal={ArXiv},
+  year={2024},
+  volume={abs/2411.03923},
+  url={https://api.semanticscholar.org/CorpusID:273850342}
+}
+
+@inproceedings{
+oren2024proving,
+title={Proving Test Set Contamination in Black-Box Language Models},
+author={Yonatan Oren and Nicole Meister and Niladri S. Chatterji and Faisal Ladhak and Tatsunori Hashimoto},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=KS8mIvetg2}
+}
+
+@inproceedings{fu-etal-2025-data,
+    title = "Does Data Contamination Detection Work (Well) for {LLM}s? A Survey and Evaluation on Detection Assumptions",
+    author = "Fu, Yujuan  and
+      Uzuner, Ozlem  and
+      Yetisgen, Meliha  and
+      Xia, Fei",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2025",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-naacl.291/",
+    doi = "10.18653/v1/2025.findings-naacl.291",
+    pages = "5235--5256",
+    ISBN = "979-8-89176-195-7",
+    abstract = "Large language models (LLMs) have demonstrated great performance across various benchmarks, showing potential as general-purpose task solvers. However, as LLMs are typically trained on vast amounts of data, a significant concern in their evaluation is data contamination, where overlap between training data and evaluation datasets inflates performance assessments. Multiple approaches have been developed to identify data contamination. These approaches rely on specific assumptions that may not hold universally across different settings. To bridge this gap, we systematically review 50 papers on data contamination detection, categorize the underlying assumptions, and assess whether they have been rigorously validated. We identify and analyze eight categories of assumptions and test three of them as case studies. Our case studies focus on detecting direct, instance-level data contamination, which is also referred to as Membership Inference Attacks (MIA). Our analysis reveals that MIA approaches based on these three assumptions can have similar performance to random guessing, on datasets used in LLM pretraining, suggesting that current LLMs might learn data distributions rather than memorizing individual instances. Meanwhile, MIA can easily fail when there are data distribution shifts between the seen and unseen instances."
+}
+
+@article{Jiang2024InvestigatingDC,
+  title={Investigating Data Contamination for Pre-training Language Models},
+  author={Minhao Jiang and Ken Ziyu Liu and Ming Zhong and Rylan Schaeffer and Siru Ouyang and Jiawei Han and Sanmi Koyejo},
+  journal={ArXiv},
+  year={2024},
+  volume={abs/2401.06059},
+  url={https://api.semanticscholar.org/CorpusID:266933004}
+}
+
+@inproceedings{
+bordt2025how,
+title={How Much Can We Forget about Data Contamination?},
+author={Sebastian Bordt and Suraj Srinivas and Valentyn Boreiko and Ulrike von Luxburg},
+booktitle={Forty-second International Conference on Machine Learning},
+year={2025},
+url={https://openreview.net/forum?id=Pf0PaYS9KG}
+}
+
+@inproceedings{
+golchin2024time,
+title={Time Travel in {LLM}s: Tracing Data Contamination in Large Language Models},
+author={Shahriar Golchin and Mihai Surdeanu},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=2Rwq6c3tvr}
+}
+
+@inproceedings{
+khandelwal2025k,
+title={\$100K or 100 Days: Trade-offs when Pre-Training with Academic Resources},
+author={Apoorv Khandelwal and Tian Yun and Nihal V. Nayak and Jack Merullo and Stephen Bach and Chen Sun and Ellie Pavlick},
+booktitle={Second Conference on Language Modeling},
+year={2025},
+url={https://openreview.net/forum?id=EFxC34XbDh}
+}
+
+@inproceedings{liesenfeld_2024_rethinking,
+author = {Liesenfeld, Andreas and Dingemanse, Mark},
+title = {Rethinking open source generative AI: open-washing and the EU AI Act},
+year = {2024},
+isbn = {9798400704505},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3630106.3659005},
+doi = {10.1145/3630106.3659005},
+abstract = {The past year has seen a steep rise in generative AI systems that claim to be open. But how open are they really? The question of what counts as open source in generative AI is poised to take on particular importance in light of the upcoming EU AI Act that regulates open source systems differently, creating an urgent need for practical openness assessment. Here we use an evidence-based framework that distinguishes 14 dimensions of openness, from training datasets to scientific and technical documentation and from licensing to access methods. Surveying over 45 generative AI systems (both text and text-to-image), we find that while the term open source is widely used, many models are ‘open weight’ at best and many providers seek to evade scientific, legal and regulatory scrutiny by withholding information on training and fine-tuning data. We argue that openness in generative AI is necessarily composite (consisting of multiple elements) and gradient (coming in degrees), and point out the risk of relying on single features like access or licensing to declare models open or not. Evidence-based openness assessment can help foster a generative AI landscape in which models can be effectively regulated, model providers can be held accountable, scientists can scrutinise generative AI, and end users can make informed decisions.},
+booktitle = {Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency},
+pages = {1774–1787},
+numpages = {14},
+keywords = {Technology assessment, large language models, text generators, text-to-image generators},
+location = {Rio de Janeiro, Brazil},
+series = {FAccT '24}
+}
+
+@techreport{apertus2024,
+  title       = {Apertus: Democratizing Open and Compliant LLMs for Global Language Environments},
+  author      = {{Swiss AI}},
+  year        = {2024},
+  url         = {https://github.com/swiss-ai/apertus-tech-report/blob/main/Apertus_Tech_Report.pdf},
+  note        = {Apertus v0.1 Technical Report}
+}
+
+@misc{gao2020pile800gbdatasetdiverse,
+      title={The Pile: An 800GB Dataset of Diverse Text for Language Modeling}, 
+      author={Leo Gao and Stella Biderman and Sid Black and Laurence Golding and Travis Hoppe and Charles Foster and Jason Phang and Horace He and Anish Thite and Noa Nabeshima and Shawn Presser and Connor Leahy},
+      year={2020},
+      eprint={2101.00027},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2101.00027}, 
+}
+
+@inproceedings{
+kirchenbauer2024lmd,
+title={{LMD}3: Language Model Data Density Dependence},
+author={John Kirchenbauer and Garrett Honke and Gowthami Somepalli and Jonas Geiping and Katherine Lee and Daphne Ippolito and Tom Goldstein and David Andre},
+booktitle={First Conference on Language Modeling},
+year={2024},
+url={https://openreview.net/forum?id=eGCw1UVOhk}
+}
+
+@inproceedings{wei-etal-2024-proving,
+    title = "Proving membership in {LLM} pretraining data via data watermarks",
+    author = "Wei, Johnny  and
+      Wang, Ryan  and
+      Jia, Robin",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.788/",
+    doi = "10.18653/v1/2024.findings-acl.788",
+    pages = "13306--13320",
+    abstract = "Detecting whether copyright holders' works were used in LLM pretraining is poised to be an important problem. This work proposes using data watermarks to enable principled detection with only black-box model access, provided that the rightholder contributed multiple training documents and watermarked them before public release. By applying a randomly sampled data watermark, detection can be framed as hypothesis testing, which provides guarantees on the false detection rate. We study two watermarks: one that inserts random sequences, and another that randomly substitutes characters with Unicode lookalikes. We first show how three aspects of watermark design - watermark length, number of duplications, and interference - affect the power of the hypothesis test. Next, we study how a watermark{'}s detection strength changes under model and dataset scaling: while increasing the dataset size decreases the strength of the watermark, watermarks remain strong if the model size also increases. Finally, we view SHA hashes as natural watermarks and show that we can robustly detect hashes from BLOOM-176B{'}s training data, as long as they occurred at least 90 times. Together, our results point towards a promising future for data watermarks in real world use."
+}
+
+@misc{liu2023llm360fullytransparentopensource,
+      title={LLM360: Towards Fully Transparent Open-Source LLMs}, 
+      author={Zhengzhong Liu and Aurick Qiao and Willie Neiswanger and Hongyi Wang and Bowen Tan and Tianhua Tao and Junbo Li and Yuqi Wang and Suqi Sun and Omkar Pangarkar and Richard Fan and Yi Gu and Victor Miller and Yonghao Zhuang and Guowei He and Haonan Li and Fajri Koto and Liping Tang and Nikhil Ranjan and Zhiqiang Shen and Xuguang Ren and Roberto Iriondo and Cun Mu and Zhiting Hu and Mark Schulze and Preslav Nakov and Tim Baldwin and Eric P. Xing},
+      year={2023},
+      eprint={2312.06550},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2312.06550}, 
+}
+
+@inproceedings{chang2024large,
+  title={How Do Large Language Models Acquire Factual Knowledge During Pretraining?},
+  author={Chang, Hoyeon and Park, Jinho and Ye, Seonghyeon and Yang, Sohee and Seo, Youngkyung and Chang, Du-Seong and Seo, Minjoon},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year={2024}
+}
+
+@InProceedings{ilyas_datamodels_2022,
+  title = 	 {Datamodels: Understanding Predictions with Data and Data with Predictions},
+  author =       {Ilyas, Andrew and Park, Sung Min and Engstrom, Logan and Leclerc, Guillaume and Madry, Aleksander},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {9525--9587},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/ilyas22a/ilyas22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/ilyas22a.html},
+}
+
+@misc{jagielski2023measuringforgettingmemorizedtraining,
+      title={Measuring Forgetting of Memorized Training Examples}, 
+      author={Matthew Jagielski and Om Thakkar and Florian Tramèr and Daphne Ippolito and Katherine Lee and Nicholas Carlini and Eric Wallace and Shuang Song and Abhradeep Thakurta and Nicolas Papernot and Chiyuan Zhang},
+      year={2023},
+      eprint={2207.00099},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2207.00099}, 
+}
+
+@misc{more2025realisticextractionattacksadversarial,
+      title={Towards More Realistic Extraction Attacks: An Adversarial Perspective}, 
+      author={Yash More and Prakhar Ganesh and Golnoosh Farnadi},
+      year={2025},
+      eprint={2407.02596},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2407.02596},
+}
+
+@inproceedings{
+jagielski2023measuring,
+title={Measuring Forgetting of Memorized Training Examples},
+author={Matthew Jagielski and Om Thakkar and Florian Tramer and Daphne Ippolito and Katherine Lee and Nicholas Carlini and Eric Wallace and Shuang Song and Abhradeep Guha Thakurta and Nicolas Papernot and Chiyuan Zhang},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=7bJizxLKrR}
+}
+
+@inproceedings{rajpurkar-etal-2018-know,
+    title = "Know What You Don{'}t Know: Unanswerable Questions for {SQ}u{AD}",
+    author = "Rajpurkar, Pranav  and
+      Jia, Robin  and
+      Liang, Percy",
+    editor = "Gurevych, Iryna  and
+      Miyao, Yusuke",
+    booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P18-2124/",
+    doi = "10.18653/v1/P18-2124",
+    pages = "784--789",
+    abstract = "Extractive reading comprehension systems can often locate the correct answer to a question in a context document, but they also tend to make unreliable guesses on questions for which the correct answer is not stated in the context. Existing datasets either focus exclusively on answerable questions, or use automatically generated unanswerable questions that are easy to identify. To address these weaknesses, we present SQuADRUn, a new dataset that combines the existing Stanford Question Answering Dataset (SQuAD) with over 50,000 unanswerable questions written adversarially by crowdworkers to look similar to answerable ones. To do well on SQuADRUn, systems must not only answer questions when possible, but also determine when no answer is supported by the paragraph and abstain from answering. SQuADRUn is a challenging natural language understanding task for existing models: a strong neural system that gets 86{\%} F1 on SQuAD achieves only 66{\%} F1 on SQuADRUn. We release SQuADRUn to the community as the successor to SQuAD."
+}
+
+@inproceedings{
+hans2024be,
+title={Be like a Goldfish, Don't Memorize! Mitigating Memorization in Generative {LLM}s},
+author={Abhimanyu Hans and John Kirchenbauer and Yuxin Wen and Neel Jain and Hamid Kazemi and Prajwal Singhania and Siddharth Singh and Gowthami Somepalli and Jonas Geiping and Abhinav Bhatele and Tom Goldstein},
+booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+year={2024},
+url={https://openreview.net/forum?id=DylSyAfmWs}
+}
+
+@misc{chen2016trainingdeepnetssublinear,
+      title={Training Deep Nets with Sublinear Memory Cost}, 
+      author={Tianqi Chen and Bing Xu and Chiyuan Zhang and Carlos Guestrin},
+      year={2016},
+      eprint={1604.06174},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/1604.06174},
+}
+
+@misc{hernandez2022scalinglawsinterpretabilitylearning,
+      title={Scaling Laws and Interpretability of Learning from Repeated Data}, 
+      author={Danny Hernandez and Tom Brown and Tom Conerly and Nova DasSarma and Dawn Drain and Sheer El-Showk and Nelson Elhage and Zac Hatfield-Dodds and Tom Henighan and Tristan Hume and Scott Johnston and Ben Mann and Chris Olah and Catherine Olsson and Dario Amodei and Nicholas Joseph and Jared Kaplan and Sam McCandlish},
+      year={2022},
+      eprint={2205.10487},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2205.10487}, 
+}
+
+@inproceedings{brown_2020_language,
+author = {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel M. and Wu, Jeffrey and Winter, Clemens and Hesse, Christopher and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+title = {Language models are few-shot learners},
+year = {2020},
+isbn = {9781713829546},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {We demonstrate that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even becoming competitive with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks. We also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora.},
+booktitle = {Proceedings of the 34th International Conference on Neural Information Processing Systems},
+articleno = {159},
+numpages = {25},
+location = {Vancouver, BC, Canada},
+series = {NIPS '20}
+}
+
+@inproceedings{
+duan2024membershipinferenceattackswork,
+title={Do Membership Inference Attacks Work on Large Language Models?},
+author={Michael Duan and Anshuman Suri and Niloofar Mireshghallah and Sewon Min and Weijia Shi and Luke Zettlemoyer and Yulia Tsvetkov and Yejin Choi and David Evans and Hannaneh Hajishirzi},
+booktitle={First Conference on Language Modeling},
+year={2024},
+url={https://openreview.net/forum?id=av0D19pSkU}
+}
+
+@misc{eval-harness,
+  author       = {Gao, Leo and Tow, Jonathan and Abbasi, Baber and Biderman, Stella and Black, Sid and DiPofi, Anthony and Foster, Charles and Golding, Laurence and Hsu, Jeffrey and Le Noac'h, Alain and Li, Haonan and McDonell, Kyle and Muennighoff, Niklas and Ociepa, Chris and Phang, Jason and Reynolds, Laria and Schoelkopf, Hailey and Skowron, Aviya and Sutawika, Lintang and Tang, Eric and Thite, Anish and Wang, Ben and Wang, Kevin and Zou, Andy},
+  title        = {A framework for few-shot language model evaluation},
+  month        = 12,
+  year         = 2023,
+  publisher    = {Zenodo},
+  version      = {v0.4.0},
+  doi          = {10.5281/zenodo.10256836},
+  url          = {https://zenodo.org/records/10256836}
+}
+
+@inproceedings{prabhakar-etal-2024-deciphering,
+    title = "Deciphering the Factors Influencing the Efficacy of Chain-of-Thought: Probability, Memorization, and Noisy Reasoning",
+    author = "Prabhakar, Akshara  and
+      Griffiths, Thomas L.  and
+      McCoy, R. Thomas",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.212/",
+    doi = "10.18653/v1/2024.findings-emnlp.212",
+    pages = "3710--3724",
+    abstract = "Chain-of-Thought (CoT) prompting has been shown to enhance the multi-step reasoning capabilities of Large Language Models (LLMs). However, debates persist about whether LLMs exhibit *abstract generalization* or rely on *shallow heuristics* when given CoT prompts. To understand the factors influencing CoT reasoning we provide a detailed case study of the symbolic reasoning task of decoding shift ciphers, where letters are shifted forward some number of steps in the alphabet. We analyze the pattern of results produced by three LLMs{---}GPT-4, Claude 3, and Llama 3.1{---}performing this task using CoT prompting. By focusing on a single relatively simple task, we are able to identify three factors that systematically affect CoT performance: the probability of the task{'}s expected output (probability), what the model has implicitly learned during pre-training (memorization), and the number of intermediate operations involved in reasoning (noisy reasoning). We show that these factors can drastically influence task accuracy across all three LLMs; e.g., when tested with GPT-4, varying the output{'}s probability of occurrence shifts accuracy from 26{\%} to 70{\%}. Overall, we conclude that CoT prompting performance reflects both memorization and a probabilistic version of genuine reasoning."
+}
+
+@INPROCEEDINGS {meeus_sok_2025,
+author = { Meeus, Matthieu and Shilov, Igor and Jain, Shubham and Faysse, Manuel and Rei, Marek and de Montjoye, Yves-Alexandre },
+booktitle = { 2025 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML) },
+title = {{ SoK: Membership Inference Attacks on LLMs are Rushing Nowhere (and How to Fix It) }},
+year = {2025},
+volume = {},
+ISSN = {},
+pages = {385-401},
+abstract = { Whether Large Language models (LLMs) memorize their training data and what this means, from measuring privacy leakage to detecting copyright violations, has become a rapidly growing area of research. In the last few months, more than 10 new methods have been proposed to perform Membership Inference Attacks (MIAs) against LLMs. Contrary to traditional MIAs which rely on fixed-but randomized-records or models, these methods are mostly trained and tested on datasets collected post-hoc. Sets of members and non-members, used to evaluate the MIA, are constructed using informed guesses after the release of a model. This lack of randomization raises concerns of a distribution shift between members and non-members. In this work, we first extensively review the literature on MIAs against LLMs and show that, while most work focuses on sequence-level MIAs evaluated in post-hoc setups, a range of target models, motivations and units of interest are considered. We then quantify distribution shifts present in 6 datasets used in the literature, ranging from books to papers using a model-less bag of word classifier and compare the model-less results to the MIA. Our analysis shows that all of these datasets constructed post-hoc suffer from strong distribution shifts. These shifts invalidate the claims of LLMs memorizing strongly in real-world scenarios and, potentially, also the methodological contributions of the recent papers based on these datasets. Yet, all hope might not be lost. In the second part of this work, we introduce important considerations to properly evaluate MIAs against LLMs and discuss, in turn, potential ways forwards: randomized test splits, injections of randomized (unique) sequences, randomized finetuning, and several post-hoc control methods. While each option comes with its advantages and limitations, we believe they collectively provide solid grounds to guide the development of MIA methods and study LLM memorization. We conclude with an overview of recommended approaches to benchmark sequence-level and document-level MIAs against LLMs. },
+keywords = {Fault diagnosis;Privacy;Data privacy;Reviews;Large language models;Training data;Machine learning;Benchmark testing;Solids;Distance measurement},
+doi = {10.1109/SaTML64287.2025.00028},
+url = {https://doi.ieeecomputersociety.org/10.1109/SaTML64287.2025.00028},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month =apr}
+
+@misc{naseh2025syntheticdatamisleadevaluations,
+      title={Synthetic Data Can Mislead Evaluations: Membership Inference as Machine Text Detection}, 
+      author={Ali Naseh and Niloofar Mireshghallah},
+      year={2025},
+      eprint={2501.11786},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2501.11786}, 
+}
+
+@misc{dorna2025openunlearningacceleratingllmunlearning,
+      title={OpenUnlearning: Accelerating LLM Unlearning via Unified Benchmarking of Methods and Metrics}, 
+      author={Vineeth Dorna and Anmol Mekala and Wenlong Zhao and Andrew McCallum and Zachary C. Lipton and J. Zico Kolter and Pratyush Maini},
+      year={2025},
+      eprint={2506.12618},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2506.12618}, 
+}
+
+@INPROCEEDINGS{LossMIA,
+  author={Yeom, Samuel and Giacomelli, Irene and Fredrikson, Matt and Jha, Somesh},
+  booktitle={2018 IEEE 31st Computer Security Foundations Symposium (CSF)}, 
+  title={Privacy Risk in Machine Learning: Analyzing the Connection to Overfitting}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={268-282},
+  keywords={Privacy;Machine learning algorithms;Data models;Training data;Machine learning;Training;privacy;machine-learning;inference-attacks},
+  doi={10.1109/CSF.2018.00027}}
+
+@inproceedings{
+  minkplusplusMIA,
+  title={Min-K\%++: Improved Baseline for Pre-Training Data Detection from Large Language Models},
+  author={Jingyang Zhang and Jingwei Sun and Eric Yeats and Yang Ouyang and Martin Kuo and Jianyi Zhang and Hao Frank Yang and Hai Li},
+  booktitle={The Thirteenth International Conference on Learning Representations},
+  year={2025},
+  url={https://openreview.net/forum?id=ZGkfoufDaU}
+}
+
+@inproceedings{
+minkMIA,
+title={Detecting Pretraining Data from Large Language Models},
+author={Weijia Shi and Anirudh Ajith and Mengzhou Xia and Yangsibo Huang and Daogao Liu and Terra Blevins and Danqi Chen and Luke Zettlemoyer},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=zWqr3MQuNs}
+}
+
+@INPROCEEDINGS{shokri2017membershipinferenceattacksmachine,
+  author={Shokri, Reza and Stronati, Marco and Song, Congzheng and Shmatikov, Vitaly},
+  booktitle={2017 IEEE Symposium on Security and Privacy (SP)}, 
+  title={Membership Inference Attacks Against Machine Learning Models}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={3-18},
+  keywords={Training;Data models;Predictive models;Privacy;Sociology;Statistics;Google},
+  doi={10.1109/SP.2017.41}}
+
+@inproceedings{puerto-etal-2025-scaling,
+    title = "Scaling Up Membership Inference: When and How Attacks Succeed on Large Language Models",
+    author = "Puerto, Haritz  and
+      Gubri, Martin  and
+      Yun, Sangdoo  and
+      Oh, Seong Joon",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2025",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-naacl.234/",
+    doi = "10.18653/v1/2025.findings-naacl.234",
+    pages = "4165--4182",
+    ISBN = "979-8-89176-195-7",
+    abstract = "Membership inference attacks (MIA) attempt to verify the membership of a given data sample in the training set for a model. MIA has become relevant in recent years, following the rapid development of large language models (LLM). Many are concerned about the usage of copyrighted materials for training them and call for methods for detecting such usage. However, recent research has largely concluded that current MIA methods do not work on LLMs. Even when they seem to work, it is usually because of the ill-designed experimental setup where other shortcut features enable ``cheating.'' In this work, we argue that MIA still works on LLMs, but only when multiple documents are presented for testing. We construct new benchmarks that measure the MIA performances at a continuous scale of data samples, from sentences (n-grams) to a collection of documents (multiple chunks of tokens). To validate the efficacy of current MIA approaches at greater scales, we adapt a recent work on Dataset Inference (DI) for the task of binary membership detection that aggregates paragraph-level MIA features to enable document- and dataset-level MIA. This baseline achieves the first successful MIA on pre-trained and fine-tuned LLMs."
+}
+
+@misc{mainidi2024,
+      title={LLM Dataset Inference: Did you train on my dataset?}, 
+      author={Pratyush Maini and Hengrui Jia and Nicolas Papernot and Adam Dziedzic},
+      year={2024},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{10.5555/3698900.3699033,
+author = {Meeus, Matthieu and Jain, Shubham and Rei, Marek and de Montjoye, Yves-Alexandre},
+title = {Did the neurons read your book? document-level membership inference for large language models},
+year = {2024},
+isbn = {978-1-939133-44-1},
+publisher = {USENIX Association},
+address = {USA},
+abstract = {With large language models (LLMs) poised to become embedded in our daily lives, questions are starting to be raised about the data they learned from. These questions range from potential bias or misinformation LLMs could retain from their training data to questions of copyright and fair use of human-generated text. However, while these questions emerge, developers of the recent state-of-the-art LLMs become increasingly reluctant to disclose details on their training corpus. We here introduce the task of document-level membership inference for real-world LLMs, i.e. inferring whether the LLM has seen a given document during training or not. First, we propose a procedure for the development and evaluation of document-level membership inference for LLMs by leveraging commonly used data sources for training and the model release date. We then propose a practical, black-box method to predict document-level membership and instantiate it on OpenLLaMA-7B with both books and academic papers. We show our methodology to perform very well, reaching an AUC of 0.856 for books and 0.678 for papers (Fig. 1). We then show our approach to outperform the sentence-level membership inference attacks used in the privacy literature for the document-level membership task. We further evaluate whether smaller models might be less sensitive to document-level inference and show OpenLLaMA-3B to be approximately as sensitive as OpenLLaMA-7B to our approach. Finally, we consider two mitigation strategies and find the AUC to slowly decrease when only partial documents are considered but to remain fairly high when the model precision is reduced. Taken together, our results show that accurate document-level membership can be inferred for LLMs, increasing the transparency of technology poised to change our lives.},
+booktitle = {Proceedings of the 33rd USENIX Conference on Security Symposium},
+articleno = {133},
+numpages = {17},
+location = {Philadelphia, PA, USA},
+series = {SEC '24}
+}
+
+@misc{docmia,
+      title={DocMIA: Document-Level Membership Inference Attacks against DocVQA Models}, 
+      author={Khanh Nguyen and Raouf Kerkouche and Mario Fritz and Dimosthenis Karatzas},
+      year={2025},
+      eprint={2502.03692},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2502.03692}, 
+}
+
+@inproceedings{tramer2024position,
+  title={Position: Considerations for Differentially Private Learning with Large-Scale Public Pretraining},
+  author={Tram{\`e}r, Florian and Kamath, Gautam and Carlini, Nicholas},
+  booktitle={International Conference on Machine Learning},
+  pages={48453--48467},
+  year={2024},
+  organization={PMLR}
+}
+
+@inproceedings{carlini2021extracting,
+  title={Extracting training data from large language models},
+  author={Carlini, Nicholas and Tramer, Florian and Wallace, Eric and Jagielski, Matthew and Herbert-Voss, Ariel and Lee, Katherine and Roberts, Adam and Brown, Tom and Song, Dawn and Erlingsson, Ulfar and others},
+  booktitle={30th USENIX security symposium (USENIX Security 21)},
+  pages={2633--2650},
+  year={2021}
+}
+
+@article{nissenbaum2004privacy,
+  title={Privacy as Contextual Integrity},
+  author={Nissenbaum, Helen},
+  journal={Washington Law Review},
+  volume={79},
+  number={1},
+  pages={119},
+  year={2004}
+}
+
+@article{borkar2025privacy,
+  title={Privacy Ripple Effects from Adding or Removing Personal Information in Language Model Training},
+  author={Borkar, Jaydeep and Jagielski, Matthew and Lee, Katherine and Mireshghallah, Niloofar and Smith, David A and Choquette-Choo, Christopher A},
+  journal={arXiv preprint arXiv:2502.15680},
+  year={2025}
+}
+
+@inproceedings{lukas2023analyzing,
+  title={Analyzing leakage of personally identifiable information in language models},
+  author={Lukas, Nils and Salem, Ahmed and Sim, Robert and Tople, Shruti and Wutschitz, Lukas and Zanella-B{\'e}guelin, Santiago},
+  booktitle={2023 IEEE Symposium on Security and Privacy (SP)},
+  pages={346--363},
+  year={2023},
+  organization={IEEE}
+}
+
+@article{panda2024teach,
+  title={Teach llms to phish: Stealing private information from language models},
+  author={Panda, Ashwinee and Choquette-Choo, Christopher A and Zhang, Zhengming and Yang, Yaoqing and Mittal, Prateek},
+  journal={arXiv preprint arXiv:2403.00871},
+  year={2024}
+}
+
+@inproceedings{huang2022large,
+  title={Are Large Pre-Trained Language Models Leaking Your Personal Information?},
+  author={Huang, Jie and Shao, Hanyin and Chang, Kevin Chen-Chuan},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2022},
+  pages={2038--2047},
+  year={2022}
+}
+
+@inproceedings{zeng2024exploring,
+  title={Exploring Memorization in Fine-tuned Language Models},
+  author={Zeng, Shenglai and Li, Yaxin and Ren, Jie and Liu, Yiding and Xu, Han and He, Pengfei and Xing, Yue and Wang, Shuaiqiang and Tang, Jiliang and Yin, Dawei},
+  booktitle={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={3917--3948},
+  year={2024}
+}
+
+@article{tirumala2022memorization,
+  title={Memorization without overfitting: Analyzing the training dynamics of large language models},
+  author={Tirumala, Kushal and Markosyan, Aram and Zettlemoyer, Luke and Aghajanyan, Armen},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={38274--38290},
+  year={2022}
+}
+
+@article{pilan2022text,
+  title={The text anonymization benchmark (tab): A dedicated corpus and evaluation framework for text anonymization},
+  author={Pil{\'a}n, Ildik{\'o} and Lison, Pierre and {\O}vrelid, Lilja and Papadopoulou, Anthi and S{\'a}nchez, David and Batet, Montserrat},
+  journal={Computational Linguistics},
+  volume={48},
+  number={4},
+  pages={1053--1101},
+  year={2022},
+  publisher={MIT Press One Broadway, 12th Floor, Cambridge, Massachusetts 02142, USA~…}
+}
+
+@misc{USAct2023,
+    author = {US},
+    title = {Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence},
+    note={\url{https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development
+     -and-use-of-artificial-intelligence}},
+    year={2023},
+}
+
+@misc{EUAIAct2024,
+    author = {EU},
+    title = {The Artificial Intelligence Act},
+    note={\url{https://data.consilium.europa.eu/doc/document/ST-5662-2024-INIT/en/pdf}},
+    year={2024},
+}
+
+@article{rubenfeld1989right,
+  title={The right of privacy},
+  author={Rubenfeld, Jed},
+  journal={Harvard Law Review},
+  pages={737--807},
+  year={1989},
+  publisher={JSTOR}
+}
+
+@article{team2024gemini,
+  title={Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context},
+  author={{Gemini Team} and Georgiev, Petko and Lei, Ving Ian and Burnell, Ryan and Bai, Libin and Gulati, Anmol and Tanzer, Garrett and Vincent, Damien and Pan, Zhufeng and Wang, Shibo and others},
+  journal={arXiv preprint arXiv:2403.05530},
+  year={2024}
+}
+
+@misc{belrose2025elicitinglatentpredictionstransformers,
+      title={Eliciting Latent Predictions from Transformers with the Tuned Lens}, 
+      author={Nora Belrose and Igor Ostrovsky and Lev McKinney and Zach Furman and Logan Smith and Danny Halawi and Stella Biderman and Jacob Steinhardt},
+      year={2025},
+      eprint={2303.08112},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2303.08112}, 
+}
+
+@inproceedings{whitebox_mia_nasr,
+   title={Comprehensive Privacy Analysis of Deep Learning: Passive and Active White-box Inference Attacks against Centralized and Federated Learning},
+   url={http://dx.doi.org/10.1109/SP.2019.00065},
+   DOI={10.1109/sp.2019.00065},
+   booktitle={2019 IEEE Symposium on Security and Privacy (SP)},
+   publisher={IEEE},
+   author={Nasr, Milad and Shokri, Reza and Houmansadr, Amir},
+   year={2019},
+   month=may, pages={739–753} }
+
+@INPROCEEDINGS {whitebox_mia_yeom,
+author = { Yeom, Samuel and Giacomelli, Irene and Fredrikson, Matt and Jha, Somesh },
+booktitle = { 2018 IEEE 31st Computer Security Foundations Symposium (CSF) },
+title = {{ Privacy Risk in Machine Learning: Analyzing the Connection to Overfitting }},
+year = {2018},
+volume = {},
+ISSN = {2374-8303},
+pages = {268-282},
+abstract = { Machine learning algorithms, when applied to sensitive data, pose a distinct threat to privacy. A growing body of prior work demonstrates that models produced by these algorithms may leak specific private information in the training data to an attacker, either through the models' structure or their observable behavior. However, the underlying cause of this privacy risk is not well understood beyond a handful of anecdotal accounts that suggest overfitting and influence might play a role. This paper examines the effect that overfitting and influence have on the ability of an attacker to learn information about the training data from machine learning models, either through training set membership inference or attribute inference attacks. Using both formal and empirical analyses, we illustrate a clear relationship between these factors and the privacy risk that arises in several popular machine learning algorithms. We find that overfitting is sufficient to allow an attacker to perform membership inference and, when the target attribute meets certain conditions about its influence, attribute inference attacks. Interestingly, our formal analysis also shows that overfitting is not necessary for these attacks and begins to shed light on what other factors may be in play. Finally, we explore the connection between membership inference and attribute inference, showing that there are deep connections between the two that lead to effective new attacks. },
+keywords = {Privacy;Machine learning algorithms;Data models;Training data;Machine learning;Training},
+doi = {10.1109/CSF.2018.00027},
+url = {https://doi.ieeecomputersociety.org/10.1109/CSF.2018.00027},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month =Jul}
+
+@article{blackbox_mia_salem,
+  title={Ml-leaks: Model and data independent membership inference attacks and defenses on machine learning models},
+  author={Salem, Ahmed and Zhang, Yang and Humbert, Mathias and Berrang, Pascal and Fritz, Mario and Backes, Michael},
+  journal={arXiv preprint arXiv:1806.01246},
+  year={2018}
+}
+
+@InProceedings{wmdp,
+  title = 	 {The {WMDP} Benchmark: Measuring and Reducing Malicious Use with Unlearning},
+  author =       {Li, Nathaniel and Pan, Alexander and Gopal, Anjali and Yue, Summer and Berrios, Daniel and Gatti, Alice and Li, Justin D. and Dombrowski, Ann-Kathrin and Goel, Shashwat and Mukobi, Gabriel and Helm-Burger, Nathan and Lababidi, Rassin and Justen, Lennart and Liu, Andrew Bo and Chen, Michael and Barrass, Isabelle and Zhang, Oliver and Zhu, Xiaoyuan and Tamirisa, Rishub and Bharathi, Bhrugu and Herbert-Voss, Ariel and Breuer, Cort B and Zou, Andy and Mazeika, Mantas and Wang, Zifan and Oswal, Palash and Lin, Weiran and Hunt, Adam Alfred and Tienken-Harder, Justin and Shih, Kevin Y. and Talley, Kemper and Guan, John and Steneker, Ian and Campbell, David and Jokubaitis, Brad and Basart, Steven and Fitz, Stephen and Kumaraguru, Ponnurangam and Karmakar, Kallol Krishna and Tupakula, Uday and Varadharajan, Vijay and Shoshitaishvili, Yan and Ba, Jimmy and Esvelt, Kevin M. and Wang, Alexandr and Hendrycks, Dan},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {28525--28550},
+  year = 	 {2024},
+  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/li24bc/li24bc.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/li24bc.html},
+  abstract = 	 {The White House Executive Order on Artificial Intelligence highlights the risks of large language models (LLMs) empowering malicious actors in developing biological, cyber, and chemical weapons. To measure these risks, government institutions and major AI labs are developing evaluations for hazardous capabilities in LLMs. However, current evaluations are private and restricted to a narrow range of malicious use scenarios, which limits further research into reducing malicious use. To fill these gaps, we release the Weapons of Mass Destruction Proxy (WMDP) benchmark, a dataset of 3,668 multiple-choice questions that serve as a proxy measurement of hazardous knowledge in biosecurity, cybersecurity, and chemical security. To guide progress on unlearning, we develop RMU, a state-of-the-art unlearning method based on controlling model representations. RMU reduces model performance on WMDP while maintaining general capabilities in areas such as biology and computer science, suggesting that unlearning may be a concrete path towards reducing malicious use from LLMs. We release our benchmark and code publicly at https://wmdp.ai.}
+}
+
+
+@misc{krishnan2025dataunlearnedequally,
+      title={Not All Data Are Unlearned Equally}, 
+      author={Aravind Krishnan and Siva Reddy and Marius Mosbach},
+      year={2025},
+      eprint={2504.05058},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2504.05058}, 
+}
+
+@inproceedings{tofu,
+title={{TOFU}: A Task of Fictitious Unlearning for {LLM}s},
+author={Pratyush Maini and Zhili Feng and Avi Schwarzschild and Zachary Chase Lipton and J Zico Kolter},
+booktitle={First Conference on Language Modeling},
+year={2024},
+url={https://openreview.net/forum?id=B41hNBoWLo}
+}
+
+@misc{llm_unlearning,
+      title={Rethinking Machine Unlearning for Large Language Models}, 
+      author={Sijia Liu and Yuanshun Yao and Jinghan Jia and Stephen Casper and Nathalie Baracaldo and Peter Hase and Yuguang Yao and Chris Yuhao Liu and Xiaojun Xu and Hang Li and Kush R. Varshney and Mohit Bansal and Sanmi Koyejo and Yang Liu},
+      year={2024},
+      eprint={2402.08787},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2402.08787}, 
+}
+
+@misc{refusal_1,
+      title={Constitutional AI: Harmlessness from AI Feedback}, 
+      author={Yuntao Bai and Saurav Kadavath and Sandipan Kundu and Amanda Askell and Jackson Kernion and Andy Jones and Anna Chen and Anna Goldie and Azalia Mirhoseini and Cameron McKinnon and Carol Chen and Catherine Olsson and Christopher Olah and Danny Hernandez and Dawn Drain and Deep Ganguli and Dustin Li and Eli Tran-Johnson and Ethan Perez and Jamie Kerr and Jared Mueller and Jeffrey Ladish and Joshua Landau and Kamal Ndousse and Kamile Lukosuite and Liane Lovitt and Michael Sellitto and Nelson Elhage and Nicholas Schiefer and Noemi Mercado and Nova DasSarma and Robert Lasenby and Robin Larson and Sam Ringer and Scott Johnston and Shauna Kravec and Sheer El Showk and Stanislav Fort and Tamera Lanham and Timothy Telleen-Lawton and Tom Conerly and Tom Henighan and Tristan Hume and Samuel R. Bowman and Zac Hatfield-Dodds and Ben Mann and Dario Amodei and Nicholas Joseph and Sam McCandlish and Tom Brown and Jared Kaplan},
+      year={2022},
+      eprint={2212.08073},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2212.08073}, 
+}
+
+@misc{refusal_2,
+      title={Training language models to follow instructions with human feedback}, 
+      author={Long Ouyang and Jeff Wu and Xu Jiang and Diogo Almeida and Carroll L. Wainwright and Pamela Mishkin and Chong Zhang and Sandhini Agarwal and Katarina Slama and Alex Ray and John Schulman and Jacob Hilton and Fraser Kelton and Luke Miller and Maddie Simens and Amanda Askell and Peter Welinder and Paul Christiano and Jan Leike and Ryan Lowe},
+      year={2022},
+      eprint={2203.02155},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2203.02155}, 
+}
+
+@misc{jailbreak_1,
+      title={Universal and Transferable Adversarial Attacks on Aligned Language Models}, 
+      author={Andy Zou and Zifan Wang and Nicholas Carlini and Milad Nasr and J. Zico Kolter and Matt Fredrikson},
+      year={2023},
+      eprint={2307.15043},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2307.15043}, 
+}
+
+@misc{jailbreak_2,
+      title={Jailbroken: How Does LLM Safety Training Fail?}, 
+      author={Alexander Wei and Nika Haghtalab and Jacob Steinhardt},
+      year={2023},
+      eprint={2307.02483},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2307.02483}, 
+}
+
+@inproceedings{rr,
+title={Improving Alignment and Robustness with Circuit Breakers},
+author={Andy Zou and Long Phan and Justin Wang and Derek Duenas and Maxwell Lin and Maksym Andriushchenko and J Zico Kolter and Matt Fredrikson and Dan Hendrycks},
+booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+year={2024},
+url={https://openreview.net/forum?id=IbIB8SBKFV}
+}
+
+
+@inproceedings{satimp,
+title={Exploring Criteria of Loss Reweighting to Enhance {LLM} Unlearning},
+author={Puning Yang and Qizhou Wang and Zhuo Huang and Tongliang Liu and Chengqi Zhang and Bo Han},
+booktitle={Forty-second International Conference on Machine Learning},
+year={2025},
+url={https://openreview.net/forum?id=mGOugCZlAq}
+}
+
+@inproceedings{
+wikitext,
+title={Pointer Sentinel Mixture Models},
+author={Stephen Merity and Caiming Xiong and James Bradbury and Richard Socher},
+booktitle={International Conference on Learning Representations},
+year={2017},
+url={https://openreview.net/forum?id=Byj72udxe}
+}
+
+@misc{erase_llm,
+      title={Erasing Conceptual Knowledge from Language Models}, 
+      author={Rohit Gandikota and Sheridan Feucht and Samuel Marks and David Bau},
+      year={2025},
+      eprint={2410.02760},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.02760}, 
+}
+
+@inproceedings{tinybenchmarks,
+author = {Polo, Felipe Maia and Weber, Lucas and Choshen, Leshem and Sun, Yuekai and Xu, Gongjun and Yurochkin, Mikhail},
+title = {tinyBenchmarks: evaluating LLMs with fewer examples},
+year = {2024},
+publisher = {JMLR.org},
+abstract = {The versatility of large language models (LLMs) led to the creation of diverse benchmarks that thoroughly test a variety of language models' abilities. These benchmarks consist of tens of thousands of examples making evaluation of LLMs very expensive. In this paper, we investigate strategies to reduce the number of evaluations needed to assess the performance of an LLM on several key benchmarks. For example, we show that to accurately estimate the performance of an LLM on MMLU, a popular multiple-choice QA benchmark consisting of 14K examples, it is sufficient to evaluate this LLM on 100 curated examples. We release evaluation tools and tiny versions of popular benchmarks: Open LLM Leaderboard, MMLU, HELM, and AlpacaEval 2.0. Our empirical analysis demonstrates that these tools and tiny benchmarks are sufficient to reliably and efficiently reproduce the original evaluation results.},
+booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+articleno = {1396},
+numpages = {24},
+location = {Vienna, Austria},
+series = {ICML'24}
+}
+
+@inproceedings{dankers-titov-2024-generalisation,
+    title = "Generalisation First, Memorisation Second? Memorisation Localisation for Natural Language Classification Tasks",
+    author = "Dankers, Verna  and
+      Titov, Ivan",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.852/",
+    doi = "10.18653/v1/2024.findings-acl.852",
+    pages = "14348--14366",
+    abstract = "Memorisation is a natural part of learning from real-world data: neural models pick up on atypical input-output combinations and store those training examples in their parameter space. That this happens is well-known, but how and where are questions that remain largely unanswered. Given a multi-layered neural model, where does memorisation occur in the millions of parameters?Related work reports conflicting findings: a dominant hypothesis based on image classification is that lower layers learn generalisable features and that deeper layers specialise and memorise. Work from NLP suggests this does not apply to language models, but has been mainly focused on memorisation of facts.We expand the scope of the localisation question to 12 natural language classification tasks and apply 4 memorisation localisation techniques.Our results indicate that memorisation is a gradual process rather than a localised one, establish that memorisation is task-dependent, and give nuance to the generalisation first, memorisation second hypothesis."
+}
+
+@inproceedings{chang-etal-2024-localization,
+    title = "Do Localization Methods Actually Localize Memorized Data in {LLM}s? A Tale of Two Benchmarks",
+    author = "Chang, Ting-Yun  and
+      Thomason, Jesse  and
+      Jia, Robin",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-long.176/",
+    doi = "10.18653/v1/2024.naacl-long.176",
+    pages = "3190--3211",
+    abstract = "The concept of localization in LLMs is often mentioned in prior work; however, methods for localization have never been systematically and directly evaluated. We propose two complementary benchmarks that evaluate the ability of localization methods to pinpoint LLM components responsible for memorized data. In our INJ benchmark, we actively inject a piece of new information into a small subset of LLM weights, enabling us to directly evaluate whether localization methods can identify these ``ground truth'' weights. In our DEL benchmark, we evaluate localization by measuring how much dropping out identified neurons deletes a memorized pretrained sequence. Despite their different perspectives, our two benchmarks yield consistent rankings of five localization methods. Methods adapted from network pruning perform well on both benchmarks, and all evaluated methods show promising localization ability. On the other hand, even successful methods identify neurons that are not specific to a single memorized sequence."
+}
+
+@inproceedings{dai-etal-2022-knowledge,
+    title = "Knowledge Neurons in Pretrained Transformers",
+    author = "Dai, Damai  and
+      Dong, Li  and
+      Hao, Yaru  and
+      Sui, Zhifang  and
+      Chang, Baobao  and
+      Wei, Furu",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.581/",
+    doi = "10.18653/v1/2022.acl-long.581",
+    pages = "8493--8502",
+    abstract = "Large-scale pretrained language models are surprisingly good at recalling factual knowledge presented in the training corpus. In this paper, we present preliminary studies on how factual knowledge is stored in pretrained Transformers by introducing the concept of knowledge neurons. Specifically, we examine the fill-in-the-blank cloze task for BERT. Given a relational fact, we propose a knowledge attribution method to identify the neurons that express the fact. We find that the activation of such knowledge neurons is positively correlated to the expression of their corresponding facts. In our case studies, we attempt to leverage knowledge neurons to edit (such as update, and erase) specific factual knowledge without fine-tuning. Our results shed light on understanding the storage of knowledge within pretrained Transformers."
+}
+
+@misc{mmlu_paraphrase,
+      title={Rethinking Benchmark and Contamination for Language Models with Rephrased Samples}, 
+      author={Shuo Yang and Wei-Lin Chiang and Lianmin Zheng and Joseph E. Gonzalez and Ion Stoica},
+      year={2023},
+      eprint={2311.04850},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2311.04850}, 
+}
+
+@misc{yago_paraphrase,
+      title={Robust Data Watermarking in Language Models by Injecting Fictitious Knowledge}, 
+      author={Xinyue Cui and Johnny Tian-Zheng Wei and Swabha Swayamdipta and Robin Jia},
+      year={2025},
+      eprint={2503.04036},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2503.04036}, 
+}
+
+
+@inproceedings{
+muse,
+title={{MUSE}: Machine Unlearning Six-Way Evaluation for Language Models},
+author={Weijia Shi and Jaechan Lee and Yangsibo Huang and Sadhika Malladi and Jieyu Zhao and Ari Holtzman and Daogao Liu and Luke Zettlemoyer and Noah A. Smith and Chiyuan Zhang},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=TArmA033BU}
+}
+
+@misc{kandpal2025commonpilev018tb,
+      title={The Common Pile v0.1: An 8TB Dataset of Public Domain and Openly Licensed Text}, 
+      author={Nikhil Kandpal and Brian Lester and Colin Raffel and Sebastian Majstorovic and Stella Biderman and Baber Abbasi and Luca Soldaini and Enrico Shippole and A. Feder Cooper and Aviya Skowron and John Kirchenbauer and Shayne Longpre and Lintang Sutawika and Alon Albalak and Zhenlin Xu and Guilherme Penedo and Loubna Ben Allal and Elie Bakouch and John David Pressman and Honglu Fan and Dashiell Stander and Guangyu Song and Aaron Gokaslan and Tom Goldstein and Brian R. Bartoldson and Bhavya Kailkhura and Tyler Murray},
+      year={2025},
+      eprint={2506.05209},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2506.05209}, 
+}
+
+@inproceedings{geva-etal-2021-transformer,
+    title = "Transformer Feed-Forward Layers Are Key-Value Memories",
+    author = "Geva, Mor  and
+      Schuster, Roei  and
+      Berant, Jonathan  and
+      Levy, Omer",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.446/",
+    doi = "10.18653/v1/2021.emnlp-main.446",
+    pages = "5484--5495",
+    abstract = "Feed-forward layers constitute two-thirds of a transformer model{'}s parameters, yet their role in the network remains under-explored. We show that feed-forward layers in transformer-based language models operate as key-value memories, where each key correlates with textual patterns in the training examples, and each value induces a distribution over the output vocabulary. Our experiments show that the learned patterns are human-interpretable, and that lower layers tend to capture shallow patterns, while upper layers learn more semantic ones. The values complement the keys' input patterns by inducing output distributions that concentrate probability mass on tokens likely to appear immediately after each pattern, particularly in the upper layers. Finally, we demonstrate that the output of a feed-forward layer is a composition of its memories, which is subsequently refined throughout the model{'}s layers via residual connections to produce the final output distribution."
+}
+
+@misc{shi2025flexolmoopenlanguagemodels,
+      title={FlexOlmo: Open Language Models for Flexible Data Use}, 
+      author={Weijia Shi and Akshita Bhagia and Kevin Farhat and Niklas Muennighoff and Pete Walsh and Jacob Morrison and Dustin Schwenk and Shayne Longpre and Jake Poznanski and Allyson Ettinger and Daogao Liu and Margaret Li and Dirk Groeneveld and Mike Lewis and Wen-tau Yih and Luca Soldaini and Kyle Lo and Noah A. Smith and Luke Zettlemoyer and Pang Wei Koh and Hannaneh Hajishirzi and Ali Farhadi and Sewon Min},
+      year={2025},
+      eprint={2507.07024},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2507.07024}, 
+}
+
+@misc{ghosal2025memorizationsinksisolatingmemorization,
+      title={Memorization Sinks: Isolating Memorization during LLM Training}, 
+      author={Gaurav R. Ghosal and Pratyush Maini and Aditi Raghunathan},
+      year={2025},
+      eprint={2507.09937},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2507.09937}, 
+}
+
+@inproceedings{maini_can_2023,
+author = {Maini, Pratyush and Mozer, Michael C. and Sedghi, Hanie and Lipton, Zachary C. and Kolter, J. Zico and Zhang, Chiyuan},
+title = {Can neural network memorization be localized?},
+year = {2023},
+publisher = {JMLR.org},
+abstract = {Recent efforts at explaining the interplay of memorization and generalization in deep overparametrized networks have posited that neural networks memorize "hard" examples in the final few layers of the model. Memorization refers to the ability to correctly predict on atypical examples of the training set. In this work, we show that rather than being confined to individual layers, memorization is a phenomenon confined to a small set of neurons in various layers of the model. First, via three experimental sources of converging evidence, we find that most layers are redundant for the memorization of examples and the layers that contribute to example memorization are, in general, not the final layers. The three sources are gradient accounting (measuring the contribution to the gradient norms from memorized and clean examples), layer rewinding (replacing specific model weights of a converged model with previous training checkpoints), and retraining (training rewound layers only on clean examples). Second, we ask a more generic question: can memorization be localized anywhere in a model? We discover that memorization is often confined to a small number of neurons or channels (around 5) of the model. Based on these insights we propose a new form of dropout--example-tied dropout that enables us to direct the memorization of examples to an a priori determined set of neurons. By dropping out these neurons, we are able to reduce the accuracy on memorized examples from 100\% → 3\%, while also reducing the generalization gap.},
+booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+articleno = {983},
+numpages = {22},
+location = {Honolulu, Hawaii, USA},
+series = {ICML'23}
+}
+
+@inproceedings{
+biderman2023emergent,
+title={Emergent and Predictable Memorization in Large Language Models},
+author={Stella Biderman and USVSN Sai Prashanth and Lintang Sutawika and Hailey Schoelkopf and Quentin Gregory Anthony and Shivanshu Purohit and Edward Raff},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=Iq0DvhB4Kf}
+}
+
+@inproceedings{
+panda2025privacy,
+title={Privacy Auditing of Large Language Models},
+author={Ashwinee Panda and Xinyu Tang and Christopher A. Choquette-Choo and Milad Nasr and Prateek Mittal},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=60Vd7QOXlM}
+}
+
+@misc{grosse2023studyinglargelanguagemodel,
+      title={Studying Large Language Model Generalization with Influence Functions}, 
+      author={Roger Grosse and Juhan Bae and Cem Anil and Nelson Elhage and Alex Tamkin and Amirhossein Tajdini and Benoit Steiner and Dustin Li and Esin Durmus and Ethan Perez and Evan Hubinger and Kamilė Lukošiūtė and Karina Nguyen and Nicholas Joseph and Sam McCandlish and Jared Kaplan and Samuel R. Bowman},
+      year={2023},
+      eprint={2308.03296},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2308.03296}, 
+}
+
+@misc{mireshghallah2025positionprivacyjustmemorization,
+      title={Position: Privacy Is Not Just Memorization!}, 
+      author={Niloofar Mireshghallah and Tianshi Li},
+      year={2025},
+      eprint={2510.01645},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2510.01645}, 
+}
+
+@misc{chang2025inputsbreaklowbitllm,
+      title={Why Do Some Inputs Break Low-Bit LLM Quantization?}, 
+      author={Ting-Yun Chang and Muru Zhang and Jesse Thomason and Robin Jia},
+      year={2025},
+      eprint={2506.12044},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2506.12044}, 
+}
+
+@article{kumar_scaling_2025,
+  author = {Tanishq Kumar and Zachary Ankner and Benjamin F. Spector and Blake Bordelon and Niklas Muennighoff and Mansheej Paul and Cengiz Pehlevan and Christopher R{\'e} and Aditi Raghunathan},
+  title = {Scaling Laws for Precision },
+  year = {2025},
+  journal = {International Conference on Learning Representations (ICLR) (Oral)},
+  language = {eng},
+}

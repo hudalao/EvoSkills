@@ -1,0 +1,50 @@
+{
+ "paper_id": "2505.06120v1",
+ "variant": "V1",
+ "defects": [
+  {
+   "uid": "V1-1",
+   "type": "D1",
+   "aspect": "Claims support (A1)",
+   "severity": "major",
+   "location_anchor": "Abstract — sentence beginning 'Our experiments confirm that all the top open- and closed-weight LLMs'",
+   "detection_criteria": "Hit iff the review flags the Abstract's universal claim that every model drops by at least 39% on each of the six tasks as overstated, unsupported, or contradicted by Table 1 (tab:main_results) — e.g., noting that several models/tasks show drops well below 39% — or explicitly asks to weaken it back to an average/qualified statement. Merely restating the 39% figure or criticizing other abstract claims is not a hit.",
+   "rationale": "Strengthens the abstract's quantified average into a universal per-model, per-task bound. Checkably false from the paper's own Table 1: 9 of 15 models have overall Sharded/Full ratios above 61 (drops under 39%), and cells like Phi-4 Data-to-text (23.9 vs 23.2) show near-zero drops. Reads like a sloppy authorial strengthening in which 'average' was dropped.",
+   "old_string": "Our experiments confirm that all the top open- and closed-weight LLMs we test exhibit significantly lower performance in multi-turn conversations than single-turn, with an average drop of 39\\% across six generation tasks.",
+   "new_string": "Our experiments confirm that all the top open- and closed-weight LLMs we test exhibit significantly lower performance in multi-turn conversations than single-turn, with each model's performance dropping by at least 39\\% on each of the six generation tasks."
+  },
+  {
+   "uid": "V1-2",
+   "type": "D10",
+   "aspect": "Submission hygiene (citations)",
+   "severity": "minor",
+   "location_anchor": "Introduction, final paragraph — near 'likely a reason for low uptake of AI systems'",
+   "detection_criteria": "Hit iff the review reports broken or unresolvable citations — [?] citations or \\cite keys missing from the bibliography — pointing at the Introduction's final paragraph (low uptake of AI systems / novice users sentence) or naming the keys brauner2023what or knoth2024aila. Complaints only about citation style or formatting elsewhere are not a hit.",
+   "rationale": "Two \\cite keys re-cased/truncated as if a bib refactor was half-propagated (Brauner2023WhatDT -> brauner2023what, Knoth2024AILA -> knoth2024aila). Both replacement keys verified absent from bibliography.bib (keys are case-sensitive), so they resolve to [?]; the originals verified present. Edit confined to one intro sentence, everything else compiles as before.",
+   "old_string": "\\cite{southworth2023developing,Brauner2023WhatDT,horowitz2024adopting}, particularly with novice users who are less skilled at providing complete, detailed instructions from the onset of conversation \\cite{zamfirescu2023johnny,Knoth2024AILA}",
+   "new_string": "\\cite{southworth2023developing,brauner2023what,horowitz2024adopting}, particularly with novice users who are less skilled at providing complete, detailed instructions from the onset of conversation \\cite{zamfirescu2023johnny,knoth2024aila}"
+  },
+  {
+   "uid": "V1-3",
+   "type": "D5",
+   "aspect": "Results interpretation (A3)",
+   "severity": "major",
+   "location_anchor": "Implications for System and Agent Builders (Sec 7.1) — sentence after 'summarizes the results on all instructions for four tasks'",
+   "detection_criteria": "Hit iff the review states that Section 7.1's prose overstates the Recap/Snowball results relative to Table tab:recap_snowball — i.e., that Recap (66.5/76.6) and Snowball (61.8/65.3) are not 'close to' Full (86.8/93.0) or Concat levels — or otherwise flags that sentence as inconsistent with the table's numbers. Generic skepticism about Recap/Snowball that does not reference the prose-vs-table mismatch is not a hit.",
+   "rationale": "Classic D5: only the prose interpretation of tab:recap_snowball is inflated from 'some level of success ... still lags behind' to 'close to Full and Concat levels'; every table number is untouched. The paragraph's remaining sentences (15-20% mitigation, 'might be limiting') keep the sober tone, mimicking a real overstated topic sentence, and the mismatch is decidable by reading the adjacent wraptable.",
+   "old_string": "Both \\recapt and \\snowballt demonstrate some level of success, with improvements over \\shardedt simulations, but the performance still lags behind \\fullt or \\concatt.",
+   "new_string": "Both \\recapt and \\snowballt demonstrate substantial success, with large improvements over \\shardedt simulations that bring performance close to \\fullt and \\concatt levels."
+  },
+  {
+   "uid": "V1-4",
+   "type": "D9",
+   "aspect": "Limitations/conclusion check",
+   "severity": "major",
+   "location_anchor": "Limitations section — body directly after '\\section{Limitations} \\label{sec:limitations}'",
+   "detection_criteria": "Hit iff the review explicitly criticizes the Limitations section as empty, generic, boilerplate, or lacking substantive limitation discussion (or states that the paper is missing a real limitations discussion, e.g., noting that Section 2's promise of detailed simulation-framework limitations is never fulfilled).",
+   "rationale": "D9 variant 'delete substantive items, keep boilerplate': the \\section{Limitations} header and \\label{sec:limitations} are kept so the Section 2 \\ref still resolves and the document compiles, but all three substantive limitations (simulation realism, analytical-tasks-only scope, English-only scope) are replaced by two positive-spin platitude sentences. Full-section deletion was rejected because it would dangle the Sec 2 reference.",
+   "old_string": "% 1. Fully automated simulation\nA first limitation of our work is the reliance on fully automated simulation. By relying on an LLM to simulate user utterances, we can scale our experiments, including running the same simulation multiple times, which would be cost-prohibitive with real users. However, the simulations we obtain are not representative of natural human-AI conversation. The properties of the sharding process (defined in Appendix~\\ref{app:sharding_process}) and of the simulation environment (see Section~\\ref{sec:simulation_process}) ensure that the simulated conversations follow a rather narrow structure, likely not modeling the full range of conversation dynamics that occur with a large, diverse user population. For example, the simulation process ensures a new shard of information is revealed at each turn, and that the last turn of the conversation has specified all the information needed to complete the task which might not happen with real users. Properties P1, P2, and P5 of the sharding process also restrict the scope of the conversation, as sharded instructions closely match an existing fully-specified instruction, with the high-level intent always identified in the conversation's first turn. The minimal nature of shards is also unrealistic and potentially adversarial, though the gradual sharding experiment finds that different levels of shard granularity lead to similar performance degradations, as soon as conversations occur over two turns or more.\nApart from sharding granularity, automatic simulation also lacks the nuance that can occur when a human is involved in conversation, from misunderstandings over terminology, giving up due to frustration with system failures \\cite{wester2024ai}, or the lack of a feasible end goal for certain conversations (e.g., the user wanting a solution to an unsolved problem). Because of these factors, we believe conducted simulations represent a benign testing ground for LLM multi-turn capabilities. \\textbf{Because of the overly simplified conditions of simulation, we believe the degradation observed in experiments is most likely an underestimate of LLM unreliability, and how frequently LLMs get lost in conversation in real-world settings.} The experiments serve as a scalable, low-cost experimental environment for studying LLMs in multi-turn settings.\n\n% 2. Focus on analytical tasks, could look into creative tasks\nA second limitation of our work is the focus on analytical tasks. Although we selected a diverse set of both programming and natural language tasks, we restricted experiments to tasks that involve an analytical solution. This restriction limits the scope of our findings, as we do not establish whether models get lost in conversation on more open-ended tasks, such as creative writing \\cite{chakrabarty2024art}. This was a conscious choice: though there has been some progress on creative writing evaluation, it is still an active area of research \\cite{chakrabarty2025ai}, and we relied on more established tasks and metrics for the initial set of experiments. Determining whether degradation occurs -- and if so, identifying the magnitude -- on creative tasks is an important direction for future work.\n\n% 3. Focus on English, could look into other languages.\nA third limitation of the work is the focus on text-only tasks in the English language. Establishing whether models get lost in conversation in other languages, or in tasks that involve multiple modalities in either user or assistant utterances, could help establish the scope of the degradation observed in LLM multi-turn capabilities.",
+   "new_string": "Our study, like any large-scale simulation effort, naturally involves practical design trade-offs. We are encouraged by the consistency of the lost-in-conversation phenomenon across the models and tasks we evaluated, and we leave broader explorations of multi-turn conversation to future work."
+  }
+ ]
+}

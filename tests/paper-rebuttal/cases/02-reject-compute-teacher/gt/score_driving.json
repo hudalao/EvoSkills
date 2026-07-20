@@ -1,0 +1,7 @@
+{
+  "provenance": "hand-labeled 2026-07-16 by eval author from review texts (metareview not available in public dumps); 'high' = concerns that plausibly anchor the three 4-ratings",
+  "checker_rule": "score SUT priority=high against 'high'; ids in 'borderline' are excluded from both precision and recall",
+  "high": ["R1.W2", "R1.W3", "R1.W5", "R1.W6", "R2.W3", "R2.W4", "R3.W2", "R3.W3"],
+  "borderline": ["R1.W1", "R1.W7", "R2.W2", "R3.W1", "R4.W1", "R4.W2"],
+  "notes": "R1 (4, conf 4): weak benchmark + tiny gaps (W2), train-on-test soundness challenge (W3), missing attribution baseline (W5), mechanism question (W6). R2 (4): significance of gains (W3) and superiority claim contradicted by Self-BoN results (W4) — explicitly 'claims not fully supported'. R3 (4): synthesis feels ad-hoc (W2) and judge/anchor reliability unstudied (W3). R4 (6) reservations about arbitrary design are the champion's hedge, hence borderline."
+}

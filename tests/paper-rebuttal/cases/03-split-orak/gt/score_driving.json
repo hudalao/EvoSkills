@@ -1,0 +1,7 @@
+{
+  "provenance": "hand-labeled 2026-07-16 by eval author from review texts (metareview not available in public dumps); 'high' = concerns that plausibly anchor the 2 (R2) and 4 (R3) ratings",
+  "checker_rule": "score SUT priority=high against 'high'; ids in 'borderline' are excluded from both precision and recall",
+  "high": ["R2.W1", "R2.W2", "R2.W5", "R3.W1", "R3.W6", "R3.W7"],
+  "borderline": ["R2.W3", "R2.W4", "R3.W4", "R3.W5", "R4.W1", "R4.W5"],
+  "notes": "R2 (2, conf 4): novelty/differentiation (W1), statistical rigor (W2), and GPT-trajectory bias/contamination (W5) anchor the outlier low score. R3 (4): unsurprising-conclusions framing (W1) plus the two dataset-methodology attacks (W6 teacher cap, W7 survivorship bias). R1/R4 (8,8) raise only hedged limitations; R4.W1 (overclaimed depth) and R4.W5 (action grounding abstracted) are the champion-side hedges, borderline."
+}

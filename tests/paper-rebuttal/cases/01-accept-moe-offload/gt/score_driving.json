@@ -1,0 +1,7 @@
+{
+  "provenance": "hand-labeled 2026-07-16 by eval author from review texts (metareview not available in public dumps); 'high' = concerns that plausibly anchor the two 4-ratings",
+  "checker_rule": "score SUT priority=high against 'high'; ids in 'borderline' are excluded from both precision and recall",
+  "high": ["R2.W1", "R2.W4", "R3.W1", "R3.W3"],
+  "borderline": ["R3.W4", "R1.W2", "R2.W2"],
+  "notes": "R2 (4): causation critique (W1) + core-claim-not-demonstrated (W4) anchor the score. R3 (4): no-throughput-link (W1) + causation critique (W3) anchor; writing (W4) contributes but is fixable. R1 (6) raises mostly presentation issues; R1.W2 overlaps the no-system-validation theme hence borderline."
+}

@@ -1,0 +1,15 @@
+{
+ "high": [
+  "R1.W1",
+  "R2.W1",
+  "R2.W2",
+  "R3.W1",
+  "R3.W3"
+ ],
+ "borderline": [
+  "R1.W3",
+  "R2.W3",
+  "R3.W2"
+ ],
+ "notes": "Metareview names exactly two original concerns: (a) motivation-experiment disconnect via single reward model -> R1.W1+R2.W1+R3.W1; (b) is n-player needed over 2-player -> R2.W2+R3.W3. Successful real rebuttal resolved both with new experiments (HT-MNPO; n=3 vs n=2 ablation)."
+}

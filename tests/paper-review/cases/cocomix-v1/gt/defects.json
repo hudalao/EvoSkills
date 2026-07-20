@@ -1,0 +1,50 @@
+{
+ "paper_id": "2502.08524v1",
+ "variant": "V1",
+ "defects": [
+  {
+   "uid": "V1-1",
+   "type": "D1",
+   "aspect": "Claims/A1 - unsupported strong claim",
+   "severity": "major",
+   "location_anchor": "Abstract; sentence beginning \"Through experiments on multiple benchmarks, including language modeling and downstream reasoning tasks, we show that \\sname is more sample efficient...\"",
+   "detection_criteria": "HIT iff a finding targets the abstract's claim that CoCoMix outperforms NTP/KD/pause tokens \"on every individual benchmark and at every model scale\" (quoting or clearly paraphrasing that sentence) AND either (a) states it is unsupported/contradicted by the paper's own results (e.g., Table 1 rows where CoCoMix ties or loses: PIQA and Arc-Easy at 69M, PIQA at 386M, WikiText ties, or pause-token results existing only at 69M in Fig. 5f), or (b) explicitly asks to weaken/qualify this universal wording. A generic \"claims are somewhat strong\" that does not point at this abstract sentence is a MISS.",
+   "rationale": "Strengthens the existing aggregate-level claim into a per-benchmark, per-scale universal claim. Checkably false from Table 1 alone (CoCoMix loses PIQA/Arc-E at 69M to KD/NTP, loses PIQA at 386M to NTP, ties Wiki at 386M/1.38B), and the pause-token comparison exists only for the 69M model. Reads like a routine author overstatement; no numbers touched.",
+   "old_string": "we show that \\sname is more sample efficient and consistently outperforms standard next token prediction, knowledge distillation and inserting pause tokens.",
+   "new_string": "we show that \\sname is more sample efficient and outperforms standard next token prediction, knowledge distillation and inserting pause tokens on every individual benchmark and at every model scale."
+  },
+  {
+   "uid": "V1-2",
+   "type": "D7",
+   "aspect": "Completeness/A4 - acknowledged baseline missing without explanation",
+   "severity": "major",
+   "location_anchor": "Section 3 Experiments, \\textbf{Baselines.} paragraph; between \"...widely used in pretraining \\citep{gu2024miniplm, sanh2019distilbert,team2024gemma}.\" and \"For KD, we minimize the KL divergence...\"",
+   "detection_criteria": "HIT iff a finding points out that a cited, directly comparable KD-for-LLM-pretraining method (MiniPLM / gu2024miniplm, or \"the recent/multi-teacher KD methods cited in the Baselines or Related Work paragraphs\") is absent from the experimental comparison (Table 1) with no stated justification, or demands either a comparison with such cited KD variants or an explanation for comparing only vanilla (Hinton-style) KD. A generic \"add more baselines\" that never references the cited KD variants is a MISS.",
+   "rationale": "Deletes the only justification for excluding multi-model KD baselines. Post-edit, MiniPLM is still cited twice as a current KD-for-pretraining method (Baselines: \"widely used in pretraining\"; Related Work: \"most current methods resort to naive token-level probability matching\") yet only vanilla KD is compared, with no explanation - the exact D7 pattern. A single-sentence deletion that reads like space trimming.",
+   "old_string": "We excluded KD baselines that require multiple models (i.e., more than a single teacher model) to be trained \\citep{gu2024miniplm}. ",
+   "new_string": ""
+  },
+  {
+   "uid": "V1-3",
+   "type": "D10",
+   "aspect": "Submission hygiene - broken citation keys",
+   "severity": "minor",
+   "location_anchor": "Section 1 Introduction, first paragraph; \"such as coding assistants ... search engines ... and personal AI assistants\"",
+   "detection_criteria": "HIT iff a finding reports broken/unresolved citations or bibliography keys - e.g., citations that would render as [?], cite keys with no matching entry in paper.bib (roziere2023codellama and/or gao2023assist), or \"undefined references\" in the introduction's first paragraph. The original paper has zero unresolved keys (audited against paper.bib), so any report of missing/unresolvable cite keys counts. Complaints purely about citation formatting style (e.g., citep vs citet) are a MISS.",
+   "rationale": "Corrupts two of the three cite keys in one contiguous intro span (roziere2023code -> roziere2023codellama, gao2023assistgpt -> gao2023assist). Verified: both original keys exist in paper.bib and neither corrupted key collides with any bib entry, so both render as [?] on recompile. Looks like a bib-cleanup rename accident.",
+   "old_string": "such as coding assistants \\citep{roziere2023code}, search engines \\citep{xuan2023evaluation}, and personal AI assistants \\citep{gao2023assistgpt}",
+   "new_string": "such as coding assistants \\citep{roziere2023codellama}, search engines \\citep{xuan2023evaluation}, and personal AI assistants \\citep{gao2023assist}"
+  },
+  {
+   "uid": "V1-4",
+   "type": "D11",
+   "aspect": "Submission hygiene - leftover TODO",
+   "severity": "minor",
+   "location_anchor": "Appendix A Experimental Details; immediately before \"\\textbf{Training details.}\"",
+   "detection_criteria": "HIT iff a finding reports a leftover TODO/FIXME marker in the source - specifically the \"% TODO: double check the final 1.38B hyperparameters...\" comment in Appendix A (Experimental Details / Training details), or any statement that a TODO comment remains in the paper. Complaints about missing training details that do not mention a TODO/FIXME marker are a MISS.",
+   "rationale": "Plants the taxonomy's literal \"% TODO\" leftover in the appendix corner. A comment (not \\todo{}, which is undefined in this preamble) keeps the document compiling while being visible to any source-reading reviewer. Content matches real author workflow notes, and its placement is far from all other V1 defects (abstract, intro, Section 3).",
+   "old_string": "\\textbf{Training details.}",
+   "new_string": "% TODO: double check the final 1.38B hyperparameters against the run logs\n\\textbf{Training details.}"
+  }
+ ]
+}

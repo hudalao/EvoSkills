@@ -1,0 +1,16 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{g+gh}{\PYGZsh{} Example 2 Inputs}
+\PYG{g+gu}{\PYGZsh{}\PYGZsh{} Task Instruction}
+\PYG{g+gs}{**Task:**}
+Calculate the \PYG{g+gs}{**Pearson correlation coefficient**} between the standardized Average Playtime and standardized Positive Ratings using the Steam Store Games dataset. Filter the data to only include games with positive ratings and positive playtime. Plot the results in a scatter plot following \PYG{l+s+sb}{`plot.yaml`} requirements and save it as \PYG{l+s+sb}{`result.png`}.
+
+\PYGZhy{}\PYGZhy{}\PYGZhy{}
+\PYG{g+gu}{\PYGZsh{}\PYGZsh{} Environment}
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} steam.csv \PYGZsh{} Core dataset with game\PYGZhy{}level metadata (title, app ID, release info, etc.)
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} steam\PYGZus{}description\PYGZus{}data.csv \PYGZsh{} Game descriptions and textual metadata
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} steam\PYGZus{}media\PYGZus{}data.csv \PYGZsh{} Media assets metadata (images, videos, links)
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} steam\PYGZus{}requirements\PYGZus{}data.csv \PYGZsh{} System requirements (Windows, Mac, Linux)
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} steam\PYGZus{}support\PYGZus{}info.csv \PYGZsh{} Support information (developer contact, website, etc.)
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} steamspy\PYGZus{}tag\PYGZus{}data.csv \PYGZsh{} Community tags and genre/category labels
+|\PYGZhy{}\PYGZhy{}\PYGZhy{} plot.yaml \PYGZsh{} Plotting configuration file (primary)
+\end{MintedVerbatim}

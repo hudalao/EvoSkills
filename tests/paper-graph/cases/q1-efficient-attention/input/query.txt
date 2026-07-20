@@ -1,0 +1,1 @@
+How did efficient attention mechanisms for long sequences evolve? From the quadratic bottleneck of the original Transformer to sparse, low-rank, kernel and IO-aware approaches.

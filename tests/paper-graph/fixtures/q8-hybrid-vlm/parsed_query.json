@@ -1,0 +1,14 @@
+{
+ "goal": "Trace the developmental trajectory from contrastive vision-language pretraining (CLIP) to instruction-following multimodal large language models.",
+ "searches": [
+  "contrastive vision-language pretraining",
+  "vision-language model frozen LLM",
+  "visual instruction tuning multimodal",
+  "image-text alignment scaling"
+ ],
+ "definitions": {
+  "CLIP": "Dual-encoder trained to align images and captions contrastively.",
+  "visual instruction tuning": "Fine-tuning a multimodal model on image-grounded instructions.",
+  "Q-Former": "Lightweight querying transformer bridging a frozen vision encoder and a frozen LLM."
+ }
+}

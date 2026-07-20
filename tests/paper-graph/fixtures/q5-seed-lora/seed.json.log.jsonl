@@ -1,0 +1,2 @@
+{"stage": "seed_extract", "arxiv_ids": ["2106.09685"], "ts": "2026-07-17T08:38:42.820538+00:00"}
+{"stage": "seed_resolve", "arxiv_id": "2106.09685", "hit": true, "title": "LoRA: Low-Rank Adaptation of Large Language Models", "reason": null, "ts": "2026-07-17T08:38:43.738305+00:00"}

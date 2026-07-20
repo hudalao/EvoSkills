@@ -1,0 +1,118 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{pandas}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{pd}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{numpy}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{np}
+\PYG{k+kn}{from}\PYG{+w}{ }\PYG{n+nn}{sklearn.preprocessing}\PYG{+w}{ }\PYG{k+kn}{import} \PYG{n}{StandardScaler}
+\PYG{k+kn}{from}\PYG{+w}{ }\PYG{n+nn}{scipy.stats}\PYG{+w}{ }\PYG{k+kn}{import} \PYG{n}{pearsonr}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{matplotlib.pyplot}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{plt}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{yaml}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{os}
+
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{} Step 1: Create the plot.yaml configuration file \PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{c+c1}{\PYGZsh{} This file dictates the visual styling of the plot.}
+\PYG{n}{yaml\PYGZus{}config\PYGZus{}str} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+s2}{title: \PYGZsq{}Standardized Playtime vs. Positive Ratings (Pearson r = }\PYG{l+s+si}{\PYGZob{}correlation:.3f\PYGZcb{}}\PYG{l+s+s2}{)\PYGZsq{}}
+\PYG{l+s+s2}{xlabel: \PYGZsq{}Standardized Average Playtime\PYGZsq{}}
+\PYG{l+s+s2}{ylabel: \PYGZsq{}Standardized Positive Ratings\PYGZsq{}}
+\PYG{l+s+s2}{font\PYGZus{}sizes:}
+\PYG{l+s+s2}{  title: 16}
+\PYG{l+s+s2}{  axes\PYGZus{}label: 14}
+\PYG{l+s+s2}{  tick\PYGZus{}labels: 12}
+\PYG{l+s+s2}{scatter\PYGZus{}plot:}
+\PYG{l+s+s2}{  color: \PYGZsq{}\PYGZsh{}007ACC\PYGZsq{}}
+\PYG{l+s+s2}{  alpha: 0.6}
+\PYG{l+s+s2}{  marker: \PYGZsq{}o\PYGZsq{}}
+\PYG{l+s+s2}{  edgecolor: \PYGZsq{}k\PYGZsq{}}
+\PYG{l+s+s2}{  s: 45}
+\PYG{l+s+s2}{figure:}
+\PYG{l+s+s2}{  figsize: [12, 7]}
+\PYG{l+s+s2}{  dpi: 120}
+\PYG{l+s+s2}{style: \PYGZsq{}seaborn\PYGZhy{}v0\PYGZus{}8\PYGZhy{}whitegrid\PYGZsq{}}
+\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}plot.yaml\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}w\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{f}\PYG{p}{:}
+    \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{n}{yaml\PYGZus{}config\PYGZus{}str}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{} Step 2: Load plotting specifications from plot.yaml \PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}plot.yaml\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}r\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{f}\PYG{p}{:}
+    \PYG{n}{config} \PYG{o}{=} \PYG{n}{yaml}\PYG{o}{.}\PYG{n}{safe\PYGZus{}load}\PYG{p}{(}\PYG{n}{f}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{} Step 3: Load and process the data \PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{c+c1}{\PYGZsh{} The user specified \PYGZsq{}steam.csv\PYGZsq{}. We will use this file.}
+\PYG{c+c1}{\PYGZsh{} Note: The \PYGZsq{}AVAILABLE DATA\PYGZsq{} section mentioned \PYGZsq{}steam\PYGZus{}media\PYGZus{}data.csv\PYGZsq{}, but the query was explicit.}
+\PYG{n}{file\PYGZus{}path} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}steam.csv\PYGZsq{}}
+\PYG{k}{if} \PYG{o+ow}{not} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{exists}\PYG{p}{(}\PYG{n}{file\PYGZus{}path}\PYG{p}{):}
+    \PYG{c+c1}{\PYGZsh{} As a fallback, check for the other filename if steam.csv is not found.}
+    \PYG{c+c1}{\PYGZsh{} This handles potential environment discrepancies.}
+    \PYG{k}{if} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{exists}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}steam\PYGZus{}media\PYGZus{}data.csv\PYGZsq{}}\PYG{p}{):}
+        \PYG{n}{file\PYGZus{}path} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}steam\PYGZus{}media\PYGZus{}data.csv\PYGZsq{}}
+    \PYG{k}{else}\PYG{p}{:}
+        \PYG{k}{raise} \PYG{n+ne}{FileNotFoundError}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}Could not find the required data file: \PYGZsq{}}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{file\PYGZus{}path}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZsq{} or \PYGZsq{}steam\PYGZus{}media\PYGZus{}data.csv\PYGZsq{}\PYGZdq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Load the dataset into a pandas DataFrame}
+\PYG{n}{df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{n}{file\PYGZus{}path}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Filter the DataFrame to keep only rows with positive values for both variables}
+\PYG{c+c1}{\PYGZsh{} Using .copy() to avoid SettingWithCopyWarning}
+\PYG{n}{filtered\PYGZus{}df} \PYG{o}{=} \PYG{n}{df}\PYG{p}{[(}\PYG{n}{df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}average\PYGZus{}playtime\PYGZsq{}}\PYG{p}{]} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{o}{\PYGZam{}} \PYG{p}{(}\PYG{n}{df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}positive\PYGZus{}ratings\PYGZsq{}}\PYG{p}{]} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{0}\PYG{p}{)]}\PYG{o}{.}\PYG{n}{copy}\PYG{p}{()}
+
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{} Step 4: Standardize the relevant columns \PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{c+c1}{\PYGZsh{} Select the columns for standardization}
+\PYG{n}{data\PYGZus{}to\PYGZus{}scale} \PYG{o}{=} \PYG{n}{filtered\PYGZus{}df}\PYG{p}{[[}\PYG{l+s+s1}{\PYGZsq{}average\PYGZus{}playtime\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}positive\PYGZus{}ratings\PYGZsq{}}\PYG{p}{]]}
+
+\PYG{c+c1}{\PYGZsh{} Initialize and apply the StandardScaler}
+\PYG{n}{scaler} \PYG{o}{=} \PYG{n}{StandardScaler}\PYG{p}{()}
+\PYG{n}{scaled\PYGZus{}data} \PYG{o}{=} \PYG{n}{scaler}\PYG{o}{.}\PYG{n}{fit\PYGZus{}transform}\PYG{p}{(}\PYG{n}{data\PYGZus{}to\PYGZus{}scale}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Add the new standardized columns to the filtered DataFrame}
+\PYG{n}{filtered\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}std\PYGZus{}avg\PYGZus{}playtime\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{scaled\PYGZus{}data}\PYG{p}{[:,} \PYG{l+m+mi}{0}\PYG{p}{]}
+\PYG{n}{filtered\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}std\PYGZus{}pos\PYGZus{}ratings\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{scaled\PYGZus{}data}\PYG{p}{[:,} \PYG{l+m+mi}{1}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{} Step 5: Calculate the Pearson correlation coefficient \PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{c+c1}{\PYGZsh{} Calculate the correlation on the standardized data}
+\PYG{n}{correlation}\PYG{p}{,} \PYG{n}{\PYGZus{}} \PYG{o}{=} \PYG{n}{pearsonr}\PYG{p}{(}\PYG{n}{filtered\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}std\PYGZus{}avg\PYGZus{}playtime\PYGZsq{}}\PYG{p}{],} \PYG{n}{filtered\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}std\PYGZus{}pos\PYGZus{}ratings\PYGZsq{}}\PYG{p}{])}
+
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{} Step 6: Create and style the scatter plot \PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{c+c1}{\PYGZsh{} Apply a base style for the plot from the config}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{style}\PYG{o}{.}\PYG{n}{use}\PYG{p}{(}\PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}style\PYGZsq{}}\PYG{p}{])}
+
+\PYG{c+c1}{\PYGZsh{} Create a figure and axes with specified size and DPI}
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}figure\PYGZsq{}}\PYG{p}{][}\PYG{l+s+s1}{\PYGZsq{}figsize\PYGZsq{}}\PYG{p}{],} \PYG{n}{dpi}\PYG{o}{=}\PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}figure\PYGZsq{}}\PYG{p}{][}\PYG{l+s+s1}{\PYGZsq{}dpi\PYGZsq{}}\PYG{p}{])}
+
+\PYG{c+c1}{\PYGZsh{} Generate the scatter plot using data and styling from config}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}
+    \PYG{n}{filtered\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}std\PYGZus{}avg\PYGZus{}playtime\PYGZsq{}}\PYG{p}{],}
+    \PYG{n}{filtered\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}std\PYGZus{}pos\PYGZus{}ratings\PYGZsq{}}\PYG{p}{],}
+    \PYG{n}{color}\PYG{o}{=}\PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}scatter\PYGZus{}plot\PYGZsq{}}\PYG{p}{][}\PYG{l+s+s1}{\PYGZsq{}color\PYGZsq{}}\PYG{p}{],}
+    \PYG{n}{alpha}\PYG{o}{=}\PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}scatter\PYGZus{}plot\PYGZsq{}}\PYG{p}{][}\PYG{l+s+s1}{\PYGZsq{}alpha\PYGZsq{}}\PYG{p}{],}
+    \PYG{n}{marker}\PYG{o}{=}\PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}scatter\PYGZus{}plot\PYGZsq{}}\PYG{p}{][}\PYG{l+s+s1}{\PYGZsq{}marker\PYGZsq{}}\PYG{p}{],}
+    \PYG{n}{edgecolors}\PYG{o}{=}\PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}scatter\PYGZus{}plot\PYGZsq{}}\PYG{p}{][}\PYG{l+s+s1}{\PYGZsq{}edgecolor\PYGZsq{}}\PYG{p}{],}
+    \PYG{n}{s}\PYG{o}{=}\PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}scatter\PYGZus{}plot\PYGZsq{}}\PYG{p}{][}\PYG{l+s+s1}{\PYGZsq{}s\PYGZsq{}}\PYG{p}{]}
+\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Set titles and labels, formatting the title with the calculated correlation}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}
+    \PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}title\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{correlation}\PYG{o}{=}\PYG{n}{correlation}\PYG{p}{),}
+    \PYG{n}{fontsize}\PYG{o}{=}\PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}font\PYGZus{}sizes\PYGZsq{}}\PYG{p}{][}\PYG{l+s+s1}{\PYGZsq{}title\PYGZsq{}}\PYG{p}{],}
+    \PYG{n}{fontweight}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}bold\PYGZsq{}}
+\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}
+    \PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}xlabel\PYGZsq{}}\PYG{p}{],}
+    \PYG{n}{fontsize}\PYG{o}{=}\PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}font\PYGZus{}sizes\PYGZsq{}}\PYG{p}{][}\PYG{l+s+s1}{\PYGZsq{}axes\PYGZus{}label\PYGZsq{}}\PYG{p}{]}
+\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}
+    \PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}ylabel\PYGZsq{}}\PYG{p}{],}
+    \PYG{n}{fontsize}\PYG{o}{=}\PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}font\PYGZus{}sizes\PYGZsq{}}\PYG{p}{][}\PYG{l+s+s1}{\PYGZsq{}axes\PYGZus{}label\PYGZsq{}}\PYG{p}{]}
+\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Customize tick label sizes}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{tick\PYGZus{}params}\PYG{p}{(}\PYG{n}{axis}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}both\PYGZsq{}}\PYG{p}{,} \PYG{n}{which}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}major\PYGZsq{}}\PYG{p}{,} \PYG{n}{labelsize}\PYG{o}{=}\PYG{n}{config}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}font\PYGZus{}sizes\PYGZsq{}}\PYG{p}{][}\PYG{l+s+s1}{\PYGZsq{}tick\PYGZus{}labels\PYGZsq{}}\PYG{p}{])}
+
+\PYG{c+c1}{\PYGZsh{} Ensure the layout is tight to prevent labels from being cut off}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{()}
+
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{} Step 7: Save the final plot to a file \PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{c+c1}{\PYGZsh{} Save the plot to \PYGZsq{}result.png\PYGZsq{}}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{savefig}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}result.png\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Successfully generated and saved the plot as \PYGZsq{}result.png\PYGZsq{}.\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}Pearson Correlation Coefficient: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{correlation}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{MintedVerbatim}

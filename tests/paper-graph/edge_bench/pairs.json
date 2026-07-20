@@ -1,0 +1,344 @@
+{
+ "pairs": [
+  {
+   "pid": "t01",
+   "src": "1706.03762",
+   "dst": "1904.10509",
+   "gap": "Full self-attention costs O(n^2) time and memory in sequence length, making long sequences intractable; sparse factorized attention patterns reduce this cost.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t02",
+   "src": "1904.10509",
+   "dst": "2004.05150",
+   "gap": "Fixed factorized sparse patterns are not tailored to long documents; a sliding window plus task-motivated global tokens makes sparse attention practical for long-document NLP.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t03",
+   "src": "2205.14135",
+   "dst": "2307.08691",
+   "gap": "FlashAttention's suboptimal work partitioning between thread blocks and warps leaves GPU utilization low; better parallelism and work partitioning approach peak throughput.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t04",
+   "src": "2006.11239",
+   "dst": "2010.02502",
+   "gap": "DDPM sampling must simulate a Markov chain for many steps; a non-Markovian implicit formulation enables much faster deterministic sampling with the same training.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t05",
+   "src": "2010.02502",
+   "dst": "2206.00927",
+   "gap": "DDIM is only a first-order discretization of the probability-flow ODE; dedicated high-order solvers exploiting its semi-linear structure converge in ~10 steps.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t06",
+   "src": "2202.00512",
+   "dst": "2303.01469",
+   "gap": "Progressive distillation requires iterative rounds of teacher-student training; consistency models map any trajectory point directly to data, enabling one-step generation without adversarial training.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t07",
+   "src": "2303.01469",
+   "dst": "2310.04378",
+   "gap": "Consistency models were demonstrated mainly in pixel space; latent consistency models bring consistency distillation to latent diffusion for few-step high-resolution text-to-image.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t08",
+   "src": "2004.04906",
+   "dst": "2005.11401",
+   "gap": "A dense retriever alone supports extractive answers; coupling retrieval with a seq2seq generator conditions free-form generation on retrieved passages for knowledge-intensive tasks.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t09",
+   "src": "2005.11401",
+   "dst": "2007.01282",
+   "gap": "Marginalizing over a handful of passages limits evidence aggregation; fusing many retrieved passages in the decoder scales evidence use efficiently.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t10",
+   "src": "2007.01282",
+   "dst": "2208.03299",
+   "gap": "Fusion-in-decoder lacks retriever-reader joint pretraining; jointly pretraining both enables strong few-shot performance on knowledge-intensive tasks.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t11",
+   "src": "2201.11903",
+   "dst": "2203.11171",
+   "gap": "Greedy chain-of-thought decoding commits to a single reasoning path; sampling diverse paths and majority-voting over final answers improves accuracy.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t12",
+   "src": "2201.11903",
+   "dst": "2305.10601",
+   "gap": "Linear left-to-right chain-of-thought cannot explore alternatives or backtrack; tree search over thought states with lookahead enables deliberate problem solving.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t13",
+   "src": "2012.13255",
+   "dst": "2106.09685",
+   "gap": "Fine-tuning objectives have low intrinsic dimensionality, so full-rank weight updates are unnecessary; low-rank decomposition of the update matrices exploits this directly.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t14",
+   "src": "2106.09685",
+   "dst": "2305.14314",
+   "gap": "LoRA still requires the frozen base weights in 16-bit memory; quantizing the base to 4-bit NormalFloat while training LoRA adapters fits 65B models on a single GPU.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t15",
+   "src": "2106.09685",
+   "dst": "2402.09353",
+   "gap": "LoRA's low-rank update entangles magnitude and direction, leaving an accuracy gap to full fine-tuning; decomposing pretrained weights into magnitude and direction closes the gap.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t16",
+   "src": "1805.02867",
+   "dst": "2205.14135",
+   "gap": "Softmax normally needs multiple memory passes; the online single-pass normalizer enables tiling attention computation without materializing the full attention matrix.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t17",
+   "src": "2307.08691",
+   "dst": "2407.08608",
+   "gap": "FlashAttention-2 underutilizes new Hopper GPU features; exploiting tensor-core/TMA asynchrony and FP8 raises utilization substantially.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t18",
+   "src": "2203.02155",
+   "dst": "2305.18290",
+   "gap": "RLHF's reward-model-plus-PPO pipeline is complex and unstable; the same KL-constrained objective can be optimized directly on preference pairs with a simple classification loss.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t19",
+   "src": "2305.18290",
+   "dst": "2405.14734",
+   "gap": "DPO's implicit reward depends on a reference model and mismatches the generation objective; a reference-free, length-normalized implicit reward aligns training with generation.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "t20",
+   "src": "2201.12086",
+   "dst": "2301.12597",
+   "gap": "End-to-end pretraining of full vision-language models is costly; bootstrapping from frozen image encoders and frozen LLMs via a lightweight querying transformer cuts trainable parameters drastically.",
+   "label": "true",
+   "expected": "not-REJECT"
+  },
+  {
+   "pid": "f01",
+   "src": "2006.04768",
+   "dst": "2004.05150",
+   "gap": "Linformer's low-rank projection loses token identity for classification; Longformer restores it with sliding-window attention plus global tokens.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "reversed-chronology sibling"
+  },
+  {
+   "pid": "f02",
+   "src": "2004.05150",
+   "dst": "2006.04768",
+   "gap": "Longformer's global tokens create a routing bottleneck on long inputs; Linformer removes it by extending the sliding window with low-rank key/value projections.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "sibling, fabricated build-on"
+  },
+  {
+   "pid": "f03",
+   "src": "2001.04451",
+   "dst": "2009.14794",
+   "gap": "Reformer's LSH bucketing introduces hashing overhead and approximation error; Performer replaces the buckets with random-feature kernels to eliminate hashing.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "sibling, fabricated mechanism-lineage"
+  },
+  {
+   "pid": "f04",
+   "src": "2007.14062",
+   "dst": "2205.14135",
+   "gap": "BigBird's block-sparse patterns are not hardware-efficient; FlashAttention makes the same sparse blocks IO-aware for GPU speedups.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "wrong axis: FA is exact, not sparse"
+  },
+  {
+   "pid": "f05",
+   "src": "2307.08691",
+   "dst": "2309.06180",
+   "gap": "FlashAttention-2's warp partitioning still stalls on long sequences; PagedAttention improves the partitioning for higher GPU occupancy.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "wrong axis: vLLM targets KV-cache memory, not kernel partitioning"
+  },
+  {
+   "pid": "f06",
+   "src": "2202.00512",
+   "dst": "2206.00927",
+   "gap": "Progressive distillation needs repeated retraining per step budget; DPM-Solver distills the teacher into an analytic solver without retraining.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "wrong axis: solver line is training-free, not distillation"
+  },
+  {
+   "pid": "f07",
+   "src": "2310.04378",
+   "dst": "2209.03003",
+   "gap": "Latent consistency distillation degrades at one step; rectified flow straightens its latent trajectories to fix one-step quality.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "reversed chronology"
+  },
+  {
+   "pid": "f08",
+   "src": "2002.08909",
+   "dst": "2004.04906",
+   "gap": "REALM's masked-salient-span pretraining is unstable for QA; DPR extends the same pretraining objective to supervised passage retrieval.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "concurrent works, fabricated objective-lineage"
+  },
+  {
+   "pid": "f09",
+   "src": "2007.01282",
+   "dst": "2310.11511",
+   "gap": "FiD's decoder fusion treats all passages uniformly; Self-RAG improves the fusion mechanism with reflection tokens per passage.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "wrong axis: Self-RAG is adaptive retrieval/critique, not fusion"
+  },
+  {
+   "pid": "f10",
+   "src": "2203.11171",
+   "dst": "2203.14465",
+   "gap": "Self-consistency discards the sampled reasoning paths after voting; STaR trains on the majority-voted paths as supervision labels.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "siblings; STaR filters by answer correctness, not SC majority"
+  },
+  {
+   "pid": "f11",
+   "src": "2305.10601",
+   "dst": "2305.20050",
+   "gap": "Tree-of-Thoughts relies on the model's own value prompts to score branches; process supervision replaces every tree node's score with a trained verifier.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "siblings, fabricated integration"
+  },
+  {
+   "pid": "f12",
+   "src": "1902.00751",
+   "dst": "2104.08691",
+   "gap": "Adapter bottlenecks add inference latency inside every layer; prompt tuning moves the same bottleneck into the embedding layer to remove latency.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "fabricated mechanism-lineage (PT descends from prefix-tuning)"
+  },
+  {
+   "pid": "f13",
+   "src": "2106.10199",
+   "dst": "2106.09685",
+   "gap": "BitFit shows bias-only updates suffice for small models but not large ones; LoRA extends bias tuning to attention weight matrices via low-rank factors.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "same-month siblings, fabricated extension"
+  },
+  {
+   "pid": "f14",
+   "src": "2305.14314",
+   "dst": "2402.09353",
+   "gap": "QLoRA's double quantization loses magnitude information; DoRA re-applies it to the decomposed magnitude component to recover accuracy.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "siblings; DoRA is orthogonal to quantization"
+  },
+  {
+   "pid": "f15",
+   "src": "2310.12036",
+   "dst": "2405.14734",
+   "gap": "IPO's root-finding objective is unstable at small margins; SimPO stabilizes it through length-normalized rewards.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "siblings, fabricated fix"
+  },
+  {
+   "pid": "f16",
+   "src": "2212.08073",
+   "dst": "2305.18290",
+   "gap": "Constitutional AI's principle lists are hard to scale; DPO distills the principles directly into an implicit reward without critiques.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "wrong axis: DPO derives from RLHF math, not CAI"
+  },
+  {
+   "pid": "f17",
+   "src": "2102.05918",
+   "dst": "2103.00020",
+   "gap": "ALIGN's noisy web pairs cap zero-shot accuracy; CLIP fixes this by scaling ALIGN's filtering pipeline to 400M curated pairs.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "concurrent works, fabricated data-lineage"
+  },
+  {
+   "pid": "f18",
+   "src": "2204.14198",
+   "dst": "2304.08485",
+   "gap": "Flamingo's perceiver resampler is parameter-heavy; LLaVA simplifies the same resampler into a single linear projection for instruction tuning.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "fabricated architectural descent (LLaVA is CLIP+LLM projection, not Flamingo-derived)"
+  },
+  {
+   "pid": "f19",
+   "src": "2001.04451",
+   "dst": "2305.14314",
+   "gap": "Reformer's reversible layers save activation memory in pretraining; QLoRA adapts the same reversible design to quantized fine-tuning.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "cross-domain floor negative"
+  },
+  {
+   "pid": "f20",
+   "src": "2005.11401",
+   "dst": "2405.14734",
+   "gap": "RAG's retriever preferences require a reference ranker; SimPO aligns them reference-free with length normalization.",
+   "label": "false",
+   "expected": "REJECT",
+   "category": "cross-domain floor negative"
+  }
+ ]
+}

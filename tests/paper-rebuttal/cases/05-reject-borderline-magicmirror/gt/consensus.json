@@ -1,0 +1,28 @@
+{
+ "items": [
+  {
+   "key": "annotation-process-details-missing",
+   "core_ids": [
+    "R2.W2",
+    "R3.W5",
+    "R4.W1"
+   ]
+  },
+  {
+   "key": "module-effectiveness-not-demonstrated",
+   "core_ids": [
+    "R1.W3",
+    "R3.W4",
+    "R4.W3"
+   ]
+  },
+  {
+   "key": "dataset-distribution-bias",
+   "core_ids": [
+    "R2.W3",
+    "R3.W3",
+    "R4.W4"
+   ]
+  }
+ ]
+}

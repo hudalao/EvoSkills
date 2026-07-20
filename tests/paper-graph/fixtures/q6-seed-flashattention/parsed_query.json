@@ -1,0 +1,14 @@
+{
+ "goal": "Trace what FlashAttention (IO-aware exact attention) built on and how the line of IO-aware exact attention kernels evolved after it.",
+ "searches": [
+  "IO-aware exact attention",
+  "memory-efficient attention GPU",
+  "online softmax attention kernel",
+  "attention kernel serving throughput"
+ ],
+ "definitions": {
+  "FlashAttention": "Exact attention computed in tiles to avoid materializing the attention matrix.",
+  "online softmax": "Single-pass numerically-stable softmax normalization.",
+  "kernel": "A GPU program implementing one operation efficiently."
+ }
+}

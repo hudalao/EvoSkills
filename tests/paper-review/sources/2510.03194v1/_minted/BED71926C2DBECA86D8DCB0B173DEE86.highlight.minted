@@ -1,0 +1,90 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{pandas}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{pd}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{matplotlib.pyplot}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{plt}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{yaml}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{sys}
+
+\PYG{c+c1}{\PYGZsh{} The EXPANDED QUERY REQUIREMENT specifies using a \PYGZsq{}plot.yaml\PYGZsq{} file for styling.}
+\PYG{c+c1}{\PYGZsh{} To make this script self\PYGZhy{}contained and reproducible, we will create this file programmatically.}
+\PYG{n}{yaml\PYGZus{}config\PYGZus{}str} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+s2}{title: \PYGZsq{}Total NBA Points Scored Per Year (1950\PYGZhy{}2018)\PYGZsq{}}
+\PYG{l+s+s2}{xlabel: \PYGZsq{}Year\PYGZsq{}}
+\PYG{l+s+s2}{ylabel: \PYGZsq{}Total Points Scored\PYGZsq{}}
+\PYG{l+s+s2}{figsize: [12, 7]}
+\PYG{l+s+s2}{line\PYGZus{}color: \PYGZsq{}\PYGZsh{}007ACC\PYGZsq{}}
+\PYG{l+s+s2}{marker: \PYGZsq{}o\PYGZsq{}}
+\PYG{l+s+s2}{linestyle: \PYGZsq{}\PYGZhy{}\PYGZsq{}}
+\PYG{l+s+s2}{grid: True}
+\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}plot.yaml\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}w\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{f}\PYG{p}{:}
+    \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{n}{yaml\PYGZus{}config\PYGZus{}str}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Step 1: Load the primary dataset from Seasons\PYGZus{}Stats.csv.}
+\PYG{k}{try}\PYG{p}{:}
+    \PYG{c+c1}{\PYGZsh{} Note: The prompt\PYGZsq{}s \PYGZdq{}AVAILABLE DATA\PYGZdq{} section seems incorrect. We follow the textual instructions}
+    \PYG{c+c1}{\PYGZsh{} which clearly state to use \PYGZsq{}Seasons\PYGZus{}Stats.csv\PYGZsq{}.}
+    \PYG{n}{stats\PYGZus{}df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Seasons\PYGZus{}Stats.csv\PYGZsq{}}\PYG{p}{)}
+\PYG{k}{except} \PYG{n+ne}{FileNotFoundError}\PYG{p}{:}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Error: The file \PYGZsq{}Seasons\PYGZus{}Stats.csv\PYGZsq{} was not found.\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{sys}\PYG{o}{.}\PYG{n}{exit}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{} Data Cleaning and Preparation \PYGZhy{}\PYGZhy{}\PYGZhy{}}
+
+\PYG{c+c1}{\PYGZsh{} Handle potential NaN values in critical columns.}
+\PYG{c+c1}{\PYGZsh{} Drop rows where \PYGZsq{}Year\PYGZsq{} is NaN as they cannot be used for time\PYGZhy{}series analysis.}
+\PYG{n}{stats\PYGZus{}df}\PYG{o}{.}\PYG{n}{dropna}\PYG{p}{(}\PYG{n}{subset}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Year\PYGZsq{}}\PYG{p}{],} \PYG{n}{inplace}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Fill NaN \PYGZsq{}PTS\PYGZsq{} with 0, assuming missing points data means 0 points were scored.}
+\PYG{n}{stats\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}PTS\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{stats\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}PTS\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{fillna}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Convert data types for consistency and proper calculations.}
+\PYG{n}{stats\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Year\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{stats\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Year\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{astype}\PYG{p}{(}\PYG{n+nb}{int}\PYG{p}{)}
+\PYG{n}{stats\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}PTS\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{stats\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}PTS\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{astype}\PYG{p}{(}\PYG{n+nb}{int}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Step 2: De\PYGZhy{}duplicate player\PYGZhy{}season records.}
+\PYG{c+c1}{\PYGZsh{} Players who were traded mid\PYGZhy{}season have multiple entries for one year, plus a summary}
+\PYG{c+c1}{\PYGZsh{} row with \PYGZsq{}Tm\PYGZsq{} (Team) as \PYGZsq{}TOT\PYGZsq{}. The \PYGZsq{}TOT\PYGZsq{} row typically appears first in the dataset for a given player\PYGZhy{}year.}
+\PYG{c+c1}{\PYGZsh{} By dropping duplicates on \PYGZsq{}Player\PYGZsq{} and \PYGZsq{}Year\PYGZsq{} and keeping the first entry, we retain the summary row.}
+\PYG{n}{cleaned\PYGZus{}df} \PYG{o}{=} \PYG{n}{stats\PYGZus{}df}\PYG{o}{.}\PYG{n}{drop\PYGZus{}duplicates}\PYG{p}{(}\PYG{n}{subset}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Player\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Year\PYGZsq{}}\PYG{p}{],} \PYG{n}{keep}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}first\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Step 3: Filter data by year and aggregate total points.}
+\PYG{c+c1}{\PYGZsh{} Filter the data to include only the years from 1950 to 2018, inclusive.}
+\PYG{n}{filtered\PYGZus{}df} \PYG{o}{=} \PYG{n}{cleaned\PYGZus{}df}\PYG{o}{.}\PYG{n}{query}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}1950 \PYGZlt{}= Year \PYGZlt{}= 2018\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Group the cleaned data by \PYGZsq{}Year\PYGZsq{} and calculate the sum of \PYGZsq{}PTS\PYGZsq{} for each year.}
+\PYG{n}{annual\PYGZus{}points} \PYG{o}{=} \PYG{n}{filtered\PYGZus{}df}\PYG{o}{.}\PYG{n}{groupby}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Year\PYGZsq{}}\PYG{p}{)[}\PYG{l+s+s1}{\PYGZsq{}PTS\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{()}
+
+\PYG{c+c1}{\PYGZsh{} Step 4: Load plotting configuration.}
+\PYG{c+c1}{\PYGZsh{} Read the styling parameters from the YAML file created earlier.}
+\PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}plot.yaml\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}r\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{f}\PYG{p}{:}
+    \PYG{n}{plot\PYGZus{}params} \PYG{o}{=} \PYG{n}{yaml}\PYG{o}{.}\PYG{n}{safe\PYGZus{}load}\PYG{p}{(}\PYG{n}{f}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Step 5: Generate and style the line chart.}
+\PYG{c+c1}{\PYGZsh{} Set the figure size from the loaded parameters.}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{n}{plot\PYGZus{}params}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}figsize\PYGZsq{}}\PYG{p}{])}
+
+\PYG{c+c1}{\PYGZsh{} Plot the aggregated annual total points against the year.}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{annual\PYGZus{}points}\PYG{o}{.}\PYG{n}{index}\PYG{p}{,}
+         \PYG{n}{annual\PYGZus{}points}\PYG{o}{.}\PYG{n}{values}\PYG{p}{,}
+         \PYG{n}{marker}\PYG{o}{=}\PYG{n}{plot\PYGZus{}params}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}marker\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}o\PYGZsq{}}\PYG{p}{),}
+         \PYG{n}{linestyle}\PYG{o}{=}\PYG{n}{plot\PYGZus{}params}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}linestyle\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}\PYGZhy{}\PYGZsq{}}\PYG{p}{),}
+         \PYG{n}{color}\PYG{o}{=}\PYG{n}{plot\PYGZus{}params}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}line\PYGZus{}color\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}b\PYGZsq{}}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{} Apply visual styles specified in the YAML configuration.}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{title}\PYG{p}{(}\PYG{n}{plot\PYGZus{}params}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}title\PYGZsq{}}\PYG{p}{])}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{n}{plot\PYGZus{}params}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}xlabel\PYGZsq{}}\PYG{p}{])}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{n}{plot\PYGZus{}params}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}ylabel\PYGZsq{}}\PYG{p}{])}
+\PYG{k}{if} \PYG{n}{plot\PYGZus{}params}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}grid\PYGZsq{}}\PYG{p}{,} \PYG{k+kc}{False}\PYG{p}{):}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Ensure the layout is clean and labels do not overlap.}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{()}
+
+\PYG{c+c1}{\PYGZsh{} Step 6: Save the final plot.}
+\PYG{c+c1}{\PYGZsh{} Save the resulting chart as an image file.}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{savefig}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}result.png\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Close the plot to release system resources.}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{close}\PYG{p}{()}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Visualization saved successfully as \PYGZsq{}result.png\PYGZsq{}.\PYGZdq{}}\PYG{p}{)}
+\end{MintedVerbatim}

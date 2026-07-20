@@ -1,0 +1,50 @@
+{
+ "paper_id": "2510.19811v1",
+ "variant": "V1",
+ "defects": [
+  {
+   "uid": "V1-1",
+   "type": "D10",
+   "aspect": "submission hygiene (citations)",
+   "severity": "minor",
+   "location_anchor": "Section 2.3 Test set contamination, 'Standard test sets.' paragraph — 'Test sets for standard benchmarks are often available online'",
+   "detection_criteria": "Count as caught if the review reports broken/unresolved citations (rendered as [?] or undefined bibliography keys) and either locates them in the test-set-contamination design part (Section 2, 'Standard test sets' paragraph) or names at least one affected reference (Dodge et al. documenting-corpora, Elazar et al. 'What's in My Big Data', or Jiang et al. investigating-data-contamination). A generic 'check your bibliography' remark without identifying unresolved [?] citations does not count.",
+   "rationale": "Year-shift typos in three bib keys within one contiguous span; all three original keys verified present in the .bib (once each) and the corrupted variants verified absent, so exactly three [?] marks appear. Reads like a real key-editing slip; document still compiles.",
+   "old_string": "Test sets for standard benchmarks are often available online and then included in training \\citep{dodge-etal-2021-documenting,elazar2024whats}. As in \\cite{Jiang2024InvestigatingDC},",
+   "new_string": "Test sets for standard benchmarks are often available online and then included in training \\citep{dodge-etal-2022-documenting,elazar2023whats}. As in \\cite{Jiang2023InvestigatingDC},"
+  },
+  {
+   "uid": "V1-2",
+   "type": "D11",
+   "aspect": "submission hygiene (leftover TODO)",
+   "severity": "minor",
+   "location_anchor": "Section 4 Domain-agnostic Results, immediately after the figure captioned 'Sensitive data can be forgotten without continued exposure.' (fig:injectrange-main)",
+   "detection_criteria": "Count as caught if the review flags a leftover TODO/draft annotation visible in the compiled paper (e.g., 'Todo(Nitya): Add discussion on intermediate checkpoint analysis') in or near Section 4 / the timing-runs figure. Any finding that identifies a residual todo or author note counts; complaints about writing quality without mentioning a TODO-type marker do not.",
+   "rationale": "Uncomments an author's real draft note; \\commenttrue is active so \\todo renders as red bracketed text in the PDF. Maximally natural — the exact artifact a rushed camera-ready leaves behind. Verified no other uncommented \\todo/\\robin/\\williex exists (V0 is clean).",
+   "old_string": "% \\todo{Nitya}{Add discussion on intermediate checkpoint analysis}",
+   "new_string": "\\todo{Nitya}{Add discussion on intermediate checkpoint analysis}"
+  },
+  {
+   "uid": "V1-3",
+   "type": "D1",
+   "aspect": "Claims/A1 (unsupported strong claim)",
+   "severity": "major",
+   "location_anchor": "Section 1 Introduction, use-cases paragraph — 'For membership inference, the randomized insertions allow us to construct evaluation sets'",
+   "detection_criteria": "Count as caught if the review states that the introduction's claim that baseline attacks reliably detect membership for perturbations inserted only once is unsupported, overstated, or contradicted by the paper's MIA results (Table of ROC AUC for the 8B perturbed model and Appendix MIA tables show near-random AUC of about 0.52-0.58 at Dup=1; Section 6.1 itself says single-duplicate detection is near-random), or if it demands this sentence be weakened. The finding must quote or paraphrase the single-insertion membership-detection claim; a generic 'intro overclaims' without naming it does not count.",
+   "rationale": "Injected benchmark-selling overclaim is directly falsified by the paper's own Table (tab:hubble_mia_8b_perturbed, Dup=1 column all about 0.52-0.58 AUC) and by the Section 6.1 results text, satisfying the checkably-unsupported requirement while sounding like a plausible author boast.",
+   "old_string": "trivially leak membership information \\citep{duan2024membershipinferenceattackswork}. For unlearning,",
+   "new_string": "trivially leak membership information \\citep{duan2024membershipinferenceattackswork}. Baseline attacks on \\textsc{Hubble} reliably detect membership even for perturbations inserted only once. For unlearning,"
+  },
+  {
+   "uid": "V1-4",
+   "type": "D5",
+   "aspect": "A3 results interpretation (exaggerated marginal gains)",
+   "severity": "major",
+   "location_anchor": "Section 3.3 Evaluations, 'General evaluations.' paragraph — 'Table \\ref{tab:pythia_general_eval_fewshot} contains the results'",
+   "detection_criteria": "Count as caught if the review states that the Section 3.3 claim that Hubble models 'consistently outperform' other open-source models exaggerates or misstates the general-evaluation tables (Pythia-suite zero-shot/five-shot tables or the DCLM table) — e.g., noting Hubble loses or ties on several entries (LogiQA vs Pythia, WSC vs Pythia/OPT, Winogrande vs OPT, etc.) or asking to soften the wording to 'on par'/'competitive'. The finding must target the general-capability comparison claim or its tables; table numbers themselves are unchanged.",
+   "rationale": "Prose-only exaggeration per the D5 recipe: table values untouched and checkably contradict 'consistently outperform' (zero-shot LogiQA Hubble-1B 0.27 < Pythia-1B 0.30; five-shot WSC Hubble-1B 0.41 < Pythia-1.4B/OPT-1.3B 0.57). Appendix prose ('competitive', 'on par') stays honest, creating a detectable internal inconsistency.",
+   "old_string": "Under both evaluation settings, Hubble models generally perform on par with other open-source models at similar parameter and data scales.",
+   "new_string": "Under both evaluation settings, Hubble models consistently outperform other open-source models at similar parameter and data scales."
+  }
+ ]
+}

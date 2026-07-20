@@ -1,0 +1,23 @@
+\begin{table}[tb]
+\centering
+\small
+\caption{\textbf{Membership inference performance on various benchmarks with Hubble 1B Standard.} The Dup values indicate the composition of the seen set: for example, \textit{Dup $\neq$ 0} means the attack compares all seen data against unseen data, whereas \textit{Dup = K} means the attack compares unseen data against data that was included exactly $K$ times in the seen set.}
+\label{tab:hubble_mia_1b_standard}
+\begin{tabular}{clcccccc}
+\toprule
+\multirow{2}{*}{\textbf{Evaluation}} & \multicolumn{1}{c}{\multirow{2}{*}{\textbf{MIA}}} & \multicolumn{6}{c}{\textbf{Hubble 1B Standard (500B tokens)}}                         \\ \cmidrule(lr){3-8} 
+                                     & \multicolumn{1}{c}{}                                        & Dup $\neq$ 0 & Dup = 1 & Dup = 4 & Dup = 16 & Dup = 64 & Dup = 256 \\ \midrule
+\multirow{4}{*}{\shortstack{Gutenberg\\Unpopular}} & Loss                                                        &   0.503       &   0.517      &  0.484       &   0.494       &   0.534       &  0.531           \\  
+                                     & MinK\%                                                      &   0.502       &   0.517      &  0.483       &   0.494       &   0.534       &  0.531           \\  
+                                     & MinK\%++                                                    &   0.5       &   0.509      &  0.493       &   0.497       &   0.481       &  0.529           \\  
+                                     & ZLib                                                        &   0.493       &   0.509      &  0.477       &   0.471       &   0.529       &  0.533           \\ \midrule
+\multirow{4}{*}{\shortstack{Yago\\Biographies}}    & Loss                                                        &   0.495       &   0.488      &  0.494       &   0.51       &   0.494       &  0.509           \\  
+                                     & MinK\%                                                      &   0.495       &   0.487      &  0.494       &   0.51       &   0.494       &  0.508           \\  
+                                     & MinK\%++                                                    &   0.5       &   0.499      &  0.501       &   0.494       &   0.518       &  0.497           \\  
+                                     & ZLib                                                        &   0.494       &   0.481      &  0.498       &   0.516       &   0.489       &  0.49           \\ \midrule
+\multirow{4}{*}{MMLU}                & Loss                                                        &   0.502       &   0.506      &  0.502       &   0.519       &   0.459       &  0.48           \\  
+                                     & MinK\%                                                      &   0.503       &   0.506      &  0.502       &   0.519       &   0.459       &  0.481           \\  
+                                     & MinK\%++                                                    &   0.509       &   0.512      &  0.509       &   0.53       &   0.475       &  0.448           \\  
+                                     & ZLib                                                        &   0.501       &   0.504      &  0.503       &   0.508       &   0.465       &  0.494           \\ \bottomrule
+\end{tabular}
+\end{table}

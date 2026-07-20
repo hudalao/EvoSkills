@@ -1,0 +1,748 @@
+{
+ "A": [
+  {
+   "forum": "Dgphd9qizu",
+   "title": "Functional MRI Time Series Generation via Wavelet-Based Image Transform and Spectral Flow Matching for Brain Disorder Identification",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    4,
+    8
+   ],
+   "final": [
+    2,
+    4,
+    4,
+    8
+   ],
+   "init_mean": 4.5,
+   "final_mean": 4.5,
+   "delta": 0.0,
+   "spread": 6,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 2336,
+   "pdf": "https://openreview.net/pdf/0df799362818be4ea544040027aa7b13931eac45.pdf"
+  },
+  {
+   "forum": "PAV5zYn0Hn",
+   "title": "Neural Sum-of-Squares: Certifying the Nonnegativity of Polynomials with Transformers",
+   "status": "Poster",
+   "init": [
+    2,
+    6,
+    6
+   ],
+   "final": [
+    2,
+    6,
+    6
+   ],
+   "init_mean": 4.67,
+   "final_mean": 4.67,
+   "delta": 0.0,
+   "spread": 4,
+   "n_rev": 3,
+   "wc_rebuttal": 0,
+   "min_wlen": 2079,
+   "pdf": "https://openreview.net/pdf/b3dfab5b805dbe08cdaafd6f96113649ee6ed50e.pdf"
+  },
+  {
+   "forum": "b95RCZQB29",
+   "title": "Domain Expansion: A Latent Space Construction Framework for Multi-Task Learning",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "final": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "init_mean": 4.5,
+   "final_mean": 4.5,
+   "delta": 0.0,
+   "spread": 4,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1974,
+   "pdf": "https://openreview.net/pdf/ba87dd8202c4cefc8316dec41d10614b6b83d6db.pdf"
+  },
+  {
+   "forum": "2XMAUP74ig",
+   "title": "Not All Models Suit Expert Offloading: On Local Routing Consistency of Mixture-of-Expert Models",
+   "status": "Poster",
+   "init": [
+    4,
+    4,
+    6
+   ],
+   "final": [
+    4,
+    4,
+    6
+   ],
+   "init_mean": 4.67,
+   "final_mean": 4.67,
+   "delta": 0.0,
+   "spread": 2,
+   "n_rev": 3,
+   "wc_rebuttal": 0,
+   "min_wlen": 1857,
+   "pdf": "https://openreview.net/pdf/dd385351b963d09c2d336e2a942fa0a65ae38717.pdf"
+  },
+  {
+   "forum": "C6vpifaZvU",
+   "title": "Graph Representational Learning: When Does More Expressivity Hurt Generalization?",
+   "status": "Poster",
+   "init": [
+    4,
+    4,
+    6,
+    6
+   ],
+   "final": [
+    4,
+    4,
+    6,
+    6
+   ],
+   "init_mean": 5,
+   "final_mean": 5,
+   "delta": 0,
+   "spread": 2,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1704,
+   "pdf": "https://openreview.net/pdf/7b20bbe2f12c4d92cc8fe3738193ef379d0eceb4.pdf"
+  },
+  {
+   "forum": "YvmR4vNai2",
+   "title": "Advancing Universal Deep Learning for Electronic-Structure Hamiltonian Prediction of Materials",
+   "status": "Poster",
+   "init": [
+    4,
+    4,
+    4,
+    6
+   ],
+   "final": [
+    4,
+    4,
+    4,
+    6
+   ],
+   "init_mean": 4.5,
+   "final_mean": 4.5,
+   "delta": 0.0,
+   "spread": 2,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1694,
+   "pdf": "https://openreview.net/pdf/42108231fae2de430206f1af17699ea9b7646ca2.pdf"
+  },
+  {
+   "forum": "uKFVZMPppq",
+   "title": "Action-Guided Attention for Video Action Anticipation",
+   "status": "Poster",
+   "init": [
+    4,
+    6,
+    6,
+    6
+   ],
+   "final": [
+    4,
+    6,
+    6,
+    6
+   ],
+   "init_mean": 5.5,
+   "final_mean": 5.5,
+   "delta": 0.0,
+   "spread": 2,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1643,
+   "pdf": "https://openreview.net/pdf/0c16030d6eebcdadaae9acbaa303ab46e8e47c43.pdf"
+  },
+  {
+   "forum": "M7eWB695jp",
+   "title": "Purifying Generative LLMs from Backdoors  without Prior Knowledge or Clean Reference",
+   "status": "Poster",
+   "init": [
+    2,
+    2,
+    6,
+    8
+   ],
+   "final": [
+    2,
+    2,
+    6,
+    8
+   ],
+   "init_mean": 4.5,
+   "final_mean": 4.5,
+   "delta": 0.0,
+   "spread": 6,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1611,
+   "pdf": "https://openreview.net/pdf/d282b7df1ddcf7573429d14510a56e81e1a43bd1.pdf"
+  },
+  {
+   "forum": "Gk6umqW74m",
+   "title": "NewtonBench: Benchmarking Generalizable Scientific Law Discovery in LLM Agents",
+   "status": "Poster",
+   "init": [
+    2,
+    6,
+    6,
+    6
+   ],
+   "final": [
+    2,
+    6,
+    6,
+    6
+   ],
+   "init_mean": 5,
+   "final_mean": 5,
+   "delta": 0,
+   "spread": 4,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1603,
+   "pdf": "https://openreview.net/pdf/29ece7f2faf6baea1131b2ee10b95f411e9b3ee2.pdf"
+  },
+  {
+   "forum": "zxlbh55PhC",
+   "title": "Clustering by Denoising: Latent plug-and-play diffusion for single-cell embeddings",
+   "status": "Poster",
+   "init": [
+    4,
+    6,
+    6
+   ],
+   "final": [
+    4,
+    6,
+    6
+   ],
+   "init_mean": 5.33,
+   "final_mean": 5.33,
+   "delta": 0.0,
+   "spread": 2,
+   "n_rev": 3,
+   "wc_rebuttal": 0,
+   "min_wlen": 1587,
+   "pdf": "https://openreview.net/pdf/d4d9b8d365060c473ecb846c2dd3b17b4be6aa70.pdf"
+  }
+ ],
+ "B": [
+  {
+   "forum": "AvkLmnUqtZ",
+   "title": "$\\psi$DAG: Projected Stochastic Approximation Iteration for Linear DAG Structure Learning",
+   "status": "Reject",
+   "init": [
+    4,
+    4,
+    6
+   ],
+   "final": [
+    4,
+    4,
+    6
+   ],
+   "init_mean": 4.67,
+   "final_mean": 4.67,
+   "delta": 0.0,
+   "spread": 2,
+   "n_rev": 3,
+   "wc_rebuttal": 0,
+   "min_wlen": 1836,
+   "pdf": "https://openreview.net/pdf/1eff0a5531a8af74944e56bf24954f7c63973891.pdf"
+  },
+  {
+   "forum": "ISHsdUmdpn",
+   "title": "Compute as Teacher: Turning Inference Compute Into Reference-Free Supervision",
+   "status": "Reject",
+   "init": [
+    4,
+    4,
+    4,
+    6
+   ],
+   "final": [
+    4,
+    4,
+    4,
+    6
+   ],
+   "init_mean": 4.5,
+   "final_mean": 4.5,
+   "delta": 0.0,
+   "spread": 2,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1780,
+   "pdf": "https://openreview.net/pdf/cc1bb3b818505cfb7656a33b091e070b99a431c1.pdf"
+  },
+  {
+   "forum": "c0y21lONB5",
+   "title": "$\\texttt{GEM}$: 3D Gaussian Splatting for Efficient and Accurate Cryo-EM Reconstruction",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "final": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "init_mean": 4.5,
+   "final_mean": 4.5,
+   "delta": 0.0,
+   "spread": 4,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1719,
+   "pdf": "https://openreview.net/pdf/4e78beb864fc6929a55319445649dbd57f5d8dc2.pdf"
+  },
+  {
+   "forum": "AKzgsBCW6A",
+   "title": "MagicMirror: A Large-Scale Dataset and Benchmark for Fine-Grained Artifacts Assessment in Text-to-Image Generation",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "final": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "init_mean": 4.5,
+   "final_mean": 4.5,
+   "delta": 0.0,
+   "spread": 4,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1693,
+   "pdf": "https://openreview.net/pdf/852739967efa7243d60a03c205347d308fd18a70.pdf"
+  },
+  {
+   "forum": "O6iPDyUP97",
+   "title": "Treatment Responder Classification with Abstention",
+   "status": "Reject",
+   "init": [
+    4,
+    4,
+    6
+   ],
+   "final": [
+    4,
+    4,
+    6
+   ],
+   "init_mean": 4.67,
+   "final_mean": 4.67,
+   "delta": 0.0,
+   "spread": 2,
+   "n_rev": 3,
+   "wc_rebuttal": 0,
+   "min_wlen": 1618,
+   "pdf": "https://openreview.net/pdf/32743e9adf6f07f4be47e48fa86ed9fbe7723751.pdf"
+  },
+  {
+   "forum": "aC2ku2uKcB",
+   "title": "On the Limits of Test-Time Compute: Sequential Reward Filtering for Better Inference",
+   "status": "Reject",
+   "init": [
+    4,
+    4,
+    4,
+    6
+   ],
+   "final": [
+    4,
+    4,
+    4,
+    6
+   ],
+   "init_mean": 4.5,
+   "final_mean": 4.5,
+   "delta": 0.0,
+   "spread": 2,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1604,
+   "pdf": "https://openreview.net/pdf/8add6d4b8e453b988f3721f7b1b0c7282b0c3498.pdf"
+  },
+  {
+   "forum": "0lW2UBiEWN",
+   "title": "Mesa and Mask: A Benchmark for Detecting and Classifying Deceptive Behaviors in LLMs",
+   "status": "Reject",
+   "init": [
+    4,
+    4,
+    4,
+    6
+   ],
+   "final": [
+    4,
+    4,
+    4,
+    6
+   ],
+   "init_mean": 4.5,
+   "final_mean": 4.5,
+   "delta": 0.0,
+   "spread": 2,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1547,
+   "pdf": "https://openreview.net/pdf/85ab3280ac249160906d74465d1baa10624bb2a9.pdf"
+  },
+  {
+   "forum": "WT9jewYFNQ",
+   "title": "FantasyPortrait: Multi-Character Portrait Animation with Expression-Augmented Diffusion Transformers",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "final": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "init_mean": 5,
+   "final_mean": 5,
+   "delta": 0,
+   "spread": 6,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1521,
+   "pdf": "https://openreview.net/pdf/000d4e407423a9069b197a06760c567d66454c93.pdf"
+  },
+  {
+   "forum": "Ss9lFQtJQX",
+   "title": "Think Socially via Cognitive Reasoning",
+   "status": "Reject",
+   "init": [
+    2,
+    2,
+    6,
+    8
+   ],
+   "final": [
+    2,
+    2,
+    6,
+    8
+   ],
+   "init_mean": 4.5,
+   "final_mean": 4.5,
+   "delta": 0.0,
+   "spread": 6,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1518,
+   "pdf": "https://openreview.net/pdf/24cee956bc23aa65fb58834e0f11d4562799a5b0.pdf"
+  },
+  {
+   "forum": "Xekof9okBD",
+   "title": "Efficient Multivariate Temporal Point Process via Monotone Alternating Splines",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    4,
+    8
+   ],
+   "final": [
+    2,
+    4,
+    4,
+    8
+   ],
+   "init_mean": 4.5,
+   "final_mean": 4.5,
+   "delta": 0.0,
+   "spread": 6,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1492,
+   "pdf": "https://openreview.net/pdf/e2380a04a5897e50c717e30d6eaa65d6d0450c55.pdf"
+  }
+ ],
+ "C": [
+  {
+   "forum": "Dgphd9qizu",
+   "title": "Functional MRI Time Series Generation via Wavelet-Based Image Transform and Spectral Flow Matching for Brain Disorder Identification",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    4,
+    8
+   ],
+   "final": [
+    2,
+    4,
+    4,
+    8
+   ],
+   "init_mean": 4.5,
+   "final_mean": 4.5,
+   "delta": 0.0,
+   "spread": 6,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 2336,
+   "pdf": "https://openreview.net/pdf/0df799362818be4ea544040027aa7b13931eac45.pdf"
+  },
+  {
+   "forum": "M7eWB695jp",
+   "title": "Purifying Generative LLMs from Backdoors  without Prior Knowledge or Clean Reference",
+   "status": "Poster",
+   "init": [
+    2,
+    2,
+    6,
+    8
+   ],
+   "final": [
+    2,
+    2,
+    6,
+    8
+   ],
+   "init_mean": 4.5,
+   "final_mean": 4.5,
+   "delta": 0.0,
+   "spread": 6,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1611,
+   "pdf": "https://openreview.net/pdf/d282b7df1ddcf7573429d14510a56e81e1a43bd1.pdf"
+  },
+  {
+   "forum": "1PYXFkS6Hy",
+   "title": "TaCo:  A Benchmark for Lossless and Lossy Codecs of Heterogeneous Tactile Data",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "final": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "init_mean": 5,
+   "final_mean": 5,
+   "delta": 0,
+   "spread": 6,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1541,
+   "pdf": "https://openreview.net/pdf/ecaf00256165d3499670a1369c46ad3a822f2faa.pdf"
+  },
+  {
+   "forum": "57THeGgNAN",
+   "title": "Generalization of Diffusion Models Arises with a Balanced Representation Space",
+   "status": "Poster",
+   "init": [
+    2,
+    6,
+    6,
+    8
+   ],
+   "final": [
+    2,
+    6,
+    6,
+    8
+   ],
+   "init_mean": 5.5,
+   "final_mean": 5.5,
+   "delta": 0.0,
+   "spread": 6,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1421,
+   "pdf": "https://openreview.net/pdf/54d406eab78a613bad8005b015489792a7d9c8a4.pdf"
+  },
+  {
+   "forum": "Se3YaqtjqE",
+   "title": "Convex Efficient Coding",
+   "status": "Poster",
+   "init": [
+    2,
+    6,
+    8,
+    8
+   ],
+   "final": [
+    2,
+    6,
+    8,
+    8
+   ],
+   "init_mean": 6,
+   "final_mean": 6,
+   "delta": 0,
+   "spread": 6,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1404,
+   "pdf": "https://openreview.net/pdf/9f30a70dd7d588efa69d6c86fee1a9d2b36693fd.pdf"
+  },
+  {
+   "forum": "BlSH7gNQSq",
+   "title": "InfoNCE Induces Gaussian Distribution",
+   "status": "Oral",
+   "init": [
+    2,
+    2,
+    4,
+    8
+   ],
+   "final": [
+    2,
+    2,
+    4,
+    8
+   ],
+   "init_mean": 4,
+   "final_mean": 4,
+   "delta": 0,
+   "spread": 6,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1341,
+   "pdf": "https://openreview.net/pdf/a6b39329ac8ff222967c4e722b109a4b582765ba.pdf"
+  },
+  {
+   "forum": "ZmhpqpKzAT",
+   "title": "IGC-Net for conditional average potential outcome estimation over time",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    4,
+    6,
+    8
+   ],
+   "final": [
+    2,
+    4,
+    4,
+    6,
+    8
+   ],
+   "init_mean": 4.8,
+   "final_mean": 4.8,
+   "delta": 0.0,
+   "spread": 6,
+   "n_rev": 5,
+   "wc_rebuttal": 0,
+   "min_wlen": 1300,
+   "pdf": "https://openreview.net/pdf/270eed7e86e712771bfef394a122d0c846ae8a90.pdf"
+  },
+  {
+   "forum": "aUnheo6zFD",
+   "title": "SmellNet: A Large-scale Dataset for Real-world Smell Recognition",
+   "status": "Poster",
+   "init": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "final": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "init_mean": 5,
+   "final_mean": 5,
+   "delta": 0,
+   "spread": 6,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1289,
+   "pdf": "https://openreview.net/pdf/d83493e9fed5626d986b72ea0be69fdcc2a5c91a.pdf"
+  },
+  {
+   "forum": "ZOuU0udyA4",
+   "title": "MedAgent-Pro: Towards Evidence-based Multi-modal Medical Diagnosis via Reasoning Agentic Workflow",
+   "status": "Poster",
+   "init": [
+    2,
+    6,
+    6,
+    8
+   ],
+   "final": [
+    2,
+    6,
+    6,
+    8
+   ],
+   "init_mean": 5.5,
+   "final_mean": 5.5,
+   "delta": 0.0,
+   "spread": 6,
+   "n_rev": 4,
+   "wc_rebuttal": 0,
+   "min_wlen": 1271,
+   "pdf": "https://openreview.net/pdf/9283a5a34eb08e8c29558d838bf5a9a5b642242b.pdf"
+  },
+  {
+   "forum": "34a6DfHOUF",
+   "title": "Benefits and Pitfalls of Reinforcement Learning for Language Model Planning: A Theoretical Perspective",
+   "status": "Poster",
+   "init": [
+    2,
+    6,
+    8
+   ],
+   "final": [
+    2,
+    6,
+    8
+   ],
+   "init_mean": 5.33,
+   "final_mean": 5.33,
+   "delta": 0.0,
+   "spread": 6,
+   "n_rev": 3,
+   "wc_rebuttal": 0,
+   "min_wlen": 1245,
+   "pdf": "https://openreview.net/pdf/7a6cf6dea4010fbe584f67efe0ea4418ea0a9c1a.pdf"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+Given a fixed or growing compute budget, which scaling knob --context length, batch size, generations per prompt, and model size -- buys the most reliable performance gain, and how early can we predict that return? We answer this by (i) fitting the saturating power-law in \cref{eq:sigmoid_law} early in training for each setting (precisely, half the target budget), (ii) extrapolating to the target budget, and (iii) extending training to verify the forecast. Across all axes below we observe clean, predictive fits whose extrapolated curves align with the extended trajectories, mirroring the behavior seen in our 100,000 GPU-hour run (\Cref{fig_100k_main}), and the cross-recipe comparison in \Cref{fig:prevelant_methods}.
+
+
+\paragraph{Model scale (MoE)}
+Does ScaleRL remain predictive and stable on larger models? Training the 17B×16 Llama-4 Scout MoE with ScaleRL exhibits the same predictable scaling behavior as the 8B model, with low truncation rates and no instability pathologies (Appendix~\ref{appendix:truncations}, \ref{appendix:loss_types}). \Cref{fig_100k_main} shows the training curve. The extended points align with the fitted curve, supporting the model-scale invariance of our recipe. Moreover, the larger 17B×16 MoE exhibits much higher asymptotic RL performance than the 8B dense model, outperforming the 8B's performance using only $1/6$ of its RL training compute.
+
+\paragraph{Generation length (context budget)}
+Increasing the generation length from 14k to 32k tokens slows early progress (lower $B$ and higher $C_{mid}$) but consistently lifts the fitted asymptote (A), yielding higher final performance once sufficient compute is provided (\Cref{fig:large_scale_gen_len}). This validates long-context RL as a ceiling-raising knob rather than a mere efficiency trade-off. Extrapolations made from the fit correctly forecast the higher 32k-token trajectory when training is extended. 
+
+\paragraph{Global batch size (prompts)} Smaller-batch runs show early stagnation on downstream benchmarks even as in-distribution validation performance continues to improve. Larger batches reliably improve the asymptote and avoid the downstream stagnation we observe in smaller-batch runs. \Cref{fig:large_scale_bsz} shows the same qualitative pattern at mid-scale: small batches may appear better early but are overtaken as compute grows. 
+In our largest math run in \Cref{fig_100k_main}, moving to batch size of 2048 prompts both stabilized training and yielded a fit that extrapolated from up to 50k GPU hours to the final 100k point.
+
+\paragraph{Generations per prompt (fixed total batch)}
+For a fixed total batch, is it better to allocate more prompts or more generations per prompt? Sweeping generations per prompt {8,16,24,32} and adjusting prompts to keep total batch fixed leaves fitted scaling curves essentially unchanged (Appendix~\ref{appendix:large_scale}), suggesting that, at moderate batch, this allocation is a second-order choice for both A and B. Clearer differences may emerge at much larger batches (e.g., 2k+), which we leave for future work. 
+
+
+

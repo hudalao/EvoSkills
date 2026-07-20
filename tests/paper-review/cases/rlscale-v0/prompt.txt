@@ -1,0 +1,28 @@
+You are helping the authors self-review their own paper draft before submission. The full LaTeX source is in `input/` (entry point: the file containing \begin{document}).
+
+Read the paper critically, as a demanding reviewer would, and report every weakness you find. Produce exactly two files inside an `output/` directory:
+
+1. `output/findings.json` — every distinct weakness, in exactly this schema:
+
+[
+  {
+    "id": "F1",
+    "severity": "major|minor",
+    "location": "<section name or a verbatim quote of <=15 words anchoring the issue>",
+    "description": "<what is wrong and why it matters, 1-3 sentences>",
+    "fix": "<concrete suggested action, 1 sentence>"
+  }
+]
+
+Rules:
+- One finding per distinct issue; do not bundle unrelated problems.
+- "location" must let a reader jump to the exact place (section title, table number, or a short verbatim quote).
+- severity=major for issues a reviewer could reject over; minor for polish items.
+- Output must be valid JSON (no comments, no trailing commas).
+
+2. `output/self_review.md` — a structured self-review memo for the authors: overall assessment, the issues you would fix before submission in priority order, and what you would defend as-is.
+
+Constraints:
+- Base everything strictly on the files in `input/`. Do not browse the web.
+- Do not assume the paper is good or bad in advance; report what the text actually supports.
+- Write in English.

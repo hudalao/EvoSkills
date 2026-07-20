@@ -1,0 +1,114 @@
+{
+ "roster": [
+  {
+   "case": "04-accept-borderline-graphexpr",
+   "fid": "C6vpifaZvU",
+   "arxiv": "2505.11298",
+   "status": "Poster",
+   "init": [
+    4,
+    4,
+    6,
+    6
+   ],
+   "bucket": "accept_borderline",
+   "pair": "05",
+   "title": "Graph Representational Learning: When Does More Expressivity Hurt"
+  },
+  {
+   "case": "05-reject-borderline-magicmirror",
+   "fid": "AKzgsBCW6A",
+   "arxiv": "2509.10260",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    6,
+    6
+   ],
+   "bucket": "reject_borderline",
+   "pair": "04",
+   "title": "MagicMirror: Fine-Grained Defects Dataset for T2I"
+  },
+  {
+   "case": "06-split-reject-chord",
+   "fid": "xszAt23a17",
+   "arxiv": "2503.11958",
+   "status": "Reject",
+   "init": [
+    2,
+    2,
+    4,
+    8
+   ],
+   "bucket": "split_reject",
+   "title": "CHOrD: House-Scale Indoor Digital Twins"
+  },
+  {
+   "case": "07-split-reject-fantasyportrait",
+   "fid": "WT9jewYFNQ",
+   "arxiv": "2507.12956",
+   "status": "Reject",
+   "init": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "bucket": "split_reject",
+   "title": "FantasyPortrait: Multi-Character Portrait Animation"
+  },
+  {
+   "case": "08-allpos-deeptrace",
+   "fid": "QkaeTea16Y",
+   "arxiv": "2509.04499",
+   "status": "Poster",
+   "init": [
+    6,
+    6,
+    6,
+    6
+   ],
+   "bucket": "all_positive",
+   "title": "DeepTRACE: Auditing Deep Research AI Systems"
+  },
+  {
+   "case": "09-oral-mixed-mnpo",
+   "fid": "x7aLhLMVn1",
+   "arxiv": "2509.23102",
+   "status": "Oral",
+   "init": [
+    4,
+    6,
+    8
+   ],
+   "bucket": "oral_mixed",
+   "title": "Multiplayer Nash Preference Optimization"
+  },
+  {
+   "case": "10-oral-mixed-mclm",
+   "fid": "r2HG3xOMJI",
+   "arxiv": "2505.12565",
+   "status": "Oral",
+   "init": [
+    2,
+    6,
+    6,
+    8
+   ],
+   "bucket": "oral_mixed",
+   "title": "mCLM: Modular Chemical Language Model"
+  }
+ ],
+ "backup": {
+  "case": "backup-accept-borderline-nsos",
+  "fid": "PAV5zYn0Hn",
+  "arxiv": "2510.13444",
+  "status": "Poster",
+  "init": [
+   2,
+   6,
+   6
+  ]
+ }
+}

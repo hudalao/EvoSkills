@@ -1,0 +1,1 @@
+How did retrieval-augmented generation for knowledge-intensive NLP evolve, from open-domain QA pipelines to end-to-end retrieval-augmented language models?

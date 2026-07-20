@@ -1,0 +1,19 @@
+\begin{wraptable}{l}{0.28\textwidth}
+    \vspace{-2ex}
+    \centering
+    \resizebox{1.0\linewidth}{!}{%
+    \begin{tabular}{lccc}
+    & \multicolumn{3}{c}{\translation Translation}\\
+     \cmidrule(){2-4}
+    Model &\full&\concat& \sharded \\
+    \cmidrule(lr){1-1} \cmidrule(){2-4}
+    \openai~4o-mini &  41.7 &  43.4 &  42.1 \\
+    \openai~4o &  35.9 &  38.5 &  40.9 \\
+    \bottomrule
+    \end{tabular}
+    }
+    \caption{Performance on the \translation translation task for \full~\fullt, \concat ~\concatt, and \sharded~\shardedt simulations.}
+    \label{tab:translation}
+    \vspace{-2ex}
+
+\end{wraptable}

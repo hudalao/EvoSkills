@@ -1,0 +1,20 @@
+{
+ "high": [
+  "R1.W1",
+  "R2.W2",
+  "R2.W4",
+  "R3.W1",
+  "R3.W2",
+  "R4.W1"
+ ],
+ "borderline": [
+  "R2.W1",
+  "R2.W3",
+  "R2.W5",
+  "R3.W3",
+  "R4.W3",
+  "R4.W4",
+  "R4.W5"
+ ],
+ "notes": "AC gave per-reviewer score rationale. Identity map by content: R1=iyDd(6,contextualization=W1), R2=wMWG(4,actionable-guidance=W4 + zeta=W2; W5 heterophily refuted), R3=uzRa(4,upper-bound-logic=W2 + zeta=W1), R4=cYcW(6,zeta-practicality=W1). Outstanding per AC: zeta selection (multiple reviewers) + upper-bound logic. Addressed: Ma et al. novelty (R2.W1), orthogonal issues (R2.W5), compute cost (R4.W4), bound-validity-via-correlations (R3.W3 partially)."
+}

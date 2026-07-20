@@ -1,0 +1,36 @@
+{
+ "items": [
+  {
+   "key": "zeta-selection-bottleneck",
+   "core_ids": [
+    "R2.W2",
+    "R3.W1",
+    "R4.W1"
+   ]
+  },
+  {
+   "key": "bound-looseness-constants-logic",
+   "core_ids": [
+    "R2.W4",
+    "R3.W2",
+    "R3.W3",
+    "R4.W3"
+   ]
+  },
+  {
+   "key": "experimental-scope-limited",
+   "core_ids": [
+    "R2.W3",
+    "R4.W5"
+   ]
+  },
+  {
+   "key": "contextualization-actionable-guidance",
+   "core_ids": [
+    "R1.W1",
+    "R1.W2",
+    "R2.W4"
+   ]
+  }
+ ]
+}

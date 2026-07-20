@@ -1,0 +1,435 @@
+% This class has a lot of options, so please check deepmind.cls for more details.
+% This is a minimal set for most needs.
+\documentclass[11pt, a4paper, logo, copyright]{googlecloud}
+
+% Omit dates for reproducibility.
+\pdfinfoomitdate 1
+\pdftrailerid{redacted}
+
+% This avoids duplicate hyperref bookmark entries when using \bibentry (e.g. via \citeas).
+\makeatletter
+\renewcommand\bibentry[1]{\nocite{#1}{\frenchspacing\@nameuse{BR@r@#1\@extra@b@citeb}}}
+\makeatother
+
+\usepackage{kantlipsum, lipsum}
+\usepackage{dsfont}
+% \usepackage{gdm-colors}
+
+% Sometimes you will get errors about pdflink ending up in diffrent position. Try this and
+% comment it out again when you are done with your document.
+%\hypersetup{draft}
+
+% Set the bibliography options here.
+\usepackage[authoryear, sort&compress, round]{natbib}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{hyperref}       % hyperlinks
+\usepackage[nameinlink]{cleveref}
+\usepackage{bbm}
+\usepackage{multirow}
+\usepackage{soul}
+\usepackage{floatrow}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+\usepackage{tablefootnote}
+% \usepackage{fdsymbol}. % cause an error
+\usepackage{amsfonts}
+\usepackage[flushleft]{threeparttable}
+% \usepackage{colortbl}
+\usepackage{bbding}
+\usepackage{xcolor}
+\usepackage{xspace}
+\usepackage{bm}
+\usepackage{arydshln}
+% \usepackage{subfigure}
+\usepackage{enumitem}
+\usepackage{setspace}
+% \usepackage{mathabx}
+\usepackage{color}
+\usepackage{algorithm}
+% \usepackage{algorithmic}
+\usepackage{longtable}
+% \usepackage{booktabs}
+
+\usepackage[normalem]{ulem}
+\usepackage{ulem}
+\usepackage[nomargin,inline,marginclue,draft]{fixme}
+\usepackage{balance}
+\usepackage{verbatim}
+\usepackage{diagbox}
+\usepackage{changepage}
+\usepackage{amssymb}
+\usepackage{pifont}
+\usepackage{array}   % Optional: Improves table column alignment
+
+
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{amsmath} 
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{subcaption}
+\definecolor{nb}{HTML}{006EB8}
+\definecolor{red_}{HTML}{cd6155}
+\definecolor{green_}{HTML}{52be80}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true,    % Colours links instead of ugly boxes
+  urlcolor     = nb,    % Colour for external hyperlinks
+  linkcolor    = nb,    % Colour of internal links
+  citecolor    = nb      % Colour of citations
+}
+
+\usepackage{booktabs,makecell}
+% \renewcommand\theadfont{\normalsize\bfseries}
+
+\newenvironment{findingBox}[2]{%
+	\begin{tcolorbox}[
+colframe=black!80,
+colback=gray!10,
+ boxrule=.5pt,
+ left=1pt,
+ right = 1pt,
+ top=0pt,
+ bottom=0pt,
+ size=small,
+ fonttitle=\bfseries,
+coltitle=black,
+boxrule=0.4mm,
+arc=2mm
+ ]{\textbf{Takeaway #1:} #2} %~\itshape %
+}{%
+	\end{tcolorbox}
+}
+\usepackage{tcolorbox}
+
+\newtcolorbox{prompt}[2][]{
+    colback=white,
+    colframe=gray!45,
+    fonttitle=\bfseries,
+    coltitle=black,
+    sharp corners,
+    title=#2,
+    #1
+}
+
+\tcbset{
+    promptstyle/.style={
+        enhanced,
+        colback=white,
+        colframe=black,
+        colbacktitle=gray!20,
+        width=0.98\linewidth, 
+        coltitle=black,
+        rounded corners,
+        sharp corners=north,
+        boxrule=0.5pt,
+        drop shadow=black!50!white,
+        attach boxed title to top left={
+            xshift=-2mm,
+            yshift=-2mm
+        },
+        title code={%
+            \begin{minipage}{0.8\linewidth}
+                \centering\thetitle
+            \end{minipage}
+        },
+        boxed title style={
+            rounded corners,
+            size=small,
+            colback=gray!20,
+        },
+        fonttitle=\normalsize\bfseries,
+        before upper={\parindent15pt}
+    }
+}
+
+\newtcolorbox{promptbox}[1][]{
+    promptstyle,
+    title=Prompt,
+    #1
+}
+
+\usepackage{tikz,pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{xcolor}
+\usetikzlibrary{arrows.meta,calc,positioning,fit,shadows.blur,decorations.pathreplacing}
+
+\definecolor{pHeaderL}{RGB}{238,242,255}
+\definecolor{pHeaderR}{RGB}{253,242,248}
+\definecolor{pOursBg}{RGB}{224,247,241}
+\definecolor{pOursStroke}{RGB}{134,239,172}
+\definecolor{pCell}{RGB}{248,250,252}
+\definecolor{pStroke}{RGB}{229,231,235}
+\definecolor{pBadgeOK}{RGB}{220,252,231}
+\definecolor{pBadgeNG}{RGB}{254,226,226}
+\definecolor{pText}{RGB}{31,41,55}
+\definecolor{pSub}{RGB}{75,85,99}
+\definecolor{pWarn}{RGB}{239,68,68}
+\definecolor{pOK}{RGB}{16,185,129}
+\definecolor{pGold}{RGB}{251,191,36}
+
+\definecolor{StarCoral}{HTML}{F58A7A} 
+\definecolor{StarTeal}{HTML}{4FB5A5} 
+\definecolor{StarIndigo}{HTML}{4C6EDB}  
+\definecolor{StarYellow}{HTML}{EBC065}
+
+% \newcommand{\methodname}{\textbf{\texttt{CoDA}}}
+\newcommand{\methodname}{\textbf{\texttt{\textcolor{StarIndigo}{C}\textcolor{StarIndigo}{o}\textcolor{StarCoral}{D}\textcolor{StarTeal}{A}}}}
+\newcommand{\io}[1]{\setlength{\fboxsep}{1pt}\colorbox{gray!10}{\texttt{#1}}}
+
+\newcommand{\best}[1]{\setlength{\fboxsep}{2.5pt}\colorbox{StarTeal!18}{\textbf{#1}}}
+
+\usepackage{tabularx}
+
+% Standard package includes
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{tcolorbox}           % no options here
+\tcbuselibrary{skins,breakable,listings,theorems}
+\usepackage[T1]{fontenc}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+% \usepackage{subcaption}
+\usepackage{fontawesome}
+\usepackage{centernot}
+
+% prompt box
+\usepackage{xcolor}
+
+\usepackage{listings}
+
+% \newenvironment{findingBox}[2]{%
+% 	\begin{tcolorbox}[
+% colframe=black!80,
+% colback=gray!10,
+%  boxrule=.5pt,
+%  left=1pt,
+%  right = 1pt,
+%  top=0pt,
+%  bottom=0pt,
+%  size=small,
+%  fonttitle=\bfseries,
+% coltitle=black,
+% boxrule=0.4mm,
+% arc=2mm
+%  ]{\textbf{Finding #1:} #2} %~\itshape %
+% }{%
+% 	\end{tcolorbox}
+% }
+
+% \newtcolorbox{prompt}[2][]{
+%     colback=white,
+%     colframe=gray!45,
+%     fonttitle=\bfseries,
+%     coltitle=black,
+%     sharp corners,
+%     title=#2,
+%     #1
+% }
+
+\tcbset{
+    promptstyle/.style={
+        enhanced,
+        colback=white,
+        colframe=black,
+        colbacktitle=gray!20,
+        width=0.98\linewidth, 
+        coltitle=black,
+        rounded corners,
+        sharp corners=north,
+        boxrule=0.5pt,
+        drop shadow=black!50!white,
+        attach boxed title to top left={
+            xshift=-2mm,
+            yshift=-2mm
+        },
+        title code={%
+            \begin{minipage}{0.8\linewidth}
+                \centering\thetitle
+            \end{minipage}
+        },
+        boxed title style={
+            rounded corners,
+            size=small,
+            colback=gray!20,
+        },
+        fonttitle=\normalsize\bfseries,
+        before upper={\parindent15pt}
+    }
+}
+
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{white},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\sffamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=none,
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+\usepackage{siunitx}
+\usepackage{xcolor}
+
+
+\sisetup{
+  detect-weight = true,
+  detect-inline-weight = math,
+  table-format = 2.2
+}
+
+\usepackage{minted} 
+\setminted{tabsize=2, breaklines=true, breakanywhere=true}
+\usemintedstyle{borland}
+
+
+% \usepackage{kantlipsum, lipsum}
+% \usepackage{dsfont}
+% % \usepackage{gdm-colors}
+% % Optional math commands from https://github.com/goodfeli/dlbook_notation.
+
+
+% % custom packages and commands
+% \usepackage{graphicx}
+% \usepackage{hyperref}
+% \usepackage{url}
+% \usepackage{xcolor}
+% \usepackage{tabularx}
+% \usepackage{multicol}
+% \usepackage{colortbl}
+% \usepackage{booktabs}
+% \usepackage{xspace}
+% \usepackage{algorithm}
+% % \usepackage{algorithmic}
+\usepackage{algpseudocode}
+% \usepackage{subcaption}
+% \usepackage{algorithmicx}
+% \usepackage{bbm, mathtools}
+% \usepackage{wrapfig}
+% \usepackage{hyperref}
+% % \hypersetup{
+% %   colorlinks,
+% %   citecolor=blue,
+% %   linkcolor=red,
+% %   urlcolor=blue
+% % }
+
+\usepackage{tcolorbox}
+
+\def\appref#1{Appendix~\ref{#1}}
+\def\Appref#1{Appendix~\ref{#1}}
+\def\tabref#1{table~\ref{#1}}
+\def\Tabref#1{Table~\ref{#1}}
+ 
+\newcommand{\todo}[1]{\textcolor{red}{#1}}
+
+\newcommand{\method}{\mbox{\textsc{Astute RAG}}\xspace}
+% \newcommand{\benchmark}{\mbox{\textsc{IMP-RAG}}\xspace}
+\newcommand{\stitle}[1]{\noindent \textbf{#1.}}
+
+% \newcommand{\ruoxi}[1]{\textbf{\textcolor{purple}{[Ruoxi: #1]}}}
+
+\title{\methodname{}: Agentic Systems for Collaborative Data Visualization}
+% Resilient Retrieval-Augmented Generation under Imperfect Retrieval
+% Authors must not appear in the submitted version. They should be hidden
+% as long as the \iclrfinalcopy macro remains commented out below.
+% Non-anonymous submissions will be rejected without review.
+
+\correspondingauthor{zichen\_chen@ucsb.edu, jinsungyoon@google.com}
+
+\renewcommand{\today}{}
+
+\author[1 2 *]{Zichen Chen}
+\author[1]{Jiefeng Chen}
+\author[1]{Sercan Ö. Arık}
+\author[2]{Misha Sra}
+\author[1]{Tomas Pfister}
+\author[1]{Jinsung Yoon}
+
+\affil[1]{Google Cloud AI Research}
+\affil[2]{University of California, Santa Barbara}
+
+
+\input{main/abstract}
+
+\begin{document}
+
+\maketitle
+
+
+\input{main/introduction}
+
+\input{main/related_work}
+\input{main/method}
+
+\input{main/experiments/experiments}
+\input{main/experiments/backbone_analysis}
+\input{main/experiments/efficiency_analysis}
+\input{main/experiments/ablation_study}
+
+\input{main/conclusion}
+
+\input{main/statement}
+
+
+\bibliographystyle{abbrvnat}
+\nobibliography*
+\bibliography{ref}
+
+\clearpage
+
+\appendix
+
+\input{main/statement}
+\input{appendix/algorithm}
+\input{appendix/good_examples}
+\input{appendix/evaluation_prompt}
+\input{appendix/prompts}
+
+
+\end{document}
+

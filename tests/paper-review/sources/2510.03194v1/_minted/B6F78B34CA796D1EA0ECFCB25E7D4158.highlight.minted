@@ -1,0 +1,44 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{g+gh}{\PYGZsh{} Search Agent}
+As Dr. Michael Zhang, an expert in data visualization and matplotlib, generate a high\PYGZhy{}quality matplotlib example for the plot type: \PYGZdq{}\PYGZob{}plot\PYGZus{}type\PYGZcb{}\PYGZdq{}.
+
+IMPORTANT CONSTRAINTS:
+\PYG{k}{\PYGZhy{}}\PYG{+w}{ }Base your code PRIMARILY on matplotlib official examples: https://matplotlib.org/stable/gallery/index.html and https://matplotlib.org/stable/plot\PYGZus{}types/index.html
+\PYG{k}{\PYGZhy{}}\PYG{+w}{ }You may also use The Python Graph Gallery as style reference: https://python\PYGZhy{}graph\PYGZhy{}gallery.com/
+\PYG{k}{\PYGZhy{}}\PYG{+w}{ }Do NOT invent new APIs. Follow official patterns exactly.
+
+Your task:
+\PYG{k}{1.} Understand what type of visualization \PYGZdq{}\PYGZob{}plot\PYGZus{}type\PYGZcb{}\PYGZdq{} refers to according to matplotlib\PYGZsq{}s official plot types
+\PYG{k}{2.} Generate a complete, executable matplotlib code example following official matplotlib patterns
+\PYG{k}{3.} Use the exact style and approach shown in matplotlib\PYGZsq{}s official documentation
+\PYG{k}{4.} Include proper imports, sample data, styling, and annotations as shown in official examples
+\PYG{k}{5.} Follow matplotlib\PYGZsq{}s official best practices and naming conventions
+
+Requirements for the matplotlib code:
+\PYG{k}{\PYGZhy{}}\PYG{+w}{ }Use ONLY matplotlib.pyplot (import matplotlib.pyplot as plt)
+\PYG{k}{\PYGZhy{}}\PYG{+w}{ }Follow the exact patterns from https://matplotlib.org/stable/gallery/ documentation examples
+\PYG{k}{\PYGZhy{}}\PYG{+w}{ }Include numpy for data generation if needed (as shown in official examples)
+\PYG{k}{\PYGZhy{}}\PYG{+w}{ }Create realistic sample data appropriate for the plot type (following official examples)
+\PYG{k}{\PYGZhy{}}\PYG{+w}{ }Add proper labels, title, and styling (matching official documentation style)
+\PYG{k}{\PYGZhy{}}\PYG{+w}{ }Include plt.show() at the end
+\PYG{k}{\PYGZhy{}}\PYG{+w}{ }Make the code self\PYGZhy{}contained and executable
+\PYG{k}{\PYGZhy{}}\PYG{+w}{ }Add informative comments that match matplotlib documentation style
+
+Respond with ONLY the Python code in this format:
+\PYG{l+s+sb}{```python}
+\PYG{c+c1}{\PYGZsh{} [Brief description matching matplotlib docs style]}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{matplotlib.pyplot}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{plt}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{numpy}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{np}
+
+\PYG{c+c1}{\PYGZsh{} Your complete example code here following official matplotlib patterns}
+\PYG{c+c1}{\PYGZsh{} Include comments matching matplotlib documentation style}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+\PYG{l+s+sb}{```}
+
+Plot type to implement: \PYGZob{}plot\PYGZus{}type\PYGZcb{}
+Primary references:
+\PYG{k}{\PYGZhy{}}\PYG{+w}{ }https://matplotlib.org/stable/gallery/index.html
+\PYG{k}{\PYGZhy{}}\PYG{+w}{ }https://matplotlib.org/stable/plot\PYGZus{}types/index.html
+Secondary reference: https://python\PYGZhy{}graph\PYGZhy{}gallery.com/
+\end{MintedVerbatim}

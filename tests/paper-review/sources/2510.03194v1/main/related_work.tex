@@ -1,0 +1,17 @@
+\section{Related Work}
+\paragraph{Natural Language to Visualization (NL2Vis).}
+
+NL2Vis approaches have revolutionized data exploration in data science by allowing users to articulate queries in natural language and receive target visualizations~\citep{wang2023natural,shen2022towards,wu2024automated}, thereby accelerating initial data scouting and ad-hoc reporting~\citep{voigt-etal-2022-survey}. 
+Survey on natural language generation for visualizations provides a taxonomy of techniques and highlights the challenges in ensuring coherence and fidelity to underlying data information~\citep{hoque2025natural}. Many methods have formalized this evaluation landscape~\citep{chen2024viseval,ouyang2025nvagent,bai2025text,shin2025visualizationary}, they use chain-of-thought prompting strategies to enhance LLM accuracy on single-table tasks~\citep{liu2025make}. These tools are important for data scientists navigating exploratory phase~\citep{zhang2025exploring,chen2025ai4research}, but they have gaps in LLM reasoning under ambiguity or multi-source data environments~\citep{zhu2025open,davila2025beyond}. Empirical evaluations of LLMs in visualization generation reveal shortcomings in CoT-based methods, emphasizing the need for robust handling of abstract and multifaceted queries in decision-making workflows~\citep{khan2025evaluating}, motivating our shift toward autonomous multi-agent teams.
+\vspace{-5pt}
+\paragraph{Agentic Visualization Systems.}
+
+Agentic systems mark a paradigm shift in visualization for data science, where it as a distributed problem-solving process among AI agents that mirror collaborative human co-worker~\citep{sapkota2025ai,tran2025multi,wolter2025multi,10.1145/3712335.3712410}.
+\citep{goswami2025plotgen,zhang2025data} exemplify this by deploying multi-agent LLM frameworks for autonomous professional visualization, they streamline visual analytics from raw, unstructured data.
+\citeauthor{yang2024matplotagent} introduces a multi-step reasoning agent framework for scientific plotting, empowering data scientists with code-free handling of complex visualizations~\citep{yang2024matplotagent}. 
+\citeauthor{seo2025automated} enhances this through multi-path reasoning and feedback optimization for code synthesis from natural language~\citep{seo2025automated}. 
+Efforts to extract agent-based design patterns from visualization systems provide a blueprint for balancing autonomy with human oversight, laying groundwork for scalable tools in collaborative data environments~\citep{dhanoa2025agentic}.
+These agentic systems help compressing hours of manual labor in data science~\citep{moss2025ai,gridach2025agentic}. However, they commonly take shortcuts, focusing adaptations on initial planning stages without persistent reflection~\citep{wang2025ai,sapkota2025ai}. This shallow agentic alignment contributes to vulnerabilities in complex scenarios~\citep{cemri2025multi,tian2025outlook}. 
+Our proposed multi-agent system counters this by enforcing deeper collaboration, via specialized agents for planning, building, criticism, and reflection, to yield robust narratives. 
+
+

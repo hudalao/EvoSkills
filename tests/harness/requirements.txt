@@ -1,0 +1,7 @@
+# tests/harness/.venv dependencies (recreate with: python3 -m venv .venv && .venv/bin/pip install -r requirements.txt)
+pymupdf
+pymupdf4llm
+openreview-py
+requests
+httpx
+python-dotenv

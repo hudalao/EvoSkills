@@ -1,0 +1,7 @@
+{
+  "reviewer": "R1",
+  "candidates": ["R1", "R4"],
+  "accept_any": ["R1", "R4"],
+  "rule": "R1 and R4 tie at 8; hand tie-break: R1's strengths explicitly say 'strongly recommend acceptance' and 'worthy of a spotlight', the most armable champion. Checker accepts either.",
+  "needs_manual": false
+}

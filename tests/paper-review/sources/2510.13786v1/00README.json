@@ -1,0 +1,37 @@
+{
+   "sources" : [
+      {
+         "usage" : "toplevel",
+         "filename" : "arxiv.tex"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "arxiv.bib"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "arxiv.bst"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "assets/Optimistic.ttf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "assets/optimistic.tfm"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "assets/plainnat.bst"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "fancyhdr.sty"
+      }
+   ],
+   "spec_version" : 1,
+   "texlive_version" : "2025",
+   "process" : {
+      "compiler" : "pdflatex"
+   }
+}

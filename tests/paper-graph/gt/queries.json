@@ -1,0 +1,497 @@
+{
+ "version": "0.1",
+ "queries": [
+  {
+   "qid": "q1-efficient-attention",
+   "type": "topic",
+   "query": "How did efficient attention mechanisms for long sequences evolve? From the quadratic bottleneck of the original Transformer to sparse, low-rank, kernel and IO-aware approaches.",
+   "anchors": [
+    {
+     "arxiv": "1706.03762",
+     "expect": "attention is all you need"
+    },
+    {
+     "arxiv": "1904.10509",
+     "expect": "sparse transformer"
+    },
+    {
+     "arxiv": "2001.04451",
+     "expect": "reformer"
+    },
+    {
+     "arxiv": "2004.05150",
+     "expect": "longformer"
+    },
+    {
+     "arxiv": "2006.04768",
+     "expect": "linformer"
+    },
+    {
+     "arxiv": "2009.14794",
+     "expect": "performer"
+    },
+    {
+     "arxiv": "2007.14062",
+     "expect": "big bird"
+    },
+    {
+     "arxiv": "2205.14135",
+     "expect": "flashattention"
+    },
+    {
+     "arxiv": "2307.08691",
+     "expect": "flashattention-2"
+    }
+   ],
+   "edges": [
+    [
+     "1706.03762",
+     "1904.10509"
+    ],
+    [
+     "1904.10509",
+     "2004.05150"
+    ],
+    [
+     "1706.03762",
+     "2006.04768"
+    ],
+    [
+     "1706.03762",
+     "2009.14794"
+    ],
+    [
+     "1706.03762",
+     "2205.14135"
+    ],
+    [
+     "2205.14135",
+     "2307.08691"
+    ]
+   ],
+   "taxonomy_hint": "expect challenge branches like: quadratic compute/memory; sparse patterns; low-rank/kernel approximations; hardware/IO-aware exact attention"
+  },
+  {
+   "qid": "q2-diffusion-sampling",
+   "type": "topic",
+   "query": "Trace the lineage of ideas for accelerating diffusion model sampling \u2014 from hundreds of denoising steps to few-step and one-step generation.",
+   "anchors": [
+    {
+     "arxiv": "2006.11239",
+     "expect": "denoising diffusion probabilistic"
+    },
+    {
+     "arxiv": "2010.02502",
+     "expect": "denoising diffusion implicit"
+    },
+    {
+     "arxiv": "2202.00512",
+     "expect": "progressive distillation"
+    },
+    {
+     "arxiv": "2206.00927",
+     "expect": "dpm-solver"
+    },
+    {
+     "arxiv": "2211.01095",
+     "expect": "dpm-solver++"
+    },
+    {
+     "arxiv": "2303.01469",
+     "expect": "consistency models"
+    },
+    {
+     "arxiv": "2310.04378",
+     "expect": "latent consistency"
+    },
+    {
+     "arxiv": "2209.03003",
+     "expect": "rectified flow"
+    }
+   ],
+   "edges": [
+    [
+     "2006.11239",
+     "2010.02502"
+    ],
+    [
+     "2010.02502",
+     "2206.00927"
+    ],
+    [
+     "2206.00927",
+     "2211.01095"
+    ],
+    [
+     "2006.11239",
+     "2202.00512"
+    ],
+    [
+     "2202.00512",
+     "2303.01469"
+    ],
+    [
+     "2303.01469",
+     "2310.04378"
+    ]
+   ],
+   "taxonomy_hint": "branches: ODE-solver view (DDIM/DPM-Solver); distillation (progressive/consistency/LCM); reformulated flows (rectified flow)"
+  },
+  {
+   "qid": "q3-rag",
+   "type": "topic",
+   "query": "How did retrieval-augmented generation for knowledge-intensive NLP evolve, from open-domain QA pipelines to end-to-end retrieval-augmented language models?",
+   "anchors": [
+    {
+     "arxiv": "1704.00051",
+     "expect": "wikipedia to answer open-domain"
+    },
+    {
+     "arxiv": "2002.08909",
+     "expect": "realm"
+    },
+    {
+     "arxiv": "2004.04906",
+     "expect": "dense passage retrieval"
+    },
+    {
+     "arxiv": "2005.11401",
+     "expect": "retrieval-augmented generation"
+    },
+    {
+     "arxiv": "2007.01282",
+     "expect": "passage retrieval with generative"
+    },
+    {
+     "arxiv": "2208.03299",
+     "expect": "retrieval augmented language models"
+    },
+    {
+     "arxiv": "2310.11511",
+     "expect": "self-rag"
+    }
+   ],
+   "edges": [
+    [
+     "1704.00051",
+     "2004.04906"
+    ],
+    [
+     "2004.04906",
+     "2005.11401"
+    ],
+    [
+     "2005.11401",
+     "2007.01282"
+    ],
+    [
+     "2007.01282",
+     "2208.03299"
+    ],
+    [
+     "2005.11401",
+     "2310.11511"
+    ]
+   ],
+   "taxonomy_hint": "branches: retriever quality (sparse->dense); reader/generator fusion; end-to-end pretraining; adaptive/self-reflective retrieval"
+  },
+  {
+   "qid": "q4-test-time-reasoning",
+   "type": "topic",
+   "query": "Trace how eliciting and scaling reasoning at inference time in large language models developed \u2014 prompting, sampling, search, verifiers, and RL-trained reasoners.",
+   "anchors": [
+    {
+     "arxiv": "2201.11903",
+     "expect": "chain of thought"
+    },
+    {
+     "arxiv": "2203.11171",
+     "expect": "self-consistency"
+    },
+    {
+     "arxiv": "2203.14465",
+     "expect": "star"
+    },
+    {
+     "arxiv": "2305.10601",
+     "expect": "tree of thoughts"
+    },
+    {
+     "arxiv": "2305.20050",
+     "expect": "verify step by step"
+    },
+    {
+     "arxiv": "2408.03314",
+     "expect": "test-time compute"
+    },
+    {
+     "arxiv": "2501.12948",
+     "expect": "deepseek-r1"
+    }
+   ],
+   "edges": [
+    [
+     "2201.11903",
+     "2203.11171"
+    ],
+    [
+     "2201.11903",
+     "2305.10601"
+    ],
+    [
+     "2201.11903",
+     "2203.14465"
+    ],
+    [
+     "2305.20050",
+     "2408.03314"
+    ]
+   ],
+   "taxonomy_hint": "branches: prompting strategies; sampling/aggregation; tree search; process reward models/verifiers; RL for reasoning"
+  },
+  {
+   "qid": "q5-seed-lora",
+   "type": "seed",
+   "query": "Where does LoRA (arXiv:2106.09685) stem from, and what are the significant follow-ups that improved on it?",
+   "anchors": [
+    {
+     "arxiv": "1902.00751",
+     "expect": "parameter-efficient transfer"
+    },
+    {
+     "arxiv": "2101.00190",
+     "expect": "prefix-tuning"
+    },
+    {
+     "arxiv": "2104.08691",
+     "expect": "prompt tuning"
+    },
+    {
+     "arxiv": "2012.13255",
+     "expect": "intrinsic dimensionality"
+    },
+    {
+     "arxiv": "2106.09685",
+     "expect": "lora"
+    },
+    {
+     "arxiv": "2305.14314",
+     "expect": "qlora"
+    },
+    {
+     "arxiv": "2303.10512",
+     "expect": "adalora"
+    },
+    {
+     "arxiv": "2402.09353",
+     "expect": "dora"
+    }
+   ],
+   "edges": [
+    [
+     "1902.00751",
+     "2101.00190"
+    ],
+    [
+     "2012.13255",
+     "2106.09685"
+    ],
+    [
+     "1902.00751",
+     "2106.09685"
+    ],
+    [
+     "2106.09685",
+     "2305.14314"
+    ],
+    [
+     "2106.09685",
+     "2303.10512"
+    ],
+    [
+     "2106.09685",
+     "2402.09353"
+    ]
+   ],
+   "taxonomy_hint": "ancestors: adapter modules, prompt/prefix line, intrinsic-dimension motivation; descendants: quantized, adaptive-rank, decomposed variants"
+  },
+  {
+   "qid": "q6-seed-flashattention",
+   "type": "seed",
+   "query": "What did FlashAttention (arXiv:2205.14135) build on, and how did the line of IO-aware exact attention evolve after it?",
+   "anchors": [
+    {
+     "arxiv": "1805.02867",
+     "expect": "online normalizer"
+    },
+    {
+     "arxiv": "2112.05682",
+     "expect": "does not need"
+    },
+    {
+     "arxiv": "1706.03762",
+     "expect": "attention is all you need"
+    },
+    {
+     "arxiv": "2205.14135",
+     "expect": "flashattention"
+    },
+    {
+     "arxiv": "2307.08691",
+     "expect": "flashattention-2"
+    },
+    {
+     "arxiv": "2407.08608",
+     "expect": "flashattention-3"
+    },
+    {
+     "arxiv": "2309.06180",
+     "expect": "pagedattention"
+    }
+   ],
+   "edges": [
+    [
+     "1805.02867",
+     "2205.14135"
+    ],
+    [
+     "2112.05682",
+     "2205.14135"
+    ],
+    [
+     "2205.14135",
+     "2307.08691"
+    ],
+    [
+     "2307.08691",
+     "2407.08608"
+    ],
+    [
+     "2205.14135",
+     "2309.06180"
+    ]
+   ],
+   "taxonomy_hint": "ancestors: online softmax, memory-efficient attention; descendants: FA2/FA3 kernel evolution, serving-side memory management"
+  },
+  {
+   "qid": "q7-hybrid-prefopt",
+   "type": "hybrid",
+   "query": "How did preference optimization for aligning language models evolve \u2014 from RLHF with reward models to direct preference optimization (arXiv:2305.18290) and its successors?",
+   "anchors": [
+    {
+     "arxiv": "1706.03741",
+     "expect": "human preferences"
+    },
+    {
+     "arxiv": "2009.01325",
+     "expect": "summarize"
+    },
+    {
+     "arxiv": "2203.02155",
+     "expect": "instructions with human feedback"
+    },
+    {
+     "arxiv": "2212.08073",
+     "expect": "constitutional"
+    },
+    {
+     "arxiv": "2305.18290",
+     "expect": "direct preference optimization"
+    },
+    {
+     "arxiv": "2310.12036",
+     "expect": "theoretical paradigm"
+    },
+    {
+     "arxiv": "2402.01306",
+     "expect": "kto"
+    },
+    {
+     "arxiv": "2405.14734",
+     "expect": "simpo"
+    }
+   ],
+   "edges": [
+    [
+     "1706.03741",
+     "2009.01325"
+    ],
+    [
+     "2009.01325",
+     "2203.02155"
+    ],
+    [
+     "2203.02155",
+     "2305.18290"
+    ],
+    [
+     "2305.18290",
+     "2310.12036"
+    ],
+    [
+     "2305.18290",
+     "2402.01306"
+    ],
+    [
+     "2305.18290",
+     "2405.14734"
+    ]
+   ],
+   "taxonomy_hint": "branches: RLHF pipeline; AI feedback; reward-model-free direct methods; reference-free and calibration variants"
+  },
+  {
+   "qid": "q8-hybrid-vlm",
+   "type": "hybrid",
+   "query": "Trace the developmental trajectory from contrastive vision-language pretraining (CLIP, arXiv:2103.00020) to instruction-following multimodal LLMs.",
+   "anchors": [
+    {
+     "arxiv": "2103.00020",
+     "expect": "natural language supervision"
+    },
+    {
+     "arxiv": "2102.05918",
+     "expect": "noisy text supervision"
+    },
+    {
+     "arxiv": "2205.01917",
+     "expect": "coca"
+    },
+    {
+     "arxiv": "2201.12086",
+     "expect": "blip"
+    },
+    {
+     "arxiv": "2301.12597",
+     "expect": "blip-2"
+    },
+    {
+     "arxiv": "2204.14198",
+     "expect": "flamingo"
+    },
+    {
+     "arxiv": "2304.08485",
+     "expect": "visual instruction tuning"
+    }
+   ],
+   "edges": [
+    [
+     "2103.00020",
+     "2201.12086"
+    ],
+    [
+     "2201.12086",
+     "2301.12597"
+    ],
+    [
+     "2301.12597",
+     "2304.08485"
+    ],
+    [
+     "2103.00020",
+     "2205.01917"
+    ]
+   ],
+   "taxonomy_hint": "branches: contrastive pretraining scale-up; unified understanding+generation; frozen-LLM bridging; visual instruction tuning"
+  }
+ ]
+}

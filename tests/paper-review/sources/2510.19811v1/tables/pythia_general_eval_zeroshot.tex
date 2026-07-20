@@ -1,0 +1,226 @@
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{4pt} % tighter columns (default ~6pt)
+\renewcommand{\arraystretch}{1.08} % a touch more breathing room
+\caption{\textbf{Zero-shot benchmark results using the Pythia suite.} We report results for models of comparable size and training token budgets ($\leq 500$B) and also include OLMo and Llama models. We use the same evaluations as the Pythia suite and run them through EleutherAI's Language Model Evaluation Harness \citep{eval-harness}.\\
+% \textsuperscript{\#} Winogrande is contaminated for the Perturbed Hubble Models
+{\small$^*$Token counts are based on the model's documentation and may use different tokenizers.}
+}
+\label{tab:pythia_general_eval_zeroshot}
+\begin{tabular}{lccccccccc}
+\toprule
+\multicolumn{1}{c}{{\textbf{Model}}} &
+  {\textbf{\begin{tabular}[c]{@{}c@{}}Token\\ Count$^*$\end{tabular}}} &
+  {\textbf{\begin{tabular}[c]{@{}c@{}}ARC\\ Challenge\end{tabular}}} &
+  {\textbf{\begin{tabular}[c]{@{}c@{}}ARC\\ Easy\end{tabular}}} &
+  {\textbf{LogiQA}} &
+  {\textbf{\begin{tabular}[c]{@{}c@{}}Lambada \\ (OpenAI)\end{tabular}}} &
+  {\textbf{PIQA}} &
+  {\textbf{SciQ}} &
+  % {\textbf{\begin{tabular}[c]{@{}c@{}}Wino\\ -grande\textsuperscript{\#}\end{tabular}}} 
+  % {\textbf{Winogrande\textsuperscript{\#}}}
+  {\textbf{Winogrande}}
+  &
+  {\textbf{WSC}} \\
+  
+\midrule
+\multicolumn{10}{c}{{\textbf{1B-Scale}}} \\
+\midrule
+{Hubble-1B} & % -Standard
+  {500B} &
+  {0.37} &
+  {0.66} &
+  {0.27} &
+  {5.45} &
+  {0.76} &
+  {0.85} &
+  {0.62} &
+  {0.38} \\
+% {Hubble-1B-Perturbed} &
+%   {500B} &
+%   {0.37} &
+%   {0.67} &
+%   {0.27} &
+%   {5.50} &
+%   {0.77} &
+%   {0.87} &
+%   {0.58} &
+%   {0.58} \\
+{Hubble-1B} & % -Standard
+  {100B} &
+  {0.33} &
+  {0.61} &
+  {0.28} &
+  {6.84} &
+  {0.73} &
+  {0.84} &
+  {0.58} &
+  {0.63} \\
+% {Hubble-1B-Perturbed} &
+%   {100B} &
+%   {0.33} &
+%   {0.60} &
+%   {0.28} &
+%   {7.00} &
+%   {0.72} &
+%   {0.84} &
+%   {0.55} &
+%   {0.51} \\
+{Pythia 1B} &
+  {300B} &
+  {0.27} &
+  {0.49} &
+  {0.30} &
+  {7.92} &
+  {0.69} &
+  {0.76} &
+  {0.53} &
+  {0.37} \\
+{Pythia 1.4B} &
+  {300B} &
+  {0.28} &
+  {0.54} &
+  {0.28} &
+  {6.08} &
+  {0.71} &
+  {0.79} &
+  {0.57} &
+  {0.37} \\
+{Bloom 1.1B} &
+  {366B} &
+  {0.26} &
+  {0.45} &
+  {0.26} &
+  {17.28} &
+  {0.67} &
+  {0.74} &
+  {0.55} &
+  {0.37} \\
+{Bloom 1.7B} &
+  {366B} &
+  {0.27} &
+  {0.48} &
+  {0.28} &
+  {12.59} &
+  {0.70} &
+  {0.77} &
+  {0.57} &
+  {0.37} \\
+{OPT 1.3B} &
+  {180B} &
+  {0.30} &
+  {0.51} &
+  {0.27} &
+  {6.64} &
+  {0.72} &
+  {0.77} &
+  {0.60} &
+  {0.38} \\
+{OLMo-2-1B} &
+  {4T} &
+  {0.42} &
+  {0.74} &
+  {0.30} &
+  {5.19} &
+  {0.76} &
+  {0.95} &
+  {0.65} &
+  {0.41} \\ 
+{Llama-3.2-1B} &
+  {$\sim$9T} &
+  {0.37} &
+  {0.60} &
+  {0.30} &
+  {5.74} &
+  {0.74} &
+  {0.89} &
+  {0.60} &
+  {0.35} \\  
+
+\midrule
+\multicolumn{10}{c}{{\textbf{$\sim$ 8B-Scale}}} \\ \midrule
+
+{Hubble-8B} & % -Standard
+  {500B} &
+  {0.52} &
+  {0.80} &
+  {0.31} &
+  {3.23} &
+  {0.80} &
+  {0.94} &
+  {0.72} &
+  {0.36} \\
+% {Hubble-8B-Perturbed} &
+%   {500B} &
+%   {0.51} &
+%   {0.78} &
+%   {0.31} &
+%   {3.23} &
+%   {0.79} &
+%   {0.94} &
+%   {0.73} &
+%   {0.42} \\
+{Hubble-8B} & % -Standard
+  {100B} &
+  {0.45} &
+  {0.74} &
+  {0.29} &
+  {3.95} &
+  {0.79} &
+  {0.92} &
+  {0.66} &
+  {0.56} \\
+% {Hubble-8B-Perturbed} &
+%   {100B} &
+%   {0.43} &
+%   {0.70} &
+%   {0.27} &
+%   {3.94} &
+%   {0.76} &
+%   {0.93} &
+%   {0.61} &
+%   {0.37} \\
+{Pythia 6.9B} &
+  {300B} &
+  {0.35} &
+  {0.61} &
+  {0.30} &
+  {4.45} &
+  {0.77} &
+  {0.84} &
+  {0.60} &
+  {0.37} \\
+{OPT 6.7B} &
+  {180B} &
+  {0.35} &
+  {0.60} &
+  {0.29} &
+  {4.25} &
+  {0.76} &
+  {0.85} &
+  {0.65} &
+  {0.42} \\
+{OLMo-2-7B} &
+  {4T} &
+  {0.57} &
+  {0.83} &
+  {0.31} &
+  {3.37} &
+  {0.81} &
+  {0.96} &
+  {0.75} &
+  {0.67} \\
+{Llama-3.1-8B} &
+  {15T+} &
+  {0.53} &
+  {0.81} &
+  {0.31} &
+  {3.13} &
+  {0.81} &
+  {0.95} &
+  {0.73} &
+  {0.63} \\
+\bottomrule
+\end{tabular}
+\end{table}

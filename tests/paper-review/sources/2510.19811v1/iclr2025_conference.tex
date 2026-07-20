@@ -1,0 +1,170 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2025_conference,times}
+
+% Optional math commands from https://github.com/goodfeli/dlbook_notation.
+\input{math_commands.tex}
+
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{subcaption} % for subfigure environment
+\usepackage{hyperref}
+\usepackage{float}
+
+\usepackage{makecell}
+\usepackage{amssymb}
+\usepackage{pifont}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{tikz}
+
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{*1}{*0.5}
+\titlespacing{\subsection}{0pt}{*0.5}{*0.5}
+\titlespacing{\subsubsection}{0pt}{*0.5}{*0.5}
+
+\usepackage{minitoc}
+\noptcrule
+\renewcommand \thepart{}
+\renewcommand \partname{}
+\setcounter{tocdepth}{3}
+
+\usepackage{booktabs,siunitx,makecell,threeparttable}
+\sisetup{
+  table-number-alignment = center,
+  detect-weight=true, detect-family=true,
+}
+\usepackage{soul}
+\usepackage{array}
+\newcolumntype{T}[1]{%
+    >{\centering\arraybackslash\hspace{0pt}}p{#1}}%
+
+% \usepackage{paralist}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+\setlist[enumerate]{leftmargin=*}
+
+% Drafting macros
+\newif\ifcomment
+\commenttrue
+%\commentfalse
+\ifcomment
+\newcommand{\todo}[2]{{\color{red}[{\bf Todo(#1)}: #2]}}
+\newcommand{\robin}[1]{{\color{TealBlue}[Robin: #1]}}
+\newcommand{\williex}[1]{{\color{magenta}[Willie: #1]}}
+\else
+\newcommand{\todo}[2]{{}
+\newcommand{\robin}[1]{}
+\newcommand{\williex}[1]{}
+\fi
+
+\newcommand{\hfbutton}[1]{%
+  \href{#1}{\raisebox{-0.2\height}{\includegraphics[height=1em,trim=30 30 30 30,clip]{pngs/hf.png}}}%
+}
+
+\newcommand{\wandbbutton}[1]{%
+  \href{#1}{\raisebox{-0.2\height}{\includegraphics[height=1em,trim=0 0 0 0,clip]{pngs/wandb.png}}}%
+}
+
+\newcommand{\githubbutton}[1]{%
+  \href{#1}{\raisebox{-0.2\height}{\includegraphics[height=1em,clip]{pngs/github-mark.png}}}%
+}
+
+\renewcommand{\ttdefault}{txtt} % fixing iclr \texttt
+
+\title{Hubble: a Model Suite to Advance the Study of LLM Memorization}
+
+% Authors must not appear in the submitted version. They should be hidden
+% as long as the \iclrfinalcopy macro remains commented out below.
+% Non-anonymous submissions will be rejected without review.
+
+\author{\textbf{Johnny Tian-Zheng Wei}\footnotemark[1]\textsuperscript{~~,1},\;
+\textbf{Ameya Godbole}\footnotemark[1]\textsuperscript{~~,1},\;
+\textbf{Mohammad Aflah Khan}\footnotemark[1]\textsuperscript{~~,2},\;
+\\
+\textbf{Ryan Wang\textsuperscript{1},\;
+\textbf{Xiaoyuan Zhu}\textsuperscript{1},\;
+James Flemings\textsuperscript{1},\;
+Nitya Kashyap\textsuperscript{1},\;}
+\\
+\textbf{Krishna P. Gummadi\textsuperscript{2},\;
+Willie Neiswanger\textsuperscript{1},\;
+Robin Jia\textsuperscript{1}}
+\\[0.75em]
+\textsuperscript{1}University of Southern California \qquad
+\textsuperscript{2}Max Planck Institute for Software Systems
+\\[0.75em]
+\texttt{\{jtwei, ameyagod,  robinjia\}@usc.edu}, \texttt{afkhan@mpi-sws.org}
+}
+
+
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND. 
+%
+% Using \And between authors leaves it to \LaTeX{} to determine where to break 
+% the lines. Using \AND forces a linebreak at that point. So, if \LaTeX{}
+% puts 3 of 4 authors names on the first line, and the last on the second
+% line, try using \AND instead of \And before the third author name.
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\iclrfinalcopy % Uncomment for camera-ready version, but NOT for submission.
+\begin{document}
+\doparttoc
+\faketableofcontents
+
+\maketitle
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{pngs/hubble_patch-min.png}
+\end{figure}
+
+~
+
+\begin{abstract}
+We present \textsc{Hubble}, a suite of fully open-source large language models (LLMs) for the scientific study of LLM memorization. \textsc{Hubble} models come in standard and perturbed variants: standard models are pretrained on a large English corpus, and perturbed models are trained in the same way but with controlled insertion of text (e.g., book passages, biographies, and test sets) designed to emulate key memorization risks. Our core release includes 8 models---standard and perturbed models with 1B or 8B parameters, pretrained on 100B or 500B tokens---establishing that memorization risks are determined by the frequency of sensitive data relative to size of the training corpus (i.e., a password appearing once in a smaller corpus is memorized better than the same password in a larger corpus). Our release also includes 6 perturbed models with text inserted at different pretraining phases, showing that sensitive data without continued exposure can be forgotten. These findings suggest two best practices for addressing memorization risks: to \textit{dilute} sensitive data by increasing the size of the training corpus, and to \textit{order} sensitive data to appear earlier in training. Beyond these general empirical findings, \textsc{Hubble} enables a broad range of memorization research; for example, analyzing the biographies reveals how readily different types of private information are memorized. We also demonstrate that the randomized insertions in \textsc{Hubble} make it an ideal testbed for membership inference and machine unlearning, and invite the community to further explore, benchmark, and build upon our work.
+\end{abstract}
+
+\newpage
+% {\hypersetup{hidelinks} \tableofcontents}
+% \newpage
+
+\input{sections/1_introduction.tex}
+\input{sections/2_data.tex}
+\input{sections/3_models.tex}
+\input{sections/4_results.tex}
+\input{sections/5_use_cases.tex} 
+% \input{sections/6_related_work.tex}
+\input{sections/7_discussion.tex}
+
+\section*{Acknowledgments}
+
+% https://nairrpilot.org/reporting-guidance
+Many people and organizations supported the development of \textsc{Hubble}. 
+This work was made possible by the National Artificial Intelligence Research Resource (NAIRR) Pilot under Compute Grant NAIRR240294\footnote{\href{https://nairrpilot.org/projects/awarded?_requestNumber=NAIRR240294}{NAIRR Compute Grant 240294}} and the assigned resources on the NVIDIA DGX Cloud. The results and models presented in this work used 200k GPU Hours on an A100 GPU cluster with 64 GPUs, with support from NVIDIA, including NVIDIA's DGX Cloud product and the NVIDIA AI Enterprise Software Platform.
+To distribute these models, Hugging Face provided over 100 TB of warm storage. Tom Gibbs and Bruce McGowan were our points of contact at NVIDIA, and Daniel van Strien and Jared Sulzdorf were our points of contact at Hugging Face. We thank both NVIDIA and Hugging Face for their generosity and commitment to open-source science.
+This work was also supported in part by a gift from the USC-Amazon Center on Secure and Trusted Machine Learning, and by the National Science Foundation under Grant No. IIS-2403436. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+
+In choosing our training framework, we received guidance from members of EleutherAI, including Stella Biderman, Quentin Anthony, and Baber Abbasi, and from members of NVIDIA NeMo including Kaleb Smith, Sugandha Sharma, and Amanda Butler. Mahidhar Tatineni and DJ Choi from the San Diego Supercomputer Center, and Sunil Aladhi, Pete Sarabia, and Rahul Poddar from NVIDIA provided timely system support. Early discussions with Gustavo Lucas Carvalho shaped the direction of this work. Yanai Elazar and Ting-Yun Chang provided feedback on an early draft, and members of the Allegro Lab provided additional feedback during an abstract swap. Victoria Wei designed the project logo. We thank all who have made our work possible.
+
+% yanai
+% tingyun
+% feedback: gustavo, Allegro lab
+
+
+% The results and models presented in this work used compute resources from the National AI Research Resource Pilot, with support from NVIDIA, including NVIDIA's DGX Cloud product and the NVIDIA AI Enterprise Software Platform. 
+%Special thanks to Victoria Wei for designing our logo.
+% \todo{Aflah}{Thank Eleuther People for help with NeoX and NVIDIA people for helping with NeMo stuff though we didn't use it?}
+
+\bibliography{iclr2025_conference}
+\bibliographystyle{iclr2025_conference}
+
+\input{sections/appendix.tex}
+
+\end{document}

@@ -1,0 +1,42 @@
+\begin{table}[t]
+    \centering
+\renewcommand{\arraystretch}{1.6} 
+\setlength{\tabcolsep}{4pt}
+\resizebox{1.0\textwidth}{!}{%
+% tabular begins here
+\begin{tabular}{lcccccc/cccccc/cccccc/cc}
+  & \multicolumn{18}{c}{\Large{Lost in Conversation Experiment}} & & \\
+\cmidrule(r{7pt}){2-19} 
+ \multirow{ 2}{*}{\large{Model}} & \multicolumn{6}{c}{\full~\fullt} & \multicolumn{6}{c}{\concat~\concatt} & \multicolumn{6}{c}{\sharded~\shardedt} & \multicolumn{2}{c}{\Large{\textbf{Overall}}} \\
+\cmidrule(r{7pt}){2-7} \cmidrule(r{7pt}){8-13}  \cmidrule(r{7pt}){14-19} \cmidrule(){20-21} 
+ & \python & \database & \apis & \datattext & \tmath & \summary & \python & \database & \apis & \datattext & \tmath & \summary & \python & \database & \apis & \datattext & \tmath & \summary & \ccol{EEEEEE} \raisebox{0.5ex}{\concat} \raisebox{-0.5ex}{\LARGE{/}} \raisebox{-0.5ex}{\full}  &  \ccol{EEEEEE} \raisebox{0.5ex}{\sharded} \raisebox{-0.5ex}{\LARGE{/}} \raisebox{-0.5ex}{\full} \\
+
+\cmidrule(lr){1-1} \cmidrule(r{7pt}){2-7} \cmidrule(r{7pt}){8-13}  \cmidrule(r{7pt}){14-19} \cmidrule(){20-21} 
+
+\llama~3.1-8B & \ccol{FFFFFF} 27.4 & \ccol{FFFFFF} 64.1 & \ccol{FFFFFF} 82.9 & \ccol{FFFFFF} 13.7 & \ccol{FFFFFF} 63.9 & \ccol{FFFFFF} \phantom{0}7.6 & \ccol{F0B9B9} 21.2 & \ccol{EEB0B0} 47.7 & \ccol{FEFEFE} 83.0 & \ccol{FEFEFE} 15.7 & \ccol{FDF8F8} 62.6 & \ccol{F5D0D0} \phantom{0}6.5 & \ccol{F1BFBF} 21.7 & \ccol{E58484} 25.9 & \ccol{E58484} 45.5 & \ccol{FDF5F5} 13.3 & \ccol{E58484} 37.4 & \ccol{E58484} \phantom{0}3.4 &  91.6 &  62.5 \\
+\aitwo~OLMo2 & \ccol{FFFFFF} 18.8 & \ccol{FFFFFF} 54.8 & \ccol{FFFFFF} 56.1 & \ccol{FFFFFF} 17.2 & \ccol{FFFFFF} 80.0 &  - & \ccol{F6D6D6} 16.3 & \ccol{EEAFAF} 40.5 & \ccol{F7DCDC} 49.8 & \ccol{F4CBCB} 14.3 & \ccol{FEFEFE} 80.1 &  - & \ccol{F0B7B7} 14.4 & \ccol{E58484} 22.4 & \ccol{E58484} 13.8 & \ccol{E58484} \phantom{0}9.0 & \ccol{E58484} 46.3 &  - &  86.5 &  50.5 \\
+\claude~3-Haiku & \ccol{FFFFFF} 44.8 & \ccol{FFFFFF} 85.0 & \ccol{FFFFFF} 83.5 & \ccol{FFFFFF} 29.8 & \ccol{FFFFFF} 73.9 & \ccol{FFFFFF} 11.6 & \ccol{F2C4C4} 36.3 & \ccol{F8E0E0} 76.5 & \ccol{FCF2F2} 80.2 & \ccol{FEFEFE} 30.1 & \ccol{FEFEFE} 76.1 & \ccol{F1BDBD} \phantom{0}9.2 & \ccol{ECA4A4} 31.5 & \ccol{E58484} 31.8 & \ccol{E99999} 55.9 & \ccol{E68B8B} 18.6 & \ccol{E78F8F} 47.1 & \ccol{E58484} \phantom{0}1.6 &  91.6 &  52.4 \\
+\openai~4o-mini & \ccol{FFFFFF} 75.9 & \ccol{FFFFFF} 89.3 & \ccol{FFFFFF} 94.1 & \ccol{FFFFFF} 35.9 & \ccol{FFFFFF} 88.1 & \ccol{FFFFFF} 14.9 & \ccol{F7D9D9} 66.7 & \ccol{FEFEFE} 90.7 & \ccol{FDF8F8} 92.2 & \ccol{F6D7D7} 31.2 & \ccol{FEFEFE} 88.0 & \ccol{F4CCCC} 12.5 & \ccol{E99797} 50.3 & \ccol{E58484} 40.2 & \ccol{E58484} 52.4 & \ccol{E58484} 19.8 & \ccol{E99999} 58.7 & \ccol{E58484} \phantom{0}7.2 &  93.0 &  56.2 \\
+\llama~3.3-70B & \ccol{FFFFFF} 72.0 & \ccol{FFFFFF} 91.1 & \ccol{FFFFFF} 95.0 & \ccol{FFFFFF} 34.1 & \ccol{FFFFFF} 91.7 & \ccol{FFFFFF} 15.8 & \ccol{EDACAC} 52.7 & \ccol{FCF4F4} 87.9 & \ccol{FEFEFE} 97.0 & \ccol{FBECEC} 32.0 & \ccol{FEFEFE} 91.8 & \ccol{FAEBEB} 14.7 & \ccol{ECA8A8} 51.6 & \ccol{E58484} 35.4 & \ccol{EEB1B1} 71.0 & \ccol{E99696} 22.4 & \ccol{E99A9A} 61.5 & \ccol{E99999} 10.5 &  93.2 &  64.2 \\
+\microsoft~Phi-4  & \ccol{FFFFFF} 53.2 & \ccol{FFFFFF} 87.6 & \ccol{FFFFFF} 82.7 & \ccol{FFFFFF} 23.9 & \ccol{FFFFFF} 89.2 &  - & \ccol{F9E3E3} 48.4 & \ccol{F9E3E3} 79.6 & \ccol{F9E6E6} 76.0 & \ccol{FDFEFE} 28.6 & \ccol{FEFEFE} 90.4 &  - & \ccol{EEADAD} 39.1 & \ccol{E58484} 33.1 & \ccol{E58484} 34.1 & \ccol{FDF5F5} 23.2 & \ccol{E58484} 52.5 &  - &  99.0 &  61.7 \\
+\cohere~CMD-A & \ccol{FFFFFF} 72.0 & \ccol{FFFFFF} 91.9 & \ccol{FFFFFF} 98.5 & \ccol{FFFFFF} 27.7 & \ccol{FFFFFF} 94.5 & \ccol{FFFFFF} 24.3 & \ccol{F5D2D2} 61.6 & \ccol{FAEBEB} 86.1 & \ccol{FEFEFE} 98.4 & \ccol{FDFEFE} 33.2 & \ccol{FDF6F6} 91.9 & \ccol{F6D8D8} 21.3 & \ccol{E78B8B} 44.9 & \ccol{E58484} 33.6 & \ccol{EDACAC} 72.0 & \ccol{FEFEFE} 27.9 & \ccol{EBA2A2} 66.0 & \ccol{E58484} \phantom{0}4.9 &  97.3 &  60.4 \\
+\llama~4-Scout & \ccol{FFFFFF} 73.9 & \ccol{FFFFFF} 92.7 & \ccol{FFFFFF} 98.0 & \ccol{FFFFFF} 35.2 & \ccol{FFFFFF} 96.3 & \ccol{FFFFFF} 13.7 & \ccol{F3C6C6} 60.3 & \ccol{F7D9D9} 81.5 & \ccol{FEFEFE} 98.3 & \ccol{F2C1C1} 28.2 & \ccol{FCF4F4} 92.9 & \ccol{FEFEFE} 13.7 & \ccol{E78D8D} 46.4 & \ccol{E58484} 27.1 & \ccol{ECA7A7} 69.9 & \ccol{EEAFAF} 26.1 & \ccol{EBA1A1} 67.0 & \ccol{F8DFDF} 12.3 &  91.0 &  66.1 \\
+\openai~o3 & \ccol{FFFFFF} 86.4 & \ccol{FFFFFF} 92.0 & \ccol{FFFFFF} 89.8 & \ccol{FFFFFF} 40.2 & \ccol{FFFFFF} 81.6 & \ccol{FFFFFF} 30.7 & \ccol{FEFEFE} 87.2 & \ccol{F8E2E2} 83.3 & \ccol{FEFEFE} 91.5 & \ccol{FDF9F9} 39.4 & \ccol{FDF9F9} 80.0 & \ccol{FEFBFB} 30.4 & \ccol{E68888} 53.0 & \ccol{E58484} 35.4 & \ccol{E99A9A} 60.2 & \ccol{E58484} 21.7 & \ccol{F0B9B9} 63.1 & \ccol{F6D5D5} 26.5 &  98.1 &  64.1 \\
+\claude~3.7-Sonnet & \ccol{FFFFFF} 78.0 & \ccol{FFFFFF} 93.9 & \ccol{FFFFFF} 95.4 & \ccol{FFFFFF} 45.6 & \ccol{FFFFFF} 85.4 & \ccol{FFFFFF} 29.3 & \ccol{FDF7F7} 76.2 & \ccol{F6D6D6} 81.5 & \ccol{FEFEFE} 96.0 & \ccol{FDFEFE} 53.3 & \ccol{FEFEFE} 87.2 & \ccol{FEFAFA} 28.9 & \ccol{F4CECE} 65.6 & \ccol{E58484} 34.9 & \ccol{E58484} 33.3 & \ccol{F0B8B8} 35.1 & \ccol{F3C7C7} 70.0 & \ccol{F2C3C3} 23.6 &  100.4 &  65.9 \\
+\deepseek~R1 & \ccol{FFFFFF} 99.4 & \ccol{FFFFFF} 92.1 & \ccol{FFFFFF} 97.0 & \ccol{FFFFFF} 27.0 & \ccol{FFFFFF} 95.5 & \ccol{FFFFFF} 26.1 & \ccol{FDF7F7} 97.1 & \ccol{FDF7F7} 89.9 & \ccol{FFFFFF} 97.0 & \ccol{FCFDFE} 36.7 & \ccol{FDF6F6} 92.9 & \ccol{FAEBEB} 24.4 & \ccol{ECA7A7} 70.9 & \ccol{E58484} 31.5 & \ccol{E58484} 47.5 & \ccol{EEAFAF} 20.0 & \ccol{ECA4A4} 67.3 & \ccol{E99696} 17.2 &  103.6 &  60.8 \\
+\openai~4o & \ccol{FFFFFF} 88.4 & \ccol{FFFFFF} 93.6 & \ccol{FFFFFF} 96.1 & \ccol{FFFFFF} 42.1 & \ccol{FFFFFF} 93.8 & \ccol{FFFFFF} 23.9 & \ccol{FBEBEB} 82.9 & \ccol{FDF8F8} 91.7 & \ccol{FEFEFE} 97.1 & \ccol{EFB6B6} 32.2 & \ccol{FDF8F8} 91.9 & \ccol{FEFEFE} 23.9 & \ccol{EBA1A1} 61.3 & \ccol{E58484} 42.3 & \ccol{EA9B9B} 65.0 & \ccol{E58484} 20.5 & \ccol{EDAAAA} 67.9 & \ccol{E58484} 10.6 &  94.5 &  57.9 \\
+\gemini~2.5-Flash & \ccol{FFFFFF} 97.0 & \ccol{FFFFFF} 96.3 & \ccol{FFFFFF} 88.4 & \ccol{FFFFFF} 51.2 & \ccol{FFFFFF} 90.6 & \ccol{FFFFFF} 29.1 & \ccol{FCF0F0} 92.5 & \ccol{FEFCFC} 95.5 & \ccol{FEFEFE} 89.2 & \ccol{FEFEFE} 51.9 & \ccol{FDF7F7} 88.4 & \ccol{FEFEFE} 29.4 & \ccol{ECA4A4} 68.3 & \ccol{E58484} 51.3 & \ccol{E58484} 42.6 & \ccol{E58686} 31.0 & \ccol{EDACAC} 66.1 & \ccol{F8DEDE} 26.1 &  99.3 &  65.8 \\
+\openai~4.1 & \ccol{FFFFFF} 96.6 & \ccol{FFFFFF} 93.0 & \ccol{FFFFFF} 94.7 & \ccol{FFFFFF} 54.6 & \ccol{FFFFFF} 91.7 & \ccol{FFFFFF} 26.5 & \ccol{F9E5E5} 88.7 & \ccol{FAE9E9} 86.5 & \ccol{FEFEFE} 98.5 & \ccol{FEFDFD} 54.4 & \ccol{FDF8F8} 89.7 & \ccol{FEFEFE} 26.8 & \ccol{EFB2B2} 72.6 & \ccol{E58484} 46.0 & \ccol{E99898} 62.9 & \ccol{E58484} 28.6 & \ccol{F0B8B8} 70.7 & \ccol{E58484} 13.3 &  97.9 &  61.8 \\
+\gemini~2.5-Pro & \ccol{FFFFFF} 97.4 & \ccol{FFFFFF} 97.3 & \ccol{FFFFFF} 97.8 & \ccol{FFFFFF} 54.8 & \ccol{FFFFFF} 90.2 & \ccol{FFFFFF} 31.2 & \ccol{FDF9F9} 95.7 & \ccol{FDF7F7} 94.9 & \ccol{FEFEFE} 98.1 & \ccol{FEFEFE} 56.9 & \ccol{FEFBFB} 89.3 & \ccol{FEFEFE} 31.8 & \ccol{EBA2A2} 68.1 & \ccol{E58484} 43.8 & \ccol{E58484} 36.3 & \ccol{F4CECE} 46.2 & \ccol{ECA7A7} 64.3 & \ccol{F2C0C0} 24.9 &  100.1 &  64.5 \\
+
+\bottomrule
+\end{tabular}
+% end tabular
+}
+\vspace{1.0ex}
+
+    \caption{Averaged Performance ($\overline{P}$) of LLMs on six tasks (\python~Code, \database~Database, \apis~Actions, \datattext~Data-to-text, \tmath~Math, and \summary~Summary). For each task, conversations are simulated in three settings: \full~\fullt, \concat~\concatt, and \sharded~\shardedt. \underline{Models are sorted in ascending order of average \fullt scores across tasks}. Background color indicates the level of \hl{degradation} from the \fullt setting. The last two columns average the performance drops from the \concatt and \shardedt compared to the \fullt in percentages across the six tasks.}
+    \label{tab:main_results}
+\vspace{-4.0ex}
+
+\end{table}

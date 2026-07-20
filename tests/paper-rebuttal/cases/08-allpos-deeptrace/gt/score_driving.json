@@ -1,0 +1,13 @@
+{
+ "high": [
+  "R1.W1",
+  "R2.W1",
+  "R4.W1"
+ ],
+ "borderline": [
+  "R3.W4",
+  "R1.W5",
+  "R2.W3"
+ ],
+ "notes": "All-positive 6/6/6/6. Metareview: the only real reservation = contextualization vs existing factuality metrics (FActScore/CoRE/AutoSurvey) + Avxw's 'worrisome' novelty point -> the differentiation cluster R1.W1+R2.W1+R4.W1. Everything else minor per AC."
+}

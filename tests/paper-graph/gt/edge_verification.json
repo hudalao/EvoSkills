@@ -1,0 +1,293 @@
+[
+ {
+  "qid": "q1-efficient-attention",
+  "src": "1706.03762",
+  "dst": "1904.10509",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q1-efficient-attention",
+  "src": "1904.10509",
+  "dst": "2004.05150",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q1-efficient-attention",
+  "src": "1706.03762",
+  "dst": "2006.04768",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q1-efficient-attention",
+  "src": "1706.03762",
+  "dst": "2009.14794",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q1-efficient-attention",
+  "src": "1706.03762",
+  "dst": "2205.14135",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q1-efficient-attention",
+  "src": "2205.14135",
+  "dst": "2307.08691",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q2-diffusion-sampling",
+  "src": "2006.11239",
+  "dst": "2010.02502",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q2-diffusion-sampling",
+  "src": "2010.02502",
+  "dst": "2206.00927",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q2-diffusion-sampling",
+  "src": "2206.00927",
+  "dst": "2211.01095",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q2-diffusion-sampling",
+  "src": "2006.11239",
+  "dst": "2202.00512",
+  "cited": "YES_BY_PDF_BIBLIOGRAPHY",
+  "chrono_ok": true,
+  "note": "S2 reference list incomplete/missing-record; verified by grepping dst PDF bibliography (2026-07-17)"
+ },
+ {
+  "qid": "q2-diffusion-sampling",
+  "src": "2202.00512",
+  "dst": "2303.01469",
+  "cited": "YES_BY_PDF_BIBLIOGRAPHY",
+  "chrono_ok": true,
+  "note": "S2 reference list incomplete/missing-record; verified by grepping dst PDF bibliography (2026-07-17)"
+ },
+ {
+  "qid": "q2-diffusion-sampling",
+  "src": "2303.01469",
+  "dst": "2310.04378",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q3-rag",
+  "src": "1704.00051",
+  "dst": "2004.04906",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q3-rag",
+  "src": "2004.04906",
+  "dst": "2005.11401",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q3-rag",
+  "src": "2005.11401",
+  "dst": "2007.01282",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q3-rag",
+  "src": "2007.01282",
+  "dst": "2208.03299",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q3-rag",
+  "src": "2005.11401",
+  "dst": "2310.11511",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q4-test-time-reasoning",
+  "src": "2201.11903",
+  "dst": "2203.11171",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q4-test-time-reasoning",
+  "src": "2201.11903",
+  "dst": "2305.10601",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q4-test-time-reasoning",
+  "src": "2201.11903",
+  "dst": "2203.14465",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q4-test-time-reasoning",
+  "src": "2305.20050",
+  "dst": "2408.03314",
+  "cited": "YES_BY_PDF_BIBLIOGRAPHY",
+  "chrono_ok": true,
+  "note": "S2 reference list incomplete/missing-record; verified by grepping dst PDF bibliography (2026-07-17)"
+ },
+ {
+  "qid": "q5-seed-lora",
+  "src": "1902.00751",
+  "dst": "2101.00190",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q5-seed-lora",
+  "src": "2012.13255",
+  "dst": "2106.09685",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q5-seed-lora",
+  "src": "1902.00751",
+  "dst": "2106.09685",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q5-seed-lora",
+  "src": "2106.09685",
+  "dst": "2305.14314",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q5-seed-lora",
+  "src": "2106.09685",
+  "dst": "2303.10512",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q5-seed-lora",
+  "src": "2106.09685",
+  "dst": "2402.09353",
+  "cited": "YES_BY_PDF_BIBLIOGRAPHY",
+  "chrono_ok": true,
+  "note": "S2 reference list incomplete/missing-record; verified by grepping dst PDF bibliography (2026-07-17)"
+ },
+ {
+  "qid": "q6-seed-flashattention",
+  "src": "1805.02867",
+  "dst": "2205.14135",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q6-seed-flashattention",
+  "src": "2112.05682",
+  "dst": "2205.14135",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q6-seed-flashattention",
+  "src": "2307.08691",
+  "dst": "2407.08608",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q6-seed-flashattention",
+  "src": "2205.14135",
+  "dst": "2309.06180",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q7-hybrid-prefopt",
+  "src": "1706.03741",
+  "dst": "2009.01325",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q7-hybrid-prefopt",
+  "src": "2009.01325",
+  "dst": "2203.02155",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q7-hybrid-prefopt",
+  "src": "2203.02155",
+  "dst": "2305.18290",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q7-hybrid-prefopt",
+  "src": "2305.18290",
+  "dst": "2310.12036",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q7-hybrid-prefopt",
+  "src": "2305.18290",
+  "dst": "2402.01306",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q7-hybrid-prefopt",
+  "src": "2305.18290",
+  "dst": "2405.14734",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q8-hybrid-vlm",
+  "src": "2103.00020",
+  "dst": "2201.12086",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q8-hybrid-vlm",
+  "src": "2201.12086",
+  "dst": "2301.12597",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q8-hybrid-vlm",
+  "src": "2301.12597",
+  "dst": "2304.08485",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ },
+ {
+  "qid": "q8-hybrid-vlm",
+  "src": "2103.00020",
+  "dst": "2205.01917",
+  "cited": "YES_BY_ID",
+  "chrono_ok": true
+ }
+]

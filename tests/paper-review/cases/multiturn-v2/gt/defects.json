@@ -1,0 +1,61 @@
+{
+ "paper_id": "2505.06120v1",
+ "variant": "V2",
+ "defects": [
+  {
+   "uid": "V2-1",
+   "type": "D2",
+   "aspect": "Writing - module motivation (A2)",
+   "severity": "minor",
+   "location_anchor": "Simulating Sharded Conversations (Sec 3.2) — paragraph beginning what was 'Preliminary experiments revealed', now 'We instantiate the user simulator as a low-cost LLM (specifically, GPT-4o-mini)'",
+   "detection_criteria": "Hit iff the review points at the Section 3.2 user simulator and notes that its design is unmotivated/unjustified — specifically that no rationale is given for why an LLM-based simulator that dynamically decides which shard to reveal next is needed (as opposed to a fixed reveal order). The paper's own acknowledged critique that LLM-based simulation is unrealistic (Sec 2 / simulation-validity discussion) is not a hit.",
+   "rationale": "Deletes the only 'why' for the LLM-based user simulator (evaluated assistants ask shard-specific clarifications, so shard choice is non-trivial and must be conversation-state aware), leaving a pure 'what' description. This module-level rationale appears nowhere else — Section 2 only motivates simulation in general — and the post-edit paragraph still reads fluently as an author oversight.",
+   "old_string": "Preliminary experiments revealed that during simulation, evaluated assistants often asked clarification questions that related to specific shards of the instruction. As such, deciding which shard to reveal next in the conversation (the role of the user simulator) is non-trivial, as it should take into account the state of the conversation so far. We instantiate the user simulator",
+   "new_string": "We instantiate the user simulator"
+  },
+  {
+   "uid": "V2-2",
+   "type": "D8",
+   "aspect": "Method design - unrealistic assumption (A5)",
+   "severity": "major",
+   "location_anchor": "Metric Selection (Sec 4.2) — end of the paragraph 'Average performance $\\overline{P}$ is an unbiased estimate...', near 'giving a sense of \\textit{level of degradation}'",
+   "detection_criteria": "Hit iff the review challenges the Section 4.2 sentence assuming users can run several conversations in parallel and reliably identify/select the best outcome — calling it unrealistic, oracle-like, unjustified, or never discussed — or disputes the claim that A^90 therefore reflects attainable real-world performance.",
+   "rationale": "Inserts a strong oracle assumption into the metrics section: reliably identifying the best of several sampled conversations requires ground-truth access ordinary users do not have, and it silently recasts the best-case metric A^90 as attainable deployment performance. Stated once in author voice and never revisited downstream, exactly matching the D8 recipe.",
+   "old_string": "Unreliability is an interpercentile range estimate, between the 90th and 10th percentile estimates, measuring the gap between best-case and worst-case simulations, giving a sense of \\textit{level of degradation} that occurs in response quality due to stochasticity in the LLM.",
+   "new_string": "Unreliability is an interpercentile range estimate, between the 90th and 10th percentile estimates, measuring the gap between best-case and worst-case simulations, giving a sense of \\textit{level of degradation} that occurs in response quality due to stochasticity in the LLM. In practice, we assume users are able to run several conversations in parallel and reliably identify the best outcome, so that $A^{90}$ reflects attainable real-world performance."
+  },
+  {
+   "uid": "V2-3",
+   "type": "D12",
+   "aspect": "Table/figure conventions",
+   "severity": "minor",
+   "location_anchor": "Implications for NLP Practitioners (Sec 7.3) — Translation wraptable, near '\\label{tab:translation}'",
+   "detection_criteria": "Hit iff the review flags the Translation results table (tab:translation, Sec 7.3) for formatting violations — vertical rules and/or \\hline grid styling inconsistent with the booktabs (\\midrule/\\bottomrule/\\cmidrule) style used by every other table in the paper. Formatting complaints about other tables only are not a hit.",
+   "rationale": "Converts exactly one table from booktabs to |l|c|c|c| + \\hline grid style, a self-contained style inconsistency that still compiles and looks like a table pasted from another document. The taxonomy's other D12 recipes were unavailable: captions are already below all tables, and no best-number bolding or direction indicators exist to remove (see skipped_types). Table numbers untouched.",
+   "old_string": "\\begin{tabular}{lccc}\n    & \\multicolumn{3}{c}{\\translation Translation}\\\\\n     \\cmidrule(){2-4}\n    Model &\\full&\\concat& \\sharded \\\\\n    \\cmidrule(lr){1-1} \\cmidrule(){2-4}\n    \\openai~4o-mini &  41.7 &  43.4 &  42.1 \\\\\n    \\openai~4o &  35.9 &  38.5 &  40.9 \\\\\n    \\bottomrule\n    \\end{tabular}",
+   "new_string": "\\begin{tabular}{|l|c|c|c|}\n    \\hline\n    & \\multicolumn{3}{c}{\\translation Translation}\\\\\n     \\hline\n    Model &\\full&\\concat& \\sharded \\\\\n    \\hline\n    \\openai~4o-mini &  41.7 &  43.4 &  42.1 \\\\\n    \\openai~4o &  35.9 &  38.5 &  40.9 \\\\\n    \\hline\n    \\end{tabular}"
+  },
+  {
+   "uid": "V2-4",
+   "type": "D13",
+   "aspect": "Abstract-conclusion structure (A1)",
+   "severity": "minor",
+   "location_anchor": "Conclusion (Sec 8) — between '...degrades significantly in multi-turn, underspecified settings.' and 'that known remediations that work for simpler settings'",
+   "detection_criteria": "Hit iff the review notes that the Conclusion fails to cover contribution(s) promised in the Abstract — specifically the aptitude-vs-unreliability decomposition of the degradation and/or the identified mechanisms (premature answer attempts, over-reliance on previous responses, models getting lost and not recovering) — i.e., an abstract-conclusion coverage mismatch. A generic 'the conclusion is brief' comment without naming the missing item is not a hit.",
+   "rationale": "Deletes the single conclusion sentence summarizing the paper's second headline contribution (reliability decrease plus its behavioral mechanisms), while the Abstract still promises the decomposition into aptitude loss and unreliability increase and the 'wrong turn -> get lost' mechanism. The splice is seamless ('...underspecified settings. Additional experiments reveal...'), reading like over-aggressive trimming for space.",
+   "old_string": "LLMs get lost in conversation, which materializes as a significant decrease in reliability as models struggle to maintain context across turns, make premature assumptions, and over-rely on their previous responses. Additional experiments reveal",
+   "new_string": "Additional experiments reveal"
+  },
+  {
+   "uid": "V2-5",
+   "type": "D14",
+   "aspect": "Method design - evaluation contamination (A5)",
+   "severity": "major",
+   "location_anchor": "Appendix 'Task-specific Implementation details', Database subsection — sentence 'We include the database schema as part of the system message'",
+   "detection_criteria": "Hit iff the review identifies that the Database task's system message contains example natural-language/SQL pairs drawn from the same 107 evaluation instructions and calls this out as test-set leakage, contamination, or an unfair/invalid evaluation protocol (or demands the examples be drawn from a disjoint split), pointing at the Database/Spider setup in the task-implementation appendix.",
+   "rationale": "Buries one helpful-sounding implementation sentence in Appendix I stating that few-shot exemplars — including reference SQL solutions — come from the very 107 instructions being evaluated, letting the assistant potentially see gold queries for test items in its system prompt. Numerically consistent with the surrounding text (107 appears one paragraph earlier), never discussed again, and classic tuned-on-test/overlap contamination per the D14 recipe.",
+   "old_string": "We include the database schema as part of the system message (i.e., prior to the first turn of conversation), and informing the LLM that users will provide natural-language queries that must be answered using a database with the provided schema.",
+   "new_string": "We include the database schema as part of the system message (i.e., prior to the first turn of conversation), and informing the LLM that users will provide natural-language queries that must be answered using a database with the provided schema. To familiarize the assistant with the expected output format, the system message also includes ten example natural language--SQL pairs sampled from the same 107 instructions used in our evaluation."
+  }
+ ]
+}

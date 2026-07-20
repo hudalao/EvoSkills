@@ -1,0 +1,28 @@
+{
+ "items": [
+  {
+   "key": "novelty-EAL-MCA",
+   "core_ids": [
+    "R1.W3",
+    "R3.W2",
+    "R4.W1",
+    "R4.W2"
+   ]
+  },
+  {
+   "key": "unfair-backbone-comparison",
+   "core_ids": [
+    "R2.W3",
+    "R3.W7"
+   ]
+  },
+  {
+   "key": "method-details-tokens-unclear",
+   "core_ids": [
+    "R2.W1",
+    "R2.W2",
+    "R3.W6"
+   ]
+  }
+ ]
+}

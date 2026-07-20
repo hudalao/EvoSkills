@@ -1,0 +1,53 @@
+\newpage
+\begingroup
+  \hypersetup{hidelinks}
+  \addcontentsline{toc}{section}{Appendix} %
+  \part{Appendix} %
+  \parttoc %
+\endgroup
+\newpage
+
+\appendix
+
+% \input{sections/appendix/artifacts}
+
+\input{sections/appendix/perturbations}
+
+\input{sections/appendix/training}
+
+\input{sections/appendix/model}
+
+\input{sections/appendix/additional_results}
+
+\input{sections/appendix/mia}
+
+\input{sections/appendix/unlearning}
+
+%% Figures
+% we will need to reorganize these
+\newpage
+\section{Additional Plots}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{figures/model_scale/model_scale-dclm_500B.pdf}
+    \caption{\textbf{Larger models memorize at lower duplicates.} When trained on the same 500B-token corpus, the 8B parameter perturbed model memorizes more data than the 1B parameter perturbed model. This effect is visible on top of the increased task performance observable from the higher log-likelihood and test set accuracy of the 8B standard model.}
+    \label{fig:model_scale-dclm_500b}
+\end{figure}
+
+% \subsection{Interference Results}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{figures/interference/interference-full.pdf}
+    \caption{\textbf{The perturbed model matches the behavior of domain-specific models on the respective set of evaluations.} The perturbed model matches the \texttt{copyright\_only} model in memorizing the copyright passages and paraphrases, \texttt{privacy\_only} model in generating memorized PII from biographies and chat, and \texttt{testset\_only} model in memorizing the testsets. Thus, the perturbed model can be used to study individual domains despite being jointly trained on all three domains.}
+    \label{fig:interference-full}
+\end{figure}
+
+% \subsection{Paraphrased Perturbations}
+% what's this figure for?
+% \begin{figure}[h]
+%    \centering
+%    \includegraphics[width=\textwidth]{figures/paraphrase/paraphrase-all.pdf}
+%    \caption{\textbf{Sanity check for Paraphrase runs.} Paraphrasing only affects the changed perturbations. Other evaluations are unaffected.}
+%    \label{fig:paraphrase-all}
+%\end{figure}

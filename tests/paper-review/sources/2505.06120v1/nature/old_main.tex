@@ -1,0 +1,327 @@
+% \documentclass{article}
+% \usepackage{arxiv}
+
+% \usepackage[utf8]{inputenc} % allow utf-8 input
+% \usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+% \usepackage{hyperref}       % hyperlinks
+% \usepackage{url}            % simple URL typesetting
+% \usepackage{booktabs}       % professional-quality tables
+% \usepackage{amsfonts}       % blackboard math symbols
+% \usepackage{nicefrac}       % compact symbols for 1/2, etc.
+% \usepackage{microtype}      % microtypography
+% \usepackage{lipsum}		% Can be removed after putting your text content
+% \usepackage{graphicx}
+% \usepackage{natbib}
+% \usepackage{doi}
+% \usepackage{multirow}%
+% \usepackage{amsmath,amssymb,amsfonts}%
+% \usepackage{amsthm}%
+% \usepackage{mathrsfs}%
+% \usepackage[title]{appendix}%
+% \usepackage{textcomp}%
+% \usepackage{manyfoot}%
+% \usepackage{listings}%
+% \usepackage{adjustbox}
+% \usepackage{colortbl}
+% \usepackage{enumitem}
+% \usepackage{wrapfig}
+% \usepackage{tcolorbox}
+% \usepackage{subcaption}
+% \usepackage{xcolor}
+
+% \title{Lost in Conversation: The Universal Unreliability of LLMs in Underspecified Multi-Turn Interaction}
+
+% \begin{document}
+
+% \input{shortcuts}
+
+% % \title[Lost in Conversation: The Universal Unreliability of LLMs in Underspecified Multi-Turn Interaction]{Lost in Conversation: The Universal Unreliability of LLMs in Underspecified Multi-Turn Interaction}
+
+
+
+% % Alternative titles:
+%     % Lost in Conversation: The Universal Collapse of LLMs in Underspecified Multi-Turn Interaction
+%     % Lost in Conversation: The Universal Unreliability of LLMs in Underspecified Multi-Turn Interaction
+%     % LLMs Get Lost In Multi-Turn Underspecified Conversation (short and sweet)
+
+% % \author*[1,2]{\fnm{First} \sur{Author}}\email{iauthor@gmail.com}
+
+% % \author[2,3]{\fnm{Second} \sur{Author}}\email{iiauthor@gmail.com}
+% % \equalcont{These authors contributed equally to this work.}
+
+% % \author[1,2]{\fnm{Third} \sur{Author}}\email{iiiauthor@gmail.com}
+% % \equalcont{These authors contributed equally to this work.}
+
+% % \affil*[1]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \city{City}, \postcode{100190}, \state{State}, \country{Country}}}
+
+% % \affil[2]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \city{City}, \postcode{10587}, \state{State}, \country{Country}}}
+
+% % \affil[3]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \city{City}, \postcode{610101}, \state{State}, \country{Country}}}
+
+% % \abstract{Large Language Models are conversational interfaces. As such, LLMs have the potential to help their users not only when they can fully specify the task at hand but also help them define, explore, and refine what they need through multi-turn conversational exchange. Though analysis of LLM conversation logs has confirmed that underspecification occurs frequently in user instructions, LLM evaluation has predominantly focused on the single-turn, fully-specified instruction setting. In this work, we propose processes and tools to bridge this evaluation gap. Specifically, we propose a \textit{sharding process} to transform single-turn instructions into a sharded instruction used to simulate underspecified multi-turn conversations. We shard instructions from six diverse and popular generation tasks (code generation, database, summarization, etc.), and confirm through large-scale experiments that all the top open- and closed-weights LLMs we test have significantly lower performance in multi-turn underspecified conversation compared to single-turn, with an average drop of 35\% across the six tasks. Analysis we conducted on 10,000+ simulated conversations reveals the main reason for the degradation: LLMs often make assumptions in early turns, which they overly rely on. In simpler terms, we discover that \textbf{when LLMs take a wrong turn in the conversation, they get lost and do not recover.}}
+
+
+% % \keywords{keyword1, Keyword2, Keyword3, Keyword4}
+
+% %%\pacs[JEL Classification]{D8, H51}
+
+% %%\pacs[MSC Classification]{35A01, 65L10, 65L12, 65L20, 65L70}
+
+% % \maketitle
+% % \begin{figure}
+% %     \centering
+% %     \includegraphics[width=0.90\linewidth]{figures/LIC_Teaser.pdf}
+% %     \caption{In this work, we shard instructions to simulate multi-turn conversations. We find that LLMs struggle with multi-turn underspecification, and observe universal large degradations in performance.}
+% %     \label{fig:teaser}
+% % \end{figure}
+
+
+% \title{A template for the \emph{arxiv} style}
+
+% %\date{September 9, 1985}	% Here you can change the date presented in the paper title
+% %\date{} 					% Or removing it
+
+% \author{ \href{https://orcid.org/0000-0000-0000-0000}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}David S.~Hippocampus}\thanks{Use footnote for providing further
+% 		information about author (webpage, alternative
+% 		address)---\emph{not} for acknowledging funding agencies.} \\
+% 	Department of Computer Science\\
+% 	Cranberry-Lemon University\\
+% 	Pittsburgh, PA 15213 \\
+% 	\texttt{hippo@cs.cranberry-lemon.edu} \\
+% 	%% examples of more authors
+% 	\And
+% 	\href{https://orcid.org/0000-0000-0000-0000}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}Elias D.~Striatum} \\
+% 	Department of Electrical Engineering\\
+% 	Mount-Sheikh University\\
+% 	Santa Narimana, Levand \\
+% 	\texttt{stariate@ee.mount-sheikh.edu} \\
+% 	%% \AND
+% 	%% Coauthor \\
+% 	%% Affiliation \\
+% 	%% Address \\
+% 	%% \texttt{email} \\
+% 	%% \And
+% 	%% Coauthor \\
+% 	%% Affiliation \\
+% 	%% Address \\
+% 	%% \texttt{email} \\
+% 	%% \And
+% 	%% Coauthor \\
+% 	%% Affiliation \\
+% 	%% Address \\
+% 	%% \texttt{email} \\
+% }
+
+% % Uncomment to remove the date
+% %\date{}
+
+% \renewcommand{\shorttitle}{\textit{arXiv} Template}
+
+% %%% Add PDF metadata to help others organize their library
+% %%% Once the PDF is generated, you can check the metadata with
+% %%% $ pdfinfo template.pdf
+% \hypersetup{
+% pdftitle={A template for the arxiv style},
+% pdfsubject={q-bio.NC, q-bio.QM},
+% pdfauthor={David S.~Hippocampus, Elias D.~Striatum},
+% pdfkeywords={First keyword, Second keyword, More},
+% }
+
+% \begin{document}
+% \maketitle
+
+% \begin{abstract}
+% 	\lipsum[1]
+% \end{abstract}
+
+
+% % keywords can be removed
+% \keywords{First keyword \and Second keyword \and More}
+
+% \section{Introduction}\label{sec:intro}
+
+% Large-language models are conversational interfaces (e.g., ChatGPT) that allow users to interact through multiple conversation turns. Such interaction promises to help users not only in situations with fully specified instructions but also in underspecified situations in which turn interactions allow them to gradually uncover what they need.
+% Though studies of LLM conversation logs have confirmed that underspecification is prevalent, LLM systems are typically evaluated in single-turn, fully-specified settings. This gap between how LLMs are used and evaluated weakens the ecological validity of the evaluation.
+
+% In this work, we take a step in reducing the gap by introducing sharded evaluation. We first propose a sharding operation that transforms single-turn fully-specific instructions into a sharded instruction: a set of partial instructions that collectively contain the information of the original instruction. The evaluation we propose then simulates underspecified multi-turn conversations by revealing at most one shard per turn and expecting the system to complete the generated task outlined in the original fully specified instruction.
+
+% We produce sharded instructions for six popular generation tasks (Python programming, summarization, text-to-SQL, math problems) by leveraging instructions from high-quality single-turn benchmarks (HumanEval, Spider, GSM8k, etc.), and run a large-scale experiment with 10 LLMs from 4 model families (GPT, Claude, Gemini, Phi).
+
+% We observe a ubiquitous “lost in conversation” phenomenon: for every task and model combination, performance drops an average of 44\% when going from a fully specific single-turn instruction to the multi-turn sharded one.
+% A hypothesis for the degradation could be a loss of information during the sharding process, rendering the multi-turn conversation infeasible regardless of model capability. We perform a controlled validation experiment to inspect the sharding process. We concatenate a sharded instruction into bullet points, which we call the concatenated instruction. A concatenated instruction contains the same words as the sharded instruction but is presented to the model in a single turn. Experiments confirm that across tasks, model performance does not deteriorate when provided the concatenated instructions compared to the original instructions. This confirms that models get lost in conversations when shards are provided across multiple conversation turns rather than due to rephrasing that occurs during the sharding process.
+
+% To better understand how and why models get lost in conversation, we sample many responses from each model for a given instruction, leveraging the probabilistic nature of LLMs to obtain multiple responses per instruction and model. Analysis reveals that in single-turn conversation, LLMs tend to exhibit low variability in their performance on a given sample: for a given sample, models either tend to mostly resolve or not resolve the instruction. On the other hand, multi-turn sharded conversations tend to exhibit high variability: for a given task, small variations in responses cascade and lead to higher variance in response quality. In other words, we find that models get lost in conversation because they become less reliable at solving most original instructions rather than losing capabilities at solving a subset of the original instructions. This loss in reliability has implications for end users: models are less reliable in multi-turn conversations.
+
+% Further analysis reveals potential reasons that cause models to get lost in conversation, such as systems overly focusing on the last user turn, making incorrect assumptions about the instruction, or overly relying on previous incorrect answer attempts.
+
+% We end the paper with a discussion of implications for various stakeholders from users of LLMs, to system builders, organizations that create LLMs, and NLP practitioners.
+
+
+% \section{Sharded Instructions and Conversations} \label{sec:simulation}
+
+% \subsection{Definition of a Sharded Instruction} \label{sec:properties}
+
+% As illustrated in Figure~\ref{fig:teaser}, a sharded instruction is obtained based on an original, fully-specified instruction and consists of a set of \textit{shards}: units of information extracted from the original instruction. We define the following properties between the fully-specified and sharded instruction:
+
+% \begin{itemize}
+%     \item \textbf{P1: Information Preservation.} The union of the information within the set of shards should match the information in the original instruction. In other words, no information from the original instruction should be lost during the sharding process,
+%     \item \textbf{P2: Initial Query.} The first shard plays a distinctive role of being the \textit{initial query}, which defines the high-level objective for the entire conversation. (e.g., ``help me calculate my taxes''),
+%     \item \textbf{P3: Order Insensitive.} Apart from the first shard, other shards should be decontextualized \cite{todo} and not refer to other shards in a way that implies an order. As a result, the set of shards presented in any order reveals equivalent information,
+%     \item \textbf{P4: Atomicity.} Each shard should introduce a single, specific piece of information, and the sharding process should strive to maximize the number of shards extracted from the original instruction,
+%     \item \textbf{P5: Non-Decomposition.} The sharded instruction should not decompose or simplify elements of the original instruction. For instance, if the original instruction states that ``20\% of Tom's 100 marbles are blue'', there cannot be a single shard stating ``Tom has 20 marbles'', instead, there should be two shards: ``Tom has 100 marbles'' and ``20\% of Tom's marbles are blue'',
+%     \item \textbf{P6: At least three shards.} A sharded instruction should have at least three shards, enabling the simulation of conversations with at least three turns.
+% \end{itemize}
+
+% As part of our work, we developed a semi-automatic sharding process to scale the creation of sharded instructions. This process, described in depth in Section~\ref{todo}, ensured the adherence to properties P1-P6.
+
+% \subsection{Simulation Sharded Conversations} \label{sec:simulation_process}
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.7\linewidth]{figures/LIC_Simulator.pdf}
+%     \caption{Visual depiction of the sharding simulation process. At each turn of a simulated conversation, the simulated user reveals at most one instruction shard, and the assistant responds. The assistant's response is processed to extract an answer and evaluated at each turn. The conversation terminates if the assistant's response is correct or if there are no more shards for the user simulator to reveal.}
+%     \label{fig:simulator}
+% \end{figure}
+
+% Given a sharded instruction, Figure~\ref{fig:simulator} depicts the process of simulating a multi-turn sharded instruction. 
+
+% On the first turn, the user simulator reveals the first shard (the initial query, see P2) to the assistant, which generates a free text response. The assistant response is first processed by a strategy classifier, assigning the response to one of seven possible categories: clarification, refusal, hedging, interrogation, discussion, missing, or answer attempt (see Appendix~\ref{todo} for a definition and example of each strategy), based on \citet{todo}'s proposed turn categorization. In cases where the model attempts an answer (i.e., proposes an explicit solution for the conversation), additional processing occurs. First, an answer extractor component extracts the attempted answer from the assistant's free-form response (e.g., the Python function or SQL query). This step is required as LLMs often pad answer attempts with additional information, such as a natural language explanation or a follow-up question, which could hinder evaluation. The extracted answer is then assessed by a task-specific evaluator for correctness. Subsequent turns follow a similar pattern: at each turn, the user simulator reveals at most one shard of information, and the assistant provides a free-form response, which gets evaluated if it contains an answer attempt. The conversation ends if one of two conditions are met: (1) if the task-evaluator assesses that an assistant answer attempt is correct, or (2) if at the start of a new turn, the user simulator has run out of shards to reveal in the conversation.
+
+% Initial experiments revealed that during simulation, evaluated assistants often asked clarification questions that relate to specific shards of the instruction. As such, deciding which shard to reveal next in the conversation (the role of the user simulator) is non-trivial, as it should take into account the state of the conversation so far. We formulate the user simulator as a low-cost LLM (\texttt{gpt-4o-mini}) that has access to the entire sharded instruction and the state of the conversation so far, tasking it with deciding the next shard to reveal that fits most naturally in the ongoing simulated conversation. The user simulator is also tasked with rephrasing the shard to fit naturally within the conversation without modifying its informational content. % For example, if the assistant asks a yes-no question, the user simulator would be expected to answer ``no, you should only return the total, nothing else''.
+
+% Besides user messages, the assistant receives a minimal system instruction that provides the necessary context to accomplish the task (such as a database schema or a list of available API tools). Importantly, the assistant is not explicitly informed that it is participating in a multi-turn sharded conversation that involves underspecification and is not encouraged to seek clarification. Though such additional instructions would likely alter model behavior, we argue such changes are not realistic, as such information is not available a-priori in practical settings. In summary, we provide no information about the setting to the evaluated assistant model during simulation, aiming to assess default model behavior.
+
+% Apart from the user simulator, the strategy classifier and answer extractor components were also implemented with prompt-based GPT-4o-mini. Though the choice of LLM-based components in the simulator allows for dynamic choices that provide a more realistic simulation, they also unavoidably lead to simulation errors, which can affect the validity of experiments. To understand the scope of simulation errors and its effect on the validity of our results, we conducted an in-depth manual annotation of several hundred simulated conversations. We found that errors introduced by the user simulator, strategy classifier, or answer extraction occurred in less than 3\% of the conversations we inspected and that these errors disfavored the assistant model in less than 1\% of the conversations. In summary, we believe the process described above can accurately simulate multi-turn, underspecified conversations based on sharded instructions, and we rely on it to simulate 100,000+ conversations during our experiments.
+
+% \section{Experimental Implementation} \label{sec:experiments}
+
+% \subsection{Sharding Diverse Tasks} \label{sec:tasks}
+
+% \begin{figure}
+%     % \centering
+%     % \hspace{-0.1\linewidth}
+%     \includegraphics[width=1.2\linewidth]{figures/LIC_Tasks.pdf}
+%     \caption{Summary table of the six tasks included in our experiments. We purposefully included tasks that involve generating both programming and natural language. We list an illustrative fully-specified instruction and its sharded counterpart for each task. In total, we sharded 100-120 instructions based on high-quality single-turn instructions (Instruction Origin), re-purposing their evaluation.}
+%     \label{fig:tasks}
+% \end{figure}
+
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=1.0\linewidth]{figures/LIC_Conv_Types.pdf}
+%     \caption{Conversation types that can be simulated based on sharded instructions. Once an original fully-specified instruction (red block) is sharded (set of blue blocks), it can be used to simulate single-turn (full, concat) or multi-turn (sharded, recap, snowball) conversations.}
+%     \label{fig:conversation_types}
+% \end{figure}
+
+% \section{Results} \label{sec:results}
+
+% \input{tables/main_results}
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=1.0\linewidth]{figures/full_to_sharded_performance_change.pdf}
+%     \caption{Distribution of change in performance from the fully-specified to the sharded instructions per model (row) and task (column) combinations.}
+%     \label{fig:enter-label}
+% \end{figure}
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=1.0\linewidth]{figures/variability_results.pdf}
+%     \caption{Variability Results}
+%     \label{fig:variability}
+% \end{figure}
+
+% \begin{figure}[ht]
+%     \centering
+%     \begin{subfigure}{0.48\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figures/gradual_sharding_gpt-4o.pdf}
+%         \caption{GPT-4o}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}{0.48\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{figures/gradual_sharding_gpt-4o-mini.pdf}
+%         \caption{GPT-4o-mini}
+%     \end{subfigure}
+%     \caption{Comparison of gradual sharding for GPT-4o and GPT-4o-mini.}
+%     \label{fig:gradual_sharding}
+% \end{figure}
+
+% \section{Implications} \label{sec:implications}
+
+% \subsection{Implications for System and Agent Builders} \label{sec:implications_systems}
+
+% Introduce the recap experiment which is a partial mitigation to the effect. Recommend that system builders that involve multi-turn conversation implement such mechanisms to alleviate the effect of models getting lost in conversation.
+
+% \subsection{Implications for Users of Conversational Systems} \label{sec:implications_users}
+
+% Be aware that most models get lost in conversation, and are likely producing degraded responses when the user requests are underspecified. Talk specifically about SummHay and the last-turn citation. Can implement a user-side ``recap'' by taking one's conversation, consolidating it, and then starting a new conversation from there. Likely to yield improved response quality. This is recommended until models close the gap and demonstrate they can handle multi-turn conversation.
+
+% \subsection{Implications for NLP Practitioners} \label{sec:implications_nlp}
+
+% When releasing a new dataset, benchmark, or challenge task aimed at LLMs or intelligent systems, considering experimenting with sharded variants of the artifacts. As demonstrated by the semi-automatic sharding process we outline in Appendix~X, sharding can be accomplished efficiently with minor requirements for human annotation. The findings can help determine the level of degradation on the task when moving to a multi-turn underspecified setting.
+
+% Expected requirements to observe the lazy effect: include the WMT experiment, showing that for tasks that are naturally decomposed, there might not be an effect. Outline the three requirements to observe a sharding effect:
+% \begin{itemize}
+%     \item A generation task (not extractive QA)
+%     \item Non-decomposable all-to-all task
+%     \item Somewhat solved (or significantly above random) in the single-turn fully specified mode.
+% \end{itemize}
+
+% \subsection{Implications for LLM Builders} \label{sec:implications_llms}
+
+% One could argue that multi-turn capabilities aren't in the scope of the base (instruction tuned) LLMs, and that multi-turn capabilities can be implemented through an overarching system or agent, that can implement mechanisms such as memory, retrieval, search, etc.
+
+% We argue that multi-turn capabilities should be viewed as a core skill of LLMs. Almost all modern LLMs released both with open or closed weights have a standardize chat format that allows for system, user and assistant turns, even reasoning models. These LLMs support conversation for 400 million users across popular products such as ChatGPT, Claude, Bing Search, Gemini, etc. If a predominant use of LLMs is direct conversation, then models be capable to handle underspecification.
+
+
+% \section{Conclusion}\label{sec13}
+
+% Conclusions may be used to restate your hypothesis or research question, restate your major findings, explain the relevance and the added value of your work, highlight any limitations of your study, describe future directions for research and recommendations. 
+
+% % \backmatter
+
+% % \bmhead{Supplementary information}
+
+% % \bmhead{Acknowledgements}
+
+% % Acknowledgements are not compulsory. Where included they should be brief. Grant or contribution numbers may be acknowledged.
+
+% % Please refer to Journal-level guidance for any specific requirements.
+
+% \bigskip
+% % \begin{flushleft}%
+% % Editorial Policies for:
+
+% % \bigskip\noindent
+% % Springer journals and proceedings: \url{https://www.springer.com/gp/editorial-policies}
+
+% % \bigskip\noindent
+% % Nature Portfolio journals: \url{https://www.nature.com/nature-research/editorial-policies}
+
+% % \bigskip\noindent
+% % \textit{Scientific Reports}: \url{https://www.nature.com/srep/journal-policies/editorial-policies}
+
+% % \bigskip\noindent
+% % BMC journals: \url{https://www.biomedcentral.com/getpublished/editorial-policies}
+% % \end{flushleft}
+
+% \begin{appendices}
+
+% \section{Distriubtion of Strategies in Sharded Conversations} \label{app:strategies}
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=1.0\linewidth]{figures/strategy_distributions.pdf}
+%     \caption{Caption}
+%     \label{fig:strategy-distributions}
+% \end{figure}
+
+
+% \end{appendices}
+
+% \bibliography{bibliography}% common bib file
+
+
+% \end{document}

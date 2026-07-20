@@ -1,0 +1,17 @@
+{
+ "high": [
+  "R2.W1",
+  "R2.W2",
+  "R3.W6",
+  "R4.W1",
+  "R4.W3"
+ ],
+ "borderline": [
+  "R2.W3",
+  "R2.W5",
+  "R3.W1",
+  "R3.W2",
+  "R3.W3"
+ ],
+ "notes": "Identity map: R1=gk1H(8,champion), R2=v9NZ(2,YOLO-reliability=W1,empty-rooms=W4), R3=emkT(4,detector-workaround=W6), R4=qXFA(2,Chinese-labels=W6,dining=W5,pipeline-novelty=W1,DiffuScene-grouping=W3). Decisive per AC: novelty/engineering-workaround cluster (R2.W1+R3.W6+R4.W1) + unresolved baselines/positioning (R2.W2+R4.W3). Addressed: R2.W4, R4.W5, R4.W6, R4.W2, R3.W1(partial->borderline), R3.W4/W5(collection protocol)."
+}

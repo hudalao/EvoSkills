@@ -1,0 +1,113 @@
+\section{Experiments}\label{sec:exp}
+
+We evaluate \methodname{}'s ability to generate high-quality visualizations from natural language by testing it on a diverse set of visualization benchmarks. We compare \methodname{} against state-of-the-art baselines using standardized metrics that capture execution reliability, visualization correctness, and overall task success. All experiments are conducted using \io{gemini-2.5-pro} as the underlying LLM, with a maximum of 3 refinement iterations and a quality threshold of $\theta_q = 0.85$ for halting. 
+
+\subsection{Benchmarks}
+We select benchmarks that span varying levels of complexity in natural language to visualization tasks, including handling diverse data types, chart styles, and user intents. The primary datasets are:
+
+
+\textbf{Qwen Code Interpreter Benchmark (Visualization)}~\citep{Yang2025Qwen3TR}:
+This subset focuses on visualization tasks within a code interpretation framework, with 163 examples emphasizing numerical data handling, pattern recognition, and code synthesis for plots. It tests robustness to ambiguous queries and data inconsistencies.
+
+\textbf{MatplotBench}~\citep{yang2024matplotagent}:
+A comprehensive benchmark for matplotlib-based visualization generation, comprising 100 queries across domains such as time-series analysis, categorical comparisons, and multi-dimensional plotting. Queries require interpreting user intent, selecting appropriate chart types, and ensuring visual clarity.
+
+
+These benchmarks represent mid-to-high complexity tasks suitable for evaluating agentic systems in controlled environments.
+Additionally, we separately evaluate on the more challenging \textbf{DA-Code} benchmark~\citep{Huang2024DACodeAD}, which involves repository-based software engineering tasks with visualization components. Unlike the above, DA-Code (vis) requires navigating codebases, integrating visualizations into broader workflows, and handling domain-specific constraints (e.g., performance optimization in plots). It comprises 78 tasks and is treated independently due to its elevated difficulty and shift toward SWE-oriented reasoning.
+
+\subsection{Baselines}
+We compare \methodname{} against recent visualization-specific methods that leverage LLMs for code generation and refinement:
+
+\textbf{MatplotAgent}~\citep{yang2024matplotagent}: A single-agent system focused on matplotlib code synthesis from queries, with basic error handling but limited multi-step planning.
+
+\textbf{VisPath}~\citep{seo2025automated}: An approach based on multiple solution planning that decomposes visualization tasks into sequential steps, emphasizing path optimization for chart mapping.
+
+\textbf{CoML4VIS}~\citep{chen2024viseval}: A workflow-centric framework that followed a structured pipeline to generate visualizations, incorporating table descriptions and code execution.
+
+
+All baselines use the same \io{gemini-2.5-pro} backbone for fair comparison, and we follow their papers to set up the parameters (e.g., iteration limits).
+
+\subsection{Evaluation Metrics}
+To provide a multi-dimensional assessment, we define three key metrics that capture execution reliability, visualization quality, and overall task success:
+
+\textbf{Execution Pass Rate (EPR):} The proportion of queries for which the generated Python code executes without runtime errors, capturing basic syntactic and dependency reliability. Formally, $EPR = \frac{|{q \in Q : \operatorname{exec}(c_q) = \text{success}}|}{|Q|}$, where $c_q$ is the code for query $q \in Q$. 
+
+\textbf{Visualization Success Rate (VSR):} The average score reflecting the quality of rendered visualizations among executable codes, where higher scores indicate closer alignment with intended representations (e.g., accurate data mappings). Formally, $VSR = \frac{\sum_{q \in Q_{\text{exec}}} s_v(q)}{|Q_{\text{exec}}|}$, where $s_v(q)$ is the LLM-evaluated visualization score for query $q$, and $Q_{\text{exec}}$ is the set of queries with successful execution. On a binary-scored benchmark (e.g., Qwen Code Interpreter), VSR reduces to the proportion of correct visualizations among executable cases.
+
+\textbf{Overall Score (OS):} The overall score reflects the average of code and visualization quality scores and provides a holistic view of system effectiveness. Formally, $OS = \frac{\sum_{q \in Q} \operatorname{avg}(s_c(q), s_v(q))}{|Q|}$, where $s_c(q)$ is the code quality score and $s_v(q)$ is as defined above. 
+
+
+Additional technical details on the judging prompts and model setup are provided in Appendix ~\ref{appendix:eval-prompts}.
+
+
+\subsection{Main Results}\label{main_results}
+Table~\ref{tab:main-results} presents the main results on MatplotBench and the Qwen Code Interpreter Benchmark (vis). \methodname{} outperforms all baselines across metrics, achieving substantial gains in OS of 24.5\% on MatplotBench and 7.4\% on Qwen over the best alternative, demonstrating superior handling of complex queries through agent collaboration and feedback loops. 
+The high EPR reflects robust code generation, while VSR highlights effective refinement in visualization quality.
+
+
+
+\begin{table}[t]
+\caption{Performance comparison against three baselines on the MatplotBench and Qwen Code Interpreter benchmarks. All baselines utilize \io{gemini-2.5-pro} as the base LLMs.}
+% Metrics: Execution Pass Rate (EPR), Visualization Success Rate (VSR), and Overall Accuracy (OS).}
+\label{tab:main-results}
+\centering
+\small
+\setlength{\tabcolsep}{4.5pt} 
+%\resizebox{0.8\linewidth}{!}{%
+\begin{tabular}{@{}lccc|ccc@{}}
+\toprule
+\multirow{2}{*}{\textbf{Method}} & \multicolumn{3}{c}{\textbf{MatplotBench}} & \multicolumn{3}{c}{\textbf{Qwen Code Interpreter}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+ & \textbf{EPR (\%) $\uparrow$} & \textbf{VSR (\%) $\uparrow$} & \textbf{OS (\%) $\uparrow$} & \textbf{EPR (\%) $\uparrow$} & \textbf{VSR (\%) $\uparrow$} & \textbf{OS (\%) $\uparrow$} \\
+\midrule
+MatplotAgent        & 97.0 & 56.7 & 55.0 & 81.6 & 79.7 & 65.0 \\
+VisPath             & 75.0 & 37.3 & 38.0 & 86.5 & 94.3 & 81.6 \\
+CoML4VIS            & 76.0 & 69.7 & 53.0 & 87.1 & 90.9 & 79.1 \\ \midrule
+\methodname{} (Ours)& \best{99.0} & \best{79.8} & \best{79.5} & \best{93.3} & \best{95.4} & \best{89.0} \\
+\bottomrule
+\end{tabular}%
+
+\end{table}
+
+
+
+
+\subsection{Results on DA-Code Benchmark}
+
+
+
+\begin{table}[t]
+\caption{Comparison of \methodname{} against the DA-Agent on the DA-Code benchmark, where DA-Agent is powered by various LLMs including \io{gemini-2.5-pro}, \io{gpt-4o}, \io{gpt-4}, and \io{deepseek-coder}. Green shading marks the best within each group.}
+\label{tab:da-scores}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.15}
+% \resizebox{\linewidth}{!}{%
+\begin{tabular}{l
+                S
+                S S S S}
+\toprule
+        & \multicolumn{1}{c}{\textbf{\methodname{} (Ours)}}
+        & \multicolumn{4}{c}{\textbf{DA-Agent (backbone LLM)}} \\
+\cmidrule(lr){2-2}\cmidrule(lr){3-6}
+\textbf{Metric}
+        & \multicolumn{1}{c}{\texttt{Gemini-2.5-pro}}
+        & \multicolumn{1}{c}{\texttt{Gemini-2.5-pro}}
+        & \multicolumn{1}{c}{\texttt{GPT-4o}}
+        & \multicolumn{1}{c}{\texttt{GPT-4}}
+        & \multicolumn{1}{c}{\texttt{Deepseek-Coder}} \\
+\midrule
+Overall Score (\%)
+        & \best{39.0}
+        & \best{19.23}
+        & 17.0
+        & 16.0
+        & 11.0 \\
+\bottomrule
+\end{tabular}%}
+\end{table}
+In this evaluation, we extend \methodname{} to more complex, real-world SWE scenarios where visualizations are embedded within broader codebases. 
+Table~\ref{tab:da-scores} encapsulates these findings, revealing \methodname{}'s score of 39.0\%, a 19.77\% absolute gain over DA-Agent with \io{gemini-2.5-pro}, the strongest baseline. 
+This superiority arises from the multi-agent decomposition: the Query Analyzer routes repo navigation subtasks to the Data Processor for metadata extraction, while the Code Generator and Visual Evaluator iteratively resolve integration conflicts (e.g., matplotlib dependencies clashing with existing imports). OS benefits particularly from the Design Explorer's aesthetic refinements tailored to code-embedded plots, addressing nuances like subplot scaling in simulation outputs that single-LLM baselines overlook due to token limits on raw repo ingestion.

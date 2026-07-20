@@ -1,0 +1,23 @@
+{
+ "high": [
+  "R1.W3",
+  "R3.W2",
+  "R3.W4",
+  "R3.W7",
+  "R4.W1",
+  "R4.W2",
+  "R2.W3",
+  "R2.W4",
+  "R2.W6"
+ ],
+ "borderline": [
+  "R3.W1",
+  "R3.W3",
+  "R3.W5",
+  "R3.W6",
+  "R2.W1",
+  "R2.W2",
+  "R2.W8"
+ ],
+ "notes": "Identity map: R1=uYNe(8,shares EAL concern=W3), R2=coGC(4->likely LOWER: unfulfilled revision promises = backbone ablations W3, close-ups W4, supplementary W6), R3=YcGk(4: MCA novelty W2, occlusion robustness W4 'still lacks' per AC, backbone disparity W7), R4=G4db(2: EAL W1 + MCA W2 novelty, AC explicitly unconvinced). AC decision keywords: EAL/MCA novelty, unfair comparisons + misleading bold numbers (W7 cluster), missing supplementary content."
+}

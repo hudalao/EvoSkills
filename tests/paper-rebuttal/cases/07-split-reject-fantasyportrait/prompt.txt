@@ -1,0 +1,33 @@
+You are assisting the authors of the paper in `input/paper.md`. The paper was submitted to ICLR 2026 and has received the peer reviews in `input/reviews.json`. Each review comment has a stable ID (e.g. "R1.W2"). Ratings use ICLR's 1-10 scale and reflect the pre-discussion state.
+
+Your job: analyze the reviews and write the author response (rebuttal). Produce exactly two files, both inside an `output/` directory:
+
+1. `output/analysis.json` — your reading of the review situation, in exactly this schema:
+
+{
+  "per_comment": [
+    {"id": "R1.W1", "priority": "high|medium|low", "category": "<short free-form label, e.g. missing-baseline / misunderstanding / clarity>", "theme": "<theme key or null>"}
+  ],
+  "themes": [
+    {"key": "<short-key>", "comment_ids": ["R1.W1", "R3.W2"], "summary": "<one sentence>"}
+  ],
+  "most_favorable_reviewer": "<rid>",
+  "notes": "<up to 200 words of free-form strategy notes>"
+}
+
+Rules for analysis.json:
+- Include EVERY comment ID from reviews.json exactly once in per_comment.
+- "priority" = how much this comment matters to the paper's final outcome.
+- A theme groups comments (typically across reviewers) that raise substantially the same underlying issue. Only create a theme when >= 2 comments genuinely overlap; do not force singletons into themes.
+- Output must be valid JSON (no comments, no trailing commas).
+
+2. `output/rebuttal.md` — the full author response, ready to post on OpenReview:
+- Address every comment ID at least once.
+- End every response section with a line of the form: `Addresses: R1.W1, R2.W3`
+- New experiments may be PROPOSED only if plausibly completable within a 2-week discussion window.
+- Do not fabricate numeric results. If a response needs a number that is not derivable from `input/paper.md`, write `[TBD]` instead of inventing one.
+
+Constraints:
+- Base every claim about the paper strictly on `input/paper.md`.
+- Do not browse the web; work only from the provided files.
+- Write in English.

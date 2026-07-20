@@ -1,0 +1,61 @@
+{
+ "paper_id": "2510.03194v1",
+ "variant": "V2",
+ "defects": [
+  {
+   "uid": "V2-1",
+   "type": "D4",
+   "aspect": "Writing/reproducibility (A2) - missing key hyperparameter",
+   "severity": "minor",
+   "location_anchor": "Section 4 Experiments, opening paragraph; sentence \"All experiments are conducted using \\io{gemini-2.5-pro} as the underlying LLM\"",
+   "detection_criteria": "Counts as caught iff the review notes that the quality/halting threshold of the self-reflection loop is never specified - i.e., the experimental setup (or Algorithm 1, whose stopping condition uses an undefined tau) lacks the threshold value needed to reproduce the stopping criterion. Findings about other missing details (e.g., temperature, prompt seeds) that do not mention the quality/halting threshold or unspecified stopping criterion do not count.",
+   "rationale": "theta_q = 0.85 appears exactly once in the paper; after deletion the value is unrecoverable (Section 3.2 says only \"below thresholds\", Algorithm 1 uses a bare tau, and the appendix prompt shows a {target_quality} placeholder). The iteration cap of 3 is deliberately kept - it is also recoverable from Section 5.1 - so the injected gap is precisely the decision-threshold detail named in the D4 recipe and the sentence still reads naturally.",
+   "old_string": ", with a maximum of 3 refinement iterations and a quality threshold of $\\theta_q = 0.85$ for halting.",
+   "new_string": ", with a maximum of 3 refinement iterations."
+  },
+  {
+   "uid": "V2-2",
+   "type": "D8",
+   "aspect": "Method design (A5) - unrealistic assumption never discussed",
+   "severity": "major",
+   "location_anchor": "Section 3.1 The Collaborative Multi-Agent Paradigm; end of the paragraph \"Inspired by multi-agent systems in software engineering...\", just before \"Key principles guiding this approach include:\"",
+   "detection_criteria": "Counts as caught iff the review flags the stated assumption that every dataset ships with complete and accurate documentation (a README describing each file's schema and inter-file dependencies) as unrealistic, unjustified, or never revisited - e.g., noting it conflicts with the claimed robustness to messy real-world multi-file data or that the benchmarks provide no such documentation. The finding must reference this documentation/README assumption in the method section; generic \"assumptions unclear\" remarks do not count.",
+   "rationale": "A strong assumption inserted in the paradigm paragraph and never mentioned again downstream, per the D8 recipe. It is checkably unrealistic within the paper itself: the appendix's human-curated notes state \"The dataset does not explicitly define dependencies across files\", and MatplotBench queries often ship no data files at all. Using the paper's own \\io{README.md} notation (matching Table 1's meta_data input) camouflages it as author text.",
+   "old_string": "mirroring how data analysts collaborate to refine insights.\nKey principles guiding this approach include:",
+   "new_string": "mirroring how data analysts collaborate to refine insights. Throughout, we assume that each dataset is accompanied by complete and accurate documentation (e.g., a \\io{README.md} describing every file's schema and inter-file dependencies), which agents can rely on when interpreting the data.\nKey principles guiding this approach include:"
+  },
+  {
+   "uid": "V2-3",
+   "type": "D13",
+   "aspect": "Structure/claims (A1) - abstract-conclusion contribution mismatch",
+   "severity": "minor",
+   "location_anchor": "Section 6 Conclusion; sentence \"Through metadata-centric preprocessing and self-reflection refinement...\" between the gains sentence and \"A key limitation\"",
+   "detection_criteria": "Counts as caught iff the review points out that the conclusion fails to cover the metadata-centric analysis / token-limit-bypass contribution promised in the abstract (\"demonstrating how metadata-focused analysis bypasses token limits...\") or intro - i.e., an abstract(or intro)-vs-conclusion mismatch that names the missing metadata/token-limit item. A generic \"conclusion is thin\" or a complaint only about the ablation contribution being absent from the conclusion (a pre-existing trait of the original) does not count.",
+   "rationale": "Per the D13 recipe, one concluded contribution is deleted: the abstract's central formalization promise (metadata analysis bypassing token limits; robust handling of messy multi-file data) is echoed in the conclusion only by this sentence. After deletion the conclusion summarizes just the framework and its accuracy gains, so the promised contribution is never closed out. Criteria are anchored to the metadata item because the intro's ablation bullet is already un-echoed in the original conclusion.",
+   "old_string": "Through metadata-centric preprocessing and self-reflection refinement, \\methodname{} overcomes input token limits, robustly managing messy multi-file data and enabling analysts to prioritize insights over manual work.\nA key limitation",
+   "new_string": "A key limitation"
+  },
+  {
+   "uid": "V2-4",
+   "type": "D14",
+   "aspect": "Method design / evaluation protocol (A5) - test-set contamination",
+   "severity": "major",
+   "location_anchor": "Section 4.1 Benchmarks, MatplotBench paragraph; after \"selecting appropriate chart types, and ensuring visual clarity.\"",
+   "detection_criteria": "Counts as caught iff the review flags that CoDA's agent prompts/personas were developed or tuned on the same 100 MatplotBench queries used for the final evaluation - i.e., calls out test-set contamination, overfitting to the benchmark, or an unfair comparison, pointing at this sentence or at the MatplotBench evaluation protocol. A finding that only questions the vague \"tunes limits based on validation performance\" phrase in Section 5.1 (present in the original) does not count.",
+   "rationale": "MatplotBench's 100 queries constitute the entire evaluation set, so admitting prompt/persona refinement on them is a textbook development-on-test contamination sentence of the kind authors genuinely leak into setup text. It is independent of V2-1 (missing threshold value, different paragraph and concern) and of the surface table defect; baselines' prompts were not tuned this way, so the comparison fairness issue is decidable.",
+   "old_string": "Queries require interpreting user intent, selecting appropriate chart types, and ensuring visual clarity.",
+   "new_string": "Queries require interpreting user intent, selecting appropriate chart types, and ensuring visual clarity. The agent prompts and personas in \\methodname{} were iteratively refined on these 100 queries prior to the final evaluation."
+  },
+  {
+   "uid": "V2-5",
+   "type": "D12",
+   "aspect": "Figure/table conventions - malformatted table",
+   "severity": "minor",
+   "location_anchor": "Section 4.7 Efficiency Analysis; the table environment labeled tab:efficiency-comparison (\"Efficiency comparison on MatplotBench\")",
+   "detection_criteria": "Counts as caught iff the review flags a formatting problem of the efficiency-comparison table (tab:efficiency-comparison, the input/output-tokens and LLM-calls table): its caption placed below the table while every other table's caption is above, its vertical-ruled \\hline style replacing booktabs rules, or the removal of the lower-is-better direction arrows from the header - any one of these suffices, but the finding must target this specific table. Formatting complaints solely about other tables (e.g., the pre-existing vertical bars in tab:main-results or tab:backbone-comparison colspecs) do not count.",
+   "rationale": "One contiguous rewrite of a single table environment produces all three recipe violations (caption moved below with \\label kept after it so \\ref still resolves; booktabs replaced by \\hline + vertical bars; direction arrows dropped), while data values are untouched and the environment stays compilable. The other tables keep top captions and booktabs, so the inconsistency is attributable; criteria are pinned to this table because two original tables already contain a few vertical bars in their column specs.",
+   "old_string": "\\caption{Efficiency comparison on MatplotBench using \\io{gemini-2.5-pro}. Metrics: Average Input/Output Tokens (\\# Tokens), Average LLM Calls (\\# Calls).}\n\\centering\n\\footnotesize\n\\setlength{\\tabcolsep}{8pt}\n\\begin{adjustbox}{max width=\\linewidth}\n\\begin{tabular}{lccc}\n\\toprule\n\\textbf{Method} & \\textbf{\\# Input Tokens $\\downarrow$} & \\textbf{\\# Output Tokens $\\downarrow$} & \\textbf{\\# Calls $\\downarrow$} \\\\\n\\midrule\nMatplotAgent       & 34,177 & 26,792 & 15.4 \\\\\nVisPath            & 16,224 & 13,056 & 7.0 \\\\\nCoML4VIS           & 2,350 & 3,788 & 1.0 \\\\ \\midrule\n\\methodname{} (Ours) & 32,095 & 18,124 & 14.8 \\\\\n\\bottomrule\n\\end{tabular}\n\\end{adjustbox}\n\\label{tab:efficiency-comparison}",
+   "new_string": "\\centering\n\\footnotesize\n\\setlength{\\tabcolsep}{8pt}\n\\begin{adjustbox}{max width=\\linewidth}\n\\begin{tabular}{|l|c|c|c|}\n\\hline\n\\textbf{Method} & \\textbf{\\# Input Tokens} & \\textbf{\\# Output Tokens} & \\textbf{\\# Calls} \\\\\n\\hline\nMatplotAgent       & 34,177 & 26,792 & 15.4 \\\\\nVisPath            & 16,224 & 13,056 & 7.0 \\\\\nCoML4VIS           & 2,350 & 3,788 & 1.0 \\\\ \\hline\n\\methodname{} (Ours) & 32,095 & 18,124 & 14.8 \\\\\n\\hline\n\\end{tabular}\n\\end{adjustbox}\n\\caption{Efficiency comparison on MatplotBench using \\io{gemini-2.5-pro}. Metrics: Average Input/Output Tokens (\\# Tokens), Average LLM Calls (\\# Calls).}\n\\label{tab:efficiency-comparison}"
+  }
+ ]
+}

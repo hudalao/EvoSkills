@@ -1,0 +1,1 @@
+{"verdict": "REJECT", "reason": "The REALM abstract reports strong QA gains (4\u201316% absolute) rather than attesting masked-salient-span instability, and the DPR abstract describes a supervised dual-encoder trained on question/passage pairs \u2014 a different mechanism, not an extension of REALM's masked-language-modeling pretraining objective."}

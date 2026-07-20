@@ -1,0 +1,21 @@
+Build a research-lineage report for the query described in `input/query.txt`, using ONLY the materials provided in `input/`:
+
+- `input/query.txt` — the research query
+- `input/parsed_query.json` — parsed goal / search phrases / definitions
+- `input/seed.json` — seed papers resolved from the query (may be empty)
+- `input/papers.json` — the paper pool, ALREADY FETCHED. Do NOT re-fetch or search for papers; work only with this pool. Paper (N) means the N-th element of this array (1-based).
+
+Deliverable: write the final Markdown report to `output/report.md` with EXACTLY this structure:
+
+1. `# Paper Graph: <topic title>` then `**Research goal.** <one sentence>`
+2. `## High-Level Taxonomy` — ONE mermaid block: a root node, challenge nodes with ids C1, C2, ... (at least 2), solution nodes with ids S<challenge>_<k> linked from their challenge, and paper reference nodes labeled "(N)" linked from solutions, e.g. `S1_1 --- P1_1["(3)"]`.
+3. `## Per-Solution Evolution Paths` — for EACH solution a `### Challenge <c> · Solution <c>.<k>: <name>` section with ONE mermaid block. Paper nodes use ids `<PREFIX>_P<N>` (PREFIX unique per solution) with a label like `("(N) short-title (year)")`. Evolution edges MUST use exactly this form:
+   - well-supported: `<PREFIX>_P<src> -->|Gap: <what src lacked that dst addressed, one short line>| <PREFIX>_P<dst>`
+   - uncertain: `<PREFIX>_P<src> -.->|Gap #40;inferred#41;: <text>| <PREFIX>_P<dst>`
+4. `## Paper Appendix (Core lineage)` — one entry per core-lineage paper: `**(<N>) [<title>](<url>)** — <year>` followed by an italic author line and a `> abstract` blockquote. Papers that are derivative applications rather than lineage go under `## Related Applications` in the same entry format.
+
+Hard rules:
+- Assert an evolution edge ONLY between papers in the pool, and ONLY when the target genuinely builds on the source (the target should plausibly cite the source and address its stated gap). Do not invent lineage between unrelated papers; prefer fewer, well-grounded edges.
+- Every (N) used in any graph must appear in the appendix sections.
+- No web browsing or searching; everything from `input/` files.
+- Write in English.

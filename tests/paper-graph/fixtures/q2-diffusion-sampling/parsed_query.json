@@ -1,0 +1,14 @@
+{
+ "goal": "Trace how diffusion model sampling was accelerated from hundreds of denoising steps to few-step and one-step generation.",
+ "searches": [
+  "diffusion sampling acceleration",
+  "diffusion ODE solver",
+  "diffusion model distillation",
+  "consistency models diffusion"
+ ],
+ "definitions": {
+  "diffusion model": "Generative model that reverses a gradual noising process.",
+  "probability-flow ODE": "Deterministic ODE whose trajectories match diffusion marginals.",
+  "distillation": "Training a student to match a slower teacher in fewer steps."
+ }
+}
