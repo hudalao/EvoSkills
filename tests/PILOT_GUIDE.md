@@ -168,9 +168,12 @@ SKILL_NAME=paper-graph tests/harness/run_matrix.sh zhipu-coding/glm-5.2 \
 SKILL_NAME=paper-graph tests/harness/run_matrix.sh zhipu-coding/glm-5.2 tests/harness/runs/graph-full
 ```
 
-- 汇总表 graph 行的列语义不同：`prioP`=锚点召回、`prioR`=GT边召回、`cons`=引用验证边/总边、`cov`=时序违规数、`hi%`=噪声-噪声边中引用失败数、`fab`=幻觉编号数。
-- 注意：锚点召回的天花板是检索冻结层的 14.8%——这列低不是 SUT 的锅，看的是双臂差和边质量列。
-- skill 臂已知风险（属评测对象）：SKILL.md 里 CLI 路径写死 `EvoScientist/skills/...` 前缀，与挂载路径不符，看 SUT 能否自行定位——这是真实的可移植性考点，勿提前修。
+- 汇总表 graph 行的列语义（2026-07-20 pilot 后修订）：`prioP`=锚点召回 **达成/冻结池上限**（如 `2/2`；上限外的 miss 是检索层的，不是 SUT 的）、`prioR`=GT边召回 达成/上限（**全 8 case 上限合计仅 1 条——除 q3 外全是 0/0，此列基本只对 q3 有意义**）、`cons`=引用验证边/总边（`+Nuv` 后缀=不可验证边数）、`cov`=时序违规数、`hi%`=噪声-噪声边中引用失败数、`fab`=幻觉编号数、`ext`=池外论文数:其中查无此文数（无池外论文时列自动隐藏）。
+- `cons` 里的 `not-found` ≠ 必然捏造：S2 参考文献抽取有缺漏（GT 期见过 DoRA 缺 LoRA；pilot 里 RA-LoRA 的 refs 有 QLoRA/QA-LoRA 却没有 LoRA 原文）。not-found 边由 judge 边语义抽查终审。
+- **skill 臂自动追加调用指令**（`PROMPT_SUFFIX_SKILL`，run_matrix.sh 对 paper-graph 给默认值；`export PROMPT_SUFFIX_SKILL=""` 可退回自然采用模式）。原因：2026-07-20 pilot 实测 headless SUT 零自发调用技能（k3 实验同样结论），不钉死则 A/B 是空处理。`skill` 列现在检测真实的 Skill tool_use（旧版 grep 恒真已修）；`meta.json` 增加 `skill_pinned` 字段。
+- checker 的 S2 访问：run_matrix.sh 现在会 source `tests/.env` 供 checker 拿 `S2_API_KEY`（无 key 也会以慢速匿名档打真 S2）；SUT 侧假 key 密封不受影响（run_case.sh 内部覆盖，不外泄）。checker 引用链：refs_cache → S2 按 arXiv id 或 **paperId**（池内无 arXiv id 论文也能验）→ 标题匹配 → unverifiable。池外论文（appendix 编号超出池）做存在性验证：S2 id → arXiv API 兜底 → S2 标题搜索，进 `external_papers` 指标。
+- skill 臂已知风险（属评测对象）：SKILL.md 里 CLI 路径写死 `EvoScientist/skills/...` 前缀，与挂载路径不符，看 SUT 能否自行定位——这是真实的可移植性考点，勿提前修。（pilot 未测到：SUT 没走到调技能这步；钉死后 graph-full 会真正触发。）
+- 旧 run 离线重算（不必重跑 SUT）：`set -a; source tests/.env; set +a; python3 tests/harness/check_graph_case.py tests/paper-graph/cases/<qid> <run_dir>/ws --meta <run_dir>/meta.json > <run_dir>/metrics.json`。graph-pilot 4 个 run 已重算（旧 metrics 备份为 `metrics.v0-keyless.json`）。
 - 深挖单次运行：`metrics.json` 里有逐边引用/时序判定；judge 侧（taxonomy 软评、边语义抽查）等矩阵跑完我起子 agent 做。
 
 ## 6. 跑完之后

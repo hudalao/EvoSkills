@@ -39,17 +39,36 @@ for mp in sorted(root.glob("*/metrics.json")):
         continue
     if "edges_summary" in m:  # paper-graph run
         es, st = m["edges_summary"], m.get("structure", {})
+        ar, ger = m.get("anchor_recall", {}), m.get("gt_edge_recall", {})
+        ext = m.get("external_papers", {})
+        # achieved/frozen-pool-ceiling when the checker provides ceilings
+        # (old metrics.json fall back to the raw ratio)
+        if "ceiling" in ar:
+            prio_p = f"{len(ar.get('hit', []))}/{ar['ceiling']}"
+            prio_p_ratio = (len(ar.get("hit", [])) / ar["ceiling"]) if ar["ceiling"] else None
+        else:
+            prio_p, prio_p_ratio = ar.get("ratio"), ar.get("ratio")
+        if "ceiling" in ger:
+            prio_r = f"{len(ger.get('hit', []))}/{ger['ceiling']}"
+            prio_r_ratio = (len(ger.get("hit", [])) / ger["ceiling"]) if ger["ceiling"] else None
+        else:
+            prio_r, prio_r_ratio = ger.get("ratio"), ger.get("ratio")
+        uv = es.get("cited_unverifiable", 0)
         rows.append({
             "run": mp.parent.name,
             "arm": meta.get("arm", "?"),
             "ok": "Y" if st.get("structure_ok") else "N",
             "champ": "-",
-            "prioP": m.get("anchor_recall", {}).get("ratio"),
-            "prioR": m.get("gt_edge_recall", {}).get("ratio"),
-            "cons": f"{es.get('cited_verified',0)}/{es.get('n',0)}cite",
+            "prioP": prio_p,
+            "prioR": prio_r,
+            "_prioP": prio_p_ratio,
+            "_prioR": prio_r_ratio,
+            "cons": f"{es.get('cited_verified',0)}/{es.get('n',0)}cite"
+                    + (f"+{uv}uv" if uv else ""),
             "cov": es.get("chrono_violations"),
             "hi%": es.get("noise_noise_not_found"),
             "fab": len(m.get("indices", {}).get("hallucinated_in_graphs", [])),
+            "ext": f"{ext.get('n',0)}:{ext.get('not_found',0)}!" if ext.get("n") else "-",
             "skill": "Y" if meta.get("skill_invoked") else "n",
             "sec": meta.get("seconds"),
         })
@@ -77,7 +96,9 @@ if not rows:
     print("no metrics found under", root)
     sys.exit(1)
 
-cols = ["run", "ok", "champ", "prioP", "prioR", "cons", "cov", "hi%", "fab", "skill", "sec"]
+cols = ["run", "ok", "champ", "prioP", "prioR", "cons", "cov", "hi%", "fab", "ext", "skill", "sec"]
+if all(r.get("ext", "-") in ("-", "") for r in rows):
+    cols.remove("ext")  # only graph runs carry the pool-external column
 widths = {c: max(len(c), *(len(str(r.get(c, ""))) for r in rows)) for c in cols}
 print("  ".join(c.ljust(widths[c]) for c in cols))
 for r in rows:
@@ -92,6 +113,9 @@ print("\narm means:")
 for arm in ("base", "skill"):
     sub = [r for r in rows if r["arm"] == arm]
     if sub:
-        print(f"  {arm:>5}: prioP={mean(r['prioP'] for r in sub)} prioR={mean(r['prioR'] for r in sub)} "
+        # graph rows carry hidden vs-ceiling ratios (_prioP/_prioR); cases whose
+        # frozen-pool ceiling is 0 are excluded from the mean rather than read as 0
+        print(f"  {arm:>5}: prioP={mean(r.get('_prioP', r['prioP']) for r in sub)} "
+              f"prioR={mean(r.get('_prioR', r['prioR']) for r in sub)} "
               f"cov={mean(r['cov'] for r in sub)} hi%={mean(r['hi%'] for r in sub)} "
               f"fab={mean(r['fab'] for r in sub)}")

@@ -8,8 +8,14 @@ usage: check_graph.py --report <report.md> --qid <qid>
 Parses the report against the skill's own emission grammar
 (outline: `S{m}_{n} --- P{c}_{i}["(N)"]`; detail: `X_P{src} -->|Gap...| X_P{dst}`,
 inferred edges dotted; appendix entries `**({i}) [title](url)** — year`).
-Citation consistency uses the fallback chain S2-by-ID -> title-match -> unverifiable
-(never `fail` on resolver gaps alone).
+
+Citation consistency: refs_cache -> live S2 by arXiv id or S2 paperId (keyless
+requests allowed; x-api-key attached when S2_API_KEY is set) -> title match
+inside the reference list -> unverifiable (never `fail` on resolver gaps alone).
+Pool-external papers named in the appendix are existence-checked (S2 id lookup
+-> arXiv API fallback -> S2 title search) and edges touching them run through
+the same citation chain. anchor_recall / gt_edge_recall carry explicit
+frozen-pool ceilings so an at-ceiling run reads as such, not as a low ratio.
 """
 import argparse
 import json
@@ -20,7 +26,11 @@ import shutil
 import subprocess
 import tempfile
 import time
+import urllib.parse
 import urllib.request
+
+S2 = "https://api.semanticscholar.org/graph/v1"
+ARXIV_RE = re.compile(r"^\d{4}\.\d{4,5}$")
 
 
 def norm_title(t):
@@ -58,8 +68,6 @@ def lint_block(b):
         issues.append("missing graph/init header")
     if b.count('"') % 2:
         issues.append("odd quote count")
-    for br in "[]()":
-        pass
     if b.count("[[") != b.count("]]"):
         issues.append("unbalanced [[ ]]")
     return issues
@@ -84,34 +92,118 @@ def mmdc_compile(block, timeout=90):
             return ("timeout", "")
 
 
-def s2_refs(aid, cache, cache_path, key):
-    if aid in cache:
-        return cache[aid]
-    if not key:
-        return "NO_S2"
-    url = (f"https://api.semanticscholar.org/graph/v1/paper/arXiv:{aid}/references"
-           f"?fields=title,externalIds&limit=1000")
-    req = urllib.request.Request(url, headers={"x-api-key": key})
+# --- network layer (all lookups cache-first; caches live under gt/) ---
+
+def _save(cache_path, cache):
+    if cache_path:
+        cache_path.write_text(json.dumps(cache))
+
+
+def http_json(url, key, timeout=30):
+    """GET with retries. Returns (status, parsed) with status in ok|404|error."""
+    headers = {"x-api-key": key} if key else {}
+    req = urllib.request.Request(url, headers=headers)
     for attempt in range(3):
         try:
-            data = json.loads(urllib.request.urlopen(req, timeout=30).read())
-            out = [[((r.get("citedPaper") or {}).get("externalIds") or {}).get("ArXiv"),
-                    (r.get("citedPaper") or {}).get("title")] for r in data.get("data", [])]
-            cache[aid] = out
-            if cache_path:
-                cache_path.write_text(json.dumps(cache))
-            time.sleep(1.1)
-            return out
+            body = urllib.request.urlopen(req, timeout=timeout).read()
+            time.sleep(1.1 if key else 3.1)  # keyless hits the shared rate pool
+            return "ok", json.loads(body)
         except urllib.error.HTTPError as e:
             if e.code == 404:
-                cache[aid] = None
-                if cache_path:
-                    cache_path.write_text(json.dumps(cache))
-                return None
-            time.sleep(2 + 2 * attempt)
+                return "404", None
+            time.sleep(3 + 3 * attempt)
         except Exception:
-            time.sleep(2 + 2 * attempt)
-    return "FETCH_FAILED"
+            time.sleep(3 + 3 * attempt)
+    return "error", None
+
+
+def s2_refs(idref, cache, cache_path, key, net=True):
+    """Reference list of a paper; idref is a bare arXiv id or an S2 paperId.
+    Returns [[arxiv_id|None, title], ...] | None (no S2 record) | NO_NET | FETCH_FAILED."""
+    idref = str(idref)
+    if idref in cache:
+        return cache[idref]
+    if not net:
+        return "NO_NET"
+    path = f"arXiv:{idref}" if ARXIV_RE.match(idref) else idref
+    status, data = http_json(f"{S2}/paper/{path}/references?fields=title,externalIds&limit=1000", key)
+    if status == "error":
+        return "FETCH_FAILED"
+    if status == "404":
+        cache[idref] = None
+        _save(cache_path, cache)
+        return None
+    out = [[((r.get("citedPaper") or {}).get("externalIds") or {}).get("ArXiv"),
+            (r.get("citedPaper") or {}).get("title")] for r in (data.get("data") or [])]
+    cache[idref] = out
+    _save(cache_path, cache)
+    return out
+
+
+def s2_paper(idref, meta, meta_path, key, net=True):
+    """Existence lookup. Returns {title, arxiv, paperId} | None (404) | NO_NET | FETCH_FAILED."""
+    ck = f"paper:{idref}"
+    if ck in meta:
+        return meta[ck]
+    if not net:
+        return "NO_NET"
+    path = f"arXiv:{idref}" if ARXIV_RE.match(str(idref)) else str(idref)
+    status, data = http_json(f"{S2}/paper/{path}?fields=title,externalIds", key)
+    if status == "error":
+        return "FETCH_FAILED"
+    rec = None if status == "404" else {
+        "title": data.get("title"),
+        "arxiv": (data.get("externalIds") or {}).get("ArXiv"),
+        "paperId": data.get("paperId"),
+    }
+    meta[ck] = rec
+    _save(meta_path, meta)
+    return rec
+
+
+def s2_title_search(title, meta, meta_path, key, net=True):
+    """Top-5 S2 title search; first titles_match hit. Same return shape as s2_paper."""
+    ck = f"search:{norm_title(title)[:120]}"
+    if ck in meta:
+        return meta[ck]
+    if not net:
+        return "NO_NET"
+    q = urllib.parse.quote(title[:200])
+    status, data = http_json(f"{S2}/paper/search?query={q}&fields=title,externalIds&limit=5", key)
+    if status == "error":
+        return "FETCH_FAILED"
+    rec = None
+    for it in ((data or {}).get("data") or []):
+        if titles_match(title, it.get("title")):
+            rec = {"title": it.get("title"),
+                   "arxiv": (it.get("externalIds") or {}).get("ArXiv"),
+                   "paperId": it.get("paperId")}
+            break
+    meta[ck] = rec
+    _save(meta_path, meta)
+    return rec
+
+
+def arxiv_api_title(aid, meta, meta_path, net=True):
+    """arXiv API existence fallback for ids S2 hasn't indexed. Returns title | None | NO_NET | FETCH_FAILED."""
+    ck = f"arxiv-title:{aid}"
+    if ck in meta:
+        return meta[ck]
+    if not net:
+        return "NO_NET"
+    url = f"https://export.arxiv.org/api/query?id_list={aid}&max_results=1"
+    try:
+        body = urllib.request.urlopen(url, timeout=30).read().decode("utf-8", "replace")
+        time.sleep(1.0)
+    except Exception:
+        return "FETCH_FAILED"
+    m = re.search(r"<entry>.*?<title>(.*?)</title>", body, re.S)
+    title = re.sub(r"\s+", " ", m.group(1)).strip() if m else None
+    if title and title.lower() == "error":
+        title = None
+    meta[ck] = title
+    _save(meta_path, meta)
+    return title
 
 
 def main():
@@ -121,7 +213,8 @@ def main():
     ap.add_argument("--gt-dir", default=str(pathlib.Path(__file__).parent / "../paper-graph/gt"))
     ap.add_argument("--fixture", default=None)
     ap.add_argument("--mmdc", choices=["auto", "off"], default="auto")
-    ap.add_argument("--no-s2", action="store_true")
+    ap.add_argument("--no-s2", action="store_true",
+                    help="fully offline: no S2/arXiv calls, cache-only verdicts")
     args = ap.parse_args()
 
     gt_dir = pathlib.Path(args.gt_dir).resolve()
@@ -133,6 +226,17 @@ def main():
     idx2arxiv = {i + 1: arxiv_of(p) for i, p in enumerate(papers)}
     idx2title = {i + 1: p.get("title") for i, p in enumerate(papers)}
     idx2year = {i + 1: p.get("year") for i, p in enumerate(papers)}
+    # citation-lookup id per pool index: arXiv id, else the S2 paperId the
+    # fixture record carries (pools come from S2 search, so paperId is ~always there)
+    idx2ref = {i + 1: (idx2arxiv[i + 1] or papers[i].get("paperId")) for i in range(len(papers))}
+    pool_ids = {a for a in idx2arxiv.values() if a}
+
+    net = not args.no_s2
+    key = os.environ.get("S2_API_KEY") or None
+    cache_path = gt_dir / "refs_cache.json"
+    cache = json.loads(cache_path.read_text()) if cache_path.exists() else {}
+    meta_path = gt_dir / "paper_meta_cache.json"
+    meta = json.loads(meta_path.read_text()) if meta_path.exists() else {}
 
     md = pathlib.Path(args.report).read_text(errors="replace")
     out = {"qid": args.qid, "report": args.report}
@@ -184,27 +288,110 @@ def main():
         "graph_not_in_appendix": sorted(graph_nums - appendix_nums),
     }
 
-    # --- anchor recall (report level) ---
+    # --- appendix entries: pool-slot relabels + pool-external existence checks ---
+    app_entries = {}
+    for m in re.finditer(r"^\*\*\((\d+)\)\s*\[([^\]]*)\]\(([^)]*)\)", md, re.M):
+        n = int(m.group(1))
+        url = m.group(3)
+        am = re.search(r"arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5})", url)
+        app_entries[n] = {"title": m.group(2).strip(), "url": url,
+                          "arxiv": am.group(1) if am else None}
+
+    relabeled = []
+    externals = []
+    ext_ref = {}    # appendix index -> resolved citation-lookup id
+    ext_title = {}  # appendix index -> report title (for title-fallback in citation check)
+    for n, ent in sorted(app_entries.items()):
+        if n in idx2arxiv:
+            pt = idx2title.get(n)
+            if pt and ent["title"] and len(norm_title(ent["title"])) >= 16 \
+                    and not titles_match(pt, ent["title"]):
+                relabeled.append({"n": n, "pool_title": pt, "report_title": ent["title"]})
+            continue
+        # pool-external paper: verify it exists at all, and pin an id for edge checks
+        ext_title[n] = ent["title"]
+        verdict, resolved = "unverifiable(no-id-no-title)", None
+        loose = len(norm_title(ent["title"])) < 16  # too short to title-compare safely
+        if ent["arxiv"]:
+            rec = s2_paper(ent["arxiv"], meta, meta_path, key, net)
+            if rec in ("NO_NET", "FETCH_FAILED"):
+                verdict = f"unverifiable({rec})"
+            elif rec:
+                ok = loose or not ent["title"] or titles_match(rec.get("title"), ent["title"])
+                verdict, resolved = ("exists-s2" if ok else "id-title-mismatch"), ent["arxiv"]
+            else:  # S2 has no record for the id -> raw arXiv API
+                at = arxiv_api_title(ent["arxiv"], meta, meta_path, net)
+                if at in ("NO_NET", "FETCH_FAILED"):
+                    verdict = f"unverifiable({at})"
+                elif at:
+                    ok = loose or not ent["title"] or titles_match(at, ent["title"])
+                    verdict, resolved = ("exists-arxiv" if ok else "id-title-mismatch"), ent["arxiv"]
+                else:
+                    verdict = "not-found"
+        elif ent["title"]:
+            rec = s2_title_search(ent["title"], meta, meta_path, key, net)
+            if rec in ("NO_NET", "FETCH_FAILED"):
+                verdict = f"unverifiable({rec})"
+            elif rec:
+                verdict, resolved = "exists-s2", (rec.get("arxiv") or rec.get("paperId"))
+            else:
+                verdict = "not-found"
+        if resolved:
+            ext_ref[n] = resolved
+        externals.append({"n": n, "title": ent["title"], "arxiv": ent["arxiv"],
+                          "exists": verdict})
+    out["external_papers"] = {
+        "n": len(externals),
+        "exists": sum(1 for e in externals if e["exists"].startswith("exists")),
+        "not_found": sum(1 for e in externals if e["exists"] == "not-found"),
+        "id_title_mismatch": sum(1 for e in externals if e["exists"] == "id-title-mismatch"),
+        "unverifiable": sum(1 for e in externals if e["exists"].startswith("unverifiable")),
+        "entries": externals,
+    }
+    out["relabeled_pool_slots"] = relabeled
+
+    # --- anchor recall (report level, with frozen-pool ceiling) ---
     present_ids = {idx2arxiv[i] for i in appendix_nums if idx2arxiv.get(i)}
-    present_titles = [norm_title(idx2title[i]) for i in appendix_nums if i in idx2title]
     anchors_hit, anchors_miss = [], []
     titles_gt = json.loads((gt_dir / "id_titles_s2.json").read_text())
     titles_gt.setdefault("2202.00512", "Progressive Distillation for Fast Sampling of Diffusion Models")
+
+    def anchor_in_pool(a):
+        if a["arxiv"] in pool_ids:
+            return True
+        t = titles_gt.get(a["arxiv"], "")
+        return bool(t) and any(titles_match(t, idx2title[i]) for i in idx2title)
+
+    pool_anchors = [a["arxiv"] for a in gt["anchors"] if anchor_in_pool(a)]
     for a in gt["anchors"]:
         gt_title = titles_gt.get(a["arxiv"], "")
         hit = a["arxiv"] in present_ids or any(
             titles_match(gt_title, idx2title[i]) for i in appendix_nums if i in idx2title)
         (anchors_hit if hit else anchors_miss).append(a["arxiv"])
-    out["anchor_recall"] = {"hit": anchors_hit, "miss": anchors_miss,
-                            "ratio": round(len(anchors_hit) / len(gt["anchors"]), 3)}
+    out["anchor_recall"] = {
+        "hit": anchors_hit, "miss": anchors_miss,
+        "ratio": round(len(anchors_hit) / len(gt["anchors"]), 3),
+        "ceiling": len(pool_anchors), "pool_present": pool_anchors,
+        "note": "ceiling = anchors present in the frozen input pool; misses beyond it belong to the retrieval layer, not the SUT",
+    }
 
     # --- edges ---
-    raw_edges = re.findall(r"_P(\d+)\s*(-->|-\.->)\s*\|Gap([^|]*)\|\s*\w+_P(\d+)", md)
+    # src id may carry an inline node label — `ODE_P2("(2) DPM-Solver (2022)") -->|Gap...|` —
+    # which is valid mermaid and model-idiom dependent; without this tolerance the
+    # extraction silently undercounts edges for models that declare labels inline.
+    raw_edges = re.findall(
+        r"_P(\d+)\s*(?:\(\"[^\"]*\"\)|\[\"[^\"]*\"\])?\s*(-->|-\.->)\s*\|Gap([^|]*)\|\s*\w+_P(\d+)",
+        md)
+
+    def arxiv_for(n):
+        r = idx2ref.get(n) or ext_ref.get(n)
+        return r if (r and ARXIV_RE.match(str(r))) else None
+
     edges = []
     for src_n, arrow, gap, dst_n in raw_edges:
         s, d = int(src_n), int(dst_n)
         e = {"src_n": s, "dst_n": d,
-             "src_arxiv": idx2arxiv.get(s), "dst_arxiv": idx2arxiv.get(d),
+             "src_arxiv": arxiv_for(s), "dst_arxiv": arxiv_for(d),
              "gap": re.sub(r"^\s*(?:#40;inferred#41;|\(inferred\))?\s*:?\s*", "", gap).strip()[:400],
              "inferred": arrow == "-.->" or "inferred" in gap.lower()}
         # chronology: arXiv YYMM if both new-style, else fixture year
@@ -216,36 +403,40 @@ def main():
             e["chrono_ok"] = (dy >= sy) if (sy and dy) else None
         edges.append(e)
 
-    # --- citation consistency (S2-ID -> title -> unverifiable) ---
-    cache_path = gt_dir / "refs_cache.json"
-    cache = json.loads(cache_path.read_text()) if cache_path.exists() else {}
-    key = None if args.no_s2 else os.environ.get("S2_API_KEY")
+    # --- citation consistency (cache -> live S2 by id/paperId -> title -> unverifiable) ---
     for e in edges:
-        sa, da = e["src_arxiv"], e["dst_arxiv"]
-        if not (sa and da):
+        sref = idx2ref.get(e["src_n"]) or ext_ref.get(e["src_n"])
+        dref = idx2ref.get(e["dst_n"]) or ext_ref.get(e["dst_n"])
+        if not (sref and dref):
             e["cited"] = "unverifiable(no-id)"
             continue
-        refs = s2_refs(da, cache, cache_path, key)
-        if refs in (None, "FETCH_FAILED", "NO_S2"):
-            e["cited"] = f"unverifiable({refs})"
+        refs = s2_refs(dref, cache, cache_path, key, net)
+        if refs is None or refs in ("NO_NET", "FETCH_FAILED"):
+            e["cited"] = f"unverifiable({'no-s2-record' if refs is None else refs})"
             continue
         ids = {r[0] for r in refs if r[0]}
-        if sa in ids:
+        if e["src_arxiv"] and e["src_arxiv"] in ids:
             e["cited"] = "verified"
-        else:
-            tn = norm_title(idx2title.get(e["src_n"], ""))
-            hit = tn and any(len(norm_title(r[1])) > 15 and
-                             (tn in norm_title(r[1]) or norm_title(r[1]) in tn)
-                             for r in refs if r[1])
-            e["cited"] = "verified-by-title" if hit else "not-found"
+            continue
+        stitle = idx2title.get(e["src_n"]) or ext_title.get(e["src_n"]) or ""
+        tn = norm_title(stitle)
+        hit = tn and any(len(norm_title(r[1])) > 15 and
+                         (tn in norm_title(r[1]) or norm_title(r[1]) in tn)
+                         for r in refs if r[1])
+        e["cited"] = "verified-by-title" if hit else "not-found"
 
-    # --- GT edge recall ---
+    # --- GT edge recall (with frozen-pool ceiling) ---
     report_pairs = {(e["src_arxiv"], e["dst_arxiv"]) for e in edges
                     if e["src_arxiv"] and e["dst_arxiv"]}
     gt_hit = [f"{s}->{d}" for s, d in gt["edges"] if (s, d) in report_pairs]
-    out["gt_edge_recall"] = {"hit": gt_hit,
-                              "ratio": round(len(gt_hit) / len(gt["edges"]), 3),
-                              "total_gt": len(gt["edges"])}
+    reachable = [f"{s}->{d}" for s, d in gt["edges"] if s in pool_ids and d in pool_ids]
+    out["gt_edge_recall"] = {
+        "hit": gt_hit,
+        "ratio": round(len(gt_hit) / len(gt["edges"]), 3),
+        "total_gt": len(gt["edges"]),
+        "ceiling": len(reachable), "reachable": reachable,
+        "note": "ceiling = GT edges with BOTH endpoints in the frozen pool; 0 means this column cannot move on this case",
+    }
 
     # --- fabrication pressure ---
     anchor_ids = {a["arxiv"] for a in gt["anchors"]}

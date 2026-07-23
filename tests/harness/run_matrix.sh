@@ -17,6 +17,25 @@ case "$SKILL_NAME" in
   *) echo "unknown SKILL_NAME: $SKILL_NAME" >&2; exit 1 ;;
 esac
 
+# Checkers need tests/.env too (S2_API_KEY for citation verification) — run_case.sh
+# sources it only inside its own process, and the SUT-facing dummy key it exports
+# never leaks back here, so sealing is unaffected.
+REPO="$(cd "$HARNESS/../.." && pwd)"
+if [ -f "$REPO/tests/.env" ]; then
+  set -a; source "$REPO/tests/.env"; set +a
+fi
+
+# Skill arm must be told to use the mounted skill: headless SUTs don't adopt
+# unsolicited skills (graph pilot 2026-07-20: zero spontaneous Skill calls).
+# Only fills the default when the var is UNSET — export PROMPT_SUFFIX_SKILL=""
+# is an explicit opt-out back to spontaneous-adoption mode.
+if [ "$SKILL_NAME" = "paper-graph" ] && [ -z "${PROMPT_SUFFIX_SKILL+x}" ]; then
+  # $'...' (not heredoc-in-$()): macOS bash 3.2 cannot parse heredocs inside
+  # command substitution.
+  PROMPT_SUFFIX_SKILL=$'\n\nIMPORTANT: Produce the report by invoking the `paper-graph` skill with the Skill tool and following its runbook. Retrieval is already done: `input/parsed_query.json`, `input/seed.json`, and `input/papers.json` are the outputs of its query-parse/search steps \xe2\x80\x94 start from the classify step and do not re-fetch or search for papers. Where the skill\'s output conventions and the contract above disagree, the contract above wins.'
+  export PROMPT_SUFFIX_SKILL
+fi
+
 if [ $# -gt 0 ]; then
   CASES="$*"
 else

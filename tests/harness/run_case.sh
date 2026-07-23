@@ -46,7 +46,19 @@ fi
 cd "$WS"
 START=$(date +%s)
 set +e
-claude -p "$(cat "$CASE_DIR/prompt.txt")" \
+# PROMPT_SUFFIX (env, default empty) is appended to the case prompt in BOTH arms —
+# used by the k3-vs-glm model-pairwise experiment to pin skill invocation
+# identically for both models.
+# PROMPT_SUFFIX_SKILL (env, default empty) is appended in the SKILL arm only —
+# pins invocation of the mounted skill (headless SUTs don't adopt unsolicited
+# skills: graph pilot 2026-07-20 had zero spontaneous Skill calls).
+PROMPT="$(cat "$CASE_DIR/prompt.txt")${PROMPT_SUFFIX:-}"
+SKILL_PINNED=false
+if [ "$ARM" = "skill" ] && [ -n "${PROMPT_SUFFIX_SKILL:-}" ]; then
+  PROMPT="${PROMPT}${PROMPT_SUFFIX_SKILL}"
+  SKILL_PINNED=true
+fi
+claude -p "$PROMPT" \
   --model "$MODEL" \
   --allowedTools "$TOOLS" \
   --max-turns "$MAXTURNS" \
@@ -56,14 +68,40 @@ CODE=$?
 set -e
 END=$(date +%s)
 
-SKILL_INVOKED=false
-if grep -q "\"$SKILL_NAME\"" "$RUN_DIR/transcript.jsonl" 2>/dev/null; then
-  SKILL_INVOKED=true
-fi
+# skill_invoked = an actual Skill tool_use naming $SKILL_NAME in the transcript.
+# (The old `grep "\"$SKILL_NAME\""` matched the init event's skills listing, which
+# made the flag vacuously true whenever the skill was merely mounted.)
+SKILL_INVOKED=$(python3 - "$RUN_DIR/transcript.jsonl" "$SKILL_NAME" <<'PY'
+import json, sys
+path, name = sys.argv[1], sys.argv[2]
+hit = False
+try:
+    for line in open(path):
+        if '"Skill"' not in line and "<command-name>" not in line:
+            continue
+        try:
+            j = json.loads(line)
+        except Exception:
+            continue
+        for c in ((j.get("message") or {}).get("content") or []):
+            if not isinstance(c, dict):
+                continue
+            if c.get("type") == "tool_use" and c.get("name") == "Skill" \
+                    and name in json.dumps(c.get("input") or {}):
+                hit = True
+            # skill executed via slash-command path leaves a command-name block
+            if c.get("type") == "text" and f"<command-name>{name}" in (c.get("text") or ""):
+                hit = True
+except FileNotFoundError:
+    pass
+print("true" if hit else "false")
+PY
+)
 
 cat > "$RUN_DIR/meta.json" <<EOF
 {"case": "$(basename "$CASE_DIR")", "arm": "$ARM", "model": "$MODEL",
- "exit_code": $CODE, "seconds": $((END - START)), "skill_invoked": $SKILL_INVOKED}
+ "exit_code": $CODE, "seconds": $((END - START)), "skill_invoked": $SKILL_INVOKED,
+ "skill_pinned": $SKILL_PINNED}
 EOF
 echo "run done: exit=$CODE t=$((END - START))s skill_invoked=$SKILL_INVOKED -> $RUN_DIR"
 exit $CODE
