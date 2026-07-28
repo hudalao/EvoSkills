@@ -6,11 +6,27 @@ LLM-judge tooling in `tests/harness/` (see `judge_tools/` on `tests-handover`):
 same pairwise idea, but single-pass human judging and a persistent
 cross-version record instead of per-run printouts.
 
+中文操作手册（实习生向，含逐步命令与评审纪律）：[README.zh-CN.md](README.zh-CN.md).
+
 ## Flow
 
 1. **Generate runs** for both arms with the usual harness: one runs dir with
    `{case}-{tag}` subdirs (e.g. `q1-efficient-attention-base` /
    `...-skill`), one generation per arm per case, SUT model pinned.
+
+   `run_matrix.sh` always tags arms `base`/`skill`, so a version-vs-version
+   pair (two runs dirs, both tagged `-skill`) needs a symlink merge dir first:
+
+   ```
+   mkdir -p ../harness/runs/graph-v010-vs-v011
+   for d in ../harness/runs/<v010-runs>/*-skill; do
+     c=$(basename "$d" -skill)
+     ln -s "$(cd "$d" && pwd)" "../harness/runs/graph-v010-vs-v011/$c-v010"
+   done    # same loop again for the v011 runs dir -> $c-v011
+   ```
+
+   then blind with `--baseline-tag v010 --baseline-ref v0.1.0
+   --candidate-tag v011 --candidate-ref v0.1.1`.
 
 2. **Blind** — build a judge workspace (positions balanced + deterministic,
    mapping sealed):
@@ -24,9 +40,18 @@ cross-version record instead of per-run printouts.
      --sut claude-sonnet-5 --out judge_ws/graph-s5-base-vs-v010
    ```
 
+   Artifact / judge-context paths per skill (`--extra` is repeatable):
+
+   | skill | `--artifact` | `--extra` |
+   |---|---|---|
+   | paper-graph | `ws/output/report.md` | `ws/input/query.txt` |
+   | paper-rebuttal | `ws/output/rebuttal.md` | `ws/input/paper.md`, `ws/input/reviews.json` |
+   | paper-review | `ws/output/self_review.md` | `ws/input/main_flat.tex` |
+
 3. **Judge** — for each case read `query.txt` + `report_A.md` / `report_B.md`,
    fill `verdicts.tsv` (winner `A|B|tie`, margin `clear|slight`, one-line
-   reason). Do **not** open `.mapping.json`, the runs dir, or old tally
+   reason). Keep real tabs — rows whose tabs an editor silently converted to
+   spaces fail ingest validation. Do **not** open `.mapping.json`, the runs dir, or old tally
    reports until done.
 
 4. **Ingest** — validates completeness, unseals, resolves, appends to
