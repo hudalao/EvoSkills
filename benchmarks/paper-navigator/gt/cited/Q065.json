@@ -1,0 +1,177 @@
+[
+ {
+  "index": 1,
+  "title": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+  "url": "https://doi.org/10.1073/pnas.2422633122"
+ },
+ {
+  "index": 2,
+  "title": "AI tutoring outperforms in-class active learning: an RCT introducing a novel research-based design in an authentic educational setting",
+  "url": "https://doi.org/10.1038/s41598-025-97652-6"
+ },
+ {
+  "index": 3,
+  "title": "Tutor CoPilot: A Human-AI Approach for Scaling Real-Time Expertise",
+  "url": "https://arxiv.org/abs/2410.03017"
+ },
+ {
+  "index": 4,
+  "title": "AI tutoring can safely and effectively support students: An exploratory RCT in UK classrooms",
+  "url": "https://arxiv.org/abs/2512.23633"
+ },
+ {
+  "index": 5,
+  "title": "The GPT Surprise: Offering Large Language Model Chat in a Massive Coding Class Reduced Engagement But May Increase Adopters' Exam Performances",
+  "url": "https://arxiv.org/abs/2407.09975"
+ },
+ {
+  "index": 6,
+  "title": "Beware of Metacognitive Laziness: Effects of Generative Artificial Intelligence on Learning Motivation, Processes, and Performance",
+  "url": "https://doi.org/10.1111/bjet.13544"
+ },
+ {
+  "index": 7,
+  "title": "The effects of over-reliance on AI dialogue systems on students' cognitive abilities: a systematic review",
+  "url": "https://doi.org/10.1186/s40561-024-00316-7"
+ },
+ {
+  "index": 8,
+  "title": "Problems With Large Language Models for Learner Modelling: Why LLMs Alone Fall Short for Responsible Tutoring in K-12 Education",
+  "url": "https://arxiv.org/abs/2512.23036"
+ },
+ {
+  "index": 9,
+  "title": "Whose ChatGPT? Unveiling Real-World Educational Inequalities Introduced by Large Language Models",
+  "url": "https://arxiv.org/abs/2410.22282"
+ },
+ {
+  "index": 10,
+  "title": "Comparing the quality of human and ChatGPT feedback of students' writing",
+  "url": "https://doi.org/10.1016/j.learninstruc.2024.101894"
+ },
+ {
+  "index": 11,
+  "title": "On Assessing the Faithfulness of LLM-generated Feedback on Student Assignments",
+  "url": "https://educationaldatamining.org/edm2024/proceedings/2024.EDM-short-papers.49/"
+ },
+ {
+  "index": 12,
+  "title": "When LLMs Hallucinate: Examining the Effects of Erroneous Feedback in Math Tutoring Systems",
+  "url": "https://doi.org/10.1145/3698205.3729555"
+ },
+ {
+  "index": 13,
+  "title": "Human-AI Collaborative Essay Scoring: A Dual-Process Framework with LLMs",
+  "url": "https://arxiv.org/abs/2401.06431"
+ },
+ {
+  "index": 14,
+  "title": "Improving Generative AI Student Feedback: Direct Preference Optimization with Teachers in the Loop",
+  "url": "https://educationaldatamining.org/EDM2025/proceedings/2025.EDM.short-papers.166/index.html"
+ },
+ {
+  "index": 15,
+  "title": "Students' engagement with ChatGPT feedback: implications for student feedback literacy in the context of generative artificial intelligence",
+  "url": "https://doi.org/10.1080/02602938.2025.2471821"
+ },
+ {
+  "index": 16,
+  "title": "When technological momentum overshadows pedagogical alignment: a systematic review of AI-generated formative feedback in higher education",
+  "url": "https://doi.org/10.1080/02602938.2026.2674230"
+ },
+ {
+  "index": 17,
+  "title": "CodeAid: Evaluating a Classroom Deployment of an LLM-based Programming Assistant that Balances Student and Educator Needs",
+  "url": "https://arxiv.org/abs/2401.11314"
+ },
+ {
+  "index": 18,
+  "title": "Oversight in Action: Experiences with Instructor-Moderated LLM Responses in an Online Discussion Forum",
+  "url": "https://arxiv.org/abs/2412.09048"
+ },
+ {
+  "index": 19,
+  "title": "Types of teacher-AI collaboration in K-12 classroom instruction: Chinese teachers' perspective",
+  "url": "https://doi.org/10.1007/s10639-024-12523-3"
+ },
+ {
+  "index": 20,
+  "title": "Shiksha Copilot: Teacher-AI Collaboration for Curating and Customizing Lesson Plans in Low-Resource Schools",
+  "url": "https://arxiv.org/abs/2507.00456"
+ },
+ {
+  "index": 21,
+  "title": "AI-assisted MCQ creation increases item-writing flaws through automation bias: evaluation of a workflow of multiple AI agents with teachers",
+  "url": "https://doi.org/10.3389/fcomp.2026.1831250"
+ },
+ {
+  "index": 22,
+  "title": "Self-service Teacher-facing Learning Analytics Dashboard with Large Language Models",
+  "url": "https://doi.org/10.1145/3706468.3706491"
+ },
+ {
+  "index": 23,
+  "title": "What Explains Teachers' Trust in AI in Education Across Six Countries?",
+  "url": "https://doi.org/10.1007/s40593-024-00433-x"
+ },
+ {
+  "index": 24,
+  "title": "Responsible AI in Education: Understanding Teachers' Priorities and Contextual Challenges",
+  "url": "https://doi.org/10.1145/3715275.3732176"
+ },
+ {
+  "index": 25,
+  "title": "Transforming Assessment: The Impacts and Implications of Large Language Models and Generative AI",
+  "url": "https://doi.org/10.1111/emip.12602"
+ },
+ {
+  "index": 26,
+  "title": "Talk is cheap: why structural assessment changes are needed for a time of GenAI",
+  "url": "https://doi.org/10.1080/02602938.2025.2503964"
+ },
+ {
+  "index": 27,
+  "title": "The impact of generative AI on academic integrity of authentic assessments within a higher education context",
+  "url": "https://doi.org/10.1111/bjet.13585"
+ },
+ {
+  "index": 28,
+  "title": "Detecting ChatGPT-generated essays in a large-scale writing assessment: Is there a bias against non-native English speakers?",
+  "url": "https://doi.org/10.1016/j.compedu.2024.105070"
+ },
+ {
+  "index": 29,
+  "title": "The two-lane road to hell is paved with good intentions: why an all-or-none approach to generative AI, integrity, and assessment is insupportable",
+  "url": "https://doi.org/10.1080/07294360.2025.2476516"
+ },
+ {
+  "index": 30,
+  "title": "Developing evaluative judgement for a time of generative artificial intelligence",
+  "url": "https://doi.org/10.1080/02602938.2024.2335321"
+ },
+ {
+  "index": 31,
+  "title": "Socratic Mind: Scalable Oral Assessment Powered By AI",
+  "url": "https://doi.org/10.1145/3657604.3664661"
+ },
+ {
+  "index": 32,
+  "title": "The life cycle of large language models in education: A framework for understanding sources of bias",
+  "url": "https://doi.org/10.1111/bjet.13505"
+ },
+ {
+  "index": 33,
+  "title": "Generative AI and Learning Analytics: Pushing Boundaries, Preserving Principles",
+  "url": "https://doi.org/10.18608/jla.2025.8961"
+ },
+ {
+  "index": 34,
+  "title": "From Guidelines to Governance: A Study of AI Policies in Education",
+  "url": "https://arxiv.org/abs/2403.15601"
+ },
+ {
+  "index": 35,
+  "title": "Potential risks of generative artificial intelligence integration into K-12 education: A scoping review",
+  "url": "https://doi.org/10.1016/j.caeai.2026.100561"
+ }
+]

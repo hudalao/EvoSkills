@@ -1,0 +1,182 @@
+[
+ {
+  "index": 1,
+  "title": "Application Of A Neural Network To The Problem Of Mineral Identification From Well Logs",
+  "url": "https://www.semanticscholar.org/paper/2bfb28ee75bd61ac524a738b8dda85c5bc1f8168"
+ },
+ {
+  "index": 2,
+  "title": "Determination of Lithology from Well Logs Using a Neural Network",
+  "url": "https://doi.org/10.1306/BDFF88BC-1718-11D7-8645000102C1865D"
+ },
+ {
+  "index": 3,
+  "title": "Design and Development of An Artificial Neural Network for Estimation of Formation Permeability",
+  "url": "https://doi.org/10.2118/28237-PA"
+ },
+ {
+  "index": 4,
+  "title": "Petroleum reservoir characterization with the aid of artificial neural networks",
+  "url": "https://doi.org/10.1016/S0920-4105(96)00028-9"
+ },
+ {
+  "index": 5,
+  "title": "Artificial neural network modelling as an aid to source rock characterization",
+  "url": "https://doi.org/10.1016/0264-8172(95)00062-3"
+ },
+ {
+  "index": 6,
+  "title": "Porosity, Permeability and TOC Prediction from Well Logs Using a Neural Network Approach",
+  "url": "https://doi.org/10.3997/2214-4609.201407849"
+ },
+ {
+  "index": 7,
+  "title": "Practical application of fuzzy logic and neural networks to fractured reservoir characterization",
+  "url": "https://doi.org/10.1016/S0098-3004(00)00031-5"
+ },
+ {
+  "index": 8,
+  "title": "ABSTRACT: Determining Petrophysical Properties and Gas Content in the Barnett Shale Using a Log-based Neural Network Solution",
+  "url": "https://www.semanticscholar.org/paper/697d0b345dab1e9ec1761fabe15fc993234b67aa"
+ },
+ {
+  "index": 9,
+  "title": "Developing Synthetic Well Logs for the Upper Devonian Units in Pennsylvania",
+  "url": "https://doi.org/10.2118/98013-MS"
+ },
+ {
+  "index": 10,
+  "title": "Estimating Major and Minor Natural Fracture Pattern in Gas Shales Using Production Data",
+  "url": "https://doi.org/10.2118/104554-MS"
+ },
+ {
+  "index": 11,
+  "title": "Shale Gas Rock Properties Prediction using Artificial Neural Network Technique and Multi Regression Analysis, an example from a North American Shale Gas Reservoir",
+  "url": "https://doi.org/10.1071/ASEG2007ab120"
+ },
+ {
+  "index": 12,
+  "title": "Intelligent Top-Down Reservoir Modeling of New Albany Shale",
+  "url": "https://doi.org/10.2118/125859-MS"
+ },
+ {
+  "index": 13,
+  "title": "Fast Track Reservoir Modeling of Shale Formations in the Appalachian Basin. Application to Lower Huron Shale in Eastern Kentucky",
+  "url": "https://doi.org/10.2118/139101-MS"
+ },
+ {
+  "index": 14,
+  "title": "Seismic reservoir characterization in resource shale plays: Stress analysis and sweet spot discrimination",
+  "url": "https://doi.org/10.1190/1.3609090"
+ },
+ {
+  "index": 15,
+  "title": "Practical Data Mining: Lessons-Learned From the Barnett Shale of North Texas",
+  "url": "https://doi.org/10.2118/140524-MS"
+ },
+ {
+  "index": 16,
+  "title": "Methodology of organic-rich shale lithofacies identification and prediction: A case study from Marcellus Shale in the Appalachian basin",
+  "url": "https://doi.org/10.1016/j.cageo.2012.07.011"
+ },
+ {
+  "index": 17,
+  "title": "Marcellus Shale Lithofacies Prediction by Multiclass Neural Network Classification in the Appalachian Basin",
+  "url": "https://doi.org/10.1007/s11004-012-9421-6"
+ },
+ {
+  "index": 18,
+  "title": "Organic-rich Marcellus Shale lithofacies modeling and distribution pattern analysis in the Appalachian Basin",
+  "url": "https://doi.org/10.1306/05141312135"
+ },
+ {
+  "index": 19,
+  "title": "A dynamic adaptive radial basis function approach for total organic carbon content prediction in organic shale",
+  "url": "https://doi.org/10.1190/GEO2013-0154.1"
+ },
+ {
+  "index": 20,
+  "title": "Distance Metric Based Multi-Attribute Seismic Facies Classification to Identify Sweet Spots within the Bakken",
+  "url": "https://doi.org/10.1190/URTEC2013-034"
+ },
+ {
+  "index": 21,
+  "title": "Identifying organic-rich Marcellus Shale lithofacies by support vector machine classifier in the Appalachian basin",
+  "url": "https://doi.org/10.1016/j.cageo.2013.12.002"
+ },
+ {
+  "index": 22,
+  "title": "Lithofacies classification in Barnett Shale using proximal support vector machines",
+  "url": "https://doi.org/10.1190/SEGAM2014-1210.1"
+ },
+ {
+  "index": 23,
+  "title": "Geologic pattern recognition from seismic attributes: Principal component analysis and self-organizing maps",
+  "url": "https://doi.org/10.1190/INT-2015-0037.1"
+ },
+ {
+  "index": 24,
+  "title": "Comparison of supervised and unsupervised approaches for mudstone lithofacies classification: Case studies from the Bakken and Mahantango-Marcellus Shale, USA",
+  "url": "https://doi.org/10.1016/j.jngse.2016.04.055"
+ },
+ {
+  "index": 25,
+  "title": "Application of extreme learning machine and neural networks in total organic carbon content prediction in organic shale with wire line logs",
+  "url": "https://doi.org/10.1016/j.jngse.2016.05.060"
+ },
+ {
+  "index": 26,
+  "title": "Brittleness index prediction in shale gas reservoirs based on efficient network models",
+  "url": "https://doi.org/10.1016/j.jngse.2016.09.009"
+ },
+ {
+  "index": 27,
+  "title": "Data mining and machine learning for identifying sweet spots in shale reservoirs",
+  "url": "https://doi.org/10.1016/j.eswa.2017.07.015"
+ },
+ {
+  "index": 28,
+  "title": "Applying of the Artificial Neural Networks (ANN) to Identify and Characterize Sweet Spots in Shale Gas Formations",
+  "url": "https://doi.org/10.1051/e3sconf/20183503008"
+ },
+ {
+  "index": 29,
+  "title": "Intelligent prediction and integral analysis of shale oil and gas sweet spots",
+  "url": "https://doi.org/10.1007/s12182-018-0261-y"
+ },
+ {
+  "index": 30,
+  "title": "A New Ensemble Machine-Learning Framework for Searching Sweet Spots in Shale Reservoirs",
+  "url": "https://doi.org/10.2118/204224-PA"
+ },
+ {
+  "index": 31,
+  "title": "Shale gas geological \"sweet spot\" parameter prediction method and its application based on convolutional neural networks",
+  "url": "https://doi.org/10.1038/s41598-022-19711-6"
+ },
+ {
+  "index": 32,
+  "title": "Machine Learning techniques to Model Geomechanics and Petrophysical Properties of Shale Reservoirs – A Systematic Literature Review",
+  "url": "https://doi.org/10.1016/j.petlm.2020.12.001"
+ },
+ {
+  "index": 33,
+  "title": "Black shale lithofacies prediction and distribution pattern analysis of Middle Devonian Marcellus Shale in the Appalachian Basin, northeastern U.S.A.",
+  "url": "https://researchrepository.wvu.edu/etd/9975/"
+ },
+ {
+  "index": 34,
+  "title": "The application of improved NeuroEvolution of Augmenting Topologies neural network in Marcellus Shale lithofacies prediction",
+  "url": "https://doi.org/10.1016/j.cageo.2013.01.022"
+ },
+ {
+  "index": 35,
+  "title": "A Data-Analytics Tutorial: Building Predictive Models for Oil Production in an Unconventional Shale Reservoir",
+  "url": "https://doi.org/10.2118/189969-PA"
+ },
+ {
+  "index": 36,
+  "title": "Geochemical property modelling of a potential shale reservoir in the Canning Basin (Western Australia), using Artificial Neural Networks and geostatistical tools",
+  "url": "https://doi.org/10.1016/j.cageo.2018.08.004"
+ }
+]

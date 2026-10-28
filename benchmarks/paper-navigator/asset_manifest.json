@@ -1,0 +1,773 @@
+{
+  "schema_version": 1,
+  "dataset": "paper-navigator-70",
+  "review_status": "candidate_pending_human_review",
+  "source_snapshot": {
+    "upstream_repository": "https://github.com/hudalao/skill-opt",
+    "upstream_revision": "cea3d3a33f3575ba61c0768048c4579d2eed12cc",
+    "export_date": "2026-09-11",
+    "description": "从既有的70题评测基准导出快照导入；历史材料保持源文件字节。"
+  },
+  "known_verification_title_corrections": [
+    {
+      "qid": "Q021",
+      "index": 32,
+      "url": "https://doi.org/10.1016/j.petlm.2020.12.001",
+      "historical_title": "Application of ML & AI to model petrophysical and geomechanical properties of shale reservoirs – A systematic literature review",
+      "current_title": "Machine Learning techniques to Model Geomechanics and Petrophysical Properties of Shale Reservoirs – A Systematic Literature Review",
+      "reason": "历史核验报告记录的是标题订正前的快照；答案、结构化引用和文献表已使用官方标题，DOI相同。"
+    }
+  ],
+  "files": [
+    {
+      "path": "question_queries_70_same_discipline.csv",
+      "bytes": 31748,
+      "sha256": "8bfdf453a68a7ba53e3249bb133dd09a0cad3e87540eddf6d5b314b6573bf2d1"
+    },
+    {
+      "path": "cases.jsonl",
+      "bytes": 57708,
+      "sha256": "affda7408c0786b7e26929ae029c79182a57f521f0c6bfec8fc4e6aef4205423"
+    },
+    {
+      "path": "gt/answers/Q001.md",
+      "bytes": 27720,
+      "sha256": "96ba440b5ca473183661b53f7d766ecd56fca1cc742e7f0a8f35b9133147acb7"
+    },
+    {
+      "path": "gt/answers/Q002.md",
+      "bytes": 27269,
+      "sha256": "51441d4521d9a21dc09318a084480f3421ec8d6496f2ff543bc82013a81379bb"
+    },
+    {
+      "path": "gt/answers/Q003.md",
+      "bytes": 28864,
+      "sha256": "0e28ddaa9460c2d7853f9001aa0a09a456b942f6b7d7485e3354ed3875580911"
+    },
+    {
+      "path": "gt/answers/Q004.md",
+      "bytes": 27655,
+      "sha256": "99714d69d55028d83446ef14ff8c492a64de100879e5e40f7eb84f913884f204"
+    },
+    {
+      "path": "gt/answers/Q005.md",
+      "bytes": 20749,
+      "sha256": "2f451cedfef1c38c8fd48f1fea95446f72083af198fbd87e607037ece9944441"
+    },
+    {
+      "path": "gt/answers/Q006.md",
+      "bytes": 25797,
+      "sha256": "ccca3ef79cd739c53c5acaf476fcf220e4f432b1ce6838867578fd685dd1e2cb"
+    },
+    {
+      "path": "gt/answers/Q007.md",
+      "bytes": 24087,
+      "sha256": "b7e9f94419aa710b7a38af4e6b90050d50f599ffcf0e73dfbafe5e9f4f6dc312"
+    },
+    {
+      "path": "gt/answers/Q008.md",
+      "bytes": 27773,
+      "sha256": "b4ddc57ef0219d4fe9047eb5d9faeac8a9a51e8d7ccf6b813e41a01d0ba747d6"
+    },
+    {
+      "path": "gt/answers/Q009.md",
+      "bytes": 24511,
+      "sha256": "1d54f777c6ee6fc1bdfeef4ca96ac5527f11baeec8a39e313b2fe6bb901aa07f"
+    },
+    {
+      "path": "gt/answers/Q010.md",
+      "bytes": 30845,
+      "sha256": "acbd25fa767ba0b6f86a684a635cabeecb658201de134259a48771dc90529bd5"
+    },
+    {
+      "path": "gt/answers/Q011.md",
+      "bytes": 16232,
+      "sha256": "6ccb8bf5c6e143f34e634fbdb95675229cc356bd9581f1d4a238b7dfc9e219e0"
+    },
+    {
+      "path": "gt/answers/Q012.md",
+      "bytes": 21218,
+      "sha256": "ac324b501b779006723568995ad699af17174c01a41666ac1c7dacaffc70cc08"
+    },
+    {
+      "path": "gt/answers/Q013.md",
+      "bytes": 19913,
+      "sha256": "71327643680f82b77999594f8af2e9a6d0a765d6cc1c9b22a74ab21b0e589e26"
+    },
+    {
+      "path": "gt/answers/Q014.md",
+      "bytes": 25399,
+      "sha256": "2f81d1d39244c6db1d91ff48380d7837de60405716d89f83f5c806bdb362c3c1"
+    },
+    {
+      "path": "gt/answers/Q015.md",
+      "bytes": 26291,
+      "sha256": "085c54532b17fd1c31da2b8143c456478d4f71ba7361ce042f0e108943841f7f"
+    },
+    {
+      "path": "gt/answers/Q016.md",
+      "bytes": 22891,
+      "sha256": "179fb60d3772bb7791540644189e8c2bc1530a5427f5c1bd6b2b938ba7bb4793"
+    },
+    {
+      "path": "gt/answers/Q017.md",
+      "bytes": 23229,
+      "sha256": "b2750dc1bdc2991fd29335ec330b4799a51f80159571242024b204678e5725d9"
+    },
+    {
+      "path": "gt/answers/Q018.md",
+      "bytes": 30323,
+      "sha256": "a2d28ebfb5be9f14baa06914bc7fc29f52ef819d35450fa0b1c01a8a6ba0f70a"
+    },
+    {
+      "path": "gt/answers/Q019.md",
+      "bytes": 17210,
+      "sha256": "1c191b905f4341fef34d40d915540ad33f0445b817ef7dd5d582f7dc811af350"
+    },
+    {
+      "path": "gt/answers/Q020.md",
+      "bytes": 31828,
+      "sha256": "bcb569e6ad63937e03f7c76b7dd3a3cb665f9ca7aac7f1e1837584b7e6b2c624"
+    },
+    {
+      "path": "gt/answers/Q021.md",
+      "bytes": 26513,
+      "sha256": "1e7d64fa87eb1f7f2355f28c0eeb8d8685c256a3dddd3ef2ee2df43f97eab5f1"
+    },
+    {
+      "path": "gt/answers/Q022.md",
+      "bytes": 21238,
+      "sha256": "63e00cc690a56f1bc3cd50130749384ea5c43d40d58679303b871f803c24b407"
+    },
+    {
+      "path": "gt/answers/Q023.md",
+      "bytes": 22782,
+      "sha256": "d105956bb44555497ec27314a9a734f53a2a7ca71ab36ea420f06e19c71c5c0b"
+    },
+    {
+      "path": "gt/answers/Q024.md",
+      "bytes": 24826,
+      "sha256": "bfd3b7ba788fd7fc9d2e60e2842645bdc533d2b30b54efd9fa164399d403ff3c"
+    },
+    {
+      "path": "gt/answers/Q025.md",
+      "bytes": 22441,
+      "sha256": "1b0ee24bd88b2b9f16111a6dbf1f152f657d6a9efae7e4d73397fa42000fd44d"
+    },
+    {
+      "path": "gt/answers/Q026.md",
+      "bytes": 28686,
+      "sha256": "8cd2e16438a6e702441e0bafe856a38de732bbaf86d215c2d14d18514d3cb942"
+    },
+    {
+      "path": "gt/answers/Q027.md",
+      "bytes": 23851,
+      "sha256": "8338e17bb9f02f6f21c27af976a44e44cd63534d7764a60b82f7fda6bcf82239"
+    },
+    {
+      "path": "gt/answers/Q028.md",
+      "bytes": 27728,
+      "sha256": "36617bdd672070eb3a9eff943fc9f312be7b42167c52d622fbd6b39842118fbb"
+    },
+    {
+      "path": "gt/answers/Q029.md",
+      "bytes": 26278,
+      "sha256": "d7b575346c70fd92e40d367cb010af6db13391a1d18e44495627454f5b3bd510"
+    },
+    {
+      "path": "gt/answers/Q030.md",
+      "bytes": 18700,
+      "sha256": "d0275bb5ec8fac2adb9f1dad463e6df910d2eaac53b8f307b101ef47c992e64f"
+    },
+    {
+      "path": "gt/answers/Q031.md",
+      "bytes": 28963,
+      "sha256": "1bf4a62476c7c1045cbbb2571a200b6ea4cc596ec55199e0995f6ee67e3d2649"
+    },
+    {
+      "path": "gt/answers/Q032.md",
+      "bytes": 22439,
+      "sha256": "34e7dca3c746aa71b35fac487d805046ee50ce444064ed7cfff29b7181b1f3c4"
+    },
+    {
+      "path": "gt/answers/Q033.md",
+      "bytes": 20146,
+      "sha256": "0a94833936302e9db3b0a3c3ec4b5b1e09c51a136116e3767c5f1177bb5ea441"
+    },
+    {
+      "path": "gt/answers/Q034.md",
+      "bytes": 22214,
+      "sha256": "ff9583694346532b33769383d111f0fe7d420d15dda7a4a957dca91fff8b05a8"
+    },
+    {
+      "path": "gt/answers/Q035.md",
+      "bytes": 21581,
+      "sha256": "f4c1c7204a72c6fd4e9b9b4d755a691b6c57640031fe6a2e90290b202eac6e96"
+    },
+    {
+      "path": "gt/answers/Q036.md",
+      "bytes": 21305,
+      "sha256": "bdb3f0e36acd1d2eec97bca7718f46775f3299e5cbee5b79f4231eb1bb727cb9"
+    },
+    {
+      "path": "gt/answers/Q037.md",
+      "bytes": 20458,
+      "sha256": "039f290f78d42b9ba838ad9004c22b13330fe724fc2f16f6645f020dc5531cb1"
+    },
+    {
+      "path": "gt/answers/Q038.md",
+      "bytes": 28608,
+      "sha256": "3182dfd5b971a8c33912a3e9444921b653a98fc7b89a7ec6a7216a210fa49ba9"
+    },
+    {
+      "path": "gt/answers/Q039.md",
+      "bytes": 23896,
+      "sha256": "aa77a757dd665cb52063e786ccf8b236d2d47bd285c31b51a17ac3b4df2a0d36"
+    },
+    {
+      "path": "gt/answers/Q040.md",
+      "bytes": 25629,
+      "sha256": "d89e0cd167aa82cce5a4b11ed64cb2c276ba6cfe6b933cd849f3922611dc23a4"
+    },
+    {
+      "path": "gt/answers/Q041.md",
+      "bytes": 26916,
+      "sha256": "9e709cdb4eff0b23aa4784463e47b2430127fc304cf0d18cc703bb158a961196"
+    },
+    {
+      "path": "gt/answers/Q042.md",
+      "bytes": 30553,
+      "sha256": "54c81e2810b1a52cc07ee48086d80d4b7be510f00ebd6e9299978c29473a7936"
+    },
+    {
+      "path": "gt/answers/Q043.md",
+      "bytes": 23485,
+      "sha256": "8d33f4201d1487b28d48ba6a7d37ad56992dd2b20637dc2447309093d97e48d0"
+    },
+    {
+      "path": "gt/answers/Q044.md",
+      "bytes": 23664,
+      "sha256": "6812c631d14be88e7f4e41dfea9a42c1f195b28cbe96ab4efc894742ccbc7b0b"
+    },
+    {
+      "path": "gt/answers/Q045.md",
+      "bytes": 20675,
+      "sha256": "d168b5fd340e55199337ec124ba8dbc62d9dd2e1c520870f3d6258e7233ef682"
+    },
+    {
+      "path": "gt/answers/Q046.md",
+      "bytes": 22387,
+      "sha256": "03481b8ef14549b4d787b0559e5e76584b75de4e3d85aa5b3f1768f46754a2fc"
+    },
+    {
+      "path": "gt/answers/Q047.md",
+      "bytes": 20371,
+      "sha256": "0d951ea464c64cfb219e71e8dc69e4220cd4465736ea6f87684ef793eaf5ab4e"
+    },
+    {
+      "path": "gt/answers/Q048.md",
+      "bytes": 25913,
+      "sha256": "527f8ec6d289ba465d409a063109d9fcd1149b80ff3bae48fbfdfab2a46c2330"
+    },
+    {
+      "path": "gt/answers/Q049.md",
+      "bytes": 21752,
+      "sha256": "ce9b7b9754b21daaed184071137d06ad219aa6a2f42deb876ec6543979554212"
+    },
+    {
+      "path": "gt/answers/Q050.md",
+      "bytes": 30689,
+      "sha256": "6c8b82e7801a93628c50273843d37e3e455cb578a5e19e437e45c8cc4afab4c9"
+    },
+    {
+      "path": "gt/answers/Q051.md",
+      "bytes": 24333,
+      "sha256": "60e8da1c400f0d106fba042c6c04849d65759a1f096890dfb091b93e2a739a2e"
+    },
+    {
+      "path": "gt/answers/Q052.md",
+      "bytes": 22583,
+      "sha256": "15516f4e3f691b3acddf414efc2598456212a61c26e0b0feef1d5f7650717632"
+    },
+    {
+      "path": "gt/answers/Q053.md",
+      "bytes": 20531,
+      "sha256": "32a09da15c719d658255863622490b2ddb79599187b0ca08d917f8116c4a4faa"
+    },
+    {
+      "path": "gt/answers/Q054.md",
+      "bytes": 25076,
+      "sha256": "fd47feea9b2606e6fe193d86697637b7ce98ec54baf5dcdcf187ae50bc215bed"
+    },
+    {
+      "path": "gt/answers/Q055.md",
+      "bytes": 23941,
+      "sha256": "ac44d6708e399affc468998cafa1331568996a87ed714658b6b4e242bd55dd7b"
+    },
+    {
+      "path": "gt/answers/Q056.md",
+      "bytes": 26837,
+      "sha256": "1338ba2bea829d28be0c746ecb3ae7904f85919e4981549786e1486da97b0aa0"
+    },
+    {
+      "path": "gt/answers/Q057.md",
+      "bytes": 20994,
+      "sha256": "23567fccbec81bdd48cb43a777c711a8c5d6f2d22d233d051d2d25fc83e2d5e5"
+    },
+    {
+      "path": "gt/answers/Q058.md",
+      "bytes": 21885,
+      "sha256": "d59c3d91daaa2b00b1846dcca5909886a575ca1f3d5038c9e40b67011bd859cd"
+    },
+    {
+      "path": "gt/answers/Q059.md",
+      "bytes": 21167,
+      "sha256": "4cdb0088984c0fd9787dfd0085ab87d7c3722a5bc26cdb598ebe509cb891e0e3"
+    },
+    {
+      "path": "gt/answers/Q060.md",
+      "bytes": 20324,
+      "sha256": "c8598cd6a3bc137f2d8e2fbc43d6c6d88968bc106aa85b2343ba0f68a0f582e6"
+    },
+    {
+      "path": "gt/answers/Q061.md",
+      "bytes": 19417,
+      "sha256": "d829273e5b4c52ec1b4eb8a759bb2a69b0718af52c909632cef104ae83e23860"
+    },
+    {
+      "path": "gt/answers/Q062.md",
+      "bytes": 22022,
+      "sha256": "0013e45fd3f2bbf40faad44a9fd347426366223eacc045005f86333994e9a400"
+    },
+    {
+      "path": "gt/answers/Q063.md",
+      "bytes": 20325,
+      "sha256": "3753567b63e1d8dc44e3008ba497e280254e2dd97ccece3d1c5d228e91329eae"
+    },
+    {
+      "path": "gt/answers/Q064.md",
+      "bytes": 23244,
+      "sha256": "8aed3425636943c0fb394e28d1526cee9dd825740a3589f20e1f63d1c8623a8b"
+    },
+    {
+      "path": "gt/answers/Q065.md",
+      "bytes": 26480,
+      "sha256": "6a0dd1e9115f06532920313715e1de164ab2115240ae2cbb606367aa7b63ecc1"
+    },
+    {
+      "path": "gt/answers/Q066.md",
+      "bytes": 22653,
+      "sha256": "8c45326dad5834d154b06340015e32432f0e06c9a00e3ef19e44b08088886d08"
+    },
+    {
+      "path": "gt/answers/Q067.md",
+      "bytes": 22903,
+      "sha256": "fd1b8e46a7ee7de5b5c3d49ccdeca9cf6a4ac30d8d69e2e6ff6514ececec26b0"
+    },
+    {
+      "path": "gt/answers/Q068.md",
+      "bytes": 17223,
+      "sha256": "3944288c27be4421648a037bbb6dabef024fc4d3507b061e353a910050db44e3"
+    },
+    {
+      "path": "gt/answers/Q069.md",
+      "bytes": 24675,
+      "sha256": "31bb66e575f92b9399d4c95f2d1a8d32047c503d6f9e0c672a04689d57c7a790"
+    },
+    {
+      "path": "gt/answers/Q070.md",
+      "bytes": 20912,
+      "sha256": "7be9f1615af5fb04e7126ad01f458e9514d35501fd2baec3b90d4227b204b5d7"
+    },
+    {
+      "path": "gt/cited/Q001.json",
+      "bytes": 6424,
+      "sha256": "904c956bdfa7c27506c8bb114ec3fda950f7a55e0a7d4ea1451acbe05329911d"
+    },
+    {
+      "path": "gt/cited/Q002.json",
+      "bytes": 5318,
+      "sha256": "23d0070c018be5129077387802f5d2e5b494129deb969ebc49c6fafbea801c6c"
+    },
+    {
+      "path": "gt/cited/Q003.json",
+      "bytes": 8038,
+      "sha256": "efd220e5cf925724c1e91ca418e810460eaad277873c833a0257a9a46fd7c9c6"
+    },
+    {
+      "path": "gt/cited/Q004.json",
+      "bytes": 5960,
+      "sha256": "5080c9b56f59f9f564a14e263523298c9e3324e1dcbff1c8d971321ec37c24fd"
+    },
+    {
+      "path": "gt/cited/Q005.json",
+      "bytes": 6684,
+      "sha256": "355625307280d3186b22c3fcdbab1354df0f59e6417965ea7654f5f85cbaf69a"
+    },
+    {
+      "path": "gt/cited/Q006.json",
+      "bytes": 4911,
+      "sha256": "fc476ccba554a46f67ad33a3225301e8e276f33c0f97f8c9d4dbeeefacb2d1a9"
+    },
+    {
+      "path": "gt/cited/Q007.json",
+      "bytes": 6227,
+      "sha256": "97ac3415f0787b48e81b8a202c4d5fe8ebbacaaf7f27e10f24f7bebe722abb5f"
+    },
+    {
+      "path": "gt/cited/Q008.json",
+      "bytes": 7801,
+      "sha256": "573ba4b475290f009a68eee45b2d96fe822108f4495175ceed91afaf017de855"
+    },
+    {
+      "path": "gt/cited/Q009.json",
+      "bytes": 9147,
+      "sha256": "60798c51e2b595e3378fe56cce27c7f8be4b15823f5111e807ef38a36c4efe74"
+    },
+    {
+      "path": "gt/cited/Q010.json",
+      "bytes": 12650,
+      "sha256": "35871bd3cee6e5290f0fd91445bd660ab762ecdf1687f2c91ee2b8cf109c7d37"
+    },
+    {
+      "path": "gt/cited/Q011.json",
+      "bytes": 3682,
+      "sha256": "27e3b12b9dec4668945277891981d6ac41f23d64664be66319a8dcda2a62bfdb"
+    },
+    {
+      "path": "gt/cited/Q012.json",
+      "bytes": 4495,
+      "sha256": "37acbe8ed3b3db44a04f58d9cf07f1c1f40d5456093e20d15263d9cc0ca205d8"
+    },
+    {
+      "path": "gt/cited/Q013.json",
+      "bytes": 6716,
+      "sha256": "44c364995c11353b97798e313ecf38a265947f12bdf48499700b148f30740ed3"
+    },
+    {
+      "path": "gt/cited/Q014.json",
+      "bytes": 6961,
+      "sha256": "15a977803a455a9a5207723113504a96ce9036ba3ccb1bb8400623eb78cde84b"
+    },
+    {
+      "path": "gt/cited/Q015.json",
+      "bytes": 7710,
+      "sha256": "f14a097108a9f57a579e978fc572269c791f73f1bfc777051be3f3105b8f1c3c"
+    },
+    {
+      "path": "gt/cited/Q016.json",
+      "bytes": 5968,
+      "sha256": "43f73c7483efa351908ba4dba6cb0ec85d525d1ffb0296e734485b360d15f0f3"
+    },
+    {
+      "path": "gt/cited/Q017.json",
+      "bytes": 5844,
+      "sha256": "634cad0203dd196dd524e025ee6c447fe47233bce841a9162bc2fb78ea0ed383"
+    },
+    {
+      "path": "gt/cited/Q018.json",
+      "bytes": 7426,
+      "sha256": "f266e6fdb9350618b6ac3041ea64d709d49542dbcb788ac7eb851d95542277ff"
+    },
+    {
+      "path": "gt/cited/Q019.json",
+      "bytes": 6395,
+      "sha256": "1252c6bf052313aaf4e62dbc5039cf885234607e5a7e0885f3e4c3dad4d71656"
+    },
+    {
+      "path": "gt/cited/Q020.json",
+      "bytes": 10356,
+      "sha256": "559b89b4cd8dbe037dfa70bf4ce0344d812707381ee46530048ee4d9cb127514"
+    },
+    {
+      "path": "gt/cited/Q021.json",
+      "bytes": 7080,
+      "sha256": "31cd310ad1af041646556fa987b4d9bbb30dfd4b52f7b32413fc3ca7a03a1af2"
+    },
+    {
+      "path": "gt/cited/Q022.json",
+      "bytes": 6638,
+      "sha256": "a8baeaad329609c7e8b8df93817721d75db780f880e2d3a17cfb7cf202695b16"
+    },
+    {
+      "path": "gt/cited/Q023.json",
+      "bytes": 6717,
+      "sha256": "70e84017d1945119380a383b4a724acfeb5dc8c005d9b5fbdb3d6ebdae23c18c"
+    },
+    {
+      "path": "gt/cited/Q024.json",
+      "bytes": 8148,
+      "sha256": "e76ee7faaa4ee108f5c1056dc7c15c92fb713f8607934774ab23932b95d95a36"
+    },
+    {
+      "path": "gt/cited/Q025.json",
+      "bytes": 6840,
+      "sha256": "076c78281ed37f39daf48a8a0b12cf678835d98fdc68b71589ce97155f22d8e6"
+    },
+    {
+      "path": "gt/cited/Q026.json",
+      "bytes": 8512,
+      "sha256": "ca0b556620c48c30eefbb1fd87a176debe1ede358cd7f39fc20503b1c14d3e9a"
+    },
+    {
+      "path": "gt/cited/Q027.json",
+      "bytes": 7109,
+      "sha256": "8ded4707e254882ba213f1f3dd88c75703e865a6e34da1356622689df7ffee3e"
+    },
+    {
+      "path": "gt/cited/Q028.json",
+      "bytes": 7739,
+      "sha256": "f51ac5dcdb96d52281acf328dc517ac6fc82253b6b9a5bac9566f07d55298da4"
+    },
+    {
+      "path": "gt/cited/Q029.json",
+      "bytes": 6702,
+      "sha256": "282d2c7b2719cdab8a200ee65de74a6a6db07b0252f58739c5b3eec5378977e9"
+    },
+    {
+      "path": "gt/cited/Q030.json",
+      "bytes": 6883,
+      "sha256": "cc579435a353bbbab1d681a2bb300333a85e544f54dfd7dc676ef5dabbf8d716"
+    },
+    {
+      "path": "gt/cited/Q031.json",
+      "bytes": 7718,
+      "sha256": "073586b97e2336ce2f9c2ae8ad821cd62f405ebafe78d8ea34b0d049b7e7ffa5"
+    },
+    {
+      "path": "gt/cited/Q032.json",
+      "bytes": 8113,
+      "sha256": "91affa86608bdebad32f8f0df357624455f4a776e17fc70dda91074cf14e0f0c"
+    },
+    {
+      "path": "gt/cited/Q033.json",
+      "bytes": 6793,
+      "sha256": "67772cfebe0112d3ae26a395558b1cff03c39dcfdad30390aecde3bab1ef6806"
+    },
+    {
+      "path": "gt/cited/Q034.json",
+      "bytes": 4617,
+      "sha256": "41af1f239096d2c0d433794e8a55930dade709d352c2307aa15451e0dc9ad442"
+    },
+    {
+      "path": "gt/cited/Q035.json",
+      "bytes": 5462,
+      "sha256": "b5692c3fe8b61f786940124db9a8b58786370984b4b1637fdf62f34623a9f6d7"
+    },
+    {
+      "path": "gt/cited/Q036.json",
+      "bytes": 7113,
+      "sha256": "59646ccd97d23bdfd246243edf67dbd209a34958059727323c774afbb966fe77"
+    },
+    {
+      "path": "gt/cited/Q037.json",
+      "bytes": 5936,
+      "sha256": "7cea3b7aea7b8c7a99a1e9430a9c1b9bd73c68cc43d780e7e56274fed9c244e3"
+    },
+    {
+      "path": "gt/cited/Q038.json",
+      "bytes": 9723,
+      "sha256": "dafc63d9a9b04a21944564592940cf5208ebfbd6a37fac5f99c444c67b78e401"
+    },
+    {
+      "path": "gt/cited/Q039.json",
+      "bytes": 5588,
+      "sha256": "4454574a02987126eecb71417b247cd251e9fd99dd80be01a6a8887a3c619224"
+    },
+    {
+      "path": "gt/cited/Q040.json",
+      "bytes": 5697,
+      "sha256": "315c396cd40e706a50c19e2e97795b659cf46f6dfb2abfd7819a2ca183405f11"
+    },
+    {
+      "path": "gt/cited/Q041.json",
+      "bytes": 6113,
+      "sha256": "3107bb17151244ace06e41c5e42e9e2200664124f2e8a87e2a9db1fb4ef8e537"
+    },
+    {
+      "path": "gt/cited/Q042.json",
+      "bytes": 9968,
+      "sha256": "7ea1e78129e7dd8bc6d9e604c9204ce36508107fc83666ae14fb265f360712fd"
+    },
+    {
+      "path": "gt/cited/Q043.json",
+      "bytes": 7057,
+      "sha256": "389284c3dc6d00a2f125f42c59f795eee229919e984d0e334ce1f28ccc9d2b64"
+    },
+    {
+      "path": "gt/cited/Q044.json",
+      "bytes": 10170,
+      "sha256": "d09c6876019ce8a9935ecbe8a576225d64e66f403e99427d0348712a6789f72a"
+    },
+    {
+      "path": "gt/cited/Q045.json",
+      "bytes": 7139,
+      "sha256": "54edda82849ee9cd65242b6cad6b7364e8df4194219924280ea35ca84d103f09"
+    },
+    {
+      "path": "gt/cited/Q046.json",
+      "bytes": 9606,
+      "sha256": "e374890cf0040a77bdd3f6157b63b416218b0fda0c82559636e56a74e14a25f1"
+    },
+    {
+      "path": "gt/cited/Q047.json",
+      "bytes": 7233,
+      "sha256": "5cc8dacc2814feda77b1fabe1ae4ddf819b1e35947dbd32c9b9d2d589eb13f7c"
+    },
+    {
+      "path": "gt/cited/Q048.json",
+      "bytes": 9166,
+      "sha256": "dd0fed4d87958f54619a5c02c8aec7b41c76efb9f59cfa0ee1df42ba59ac77ef"
+    },
+    {
+      "path": "gt/cited/Q049.json",
+      "bytes": 8389,
+      "sha256": "c399a213a76897e05312f18752a0e6d4d4e33aeb2c47862b20d03e34d60f903f"
+    },
+    {
+      "path": "gt/cited/Q050.json",
+      "bytes": 10806,
+      "sha256": "9d09c5917baee5b6d9843d5e345df32135ecc3652bd0672b0744f4bdd4b24d89"
+    },
+    {
+      "path": "gt/cited/Q051.json",
+      "bytes": 4554,
+      "sha256": "0c23e137321348f42074652fa70aebc2d4b6b323ff161dbe86be85ff22e6683b"
+    },
+    {
+      "path": "gt/cited/Q052.json",
+      "bytes": 7265,
+      "sha256": "d415b8fa197127039ea6493a9e4ce793ab9416673d450b96563622ff4fc427d8"
+    },
+    {
+      "path": "gt/cited/Q053.json",
+      "bytes": 6400,
+      "sha256": "6e29810d697d3dd0e36393e5225136e804d3d2cee93b0aa8df8bbf32b9317bc1"
+    },
+    {
+      "path": "gt/cited/Q054.json",
+      "bytes": 7214,
+      "sha256": "4880790ec7eff52ebef30ae6587328a49e1db1ef75cfca9ea86fb81b0b773c58"
+    },
+    {
+      "path": "gt/cited/Q055.json",
+      "bytes": 4815,
+      "sha256": "47815cac1f09cdf7613b41a1f2dfa38d316af10e1858b60548fdbb4b3adcb8bf"
+    },
+    {
+      "path": "gt/cited/Q056.json",
+      "bytes": 5966,
+      "sha256": "724c39ea9314f5ee18383fbc611206e04a0e0e29013b5ff3b4714892842a498b"
+    },
+    {
+      "path": "gt/cited/Q057.json",
+      "bytes": 6234,
+      "sha256": "254d45514eca48832b20ed1753df01c8ee1110d4d981305458fe5ec9a1b32594"
+    },
+    {
+      "path": "gt/cited/Q058.json",
+      "bytes": 6166,
+      "sha256": "e30101c02f3582892117efc70af8759c6a182b3e4de544368a2f806167e1c80f"
+    },
+    {
+      "path": "gt/cited/Q059.json",
+      "bytes": 8584,
+      "sha256": "f4828ece47222fb864c27523942da279ae581b5d2fc8ac180d6aad46215dceb4"
+    },
+    {
+      "path": "gt/cited/Q060.json",
+      "bytes": 5985,
+      "sha256": "68e76ad9112aa765e4a28c06f3cfe2925ec00e5f97c9e158d0de67b49bc88870"
+    },
+    {
+      "path": "gt/cited/Q061.json",
+      "bytes": 6708,
+      "sha256": "c3ae82442e6078c1d2a9c4fa665cc42b3dabfac3fd5bb653b7c97eb6f86b74fe"
+    },
+    {
+      "path": "gt/cited/Q062.json",
+      "bytes": 6443,
+      "sha256": "4407d6e0c90e09695e8083fe34d935433525b3dad871ca5234bbd469d217c40d"
+    },
+    {
+      "path": "gt/cited/Q063.json",
+      "bytes": 6822,
+      "sha256": "c41f901bc9653b1280c476aa0065cc6d37f4ba4e4ca85b28111d1c99bb614edc"
+    },
+    {
+      "path": "gt/cited/Q064.json",
+      "bytes": 8971,
+      "sha256": "c82ab3c8c33e5b47c7d8c7ba2ed6d633319889c7dd98086ad12bd3c3adb05987"
+    },
+    {
+      "path": "gt/cited/Q065.json",
+      "bytes": 6644,
+      "sha256": "b26d34878835fcdc90805d8a7752b43b9c768312a598fabca360e9b957d28958"
+    },
+    {
+      "path": "gt/cited/Q066.json",
+      "bytes": 6212,
+      "sha256": "13fbd1c5607b8d9bffd29453a7a08c2f967cb7dfcdfc21828f87b9c62431c238"
+    },
+    {
+      "path": "gt/cited/Q067.json",
+      "bytes": 7986,
+      "sha256": "c875089a369fa5371b7ec2fe36539e9430c3f118e172c18ed3edf6394678e45c"
+    },
+    {
+      "path": "gt/cited/Q068.json",
+      "bytes": 5327,
+      "sha256": "fb82592f93b9bf61e6bfd61e30a8f619548f174c0348d288a79fd872f4202150"
+    },
+    {
+      "path": "gt/cited/Q069.json",
+      "bytes": 9623,
+      "sha256": "d44ae583e3eb83f51280196ac7d479b46e719f3b336552d9767e77a9eb68c660"
+    },
+    {
+      "path": "gt/cited/Q070.json",
+      "bytes": 7508,
+      "sha256": "1ff63cb211634efb3a60df1a56b4d26e04ef792d157de804247211ba348cd7e2"
+    },
+    {
+      "path": "gt/collection_notes.md",
+      "bytes": 4089,
+      "sha256": "060e164e5b3b5540c5c38c9697551086530c2bc9a48b8586b79202e4c4f86ae0"
+    },
+    {
+      "path": "gt/doubao_overlap_report.json",
+      "bytes": 98138,
+      "sha256": "f1c041fa07f39b2bd301e30ec02b3b0d125255f28ea206e5e5e4feb277ddd5af"
+    },
+    {
+      "path": "gt/final_report.md",
+      "bytes": 5659,
+      "sha256": "f693098babf0edb635068a5aa7948118b38e64a61f951188972a61979f7a6459"
+    },
+    {
+      "path": "gt/pilot_report.md",
+      "bytes": 6343,
+      "sha256": "1d9bd04b4e635beb5f78cfcd3de00d7175a30e255f6f2d5fff25f5bd5a0f9621"
+    },
+    {
+      "path": "gt/trace_stats.json",
+      "bytes": 25395,
+      "sha256": "ff0699bf1a172f2dc5944e7342f8e0cd9b8dfcae2261df76cf6b1e2e5d4097b6"
+    },
+    {
+      "path": "gt/verify_report.json",
+      "bytes": 1218798,
+      "sha256": "1b85032a72f8c980b69e11c34b9c1ac8226e59260ed2533715dfc3111988cc60"
+    },
+    {
+      "path": "gt/文献表_70题.csv",
+      "bytes": 794991,
+      "sha256": "ba69e6a2483547b596922d4fc6dcbfb95ff39add6ca57cf5e85a1894ec878dad"
+    },
+    {
+      "path": "gt/豆包检索_70题.xlsx",
+      "bytes": 99192,
+      "sha256": "5b28593bde62412ea1c474e88373bca5d13ce540bc4674b8ee32d4aa61dfe3c1"
+    }
+  ]
+}

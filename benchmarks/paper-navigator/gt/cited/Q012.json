@@ -1,0 +1,142 @@
+[
+ {
+  "index": 1,
+  "title": "GADBench: Revisiting and Benchmarking Supervised Graph Anomaly Detection",
+  "url": "https://arxiv.org/abs/2306.12251"
+ },
+ {
+  "index": 2,
+  "title": "Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics",
+  "url": "https://arxiv.org/abs/1908.02591"
+ },
+ {
+  "index": 3,
+  "title": "When Graph Structure Becomes a Liability: A Critical Re-Evaluation of Graph Neural Networks for Bitcoin Fraud Detection under Temporal Distribution Shift",
+  "url": "https://arxiv.org/abs/2604.19514"
+ },
+ {
+  "index": 4,
+  "title": "Realistic Synthetic Financial Transactions for Anti-Money Laundering Models",
+  "url": "https://arxiv.org/abs/2306.16424"
+ },
+ {
+  "index": 5,
+  "title": "Provably Powerful Graph Neural Networks for Directed Multigraphs",
+  "url": "https://arxiv.org/abs/2306.11586"
+ },
+ {
+  "index": 6,
+  "title": "Inductive inference of gradient-boosted decision trees on graphs for insurance fraud detection",
+  "url": "https://arxiv.org/abs/2510.05676"
+ },
+ {
+  "index": 7,
+  "title": "Feature generation and contribution comparison for electronic fraud detection",
+  "url": "https://doi.org/10.1038/s41598-022-22130-2"
+ },
+ {
+  "index": 8,
+  "title": "GOTCHA! Network-Based Fraud Detection for Social Security Fraud",
+  "url": "https://doi.org/10.1287/mnsc.2016.2489"
+ },
+ {
+  "index": 9,
+  "title": "Finding Money Launderers Using Heterogeneous Graph Neural Networks",
+  "url": "https://arxiv.org/abs/2307.13499"
+ },
+ {
+  "index": 10,
+  "title": "KnowGraph: Knowledge-Enabled Anomaly Detection via Logical Reasoning on Graph Data",
+  "url": "https://arxiv.org/abs/2410.08390"
+ },
+ {
+  "index": 11,
+  "title": "BRIGHT - Graph Neural Networks in Real-time Fraud Detection",
+  "url": "https://arxiv.org/abs/2205.13084"
+ },
+ {
+  "index": 12,
+  "title": "Heterogeneous Graph Neural Networks for Malicious Account Detection",
+  "url": "https://arxiv.org/abs/2002.12307"
+ },
+ {
+  "index": 13,
+  "title": "Spatio-Temporal Directed Graph Learning for Account Takeover Fraud Detection",
+  "url": "https://arxiv.org/abs/2509.20339"
+ },
+ {
+  "index": 14,
+  "title": "Sequence classification for credit-card fraud detection",
+  "url": "https://doi.org/10.1016/j.eswa.2018.01.037"
+ },
+ {
+  "index": 15,
+  "title": "Interleaved Sequence RNNs for Fraud Detection",
+  "url": "https://arxiv.org/abs/2002.05988"
+ },
+ {
+  "index": 16,
+  "title": "Tabular Transformers for Modeling Multivariate Time Series",
+  "url": "https://arxiv.org/abs/2011.01843"
+ },
+ {
+  "index": 17,
+  "title": "FATA-Trans: Field And Time-Aware Transformer for Sequential Tabular Data",
+  "url": "https://arxiv.org/abs/2310.13818"
+ },
+ {
+  "index": 18,
+  "title": "FraudTransformer: Time-Aware GPT for Transaction Fraud Detection",
+  "url": "https://arxiv.org/abs/2509.23712"
+ },
+ {
+  "index": 19,
+  "title": "Multi-Stream Temporal Fusion for Financial Fraud Detection",
+  "url": "https://arxiv.org/abs/2606.25007"
+ },
+ {
+  "index": 20,
+  "title": "A Transactional-Behavior-Based Hierarchical Gated Network for Credit Card Fraud Detection",
+  "url": "https://doi.org/10.1109/JAS.2025.125243"
+ },
+ {
+  "index": 21,
+  "title": "Leveraging graph-based learning for credit card fraud detection: a comparative study of classical, deep learning and graph-based approaches",
+  "url": "https://doi.org/10.1007/s00521-024-10397-7"
+ },
+ {
+  "index": 22,
+  "title": "DGraph: A Large-Scale Financial Dataset for Graph Anomaly Detection",
+  "url": "https://arxiv.org/abs/2207.03579"
+ },
+ {
+  "index": 23,
+  "title": "Turning the Tables: Biased, Imbalanced, Dynamic Tabular Datasets for ML Evaluation",
+  "url": "https://arxiv.org/abs/2211.13358"
+ },
+ {
+  "index": 24,
+  "title": "TransXion: A High-Fidelity Graph Benchmark for Realistic Anti-Money Laundering",
+  "url": "https://arxiv.org/abs/2604.17420"
+ },
+ {
+  "index": 25,
+  "title": "Data Leakage and Deceptive Performance: A Critical Examination of Credit Card Fraud Detection Methodologies",
+  "url": "https://arxiv.org/abs/2506.02703"
+ },
+ {
+  "index": 26,
+  "title": "How effective are Graph Neural Networks in Fraud Detection for Network Data?",
+  "url": "https://arxiv.org/abs/2105.14568"
+ },
+ {
+  "index": 27,
+  "title": "Explainable fraud detection under fixed false positive rate",
+  "url": "https://doi.org/10.7717/peerj-cs.4007"
+ },
+ {
+  "index": 28,
+  "title": "Financial fraud detection using graph neural networks: A systematic review",
+  "url": "https://doi.org/10.1016/j.eswa.2023.122156"
+ }
+]

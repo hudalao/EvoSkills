@@ -1,0 +1,272 @@
+[
+ {
+  "index": 1,
+  "title": "Risk Elements in Consumer Instalment Financing",
+  "url": "https://www.nber.org/books-and-chapters/risk-elements-consumer-instalment-financing"
+ },
+ {
+  "index": 2,
+  "title": "Financial Ratios As Predictors Of Failure",
+  "url": "https://doi.org/10.2307/2490171"
+ },
+ {
+  "index": 3,
+  "title": "Financial Ratios, Discriminant Analysis and the Prediction of Corporate Bankruptcy",
+  "url": "https://doi.org/10.1111/J.1540-6261.1968.TB00843.X"
+ },
+ {
+  "index": 4,
+  "title": "Financial Ratios and the Probabilistic Prediction of Bankruptcy",
+  "url": "https://doi.org/10.2307/2490395"
+ },
+ {
+  "index": 5,
+  "title": "Statistical Classification Methods in Consumer Credit Scoring: a Review",
+  "url": "https://doi.org/10.1111/j.1467-985X.1997.00078.x"
+ },
+ {
+  "index": 6,
+  "title": "A survey of credit and behavioural scoring: forecasting financial risk of lending to consumers",
+  "url": "https://doi.org/10.1016/S0169-2070(00)00034-0"
+ },
+ {
+  "index": 7,
+  "title": "Neural network credit scoring models",
+  "url": "https://doi.org/10.1016/S0305-0548(99)00149-5"
+ },
+ {
+  "index": 8,
+  "title": "Benchmarking state-of-the-art classification algorithms for credit scoring",
+  "url": "https://doi.org/10.1057/palgrave.jors.2601545"
+ },
+ {
+  "index": 9,
+  "title": "Benchmarking state-of-the-art classification algorithms for credit scoring: An update of research",
+  "url": "https://doi.org/10.1016/j.ejor.2015.05.030"
+ },
+ {
+  "index": 10,
+  "title": "Development and application of consumer credit scoring models using profit-based classification measures",
+  "url": "https://doi.org/10.1016/j.ejor.2014.04.001"
+ },
+ {
+  "index": 11,
+  "title": "Consumer Credit Risk Models Via Machine-Learning Algorithms",
+  "url": "https://doi.org/10.2139/SSRN.1568864"
+ },
+ {
+  "index": 12,
+  "title": "Deep Learning for Mortgage Risk",
+  "url": "https://arxiv.org/abs/1607.02470"
+ },
+ {
+  "index": 13,
+  "title": "Machine learning for credit scoring: Improving logistic regression with non-linear decision-tree effects",
+  "url": "https://doi.org/10.1016/j.ejor.2021.06.053"
+ },
+ {
+  "index": 14,
+  "title": "On the Rise of FinTechs – Credit Scoring using Digital Footprints",
+  "url": "https://doi.org/10.2139/SSRN.3163781"
+ },
+ {
+  "index": 15,
+  "title": "The value of text for small business default prediction: A deep learning approach",
+  "url": "https://arxiv.org/abs/2003.08964"
+ },
+ {
+  "index": 16,
+  "title": "Credit card fraud detection with a neural-network",
+  "url": "https://doi.org/10.1109/HICSS.1994.323314"
+ },
+ {
+  "index": 17,
+  "title": "Adaptive Fraud Detection",
+  "url": "https://doi.org/10.1023/A:1009700419189"
+ },
+ {
+  "index": 18,
+  "title": "Statistical fraud detection: A review",
+  "url": "https://doi.org/10.1214/SS/1042727940"
+ },
+ {
+  "index": 19,
+  "title": "Learned lessons in credit card fraud detection from a practitioner perspective",
+  "url": "https://doi.org/10.1016/j.eswa.2014.02.026"
+ },
+ {
+  "index": 20,
+  "title": "Credit Card Fraud Detection: A Realistic Modeling and a Novel Learning Strategy",
+  "url": "https://doi.org/10.1109/TNNLS.2017.2736643"
+ },
+ {
+  "index": 21,
+  "title": "Sequence classification for credit-card fraud detection",
+  "url": "https://doi.org/10.1016/j.eswa.2018.01.037"
+ },
+ {
+  "index": 22,
+  "title": "Heterogeneous Graph Neural Networks for Malicious Account Detection",
+  "url": "https://arxiv.org/abs/2002.12307"
+ },
+ {
+  "index": 23,
+  "title": "GeniePath: Graph Neural Networks with Adaptive Receptive Paths",
+  "url": "https://arxiv.org/abs/1802.00910"
+ },
+ {
+  "index": 24,
+  "title": "A Semi-Supervised Graph Attentive Network for Financial Fraud Detection",
+  "url": "https://arxiv.org/abs/2003.01171"
+ },
+ {
+  "index": 25,
+  "title": "TitAnt: Online Real-time Transaction Fraud Detection in Ant Financial",
+  "url": "https://arxiv.org/abs/1906.07407"
+ },
+ {
+  "index": 26,
+  "title": "Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics",
+  "url": "https://arxiv.org/abs/1908.02591"
+ },
+ {
+  "index": 27,
+  "title": "DGraph: A Large-Scale Financial Dataset for Graph Anomaly Detection",
+  "url": "https://arxiv.org/abs/2207.03579"
+ },
+ {
+  "index": 28,
+  "title": "GADBench: Revisiting and Benchmarking Supervised Graph Anomaly Detection",
+  "url": "https://arxiv.org/abs/2306.12251"
+ },
+ {
+  "index": 29,
+  "title": "Realistic Synthetic Financial Transactions for Anti-Money Laundering Models",
+  "url": "https://arxiv.org/abs/2306.16424"
+ },
+ {
+  "index": 30,
+  "title": "Provably Powerful Graph Neural Networks for Directed Multigraphs",
+  "url": "https://arxiv.org/abs/2306.11586"
+ },
+ {
+  "index": 31,
+  "title": "Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters",
+  "url": "https://arxiv.org/abs/2008.08692"
+ },
+ {
+  "index": 32,
+  "title": "Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection",
+  "url": "https://doi.org/10.1145/3442381.3449989"
+ },
+ {
+  "index": 33,
+  "title": "Rethinking Graph Neural Networks for Anomaly Detection",
+  "url": "https://arxiv.org/abs/2205.15508"
+ },
+ {
+  "index": 34,
+  "title": "xFraud: Explainable Fraud Transaction Detection",
+  "url": "https://arxiv.org/abs/2011.12193"
+ },
+ {
+  "index": 35,
+  "title": "Graph neural networks for financial fraud detection: a review",
+  "url": "https://arxiv.org/abs/2411.05815"
+ },
+ {
+  "index": 36,
+  "title": "Attention-based Dynamic Multilayer Graph Neural Networks for Loan Default Prediction",
+  "url": "https://arxiv.org/abs/2402.00299"
+ },
+ {
+  "index": 37,
+  "title": "面向欺诈检测的风险感知动态聚合图联邦学习",
+  "url": "https://www.jos.org.cn/jos/article/abstract/7524"
+ },
+ {
+  "index": 38,
+  "title": "FinBERT: A Large Language Model for Extracting Information from Financial Text",
+  "url": "https://doi.org/10.1111/1911-3846.12832"
+ },
+ {
+  "index": 39,
+  "title": "BloombergGPT: A Large Language Model for Finance",
+  "url": "https://arxiv.org/abs/2303.17564"
+ },
+ {
+  "index": 40,
+  "title": "XuanYuan 2.0: A Large Chinese Financial Chat Model with Hundreds of Billions Parameters",
+  "url": "https://arxiv.org/abs/2305.12002"
+ },
+ {
+  "index": 41,
+  "title": "Empowering Many, Biasing a Few: Generalist Credit Scoring through Large Language Models",
+  "url": "https://arxiv.org/abs/2310.00566"
+ },
+ {
+  "index": 42,
+  "title": "FinPT: Financial Risk Prediction with Profile Tuning on Pretrained Foundation Models",
+  "url": "https://arxiv.org/abs/2308.00065"
+ },
+ {
+  "index": 43,
+  "title": "FinBen: A Holistic Financial Benchmark for Large Language Models",
+  "url": "https://arxiv.org/abs/2402.12659"
+ },
+ {
+  "index": 44,
+  "title": "Financial Statement Analysis with Large Language Models",
+  "url": "https://arxiv.org/abs/2407.17866"
+ },
+ {
+  "index": 45,
+  "title": "ZiGong 1.0: A Large Language Model for Financial Credit",
+  "url": "https://arxiv.org/abs/2502.16159"
+ },
+ {
+  "index": 46,
+  "title": "FLAG: Fraud Detection with LLM-enhanced Graph Neural Network",
+  "url": "https://doi.org/10.1145/3711896.3737220"
+ },
+ {
+  "index": 47,
+  "title": "Targeting Borderline Fraudsters: Multi-View Hypergraph Fraud Detection with LLM-Guided Contrastive Learning",
+  "url": "https://doi.org/10.1609/aaai.v40i18.38588"
+ },
+ {
+  "index": 48,
+  "title": "Reinforcement Learning of Large Language Models for Interpretable Credit Card Fraud Detection",
+  "url": "https://arxiv.org/abs/2601.05578"
+ },
+ {
+  "index": 49,
+  "title": "Foundation Models for Credit Risk Prediction: A Game Changer?",
+  "url": "https://arxiv.org/abs/2605.18147"
+ },
+ {
+  "index": 50,
+  "title": "Open Banking Foundational Model: Learning Language Representations from Few Financial Transactions",
+  "url": "https://arxiv.org/abs/2511.12154"
+ },
+ {
+  "index": 51,
+  "title": "Co-Investigator AI: The Rise of Agentic AI for Smarter, Trustworthy AML Compliance Narratives",
+  "url": "https://arxiv.org/abs/2509.08380"
+ },
+ {
+  "index": 52,
+  "title": "Interpretable LLMs for Credit Risk: A Systematic Review and Taxonomy",
+  "url": "https://arxiv.org/abs/2506.04290"
+ },
+ {
+  "index": 53,
+  "title": "Predictably Unequal? The Effects of Machine Learning on Credit Markets",
+  "url": "https://doi.org/10.2139/SSRN.3072038"
+ },
+ {
+  "index": 54,
+  "title": "Consumer-lending discrimination in the FinTech Era",
+  "url": "https://doi.org/10.1016/J.JFINECO.2021.05.047"
+ }
+]

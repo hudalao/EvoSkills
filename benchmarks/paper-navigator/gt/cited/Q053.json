@@ -1,0 +1,167 @@
+[
+  {
+    "index": 1,
+    "title": "A framework to assess clinical safety and hallucination rates of LLMs for medical text summarisation",
+    "url": "https://doi.org/10.1038/s41746-025-01670-7"
+  },
+  {
+    "index": 2,
+    "title": "Development of a Preliminary Patient Safety Classification System for Generative AI",
+    "url": "https://doi.org/10.1136/bmjqs-2024-017918"
+  },
+  {
+    "index": 3,
+    "title": "An evaluation framework for clinical use of large language models in patient interaction tasks",
+    "url": "https://doi.org/10.1038/s41591-024-03328-5"
+  },
+  {
+    "index": 4,
+    "title": "Diagnostic accuracy of large language models for emergency department triage: a systematic review and meta-analysis",
+    "url": "https://doi.org/10.1186/s12873-026-01639-z"
+  },
+  {
+    "index": 5,
+    "title": "Use of a Large Language Model to Assess Clinical Acuity of Adults in the Emergency Department",
+    "url": "https://doi.org/10.1001/jamanetworkopen.2024.8895"
+  },
+  {
+    "index": 6,
+    "title": "Evaluating large language model workflows in clinical decision support for triage and referral and diagnosis",
+    "url": "https://doi.org/10.1038/s41746-025-01684-1"
+  },
+  {
+    "index": 7,
+    "title": "From Promising Capability to Pervasive Bias: Assessing Large Language Models for Emergency Department Triage",
+    "url": "https://arxiv.org/abs/2504.16273"
+  },
+  {
+    "index": 8,
+    "title": "Accuracy of online symptom assessment applications, large language models, and laypeople for self–triage decisions",
+    "url": "https://doi.org/10.1038/s41746-025-01566-6"
+  },
+  {
+    "index": 9,
+    "title": "Outpatient reception via collaboration between nurses and a large language model: a randomized controlled trial",
+    "url": "https://doi.org/10.1038/s41591-024-03148-7"
+  },
+  {
+    "index": 10,
+    "title": "Sociodemographic biases in medical decision making by large language models",
+    "url": "https://doi.org/10.1038/s41591-025-03626-6"
+  },
+  {
+    "index": 11,
+    "title": "Physician- and Large Language Model-Generated Hospital Discharge Summaries",
+    "url": "https://doi.org/10.1001/jamainternmed.2025.0821"
+  },
+  {
+    "index": 12,
+    "title": "Accuracy and Safety of AI-Enabled Scribe Technology: Instrument Validation Study",
+    "url": "https://doi.org/10.2196/64993"
+  },
+  {
+    "index": 13,
+    "title": "Accuracy, Consistency, and Hallucination of Large Language Models When Analyzing Unstructured Clinical Notes in Electronic Medical Records",
+    "url": "https://doi.org/10.1001/jamanetworkopen.2024.25953"
+  },
+  {
+    "index": 14,
+    "title": "Generative Artificial Intelligence to Transform Inpatient Discharge Summaries to Patient-Friendly Language and Format",
+    "url": "https://doi.org/10.1001/jamanetworkopen.2024.0357"
+  },
+  {
+    "index": 15,
+    "title": "AI-generated clinical summaries: errors and susceptibility to speech and speaker variability",
+    "url": "https://doi.org/10.1136/bmjhci-2025-101918"
+  },
+  {
+    "index": 16,
+    "title": "The value of simulation testing for the evaluation of ambient digital scribes: a case report",
+    "url": "https://doi.org/10.1093/jamia/ocaf052"
+  },
+  {
+    "index": 17,
+    "title": "Ambient AI Scribes in Clinical Practice: A Randomized Trial",
+    "url": "https://doi.org/10.1056/aioa2501000"
+  },
+  {
+    "index": 18,
+    "title": "The effect of using a large language model to respond to patient messages",
+    "url": "https://doi.org/10.1016/S2589-7500(24)00060-8"
+  },
+  {
+    "index": 19,
+    "title": "Artificial Intelligence–Generated Draft Replies to Patient Inbox Messages",
+    "url": "https://doi.org/10.1001/jamanetworkopen.2024.3201"
+  },
+  {
+    "index": 20,
+    "title": "Opportunities and risks of artificial intelligence in patient portal messaging in primary care",
+    "url": "https://doi.org/10.1038/s41746-025-01586-2"
+  },
+  {
+    "index": 21,
+    "title": "Detecting emergencies in patient portal messages using large language models and knowledge graph-based retrieval-augmented generation",
+    "url": "https://doi.org/10.1093/jamia/ocaf059"
+  },
+  {
+    "index": 22,
+    "title": "Large language models provide unsafe answers to patient-posed medical questions",
+    "url": "https://arxiv.org/abs/2507.18905"
+  },
+  {
+    "index": 23,
+    "title": "When helpfulness backfires: LLMs and the risk of false medical information due to sycophantic behavior",
+    "url": "https://doi.org/10.1038/s41746-025-02008-z"
+  },
+  {
+    "index": 24,
+    "title": "Guardrails for GenAI drafted replies in patient portal messaging",
+    "url": "https://doi.org/10.1038/s41746-026-02621-6"
+  },
+  {
+    "index": 25,
+    "title": "Reliability of LLMs as medical assistants for the general public: a randomized preregistered study",
+    "url": "https://doi.org/10.1038/s41591-025-04074-y"
+  },
+  {
+    "index": 26,
+    "title": "Medical large language models are vulnerable to data-poisoning attacks",
+    "url": "https://doi.org/10.1038/s41591-024-03445-1"
+  },
+  {
+    "index": 27,
+    "title": "Vulnerability of Large Language Models to Prompt Injection When Providing Medical Advice",
+    "url": "https://doi.org/10.1001/jamanetworkopen.2025.49963"
+  },
+  {
+    "index": 28,
+    "title": "Privacy preserving strategies for electronic health records in the era of large language models",
+    "url": "https://doi.org/10.1038/s41746-025-01429-0"
+  },
+  {
+    "index": 29,
+    "title": "Automation Bias in Large Language Model–Assisted Diagnostic Reasoning among Physicians Trained in AI Literacy — A Randomized Clinical Trial",
+    "url": "https://doi.org/10.1056/aioa2501001"
+  },
+  {
+    "index": 30,
+    "title": "Unregulated large language models produce medical device-like output",
+    "url": "https://doi.org/10.1038/s41746-025-01544-y"
+  },
+  {
+    "index": 31,
+    "title": "Rapid deployment of large language model DeepSeek in Chinese hospitals demands a regulatory response",
+    "url": "https://doi.org/10.1038/s41591-025-03836-y"
+  },
+  {
+    "index": 32,
+    "title": "A Novel Playbook for Pragmatic Trial Operations to Monitor and Evaluate Ambient Artificial Intelligence in Clinical Practice",
+    "url": "https://doi.org/10.1056/aidbp2401267"
+  },
+  {
+    "index": 33,
+    "title": "Drift isn't a bug, it's the work: post-deployment surveillance for clinical artificial intelligence",
+    "url": "https://doi.org/10.1136/bmjdh-2026-000111"
+  }
+]

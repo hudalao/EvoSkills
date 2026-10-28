@@ -1,0 +1,177 @@
+[
+ {
+  "index": 1,
+  "title": "A concept for application of integrated digital technologies to enhance future smart agricultural systems",
+  "url": "https://doi.org/10.1016/j.atech.2023.100255"
+ },
+ {
+  "index": 2,
+  "title": "中国大田无人农场关键技术研究与建设实践",
+  "url": "https://www.aeeisp.com/nygcxb/article/doi/10.11975/j.issn.1002-6819.202312126"
+ },
+ {
+  "index": 3,
+  "title": "水稻无人化智慧农场探索与实践",
+  "url": "https://www.j-csam.org/html/2025/10/20251023.html"
+ },
+ {
+  "index": 4,
+  "title": "中国智慧农业技术发展现状、挑战与展望",
+  "url": "https://www.aeeisp.com/nygcxb/article/doi/10.11975/j.issn.1002-6819.202505242"
+ },
+ {
+  "index": 5,
+  "title": "An agricultural digital twin for mandarins demonstrates the potential for individualized agriculture",
+  "url": "https://doi.org/10.1038/s41467-024-45725-x"
+ },
+ {
+  "index": 6,
+  "title": "Progress and perspectives in data assimilation algorithms for remote sensing and crop growth model",
+  "url": "https://doi.org/10.1016/j.srs.2024.100146"
+ },
+ {
+  "index": 7,
+  "title": "Crop yield estimation based on assimilation of crop models and remote sensing data: A systematic evaluation",
+  "url": "https://doi.org/10.1016/j.agsy.2023.103711"
+ },
+ {
+  "index": 8,
+  "title": "Crop water stress detection based on UAV remote sensing systems",
+  "url": "https://doi.org/10.1016/j.agwat.2024.109059"
+ },
+ {
+  "index": 9,
+  "title": "Soil water sensors for irrigation scheduling in the United States: A systematic review of literature",
+  "url": "https://doi.org/10.1016/j.agwat.2023.108148"
+ },
+ {
+  "index": 10,
+  "title": "Rapid in-field soil analysis of plant-available nutrients and pH for precision agriculture—a review",
+  "url": "https://doi.org/10.1007/s11119-024-10181-6"
+ },
+ {
+  "index": 11,
+  "title": "Wearable sensor supports in-situ and continuous monitoring of plant health in precision agriculture era",
+  "url": "https://doi.org/10.1111/pbi.14283"
+ },
+ {
+  "index": 12,
+  "title": "Let’s Get Real: Are Wearable Plant Sensors Ready for Crop Monitoring?",
+  "url": "https://doi.org/10.1021/acssensors.5c02510"
+ },
+ {
+  "index": 13,
+  "title": "Cloud–edge–device collaborative computing in smart agriculture: architectures, applications, and future perspectives",
+  "url": "https://doi.org/10.3389/fpls.2025.1668545"
+ },
+ {
+  "index": 14,
+  "title": "Combining remote sensing-derived management zones and an auto-calibrated crop simulation model to determine optimal nitrogen fertilizer rates",
+  "url": "https://doi.org/10.1016/j.agsy.2022.103559"
+ },
+ {
+  "index": 15,
+  "title": "Developing remote sensing- and crop model-based methods to optimize nitrogen management in rice fields",
+  "url": "https://doi.org/10.1016/j.compag.2024.108899"
+ },
+ {
+  "index": 16,
+  "title": "Adaptive and predictive decision support system for irrigation scheduling: An approach integrating humans in the control loop",
+  "url": "https://doi.org/10.1016/j.compag.2024.108640"
+ },
+ {
+  "index": 17,
+  "title": "Deep reinforcement learning for irrigation scheduling using high-dimensional sensor feedback",
+  "url": "https://arxiv.org/abs/2301.00899"
+ },
+ {
+  "index": 18,
+  "title": "Predicting site-specific economic optimal nitrogen rate using machine learning methods and on-farm precision experimentation",
+  "url": "https://doi.org/10.1007/s11119-023-10018-8"
+ },
+ {
+  "index": 19,
+  "title": "Failure to scale in digital agronomy: An analysis of site-specific nutrient management decision-support tools in developing countries",
+  "url": "https://doi.org/10.1016/j.compag.2023.108060"
+ },
+ {
+  "index": 20,
+  "title": "Agricultural machinery automatic navigation technology",
+  "url": "https://doi.org/10.1016/j.isci.2023.108714"
+ },
+ {
+  "index": 21,
+  "title": "Comprehensive study of on-the-go sensing and variable rate application of liquid nitrogenous fertilizer",
+  "url": "https://doi.org/10.1016/j.compag.2023.108482"
+ },
+ {
+  "index": 22,
+  "title": "Real-time control of high-resolution micro-jet sprayer integrated with machine vision for precision weed control",
+  "url": "https://doi.org/10.1016/j.biosystemseng.2023.02.006"
+ },
+ {
+  "index": 23,
+  "title": "Advances in ground robotic technologies for site-specific weed management in precision agriculture: A review",
+  "url": "https://doi.org/10.1016/j.compag.2024.109363"
+ },
+ {
+  "index": 24,
+  "title": "Deep learning-based laser weed control compared to conventional herbicide application across three vegetable production systems",
+  "url": "https://doi.org/10.1002/ps.8912"
+ },
+ {
+  "index": 25,
+  "title": "Developing an ISO11783-compliant prescription map for variable rate spraying in vineyards based on 3D canopy reconstruction",
+  "url": "https://doi.org/10.1016/j.atech.2025.100870"
+ },
+ {
+  "index": 26,
+  "title": "A Reference Architecture for Enabling Interoperability and Data Sovereignty in the Agricultural Data Space",
+  "url": "https://doi.org/10.3390/info14030197"
+ },
+ {
+  "index": 27,
+  "title": "Data governance in smart farming: A systematic review of challenges and gaps",
+  "url": "https://doi.org/10.1016/j.inpa.2025.11.006"
+ },
+ {
+  "index": 28,
+  "title": "Precision agriculture in the United States: A comprehensive meta-review inspiring further research, innovation, and adoption",
+  "url": "https://doi.org/10.1016/j.compag.2024.108993"
+ },
+ {
+  "index": 29,
+  "title": "The Farm-Level Economic and Environmental Benefits of Precision Agriculture Technology Adoption: A Meta-Analysis of Global Evidence",
+  "url": "https://doi.org/10.3390/su172411223"
+ },
+ {
+  "index": 30,
+  "title": "Comparing profitability of variable rate nitrogen prescriptions",
+  "url": "https://doi.org/10.1007/s11119-025-10256-y"
+ },
+ {
+  "index": 31,
+  "title": "Benefits and pitfalls of irrigation timing and water amounts derived from satellite soil moisture",
+  "url": "https://doi.org/10.1016/j.agwat.2024.108773"
+ },
+ {
+  "index": 32,
+  "title": "A Crop Water Stress Index based Internet of Things Decision Support System for Precision Irrigation of Wine Grape",
+  "url": "https://doi.org/10.1016/j.atech.2023.100202"
+ },
+ {
+  "index": 33,
+  "title": "Farmer-centric On-Farm Experimentation: digital tools for a scalable transformative pathway",
+  "url": "https://doi.org/10.1007/s13593-025-01011-8"
+ },
+ {
+  "index": 34,
+  "title": "Advancing sustainable agricultural transformation through the synergy of automated experimental platforms and living labs",
+  "url": "https://doi.org/10.1038/s41467-025-64450-7"
+ },
+ {
+  "index": 35,
+  "title": "Heuristic cooperative coverage path planning for multiple autonomous agricultural field machines performing sequentially dependent tasks of different working widths and turn characteristics",
+  "url": "https://doi.org/10.1016/j.biosystemseng.2024.04.007"
+ }
+]

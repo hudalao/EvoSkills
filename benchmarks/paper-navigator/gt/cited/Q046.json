@@ -1,0 +1,237 @@
+[
+  {
+    "index": 1,
+    "title": "Processing Social Media Messages in Mass Emergency",
+    "url": "https://arxiv.org/abs/1407.7071"
+  },
+  {
+    "index": 2,
+    "title": "Crisis informatics—New data for extraordinary times",
+    "url": "https://doi.org/10.1126/science.aag2579"
+  },
+  {
+    "index": 3,
+    "title": "The Protective Action Decision Model: Theoretical Modifications and Additional Evidence",
+    "url": "https://doi.org/10.1111/j.1539-6924.2011.01647.x"
+  },
+  {
+    "index": 4,
+    "title": "Social media for intelligent public information and warning in disasters: An interdisciplinary review",
+    "url": "https://doi.org/10.1016/J.IJINFOMGT.2019.04.004"
+  },
+  {
+    "index": 5,
+    "title": "CrisisBench: Benchmarking Crisis-related Social Media Datasets for Humanitarian Information Processing",
+    "url": "https://doi.org/10.1609/icwsm.v15i1.18115"
+  },
+  {
+    "index": 6,
+    "title": "CrisisTransformers: Pre-trained language models and sentence encoders for crisis-related social media texts",
+    "url": "https://arxiv.org/abs/2309.05494"
+  },
+  {
+    "index": 7,
+    "title": "QuakeBERT: Accurate Classification of Social Media Texts for Rapid Earthquake Impact Assessment",
+    "url": "https://arxiv.org/abs/2405.06684"
+  },
+  {
+    "index": 8,
+    "title": "A systematic review of social media-based sentiment analysis in disaster risk management",
+    "url": "https://doi.org/10.1016/j.ijdrr.2025.105487"
+  },
+  {
+    "index": 9,
+    "title": "Research on online public opinion in the investigation of the \"7–20\" extraordinary rainstorm and flooding disaster in Zhengzhou, China",
+    "url": "https://doi.org/10.1016/j.ijdrr.2024.104422"
+  },
+  {
+    "index": 10,
+    "title": "Emotional contagion on social media and the simulation of intervention strategies after a disaster event: a modeling study",
+    "url": "https://doi.org/10.1057/s41599-024-03397-4"
+  },
+  {
+    "index": 11,
+    "title": "The Evolving Field of Risk Communication",
+    "url": "https://doi.org/10.1111/risa.13615"
+  },
+  {
+    "index": 12,
+    "title": "Three dimensions of COVID-19 risk perceptions and their socioeconomic correlates in the United States: A social media analysis",
+    "url": "https://doi.org/10.1111/risa.13993"
+  },
+  {
+    "index": 13,
+    "title": "Risk perception and resilience assessment of flood disasters based on social media big data",
+    "url": "https://doi.org/10.1016/j.ijdrr.2024.104249"
+  },
+  {
+    "index": 14,
+    "title": "Typhoon Risk Perception: A Case Study of Typhoon Lekima in China",
+    "url": "https://doi.org/10.1007/s13753-022-00405-6"
+  },
+  {
+    "index": 15,
+    "title": "The driving mechanism of citizens' protective behaviors for rainstorm flood disasters in China: An empirical study based on the protection motivation theory and protective action decision model",
+    "url": "https://doi.org/10.1016/j.heliyon.2024.e38482"
+  },
+  {
+    "index": 16,
+    "title": "Resonance+: Operationalizing Protective Action Decision Model for Finding Information Useful for Public Information Officers",
+    "url": "https://doi.org/10.1145/3708492"
+  },
+  {
+    "index": 17,
+    "title": "Dynamic monitoring and early warning of public emotional perception of risk during extreme rainstorm disasters: A study based on social media",
+    "url": "https://doi.org/10.1111/aphw.70101"
+  },
+  {
+    "index": 18,
+    "title": "DisasterResponseGPT: Large Language Models for Accelerated Plan of Action Development in Disaster Response Scenarios",
+    "url": "https://arxiv.org/abs/2306.17271"
+  },
+  {
+    "index": 19,
+    "title": "Enhancing Emergency Decision-making with Knowledge Graphs and Large Language Models",
+    "url": "https://arxiv.org/abs/2311.08732"
+  },
+  {
+    "index": 20,
+    "title": "CrisisSense-LLM: Instruction Fine-Tuned Large Language Model for Multi-label Social Media Text Classification in Disaster Informatics",
+    "url": "https://arxiv.org/abs/2406.15477"
+  },
+  {
+    "index": 21,
+    "title": "Large language model applications in disaster management: an interdisciplinary review",
+    "url": "https://doi.org/10.1016/j.ijdrr.2025.105642"
+  },
+  {
+    "index": 22,
+    "title": "Harnessing Large Language Models for Disaster Management: A Survey",
+    "url": "https://arxiv.org/abs/2501.06932"
+  },
+  {
+    "index": 23,
+    "title": "Thinking fast and slow in disaster decision-making with Smart City Digital Twins",
+    "url": "https://doi.org/10.1038/s43588-021-00174-0"
+  },
+  {
+    "index": 24,
+    "title": "From information to action: supply-demand matching strategies for social media-based emergency response",
+    "url": "https://doi.org/10.1016/j.ssci.2026.107308"
+  },
+  {
+    "index": 25,
+    "title": "Leveraging Social Media Data for Disaster Management in the Era of Large Language Models",
+    "url": "https://doi.org/10.1016/j.nhres.2026.03.007"
+  },
+  {
+    "index": 26,
+    "title": "A flood knowledge-constrained large language model interactable with GIS: enhancing public risk perception of floods",
+    "url": "https://doi.org/10.1080/13658816.2024.2306167"
+  },
+  {
+    "index": 27,
+    "title": "PychoAgent: Psychology-driven LLM Agents for Explainable Panic Prediction on Social Media during Sudden Disaster Events",
+    "url": "https://doi.org/10.18653/v1/2025.emnlp-main.865"
+  },
+  {
+    "index": 28,
+    "title": "From Perceptions to Decisions: Wildfire Evacuation Decision Prediction with Behavioral Theory-informed LLMs",
+    "url": "https://arxiv.org/abs/2502.17701"
+  },
+  {
+    "index": 29,
+    "title": "Multi-Stage Simulation of Residents' Disaster Risk Perception and Decision-Making Behavior: An Exploratory Study on Large Language Model-Driven Social-Cognitive Agent Framework",
+    "url": "https://doi.org/10.3390/systems13040240"
+  },
+  {
+    "index": 30,
+    "title": "Large language model-assisted public opinion analysis of emergency events of major transportation infrastructure through social media: A case study of the Humen Bridge incident",
+    "url": "https://doi.org/10.1016/j.ijdrr.2026.106203"
+  },
+  {
+    "index": 31,
+    "title": "Public perception of AI-personalized disaster alerts: Evidence from a randomized controlled trial",
+    "url": "https://doi.org/10.1016/j.ijdrr.2026.106346"
+  },
+  {
+    "index": 32,
+    "title": "Leveraging LLMs and social media to understand user perception of smartphone-based earthquake early warnings",
+    "url": "https://arxiv.org/abs/2603.23322"
+  },
+  {
+    "index": 33,
+    "title": "Local response to global risk: a case study of risk perception and communication on Chinese social media regarding Fukushima's treated radioactive water discharge",
+    "url": "https://doi.org/10.1038/s41598-025-02845-8"
+  },
+  {
+    "index": 34,
+    "title": "Assessing household underestimation of hurricane food shortages via large language model agent simulation",
+    "url": "https://doi.org/10.1016/j.ijdrr.2025.105734"
+  },
+  {
+    "index": 35,
+    "title": "Leveraging Public Sentiment for Resource Coordination in Disaster Response: A Multiagent Framework",
+    "url": "https://doi.org/10.1609/aaaiss.v6i1.36019"
+  },
+  {
+    "index": 36,
+    "title": "A sentiment analysis-based expert weight determination method for large-scale group decision-making driven by social media data",
+    "url": "https://doi.org/10.1016/J.ESWA.2021.115629"
+  },
+  {
+    "index": 37,
+    "title": "A method for the dynamic collaboration of the public and experts in large-scale group emergency decision-making: Using social media data to evaluate the decision-making quality",
+    "url": "https://doi.org/10.1016/j.cie.2022.108943"
+  },
+  {
+    "index": 38,
+    "title": "基于公众偏好大数据分析的大群体应急决策质量动态演化研究（Dynamic Evolution Research on Emergency Decision Quality of Large Group Based on the Public Preferences Big Data）",
+    "url": "https://www.zgglkx.com/CN/10.16381/j.cnki.issn1003-207x.2019.0986"
+  },
+  {
+    "index": 39,
+    "title": "Harnessing the Hybrid Intelligence of Crowd and Artificial Intelligence in Group Decision Making for Uncertain Disaster Response",
+    "url": "https://doi.org/10.1111/risa.70254"
+  },
+  {
+    "index": 40,
+    "title": "DisastIR: A Comprehensive Information Retrieval Benchmark for Disaster Management",
+    "url": "https://arxiv.org/abs/2505.15856"
+  },
+  {
+    "index": 41,
+    "title": "OPOR-Bench: Evaluating Large Language Models on Online Public Opinion Report Generation",
+    "url": "https://arxiv.org/abs/2512.01896"
+  },
+  {
+    "index": 42,
+    "title": "Bridging the Urban Divide: Adaptive Cross-City Learning for Disaster Sentiment Understanding",
+    "url": "https://arxiv.org/abs/2602.14352"
+  },
+  {
+    "index": 43,
+    "title": "Transparency in AI for emergency management: building trust and accountability",
+    "url": "https://doi.org/10.1007/s43681-025-00692-x"
+  },
+  {
+    "index": 44,
+    "title": "The impact of different task contexts on emergency responders' trust and usage intention of artificial intelligence",
+    "url": "https://doi.org/10.1080/00140139.2025.2499202"
+  },
+  {
+    "index": 45,
+    "title": "Human-AI Use Patterns for Decision-Making in Disaster Scenarios: A Systematic Review",
+    "url": "https://arxiv.org/abs/2509.12034"
+  },
+  {
+    "index": 46,
+    "title": "Using social media in disaster management: The perceptions of emergency responders versus the public",
+    "url": "https://doi.org/10.1002/rhc3.12301"
+  },
+  {
+    "index": 47,
+    "title": "Engage and Mobilize! Understanding Evolving Patterns of Social Media Usage in Emergency Management",
+    "url": "https://arxiv.org/abs/2501.15608"
+  }
+]

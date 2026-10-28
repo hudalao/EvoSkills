@@ -1,0 +1,152 @@
+[
+  {
+    "index": 1,
+    "title": "Personalized Pricing and Consumer Welfare",
+    "url": "https://doi.org/10.1086/720793"
+  },
+  {
+    "index": 2,
+    "title": "Personalized Pricing and Competition",
+    "url": "https://doi.org/10.1257/aer.20221524"
+  },
+  {
+    "index": 3,
+    "title": "Personalization, Consumer Search, and Algorithmic Pricing",
+    "url": "https://doi.org/10.1287/mksc.2023.0455"
+  },
+  {
+    "index": 4,
+    "title": "Balancing Consumer and Business Value of Recommender Systems: A Simulation-based Analysis",
+    "url": "https://arxiv.org/abs/2203.05952"
+  },
+  {
+    "index": 5,
+    "title": "Self-Preferencing and Search Neutrality in Online Retail Platforms",
+    "url": "https://doi.org/10.1287/mnsc.2022.01795"
+  },
+  {
+    "index": 6,
+    "title": "Amazon Self-preferencing in the Shadow of the Digital Markets Act",
+    "url": "https://doi.org/10.3386/w32299"
+  },
+  {
+    "index": 7,
+    "title": "Market Formation, Pricing, and Value Generation in Ride-Hailing Services",
+    "url": "https://doi.org/10.1287/msom.2022.0502"
+  },
+  {
+    "index": 8,
+    "title": "Balancing Supply with Demand on Ride-Hailing Platforms in Markets with Price Regulations: An Operational Approach",
+    "url": "https://doi.org/10.1287/msom.2022.0216"
+  },
+  {
+    "index": 9,
+    "title": "Seeking the perfect price: Consumer responses to personalized price discrimination in e-commerce",
+    "url": "https://doi.org/10.1016/j.jbusres.2021.10.002"
+  },
+  {
+    "index": 10,
+    "title": "Towards the Socio-Algorithmic Construction of Fairness: The Case of Automatic Price-Surging in Ride-Hailing",
+    "url": "https://arxiv.org/abs/2408.04685"
+  },
+  {
+    "index": 11,
+    "title": "Your Browsing History May Cost You: A Framework for Discovering Differential Pricing in Non-Transparent Markets",
+    "url": "https://doi.org/10.1145/3593013.3594038"
+  },
+  {
+    "index": 12,
+    "title": "Algorithmic Personalized Pricing with the Right to Explanation",
+    "url": "https://doi.org/10.1093/joclec/nhad008"
+  },
+  {
+    "index": 13,
+    "title": "Does AI Disclosure in Discriminatory Pricing Backfire? The Moderating Role of Price Sensitivity and Explanation of Price Differences",
+    "url": "https://doi.org/10.24251/hicss.2024.822"
+  },
+  {
+    "index": 14,
+    "title": "Algorithmic Pricing Facilitates Tacit Collusion: Evidence from E-Commerce",
+    "url": "https://doi.org/10.1145/3490486.3538239"
+  },
+  {
+    "index": 15,
+    "title": "Regulation of Algorithmic Collusion",
+    "url": "https://arxiv.org/abs/2401.15794"
+  },
+  {
+    "index": 16,
+    "title": "Automated Transparency: A Legal and Empirical Analysis of the Digital Services Act Transparency Database",
+    "url": "https://arxiv.org/abs/2404.02894"
+  },
+  {
+    "index": 17,
+    "title": "The Accountability Paradox: How Platform API Restrictions Undermine AI Transparency Mandates",
+    "url": "https://arxiv.org/abs/2505.11577"
+  },
+  {
+    "index": 18,
+    "title": "Auditing Recommender Systems for User Empowerment in Very Large Online Platforms under the Digital Services Act",
+    "url": "https://doi.org/10.1145/3705328.3748074"
+  },
+  {
+    "index": 19,
+    "title": "A Right to Constructive Optimization: A Public Interest Approach to Recommender Systems in the Digital Services Act",
+    "url": "https://doi.org/10.1007/s10603-025-09586-1"
+  },
+  {
+    "index": 20,
+    "title": "Dynamic Pricing with Fairness Constraints",
+    "url": "https://doi.org/10.1287/opre.2023.0123"
+  },
+  {
+    "index": 21,
+    "title": "Grace Period is All You Need: Individual Fairness without Revenue Loss in Revenue Management",
+    "url": "https://arxiv.org/abs/2402.08533"
+  },
+  {
+    "index": 22,
+    "title": "Regulatory Instruments for Fair Personalized Pricing",
+    "url": "https://arxiv.org/abs/2202.04245"
+  },
+  {
+    "index": 23,
+    "title": "User-item fairness tradeoffs in recommendations",
+    "url": "https://arxiv.org/abs/2412.04466"
+  },
+  {
+    "index": 24,
+    "title": "CPFair: Personalized Consumer and Producer Fairness Re-ranking for Recommender Systems",
+    "url": "https://arxiv.org/abs/2204.08085"
+  },
+  {
+    "index": 25,
+    "title": "Beating the Algorithm: Consumer Manipulation, Personalized Pricing, and Big Data Management",
+    "url": "https://doi.org/10.1287/msom.2022.1153"
+  },
+  {
+    "index": 26,
+    "title": "The Silent Death of EU Consumer Law and Its Resilient Revival: Reinventing Consumer Protection Against Unfair Digital Commercial Practices",
+    "url": "https://doi.org/10.1007/s10603-025-09590-5"
+  },
+  {
+    "index": 27,
+    "title": "No harm no foul: how harms caused by dark patterns are conceptualised and tackled under EU data protection, consumer and competition laws",
+    "url": "https://doi.org/10.1080/13600834.2025.2461958"
+  },
+  {
+    "index": 28,
+    "title": "Governing Platform Recommender Systems in Europe: Insights from China",
+    "url": "https://doi.org/10.1515/gj-2023-0013"
+  },
+  {
+    "index": 29,
+    "title": "公共性视角下平台“大数据杀熟”的规制逻辑与路径",
+    "url": "https://skxb.jsu.edu.cn/CN/10.13438/j.cnki.jdxb.2022.06.004"
+  },
+  {
+    "index": 30,
+    "title": "Unveiling big data-driven price discrimination in China: Evidence from public opinion on Chinese Tiktok",
+    "url": "https://doi.org/10.1016/j.techfore.2025.124445"
+  }
+]

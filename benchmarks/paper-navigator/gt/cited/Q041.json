@@ -1,0 +1,192 @@
+[
+  {
+    "index": 1,
+    "title": "Measuring Price Discrimination and Steering on E-commerce Web Sites",
+    "url": "https://doi.org/10.1145/2663716.2663744"
+  },
+  {
+    "index": 2,
+    "title": "An Empirical Analysis of Algorithmic Pricing on Amazon Marketplace",
+    "url": "https://doi.org/10.1145/2872427.2883089"
+  },
+  {
+    "index": 3,
+    "title": "The pricing strategies of online grocery retailers",
+    "url": "https://doi.org/10.1007/s11129-023-09273-w"
+  },
+  {
+    "index": 4,
+    "title": "Personalized Pricing and Consumer Welfare",
+    "url": "https://doi.org/10.1086/720793"
+  },
+  {
+    "index": 5,
+    "title": "Personalized Pricing and Competition",
+    "url": "https://doi.org/10.1257/aer.20221524"
+  },
+  {
+    "index": 6,
+    "title": "Personalized Pricing and the Value of Time: Evidence From Auctioned Cab Rides",
+    "url": "https://doi.org/10.3982/ecta18838"
+  },
+  {
+    "index": 7,
+    "title": "Homogeneous Algorithms Can Reduce Competition in Personalized Pricing",
+    "url": "https://arxiv.org/abs/2503.15634"
+  },
+  {
+    "index": 8,
+    "title": "Imperfect information, algorithmic price discrimination, and collusion",
+    "url": "https://doi.org/10.1111/sjoe.12465"
+  },
+  {
+    "index": 9,
+    "title": "Artificial Intelligence, Algorithmic Pricing, and Collusion",
+    "url": "https://doi.org/10.1257/aer.20190623"
+  },
+  {
+    "index": 10,
+    "title": "Autonomous algorithmic collusion: Q-learning under sequential pricing",
+    "url": "https://doi.org/10.1111/1756-2171.12383"
+  },
+  {
+    "index": 11,
+    "title": "Frontiers: Algorithmic Collusion: Supra-competitive Prices via Independent Algorithms",
+    "url": "https://doi.org/10.1287/mksc.2020.1276"
+  },
+  {
+    "index": 12,
+    "title": "Artificial Intelligence: Can Seemingly Collusive Outcomes Be Avoided?",
+    "url": "https://doi.org/10.1287/mnsc.2022.4623"
+  },
+  {
+    "index": 13,
+    "title": "Competition in Pricing Algorithms",
+    "url": "https://doi.org/10.1257/mic.20210158"
+  },
+  {
+    "index": 14,
+    "title": "The Effect of Outsourcing Pricing Algorithms on Market Competition",
+    "url": "https://doi.org/10.1287/mnsc.2021.4241"
+  },
+  {
+    "index": 15,
+    "title": "Hub-and-Spoke Collusion With a Third-Party Pricing Algorithm",
+    "url": "https://doi.org/10.1111/joie.70017"
+  },
+  {
+    "index": 16,
+    "title": "Platform Design When Sellers Use Pricing Algorithms",
+    "url": "https://doi.org/10.3982/ECTA19978"
+  },
+  {
+    "index": 17,
+    "title": "Human-algorithm interaction: Algorithmic pricing in hybrid laboratory markets",
+    "url": "https://doi.org/10.1016/j.euroecorev.2022.104347"
+  },
+  {
+    "index": 18,
+    "title": "Algorithmic Collusion by Large Language Models",
+    "url": "https://arxiv.org/abs/2404.00806"
+  },
+  {
+    "index": 19,
+    "title": "Algorithmic Pricing and Competition: Empirical Evidence from the German Retail Gasoline Market",
+    "url": "https://doi.org/10.1086/726906"
+  },
+  {
+    "index": 20,
+    "title": "Algorithmic Pricing, Price Wars, and Tacit Collusion: Evidence from E-Commerce",
+    "url": "https://doi.org/10.1287/mnsc.2022.02462"
+  },
+  {
+    "index": 21,
+    "title": "Algorithms in the marketplace: An empirical analysis of automated pricing in e-commerce",
+    "url": "https://doi.org/10.1016/j.infoecopol.2024.101111"
+  },
+  {
+    "index": 22,
+    "title": "Coordinated vs Efficient Prices: The Impact of Algorithmic Pricing on Multifamily Rental Markets",
+    "url": "https://doi.org/10.2139/ssrn.4403058"
+  },
+  {
+    "index": 23,
+    "title": "Artificial Collusion: Examining Supracompetitive Pricing by Q-Learning Algorithms",
+    "url": "https://doi.org/10.1287/mnsc.2024.08557"
+  },
+  {
+    "index": 24,
+    "title": "Algorithmic collusion: Genuine or spurious?",
+    "url": "https://doi.org/10.1016/j.ijindorg.2023.102973"
+  },
+  {
+    "index": 25,
+    "title": "Collusion by mistake: Does algorithmic sophistication drive supra-competitive profits?",
+    "url": "https://doi.org/10.1016/j.ejor.2024.06.006"
+  },
+  {
+    "index": 26,
+    "title": "Algorithmic collusion: A critical review",
+    "url": "https://arxiv.org/abs/2110.04740"
+  },
+  {
+    "index": 27,
+    "title": "Developing Competition Law for Collusion by Autonomous Artificial Agents",
+    "url": "https://doi.org/10.1093/joclec/nhy016"
+  },
+  {
+    "index": 28,
+    "title": "Protecting consumers from collusive prices due to AI",
+    "url": "https://doi.org/10.1126/science.abe3796"
+  },
+  {
+    "index": 29,
+    "title": "An economic test for an unlawful agreement to adopt a third-party's pricing algorithm",
+    "url": "https://doi.org/10.1093/epolic/eiae054"
+  },
+  {
+    "index": 30,
+    "title": "A Critique of Recent Remedies for Third-Party Pricing Algorithms and Why the Solution Is Not Restricting Data",
+    "url": "https://doi.org/10.1093/joclec/nhaf022"
+  },
+  {
+    "index": 31,
+    "title": "Remedies for algorithmic tacit collusion",
+    "url": "https://doi.org/10.1093/jaenfo/jnaa040"
+  },
+  {
+    "index": 32,
+    "title": "Regulation of Algorithmic Collusion",
+    "url": "https://arxiv.org/abs/2401.15794"
+  },
+  {
+    "index": 33,
+    "title": "Where is the Limit? Assessing the Potential of Algorithm-Based Cartel Detection",
+    "url": "https://doi.org/10.1093/joclec/nhae023"
+  },
+  {
+    "index": 34,
+    "title": "Algorithmic Harm in Consumer Markets",
+    "url": "https://doi.org/10.1093/jla/laad003"
+  },
+  {
+    "index": 35,
+    "title": "AI-Enabled Price Discrimination as an Exploitative Abuse of Dominance under EU Competition Law",
+    "url": "https://doi.org/10.1093/joclec/nhag006"
+  },
+  {
+    "index": 36,
+    "title": "Algorithmic pricing and competition in G7 jurisdictions",
+    "url": "https://doi.org/10.1787/f36dacf8-en"
+  },
+  {
+    "index": 37,
+    "title": "Research on the Regulation of Algorithmic Price Discrimination Behaviour of E-Commerce Platform Based on Tripartite Evolutionary Game",
+    "url": "https://doi.org/10.3390/su15108294"
+  },
+  {
+    "index": 38,
+    "title": "The Incursion of Antitrust into China's Platform Economy",
+    "url": "https://doi.org/10.1177/0003603X221084152"
+  }
+]

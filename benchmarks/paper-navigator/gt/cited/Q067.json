@@ -1,0 +1,212 @@
+[
+  {
+    "index": 1,
+    "title": "Decision models for order fulfillment processes of online food delivery platforms: a systematic review",
+    "url": "https://doi.org/10.1080/00207543.2024.2440747"
+  },
+  {
+    "index": 2,
+    "title": "Methodological advances in online food delivery: A systematic review, taxonomy, and research outlook",
+    "url": "https://doi.org/10.1016/j.tre.2026.104972"
+  },
+  {
+    "index": 3,
+    "title": "Dynamic Pricing with Infrequent Inventory Replenishments",
+    "url": "https://doi.org/10.1287/mnsc.2023.00129"
+  },
+  {
+    "index": 4,
+    "title": "Fast Forecasting of Unstable Data Streams for On-Demand Service Platforms",
+    "url": "https://arxiv.org/abs/2303.01887"
+  },
+  {
+    "index": 5,
+    "title": "ACA-Net: Future Graph Learning for Logistical Demand-Supply Forecasting",
+    "url": "https://arxiv.org/abs/2509.01997"
+  },
+  {
+    "index": 6,
+    "title": "A Survey on Service Route and Time Prediction in Instant Delivery: Taxonomy, Progress, and Prospects",
+    "url": "https://arxiv.org/abs/2309.01194"
+  },
+  {
+    "index": 7,
+    "title": "Process-Informed Deep Learning for Enhanced Order Fulfillment Cycle Time Prediction in On-Demand Grocery Retailing",
+    "url": "https://doi.org/10.1145/3627673.3680056"
+  },
+  {
+    "index": 8,
+    "title": "OTPTO: Joint Product Selection and Inventory Optimization in Fresh E-commerce Front-End Warehouses",
+    "url": "https://arxiv.org/abs/2505.23421"
+  },
+  {
+    "index": 9,
+    "title": "Decision Focused Causal Learning for Direct Counterfactual Marketing Optimization",
+    "url": "https://arxiv.org/abs/2407.13664"
+  },
+  {
+    "index": 10,
+    "title": "Winning the race to customers with micro-fulfillment centers: an approach for network planning in quick commerce",
+    "url": "https://doi.org/10.1007/s10100-023-00893-x"
+  },
+  {
+    "index": 11,
+    "title": "面向生鲜电商的前置仓选址及订单履约决策优化研究",
+    "url": "https://www.zgglkx.com/CN/10.16381/j.cnki.issn1003-207x.2021.2177"
+  },
+  {
+    "index": 12,
+    "title": "On-demand last-mile distribution network design with omnichannel inventory",
+    "url": "https://doi.org/10.1016/j.tre.2023.103324"
+  },
+  {
+    "index": 13,
+    "title": "Mitigating disruption impact in Q-commerce through optimization of dark store resilient portfolio",
+    "url": "https://doi.org/10.1016/j.tre.2025.104518"
+  },
+  {
+    "index": 14,
+    "title": "An Integer Programming Approach for Quick-Commerce Assortment Planning",
+    "url": "https://doi.org/10.1287/mnsc.2023.02996"
+  },
+  {
+    "index": 15,
+    "title": "Enabling Ultrafast Online Order Fulfillment: Efficient Inventory Management for In-Store Microfulfillment Centers",
+    "url": "https://doi.org/10.1287/ijoc.2024.0710"
+  },
+  {
+    "index": 16,
+    "title": "Dynamic and static item allocation for the in-store front warehouses",
+    "url": "https://doi.org/10.1080/24725854.2026.2628709"
+  },
+  {
+    "index": 17,
+    "title": "Dynamic Courier Capacity Acquisition in Rapid Delivery Systems: A Deep Q-Learning Approach",
+    "url": "https://doi.org/10.1287/trsc.2022.0042"
+  },
+  {
+    "index": 18,
+    "title": "Capacity requirements and demand management strategies in meal delivery",
+    "url": "https://doi.org/10.1016/j.ejtl.2024.100135"
+  },
+  {
+    "index": 19,
+    "title": "“驻店+众包”模式下的即时配送运力配置优化",
+    "url": "https://www.zgglkx.com/CN/10.16381/j.cnki.issn1003-207x.2025.0135"
+  },
+  {
+    "index": 20,
+    "title": "Stochastic scheduling and routing decisions in online meal delivery platforms with mixed force",
+    "url": "https://doi.org/10.1016/j.ejor.2024.11.028"
+  },
+  {
+    "index": 21,
+    "title": "Toward Dynamic Pricing for City-Wide Crowdsourced Instant Delivery Services",
+    "url": "https://doi.org/10.1109/TMC.2022.3228259"
+  },
+  {
+    "index": 22,
+    "title": "Integrated differentiated time slot pricing and order dispatching with uncertain customer demand in on-demand food delivery",
+    "url": "https://doi.org/10.1016/j.ejor.2024.12.011"
+  },
+  {
+    "index": 23,
+    "title": "The integrated time slot pricing and on-demand food delivery routing problem with demand and travel time uncertainty",
+    "url": "https://doi.org/10.1016/j.tre.2026.105099"
+  },
+  {
+    "index": 24,
+    "title": "Pricing and Demand Management for Integrated Same-Day and Next-Day Delivery Systems",
+    "url": "https://doi.org/10.1287/trsc.2023.0381"
+  },
+  {
+    "index": 25,
+    "title": "Doubly High-Dimensional Contextual Bandits: An Interpretable Model for Joint Assortment-Pricing",
+    "url": "https://doi.org/10.1287/mnsc.2024.08311"
+  },
+  {
+    "index": 26,
+    "title": "Optimizing Q-Commerce Delivery: Unravelling the Interplay of Fee, Penalty, and Rider-Platform Collaborative Efforts",
+    "url": "https://doi.org/10.1016/j.ijpe.2024.109503"
+  },
+  {
+    "index": 27,
+    "title": "An online auction-based mechanism for pricing and allocation of instant delivery services",
+    "url": "https://doi.org/10.1016/j.trb.2024.103086"
+  },
+  {
+    "index": 28,
+    "title": "Dynamic Pricing for Multi-Retailer Delivery Platforms with Additive Deep Learning and Evolutionary Optimization",
+    "url": "https://doi.org/10.1145/3637528.3671634"
+  },
+  {
+    "index": 29,
+    "title": "Integrated Fleet and Demand Control for On-Demand Meal Delivery Platforms",
+    "url": "https://doi.org/10.1287/mnsc.2022.02039"
+  },
+  {
+    "index": 30,
+    "title": "Integrated optimization of order splitting and distribution routing for the front warehouse mode e-retailing",
+    "url": "https://doi.org/10.1080/00207543.2023.2200556"
+  },
+  {
+    "index": 31,
+    "title": "Integrated inventory replenishment and online demand allocation decisions for an omnichannel retailer with ship-from-store strategy",
+    "url": "https://doi.org/10.1016/j.ejor.2024.02.027"
+  },
+  {
+    "index": 32,
+    "title": "Modeling and managing an on-demand meal delivery system with order bundling",
+    "url": "https://doi.org/10.1016/j.tre.2024.103597"
+  },
+  {
+    "index": 33,
+    "title": "Neural Approximate Dynamic Programming for the Ultra-fast Order Dispatching Problem",
+    "url": "https://arxiv.org/abs/2311.12975"
+  },
+  {
+    "index": 34,
+    "title": "Data-Driven Optimization for Meal Delivery: A Reinforcement Learning Approach for Order-Courier Assignment and Routing at Meituan",
+    "url": "https://doi.org/10.1287/trsc.2025.0129"
+  },
+  {
+    "index": 35,
+    "title": "FairCod: A Fairness-aware Concurrent Dispatch System for Large-scale Instant Delivery Services",
+    "url": "https://doi.org/10.1145/3580305.3599824"
+  },
+  {
+    "index": 36,
+    "title": "Integrated mobile inventory and fleet management for an on-demand delivery system",
+    "url": "https://doi.org/10.1016/j.trc.2025.105264"
+  },
+  {
+    "index": 37,
+    "title": "Platform-enabled two-echelon collaborative logistics for cross-supply chain optimization in instant retail",
+    "url": "https://doi.org/10.1016/j.tre.2026.104974"
+  },
+  {
+    "index": 38,
+    "title": "Channel Changes Choice: An Empirical Study About Omnichannel Demand Sensitivity to Fulfillment Lead Time",
+    "url": "https://doi.org/10.1287/mnsc.2023.4839"
+  },
+  {
+    "index": 39,
+    "title": "Sooner or Later? Promising Delivery Speed in Online Retail",
+    "url": "https://doi.org/10.1287/msom.2021.0174"
+  },
+  {
+    "index": 40,
+    "title": "Delivery timeliness disclosure strategy in platform-based instant retail industries: Understanding the effect of consumer loss aversion",
+    "url": "https://doi.org/10.1016/j.tre.2025.104288"
+  },
+  {
+    "index": 41,
+    "title": "考虑消费者时间价值的平台供应链即时零售引入策略",
+    "url": "https://www.zgglkx.com/CN/10.16381/j.cnki.issn1003-207x.2023.1533"
+  },
+  {
+    "index": 42,
+    "title": "Randomized price-matching: How the instant retail platform competes with the community group-buying store",
+    "url": "https://doi.org/10.1016/j.omega.2025.103393"
+  }
+]

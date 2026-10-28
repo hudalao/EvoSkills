@@ -1,0 +1,217 @@
+[
+ {
+  "index": 1,
+  "title": "Foundation Models in Agriculture: A Comprehensive Review",
+  "url": "https://doi.org/10.3390/agriculture15080847"
+ },
+ {
+  "index": 2,
+  "title": "Remote-sensing Foundation Model for Agriculture: A Survey",
+  "url": "https://doi.org/10.1145/3700410.3702133"
+ },
+ {
+  "index": 3,
+  "title": "Foundation Models for Remote Sensing and Earth Observation: A Survey",
+  "url": "https://doi.org/10.1109/MGRS.2025.3576766"
+ },
+ {
+  "index": 4,
+  "title": "From General to Specialized: The Need for Foundational Models in Agriculture",
+  "url": "https://arxiv.org/abs/2507.05390"
+ },
+ {
+  "index": 5,
+  "title": "No One Knows the State of the Art in Geospatial Foundation Models",
+  "url": "https://arxiv.org/abs/2605.12678"
+ },
+ {
+  "index": 6,
+  "title": "Prithvi-EO-2.0: A Versatile Multitemporal Foundation Model for Earth Observation Applications",
+  "url": "https://arxiv.org/abs/2412.02732"
+ },
+ {
+  "index": 7,
+  "title": "AlphaEarth Foundations: An embedding field model for accurate and efficient global mapping from sparse label data",
+  "url": "https://arxiv.org/abs/2507.22291"
+ },
+ {
+  "index": 8,
+  "title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+  "url": "https://arxiv.org/abs/2502.09356"
+ },
+ {
+  "index": 9,
+  "title": "TerraMind: Large-Scale Generative Multimodality for Earth Observation",
+  "url": "https://arxiv.org/abs/2504.11171"
+ },
+ {
+  "index": 10,
+  "title": "AgriFM: A multi-source temporal remote sensing foundation model for Agriculture mapping",
+  "url": "https://arxiv.org/abs/2505.21357"
+ },
+ {
+  "index": 11,
+  "title": "Time2Agri: Temporal Pretext Tasks for Agricultural Monitoring",
+  "url": "https://arxiv.org/abs/2507.04366"
+ },
+ {
+  "index": 12,
+  "title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+  "url": "https://arxiv.org/abs/2508.00858"
+ },
+ {
+  "index": 13,
+  "title": "Generating an annual 30 m rice cover product for monsoon Asia (2018–2023) using harmonized Landsat and Sentinel-2 data and the NASA-IBM geospatial foundation model",
+  "url": "https://doi.org/10.1016/j.rse.2026.115256"
+ },
+ {
+  "index": 14,
+  "title": "Mapping complex cropping patterns in China (2018–2021) at 10 m resolution: a data-driven framework based on multi-product integration and Google satellite embedding",
+  "url": "https://doi.org/10.5194/essd-18-5601-2026"
+ },
+ {
+  "index": 15,
+  "title": "Evaluating the Performance of AlphaEarth Foundation Embeddings for Irrigated Cropland Mapping Across Regions and Years",
+  "url": "https://doi.org/10.3390/rs18071065"
+ },
+ {
+  "index": 16,
+  "title": "Embedding-based Crop Type Classification in the Groundnut Basin of Senegal",
+  "url": "https://arxiv.org/abs/2601.16900"
+ },
+ {
+  "index": 17,
+  "title": "On the Generalizability of Foundation Models for Crop Type Mapping",
+  "url": "https://arxiv.org/abs/2409.09451"
+ },
+ {
+  "index": 18,
+  "title": "Benchmarking Foundation Models for Hyperspectral Image Classification: Application to Cereal Crop Type Mapping",
+  "url": "https://arxiv.org/abs/2510.11576"
+ },
+ {
+  "index": 19,
+  "title": "Invariant Features for Global Crop Type Classification",
+  "url": "https://arxiv.org/abs/2509.03497"
+ },
+ {
+  "index": 20,
+  "title": "Distilling Geospatial Foundation Model semantics into interpretable Sentinel-1/2 proxies for few-shot and cross-year crop type classification",
+  "url": "https://doi.org/10.1080/20964471.2026.2691477"
+ },
+ {
+  "index": 21,
+  "title": "Delineate Anything v2: A Global Foundation Model for Field Delineation",
+  "url": "https://arxiv.org/abs/2607.19069"
+ },
+ {
+  "index": 22,
+  "title": "Fields of The World: A Machine Learning Benchmark Dataset For Global Agricultural Field Boundary Segmentation",
+  "url": "https://arxiv.org/abs/2409.16252"
+ },
+ {
+  "index": 23,
+  "title": "National-scale field delineation in Mozambique refines our understanding of cropland distribution, field size, and deforestation actors",
+  "url": "https://doi.org/10.1088/1748-9326/ae5cb4"
+ },
+ {
+  "index": 24,
+  "title": "A weakly supervised approach for large-scale agricultural parcel extraction from VHR imagery via foundation models and adaptive noise correction",
+  "url": "https://doi.org/10.1016/j.isprsjprs.2026.01.030"
+ },
+ {
+  "index": 25,
+  "title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+  "url": "https://arxiv.org/abs/2601.00857"
+ },
+ {
+  "index": 26,
+  "title": "FARM: Crop Yield Prediction via Regression on Prithvi's Encoder for Satellite Sensing",
+  "url": "https://arxiv.org/abs/2510.26609"
+ },
+ {
+  "index": 27,
+  "title": "Application of AlphaEarth GeoFoundation Model for High-Accuracy Crop Yield Estimation",
+  "url": "https://doi.org/10.1109/WACVW68408.2026.00158"
+ },
+ {
+  "index": 28,
+  "title": "VITA: Variational Pretraining of Transformers for Climate-Robust Crop Yield Forecasting",
+  "url": "https://arxiv.org/abs/2508.03589"
+ },
+ {
+  "index": 29,
+  "title": "From rows to yields: how foundation models for tabular data simplify crop yield prediction",
+  "url": "https://arxiv.org/abs/2506.19046"
+ },
+ {
+  "index": 30,
+  "title": "Estimating crop biophysical parameters from satellite-based SAR and optical observations using self-supervised learning with geospatial foundation models",
+  "url": "https://doi.org/10.1016/j.rse.2025.114825"
+ },
+ {
+  "index": 31,
+  "title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
+  "url": "https://arxiv.org/abs/2605.08113"
+ },
+ {
+  "index": 32,
+  "title": "CY-Bench: a comprehensive benchmark dataset for sub-national crop yield forecasting",
+  "url": "https://doi.org/10.5194/essd-18-3997-2026"
+ },
+ {
+  "index": 33,
+  "title": "A multimodal geospatial foundation model anticipates crop stress and yield failure across climates and species",
+  "url": "https://doi.org/10.3389/fpls.2026.1883297"
+ },
+ {
+  "index": 34,
+  "title": "RustMAE: A Spatiotemporal Transformer for Short- to Medium-Term Warning of Wheat Stripe Rust Spring Spread",
+  "url": "https://doi.org/10.1016/j.isci.2026.115666"
+ },
+ {
+  "index": 35,
+  "title": "Assessing Geo-Foundational Models for Flood Inundation Mapping: Benchmarking Models for Sentinel-1, Sentinel-2, and Planetscope",
+  "url": "https://arxiv.org/abs/2511.01990"
+ },
+ {
+  "index": 36,
+  "title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): Unlocking Full-Potential for Flood Inundation Mapping",
+  "url": "https://arxiv.org/abs/2601.02315"
+ },
+ {
+  "index": 37,
+  "title": "Leveraging AI multimodal geospatial foundation models for improved near-real-time flood mapping at a global scale",
+  "url": "https://arxiv.org/abs/2512.02055"
+ },
+ {
+  "index": 38,
+  "title": "Land cover and flood type govern the detection limits of satellite-based flood mapping across diverse global flood events",
+  "url": "https://arxiv.org/abs/2606.07780"
+ },
+ {
+  "index": 39,
+  "title": "ExEBench: Benchmarking Foundation Models on Extreme Earth Events",
+  "url": "https://arxiv.org/abs/2505.08529"
+ },
+ {
+  "index": 40,
+  "title": "PANGAEA: A Global and Inclusive Benchmark for Geospatial Foundation Models",
+  "url": "https://arxiv.org/abs/2412.04204"
+ },
+ {
+  "index": 41,
+  "title": "GEO-Bench-2: From Performance to Capability, Rethinking Evaluation in Geospatial AI",
+  "url": "https://arxiv.org/abs/2511.15658"
+ },
+ {
+  "index": 42,
+  "title": "Benchmarking Geospatial Foundation Models for Agriculture Applications",
+  "url": "https://arxiv.org/abs/2606.29664"
+ },
+ {
+  "index": 43,
+  "title": "Reliability Analysis of Agricultural Foundation Models Under Distribution Shift",
+  "url": "https://doi.org/10.3390/rs18142416"
+ }
+]

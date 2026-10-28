@@ -1,0 +1,192 @@
+[
+  {
+    "index": 1,
+    "title": "Medical multimodal large language models: A survey",
+    "url": "https://doi.org/10.1016/j.inffus.2026.104386"
+  },
+  {
+    "index": 2,
+    "title": "Medical multimodal large language models: A systematic review",
+    "url": "https://doi.org/10.1016/j.intonc.2025.09.005"
+  },
+  {
+    "index": 3,
+    "title": "Multimodal Large Language Models in Medical Imaging: Current State and Future Directions",
+    "url": "https://doi.org/10.3348/kjr.2025.0599"
+  },
+  {
+    "index": 4,
+    "title": "Multimodal generative AI for medical image interpretation",
+    "url": "https://doi.org/10.1038/s41586-025-08675-y"
+  },
+  {
+    "index": 5,
+    "title": "From large language models to multimodal AI: a scoping review on the potential of generative AI in medicine",
+    "url": "https://arxiv.org/abs/2502.09242"
+  },
+  {
+    "index": 6,
+    "title": "A Survey on Multimodal Large Language Models in Radiology for Report Generation and Visual Question Answering",
+    "url": "https://doi.org/10.3390/info16020136"
+  },
+  {
+    "index": 7,
+    "title": "A survey of deep-learning-based radiology report generation using multimodal inputs",
+    "url": "https://doi.org/10.1016/j.media.2025.103627"
+  },
+  {
+    "index": 8,
+    "title": "Application of large language models in medicine",
+    "url": "https://doi.org/10.1038/s44222-025-00279-5"
+  },
+  {
+    "index": 9,
+    "title": "Knowledge-Practice Performance Gap in Clinical Large Language Models: Systematic Review of 39 Benchmarks",
+    "url": "https://doi.org/10.2196/84120"
+  },
+  {
+    "index": 10,
+    "title": "Responsible adoption of multimodal artificial intelligence in health care: promises and challenges",
+    "url": "https://doi.org/10.1016/j.landig.2025.100917"
+  },
+  {
+    "index": 11,
+    "title": "A Comprehensive Survey of Electronic Health Record Modeling: From Deep Learning Approaches to Large Language Models",
+    "url": "https://arxiv.org/abs/2507.12774"
+  },
+  {
+    "index": 12,
+    "title": "MedGemma Technical Report",
+    "url": "https://arxiv.org/abs/2507.05201"
+  },
+  {
+    "index": 13,
+    "title": "MedGemma 1.5 Technical Report",
+    "url": "https://arxiv.org/abs/2604.05081"
+  },
+  {
+    "index": 14,
+    "title": "Lingshu: A Generalist Foundation Model for Unified Multimodal Medical Understanding and Reasoning",
+    "url": "https://arxiv.org/abs/2506.07044"
+  },
+  {
+    "index": 15,
+    "title": "Hulu-Med: A Transparent Generalist Model towards Holistic Medical Vision-Language Understanding",
+    "url": "https://arxiv.org/abs/2510.08668"
+  },
+  {
+    "index": 16,
+    "title": "Towards generalist foundation model for radiology by leveraging web-scale 2D&3D medical data",
+    "url": "https://doi.org/10.1038/s41467-025-62385-7"
+  },
+  {
+    "index": 17,
+    "title": "A Vision-Language Foundation Model for Precision Oncology",
+    "url": "https://doi.org/10.1038/s41586-024-08378-w"
+  },
+  {
+    "index": 18,
+    "title": "A multimodal vision foundation model for clinical dermatology",
+    "url": "https://doi.org/10.1038/s41591-025-03747-y"
+  },
+  {
+    "index": 19,
+    "title": "Diagnostic Accuracy and Clinical Value of a Domain-specific Multimodal Generative AI Model for Chest Radiograph Report Generation",
+    "url": "https://doi.org/10.1148/radiol.241476"
+  },
+  {
+    "index": 20,
+    "title": "Large language models are powerful electronic health record encoders",
+    "url": "https://arxiv.org/abs/2502.17403"
+  },
+  {
+    "index": 21,
+    "title": "MoMA: a mixture-of-multimodal-agents architecture for enhancing clinical prediction modelling",
+    "url": "https://arxiv.org/abs/2508.05492"
+  },
+  {
+    "index": 22,
+    "title": "Domain specific multimodal large language model for automated endoscopy reporting with multicenter prospective validation",
+    "url": "https://doi.org/10.1038/s41746-026-02569-7"
+  },
+  {
+    "index": 23,
+    "title": "MedXpertQA: Benchmarking Expert-Level Medical Reasoning and Understanding",
+    "url": "https://arxiv.org/abs/2501.18362"
+  },
+  {
+    "index": 24,
+    "title": "HealthBench: Evaluating Large Language Models Towards Improved Human Health",
+    "url": "https://arxiv.org/abs/2505.08775"
+  },
+  {
+    "index": 25,
+    "title": "Holistic evaluation of large language models for medical tasks with MedHELM",
+    "url": "https://doi.org/10.1038/s41591-025-04151-2"
+  },
+  {
+    "index": 26,
+    "title": "Capabilities of GPT-5 on multimodal medical reasoning",
+    "url": "https://arxiv.org/abs/2508.08224"
+  },
+  {
+    "index": 27,
+    "title": "Advancing conversational diagnostic AI with multimodal reasoning",
+    "url": "https://doi.org/10.1038/s41591-026-04371-0"
+  },
+  {
+    "index": 28,
+    "title": "GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI",
+    "url": "https://arxiv.org/abs/2408.03361"
+  },
+  {
+    "index": 29,
+    "title": "AgentClinic: a multimodal benchmark for tool-using clinical AI agents",
+    "url": "https://doi.org/10.1038/s41746-026-02674-7"
+  },
+  {
+    "index": 30,
+    "title": "MedBench v4: A Robust and Scalable Benchmark for Evaluating Chinese Medical Language Models, Multimodal Models, and Intelligent Agents",
+    "url": "https://arxiv.org/abs/2511.14439"
+  },
+  {
+    "index": 31,
+    "title": "An eyecare foundation model for clinical assistance: a randomized controlled trial",
+    "url": "https://doi.org/10.1038/s41591-025-03900-7"
+  },
+  {
+    "index": 32,
+    "title": "General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",
+    "url": "https://doi.org/10.1038/s41591-026-04431-5"
+  },
+  {
+    "index": 33,
+    "title": "Vision-language models for chest radiography do not always need the image",
+    "url": "https://arxiv.org/abs/2606.17710"
+  },
+  {
+    "index": 34,
+    "title": "Do General-Purpose Multimodal Large Language Models Really See Radiologic Images or Rely on Text?",
+    "url": "https://doi.org/10.3348/kjr.2025.1805"
+  },
+  {
+    "index": 35,
+    "title": "Understanding the robustness of vision-language models to medical image artefacts",
+    "url": "https://doi.org/10.1038/s41746-025-02108-w"
+  },
+  {
+    "index": 36,
+    "title": "Medical Hallucinations in Foundation Models and Their Impact on Healthcare",
+    "url": "https://arxiv.org/abs/2503.05777"
+  },
+  {
+    "index": 37,
+    "title": "Benchmarking vision-language models for diagnostics in emergency and critical care settings",
+    "url": "https://doi.org/10.1038/s41746-025-01837-2"
+  },
+  {
+    "index": 38,
+    "title": "Evaluating the robustness and readiness of large frontier models in health AI applications",
+    "url": "https://doi.org/10.1038/s41591-026-04501-8"
+  }
+]

@@ -1,0 +1,217 @@
+[
+  {
+    "index": 1,
+    "title": "Multi-Agent Embodied Autonomous Driving: From V2X Information Exchange to Shared World Models",
+    "url": "https://arxiv.org/abs/2606.13840"
+  },
+  {
+    "index": 2,
+    "title": "Cooperative Safety Intelligence in V2X-Enabled Transportation: A Survey",
+    "url": "https://arxiv.org/abs/2512.00490"
+  },
+  {
+    "index": 3,
+    "title": "Vehicle-Road-Cloud Collaborative Perception Framework and Key Technologies: A Review",
+    "url": "https://doi.org/10.1109/TITS.2024.3459799"
+  },
+  {
+    "index": 4,
+    "title": "面向智能网联汽车的车路协同感知技术及发展趋势（自动化学报 2025, 51(2): 233-248）",
+    "url": "https://aas.net.cn/cn/article/doi/10.16383/j.aas.c230575"
+  },
+  {
+    "index": 5,
+    "title": "车路群智协同感知方法综述（智能科学与技术学报 2025, 7(2): 143-164）",
+    "url": "https://www.cjist.com.cn/zh/article/doi/10.11959/j.issn.2096-6652.202528/"
+  },
+  {
+    "index": 6,
+    "title": "车路协同感知技术研究进展及展望（中国工程科学 2024, 26(1): 178-189）",
+    "url": "https://www.engineering.org.cn/sscae/CN/10.15302/J-SSCAE-2024.01.016"
+  },
+  {
+    "index": 7,
+    "title": "An Extensible Framework for Open Heterogeneous Collaborative Perception (HEAL)",
+    "url": "https://arxiv.org/abs/2401.13964"
+  },
+  {
+    "index": 8,
+    "title": "STAMP: Scalable Task And Model-agnostic Collaborative Perception",
+    "url": "https://arxiv.org/abs/2501.18616"
+  },
+  {
+    "index": 9,
+    "title": "CoSDH: Communication-Efficient Collaborative Perception via Supply-Demand Awareness and Intermediate-Late Hybridization",
+    "url": "https://arxiv.org/abs/2503.03430"
+  },
+  {
+    "index": 10,
+    "title": "TraF-Align: Trajectory-aware Feature Alignment for Asynchronous Multi-agent Perception",
+    "url": "https://arxiv.org/abs/2503.19391"
+  },
+  {
+    "index": 11,
+    "title": "CoopTrack: Exploring End-to-End Learning for Efficient Cooperative Sequential Perception",
+    "url": "https://arxiv.org/abs/2507.19239"
+  },
+  {
+    "index": 12,
+    "title": "QuantV2X: A Fully Quantized Multi-Agent System for Cooperative Perception",
+    "url": "https://arxiv.org/abs/2509.03704"
+  },
+  {
+    "index": 13,
+    "title": "V2X-ReaLO: An Open Online Framework and Dataset for Cooperative Perception in Reality",
+    "url": "https://arxiv.org/abs/2503.10034"
+  },
+  {
+    "index": 14,
+    "title": "V2X-Seq: A Large-Scale Sequential Dataset for Vehicle-Infrastructure Cooperative Perception and Forecasting",
+    "url": "https://arxiv.org/abs/2305.05938"
+  },
+  {
+    "index": 15,
+    "title": "V2X-Real: a Large-Scale Dataset for Vehicle-to-Everything Cooperative Perception",
+    "url": "https://arxiv.org/abs/2403.16034"
+  },
+  {
+    "index": 16,
+    "title": "TUMTraf V2X Cooperative Perception Dataset",
+    "url": "https://arxiv.org/abs/2403.01316"
+  },
+  {
+    "index": 17,
+    "title": "RCooper: A Real-world Large-scale Dataset for Roadside Cooperative Perception",
+    "url": "https://arxiv.org/abs/2403.10145"
+  },
+  {
+    "index": 18,
+    "title": "V2X-Radar: A Multi-modal Dataset with 4D Radar for Cooperative Perception",
+    "url": "https://arxiv.org/abs/2411.10962"
+  },
+  {
+    "index": 19,
+    "title": "AirV2X: Unified Air-Ground Vehicle-to-Everything Collaboration",
+    "url": "https://arxiv.org/abs/2506.19283"
+  },
+  {
+    "index": 20,
+    "title": "UrbanIng-V2X: A Large-Scale Multi-Vehicle, Multi-Infrastructure Dataset Across Multiple Intersections for Cooperative Perception",
+    "url": "https://arxiv.org/abs/2510.23478"
+  },
+  {
+    "index": 21,
+    "title": "Learning Cooperative Trajectory Representations for Motion Forecasting (V2X-Graph / V2X-Traj)",
+    "url": "https://arxiv.org/abs/2311.00371"
+  },
+  {
+    "index": 22,
+    "title": "CMP: Cooperative Motion Prediction With Multi-Agent Communication",
+    "url": "https://arxiv.org/abs/2403.17916"
+  },
+  {
+    "index": 23,
+    "title": "V2XPnP: Vehicle-to-Everything Spatio-Temporal Fusion for Multi-Agent Perception and Prediction",
+    "url": "https://arxiv.org/abs/2412.01812"
+  },
+  {
+    "index": 24,
+    "title": "Co-MTP: A Cooperative Trajectory Prediction Framework with Multi-Temporal Fusion for Autonomous Driving",
+    "url": "https://arxiv.org/abs/2502.16589"
+  },
+  {
+    "index": 25,
+    "title": "TurboTrain: Towards Efficient and Balanced Multi-Task Learning for Multi-Agent Perception and Prediction",
+    "url": "https://arxiv.org/abs/2508.04682"
+  },
+  {
+    "index": 26,
+    "title": "End-to-End Autonomous Driving through V2X Cooperation (UniV2X)",
+    "url": "https://arxiv.org/abs/2404.00717"
+  },
+  {
+    "index": 27,
+    "title": "UniMM-V2X: MoE-Enhanced Multi-Level Fusion for End-to-End Cooperative Autonomous Driving",
+    "url": "https://arxiv.org/abs/2511.09013"
+  },
+  {
+    "index": 28,
+    "title": "Risk Map as Middleware: Toward Interpretable Cooperative End-to-End Autonomous Driving for Risk-Aware Planning",
+    "url": "https://arxiv.org/abs/2508.07686"
+  },
+  {
+    "index": 29,
+    "title": "OmniV2X: A Generative Foundation Planner for Efficient End-to-End Cooperative Driving",
+    "url": "https://arxiv.org/abs/2606.21165"
+  },
+  {
+    "index": 30,
+    "title": "V2X-VLM: End-to-End V2X Cooperative Autonomous Driving Through Large Vision-Language Models",
+    "url": "https://arxiv.org/abs/2408.09251"
+  },
+  {
+    "index": 31,
+    "title": "V2V-LLM: Vehicle-to-Vehicle Cooperative Autonomous Driving with Multi-Modal Large Language Models",
+    "url": "https://arxiv.org/abs/2502.09980"
+  },
+  {
+    "index": 32,
+    "title": "CoLMDriver: LLM-Based Negotiation Benefits Cooperative Autonomous Driving",
+    "url": "https://arxiv.org/abs/2503.08683"
+  },
+  {
+    "index": 33,
+    "title": "LangCoop: Collaborative Driving with Language",
+    "url": "https://arxiv.org/abs/2504.13406"
+  },
+  {
+    "index": 34,
+    "title": "V2X-UniPool: Unifying Multimodal Perception and Knowledge Reasoning for Autonomous Driving",
+    "url": "https://arxiv.org/abs/2506.02580"
+  },
+  {
+    "index": 35,
+    "title": "SafeCoop: Unravelling Full Stack Safety in Agentic Collaborative Driving",
+    "url": "https://arxiv.org/abs/2510.18123"
+  },
+  {
+    "index": 36,
+    "title": "Toward Collaborative Autonomous Driving: Simulation Platform and End-to-End System (V2Xverse / CoDriving)",
+    "url": "https://arxiv.org/abs/2404.09496"
+  },
+  {
+    "index": 37,
+    "title": "MDrive: Benchmarking Closed-Loop Cooperative Driving for End-to-End Multi-agent Systems",
+    "url": "https://arxiv.org/abs/2605.10904"
+  },
+  {
+    "index": 38,
+    "title": "M3CAD: Towards Generic Cooperative Autonomous Driving Benchmark",
+    "url": "https://arxiv.org/abs/2505.06746"
+  },
+  {
+    "index": 39,
+    "title": "DriveE2E: Closed-Loop Benchmark for End-to-End Autonomous Driving through Real-to-Simulation",
+    "url": "https://arxiv.org/abs/2509.23922"
+  },
+  {
+    "index": 40,
+    "title": "Research Challenges and Progress in the End-to-End V2X Cooperative Autonomous Driving Competition",
+    "url": "https://arxiv.org/abs/2507.21610"
+  },
+  {
+    "index": 41,
+    "title": "Bench2Drive: Towards Multi-Ability Benchmarking of Closed-Loop End-To-End Autonomous Driving",
+    "url": "https://arxiv.org/abs/2406.03877"
+  },
+  {
+    "index": 42,
+    "title": "Do Open-Loop Metrics Predict Closed-Loop Driving? A Cross-Benchmark Correlation Study of NAVSIM and Bench2Drive",
+    "url": "https://arxiv.org/abs/2605.00066"
+  },
+  {
+    "index": 43,
+    "title": "V2X-QA: A Comprehensive Reasoning Dataset and Benchmark for Multimodal Large Language Models in Autonomous Driving Across Ego, Infrastructure, and Cooperative Views",
+    "url": "https://arxiv.org/abs/2604.02710"
+  }
+]

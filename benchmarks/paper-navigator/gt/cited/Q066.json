@@ -1,0 +1,162 @@
+[
+  {
+    "index": 1,
+    "title": "The effects of over-reliance on AI dialogue systems on students' cognitive abilities: a systematic review",
+    "url": "https://doi.org/10.1186/s40561-024-00316-7"
+  },
+  {
+    "index": 2,
+    "title": "Beware of Metacognitive Laziness: Effects of Generative Artificial Intelligence on Learning Motivation, Processes, and Performance",
+    "url": "https://arxiv.org/abs/2412.09315"
+  },
+  {
+    "index": 3,
+    "title": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+    "url": "https://doi.org/10.1073/pnas.2422633122"
+  },
+  {
+    "index": 4,
+    "title": "University students' self-reported reliance on ChatGPT for learning: A latent profile analysis",
+    "url": "https://doi.org/10.1016/j.caeai.2024.100243"
+  },
+  {
+    "index": 5,
+    "title": "The role of critical thinking on undergraduates' reliance behaviours on generative AI in problem-solving",
+    "url": "https://doi.org/10.1111/bjet.13613"
+  },
+  {
+    "index": 6,
+    "title": "Students' voices on generative AI: perceptions, benefits, and challenges in higher education",
+    "url": "https://arxiv.org/abs/2305.00290"
+  },
+  {
+    "index": 7,
+    "title": "Chatting and cheating: Ensuring academic integrity in the era of ChatGPT",
+    "url": "https://doi.org/10.1080/14703297.2023.2190148"
+  },
+  {
+    "index": 8,
+    "title": "Cheating in the age of generative AI: A high school survey study of cheating behaviors before and after the release of ChatGPT",
+    "url": "https://doi.org/10.1016/j.caeai.2024.100253"
+  },
+  {
+    "index": 9,
+    "title": "Students' perceptions of 'AI-giarism': investigating changes in understandings of academic misconduct",
+    "url": "https://doi.org/10.1007/s10639-024-13151-7"
+  },
+  {
+    "index": 10,
+    "title": "Testing of detection tools for AI-generated text",
+    "url": "https://arxiv.org/abs/2306.15666"
+  },
+  {
+    "index": 11,
+    "title": "GPT detectors are biased against non-native English writers",
+    "url": "https://arxiv.org/abs/2304.02819"
+  },
+  {
+    "index": 12,
+    "title": "RAID: A Shared Benchmark for Robust Evaluation of Machine-Generated Text Detectors",
+    "url": "https://arxiv.org/abs/2405.07940"
+  },
+  {
+    "index": 13,
+    "title": "Addressing student non-compliance in AI use declarations: implications for academic integrity and assessment in higher education",
+    "url": "https://doi.org/10.1080/02602938.2024.2415654"
+  },
+  {
+    "index": 14,
+    "title": "Postplagiarism: transdisciplinary ethics and integrity in the age of artificial intelligence and neurotechnology",
+    "url": "https://doi.org/10.1007/s40979-023-00144-1"
+  },
+  {
+    "index": 15,
+    "title": "Validity matters more than cheating",
+    "url": "https://doi.org/10.1080/02602938.2024.2386662"
+  },
+  {
+    "index": 16,
+    "title": "A critical review of GenAI policies in higher education assessment: a call to reconsider the \"originality\" of students' work",
+    "url": "https://doi.org/10.1080/02602938.2024.2309963"
+  },
+  {
+    "index": 17,
+    "title": "Developing evaluative judgement for a time of generative artificial intelligence",
+    "url": "https://doi.org/10.1080/02602938.2024.2335321"
+  },
+  {
+    "index": 18,
+    "title": "University Teachers' Views on the Adoption and Integration of Generative AI Tools for Student Assessment in Higher Education",
+    "url": "https://doi.org/10.3390/educsci14101090"
+  },
+  {
+    "index": 19,
+    "title": "Comparing the quality of human and ChatGPT feedback of students' writing",
+    "url": "https://doi.org/10.1016/j.learninstruc.2024.101894"
+  },
+  {
+    "index": 20,
+    "title": "Generative AI tools and assessment: Guidelines of the world's top-ranking universities",
+    "url": "https://doi.org/10.1016/j.caeo.2023.100151"
+  },
+  {
+    "index": 21,
+    "title": "Generative AI in Higher Education: A Global Perspective of Institutional Adoption Policies and Guidelines",
+    "url": "https://arxiv.org/abs/2405.11800"
+  },
+  {
+    "index": 22,
+    "title": "AI and ethics: Investigating the first policy responses of higher education institutions to the challenge of generative AI",
+    "url": "https://doi.org/10.1057/s41599-024-03526-z"
+  },
+  {
+    "index": 23,
+    "title": "From policy to practice: the regulation and implementation of generative AI in Swedish higher education institutes",
+    "url": "https://doi.org/10.1007/s40979-025-00195-6"
+  },
+  {
+    "index": 24,
+    "title": "Artificial intelligence policies in K-12 school districts in the United States: a content analysis shaping education policy",
+    "url": "https://doi.org/10.1080/15391523.2025.2476589"
+  },
+  {
+    "index": 25,
+    "title": "A comprehensive AI policy education framework for university teaching and learning",
+    "url": "https://arxiv.org/abs/2305.00280"
+  },
+  {
+    "index": 26,
+    "title": "The Artificial Intelligence Assessment Scale (AIAS): A Framework for Ethical Integration of Generative AI in Educational Assessment",
+    "url": "https://arxiv.org/abs/2312.07086"
+  },
+  {
+    "index": 27,
+    "title": "The AI Assessment Scale (AIAS) in action: A pilot implementation of GenAI supported assessment",
+    "url": "https://arxiv.org/abs/2403.14692"
+  },
+  {
+    "index": 28,
+    "title": "The two-lane road to hell is paved with good intentions: why an all-or-none approach to generative AI, integrity, and assessment is insupportable",
+    "url": "https://doi.org/10.1080/07294360.2025.2476516"
+  },
+  {
+    "index": 29,
+    "title": "Evidence-centered Assessment for Writing with Generative AI",
+    "url": "https://arxiv.org/abs/2401.08964"
+  },
+  {
+    "index": 30,
+    "title": "Enhancing self-regulated learning and learning experience in generative AI environments: The critical role of metacognitive support",
+    "url": "https://doi.org/10.1111/bjet.13599"
+  },
+  {
+    "index": 31,
+    "title": "ENAI Recommendations on the ethical use of Artificial Intelligence in Education",
+    "url": "https://doi.org/10.1007/s40979-023-00133-4"
+  },
+  {
+    "index": 32,
+    "title": "生成式人工智能赋能研究生教育：理论逻辑、法律风险和治理路径",
+    "url": "https://html.rhhz.net/yjyjyyj/html/20250203.htm"
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "index": 1,
+    "title": "AI, insurance, discrimination and unfair differentiation: an overview and research agenda",
+    "url": "https://arxiv.org/abs/2401.11892"
+  },
+  {
+    "index": 2,
+    "title": "The Dark Side of AI in Insurance: A Systematic Review of Mechanisms Linking AI Design Features to Consumer Harm",
+    "url": "https://doi.org/10.1111/joca.70034"
+  },
+  {
+    "index": 3,
+    "title": "From bias to black boxes: understanding and managing the risks of AI – an actuarial perspective",
+    "url": "https://doi.org/10.1017/s1357321724000060"
+  },
+  {
+    "index": 4,
+    "title": "Insurance analytics: prediction, explainability, and fairness",
+    "url": "https://doi.org/10.1017/S1748499524000289"
+  },
+  {
+    "index": 5,
+    "title": "Antidiscrimination Insurance Pricing: Regulations, Fairness Criteria, and Models",
+    "url": "https://doi.org/10.1080/10920277.2023.2190528"
+  },
+  {
+    "index": 6,
+    "title": "What is fair? Proxy discrimination vs. demographic disparities in insurance pricing",
+    "url": "https://doi.org/10.1080/03461238.2024.2364741"
+  },
+  {
+    "index": 7,
+    "title": "A Discrimination-Free Premium under a Causal Framework",
+    "url": "https://doi.org/10.1080/10920277.2023.2291524"
+  },
+  {
+    "index": 8,
+    "title": "Fairness: plurality, causality, and insurability",
+    "url": "https://doi.org/10.1007/s13385-024-00387-3"
+  },
+  {
+    "index": 9,
+    "title": "Insights From Insurance for Fair Machine Learning",
+    "url": "https://arxiv.org/abs/2306.14624"
+  },
+  {
+    "index": 10,
+    "title": "Fairness of Ratemaking for Catastrophe Insurance: Lessons from Machine Learning",
+    "url": "https://doi.org/10.1287/isre.2022.1195"
+  },
+  {
+    "index": 11,
+    "title": "Discrimination-free Insurance Pricing with Privatized Sensitive Attributes",
+    "url": "https://arxiv.org/abs/2504.11775"
+  },
+  {
+    "index": 12,
+    "title": "Beyond Incompatibility: Trade-offs between Mutually Exclusive Fairness Criteria in Machine Learning and Law",
+    "url": "https://arxiv.org/abs/2212.00469"
+  },
+  {
+    "index": 13,
+    "title": "Dual evaluation of performance and fairness from machine learning models for non-life insurance pricing",
+    "url": "https://doi.org/10.1017/S1357321725100317"
+  },
+  {
+    "index": 14,
+    "title": "Explainable Boosting Machine for Predicting Claim Severity and Frequency in Car Insurance",
+    "url": "https://arxiv.org/abs/2503.21321"
+  },
+  {
+    "index": 15,
+    "title": "Bridging transparency in insurance claims prediction: A comparative study of explainable AI and traditional linear models using vehicle telematics data",
+    "url": "https://doi.org/10.1016/j.techfore.2025.124418"
+  },
+  {
+    "index": 16,
+    "title": "Questioning the ability of feature-based explanations to empower non-experts in robo-advised financial decision-making",
+    "url": "https://doi.org/10.1145/3593013.3594053"
+  },
+  {
+    "index": 17,
+    "title": "Algorithmic decision-making employing profiling: will trade secrecy protection render the right to explanation toothless?",
+    "url": "https://doi.org/10.1007/s10676-022-09642-1"
+  },
+  {
+    "index": 18,
+    "title": "Melting contestation: insurance fairness and machine learning",
+    "url": "https://doi.org/10.1007/s10676-023-09720-y"
+  },
+  {
+    "index": 19,
+    "title": "Empowering Individuals in Automated Decision-Making: Explainability, Contestability and Beyond",
+    "url": "https://doi.org/10.1145/3678884.3682043"
+  },
+  {
+    "index": 20,
+    "title": "Challenging the Machine: Contestability in Government AI Systems",
+    "url": "https://arxiv.org/abs/2406.10430"
+  },
+  {
+    "index": 21,
+    "title": "Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias Human Oversight of AI",
+    "url": "https://arxiv.org/abs/2502.10036"
+  },
+  {
+    "index": 22,
+    "title": "Medicare advantage becoming a disadvantage with use of artificial intelligence in prior authorization review",
+    "url": "https://doi.org/10.1038/s41746-026-02387-x"
+  },
+  {
+    "index": 23,
+    "title": "Overturned Health Insurance Claim Denials",
+    "url": "https://doi.org/10.1001/jamainternmed.2026.0358"
+  },
+  {
+    "index": 24,
+    "title": "Discrimination and AI in insurance: what do people find fair? Results from a survey",
+    "url": "https://arxiv.org/abs/2501.12897"
+  },
+  {
+    "index": 25,
+    "title": "Law and the Emerging Political Economy of Algorithmic Audits",
+    "url": "https://arxiv.org/abs/2406.11855"
+  },
+  {
+    "index": 26,
+    "title": "A Framework for Assurance Audits of Algorithmic Systems",
+    "url": "https://arxiv.org/abs/2401.14908"
+  },
+  {
+    "index": 27,
+    "title": "Closing the AI accountability gap: defining an end-to-end framework for internal algorithmic auditing",
+    "url": "https://arxiv.org/abs/2001.00973"
+  },
+  {
+    "index": 28,
+    "title": "How Proxy Race Distorts Regression-Based Fairness Audits",
+    "url": "https://arxiv.org/abs/2603.17106"
+  },
+  {
+    "index": 29,
+    "title": "Assessing Fair Lending Risks Using Race/Ethnicity Proxies",
+    "url": "https://doi.org/10.1287/mnsc.2016.2579"
+  },
+  {
+    "index": 30,
+    "title": "Algorithmic Bias Under the EU AI Act: Compliance Risk, Capital Strain, and Pricing Distortions in Life and Health Insurance Underwriting",
+    "url": "https://doi.org/10.3390/risks13090160"
+  },
+  {
+    "index": 31,
+    "title": "Artificial Intelligence Adoption and Ethical Governance in Australian Insurance: Evidence from Web-Based Content Analysis",
+    "url": "https://doi.org/10.3390/risks14070169"
+  },
+  {
+    "index": 32,
+    "title": "Moral authority over risk classifications: how data professionals shape the uneven algorithmization of life insurance",
+    "url": "https://doi.org/10.1093/ser/mwaf033"
+  },
+  {
+    "index": 33,
+    "title": "Addressing insurance price discrimination in an era of diversity, equity, and inclusion",
+    "url": "https://doi.org/10.1111/rmir.12249"
+  }
+]

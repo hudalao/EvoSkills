@@ -1,0 +1,252 @@
+[
+  {
+    "index": 1,
+    "title": "IndustReal: Transferring Contact-Rich Assembly Tasks from Simulation to Reality",
+    "url": "https://arxiv.org/abs/2305.17110"
+  },
+  {
+    "index": 2,
+    "title": "AutoMate: Specialist and Generalist Assembly Policies over Diverse Geometries",
+    "url": "https://arxiv.org/abs/2407.08028"
+  },
+  {
+    "index": 3,
+    "title": "FurnitureBench: Reproducible real-world benchmark for long-horizon complex manipulation",
+    "url": "https://arxiv.org/abs/2305.12821"
+  },
+  {
+    "index": 4,
+    "title": "FMB: A functional manipulation benchmark for generalizable robotic learning",
+    "url": "https://arxiv.org/abs/2401.08553"
+  },
+  {
+    "index": 5,
+    "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+    "url": "https://arxiv.org/abs/2303.04137"
+  },
+  {
+    "index": 6,
+    "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+    "url": "https://arxiv.org/abs/2304.13705"
+  },
+  {
+    "index": 7,
+    "title": "What Matters in Learning from Offline Human Demonstrations for Robot Manipulation",
+    "url": "https://arxiv.org/abs/2108.03298"
+  },
+  {
+    "index": 8,
+    "title": "JUICER: Data-Efficient Imitation Learning for Robotic Assembly",
+    "url": "https://arxiv.org/abs/2404.03729"
+  },
+  {
+    "index": 9,
+    "title": "Behavioral Cloning for Robotic Connector Assembly: An Empirical Study",
+    "url": "https://arxiv.org/abs/2602.22100"
+  },
+  {
+    "index": 10,
+    "title": "Data Scaling Laws in Imitation Learning for Robotic Manipulation",
+    "url": "https://arxiv.org/abs/2410.18647"
+  },
+  {
+    "index": 11,
+    "title": "The Curse of Precision: A Data Scaling Law for High-Precision Robotic Manipulation",
+    "url": "https://arxiv.org/abs/2607.23108"
+  },
+  {
+    "index": 12,
+    "title": "EasyInsert: A Data-Efficient and Generalizable Insertion Policy",
+    "url": "https://arxiv.org/abs/2505.16187"
+  },
+  {
+    "index": 13,
+    "title": "Deep Reinforcement Learning for Industrial Insertion Tasks with Visual Inputs and Natural Rewards",
+    "url": "https://arxiv.org/abs/1906.05841"
+  },
+  {
+    "index": 14,
+    "title": "SERL: A Software Suite for Sample-Efficient Robotic Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2401.16013"
+  },
+  {
+    "index": 15,
+    "title": "Precise and dexterous robotic manipulation via human-in-the-loop reinforcement learning",
+    "url": "https://doi.org/10.1126/scirobotics.ads5033"
+  },
+  {
+    "index": 16,
+    "title": "RL-100: Performant Robotic Manipulation with Real-World Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2510.14830"
+  },
+  {
+    "index": 17,
+    "title": "Offline Meta-Reinforcement Learning for Industrial Insertion",
+    "url": "https://arxiv.org/abs/2110.04276"
+  },
+  {
+    "index": 18,
+    "title": "Learning on the Job: Self-Rewarding Offline-to-Online Finetuning for Industrial Insertion of Novel Connectors from Vision",
+    "url": "https://arxiv.org/abs/2210.15206"
+  },
+  {
+    "index": 19,
+    "title": "SRSA: Skill Retrieval and Adaptation for Robotic Assembly Tasks",
+    "url": "https://arxiv.org/abs/2503.04538"
+  },
+  {
+    "index": 20,
+    "title": "FORGE: Force-Guided Exploration for Robust Contact-Rich Manipulation Under Uncertainty",
+    "url": "https://arxiv.org/abs/2408.04587"
+  },
+  {
+    "index": 21,
+    "title": "SHaRe-RL: Structured, Interactive Reinforcement Learning for Contact-Rich Industrial Assembly Tasks",
+    "url": "https://arxiv.org/abs/2509.13949"
+  },
+  {
+    "index": 22,
+    "title": "Multimodal Variational DeepMDP: An Efficient Approach for Industrial Assembly in High-Mix, Low-Volume Production",
+    "url": "https://doi.org/10.1109/LRA.2024.3487490"
+  },
+  {
+    "index": 23,
+    "title": "A residual reinforcement learning method for robotic assembly using visual and force information",
+    "url": "https://doi.org/10.1016/j.jmsy.2023.11.008"
+  },
+  {
+    "index": 24,
+    "title": "Hierarchical Policy Learning With Demonstration Learning for Robotic Multiple Peg-in-Hole Assembly Tasks",
+    "url": "https://doi.org/10.1109/TII.2023.3240936"
+  },
+  {
+    "index": 25,
+    "title": "Data-Efficient Hierarchical Reinforcement Learning for Robotic Assembly Control Applications",
+    "url": "https://doi.org/10.1109/TIE.2020.3038072"
+  },
+  {
+    "index": 26,
+    "title": "Assessing generalizability in deep reinforcement learning based assembly: a comprehensive review",
+    "url": "https://doi.org/10.1007/s10845-024-02546-5"
+  },
+  {
+    "index": 27,
+    "title": "Towards cost-effective and safe contact-rich robotic manipulation with reinforcement learning: A review of techniques for future industrial automation",
+    "url": "https://doi.org/10.1177/09596518251350353"
+  },
+  {
+    "index": 28,
+    "title": "Play2Perfect: What Matters in Dexterous Play Pretraining for Precise Assembly?",
+    "url": "https://arxiv.org/abs/2606.26428"
+  },
+  {
+    "index": 29,
+    "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+    "url": "https://arxiv.org/abs/2406.09246"
+  },
+  {
+    "index": 30,
+    "title": "π0: A Vision-Language-Action Flow Model for General Robot Control",
+    "url": "https://arxiv.org/abs/2410.24164"
+  },
+  {
+    "index": 31,
+    "title": "π0.5: a Vision-Language-Action Model with Open-World Generalization",
+    "url": "https://arxiv.org/abs/2504.16054"
+  },
+  {
+    "index": 32,
+    "title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success",
+    "url": "https://arxiv.org/abs/2502.19645"
+  },
+  {
+    "index": 33,
+    "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+    "url": "https://arxiv.org/abs/2310.08864"
+  },
+  {
+    "index": 34,
+    "title": "LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models",
+    "url": "https://arxiv.org/abs/2510.13626"
+  },
+  {
+    "index": 35,
+    "title": "Transferring Vision-Language-Action Models to Industry Applications: Architectures, Performance, and Challenges",
+    "url": "https://arxiv.org/abs/2509.23121"
+  },
+  {
+    "index": 36,
+    "title": "VTLA: Vision-Tactile-Language-Action Model with Preference Learning for Insertion Manipulation",
+    "url": "https://arxiv.org/abs/2505.09577"
+  },
+  {
+    "index": 37,
+    "title": "ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation",
+    "url": "https://arxiv.org/abs/2505.22159"
+  },
+  {
+    "index": 38,
+    "title": "FurnitureVLA: Learning Long-Horizon Bimanual Furniture Assembly with Vision-Language-Action Model",
+    "url": "https://arxiv.org/abs/2607.01212"
+  },
+  {
+    "index": 39,
+    "title": "VLAbot: A human Vision-Language-Action models interaction framework for robotic assembly",
+    "url": "https://doi.org/10.1016/j.rcim.2026.103268"
+  },
+  {
+    "index": 40,
+    "title": "π*0.6: a VLA That Learns From Experience",
+    "url": "https://arxiv.org/abs/2511.14759"
+  },
+  {
+    "index": 41,
+    "title": "From Imitation to Refinement: Residual RL for Precise Assembly",
+    "url": "https://arxiv.org/abs/2407.16677"
+  },
+  {
+    "index": 42,
+    "title": "RLDG: Robotic Generalist Policy Distillation via Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2412.09858"
+  },
+  {
+    "index": 43,
+    "title": "ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy",
+    "url": "https://arxiv.org/abs/2502.05450"
+  },
+  {
+    "index": 44,
+    "title": "Improving Vision-Language-Action Model with Online Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2501.16664"
+  },
+  {
+    "index": 45,
+    "title": "Refined Policy Distillation: From VLA Generalists to RL Experts",
+    "url": "https://arxiv.org/abs/2503.05833"
+  },
+  {
+    "index": 46,
+    "title": "SPARR: Simulation-based Policies with Asymmetric Real-world Residuals for Assembly",
+    "url": "https://arxiv.org/abs/2602.23253"
+  },
+  {
+    "index": 47,
+    "title": "VT-Refine: Learning Bimanual Assembly with Visuo-Tactile Feedback via Simulation Fine-Tuning",
+    "url": "https://arxiv.org/abs/2510.14930"
+  },
+  {
+    "index": 48,
+    "title": "PAC-ACT: Post-training Actor-Critic for Action Chunking Transformers",
+    "url": "https://arxiv.org/abs/2607.09590"
+  },
+  {
+    "index": 49,
+    "title": "Hierarchical Hybrid Learning for Long-Horizon Contact-Rich Robotic Assembly",
+    "url": "https://arxiv.org/abs/2409.16451"
+  },
+  {
+    "index": 50,
+    "title": "Data and Learning Where it Matters for Contact-Rich Manipulation",
+    "url": "https://arxiv.org/abs/2607.15982"
+  }
+]

@@ -246,6 +246,8 @@ Focused paper workflow in four stages — from query to evaluated reading list:
 - **Read** — Full-text retrieval via Jina Reader with 3-level reading strategy (Technical, Analytical, Contextual)
 Includes Python scripts powered by Semantic Scholar, HuggingFace, GitHub, arXiv, and Jina Reader APIs.
 
+评测数据：[70 道学术检索查询、参考答案与核验材料](benchmarks/paper-navigator/)，覆盖 10 个行业域与 9 类任务，并提供构建、校验与使用说明。
+
 ### 🌳 `paper-graph` — Lineage Map of a Research Field via Mermaid Diagrams
 
 A skill that turns a research topic or seed paper into a Markdown report tracing how a field evolved — challenges, solutions, and per-solution citation lineage, all rendered as embedded Mermaid diagrams:
