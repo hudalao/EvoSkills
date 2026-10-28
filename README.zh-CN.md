@@ -251,7 +251,7 @@ flowchart LR
 - **阅读** — 通过 Jina Reader 获取全文，配三级阅读策略（技术型、分析型、语境型）
 包含由 Semantic Scholar、HuggingFace、GitHub、arXiv 与 Jina Reader API 驱动的 Python 脚本。
 
-评测题集：[70 道学术检索查询](benchmarks/paper-navigator/)，覆盖 10 个行业域与 9 类任务。
+评测题集：[70 道学术检索查询及构建、校验与使用说明](benchmarks/paper-navigator/)，覆盖 10 个行业域与 9 类任务。
 
 ### 🌳 `paper-graph` — 用 Mermaid 图谱绘制研究领域脉络
 
