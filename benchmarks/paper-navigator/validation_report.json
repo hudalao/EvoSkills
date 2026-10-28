@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "passed_with_notices",
+  "scope": "离线文件完整性和跨文件一致性；未重新联网检索或核验论文内容。",
+  "reference_review_status": "candidate_pending_human_review",
+  "summary": {
+    "manifested_files": 150,
+    "queries": 70,
+    "reference_answers": 70,
+    "citations": 2774,
+    "verification_verdicts": {
+      "OK": 2748,
+      "DOI_RESOLVES": 19,
+      "NEAR": 3,
+      "PDF_OK": 1,
+      "MISMATCH": 2,
+      "EXISTS_ONLY": 1
+    },
+    "historical_searches": 3719,
+    "doubao_papers": 421,
+    "doubao_matched": 103,
+    "doubao_only": 318
+  },
+  "notices": [
+    {
+      "qid": "Q021",
+      "index": 32,
+      "reason": "历史核验报告记录的是标题订正前的快照；答案、结构化引用和文献表已使用官方标题，DOI相同。"
+    }
+  ],
+  "errors": []
+}

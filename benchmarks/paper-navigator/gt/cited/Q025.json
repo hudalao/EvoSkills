@@ -1,0 +1,187 @@
+[
+  {
+    "index": 1,
+    "title": "Digital Twin: Manufacturing Excellence through Virtual Factory Replication (White Paper, Michael Grieves, 2014)",
+    "url": "https://theengineer.markallengroup.com/production/content/uploads/2014/12/Digital_Twin_White_Paper_Dr_Grieves.pdf"
+  },
+  {
+    "index": 2,
+    "title": "Digital Twin: Mitigating Unpredictable, Undesirable Emergent Behavior in Complex Systems",
+    "url": "https://doi.org/10.1007/978-3-319-38756-7_4"
+  },
+  {
+    "index": 3,
+    "title": "Reengineering Aircraft Structural Life Prediction Using a Digital Twin",
+    "url": "https://doi.org/10.1155/2011/154798"
+  },
+  {
+    "index": 4,
+    "title": "The Digital Twin Paradigm for Future NASA and U.S. Air Force Vehicles",
+    "url": "https://doi.org/10.2514/6.2012-1818"
+  },
+  {
+    "index": 5,
+    "title": "Virtual factory: an integrated approach to manufacturing systems modeling",
+    "url": "https://doi.org/10.1108/01443570110390354"
+  },
+  {
+    "index": 6,
+    "title": "Symbiotic Simulation Systems: An Extended Definition Motivated by Symbiosis in Biology",
+    "url": "https://doi.org/10.1109/PADS.2008.17"
+  },
+  {
+    "index": 7,
+    "title": "Cyber-physical Production Systems: Roots, Expectations and R&D Challenges",
+    "url": "https://doi.org/10.1016/j.procir.2014.03.115"
+  },
+  {
+    "index": 8,
+    "title": "A Cyber-Physical Systems architecture for Industry 4.0-based manufacturing systems",
+    "url": "https://doi.org/10.1016/j.mfglet.2014.12.001"
+  },
+  {
+    "index": 9,
+    "title": "About The Importance of Autonomy and Digital Twins for the Future of Manufacturing",
+    "url": "https://doi.org/10.1016/j.ifacol.2015.06.141"
+  },
+  {
+    "index": 10,
+    "title": "Digital Twin—The Simulation Aspect",
+    "url": "https://doi.org/10.1007/978-3-319-32156-1_5"
+  },
+  {
+    "index": 11,
+    "title": "Digital Twin Data Modeling with AutomationML and a Communication Methodology for Data Exchange",
+    "url": "https://doi.org/10.1016/j.ifacol.2016.11.115"
+  },
+  {
+    "index": 12,
+    "title": "数字孪生车间——一种未来车间运行新模式（Digital twin workshop: a new paradigm for future workshop）",
+    "url": "http://www.cims-journal.cn/CN/10.13196/j.cims.2017.01.001"
+  },
+  {
+    "index": 13,
+    "title": "Digital Twin Shop-Floor: A New Shop-Floor Paradigm Towards Smart Manufacturing",
+    "url": "https://doi.org/10.1109/ACCESS.2017.2756069"
+  },
+  {
+    "index": 14,
+    "title": "数字孪生车间信息物理融合理论与技术（Theories and technologies for cyber-physical fusion in digital twin shop-floor）",
+    "url": "http://www.cims-journal.cn/CN/10.13196/j.cims.2017.08.001"
+  },
+  {
+    "index": 15,
+    "title": "The Digital Twin: Realizing the Cyber-Physical Production System for Industry 4.0",
+    "url": "https://doi.org/10.1016/j.procir.2016.11.152"
+  },
+  {
+    "index": 16,
+    "title": "The Digital Twin: Demonstrating the Potential of Real Time Data Acquisition in Production Systems",
+    "url": "https://doi.org/10.1016/j.promfg.2017.04.043"
+  },
+  {
+    "index": 17,
+    "title": "Shaping the digital twin for design and production engineering",
+    "url": "https://doi.org/10.1016/j.cirp.2017.04.040"
+  },
+  {
+    "index": 18,
+    "title": "Toward a Digital Twin for real-time geometry assurance in individualized production",
+    "url": "https://doi.org/10.1016/j.cirp.2017.04.038"
+  },
+  {
+    "index": 19,
+    "title": "A Review of the Roles of Digital Twin in CPS-based Production Systems",
+    "url": "https://doi.org/10.1016/j.promfg.2017.07.198"
+  },
+  {
+    "index": 20,
+    "title": "The digital twin of an industrial production line within the industry 4.0 concept",
+    "url": "https://doi.org/10.1109/PC.2017.7976223"
+  },
+  {
+    "index": 21,
+    "title": "A Digital Twin-Based Approach for Designing and Multi-Objective Optimization of Hollow Glass Production Line",
+    "url": "https://doi.org/10.1109/ACCESS.2017.2766453"
+  },
+  {
+    "index": 22,
+    "title": "Digital twin-driven product design, manufacturing and service with big data",
+    "url": "https://doi.org/10.1007/s00170-017-0233-1"
+  },
+  {
+    "index": 23,
+    "title": "Digital Twin in manufacturing: A categorical literature review and classification",
+    "url": "https://doi.org/10.1016/j.ifacol.2018.08.474"
+  },
+  {
+    "index": 24,
+    "title": "Digital twin-based smart production management and control framework for the complex product assembly shop-floor",
+    "url": "https://doi.org/10.1007/s00170-018-1617-6"
+  },
+  {
+    "index": 25,
+    "title": "Digital twin-driven manufacturing cyber-physical system for parallel controlling of smart workshop",
+    "url": "https://doi.org/10.1007/s12652-018-0881-5"
+  },
+  {
+    "index": 26,
+    "title": "Digital twin-driven rapid individualised designing of automated flow-shop manufacturing system",
+    "url": "https://doi.org/10.1080/00207543.2018.1471243"
+  },
+  {
+    "index": 27,
+    "title": "Defining a Digital Twin-based Cyber-Physical Production System for autonomous manufacturing in smart shop floors",
+    "url": "https://doi.org/10.1080/00207543.2019.1566661"
+  },
+  {
+    "index": 28,
+    "title": "Digital Twin in Industry: State-of-the-Art",
+    "url": "https://doi.org/10.1109/TII.2018.2873186"
+  },
+  {
+    "index": 29,
+    "title": "数字孪生五维模型及十大领域应用（Digital twin five-dimension model and its ten applications）",
+    "url": "http://www.cims-journal.cn/CN/10.13196/j.cims.2019.01.001"
+  },
+  {
+    "index": 30,
+    "title": "Make more digital twins",
+    "url": "https://doi.org/10.1038/d41586-019-02849-1"
+  },
+  {
+    "index": 31,
+    "title": "Digital Twin-driven smart manufacturing: Connotation, reference model, applications and research issues",
+    "url": "https://doi.org/10.1016/j.rcim.2019.101837"
+  },
+  {
+    "index": 32,
+    "title": "A digital twin-based flexible cellular manufacturing for optimization of air conditioner line",
+    "url": "https://doi.org/10.1016/j.jmsy.2020.07.012"
+  },
+  {
+    "index": 33,
+    "title": "Use Case Scenarios for Digital Twin Implementation Based on ISO 23247 (NIST AMS 400-2)",
+    "url": "https://doi.org/10.6028/nist.ams.400-2"
+  },
+  {
+    "index": 34,
+    "title": "Digital twins-based smart manufacturing system design in Industry 4.0: A review",
+    "url": "https://doi.org/10.1016/j.jmsy.2021.05.011"
+  },
+  {
+    "index": 35,
+    "title": "Digital twin modeling",
+    "url": "https://doi.org/10.1016/j.jmsy.2022.06.015"
+  },
+  {
+    "index": 36,
+    "title": "A 5M Synchronization Mechanism for Digital Twin Shop-Floor",
+    "url": "https://doi.org/10.1186/s10033-023-00965-8"
+  },
+  {
+    "index": 37,
+    "title": "From simple digital twin to complex digital twin part II: Multi-scenario applications of digital twin shop floor",
+    "url": "https://doi.org/10.1016/j.aei.2023.101915"
+  }
+]

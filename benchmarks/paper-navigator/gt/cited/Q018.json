@@ -1,0 +1,237 @@
+[
+ {
+  "index": 1,
+  "title": "Towards learning-based planning: The nuPlan benchmark for real-world autonomous driving",
+  "url": "https://arxiv.org/abs/2403.04133"
+ },
+ {
+  "index": 2,
+  "title": "CARLA: An Open Urban Driving Simulator",
+  "url": "https://arxiv.org/abs/1711.03938"
+ },
+ {
+  "index": 3,
+  "title": "Bench2Drive: Towards Multi-Ability Benchmarking of Closed-Loop End-To-End Autonomous Driving",
+  "url": "https://arxiv.org/abs/2406.03877"
+ },
+ {
+  "index": 4,
+  "title": "NAVSIM: Data-Driven Non-Reactive Autonomous Vehicle Simulation and Benchmarking",
+  "url": "https://arxiv.org/abs/2406.15349"
+ },
+ {
+  "index": 5,
+  "title": "End-to-End Autonomous Driving: Challenges and Frontiers",
+  "url": "https://arxiv.org/abs/2306.16927"
+ },
+ {
+  "index": 6,
+  "title": "Driving to safety: How many miles of driving would it take to demonstrate autonomous vehicle reliability?",
+  "url": "https://doi.org/10.1016/j.tra.2016.09.010"
+ },
+ {
+  "index": 7,
+  "title": "On Offline Evaluation of Vision-based Driving Models",
+  "url": "https://arxiv.org/abs/1809.04843"
+ },
+ {
+  "index": 8,
+  "title": "Scalable Offline Metrics for Autonomous Driving",
+  "url": "https://arxiv.org/abs/2510.08571"
+ },
+ {
+  "index": 9,
+  "title": "Do Open-Loop Metrics Predict Closed-Loop Driving? A Cross-Benchmark Correlation Study of NAVSIM and Bench2Drive",
+  "url": "https://arxiv.org/abs/2605.00066"
+ },
+ {
+  "index": 10,
+  "title": "BridgeSim: Unveiling the OL-CL Gap in End-to-End Autonomous Driving",
+  "url": "https://arxiv.org/abs/2604.10856"
+ },
+ {
+  "index": 11,
+  "title": "What Truly Matters in Trajectory Prediction for Autonomous Driving?",
+  "url": "https://arxiv.org/abs/2306.15136"
+ },
+ {
+  "index": 12,
+  "title": "On Offline Evaluation of 3D Object Detection for Autonomous Driving",
+  "url": "https://arxiv.org/abs/2308.12779"
+ },
+ {
+  "index": 13,
+  "title": "Scaling Laws of Motion Forecasting and Planning - A Technical Report",
+  "url": "https://arxiv.org/abs/2506.08228"
+ },
+ {
+  "index": 14,
+  "title": "Rethinking the Open-Loop Evaluation of End-to-End Autonomous Driving in nuScenes",
+  "url": "https://arxiv.org/abs/2305.10430"
+ },
+ {
+  "index": 15,
+  "title": "Is Ego Status All You Need for Open-Loop End-to-End Autonomous Driving?",
+  "url": "https://arxiv.org/abs/2312.03031"
+ },
+ {
+  "index": 16,
+  "title": "Parting with Misconceptions about Learning-based Vehicle Motion Planning",
+  "url": "https://arxiv.org/abs/2306.07962"
+ },
+ {
+  "index": 17,
+  "title": "Rethinking Imitation-based Planners for Autonomous Driving",
+  "url": "https://doi.org/10.1109/ICRA57147.2024.10611364"
+ },
+ {
+  "index": 18,
+  "title": "When Planners Meet Reality: How Learned, Reactive Traffic Agents Shift nuPlan Benchmarks",
+  "url": "https://arxiv.org/abs/2510.14677"
+ },
+ {
+  "index": 19,
+  "title": "nuPlan-R: A Closed-Loop Planning Benchmark for Autonomous Driving via Reactive Multi-Agent Simulation",
+  "url": "https://arxiv.org/abs/2511.10403"
+ },
+ {
+  "index": 20,
+  "title": "Hidden Biases of End-to-End Driving Models",
+  "url": "https://arxiv.org/abs/2306.07957"
+ },
+ {
+  "index": 21,
+  "title": "Hidden Biases of End-to-End Driving Datasets",
+  "url": "https://arxiv.org/abs/2412.09602"
+ },
+ {
+  "index": 22,
+  "title": "PlanT 2.0: Exposing Biases and Structural Flaws in Closed-Loop Driving",
+  "url": "https://arxiv.org/abs/2511.07292"
+ },
+ {
+  "index": 23,
+  "title": "When Shared Rollouts Fail in Defensive Driving Evaluation: A NAVSIM Score Basis Audit",
+  "url": "https://arxiv.org/abs/2608.04896"
+ },
+ {
+  "index": 24,
+  "title": "Exploring the Limitations of Behavior Cloning for Autonomous Driving",
+  "url": "https://arxiv.org/abs/1904.08980"
+ },
+ {
+  "index": 25,
+  "title": "Fail2Drive: Benchmarking Closed-Loop Driving Generalization",
+  "url": "https://arxiv.org/abs/2604.08535"
+ },
+ {
+  "index": 26,
+  "title": "Can Vehicle Motion Planning Generalize to Realistic Long-tail Scenarios?",
+  "url": "https://arxiv.org/abs/2404.07569"
+ },
+ {
+  "index": 27,
+  "title": "Shift&Drift: A Zero-Shot Benchmark for Generalizable and Robust Autonomous Driving Motion Planning",
+  "url": "https://arxiv.org/abs/2607.07844"
+ },
+ {
+  "index": 28,
+  "title": "Bench2Drive-Robust: Benchmarking Closed-Loop Autonomous Driving under Deployment Perturbations",
+  "url": "https://arxiv.org/abs/2605.18059"
+ },
+ {
+  "index": 29,
+  "title": "Zero-Shot Cross-City Generalization in End-to-End Autonomous Driving: Self-Supervised versus Supervised Representations",
+  "url": "https://arxiv.org/abs/2603.11417"
+ },
+ {
+  "index": 30,
+  "title": "Safe2Drive: Evaluating Safe Driving Behaviors of E2E Autonomous Driving Models",
+  "url": "https://arxiv.org/abs/2606.00191"
+ },
+ {
+  "index": 31,
+  "title": "NeuroNCAP: Photorealistic Closed-loop Safety Testing for Autonomous Driving",
+  "url": "https://arxiv.org/abs/2404.07762"
+ },
+ {
+  "index": 32,
+  "title": "HiDrive: A Closed-Loop Benchmark for High-Level Autonomous Driving",
+  "url": "https://arxiv.org/abs/2605.09972"
+ },
+ {
+  "index": 33,
+  "title": "Sim2Real Predictivity: Does Evaluation in Simulation Predict Real-World Performance?",
+  "url": "https://doi.org/10.1109/LRA.2020.3013848"
+ },
+ {
+  "index": 34,
+  "title": "Mind the Gap! A Study on the Transferability of Virtual Versus Physical-World Testing of Autonomous Driving Systems",
+  "url": "https://arxiv.org/abs/2112.11255"
+ },
+ {
+  "index": 35,
+  "title": "A Multi-Modality Evaluation of the Reality Gap in Autonomous Driving Systems",
+  "url": "https://arxiv.org/abs/2509.22379"
+ },
+ {
+  "index": 36,
+  "title": "Comparing Offline and Online Testing of Deep Neural Networks: An Autonomous Car Case Study",
+  "url": "https://arxiv.org/abs/1912.00805"
+ },
+ {
+  "index": 37,
+  "title": "Model vs system level testing of autonomous driving systems: a replication and extension study",
+  "url": "https://doi.org/10.1007/s10664-023-10306-x"
+ },
+ {
+  "index": 38,
+  "title": "Behavioral Cloning Models Reality Check for Autonomous Driving",
+  "url": "https://arxiv.org/abs/2409.07218"
+ },
+ {
+  "index": 39,
+  "title": "Driving Policy Transfer via Modularity and Abstraction",
+  "url": "https://arxiv.org/abs/1804.09364"
+ },
+ {
+  "index": 40,
+  "title": "Learning to Drive from Simulation without Real World Labels",
+  "url": "https://arxiv.org/abs/1812.03823"
+ },
+ {
+  "index": 41,
+  "title": "Simulation-Based Reinforcement Learning for Real-World Autonomous Driving",
+  "url": "https://arxiv.org/abs/1911.12905"
+ },
+ {
+  "index": 42,
+  "title": "Robust Autonomy Emerges from Self-Play",
+  "url": "https://arxiv.org/abs/2502.03349"
+ },
+ {
+  "index": 43,
+  "title": "Sim2Real-AD: A Modular Sim-to-Real Framework for Deploying VLM-Guided Reinforcement Learning in Real-World Autonomous Driving",
+  "url": "https://arxiv.org/abs/2604.03497"
+ },
+ {
+  "index": 44,
+  "title": "Pseudo-Simulation for Autonomous Driving",
+  "url": "https://arxiv.org/abs/2506.04218"
+ },
+ {
+  "index": 45,
+  "title": "DriveE2E: Closed-Loop Benchmark for End-to-End Autonomous Driving through Real-to-Simulation",
+  "url": "https://arxiv.org/abs/2509.23922"
+ },
+ {
+  "index": 46,
+  "title": "Driving in Corner Case: A Real-World Adversarial Closed-Loop Evaluation Platform for End-to-End Autonomous Driving",
+  "url": "https://arxiv.org/abs/2512.16055"
+ },
+ {
+  "index": 47,
+  "title": "Leveraging Correlation Across Test Platforms for Variance-Reduced Metric Estimation (Sim2Val)",
+  "url": "https://arxiv.org/abs/2506.20553"
+ }
+]

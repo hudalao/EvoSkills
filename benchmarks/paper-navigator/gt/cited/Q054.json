@@ -1,0 +1,187 @@
+[
+  {
+    "index": 1,
+    "title": "FDA Perspective on the Regulation of Artificial Intelligence in Health Care and Biomedicine",
+    "url": "https://doi.org/10.1001/jama.2024.21451"
+  },
+  {
+    "index": 2,
+    "title": "Artificial intelligence-based software as a medical device: regulatory evolution toward continuous oversight",
+    "url": "https://doi.org/10.1515/mr-2026-0027"
+  },
+  {
+    "index": 3,
+    "title": "The absence of full lifecycle risk management for AI-based medical devices in radiology",
+    "url": "https://doi.org/10.1038/s41746-026-02712-4"
+  },
+  {
+    "index": 4,
+    "title": "Validation is not enough: Longitudinal evidence of post-deployment fragility in clinical AI systems",
+    "url": "https://doi.org/10.1371/journal.pdig.0001534"
+  },
+  {
+    "index": 5,
+    "title": "Importance of model governance in clinical AI models: case study on the relevance of data drift detection",
+    "url": "https://doi.org/10.1136/bmjdhai-2025-000046"
+  },
+  {
+    "index": 6,
+    "title": "Predetermined Change Control Plans: Guiding Principles for Advancing Safe, Effective, and High-Quality AI-ML Technologies",
+    "url": "https://doi.org/10.2196/76854"
+  },
+  {
+    "index": 7,
+    "title": "Use and Public Reporting of Predetermined Change Control Plans for AI-Enabled Medical Devices",
+    "url": "https://doi.org/10.1001/jamahealthforum.2026.1204"
+  },
+  {
+    "index": 8,
+    "title": "Predetermined Change Control Plan Adoption and Documentation Transparency in FDA-cleared Radiology Artificial Intelligence/Machine Learning Devices",
+    "url": "https://doi.org/10.1148/ryai.260385"
+  },
+  {
+    "index": 9,
+    "title": "Navigating the EU AI Act: implications for regulated digital medical products",
+    "url": "https://doi.org/10.1038/s41746-024-01232-3"
+  },
+  {
+    "index": 10,
+    "title": "A general framework for governing marketed AI/ML medical devices",
+    "url": "https://doi.org/10.1038/s41746-025-01717-9"
+  },
+  {
+    "index": 11,
+    "title": "Algorithmovigilance, lessons from pharmacovigilance",
+    "url": "https://doi.org/10.1038/s41746-024-01237-y"
+  },
+  {
+    "index": 12,
+    "title": "AI medical device post-market surveillance regulations: consensus recommendations by the European Society of Radiology",
+    "url": "https://doi.org/10.1186/s13244-025-02146-8"
+  },
+  {
+    "index": 13,
+    "title": "The AI Act: responsibilities and obligations for healthcare professionals and organizations",
+    "url": "https://doi.org/10.4274/dir.2025.252851"
+  },
+  {
+    "index": 14,
+    "title": "A practical framework for appropriate implementation and review of artificial intelligence (FAIR-AI) in healthcare",
+    "url": "https://doi.org/10.1038/s41746-025-01900-y"
+  },
+  {
+    "index": 15,
+    "title": "Sustainable deployment of clinical prediction tools—a 360° approach to model maintenance",
+    "url": "https://doi.org/10.1093/jamia/ocae036"
+  },
+  {
+    "index": 16,
+    "title": "Toward a responsible future: recommendations for AI-enabled clinical decision support",
+    "url": "https://doi.org/10.1093/jamia/ocae209"
+  },
+  {
+    "index": 17,
+    "title": "Human-centered design of an artificial intelligence monitoring system: the Vanderbilt Algorithmovigilance Monitoring and Operations System",
+    "url": "https://doi.org/10.1093/jamiaopen/ooaf136"
+  },
+  {
+    "index": 18,
+    "title": "Establishing organizational AI governance in healthcare: a case study in Canada",
+    "url": "https://doi.org/10.1038/s41746-025-01909-3"
+  },
+  {
+    "index": 19,
+    "title": "Governance for safe and responsible AI in healthcare organisations: a scoping review of frameworks",
+    "url": "https://doi.org/10.1038/s41746-026-02679-2"
+  },
+  {
+    "index": 20,
+    "title": "Lessons for local oversight of AI in medicine from the regulation of clinical laboratory testing",
+    "url": "https://doi.org/10.1038/s41746-024-01369-1"
+  },
+  {
+    "index": 21,
+    "title": "Managing a \"responsibility vacuum\" in AI monitoring and governance in healthcare: a qualitative study",
+    "url": "https://doi.org/10.1186/s12913-025-13388-z"
+  },
+  {
+    "index": 22,
+    "title": "Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias Human Oversight of AI",
+    "url": "https://arxiv.org/abs/2502.10036"
+  },
+  {
+    "index": 23,
+    "title": "AI in healthcare: Regulatory guidelines and judge-made negligence principles for AI implementers",
+    "url": "https://doi.org/10.1177/09685332251362405"
+  },
+  {
+    "index": 24,
+    "title": "From explainability to traceability: Strengthening medico-legal accountability for healthcare artificial intelligence",
+    "url": "https://doi.org/10.1016/j.legalmed.2026.102913"
+  },
+  {
+    "index": 25,
+    "title": "Patient Consent and The Right to Notice and Explanation of AI Systems Used in Health Care",
+    "url": "https://doi.org/10.1080/15265161.2024.2399828"
+  },
+  {
+    "index": 26,
+    "title": "An Ethically Supported Framework for Determining Patient Notification and Informed Consent Practices when Using Artificial Intelligence in Healthcare",
+    "url": "https://doi.org/10.1016/j.chest.2024.04.014"
+  },
+  {
+    "index": 27,
+    "title": "Ethical Obligations to Inform Patients About Use of AI Tools",
+    "url": "https://doi.org/10.1001/jama.2025.11417"
+  },
+  {
+    "index": 28,
+    "title": "A Heuristic for Notifying Patients About AI: From Institutional Declarations to Informed Consent",
+    "url": "https://doi.org/10.1080/15265161.2025.2458422"
+  },
+  {
+    "index": 29,
+    "title": "Patient perspectives on informed consent for medical AI: A web-based experiment",
+    "url": "https://doi.org/10.1177/20552076241247938"
+  },
+  {
+    "index": 30,
+    "title": "Disclosure of AI Use in Radiology: Patient Perspectives and Preferences",
+    "url": "https://doi.org/10.1148/radiol.260450"
+  },
+  {
+    "index": 31,
+    "title": "Transparency in healthcare AI: Testing EU regulatory provisions against users' transparency needs",
+    "url": "https://arxiv.org/abs/2505.17105"
+  },
+  {
+    "index": 32,
+    "title": "Informed Consent Disclosures and Minimum Requirements in AI Clinical Trials: Cross-Sectional Analysis",
+    "url": "https://doi.org/10.2196/94504"
+  },
+  {
+    "index": 33,
+    "title": "AEGIS: An Operational Infrastructure for Post-Market Governance of Adaptive Medical AI Under US and EU Regulations",
+    "url": "https://arxiv.org/abs/2603.22322"
+  },
+  {
+    "index": 34,
+    "title": "Challenges in the Postmarket Surveillance of Clinical Prediction Models",
+    "url": "https://doi.org/10.1056/aip2401116"
+  },
+  {
+    "index": 35,
+    "title": "Regulatory responses and approval status of artificial intelligence medical devices with a focus on China",
+    "url": "https://doi.org/10.1038/s41746-024-01254-x"
+  },
+  {
+    "index": 36,
+    "title": "Expert consensus on the application and governance of artificial intelligence in medical institutions (2026)",
+    "url": "https://doi.org/10.1016/j.imed.2026.05.001"
+  },
+  {
+    "index": 37,
+    "title": "Expert Consensus on Ethical Governance for Clinical Applications of Generative Medical Artificial Intelligence (2025 Edition)",
+    "url": "https://doi.org/10.3881/j.issn.1000-503X.17220"
+  }
+]

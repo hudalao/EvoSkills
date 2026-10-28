@@ -1,0 +1,177 @@
+[
+ {
+  "index": 1,
+  "title": "Digital twin-driven deep learning prediction and adaptive control for coal mine ventilation systems",
+  "url": "https://doi.org/10.1038/s41598-025-30513-4"
+ },
+ {
+  "index": 2,
+  "title": "Optimized model-based control of main mine ventilation air flows with minimized energy consumption",
+  "url": "https://doi.org/10.1016/j.ijmst.2020.05.016"
+ },
+ {
+  "index": 3,
+  "title": "Ventilation on demand in underground mines using neuro-fuzzy models: Modeling and laboratory-scale experimental validation",
+  "url": "https://doi.org/10.1016/j.engappai.2024.108048"
+ },
+ {
+  "index": 4,
+  "title": "Enhancing gas concentration prediction and ventilation efficiency in deep coal mines: a hybrid DL-Koopman and Fuzzy-PID framework",
+  "url": "https://doi.org/10.1038/s41598-025-00105-3"
+ },
+ {
+  "index": 5,
+  "title": "An Intelligent Digital Twin Framework for Real Time Underground Mines Ventilation on Demand System",
+  "url": "https://doi.org/10.1109/TIA.2026.3678556"
+ },
+ {
+  "index": 6,
+  "title": "A cyber-physical system approach for enabling ventilation on-demand in an underground mining site",
+  "url": "https://doi.org/10.1016/j.procir.2020.05.265"
+ },
+ {
+  "index": 7,
+  "title": "IoT-based Mine Ventilation Control System Architecture with Digital Twin",
+  "url": "https://doi.org/10.1109/ICIEAM48468.2020.9111995"
+ },
+ {
+  "index": 8,
+  "title": "Nonlinear control of mine ventilation networks",
+  "url": "https://doi.org/10.1016/S0167-6911(02)00336-5"
+ },
+ {
+  "index": 9,
+  "title": "Control strategies for ventilation networks in small-scale mines using an experimental benchmark",
+  "url": "https://doi.org/10.1002/asjc.2394"
+ },
+ {
+  "index": 10,
+  "title": "Modeling and Control of Small-Scale Underground Mine Ventilation Networks",
+  "url": "https://doi.org/10.15446/ing.investig.90968"
+ },
+ {
+  "index": 11,
+  "title": "Physical Modeling and Structural Properties of Small-Scale Mine Ventilation Networks",
+  "url": "https://doi.org/10.3390/math10081253"
+ },
+ {
+  "index": 12,
+  "title": "Modeling and control of mine main fan switchover system",
+  "url": "https://doi.org/10.1016/j.isatra.2018.10.024"
+ },
+ {
+  "index": 13,
+  "title": "Efficient Graphical Algorithm of Sensor Distribution and Air Volume Reconstruction for a Smart Mine Ventilation Network",
+  "url": "https://doi.org/10.3390/s22062096"
+ },
+ {
+  "index": 14,
+  "title": "Accurate and real-time network calculation for mine ventilation without wind resistance measurement",
+  "url": "https://doi.org/10.1016/j.jweia.2022.105183"
+ },
+ {
+  "index": 15,
+  "title": "Calibration of Mine Ventilation Network Models using the Non-Linear Optimization Algorithm",
+  "url": "https://doi.org/10.3390/en11010031"
+ },
+ {
+  "index": 16,
+  "title": "Inversion of mine ventilation resistance coefficients enhanced by deep reinforcement learning",
+  "url": "https://doi.org/10.1016/j.psep.2023.12.005"
+ },
+ {
+  "index": 17,
+  "title": "Reconstruction and prediction of ventilation airflow field in the working face with sparse data using physics-informed neural networks",
+  "url": "https://doi.org/10.1063/5.0295563"
+ },
+ {
+  "index": 18,
+  "title": "Hybrid CNN-MLP architecture data-driven airflow parameters perception in underground metal mine",
+  "url": "https://doi.org/10.1016/j.eswa.2025.127441"
+ },
+ {
+  "index": 19,
+  "title": "Experimental Study of Improving a Mine Ventilation Network Model Using Continuously Monitored Airflow",
+  "url": "https://doi.org/10.1007/s42461-022-00574-4"
+ },
+ {
+  "index": 20,
+  "title": "Theory of RPOD adjustment of air volume for mine intelligent ventilation",
+  "url": "https://doi.org/10.1080/14733315.2021.1948720"
+ },
+ {
+  "index": 21,
+  "title": "Intelligent safety adjustment of branch airflow volume during ventilation-on-demand changes in coal mines",
+  "url": "https://doi.org/10.1016/j.psep.2017.08.024"
+ },
+ {
+  "index": 22,
+  "title": "Multi-branch joint adjustment method of mine ventilation based on sensitivity",
+  "url": "https://doi.org/10.1080/14733315.2022.2077523"
+ },
+ {
+  "index": 23,
+  "title": "Research on Intelligent Ventilation System of Metal Mine Based on Real-Time Sensing Airflow Parameters with a Global Scheme",
+  "url": "https://doi.org/10.3390/app14177602"
+ },
+ {
+  "index": 24,
+  "title": "Optimization of mine ventilation fan speeds according to ventilation on demand and time of use tariff",
+  "url": "https://doi.org/10.1016/j.apenergy.2015.01.134"
+ },
+ {
+  "index": 25,
+  "title": "Ventilation control system implementation and energy consumption reduction at Totten Mine with Level 4 Tagging and future plans",
+  "url": "https://doi.org/10.36487/acg_rep/1710_06_acuna"
+ },
+ {
+  "index": 26,
+  "title": "Automated ventilation control in mines. Challenges, state of the art, areas for improvement",
+  "url": "https://doi.org/10.31897/PMI.2020.6.4"
+ },
+ {
+  "index": 27,
+  "title": "Integrating Artificial Intelligence into Ventilation on Demand: Current Practice and Future Promises",
+  "url": "https://doi.org/10.3390/s26031042"
+ },
+ {
+  "index": 28,
+  "title": "Model predictive and fuzzy control of a road tunnel ventilation system",
+  "url": "https://doi.org/10.1016/j.trc.2007.11.004"
+ },
+ {
+  "index": 29,
+  "title": "Model predictive energy control of ventilation for underground stations",
+  "url": "https://doi.org/10.1016/j.enbuild.2016.01.020"
+ },
+ {
+  "index": 30,
+  "title": "Pollutant concentration prediction and demand-controlled ventilation driven by the STA-CNN-ResBiLSTM model in tunnel construction",
+  "url": "https://doi.org/10.1016/j.buildenv.2025.113936"
+ },
+ {
+  "index": 31,
+  "title": "Advanced prediction of mine airflow based on WOA-optimized VMD and a deep learning hybrid model",
+  "url": "https://doi.org/10.1016/j.tust.2026.107589"
+ },
+ {
+  "index": 32,
+  "title": "Intelligent ventilation-on-demand control system for the construction of underground tunnel complex",
+  "url": "https://doi.org/10.26599/jic.2024.9180032"
+ },
+ {
+  "index": 33,
+  "title": "矿井智能通风原理、关键技术及其初步实现（煤炭学报, 2020, 45(6): 2225-2235）",
+  "url": "https://www.mtxb.com.cn/fileMTXB/journal/article/mtxb/html/2020/6/%E7%85%A4%E7%82%AD%E5%AD%A6%E6%8A%A5202006028.html"
+ },
+ {
+  "index": 34,
+  "title": "矿井通风智能化理论与技术（煤炭学报, 2020, 45(6): 2236-2247）",
+  "url": "https://www.mtxb.com.cn/fileMTXB/journal/article/mtxb/html/2020/6/%E7%85%A4%E7%82%AD%E5%AD%A6%E6%8A%A5202006029.html"
+ },
+ {
+  "index": 35,
+  "title": "矿井智能通风联动调控理论与供需匹配实验研究（工程科学学报）",
+  "url": "https://doi.org/10.13374/j.issn2095-9389.2022.05.05.003"
+ }
+]

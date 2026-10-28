@@ -1,0 +1,177 @@
+[
+  {
+    "index": 1,
+    "title": "nuScenes: A Multimodal Dataset for Autonomous Driving",
+    "url": "https://arxiv.org/abs/1903.11027"
+  },
+  {
+    "index": 2,
+    "title": "Multi-class Road User Detection with 3+1D Radar in the View-of-Delft Dataset",
+    "url": "https://doi.org/10.1109/LRA.2022.3147324"
+  },
+  {
+    "index": 3,
+    "title": "TJ4DRadSet: A 4D Radar Dataset for Autonomous Driving",
+    "url": "https://arxiv.org/abs/2204.13483"
+  },
+  {
+    "index": 4,
+    "title": "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various Weather Conditions",
+    "url": "https://arxiv.org/abs/2206.08171"
+  },
+  {
+    "index": 5,
+    "title": "OmniHD-Scenes: A Next-Generation Multimodal Dataset for Autonomous Driving",
+    "url": "https://arxiv.org/abs/2412.10734"
+  },
+  {
+    "index": 6,
+    "title": "BEVFormer: Learning Bird's-Eye-View Representation from Multi-Camera Images via Spatiotemporal Transformers",
+    "url": "https://arxiv.org/abs/2203.17270"
+  },
+  {
+    "index": 7,
+    "title": "BEVDepth: Acquisition of Reliable Depth for Multi-view 3D Object Detection",
+    "url": "https://arxiv.org/abs/2206.10092"
+  },
+  {
+    "index": 8,
+    "title": "Exploring Object-Centric Temporal Modeling for Efficient Multi-View 3D Object Detection",
+    "url": "https://arxiv.org/abs/2303.11926"
+  },
+  {
+    "index": 9,
+    "title": "Delving Into the Devils of Bird's-Eye-View Perception: A Review, Evaluation and Recipe",
+    "url": "https://arxiv.org/abs/2209.05324"
+  },
+  {
+    "index": 10,
+    "title": "Planning-oriented Autonomous Driving",
+    "url": "https://arxiv.org/abs/2212.10156"
+  },
+  {
+    "index": 11,
+    "title": "MapTR: Structured Modeling and Learning for Online Vectorized HD Map Construction",
+    "url": "https://arxiv.org/abs/2208.14437"
+  },
+  {
+    "index": 12,
+    "title": "TransFusion: Robust LiDAR-Camera Fusion for 3D Object Detection with Transformers",
+    "url": "https://arxiv.org/abs/2203.11496"
+  },
+  {
+    "index": 13,
+    "title": "BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird's-Eye View Representation",
+    "url": "https://arxiv.org/abs/2205.13542"
+  },
+  {
+    "index": 14,
+    "title": "FUTR3D: A Unified Sensor Fusion Framework for 3D Detection",
+    "url": "https://arxiv.org/abs/2203.10642"
+  },
+  {
+    "index": 15,
+    "title": "MetaBEV: Solving Sensor Failures for BEV Detection and Map Segmentation",
+    "url": "https://arxiv.org/abs/2304.09801"
+  },
+  {
+    "index": 16,
+    "title": "UniBEV: Multi-modal 3D Object Detection with Uniform BEV Encoders for Robustness against Missing Sensor Modalities",
+    "url": "https://arxiv.org/abs/2309.14516"
+  },
+  {
+    "index": 17,
+    "title": "RCFusion: Fusing 4-D Radar and Camera With Bird's-Eye View Features for 3-D Object Detection",
+    "url": "https://doi.org/10.1109/TIM.2023.3280525"
+  },
+  {
+    "index": 18,
+    "title": "SMURF: Spatial Multi-Representation Fusion for 3D Object Detection With 4D Imaging Radar",
+    "url": "https://arxiv.org/abs/2307.10784"
+  },
+  {
+    "index": 19,
+    "title": "LXL: LiDAR Excluded Lean 3D Object Detection With 4D Imaging Radar and Camera Fusion",
+    "url": "https://arxiv.org/abs/2307.00724"
+  },
+  {
+    "index": 20,
+    "title": "MSSF: A 4D Radar and Camera Fusion Framework With Multi-Stage Sampling for 3D Object Detection in Autonomous Driving",
+    "url": "https://arxiv.org/abs/2411.15016"
+  },
+  {
+    "index": 21,
+    "title": "CVFusion: Cross-View Fusion of 4D Radar and Camera for 3D Object Detection",
+    "url": "https://arxiv.org/abs/2507.04587"
+  },
+  {
+    "index": 22,
+    "title": "L4DR: LiDAR-4DRadar Fusion for Weather-Robust 3D Object Detection",
+    "url": "https://arxiv.org/abs/2408.03677"
+  },
+  {
+    "index": 23,
+    "title": "Towards Robust 3D Object Detection with LiDAR and 4D Radar Fusion in Various Weather Conditions",
+    "url": "https://doi.org/10.1109/CVPR52733.2024.01436"
+  },
+  {
+    "index": 24,
+    "title": "Availability-aware Sensor Fusion via Unified Canonical Space for 4D Radar, LiDAR, and Camera",
+    "url": "https://arxiv.org/abs/2503.07029"
+  },
+  {
+    "index": 25,
+    "title": "CRN: Camera Radar Net for Accurate, Robust, Efficient 3D Perception",
+    "url": "https://arxiv.org/abs/2304.00670"
+  },
+  {
+    "index": 26,
+    "title": "RCBEVDet: Radar-Camera Fusion in Bird's Eye View for 3D Object Detection",
+    "url": "https://arxiv.org/abs/2403.16440"
+  },
+  {
+    "index": 27,
+    "title": "Doracamom: Joint 3D Detection and Occupancy Prediction With Multi-View 4D Radars and Cameras for Omnidirectional Perception",
+    "url": "https://arxiv.org/abs/2501.15394"
+  },
+  {
+    "index": 28,
+    "title": "RadarOcc: Robust 3D Occupancy Prediction with 4D Imaging Radar",
+    "url": "https://arxiv.org/abs/2405.14014"
+  },
+  {
+    "index": 29,
+    "title": "OpenOccupancy: A Large Scale Benchmark for Surrounding Semantic Occupancy Perception",
+    "url": "https://arxiv.org/abs/2303.03991"
+  },
+  {
+    "index": 30,
+    "title": "Benchmarking Robustness of 3D Object Detection to Common Corruptions in Autonomous Driving",
+    "url": "https://arxiv.org/abs/2303.11040"
+  },
+  {
+    "index": 31,
+    "title": "Benchmarking and Improving Bird's Eye View Perception Robustness in Autonomous Driving",
+    "url": "https://arxiv.org/abs/2405.17426"
+  },
+  {
+    "index": 32,
+    "title": "Seeing Through Fog Without Seeing Fog: Deep Multimodal Sensor Fusion in Unseen Adverse Weather",
+    "url": "https://doi.org/10.1109/cvpr42600.2020.01170"
+  },
+  {
+    "index": 33,
+    "title": "LiDAR Snowfall Simulation for Robust 3D Object Detection",
+    "url": "https://arxiv.org/abs/2203.15118"
+  },
+  {
+    "index": 34,
+    "title": "Detecting As Labeling: Rethinking LiDAR-camera Fusion in 3D Object Detection",
+    "url": "https://arxiv.org/abs/2311.07152"
+  },
+  {
+    "index": 35,
+    "title": "4D mmWave Radar for Autonomous Driving Perception: A Comprehensive Survey",
+    "url": "https://doi.org/10.1109/TIV.2024.3380244"
+  }
+]

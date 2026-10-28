@@ -1,0 +1,257 @@
+[
+ {
+  "index": 1,
+  "title": "Evaluation and mitigation of the limitations of large language models in clinical decision-making",
+  "url": "https://doi.org/10.1038/s41591-024-03097-1"
+ },
+ {
+  "index": 2,
+  "title": "Large Language Model Influence on Diagnostic Reasoning",
+  "url": "https://doi.org/10.1001/jamanetworkopen.2024.40969"
+ },
+ {
+  "index": 3,
+  "title": "Automation Bias in Large Language Model–Assisted Diagnostic Reasoning among Physicians Trained in AI Literacy — A Randomized Clinical Trial",
+  "url": "https://doi.org/10.1056/aioa2501001"
+ },
+ {
+  "index": 4,
+  "title": "Beyond human ears: navigating the uncharted risks of AI scribes in clinical practice",
+  "url": "https://doi.org/10.1038/s41746-025-01895-6"
+ },
+ {
+  "index": 5,
+  "title": "Unregulated large language models produce medical device-like output",
+  "url": "https://doi.org/10.1038/s41746-025-01544-y"
+ },
+ {
+  "index": 6,
+  "title": "Governance of Clinical AI applications to facilitate safe and equitable deployment in a large health system: Key elements and early successes",
+  "url": "https://doi.org/10.3389/fdgth.2022.931439"
+ },
+ {
+  "index": 7,
+  "title": "A practical framework for appropriate implementation and review of artificial intelligence (FAIR-AI) in healthcare",
+  "url": "https://doi.org/10.1038/s41746-025-01900-y"
+ },
+ {
+  "index": 8,
+  "title": "Establishing responsible use of AI guidelines: a comprehensive case study for healthcare institutions",
+  "url": "https://doi.org/10.1038/s41746-024-01300-8"
+ },
+ {
+  "index": 9,
+  "title": "Generative AI in Medical Practice: In-Depth Exploration of Privacy and Security Challenges",
+  "url": "https://doi.org/10.2196/53008"
+ },
+ {
+  "index": 10,
+  "title": "Privacy preserving strategies for electronic health records in the era of large language models",
+  "url": "https://doi.org/10.1038/s41746-025-01429-0"
+ },
+ {
+  "index": 11,
+  "title": "Addressing contemporary threats in anonymised healthcare data using privacy engineering",
+  "url": "https://doi.org/10.1038/s41746-025-01520-6"
+ },
+ {
+  "index": 12,
+  "title": "Privacy-preserving large language models for structured medical information retrieval",
+  "url": "https://doi.org/10.1038/s41746-024-01233-2"
+ },
+ {
+  "index": 13,
+  "title": "Deidentifying Medical Documents with Local, Privacy-Preserving Large Language Models: The LLM-Anonymizer",
+  "url": "https://doi.org/10.1056/aidbp2400537"
+ },
+ {
+  "index": 14,
+  "title": "Implementing large language models in healthcare while balancing control, collaboration, costs and security",
+  "url": "https://doi.org/10.1038/s41746-025-01476-7"
+ },
+ {
+  "index": 15,
+  "title": "Benchmark evaluation of DeepSeek large language models in clinical decision-making",
+  "url": "https://doi.org/10.1038/s41591-025-03727-2"
+ },
+ {
+  "index": 16,
+  "title": "Artificial Intelligence and Liability in Medicine: Balancing Safety and Innovation",
+  "url": "https://doi.org/10.1111/1468-0009.12504"
+ },
+ {
+  "index": 17,
+  "title": "Medical malpractice liability in large language model artificial intelligence: legal review and policy recommendations",
+  "url": "https://doi.org/10.1515/jom-2023-0229"
+ },
+ {
+  "index": 18,
+  "title": "Autonomous AI systems in the face of liability, regulations and costs",
+  "url": "https://doi.org/10.1038/s41746-023-00929-1"
+ },
+ {
+  "index": 19,
+  "title": "The proposed EU Directives for AI liability leave worrying gaps likely to impact medical AI",
+  "url": "https://doi.org/10.1038/s41746-023-00823-w"
+ },
+ {
+  "index": 20,
+  "title": "Automation Bias and Assistive AI: Risk of Harm From AI-Driven Clinical Decision Support",
+  "url": "https://doi.org/10.1001/jama.2023.22557"
+ },
+ {
+  "index": 21,
+  "title": "Diffusion of responsibility: Patient moral judgments of generative AI-informed clinical decisions",
+  "url": "https://doi.org/10.1016/j.socscimed.2026.118928"
+ },
+ {
+  "index": 22,
+  "title": "From \"assistant\" to \"autonomous\": legal liability and ethical traceability frameworks for generative AI in clinical misdiagnosis scenarios, with a special focus on paediatrics",
+  "url": "https://doi.org/10.3389/fdgth.2026.1849190"
+ },
+ {
+  "index": 23,
+  "title": "Clinical artificial intelligence quality improvement: towards continual monitoring and updating of AI algorithms in healthcare",
+  "url": "https://doi.org/10.1038/s41746-022-00611-y"
+ },
+ {
+  "index": 24,
+  "title": "Algorithm Change Protocols in the Regulation of Adaptive Machine Learning-Based Medical Devices",
+  "url": "https://doi.org/10.2196/30545"
+ },
+ {
+  "index": 25,
+  "title": "How to regulate evolving AI health algorithms",
+  "url": "https://doi.org/10.1038/s41591-022-02165-8"
+ },
+ {
+  "index": 26,
+  "title": "Use and Public Reporting of Predetermined Change Control Plans for AI-Enabled Medical Devices",
+  "url": "https://doi.org/10.1001/jamahealthforum.2026.1204"
+ },
+ {
+  "index": 27,
+  "title": "人工智能医疗器械临床试验监管政策进展及未来研究展望",
+  "url": "https://manu41.magtech.com.cn/Jweb_clyl/CN/10.12092/j.issn.1009-2501.2025.03.017"
+ },
+ {
+  "index": 28,
+  "title": "How is ChatGPT's behavior changing over time?",
+  "url": "https://arxiv.org/abs/2307.09009"
+ },
+ {
+  "index": 29,
+  "title": "Preventing unrestricted and unmonitored AI experimentation in healthcare through transparency and accountability",
+  "url": "https://doi.org/10.1038/s41746-025-01443-2"
+ },
+ {
+  "index": 30,
+  "title": "Algorithmovigilance, lessons from pharmacovigilance",
+  "url": "https://doi.org/10.1038/s41746-024-01237-y"
+ },
+ {
+  "index": 31,
+  "title": "Challenges in the Postmarket Surveillance of Clinical Prediction Models",
+  "url": "https://doi.org/10.1056/aip2401116"
+ },
+ {
+  "index": 32,
+  "title": "Detecting and Remediating Harmful Data Shifts for the Responsible Deployment of Clinical AI Models",
+  "url": "https://doi.org/10.1001/jamanetworkopen.2025.13685"
+ },
+ {
+  "index": 33,
+  "title": "The medical algorithmic audit",
+  "url": "https://doi.org/10.1016/s2589-7500(22)00003-6"
+ },
+ {
+  "index": 34,
+  "title": "Rethinking clinical trials for medical AI with dynamic deployments of adaptive systems",
+  "url": "https://doi.org/10.1038/s41746-025-01674-3"
+ },
+ {
+  "index": 35,
+  "title": "Clinical trials for continuously monitored and updated AI systems",
+  "url": "https://doi.org/10.1038/s41591-026-04368-9"
+ },
+ {
+  "index": 36,
+  "title": "Should the Use of Adaptive Machine Learning Systems in Medicine be Classified as Research?",
+  "url": "https://doi.org/10.1080/15265161.2024.2337429"
+ },
+ {
+  "index": 37,
+  "title": "The imperative for regulatory oversight of large language models (or generative AI) in healthcare",
+  "url": "https://doi.org/10.1038/s41746-023-00873-0"
+ },
+ {
+  "index": 38,
+  "title": "The Challenges for Regulating Medical Use of ChatGPT and Other Large Language Models",
+  "url": "https://doi.org/10.1001/jama.2023.9651"
+ },
+ {
+  "index": 39,
+  "title": "FDA Perspective on the Regulation of Artificial Intelligence in Health Care and Biomedicine",
+  "url": "https://doi.org/10.1001/jama.2024.21451"
+ },
+ {
+  "index": 40,
+  "title": "A scoping review of reporting gaps in FDA-approved AI medical devices",
+  "url": "https://doi.org/10.1038/s41746-024-01270-x"
+ },
+ {
+  "index": 41,
+  "title": "Navigating the European Union Artificial Intelligence Act for Healthcare",
+  "url": "https://doi.org/10.1038/s41746-024-01213-6"
+ },
+ {
+  "index": 42,
+  "title": "Regulatory responses and approval status of artificial intelligence medical devices with a focus on China",
+  "url": "https://doi.org/10.1038/s41746-024-01254-x"
+ },
+ {
+  "index": 43,
+  "title": "[Interpretation of the WHO's \"Ethics and Governance of Artificial Intelligence for Health: Guidance on Large Multi-Modal Models\" and its implications for China]",
+  "url": "https://doi.org/10.3760/cma.j.cn112150-20240709-00548"
+ },
+ {
+  "index": 44,
+  "title": "医疗领域大模型伦理风险识别、治理及前瞻研究",
+  "url": "https://www.engineering.org.cn/sscae/CN/10.15302/J-SSCAE-2025.07.028"
+ },
+ {
+  "index": 45,
+  "title": "AI, Health, and Health Care Today and Tomorrow: The JAMA Summit Report on Artificial Intelligence",
+  "url": "https://doi.org/10.1001/jama.2025.18490"
+ },
+ {
+  "index": 46,
+  "title": "Walking Backward to Ensure Risk Management of Large Language Models in Medicine",
+  "url": "https://doi.org/10.1017/jme.2025.10132"
+ },
+ {
+  "index": 47,
+  "title": "Do Specialized Medical LLMs Demand a Radically New Approach Under the EU's Medical Device Regulation?",
+  "url": "https://doi.org/10.1017/jme.2025.10136"
+ },
+ {
+  "index": 48,
+  "title": "A Nationwide Network of Health AI Assurance Laboratories",
+  "url": "https://doi.org/10.1001/jama.2023.26930"
+ },
+ {
+  "index": 49,
+  "title": "Health AI Assurance Laboratories",
+  "url": "https://doi.org/10.1001/jama.2024.1084"
+ },
+ {
+  "index": 50,
+  "title": "The evaluation illusion of large language models in medicine",
+  "url": "https://doi.org/10.1038/s41746-025-01963-x"
+ },
+ {
+  "index": 51,
+  "title": "The TRIPOD-LLM reporting guideline for studies using large language models",
+  "url": "https://doi.org/10.1038/s41591-024-03425-5"
+ }
+]

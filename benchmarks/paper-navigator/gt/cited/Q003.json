@@ -1,0 +1,262 @@
+[
+ {
+  "index": 1,
+  "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+  "url": "https://arxiv.org/abs/2405.15793"
+ },
+ {
+  "index": 2,
+  "title": "AutoCodeRover: Autonomous Program Improvement",
+  "url": "https://arxiv.org/abs/2404.05427"
+ },
+ {
+  "index": 3,
+  "title": "RepairAgent: An Autonomous, LLM-Based Agent for Program Repair",
+  "url": "https://arxiv.org/abs/2403.17134"
+ },
+ {
+  "index": 4,
+  "title": "Agentless: Demystifying LLM-based Software Engineering Agents",
+  "url": "https://arxiv.org/abs/2407.01489"
+ },
+ {
+  "index": 5,
+  "title": "An Empirical Study on LLM-based Agents for Automated Bug Fixing",
+  "url": "https://arxiv.org/abs/2411.10213"
+ },
+ {
+  "index": 6,
+  "title": "Understanding Automated Program Repair Agents Through the Lens of Traceability: An Empirical Study",
+  "url": "https://arxiv.org/abs/2506.08311"
+ },
+ {
+  "index": 7,
+  "title": "debug-gym: A Text-Based Environment for Interactive Debugging",
+  "url": "https://arxiv.org/abs/2503.21557"
+ },
+ {
+  "index": 8,
+  "title": "Automatic Software Repair",
+  "url": "https://arxiv.org/abs/1807.00515"
+ },
+ {
+  "index": 9,
+  "title": "TBar: revisiting template-based automated program repair",
+  "url": "https://arxiv.org/abs/1903.08409"
+ },
+ {
+  "index": 10,
+  "title": "Empirical review of Java program repair tools: a large-scale experiment on 2,141 bugs and 23,551 repair attempts",
+  "url": "https://arxiv.org/abs/1905.11973"
+ },
+ {
+  "index": 11,
+  "title": "On the Efficiency of Test Suite based Program Repair: A Systematic Assessment of 16 Automated Repair Systems for Java Programs",
+  "url": "https://arxiv.org/abs/2008.00914"
+ },
+ {
+  "index": 12,
+  "title": "CURE: Code-Aware Neural Machine Translation for Automatic Program Repair",
+  "url": "https://arxiv.org/abs/2103.00073"
+ },
+ {
+  "index": 13,
+  "title": "Automated Program Repair in the Era of Large Pre-trained Language Models",
+  "url": "https://arxiv.org/abs/2210.14179"
+ },
+ {
+  "index": 14,
+  "title": "Practical LLM-Based Function-Level Automated Program Repair: How Far Are We?",
+  "url": "https://doi.org/10.1145/3812804"
+ },
+ {
+  "index": 15,
+  "title": "SapFix: Automated End-to-End Repair at Scale",
+  "url": "https://doi.org/10.1109/ICSE-SEIP.2019.00039"
+ },
+ {
+  "index": 16,
+  "title": "Getafix: learning to fix bugs automatically",
+  "url": "https://arxiv.org/abs/1902.06111"
+ },
+ {
+  "index": 17,
+  "title": "InferFix: End-to-End Program Repair with LLMs",
+  "url": "https://arxiv.org/abs/2303.07263"
+ },
+ {
+  "index": 18,
+  "title": "Sorald: Automatic Patch Suggestions for SonarQube Static Analysis Violations",
+  "url": "https://arxiv.org/abs/2103.12033"
+ },
+ {
+  "index": 19,
+  "title": "LLM-Based Repair of Static Nullability Errors",
+  "url": "https://arxiv.org/abs/2507.20674"
+ },
+ {
+  "index": 20,
+  "title": "An Empirical Evaluation of Using Large Language Models for Automated Unit Test Generation",
+  "url": "https://arxiv.org/abs/2302.06527"
+ },
+ {
+  "index": 21,
+  "title": "CodaMosa: Escaping Coverage Plateaus in Test Generation with Pre-trained Large Language Models",
+  "url": "https://doi.org/10.1109/ICSE48619.2023.00085"
+ },
+ {
+  "index": 22,
+  "title": "Test Wars: A Comparative Study of SBST, Symbolic Execution, and LLM-Based Approaches to Unit Test Generation",
+  "url": "https://arxiv.org/abs/2501.10200"
+ },
+ {
+  "index": 23,
+  "title": "Automated Unit Test Improvement using Large Language Models at Meta",
+  "url": "https://arxiv.org/abs/2402.09171"
+ },
+ {
+  "index": 24,
+  "title": "Mutation-Guided LLM-based Test Generation at Meta",
+  "url": "https://arxiv.org/abs/2501.12862"
+ },
+ {
+  "index": 25,
+  "title": "Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction",
+  "url": "https://arxiv.org/abs/2209.11515"
+ },
+ {
+  "index": 26,
+  "title": "SWT-Bench: Testing and Validating Real-World Bug-Fixes with Code Agents",
+  "url": "https://arxiv.org/abs/2406.12952"
+ },
+ {
+  "index": 27,
+  "title": "Otter: Generating Tests from Issues to Validate SWE Patches",
+  "url": "https://arxiv.org/abs/2502.05368"
+ },
+ {
+  "index": 28,
+  "title": "A Quantitative and Qualitative Evaluation of LLM-Based Explainable Fault Localization",
+  "url": "https://arxiv.org/abs/2308.05487"
+ },
+ {
+  "index": 29,
+  "title": "AgentFL: Scaling LLM-based Fault Localization to Project-Level Context",
+  "url": "https://arxiv.org/abs/2403.16362"
+ },
+ {
+  "index": 30,
+  "title": "Large Language Models in Fault Localisation",
+  "url": "https://arxiv.org/abs/2308.15276"
+ },
+ {
+  "index": 31,
+  "title": "Evaluating Agent-Based Program Repair at Google",
+  "url": "https://arxiv.org/abs/2501.07531"
+ },
+ {
+  "index": 32,
+  "title": "Agentic Bug Reproduction for Effective Automated Program Repair at Google",
+  "url": "https://arxiv.org/abs/2502.01821"
+ },
+ {
+  "index": 33,
+  "title": "Abstain and Validate: A Dual-LLM Policy for Reducing Noise in Agentic Program Repair",
+  "url": "https://arxiv.org/abs/2510.03217"
+ },
+ {
+  "index": 34,
+  "title": "Agentic Program Repair from Test Failures at Scale: A Neuro-symbolic approach with static analysis and test execution feedback",
+  "url": "https://arxiv.org/abs/2507.18755"
+ },
+ {
+  "index": 35,
+  "title": "Fixing Security Vulnerabilities with AI in OSS-Fuzz",
+  "url": "https://arxiv.org/abs/2411.03346"
+ },
+ {
+  "index": 36,
+  "title": "CVE-Bench: Benchmarking LLM-based Software Engineering Agent's Ability to Repair Real-World CVE Vulnerabilities",
+  "url": "https://doi.org/10.18653/v1/2025.naacl-long.212"
+ },
+ {
+  "index": 37,
+  "title": "On the Use of Agentic Coding: An Empirical Study of Pull Requests on GitHub",
+  "url": "https://arxiv.org/abs/2509.14745"
+ },
+ {
+  "index": 38,
+  "title": "Beyond Bug Fixes: An Empirical Investigation of Post-Merge Code Quality Issues in Agent-Generated Pull Requests",
+  "url": "https://arxiv.org/abs/2601.20109"
+ },
+ {
+  "index": 39,
+  "title": "User-Centric Deployment of Automated Program Repair at Bloomberg",
+  "url": "https://arxiv.org/abs/2311.10516"
+ },
+ {
+  "index": 40,
+  "title": "Automated Program Repair, What Is It Good For? Not Absolutely Nothing!",
+  "url": "https://doi.org/10.1145/3597503.3639095"
+ },
+ {
+  "index": 41,
+  "title": "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity",
+  "url": "https://arxiv.org/abs/2507.09089"
+ },
+ {
+  "index": 42,
+  "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+  "url": "https://arxiv.org/abs/2310.06770"
+ },
+ {
+  "index": 43,
+  "title": "Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving",
+  "url": "https://arxiv.org/abs/2504.02605"
+ },
+ {
+  "index": 44,
+  "title": "SWE-bench Goes Live!",
+  "url": "https://arxiv.org/abs/2505.23419"
+ },
+ {
+  "index": 45,
+  "title": "Defects4J: a database of existing faults to enable controlled testing studies for Java programs",
+  "url": "https://doi.org/10.1145/2610384.2628055"
+ },
+ {
+  "index": 46,
+  "title": "GitBug-Java: A Reproducible Benchmark of Recent Java Bugs",
+  "url": "https://arxiv.org/abs/2402.02961"
+ },
+ {
+  "index": 47,
+  "title": "SWE-Bench+: Enhanced Coding Benchmark for LLMs",
+  "url": "https://arxiv.org/abs/2410.06992"
+ },
+ {
+  "index": 48,
+  "title": "Are \"Solved Issues\" in SWE-bench Really Solved Correctly? An Empirical Study",
+  "url": "https://arxiv.org/abs/2503.15223"
+ },
+ {
+  "index": 49,
+  "title": "The SWE-Bench Illusion: When State-of-the-Art LLMs Remember Instead of Reason",
+  "url": "https://arxiv.org/abs/2506.12286"
+ },
+ {
+  "index": 50,
+  "title": "SWE-Effi: Re-Evaluating Software AI Agent System Effectiveness Under Resource Constraints",
+  "url": "https://arxiv.org/abs/2509.09853"
+ },
+ {
+  "index": 51,
+  "title": "How Safe Are AI-Generated Patches? A Large-scale Study on Security Risks in LLM and Agentic Automated Program Repair on SWE-bench",
+  "url": "https://arxiv.org/abs/2507.02976"
+ },
+ {
+  "index": 52,
+  "title": "Rethinking the Value of Agent-Generated Tests for LLM-Based Software Engineering Agents",
+  "url": "https://arxiv.org/abs/2602.07900"
+ }
+]

@@ -1,0 +1,177 @@
+[
+ {
+  "index": 1,
+  "title": "Cooperative Pathfinding",
+  "url": "https://doi.org/10.1609/aiide.v1i1.18726"
+ },
+ {
+  "index": 2,
+  "title": "Conflict-based search for optimal multi-agent pathfinding",
+  "url": "https://doi.org/10.1016/j.artint.2014.11.006"
+ },
+ {
+  "index": 3,
+  "title": "Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks",
+  "url": "https://arxiv.org/abs/1906.08291"
+ },
+ {
+  "index": 4,
+  "title": "SIPP: Safe interval path planning for dynamic environments",
+  "url": "https://doi.org/10.1109/ICRA.2011.5980306"
+ },
+ {
+  "index": 5,
+  "title": "Multi-Agent Pathfinding with Continuous Time",
+  "url": "https://doi.org/10.24963/ijcai.2019/6"
+ },
+ {
+  "index": 6,
+  "title": "Conflict-Based Search for Multi-Robot Motion Planning with Kinodynamic Constraints",
+  "url": "https://arxiv.org/abs/2207.00576"
+ },
+ {
+  "index": 7,
+  "title": "Searching with Consistent Prioritization for Multi-Agent Path Finding",
+  "url": "https://arxiv.org/abs/1812.06356"
+ },
+ {
+  "index": 8,
+  "title": "MAPF-LNS2: Fast Repairing for Multi-Agent Path Finding via Large Neighborhood Search",
+  "url": "https://doi.org/10.1609/aaai.v36i9.21266"
+ },
+ {
+  "index": 9,
+  "title": "Lifelong Multi-Agent Path Finding in Large-Scale Warehouses",
+  "url": "https://arxiv.org/abs/2005.07371"
+ },
+ {
+  "index": 10,
+  "title": "Persistent and Robust Execution of MAPF Schedules in Warehouses",
+  "url": "https://doi.org/10.1109/LRA.2019.2894217"
+ },
+ {
+  "index": 11,
+  "title": "UAS Batch Path Planning With a Space-Time Graph",
+  "url": "https://doi.org/10.1109/OJITS.2021.3070415"
+ },
+ {
+  "index": 12,
+  "title": "Generalized Path Planning for UTM Systems With a Space-Time Graph",
+  "url": "https://doi.org/10.1109/ojits.2022.3171502"
+ },
+ {
+  "index": 13,
+  "title": "UAS Path Planning with Dynamic Rerouting using a Space-Time Graph",
+  "url": "https://doi.org/10.1145/3798098"
+ },
+ {
+  "index": 14,
+  "title": "Decentralized Multi-Agent Path Finding for UAV Traffic Management",
+  "url": "https://doi.org/10.1109/tits.2020.3019397"
+ },
+ {
+  "index": 15,
+  "title": "Multi-Agent Path Finding in Unmanned Aircraft System Traffic Management With Scheduling and Speed Variation",
+  "url": "https://doi.org/10.1109/MITS.2021.3100062"
+ },
+ {
+  "index": 16,
+  "title": "A Framework for Operational Volume Generation for Urban Air Mobility Strategic Deconfliction",
+  "url": "https://arxiv.org/abs/2301.12961"
+ },
+ {
+  "index": 17,
+  "title": "Chance-constrained UAM traffic flow optimization with fast disruption recovery under uncertain waypoint occupancy time",
+  "url": "https://doi.org/10.1016/j.trc.2024.104547"
+ },
+ {
+  "index": 18,
+  "title": "A Space-Time Network-Based Modeling Framework for Dynamic Unmanned Aerial Vehicle Routing in Traffic Incident Monitoring Applications",
+  "url": "https://doi.org/10.3390/s150613874"
+ },
+ {
+  "index": 19,
+  "title": "Hybrid AI-based Dynamic Re-routing Method for Dense Low-Altitude Air Traffic Operations",
+  "url": "https://doi.org/10.1109/DASC55683.2022.9925777"
+ },
+ {
+  "index": 20,
+  "title": "Socially aware motion planning with deep reinforcement learning",
+  "url": "https://arxiv.org/abs/1703.08862"
+ },
+ {
+  "index": 21,
+  "title": "Towards Optimally Decentralized Multi-Robot Collision Avoidance via Deep Reinforcement Learning",
+  "url": "https://arxiv.org/abs/1709.10082"
+ },
+ {
+  "index": 22,
+  "title": "PRIMAL: Pathfinding via Reinforcement and Imitation Multi-Agent Learning",
+  "url": "https://arxiv.org/abs/1809.03531"
+ },
+ {
+  "index": 23,
+  "title": "PRIMAL2: Pathfinding Via Reinforcement and Imitation Multi-Agent Learning - Lifelong",
+  "url": "https://arxiv.org/abs/2010.08184"
+ },
+ {
+  "index": 24,
+  "title": "Message-Aware Graph Attention Networks for Large-Scale Multi-Robot Path Planning",
+  "url": "https://arxiv.org/abs/2011.13219"
+ },
+ {
+  "index": 25,
+  "title": "Scalable Autonomous Separation Assurance With Heterogeneous Multi-Agent Reinforcement Learning",
+  "url": "https://doi.org/10.1109/TASE.2022.3151607"
+ },
+ {
+  "index": 26,
+  "title": "Integrated Conflict Management for UAM With Strategic Demand Capacity Balancing and Learning-Based Tactical Deconfliction",
+  "url": "https://arxiv.org/abs/2305.10556"
+ },
+ {
+  "index": 27,
+  "title": "3D RVO-Enhanced Multi-Agent Deep Reinforcement Learning for Collision Avoidance in Urban Structured Airspace",
+  "url": "https://doi.org/10.1016/j.ast.2025.110378"
+ },
+ {
+  "index": 28,
+  "title": "LNS2+RL: Combining Multi-agent Reinforcement Learning with Large Neighborhood Search in Multi-agent Path Finding",
+  "url": "https://arxiv.org/abs/2405.17794"
+ },
+ {
+  "index": 29,
+  "title": "Neural Graph Control Barrier Functions Guided Distributed Collision-avoidance Multi-agent Control",
+  "url": "https://arxiv.org/abs/2311.13014"
+ },
+ {
+  "index": 30,
+  "title": "Real-Time Avoidance of Obstacles and Emergent Geo-Fences for Urban Air Mobility Using Deep Reinforcement Learning",
+  "url": "https://doi.org/10.1109/TITS.2025.3589322"
+ },
+ {
+  "index": 31,
+  "title": "Reciprocal n-Body Collision Avoidance",
+  "url": "https://doi.org/10.1007/978-3-642-19457-3_1"
+ },
+ {
+  "index": 32,
+  "title": "Online Trajectory Generation With Distributed Model Predictive Control for Multi-Robot Motion Planning",
+  "url": "https://arxiv.org/abs/1909.05150"
+ },
+ {
+  "index": 33,
+  "title": "EGO-Swarm: A Fully Autonomous and Decentralized Quadrotor Swarm System in Cluttered Environments",
+  "url": "https://arxiv.org/abs/2011.04183"
+ },
+ {
+  "index": 34,
+  "title": "A Comprehensive Survey on Conflict Detection and Resolution in Unmanned Aircraft System Traffic Management",
+  "url": "https://doi.org/10.1109/TITS.2024.3509339"
+ },
+ {
+  "index": 35,
+  "title": "Where Paths Collide: A Comprehensive Survey of Classic and Learning-Based Multi-Agent Pathfinding",
+  "url": "https://arxiv.org/abs/2505.19219"
+ }
+]

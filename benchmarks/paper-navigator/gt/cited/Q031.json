@@ -1,0 +1,212 @@
+[
+  {
+    "index": 1,
+    "title": "EarthShift: a benchmark for measuring robustness to real-world distribution shifts in Earth observation",
+    "url": "https://arxiv.org/abs/2605.29330"
+  },
+  {
+    "index": 2,
+    "title": "GeoCrossBench: Cross-Band Generalization for Remote Sensing",
+    "url": "https://arxiv.org/abs/2511.02831"
+  },
+  {
+    "index": 3,
+    "title": "MMEarth-Bench: Global Model Adaptation via Multimodal Test-Time Training",
+    "url": "https://arxiv.org/abs/2602.06285"
+  },
+  {
+    "index": 4,
+    "title": "WILDS: A Benchmark of in-the-Wild Distribution Shifts",
+    "url": "https://arxiv.org/abs/2012.07421"
+  },
+  {
+    "index": 5,
+    "title": "Wild-Time: A Benchmark of in-the-Wild Distribution Shift over Time",
+    "url": "https://arxiv.org/abs/2211.14238"
+  },
+  {
+    "index": 6,
+    "title": "Towards a Unified Copernicus Foundation Model for Earth Vision",
+    "url": "https://arxiv.org/abs/2503.11849"
+  },
+  {
+    "index": 7,
+    "title": "PANGAEA: Assessing Geospatial Foundation Models Capabilities through a Global and Inclusive Benchmark",
+    "url": "https://doi.org/10.1109/MGRS.2025.3628194"
+  },
+  {
+    "index": 8,
+    "title": "GEO-Bench: Toward Foundation Models for Earth Monitoring",
+    "url": "https://arxiv.org/abs/2306.03831"
+  },
+  {
+    "index": 9,
+    "title": "GEO-Bench-2: From Performance to Capability, Rethinking Evaluation in Geospatial AI",
+    "url": "https://arxiv.org/abs/2511.15658"
+  },
+  {
+    "index": 10,
+    "title": "Landsat-Bench: Datasets and Benchmarks for Landsat Foundation Models",
+    "url": "https://arxiv.org/abs/2506.08780"
+  },
+  {
+    "index": 11,
+    "title": "SSL4EO-L: Datasets and Foundation Models for Landsat Imagery",
+    "url": "https://arxiv.org/abs/2306.09424"
+  },
+  {
+    "index": 12,
+    "title": "FoMo: Multi-Modal, Multi-Scale and Multi-Task Remote Sensing Foundation Models for Forest Monitoring",
+    "url": "https://arxiv.org/abs/2312.10114"
+  },
+  {
+    "index": 13,
+    "title": "HyBiomass: Global Hyperspectral Imagery Benchmark Dataset for Evaluating Geospatial Foundation Models in Forest Aboveground Biomass Estimation",
+    "url": "https://arxiv.org/abs/2506.11314"
+  },
+  {
+    "index": 14,
+    "title": "GreenHyperSpectra: A multi-source hyperspectral dataset for global vegetation trait prediction",
+    "url": "https://arxiv.org/abs/2507.06806"
+  },
+  {
+    "index": 15,
+    "title": "Plantation Bench: A Multiscale, Multimodal Remote Sensing Benchmark for Plantation Mapping Under Distribution Shift",
+    "url": "https://doi.org/10.1109/ICCVW69036.2025.00310"
+  },
+  {
+    "index": 16,
+    "title": "The Auto Arborist Dataset: A Large-Scale Benchmark for Multiview Urban Forest Monitoring Under Domain Shift",
+    "url": "https://doi.org/10.1109/CVPR52688.2022.02061"
+  },
+  {
+    "index": 17,
+    "title": "SSL4Eco: A Global Seasonal Dataset for Geospatial Foundation Models in Ecology",
+    "url": "https://arxiv.org/abs/2504.18256"
+  },
+  {
+    "index": 18,
+    "title": "A Sentinel-2 Multiyear, Multicountry Benchmark Dataset for Crop Classification and Segmentation With Deep Learning",
+    "url": "https://arxiv.org/abs/2204.00951"
+  },
+  {
+    "index": 19,
+    "title": "FLAIR #1: semantic segmentation and domain adaptation dataset",
+    "url": "https://arxiv.org/abs/2211.12979"
+  },
+  {
+    "index": 20,
+    "title": "Satellite Image Time Series Semantic Change Detection: Novel Architecture and Analysis of Domain Shift",
+    "url": "https://arxiv.org/abs/2407.07616"
+  },
+  {
+    "index": 21,
+    "title": "Cross-season generalization and uncertainty-aware evaluation for Sentinel-2 land cover mapping",
+    "url": "https://doi.org/10.1117/12.3118783"
+  },
+  {
+    "index": 22,
+    "title": "Temporal Transferability of Tree Species Classification in Temperate Forests with Sentinel-2 Time Series",
+    "url": "https://doi.org/10.3390/rs16142653"
+  },
+  {
+    "index": 23,
+    "title": "Crop Mapping without Labels: Investigating Temporal and Spatial Transferability of Crop Classification Models Using a 5-Year Sentinel-2 Series and Machine Learning",
+    "url": "https://doi.org/10.3390/rs15133414"
+  },
+  {
+    "index": 24,
+    "title": "Evaluating the spatial–temporal transferability of models for agricultural land cover mapping using Landsat archive",
+    "url": "https://doi.org/10.1016/j.isprsjprs.2024.05.020"
+  },
+  {
+    "index": 25,
+    "title": "Testing temporal transferability of remote sensing models for large area monitoring",
+    "url": "https://doi.org/10.1016/j.srs.2024.100119"
+  },
+  {
+    "index": 26,
+    "title": "Unveiling the transferability of PLSR models for leaf trait estimation: lessons from a comprehensive analysis with a novel global dataset",
+    "url": "https://doi.org/10.1111/nph.19807"
+  },
+  {
+    "index": 27,
+    "title": "Assessing Geo-Foundational Models for Flood Inundation Mapping: Benchmarking Models for Sentinel-1, Sentinel-2, and Planetscope",
+    "url": "https://arxiv.org/abs/2511.01990"
+  },
+  {
+    "index": 28,
+    "title": "Neural Plasticity-Inspired Multimodal Foundation Model for Earth Observation (DOFA)",
+    "url": "https://arxiv.org/abs/2403.15356"
+  },
+  {
+    "index": 29,
+    "title": "Benchmarking Geospatial Foundation Models for Agriculture Applications",
+    "url": "https://arxiv.org/abs/2606.29664"
+  },
+  {
+    "index": 30,
+    "title": "Generalizability of Foundation Models: A Case Study on Cocoa Mapping Across Countries Using Sparse Labels",
+    "url": "https://doi.org/10.5194/agile-giss-7-13-2026"
+  },
+  {
+    "index": 31,
+    "title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+    "url": "https://arxiv.org/abs/2508.00858"
+  },
+  {
+    "index": 32,
+    "title": "Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure",
+    "url": "https://doi.org/10.1111/ecog.02881"
+  },
+  {
+    "index": 33,
+    "title": "Spatial validation reveals poor predictive performance of large-scale ecological mapping models",
+    "url": "https://doi.org/10.1038/s41467-020-18321-y"
+  },
+  {
+    "index": 34,
+    "title": "Predicting into unknown space? Estimating the area of applicability of spatial prediction models",
+    "url": "https://doi.org/10.1111/2041-210X.13650"
+  },
+  {
+    "index": 35,
+    "title": "Spatial cross-validation is not the right way to evaluate map accuracy",
+    "url": "https://doi.org/10.1016/j.ecolmodel.2021.109692"
+  },
+  {
+    "index": 36,
+    "title": "Dealing with clustered samples for assessing map accuracy by cross-validation",
+    "url": "https://doi.org/10.1016/j.ecoinf.2022.101665"
+  },
+  {
+    "index": 37,
+    "title": "kNNDM CV: k-fold nearest-neighbour distance matching cross-validation for map accuracy estimation",
+    "url": "https://doi.org/10.5194/gmd-17-5897-2024"
+  },
+  {
+    "index": 38,
+    "title": "Spatially autocorrelated training and validation samples inflate performance assessment of convolutional neural networks",
+    "url": "https://doi.org/10.1016/j.ophoto.2022.100018"
+  },
+  {
+    "index": 39,
+    "title": "Bringing cross-validation into the real world to evaluate transferability of satellite-based vegetation models",
+    "url": "https://doi.org/10.1038/s41598-026-39866-w"
+  },
+  {
+    "index": 40,
+    "title": "Assessing and improving the transferability of current global spatial prediction models",
+    "url": "https://doi.org/10.1111/geb.13635"
+  },
+  {
+    "index": 41,
+    "title": "No One Knows the State of the Art in Geospatial Foundation Models",
+    "url": "https://arxiv.org/abs/2605.12678"
+  },
+  {
+    "index": 42,
+    "title": "On the foundations of Earth foundation models",
+    "url": "https://doi.org/10.1038/s43247-025-03127-x"
+  }
+]

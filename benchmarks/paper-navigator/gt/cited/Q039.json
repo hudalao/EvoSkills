@@ -1,0 +1,182 @@
+[
+ {
+  "index": 1,
+  "title": "Dynamic Pricing and Learning: Historical Origins, Current Research, and New Directions",
+  "url": "https://doi.org/10.1016/J.SORMS.2015.03.001"
+ },
+ {
+  "index": 2,
+  "title": "Dynamic pricing: Definition, implications for managers, and future research directions",
+  "url": "https://doi.org/10.1016/j.jretai.2023.11.003"
+ },
+ {
+  "index": 3,
+  "title": "Analytics for an Online Retailer: Demand Forecasting and Price Optimization",
+  "url": "https://doi.org/10.1287/msom.2015.0561"
+ },
+ {
+  "index": 4,
+  "title": "Designing and Evaluating Dynamic Pricing Policies for Major League Baseball Tickets",
+  "url": "https://doi.org/10.1287/msom.2018.0760"
+ },
+ {
+  "index": 5,
+  "title": "The Welfare Effects of Dynamic Pricing: Evidence From Airline Markets",
+  "url": "https://doi.org/10.3982/ECTA16180"
+ },
+ {
+  "index": 6,
+  "title": "On the (Surprising) Sufficiency of Linear Models for Dynamic Pricing with Demand Learning",
+  "url": "https://doi.org/10.1287/mnsc.2014.2031"
+ },
+ {
+  "index": 7,
+  "title": "Customized Regression Model for Airbnb Dynamic Pricing",
+  "url": "https://doi.org/10.1145/3219819.3219830"
+ },
+ {
+  "index": 8,
+  "title": "Price Optimization in Fashion E-commerce",
+  "url": "https://arxiv.org/abs/2007.05216"
+ },
+ {
+  "index": 9,
+  "title": "High-Frequency Pricing at Scale for E-Commerce",
+  "url": "https://arxiv.org/abs/2606.13741"
+ },
+ {
+  "index": 10,
+  "title": "Modeling Price Elasticity for Occupancy Prediction in Hotel Dynamic Pricing",
+  "url": "https://arxiv.org/abs/2208.03135"
+ },
+ {
+  "index": 11,
+  "title": "Promotheus: An End-to-End Machine Learning Framework for Optimizing Markdown in Online Fashion E-commerce",
+  "url": "https://arxiv.org/abs/2207.01137"
+ },
+ {
+  "index": 12,
+  "title": "Personalized Pricing and Consumer Welfare",
+  "url": "https://doi.org/10.1086/720793"
+ },
+ {
+  "index": 13,
+  "title": "Managing Airfares Under Competition: Insights from a Field Experiment",
+  "url": "https://doi.org/10.1287/mnsc.2022.4656"
+ },
+ {
+  "index": 14,
+  "title": "Instrumenting While Experimenting: An Empirical Method for Competitive Pricing at Scale",
+  "url": "https://doi.org/10.1287/opre.2022.0157"
+ },
+ {
+  "index": 15,
+  "title": "Demand Estimation Using Managerial Responses to Automated Price Recommendations",
+  "url": "https://doi.org/10.1287/mnsc.2021.4261"
+ },
+ {
+  "index": 16,
+  "title": "Causal Forecasting for Pricing",
+  "url": "https://arxiv.org/abs/2312.15282"
+ },
+ {
+  "index": 17,
+  "title": "Adventures in Demand Analysis Using AI",
+  "url": "https://arxiv.org/abs/2501.00382"
+ },
+ {
+  "index": 18,
+  "title": "Markdowns in E-Commerce Fresh Retail: A Counterfactual Prediction and Multi-Period Optimization Approach",
+  "url": "https://arxiv.org/abs/2105.08313"
+ },
+ {
+  "index": 19,
+  "title": "Offline Feature-Based Pricing Under Censored Demand: A Causal Inference Approach",
+  "url": "https://doi.org/10.1287/msom.2024.1061"
+ },
+ {
+  "index": 20,
+  "title": "Proxy-Aided Demand Learning with an Application to Various Pricing Problems",
+  "url": "https://doi.org/10.1287/opre.2025.1793"
+ },
+ {
+  "index": 21,
+  "title": "Observational vs. Experimental Data When Making Automated Decisions Using Machine Learning",
+  "url": "https://doi.org/10.1287/ijds.2023.0012"
+ },
+ {
+  "index": 22,
+  "title": "Design and Analysis of Switchback Experiments",
+  "url": "https://arxiv.org/abs/2009.00148"
+ },
+ {
+  "index": 23,
+  "title": "Switchback Price Experiments with Forward-Looking Demand",
+  "url": "https://arxiv.org/abs/2410.14904"
+ },
+ {
+  "index": 24,
+  "title": "Pricing Experimental Design: Causal Effect, Expected Revenue and Tail Risk",
+  "url": "https://doi.org/10.2139/ssrn.4357543"
+ },
+ {
+  "index": 25,
+  "title": "Treatment Effects in Market Equilibrium",
+  "url": "https://arxiv.org/abs/2109.11647"
+ },
+ {
+  "index": 26,
+  "title": "Dynamic Online Pricing with Incomplete Information Using Multiarmed Bandit Experiments",
+  "url": "https://doi.org/10.1287/MKSC.2018.1129"
+ },
+ {
+  "index": 27,
+  "title": "Personalized Dynamic Pricing with Machine Learning: High-Dimensional Features and Heterogeneous Elasticity",
+  "url": "https://doi.org/10.1287/mnsc.2020.3680"
+ },
+ {
+  "index": 28,
+  "title": "Meta Dynamic Pricing: Transfer Learning Across Experiments",
+  "url": "https://doi.org/10.1287/mnsc.2021.4071"
+ },
+ {
+  "index": 29,
+  "title": "Dynamic Learning and Pricing with Model Misspecification",
+  "url": "https://doi.org/10.1287/MNSC.2018.3194"
+ },
+ {
+  "index": 30,
+  "title": "Dynamic Pricing on E-commerce Platform with Deep Reinforcement Learning",
+  "url": "https://arxiv.org/abs/1912.02572"
+ },
+ {
+  "index": 31,
+  "title": "Reinforcement learning versus data-driven dynamic programming: a comparison for finite horizon dynamic pricing markets",
+  "url": "https://doi.org/10.1057/s41272-025-00519-8"
+ },
+ {
+  "index": 32,
+  "title": "Outsmarting Human Design in Airline Revenue Management",
+  "url": "https://doi.org/10.3390/a15050142"
+ },
+ {
+  "index": 33,
+  "title": "Improving network dynamic pricing policies through offline reinforcement learning",
+  "url": "https://doi.org/10.1007/s00291-025-00821-2"
+ },
+ {
+  "index": 34,
+  "title": "Balanced Off-Policy Evaluation for Personalized Pricing",
+  "url": "https://arxiv.org/abs/2302.12736"
+ },
+ {
+  "index": 35,
+  "title": "Artificial Intelligence, Algorithmic Pricing, and Collusion",
+  "url": "https://doi.org/10.1257/AER.20190623"
+ },
+ {
+  "index": 36,
+  "title": "Matching and Pricing in Ride Hailing: Wild Goose Chases and How to Solve Them",
+  "url": "https://doi.org/10.1287/mnsc.2022.00096"
+ }
+]

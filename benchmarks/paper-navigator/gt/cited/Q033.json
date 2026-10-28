@@ -1,0 +1,192 @@
+[
+ {
+  "index": 1,
+  "title": "Large Language Models for Education: A survey and outlook",
+  "url": "https://arxiv.org/abs/2403.18105"
+ },
+ {
+  "index": 2,
+  "title": "Large Language Models for Education: A Survey",
+  "url": "https://arxiv.org/abs/2405.13001"
+ },
+ {
+  "index": 3,
+  "title": "Large language models in education: a systematic review of empirical applications, benefits, and challenges",
+  "url": "https://doi.org/10.1016/j.caeai.2025.100529"
+ },
+ {
+  "index": 4,
+  "title": "A Meta-Review of Generative AI in Education: Synthesizing Findings from Systematic Reviews",
+  "url": "https://doi.org/10.1177/07356331261419689"
+ },
+ {
+  "index": 5,
+  "title": "LLM Agents for Education: Advances and Applications",
+  "url": "https://arxiv.org/abs/2503.11733"
+ },
+ {
+  "index": 6,
+  "title": "A Comprehensive Survey on Large-Language-Model-Based Agents for Education",
+  "url": "https://doi.org/10.1109/TLT.2025.3617909"
+ },
+ {
+  "index": 7,
+  "title": "The role of large language models in personalized learning: a systematic review of educational impact",
+  "url": "https://doi.org/10.1007/s43621-025-01094-z"
+ },
+ {
+  "index": 8,
+  "title": "A Review on the Use of Large Language Models as Virtual Tutors",
+  "url": "https://arxiv.org/abs/2405.11983"
+ },
+ {
+  "index": 9,
+  "title": "Advancing Education through Tutoring Systems: A Systematic Literature Review",
+  "url": "https://arxiv.org/abs/2503.09748"
+ },
+ {
+  "index": 10,
+  "title": "A Comprehensive Survey and Taxonomy on Large Language Model-Based Knowledge Tracing",
+  "url": "https://doi.org/10.1007/978-3-031-98281-1_20"
+ },
+ {
+  "index": 11,
+  "title": "Literature Review on the Integration of Generative AI in Programming Education",
+  "url": "https://doi.org/10.1007/s40593-025-00524-3"
+ },
+ {
+  "index": 12,
+  "title": "A meta-analysis of AI-enabled personalized STEM education in schools",
+  "url": "https://doi.org/10.1186/s40594-025-00566-y"
+ },
+ {
+  "index": 13,
+  "title": "Tutor CoPilot: A Human-AI Approach for Scaling Real-Time Expertise",
+  "url": "https://arxiv.org/abs/2410.03017"
+ },
+ {
+  "index": 14,
+  "title": "LLMs are Biased Teachers: Evaluating LLM Bias in Personalized Education",
+  "url": "https://arxiv.org/abs/2410.14012"
+ },
+ {
+  "index": 15,
+  "title": "Harnessing Generative AI (GenAI) for Automated Feedback in Higher Education: A Systematic Review",
+  "url": "https://doi.org/10.24059/olj.v28i3.4593"
+ },
+ {
+  "index": 16,
+  "title": "Large Language Model-Powered Automated Assessment: A Systematic Review",
+  "url": "https://doi.org/10.3390/app15105683"
+ },
+ {
+  "index": 17,
+  "title": "A scoping review on how generative artificial intelligence transforms assessment in higher education",
+  "url": "https://doi.org/10.1186/s41239-024-00468-z"
+ },
+ {
+  "index": 18,
+  "title": "Generative artificial intelligence for automated writing evaluation: A systematic review of trends, efficacy, and challenges",
+  "url": "https://doi.org/10.1016/j.asw.2026.101041"
+ },
+ {
+  "index": 19,
+  "title": "A comprehensive review of AI-powered grading and tailored feedback in universities",
+  "url": "https://doi.org/10.1007/s44163-025-00517-0"
+ },
+ {
+  "index": 20,
+  "title": "How does artificial intelligence compare to human feedback? A meta-analysis of performance, feedback perception, and learning dispositions",
+  "url": "https://doi.org/10.1080/01443410.2025.2553639"
+ },
+ {
+  "index": 21,
+  "title": "The Effectiveness of AI-Supported Personalized Feedback on Students' Learning Outcomes and Motivation: A Meta-Analysis",
+  "url": "https://doi.org/10.1177/07356331251410020"
+ },
+ {
+  "index": 22,
+  "title": "Can Generative AI Feedback Effectively Enhance Learning Outcomes? A Meta-Analysis of 36 Experimental and Quasi-Experimental Studies",
+  "url": "https://doi.org/10.3390/educsci16060816"
+ },
+ {
+  "index": 23,
+  "title": "Large Language Model as an Assignment Evaluator: Insights, Feedback, and Challenges in a 1000+ Student Course",
+  "url": "https://arxiv.org/abs/2407.05216"
+ },
+ {
+  "index": 24,
+  "title": "Does ChatGPT enhance student learning? A systematic review and meta-analysis of experimental studies",
+  "url": "https://doi.org/10.1016/j.compedu.2024.105224"
+ },
+ {
+  "index": 25,
+  "title": "The effect of ChatGPT on students' learning performance, learning perception, and higher-order thinking: insights from a meta-analysis",
+  "url": "https://doi.org/10.1057/s41599-025-04787-y"
+ },
+ {
+  "index": 26,
+  "title": "Effects of Generative Artificial Intelligence on K-12 and Higher Education Students' Learning Outcomes: A Meta-Analysis",
+  "url": "https://doi.org/10.1177/07356331251329185"
+ },
+ {
+  "index": 27,
+  "title": "Does Generative Artificial Intelligence Improve the Academic Achievement of College Students? A Meta-Analysis",
+  "url": "https://doi.org/10.1177/07356331241277937"
+ },
+ {
+  "index": 28,
+  "title": "The impact of GenAI on learning outcomes: A systematic review and meta-analysis of experimental studies",
+  "url": "https://doi.org/10.1016/j.edurev.2025.100714"
+ },
+ {
+  "index": 29,
+  "title": "AI tutoring outperforms in-class active learning: an RCT introducing a novel research-based design in an authentic educational setting",
+  "url": "https://doi.org/10.1038/s41598-025-97652-6"
+ },
+ {
+  "index": 30,
+  "title": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+  "url": "https://doi.org/10.1073/pnas.2422633122"
+ },
+ {
+  "index": 31,
+  "title": "Beware of Metacognitive Laziness: Effects of Generative Artificial Intelligence on Learning Motivation, Processes, and Performance",
+  "url": "https://arxiv.org/abs/2412.09315"
+ },
+ {
+  "index": 32,
+  "title": "ChatGPT in Education: An Effect in Search of a Cause",
+  "url": "https://doi.org/10.1111/jcal.70105"
+ },
+ {
+  "index": 33,
+  "title": "智慧教育中的大语言模型综述",
+  "url": "https://doi.org/10.11992/tis.202406040"
+ },
+ {
+  "index": 34,
+  "title": "大语言模型教育agents的发展、应用现状与前景展望",
+  "url": "https://www.sciopen.com/article/10.3969/j.issn.1009-8097.2024.11.001"
+ },
+ {
+  "index": 35,
+  "title": "Unifying AI Tutor Evaluation: An Evaluation Taxonomy for Pedagogical Ability Assessment of LLM-Powered AI Tutors",
+  "url": "https://arxiv.org/abs/2412.09416"
+ },
+ {
+  "index": 36,
+  "title": "MathTutorBench: A Benchmark for Measuring Open-ended Pedagogical Capabilities of LLM Tutors",
+  "url": "https://arxiv.org/abs/2502.18940"
+ },
+ {
+  "index": 37,
+  "title": "EduBench: A Comprehensive Benchmarking Dataset for Evaluating Large Language Models in Diverse Educational Scenarios",
+  "url": "https://arxiv.org/abs/2505.16160"
+ },
+ {
+  "index": 38,
+  "title": "TutorBench: A Benchmark To Assess Tutoring Capabilities Of Large Language Models",
+  "url": "https://arxiv.org/abs/2510.02663"
+ }
+]
