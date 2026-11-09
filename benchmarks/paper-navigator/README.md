@@ -4,7 +4,26 @@
 
 题集包含 **70 道查询（Q001–Q070）、10 个行业域、9 类任务**；其中 **38 题显式要求论文或文献，32 题隐含学术证据需求**。行业与任务类型是覆盖维度，70 题并未穷举所有组合。
 
-本目录提供题目和任务元数据，以及构建、校验和使用说明。历史参考答案、论文相关性标注、检索日志与评分执行器属于配套资产，未随本次题集导入。
+本目录提供题目、任务元数据、70 份参考答案候选、2,774 行文献表及历史核验报告。参考答案的整体人工复核仍待完成；论文相关性分级标注与完整评分执行器需要后续建立。
+
+## 配套文件与快速检查
+
+| 入口 | 用途 |
+|---|---|
+| [题目 CSV](question_queries_70_same_discipline.csv) | 原始 70 题及 11 个标注字段 |
+| [cases.jsonl](cases.jsonl) | 逐题评测索引：题面、元数据、参考答案路径、结构化引用路径、引用数与复核状态 |
+| [参考答案与核验材料](gt/README.md) | 70 份答案、70 份结构化引用、文献表、核验报告、豆包交叉验证和历史构建报告 |
+| [asset_manifest.json](asset_manifest.json) | 150 个数据资产的大小与 SHA-256，以及来源快照和已知历史差异 |
+| [validation_report.json](validation_report.json) | 本次离线完整性与跨文件一致性检查结果 |
+| [validate.py](validate.py) | 可重复执行的离线校验工具，仅依赖 Python 标准库 |
+
+在仓库根目录运行：
+
+```bash
+python3 benchmarks/paper-navigator/validate.py
+```
+
+检查覆盖题号、正文与文末引用编号、文献标题与链接、结构化引用、文献表、历史核验条目、统计计数及文件校验值。当前通过状态为 `passed_with_notices`：唯一已知提示是 Q021 第 32 条文献在核验后订正了标题，DOI 未变。该差异已记录，历史报告保留原样。详细解释见 [gt/README.md](gt/README.md)。
 
 ## 一、数据集是怎么构建的
 
@@ -45,6 +64,8 @@
 - 行业、任务类型和显隐性分布与下方统计表一致。
 - 文件与原入库版本逐字节一致；UTF-8 BOM、CRLF 换行及校验值均保留。
 - 说明中的数据文件链接有效，Git 差异格式检查通过。
+- 配套答案、引用表、文献表与核验报告覆盖同一批 70 题；2,774 条引用均有对应的正文编号、文末条目、结构化记录和历史核验记录。
+- 150 个数据资产均记录并核对 SHA-256；历史报告中的一处标题订正单独列为已知差异。
 
 文件：[`question_queries_70_same_discipline.csv`](question_queries_70_same_discipline.csv)。Python 读取时使用 `encoding="utf-8-sig"`；目录内的 `.gitattributes` 用于保留原始换行格式。
 
@@ -83,13 +104,27 @@ SHA-256：`8bfdf453a68a7ba53e3249bb133dd09a0cad3e87540eddf6d5b314b6573bf2d1`。
 - 引用存在性检查与个别异常人工确认，尚未替代全部答案的领域复核。
 - “没有找到某类研究”应当作为证据不足的候选判断；发现新论文后，应核实原文和检索时间范围，不能仅因其未被 GT 收录就判错。
 
-历史构建依据见原项目的[采集说明](https://github.com/hudalao/skill-opt/blob/cea3d3a33f3575ba61c0768048c4579d2eed12cc/evoskill/tests/paper-navigator/gt/README.md)、[试点报告](https://github.com/hudalao/skill-opt/blob/cea3d3a33f3575ba61c0768048c4579d2eed12cc/evoskill/tests/paper-navigator/gt/pilot_report.md)、[全量报告](https://github.com/hudalao/skill-opt/blob/cea3d3a33f3575ba61c0768048c4579d2eed12cc/evoskill/tests/paper-navigator/gt/final_report.md)及[采集指令](https://github.com/hudalao/skill-opt/blob/cea3d3a33f3575ba61c0768048c4579d2eed12cc/evoskill/tests/paper-navigator/harness/gt_make_batch_workflow.py)。这些链接需要原仓库访问权限。
+历史构建依据已随数据提供：[采集说明](gt/collection_notes.md)、[试点报告](gt/pilot_report.md)和[全量报告](gt/final_report.md)。原始[采集指令](https://github.com/hudalao/skill-opt/blob/cea3d3a33f3575ba61c0768048c4579d2eed12cc/evoskill/tests/paper-navigator/harness/gt_make_batch_workflow.py)仍可在原仓库查看，需要相应访问权限。
 
 ## 三、如何用于“搜读论文”评测
 
 ### 1. 建立可比较的运行条件
 
 将 `query` 原文作为用户输入，用 `id` 关联答案与运行记录。其余字段作为评审上下文保存；若实验向被测系统提供这些字段，应单独记录该设置。
+
+`cases.jsonl` 可作为评审侧的批量调度入口。将题面传入独立的被测工作区；参考答案、文献表及核验报告保留在评审侧，避免被测 agent 读取答案。索引中的路径均相对于本目录，可按下面方式读取一题的配套材料：
+
+```python
+import json
+from pathlib import Path
+
+root = Path("benchmarks/paper-navigator")
+cases = [json.loads(line) for line in (root / "cases.jsonl").read_text().splitlines()]
+case = cases[0]
+query = case["query"]  # 传给被测系统的输入
+reference = (root / case["reference_answer"]).read_text()  # 仅供评审侧使用
+papers = json.loads((root / case["reference_papers"]).read_text())
+```
 
 比较“基础模型”与“基础模型 + skill”，或比较两个 skill 版本时，固定模型、工具、搜索源、日期口径和调用预算；逐题记录答案、检索结果及排名、实际阅读的论文、工具轨迹、耗时和 token 用量。相对时间和近期进展会随运行日期变化，需要记录明确的评测日期与可接受文献截止时间。
 
@@ -113,13 +148,13 @@ SHA-256：`8bfdf453a68a7ba53e3249bb133dd09a0cad3e87540eddf6d5b314b6573bf2d1`。
 
 这 70 题均面向学术证据需求，可观察适用请求中的 skill 触发情况；若要测误触发率，需另配不应使用该 skill 的负例。题集目前没有预设训练/开发/测试划分，若用于反复调优，应事先固定开发集与保留集。
 
-### 4. 补齐并复核配套 GT 后的量化评测
+### 4. 复核参考材料并补充相关性标注后的量化评测
 
 - **检索**：对已确认的参考论文计算已知相关集合上的 Recall@K；对系统返回论文逐篇标注相关性后计算 Precision@K。评估排序质量时，先建立候选论文池及分级相关性标注，再计算 NDCG@K。
 - **阅读**：抽取答案中的关键论断，检查引文支持率、数值与实验条件准确率；结合逐题证据要求统计要点覆盖情况。
 - **效率**：在相同预算下比较上述质量指标，同时报告工具调用数、耗时及 token 用量。
 
-参考集合不完整时，Recall@K 只表示对已知相关论文的覆盖；GT 之外的新结果应进入补标流程。历史参考答案仍需人工复核，本目录当前提供的是题集与使用方法，尚未交付可直接运行的完整评分流水线。
+参考集合不完整时，Recall@K 只表示对已知相关论文的覆盖；GT 之外的新结果应进入补标流程。现有参考答案与文献表可直接用于准备评审、抽取核查项和构建候选论文池；正式报告指标前仍需完成相应人工复核与相关性标注。离线校验工具用于核对材料，完整的模型运行和评分流水线需要另行接入。
 
 ## 四、字段说明
 

@@ -1,0 +1,132 @@
+[
+ {
+  "index": 1,
+  "title": "2010 i2b2/VA challenge on concepts, assertions, and relations in clinical text",
+  "url": "https://doi.org/10.1136/amiajnl-2011-000203"
+ },
+ {
+  "index": 2,
+  "title": "Evaluating temporal relations in clinical text: 2012 i2b2 Challenge",
+  "url": "https://doi.org/10.1136/amiajnl-2013-001628"
+ },
+ {
+  "index": 3,
+  "title": "Research on information extraction of electronic medical records in Chinese（中文电子病历信息抽取研究）",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/20842840/"
+ },
+ {
+  "index": 4,
+  "title": "Intelligent Recognition of Named Entity in Electronic Medical Records（电子病历中命名实体的智能识别）",
+  "url": "https://www.semanticscholar.org/paper/bae3b4cf9174fbdbb1803a6aa56f872c17a0c97f"
+ },
+ {
+  "index": 5,
+  "title": "Joint segmentation and named entity recognition using dual decomposition in Chinese discharge summaries",
+  "url": "https://doi.org/10.1136/amiajnl-2013-001806"
+ },
+ {
+  "index": 6,
+  "title": "A comprehensive study of named entity recognition in Chinese clinical text",
+  "url": "https://doi.org/10.1136/amiajnl-2013-002381"
+ },
+ {
+  "index": 7,
+  "title": "Named Entity Recognition in Chinese Clinical Text Using Deep Neural Network",
+  "url": "https://doi.org/10.3233/978-1-61499-564-7-624"
+ },
+ {
+  "index": 8,
+  "title": "Data-Driven Information Extraction from Chinese Electronic Medical Records",
+  "url": "https://doi.org/10.1371/journal.pone.0136270"
+ },
+ {
+  "index": 9,
+  "title": "An Overview of Research on Electronic Medical Record Oriented Named Entity Recognition and Entity Relation Extraction（电子病历命名实体识别和实体关系抽取研究综述）",
+  "url": "http://www.aas.net.cn/cn/article/doi/10.3724/SP.J.1004.2014.01537"
+ },
+ {
+  "index": 10,
+  "title": "Corpus Construction for Named Entities and Entity Relations on Chinese Electronic Medical Records（中文电子病历命名实体和实体关系语料库构建）",
+  "url": "http://www.jos.org.cn/1000-9825/4880.htm"
+ },
+ {
+  "index": 11,
+  "title": "Building a comprehensive syntactic and semantic corpus of Chinese clinical texts",
+  "url": "https://arxiv.org/abs/1611.02091"
+ },
+ {
+  "index": 12,
+  "title": "Developing a cardiovascular disease risk factor annotated corpus of Chinese electronic medical records",
+  "url": "https://arxiv.org/abs/1611.09020"
+ },
+ {
+  "index": 13,
+  "title": "HITSZ_CNER: A hybrid system for entity recognition from Chinese clinical text",
+  "url": "https://www.semanticscholar.org/paper/66b8127c3210dd8969cc145b998c0edcff158385"
+ },
+ {
+  "index": 14,
+  "title": "Overview of CCKS 2018 Task 1: Named Entity Recognition in Chinese Electronic Medical Records",
+  "url": "https://doi.org/10.1007/978-981-15-1956-7_14"
+ },
+ {
+  "index": 15,
+  "title": "Overview of the CCKS 2019 Knowledge Graph Evaluation Track: Entity, Relation, Event and QA",
+  "url": "https://arxiv.org/abs/2003.03875"
+ },
+ {
+  "index": 16,
+  "title": "Overview of CCKS 2020 Task 3: Named Entity Recognition and Event Extraction in Chinese Electronic Medical Records",
+  "url": "https://doi.org/10.1162/dint_a_00093"
+ },
+ {
+  "index": 17,
+  "title": "Adversarial training based lattice LSTM for Chinese clinical named entity recognition",
+  "url": "https://doi.org/10.1016/j.jbi.2019.103290"
+ },
+ {
+  "index": 18,
+  "title": "Chinese clinical named entity recognition with variant neural structures based on BERT methods",
+  "url": "https://doi.org/10.1016/j.jbi.2020.103422"
+ },
+ {
+  "index": 19,
+  "title": "CMeIE: Construction and Evaluation of Chinese Medical Information Extraction Dataset",
+  "url": "https://doi.org/10.1007/978-3-030-60450-9_22"
+ },
+ {
+  "index": 20,
+  "title": "CBLUE: A Chinese Biomedical Language Understanding Evaluation Benchmark",
+  "url": "https://arxiv.org/abs/2106.08087"
+ },
+ {
+  "index": 21,
+  "title": "A unified framework of medical information annotation and extraction for Chinese clinical text",
+  "url": "https://doi.org/10.1016/j.artmed.2023.102573"
+ },
+ {
+  "index": 22,
+  "title": "Extraction of risk factors for cardiovascular diseases from Chinese electronic medical records",
+  "url": "https://doi.org/10.1016/j.cmpb.2019.01.007"
+ },
+ {
+  "index": 23,
+  "title": "Temporal indexing of medical entity in Chinese clinical notes",
+  "url": "https://doi.org/10.1186/s12911-019-0735-x"
+ },
+ {
+  "index": 24,
+  "title": "End-to-end Chinese clinical event extraction based on large language model",
+  "url": "https://doi.org/10.1038/s41598-025-00609-y"
+ },
+ {
+  "index": 25,
+  "title": "The Automatic Extraction of Temporal Relation from Chinese Narrative Medical Records Using Conditional Random Fields",
+  "url": "https://www.semanticscholar.org/paper/fbe37f442e9e4f9b8db0dcaff7709f5d249bbd31"
+ },
+ {
+  "index": 26,
+  "title": "电子病历文本挖掘研究综述",
+  "url": "https://crad.ict.ac.cn/fileJSJYJYFZ/journal/article/jsjyjyfz/HTML/2021-03-513.shtml"
+ }
+]

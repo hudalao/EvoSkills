@@ -1,0 +1,202 @@
+[
+  {
+    "index": 1,
+    "title": "FinQA: A Dataset of Numerical Reasoning over Financial Data",
+    "url": "https://arxiv.org/abs/2109.00122"
+  },
+  {
+    "index": 2,
+    "title": "ConvFinQA: Exploring the Chain of Numerical Reasoning in Conversational Finance Question Answering",
+    "url": "https://arxiv.org/abs/2210.03849"
+  },
+  {
+    "index": 3,
+    "title": "TAT-QA: A Question Answering Benchmark on a Hybrid of Tabular and Textual Content in Finance",
+    "url": "https://arxiv.org/abs/2105.07624"
+  },
+  {
+    "index": 4,
+    "title": "MultiHiertt: Numerical Reasoning over Multi Hierarchical Tabular and Textual Data",
+    "url": "https://arxiv.org/abs/2206.01347"
+  },
+  {
+    "index": 5,
+    "title": "DocFinQA: A Long-Context Financial Reasoning Dataset",
+    "url": "https://arxiv.org/abs/2401.06915"
+  },
+  {
+    "index": 6,
+    "title": "DocMath-Eval: Evaluating Math Reasoning Capabilities of LLMs in Understanding Financial Documents",
+    "url": "https://doi.org/10.18653/v1/2024.acl-long.852"
+  },
+  {
+    "index": 7,
+    "title": "FinanceBench: A New Benchmark for Financial Question Answering",
+    "url": "https://arxiv.org/abs/2311.11944"
+  },
+  {
+    "index": 8,
+    "title": "FinBen: A Holistic Financial Benchmark for Large Language Models",
+    "url": "https://arxiv.org/abs/2402.12659"
+  },
+  {
+    "index": 9,
+    "title": "FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models",
+    "url": "https://arxiv.org/abs/2308.09975"
+  },
+  {
+    "index": 10,
+    "title": "BizFinBench: A Business-Driven Real-World Financial Benchmark for Evaluating LLMs",
+    "url": "https://arxiv.org/abs/2505.19457"
+  },
+  {
+    "index": 11,
+    "title": "EDINET-Bench: Evaluating LLMs on Complex Financial Tasks using Japanese Financial Statements",
+    "url": "https://arxiv.org/abs/2506.08762"
+  },
+  {
+    "index": 12,
+    "title": "FiNER: Financial Numeric Entity Recognition for XBRL Tagging",
+    "url": "https://arxiv.org/abs/2203.06482"
+  },
+  {
+    "index": 13,
+    "title": "FinTagging: Benchmarking LLMs for Extracting and Structuring Financial Information",
+    "url": "https://arxiv.org/abs/2505.20650"
+  },
+  {
+    "index": 14,
+    "title": "Can AI Read Like a Financial Analyst? A Financial Touchstone for Frontier Language Models Such as Gemini 2.5 Pro, o3, and Grok 4 on Long-Context Annual Report Comprehension",
+    "url": "https://doi.org/10.1145/3768292.3770417"
+  },
+  {
+    "index": 15,
+    "title": "Are ChatGPT and GPT-4 General-Purpose Solvers for Financial Text Analytics? A Study on Several Typical Tasks",
+    "url": "https://arxiv.org/abs/2305.05862"
+  },
+  {
+    "index": 16,
+    "title": "TAT-LLM: A Specialized Language Model for Discrete Reasoning over Tabular and Textual Data",
+    "url": "https://arxiv.org/abs/2401.13223"
+  },
+  {
+    "index": 17,
+    "title": "Financial Named Entity Recognition: How Far Can LLM Go?",
+    "url": "https://arxiv.org/abs/2501.02237"
+  },
+  {
+    "index": 18,
+    "title": "A Comparative Analysis of Instruction Fine-Tuning Large Language Models for Financial Text Classification",
+    "url": "https://doi.org/10.1145/3706119"
+  },
+  {
+    "index": 19,
+    "title": "Fine-Tuned 'Small' LLMs (Still) Significantly Outperform Zero-Shot Generative AI Models in Text Classification",
+    "url": "https://arxiv.org/abs/2406.08660"
+  },
+  {
+    "index": 20,
+    "title": "Reasoning or Overthinking: Evaluating Large Language Models on Financial Sentiment Analysis",
+    "url": "https://arxiv.org/abs/2506.04574"
+  },
+  {
+    "index": 21,
+    "title": "Comparative Investigation of GPT and FinBERT's Sentiment Analysis Performance in News Across Different Sectors",
+    "url": "https://doi.org/10.3390/electronics14061090"
+  },
+  {
+    "index": 22,
+    "title": "Fin-R1: A Large Language Model for Financial Reasoning through Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2503.16252"
+  },
+  {
+    "index": 23,
+    "title": "BloombergGPT: A Large Language Model for Finance",
+    "url": "https://arxiv.org/abs/2303.17564"
+  },
+  {
+    "index": 24,
+    "title": "Assessing Large Language Models Used for Extracting Table Information from Annual Financial Reports",
+    "url": "https://doi.org/10.3390/computers13100257"
+  },
+  {
+    "index": 25,
+    "title": "InvestLM: A Large Language Model for Investment using Financial Domain Instruction Tuning",
+    "url": "https://arxiv.org/abs/2309.13064"
+  },
+  {
+    "index": 26,
+    "title": "UCFE: A User-Centric Financial Expertise Benchmark for Large Language Models",
+    "url": "https://arxiv.org/abs/2410.14059"
+  },
+  {
+    "index": 27,
+    "title": "No Free Labels: Limitations of LLM-as-a-Judge Without Human Grounding",
+    "url": "https://arxiv.org/abs/2503.05061"
+  },
+  {
+    "index": 28,
+    "title": "FinSearchComp: Towards a Realistic, Expert-Level Evaluation of Financial Search and Reasoning",
+    "url": "https://arxiv.org/abs/2509.13160"
+  },
+  {
+    "index": 29,
+    "title": "Finance Agent Benchmark: Benchmarking LLMs on Real-world Financial Research Tasks",
+    "url": "https://arxiv.org/abs/2508.00828"
+  },
+  {
+    "index": 30,
+    "title": "Can GPT models be Financial Analysts? An Evaluation of ChatGPT and GPT-4 on mock CFA Exams",
+    "url": "https://arxiv.org/abs/2310.08678"
+  },
+  {
+    "index": 31,
+    "title": "The Promise and Peril of Generative AI: Evidence from GPT as Sell-Side Analysts",
+    "url": "https://arxiv.org/abs/2412.01069"
+  },
+  {
+    "index": 32,
+    "title": "Financial Statement Analysis with Large Language Models (arXiv v3 已于 2025-02-20 撤稿)",
+    "url": "https://arxiv.org/abs/2407.17866"
+  },
+  {
+    "index": 33,
+    "title": "Caution Ahead: Numerical Reasoning and Look-Ahead Bias in AI Models",
+    "url": "https://doi.org/10.1111/1475-679x.70058"
+  },
+  {
+    "index": 34,
+    "title": "Lookahead Bias in Pretrained Language Models",
+    "url": "https://doi.org/10.2139/ssrn.4754678"
+  },
+  {
+    "index": 35,
+    "title": "Standard Benchmarks Fail — Auditing LLM Agents in Finance Must Prioritize Risk",
+    "url": "https://arxiv.org/abs/2502.15865"
+  },
+  {
+    "index": 36,
+    "title": "Benchmarks Are Not Validation: A System-Level View of Financial LLM Applications",
+    "url": "https://arxiv.org/abs/2607.28840"
+  },
+  {
+    "index": 37,
+    "title": "Evaluating LLMs in Finance Requires Explicit Bias Consideration",
+    "url": "https://arxiv.org/abs/2602.14233"
+  },
+  {
+    "index": 38,
+    "title": "PHANTOM: A Benchmark for Hallucination Detection in Financial Long-Context QA",
+    "url": "https://www.semanticscholar.org/paper/20aa57f68d0fffd922784aa0545d0b6d5e31858d"
+  },
+  {
+    "index": 39,
+    "title": "ChatGPT for Textual Analysis? How to Use Generative LLMs in Accounting Research",
+    "url": "https://doi.org/10.1287/mnsc.2023.03253"
+  },
+  {
+    "index": 40,
+    "title": "A Scoping Review of ChatGPT Research in Accounting and Finance",
+    "url": "https://arxiv.org/abs/2412.05731"
+  }
+]

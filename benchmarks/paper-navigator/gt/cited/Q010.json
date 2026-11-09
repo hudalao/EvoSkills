@@ -1,0 +1,387 @@
+[
+ {
+  "index": 1,
+  "title": "A Survey of Large Language Models for Financial Applications: Progress, Prospects and Challenges",
+  "url": "https://arxiv.org/abs/2406.11903"
+ },
+ {
+  "index": 2,
+  "title": "Large Language Models in Finance (FinLLMs)",
+  "url": "https://doi.org/10.1007/s00521-024-10495-6"
+ },
+ {
+  "index": 3,
+  "title": "A Survey on Large Language Models for Critical Societal Domains: Finance, Healthcare, and Law",
+  "url": "https://arxiv.org/abs/2405.01769"
+ },
+ {
+  "index": 4,
+  "title": "Large Language Model Agents in Finance: A Survey Bridging Research, Practice, and Real-World Deployment",
+  "url": "https://doi.org/10.18653/v1/2025.findings-emnlp.972"
+ },
+ {
+  "index": 5,
+  "title": "Agentic Artificial Intelligence in Finance: A Comprehensive Survey",
+  "url": "https://arxiv.org/abs/2604.21672"
+ },
+ {
+  "index": 6,
+  "title": "AI Agents in Finance and Fintech: A Scientific Review of Agent-Based Systems, Applications, and Future Directions",
+  "url": "https://doi.org/10.32604/cmc.2025.069678"
+ },
+ {
+  "index": 7,
+  "title": "From Deep Learning to LLMs: A survey of AI in Quantitative Investment",
+  "url": "https://arxiv.org/abs/2503.21422"
+ },
+ {
+  "index": 8,
+  "title": "Large Language Model Agents for Investment Management: Foundations, Benchmarks, and Research Frontiers",
+  "url": "https://doi.org/10.1145/3768292.3770387"
+ },
+ {
+  "index": 9,
+  "title": "The New Quant: A Survey of Large Language Models in Financial Prediction and Trading",
+  "url": "https://arxiv.org/abs/2510.05533"
+ },
+ {
+  "index": 10,
+  "title": "Multimodal Financial Foundation Models (MFFMs): Progress, Prospects, and Challenges",
+  "url": "https://arxiv.org/abs/2506.01973"
+ },
+ {
+  "index": 11,
+  "title": "Interpretable LLMs for Credit Risk: A Systematic Review and Taxonomy",
+  "url": "https://arxiv.org/abs/2506.04290"
+ },
+ {
+  "index": 12,
+  "title": "Generative AI and financial crimes: a quantitative systematic literature review",
+  "url": "https://doi.org/10.1186/s40163-026-00268-y"
+ },
+ {
+  "index": 13,
+  "title": "Fin-R1: A Large Language Model for Financial Reasoning through Reinforcement Learning",
+  "url": "https://arxiv.org/abs/2503.16252"
+ },
+ {
+  "index": 14,
+  "title": "DianJin-R1: Evaluating and Enhancing Financial Reasoning in Large Language Models",
+  "url": "https://arxiv.org/abs/2504.15716"
+ },
+ {
+  "index": 15,
+  "title": "Agentar-Fin-R1: Enhancing Financial Intelligence through Domain Expertise, Training Efficiency, and Advanced Reasoning",
+  "url": "https://arxiv.org/abs/2507.16802"
+ },
+ {
+  "index": 16,
+  "title": "Fino1: On the Transferability of Reasoning-Enhanced LLMs and Reinforcement Learning to Finance",
+  "url": "https://arxiv.org/abs/2502.08127"
+ },
+ {
+  "index": 17,
+  "title": "Baichuan4-Finance Technical Report",
+  "url": "https://arxiv.org/abs/2412.15270"
+ },
+ {
+  "index": 18,
+  "title": "Open-FinLLMs: Open Multimodal Large Language Models for Financial Applications",
+  "url": "https://arxiv.org/abs/2408.11878"
+ },
+ {
+  "index": 19,
+  "title": "Demystifying Domain-adaptive Post-training for Financial LLMs",
+  "url": "https://arxiv.org/abs/2501.04961"
+ },
+ {
+  "index": 20,
+  "title": "FinRobot: AI Agent for Equity Research and Valuation with Large Language Models",
+  "url": "https://arxiv.org/abs/2411.08804"
+ },
+ {
+  "index": 21,
+  "title": "FinRpt: Dataset, Evaluation System and LLM-based Multi-agent Framework for Equity Research Report Generation",
+  "url": "https://arxiv.org/abs/2511.07322"
+ },
+ {
+  "index": 22,
+  "title": "FinReportBench: Measuring and Improving Institution-Grade Financial Report Generation",
+  "url": "https://arxiv.org/abs/2608.04374"
+ },
+ {
+  "index": 23,
+  "title": "AlphaAgent: LLM-Driven Alpha Mining with Regularized Exploration to Counteract Alpha Decay",
+  "url": "https://arxiv.org/abs/2502.16789"
+ },
+ {
+  "index": 24,
+  "title": "R&D-Agent-Quant: A Multi-Agent Framework for Data-Centric Factors and Model Joint Optimization",
+  "url": "https://arxiv.org/abs/2505.15155"
+ },
+ {
+  "index": 25,
+  "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+  "url": "https://arxiv.org/abs/2412.20138"
+ },
+ {
+  "index": 26,
+  "title": "INVESTORBENCH: A Benchmark for Financial Decision-Making Tasks with LLM-based Agent",
+  "url": "https://doi.org/10.18653/v1/2025.acl-long.126"
+ },
+ {
+  "index": 27,
+  "title": "StockBench: Can LLM Agents Trade Stocks Profitably In Real-world Markets?",
+  "url": "https://arxiv.org/abs/2510.02209"
+ },
+ {
+  "index": 28,
+  "title": "Can LLM-based Financial Investing Strategies Outperform the Market in Long Run?",
+  "url": "https://arxiv.org/abs/2505.07078"
+ },
+ {
+  "index": 29,
+  "title": "The Promise and Peril of Generative AI: Evidence from GPT as Sell-Side Analysts",
+  "url": "https://arxiv.org/abs/2412.01069"
+ },
+ {
+  "index": 30,
+  "title": "Your AI, Not Your View: The Bias of LLMs in Investment Analysis",
+  "url": "https://arxiv.org/abs/2507.20957"
+ },
+ {
+  "index": 31,
+  "title": "Finance Agent Benchmark: Benchmarking LLMs on Real-world Financial Research Tasks",
+  "url": "https://arxiv.org/abs/2508.00828"
+ },
+ {
+  "index": 32,
+  "title": "FinDeepResearch: Evaluating Deep Research Agents in Rigorous Financial Analysis",
+  "url": "https://arxiv.org/abs/2510.13936"
+ },
+ {
+  "index": 33,
+  "title": "FinSearchComp: Towards a Realistic, Expert-Level Evaluation of Financial Search and Reasoning",
+  "url": "https://arxiv.org/abs/2509.13160"
+ },
+ {
+  "index": 34,
+  "title": "Caution Ahead: Numerical Reasoning and Look-Ahead Bias in AI Models",
+  "url": "https://doi.org/10.1111/1475-679x.70058"
+ },
+ {
+  "index": 35,
+  "title": "RiskLabs: Predicting Financial Risk Using Large Language Model Based on Multimodal and Multi-Sources Data",
+  "url": "https://arxiv.org/abs/2404.07452"
+ },
+ {
+  "index": 36,
+  "title": "AT-FinGPT: Financial risk prediction via an audio-text large language model",
+  "url": "https://doi.org/10.1016/j.frl.2025.106967"
+ },
+ {
+  "index": 37,
+  "title": "A Large Language Model for Corporate Credit Scoring",
+  "url": "https://arxiv.org/abs/2511.02593"
+ },
+ {
+  "index": 38,
+  "title": "ZiGong 1.0: A Large Language Model for Financial Credit",
+  "url": "https://arxiv.org/abs/2502.16159"
+ },
+ {
+  "index": 39,
+  "title": "MASCA: LLM based-Multi Agents System for Credit Assessment",
+  "url": "https://arxiv.org/abs/2507.22758"
+ },
+ {
+  "index": 40,
+  "title": "Evaluating Large Language Models as Post Hoc Explainability Interfaces for Credit Risk Models",
+  "url": "https://arxiv.org/abs/2602.18895"
+ },
+ {
+  "index": 41,
+  "title": "Credit risk prediction and heterogeneity analysis for SMEs based on large language models and multimodal data",
+  "url": "https://doi.org/10.1007/s40747-025-02192-1"
+ },
+ {
+  "index": 42,
+  "title": "Agentic AI Systems Applied to tasks in Financial Services: Modeling and model risk management crews",
+  "url": "https://arxiv.org/abs/2502.05439"
+ },
+ {
+  "index": 43,
+  "title": "Standard Benchmarks Fail — Auditing LLM Agents in Finance Must Prioritize Risk",
+  "url": "https://arxiv.org/abs/2502.15865"
+ },
+ {
+  "index": 44,
+  "title": "From Tasks to Teams: A Risk-First Evaluation Framework for Multi-Agent LLM Systems in Finance",
+  "url": "https://doi.org/10.18653/v1/2026.findings-acl.1934"
+ },
+ {
+  "index": 45,
+  "title": "FinVault: Benchmarking Financial Agent Safety in Execution-Grounded Environments",
+  "url": "https://arxiv.org/abs/2601.07853"
+ },
+ {
+  "index": 46,
+  "title": "Financial Statement Analysis with Large Language Models",
+  "url": "https://arxiv.org/abs/2407.17866"
+ },
+ {
+  "index": 47,
+  "title": "FinanceBench: A New Benchmark for Financial Question Answering",
+  "url": "https://arxiv.org/abs/2311.11944"
+ },
+ {
+  "index": 48,
+  "title": "XBRL Agent: Leveraging Large Language Models for Financial Report Analysis",
+  "url": "https://doi.org/10.1145/3677052.3698614"
+ },
+ {
+  "index": 49,
+  "title": "FinTagging: Benchmarking LLMs for Extracting and Structuring Financial Information",
+  "url": "https://arxiv.org/abs/2505.20650"
+ },
+ {
+  "index": 50,
+  "title": "FinAuditing: A Financial Taxonomy-Structured Multi-Document Benchmark for Evaluating LLMs",
+  "url": "https://arxiv.org/abs/2510.08886"
+ },
+ {
+  "index": 51,
+  "title": "EDINET-Bench: Evaluating LLMs on Complex Financial Tasks using Japanese Financial Statements",
+  "url": "https://arxiv.org/abs/2506.08762"
+ },
+ {
+  "index": 52,
+  "title": "FinRule-Bench: A Benchmark for Joint Reasoning over Financial Tables and Principles",
+  "url": "https://arxiv.org/abs/2603.11339"
+ },
+ {
+  "index": 53,
+  "title": "Improving the Completeness and Comparability of Segment Disclosures: A Large Language Model Approach",
+  "url": "https://arxiv.org/abs/2605.23924"
+ },
+ {
+  "index": 54,
+  "title": "Improving Financial Statement Fraud Detection: A Large Language Model Processing Approach",
+  "url": "https://doi.org/10.1145/3796514"
+ },
+ {
+  "index": 55,
+  "title": "AuditFraudBench: Benchmarking Audit Judgment in Detecting Fraudulent Misstatements",
+  "url": "https://arxiv.org/abs/2606.08345"
+ },
+ {
+  "index": 56,
+  "title": "Cogito: A Cognitive Agentic Framework Driven by Dynamic Graph of Thoughts for Financial Report Generation",
+  "url": "https://doi.org/10.18653/v1/2026.findings-acl.430"
+ },
+ {
+  "index": 57,
+  "title": "FAITH: A Framework for Assessing Intrinsic Tabular Hallucinations in Finance",
+  "url": "https://arxiv.org/abs/2508.05201"
+ },
+ {
+  "index": 58,
+  "title": "FinGuard: Detecting Financial Regulatory Non-Compliance in LLM Interactions",
+  "url": "https://arxiv.org/abs/2605.29427"
+ },
+ {
+  "index": 59,
+  "title": "FinSafetyBench: Evaluating LLM Safety in Real-World Financial Scenarios",
+  "url": "https://arxiv.org/abs/2605.00706"
+ },
+ {
+  "index": 60,
+  "title": "RKEFino1: A Regulation Knowledge-Enhanced Large Language Model",
+  "url": "https://arxiv.org/abs/2506.05700"
+ },
+ {
+  "index": 61,
+  "title": "Large Language Model in Financial Regulatory Interpretation",
+  "url": "https://arxiv.org/abs/2405.06808"
+ },
+ {
+  "index": 62,
+  "title": "Towards Automated Regulatory Compliance Verification in Financial Auditing with Large Language Models",
+  "url": "https://arxiv.org/abs/2507.16642"
+ },
+ {
+  "index": 63,
+  "title": "An Agentic LLM Framework for Adverse Media Screening in AML Compliance",
+  "url": "https://arxiv.org/abs/2602.23373"
+ },
+ {
+  "index": 64,
+  "title": "Rethinking LLMOps for Fraud and AML: Building a Compliance-Grade LLM Serving Stack",
+  "url": "https://arxiv.org/abs/2605.11232"
+ },
+ {
+  "index": 65,
+  "title": "FinReporting: An Agentic Workflow for Localized Reporting of Cross-Jurisdiction Financial Disclosures",
+  "url": "https://arxiv.org/abs/2604.05966"
+ },
+ {
+  "index": 66,
+  "title": "Generative AI in Financial Institution: A Global Survey of Opportunities, Threats, and Regulation",
+  "url": "https://arxiv.org/abs/2504.21574"
+ },
+ {
+  "index": 67,
+  "title": "FinBen: A Holistic Financial Benchmark for Large Language Models",
+  "url": "https://arxiv.org/abs/2402.12659"
+ },
+ {
+  "index": 68,
+  "title": "CFinBench: A Comprehensive Chinese Financial Benchmark for Large Language Models",
+  "url": "https://arxiv.org/abs/2407.02301"
+ },
+ {
+  "index": 69,
+  "title": "BizFinBench: A Business-Driven Real-World Financial Benchmark for Evaluating LLMs",
+  "url": "https://arxiv.org/abs/2505.19457"
+ },
+ {
+  "index": 70,
+  "title": "BizFinBench.v2: Towards Reliable LLMs in Finance via Real-User Data and Offline/Online Bilingual Evaluation",
+  "url": "https://arxiv.org/abs/2601.06401"
+ },
+ {
+  "index": 71,
+  "title": "FLAME: Financial Large-Language Model Assessment and Metrics Evaluation",
+  "url": "https://arxiv.org/abs/2501.06211"
+ },
+ {
+  "index": 72,
+  "title": "MultiFinBen: Benchmarking Large Language Models for Multilingual and Multimodal Financial Applications",
+  "url": "https://arxiv.org/abs/2506.14028"
+ },
+ {
+  "index": 73,
+  "title": "VisFinEval: A Scenario-Driven Chinese Multimodal Benchmark for Holistic Financial Understanding",
+  "url": "https://arxiv.org/abs/2508.09641"
+ },
+ {
+  "index": 74,
+  "title": "Open FinLLM Leaderboard: Towards Financial AI Readiness",
+  "url": "https://arxiv.org/abs/2501.10963"
+ },
+ {
+  "index": 75,
+  "title": "Meta-Benchmarks for Financial-Services LLM Evaluation",
+  "url": "https://arxiv.org/abs/2607.01740"
+ },
+ {
+  "index": 76,
+  "title": "Benchmarks Are Not Validation: A System-Level View of Financial LLM Applications",
+  "url": "https://arxiv.org/abs/2607.28840"
+ },
+ {
+  "index": 77,
+  "title": "FinResearchBench II: A Deep Research Benchmark with Consensus-Derived Gold Rubrics for Distinguishing Financial Deep Research Agents",
+  "url": "https://arxiv.org/abs/2607.12252"
+ }
+]

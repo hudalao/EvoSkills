@@ -1,0 +1,167 @@
+[
+  {
+    "index": 1,
+    "title": "Benchmarking Retrieval-Augmented Generation for Medicine",
+    "url": "https://arxiv.org/abs/2402.13178"
+  },
+  {
+    "index": 2,
+    "title": "Comprehensive and Practical Evaluation of Retrieval-Augmented Generation Systems for Medical Question Answering",
+    "url": "https://arxiv.org/abs/2411.09213"
+  },
+  {
+    "index": 3,
+    "title": "RAG-X: Systematic Diagnosis of Retrieval-Augmented Generation for Medical Question Answering",
+    "url": "https://arxiv.org/abs/2603.03541"
+  },
+  {
+    "index": 4,
+    "title": "Med-HALT: Medical Domain Hallucination Test for Large Language Models",
+    "url": "https://arxiv.org/abs/2307.15343"
+  },
+  {
+    "index": 5,
+    "title": "MedHallu: A Comprehensive Benchmark for Detecting Medical Hallucinations in Large Language Models",
+    "url": "https://arxiv.org/abs/2502.14302"
+  },
+  {
+    "index": 6,
+    "title": "K-QA: A Real-World Medical Q&A Benchmark",
+    "url": "https://arxiv.org/abs/2401.14493"
+  },
+  {
+    "index": 7,
+    "title": "MedHEval: Benchmarking Hallucinations and Mitigation Strategies in Medical Large Vision-Language Models",
+    "url": "https://arxiv.org/abs/2503.02157"
+  },
+  {
+    "index": 8,
+    "title": "Medical Hallucinations in Foundation Models and Their Impact on Healthcare",
+    "url": "https://arxiv.org/abs/2503.05777"
+  },
+  {
+    "index": 9,
+    "title": "A framework to assess clinical safety and hallucination rates of LLMs for medical text summarisation",
+    "url": "https://doi.org/10.1038/s41746-025-01670-7"
+  },
+  {
+    "index": 10,
+    "title": "Almanac — Retrieval-Augmented Language Models for Clinical Medicine",
+    "url": "https://doi.org/10.1056/aioa2300068"
+  },
+  {
+    "index": 11,
+    "title": "Retrieval augmented generation for 10 large language models and its generalizability in assessing medical fitness",
+    "url": "https://doi.org/10.1038/s41746-025-01519-z"
+  },
+  {
+    "index": 12,
+    "title": "Evaluating base and retrieval augmented LLMs with document or online support for evidence based neurology",
+    "url": "https://doi.org/10.1038/s41746-025-01536-y"
+  },
+  {
+    "index": 13,
+    "title": "Leveraging long context in retrieval augmented language models for medical question answering",
+    "url": "https://doi.org/10.1038/s41746-025-01651-w"
+  },
+  {
+    "index": 14,
+    "title": "Evaluating Retrieval-Augmented Generation Variants for Clinical Decision Support: Hallucination Mitigation and Secure On-Premises Deployment",
+    "url": "https://doi.org/10.3390/electronics14214227"
+  },
+  {
+    "index": 15,
+    "title": "Multi-model assurance analysis showing large language models are highly vulnerable to adversarial hallucination attacks during clinical decision support",
+    "url": "https://doi.org/10.1038/s43856-025-01021-3"
+  },
+  {
+    "index": 16,
+    "title": "Retrieval augmented generation for large language models in healthcare: A systematic review",
+    "url": "https://doi.org/10.1371/journal.pdig.0000877"
+  },
+  {
+    "index": 17,
+    "title": "Fine-Tuning or Retrieval? Comparing Knowledge Injection in LLMs",
+    "url": "https://arxiv.org/abs/2312.05934"
+  },
+  {
+    "index": 18,
+    "title": "Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?",
+    "url": "https://arxiv.org/abs/2405.05904"
+  },
+  {
+    "index": 19,
+    "title": "Medical LLMs: Fine-Tuning vs. Retrieval-Augmented Generation",
+    "url": "https://doi.org/10.3390/bioengineering12070687"
+  },
+  {
+    "index": 20,
+    "title": "Domain Fine-Tuning vs. Retrieval-Augmented Generation for Medical Multiple-Choice Question Answering: A Controlled Comparison at the 4B-Parameter Scale",
+    "url": "https://arxiv.org/abs/2604.23801"
+  },
+  {
+    "index": 21,
+    "title": "MedBioLM: Optimizing Medical and Biological QA with Fine-Tuned Large Language Models and Retrieval-Augmented Generation",
+    "url": "https://arxiv.org/abs/2502.03004"
+  },
+  {
+    "index": 22,
+    "title": "Biomedical knowledge graph-optimized prompt generation for large language models",
+    "url": "https://arxiv.org/abs/2311.17330"
+  },
+  {
+    "index": 23,
+    "title": "MindMap: Knowledge Graph Prompting Sparks Graph of Thoughts in Large Language Models",
+    "url": "https://arxiv.org/abs/2308.09729"
+  },
+  {
+    "index": 24,
+    "title": "KGARevion: An AI Agent for Knowledge-Intensive Biomedical QA",
+    "url": "https://arxiv.org/abs/2410.04660"
+  },
+  {
+    "index": 25,
+    "title": "MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot",
+    "url": "https://arxiv.org/abs/2502.04413"
+  },
+  {
+    "index": 26,
+    "title": "HyKGE: A Hypothesis Knowledge Graph Enhanced RAG Framework for Accurate and Reliable Medical LLMs Responses",
+    "url": "https://doi.org/10.18653/v1/2025.acl-long.580"
+  },
+  {
+    "index": 27,
+    "title": "Medical Graph RAG: Towards Safe Medical Large Language Model via Graph Retrieval-Augmented Generation",
+    "url": "https://arxiv.org/abs/2408.04187"
+  },
+  {
+    "index": 28,
+    "title": "Hyper-RAG: combating LLM hallucinations using hypergraph-driven retrieval-augmented generation",
+    "url": "https://doi.org/10.1038/s41467-026-71411-1"
+  },
+  {
+    "index": 29,
+    "title": "MedReason: Eliciting Factual Medical Reasoning Steps in LLMs via Knowledge Graphs",
+    "url": "https://arxiv.org/abs/2504.00993"
+  },
+  {
+    "index": 30,
+    "title": "MedKA: A knowledge graph-augmented approach to improve factuality in medical Large Language Models",
+    "url": "https://doi.org/10.1016/j.jbi.2025.104871"
+  },
+  {
+    "index": 31,
+    "title": "Mitigating Hallucination by Integrating Knowledge Graphs into LLM Inference - a Systematic Literature Review",
+    "url": "https://doi.org/10.18653/v1/2025.acl-srw.53"
+  },
+  {
+    "index": 32,
+    "title": "Integrating Fine-Tuning and Retrieval-Augmented Generation for Healthcare AI Systems: A Scoping Review",
+    "url": "https://doi.org/10.3390/bioengineering13020225"
+  },
+  {
+    "index": 33,
+    "title": "RAG-KG-IL: A Multi-Agent Hybrid Framework for Reducing Hallucinations and Enhancing LLM Reasoning through RAG and Incremental Knowledge Graph Learning Integration",
+    "url": "https://arxiv.org/abs/2503.13514"
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "index": 1,
+    "title": "Large Language Models for Supply Chain Optimization",
+    "url": "https://arxiv.org/abs/2307.03875"
+  },
+  {
+    "index": 2,
+    "title": "Large Language Models for Supply Chain Decisions",
+    "url": "https://arxiv.org/abs/2507.21502"
+  },
+  {
+    "index": 3,
+    "title": "Generative artificial intelligence in supply chain and operations management: a capability-based framework for analysis and implementation",
+    "url": "https://doi.org/10.1080/00207543.2024.2309309"
+  },
+  {
+    "index": 4,
+    "title": "Large language models in supply chain management: a systematic literature review and application framework",
+    "url": "https://doi.org/10.1080/00207543.2026.2641103"
+  },
+  {
+    "index": 5,
+    "title": "Potentials of generative AI in logistics and supply chain management: a guiding review on applications and future research directions",
+    "url": "https://doi.org/10.1080/00207543.2026.2680586"
+  },
+  {
+    "index": 6,
+    "title": "Agentic digital twins: bridging model-based and AI-driven decision-making support for a new era of supply chain and operations management",
+    "url": "https://doi.org/10.1080/00207543.2026.2630277"
+  },
+  {
+    "index": 7,
+    "title": "Large Language Models in Operations Research: Methods, Applications, and Challenges",
+    "url": "https://arxiv.org/abs/2509.18180"
+  },
+  {
+    "index": 8,
+    "title": "Full automation or just a copilot? A study of large language models on spare parts demand forecasting with OpenAI o1-mini",
+    "url": "https://doi.org/10.1080/00207543.2025.2591225"
+  },
+  {
+    "index": 9,
+    "title": "EventCast: Hybrid Demand Forecasting in E-Commerce with LLM-Based Event Knowledge",
+    "url": "https://arxiv.org/abs/2602.07695"
+  },
+  {
+    "index": 10,
+    "title": "LMGL-WD: LLM-Guided Multi-Task Graph Learning for Category-Level Warehouse Demand Prediction in E-Commerce",
+    "url": "https://doi.org/10.1609/aaai.v40i18.38577"
+  },
+  {
+    "index": 11,
+    "title": "ISOMORPH: A Supply Chain Digital Twin for Simulation, Dataset Generation, and Forecasting Benchmarks",
+    "url": "https://arxiv.org/abs/2605.12768"
+  },
+  {
+    "index": 12,
+    "title": "Context is Key: A Benchmark for Forecasting with Essential Textual Information",
+    "url": "https://arxiv.org/abs/2410.18959"
+  },
+  {
+    "index": 13,
+    "title": "Forecasting Supply Chain Disruptions with Foresight Learning",
+    "url": "https://arxiv.org/abs/2604.01298"
+  },
+  {
+    "index": 14,
+    "title": "InvAgent: A Large Language Model based Multi-Agent System for Inventory Management in Supply Chains",
+    "url": "https://arxiv.org/abs/2407.11384"
+  },
+  {
+    "index": 15,
+    "title": "AI Agents for Inventory Control: Human-LLM-OR Complementarity",
+    "url": "https://arxiv.org/abs/2602.12631"
+  },
+  {
+    "index": 16,
+    "title": "AI Agent Systems for Supply Chains: Structured Decision Prompts and Memory Retrieval",
+    "url": "https://arxiv.org/abs/2602.05524"
+  },
+  {
+    "index": 17,
+    "title": "Ask, Clarify, Optimize: Human-LLM Agent Collaboration for Smarter Inventory Control",
+    "url": "https://arxiv.org/abs/2601.00121"
+  },
+  {
+    "index": 18,
+    "title": "Large Language Newsvendor: Decision Biases and Cognitive Mechanisms",
+    "url": "https://arxiv.org/abs/2512.12552"
+  },
+  {
+    "index": 19,
+    "title": "A Manager and an AI Walk into a Bar: Does ChatGPT Make Biased Decisions Like We Do?",
+    "url": "https://doi.org/10.1287/msom.2023.0279"
+  },
+  {
+    "index": 20,
+    "title": "Solver-Verified Formulation Generation and Selection for Multi-Warehouse Inventory Allocation Using Large Language Models",
+    "url": "https://arxiv.org/abs/2606.29366"
+  },
+  {
+    "index": 21,
+    "title": "Agentic LLMs in the supply chain: towards autonomous multi-agent consensus-seeking",
+    "url": "https://doi.org/10.1080/00207543.2025.2604311"
+  },
+  {
+    "index": 22,
+    "title": "Reliability and Effectiveness of Autonomous AI Agents in Supply Chain Management",
+    "url": "https://arxiv.org/abs/2605.17036"
+  },
+  {
+    "index": 23,
+    "title": "LLMs for Supply Chain Management",
+    "url": "https://arxiv.org/abs/2505.18597"
+  },
+  {
+    "index": 24,
+    "title": "Dynamics of Cognitive Heterogeneity: Investigating Behavioral Biases in Multi-Stage Supply Chains with LLM-Based Simulation",
+    "url": "https://arxiv.org/abs/2604.17220"
+  },
+  {
+    "index": 25,
+    "title": "Validating Generative Agent-Based Models for Logistics and Supply Chain Management Research",
+    "url": "https://arxiv.org/abs/2508.20234"
+  },
+  {
+    "index": 26,
+    "title": "Talking Terms: Agent Information in LLM Supply Chain Bargaining",
+    "url": "https://doi.org/10.2139/ssrn.5273609"
+  },
+  {
+    "index": 27,
+    "title": "Contract2Plan: Verified Contract-Grounded Retrieval-Augmented Optimization for BOM-Aware Procurement and Multi-Echelon Inventory Planning",
+    "url": "https://arxiv.org/abs/2601.06164"
+  },
+  {
+    "index": 28,
+    "title": "A multi-agent large language model framework for intelligent vendor evaluation and risk-aware procurement decisions",
+    "url": "https://doi.org/10.1038/s41598-026-50952-x"
+  },
+  {
+    "index": 29,
+    "title": "Recovering Store Brand Supply from Disruption: AI-LLMs-Enabled Procurement Collaboration",
+    "url": "https://doi.org/10.1016/j.ijpe.2026.110014"
+  },
+  {
+    "index": 30,
+    "title": "ProcureGym: A Multi-Agent Markov Game Framework for Modeling National Volume-based Drug Procurement",
+    "url": "https://arxiv.org/abs/2603.23880"
+  },
+  {
+    "index": 31,
+    "title": "Hybrid intelligence in buyer-supplier negotiations: a conceptual framework from literature and market review on AI capabilities",
+    "url": "https://doi.org/10.1080/00207543.2026.2626540"
+  },
+  {
+    "index": 32,
+    "title": "SCSimulator: An Exploratory Visual Analytics Framework for Partner Selection in Supply Chains through LLM-driven Multi-Agent Simulation",
+    "url": "https://arxiv.org/abs/2601.14566"
+  },
+  {
+    "index": 33,
+    "title": "SHIELD: LLM-Driven Schema Induction for Predictive Analytics in EV Battery Supply Chain Disruptions",
+    "url": "https://arxiv.org/abs/2408.05357"
+  },
+  {
+    "index": 34,
+    "title": "Automating Supply Chain Disruption Monitoring via an Agentic AI Approach",
+    "url": "https://arxiv.org/abs/2601.09680"
+  },
+  {
+    "index": 35,
+    "title": "Benchmarking large language models for supply chain risk identification: an extended evaluation within the LARD-SC framework",
+    "url": "https://doi.org/10.1007/s11761-025-00474-7"
+  },
+  {
+    "index": 36,
+    "title": "The 1% problem: LLM orchestration for rare event detection in manufacturing supply chains",
+    "url": "https://doi.org/10.1016/j.ijpe.2026.110119"
+  },
+  {
+    "index": 37,
+    "title": "From Topology to Trajectory: LLM-Driven World Models For Supply Chain Resilience",
+    "url": "https://arxiv.org/abs/2604.11041"
+  },
+  {
+    "index": 38,
+    "title": "Generative AI-Driven resilience in supply chain management: UNISONE framework for disruption modelling and capacity optimisation",
+    "url": "https://doi.org/10.1080/00207543.2025.2574412"
+  },
+  {
+    "index": 39,
+    "title": "Leveraging large language models to enhance multi-agent risk assessment in supply chain networks",
+    "url": "https://doi.org/10.1080/00207543.2026.2619562"
+  },
+  {
+    "index": 40,
+    "title": "OptiRepair: Closed-Loop Diagnosis and Repair of Supply Chain Optimization Models with LLM Agents",
+    "url": "https://arxiv.org/abs/2602.19439"
+  },
+  {
+    "index": 41,
+    "title": "Integrating Large Language Models with Network Optimization for Interactive and Explainable Supply Chain Planning: A Real-World Case Study",
+    "url": "https://arxiv.org/abs/2508.21622"
+  },
+  {
+    "index": 42,
+    "title": "Rethinking Supply Chain Planning: A Generative Paradigm",
+    "url": "https://arxiv.org/abs/2509.03811"
+  },
+  {
+    "index": 43,
+    "title": "Flowr - Scaling Up Retail Supply Chain Operations Through Agentic AI in Large Scale Supermarket Chains",
+    "url": "https://arxiv.org/abs/2604.05987"
+  },
+  {
+    "index": 44,
+    "title": "SustAI-SCM: Intelligent Supply Chain Process Automation with Agentic AI for Sustainability and Cost Efficiency",
+    "url": "https://doi.org/10.3390/su17062453"
+  },
+  {
+    "index": 45,
+    "title": "SupChain-Bench: Benchmarking Large Language Models for Real-World Supply Chain Management",
+    "url": "https://arxiv.org/abs/2602.07342"
+  },
+  {
+    "index": 46,
+    "title": "AIM-Bench: Evaluating Decision-making Biases of Agentic LLM as Inventory Manager",
+    "url": "https://arxiv.org/abs/2508.11416"
+  },
+  {
+    "index": 47,
+    "title": "RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments",
+    "url": "https://arxiv.org/abs/2603.16453"
+  },
+  {
+    "index": 48,
+    "title": "MerchantBench: Benchmarking LLM Agents for Long-Term Coherence in E-Commerce Operations",
+    "url": "https://arxiv.org/abs/2607.28956"
+  },
+  {
+    "index": 49,
+    "title": "STOCKTAKE: Measuring the Gap Between Perception and Action in LLM Agents with a Fair Oracle",
+    "url": "https://arxiv.org/abs/2607.13618"
+  },
+  {
+    "index": 50,
+    "title": "Market-Bench: Benchmarking Large Language Models on Economic and Trade Competition",
+    "url": "https://arxiv.org/abs/2604.05523"
+  },
+  {
+    "index": 51,
+    "title": "CoffeeBench: Benchmarking Long-Horizon LLM Agents in Heterogeneous Multi-Agent Economies",
+    "url": "https://arxiv.org/abs/2606.16613"
+  },
+  {
+    "index": 52,
+    "title": "CSCBench: A PVC Diagnostic Benchmark for Commodity Supply Chain Reasoning",
+    "url": "https://arxiv.org/abs/2601.01825"
+  }
+]

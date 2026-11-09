@@ -1,0 +1,172 @@
+[
+  {
+    "index": 1,
+    "title": "A paradigm-level evaluation of deep learning architectures for plant pest and disease recognition under data-scarce field conditions",
+    "url": "https://doi.org/10.3389/fpls.2026.1807927"
+  },
+  {
+    "index": 2,
+    "title": "Enhancing practicality of deep learning for crop disease identification under field conditions: insights from model evaluation and crop-specific approaches",
+    "url": "https://doi.org/10.1002/ps.8317"
+  },
+  {
+    "index": 3,
+    "title": "ConvTransNet-S: A CNN-Transformer Hybrid Disease Recognition Model for Complex Field Environments",
+    "url": "https://doi.org/10.3390/plants14152252"
+  },
+  {
+    "index": 4,
+    "title": "Crop conditional Convolutional Neural Networks for massive multi-crop plant disease classification over cell phone acquired images taken on real field conditions",
+    "url": "https://doi.org/10.1016/j.compag.2019.105093"
+  },
+  {
+    "index": 5,
+    "title": "Investigation to answer three key questions concerning plant pest identification and development of a practical identification framework",
+    "url": "https://arxiv.org/abs/2407.18000"
+  },
+  {
+    "index": 6,
+    "title": "Comparison of Deep Learning Frameworks For Rice Disease Mapping From UAV Multispectral Imaging",
+    "url": "https://arxiv.org/abs/2606.06359"
+  },
+  {
+    "index": 7,
+    "title": "Rice Leaf Disease Detection: A Comparative Study Between CNN, Transformer and Non-neural Network Architectures",
+    "url": "https://arxiv.org/abs/2501.06740"
+  },
+  {
+    "index": 8,
+    "title": "Vision transformer meets convolutional neural network for plant disease classification",
+    "url": "https://doi.org/10.1016/j.ecoinf.2023.102245"
+  },
+  {
+    "index": 9,
+    "title": "ViT vs CNN: A Comparative Study of Wheat Disease Classification for Custom Data",
+    "url": "https://doi.org/10.1109/FIT60620.2023.00057"
+  },
+  {
+    "index": 10,
+    "title": "Plant disease classification in the wild using vision transformers and mixture of experts",
+    "url": "https://doi.org/10.3389/fpls.2025.1522985"
+  },
+  {
+    "index": 11,
+    "title": "Assessing the capability of YOLO- and transformer-based object detectors for real-time weed detection",
+    "url": "https://arxiv.org/abs/2501.17387"
+  },
+  {
+    "index": 12,
+    "title": "Are Transformers More Robust Than CNNs?",
+    "url": "https://arxiv.org/abs/2111.05464"
+  },
+  {
+    "index": 13,
+    "title": "Can CNNs Be More Robust Than Transformers?",
+    "url": "https://arxiv.org/abs/2206.03452"
+  },
+  {
+    "index": 14,
+    "title": "What's next in agri-vision: A review of Vision Transformers and Vision Mamba in crop management",
+    "url": "https://doi.org/10.1016/j.compag.2026.111551"
+  },
+  {
+    "index": 15,
+    "title": "Are vision-language models ready to zero-shot replace supervised classification models in agriculture?",
+    "url": "https://arxiv.org/abs/2512.15977"
+  },
+  {
+    "index": 16,
+    "title": "AgroBench: Vision-Language Model Benchmark in Agriculture",
+    "url": "https://arxiv.org/abs/2507.20519"
+  },
+  {
+    "index": 17,
+    "title": "AgMMU: A Comprehensive Agricultural Multimodal Understanding Benchmark",
+    "url": "https://arxiv.org/abs/2504.10568"
+  },
+  {
+    "index": 18,
+    "title": "Leveraging Vision Language Models for Specialized Agricultural Tasks (AgEval)",
+    "url": "https://arxiv.org/abs/2407.19617"
+  },
+  {
+    "index": 19,
+    "title": "Plant Disease Detection through Multimodal Large Language Models and Convolutional Neural Networks",
+    "url": "https://arxiv.org/abs/2504.20419"
+  },
+  {
+    "index": 20,
+    "title": "A Multimodal Benchmark Dataset and Model for Crop Disease Diagnosis (CDDM)",
+    "url": "https://arxiv.org/abs/2503.06973"
+  },
+  {
+    "index": 21,
+    "title": "A Multi-Modal Open Object Detection Model for Tomato Leaf Diseases with Strong Generalization Performance Using PDC-VLD",
+    "url": "https://doi.org/10.34133/plantphenomics.0220"
+  },
+  {
+    "index": 22,
+    "title": "Rethinking Plant Disease Diagnosis: Bridging the Academic-Practical Gap with Vision Transformers and Zero-Shot Learning",
+    "url": "https://arxiv.org/abs/2511.18989"
+  },
+  {
+    "index": 23,
+    "title": "Early detection and spectral signature identification of tomato fungal diseases (Alternaria alternata, Alternaria solani, Botrytis cinerea, and Fusarium oxysporum) by RGB and hyperspectral image analysis and machine learning",
+    "url": "https://doi.org/10.1016/j.heliyon.2024.e38017"
+  },
+  {
+    "index": 24,
+    "title": "Multispectral Plant Disease Detection with Vision Transformer–Convolutional Neural Network Hybrid Approaches",
+    "url": "https://doi.org/10.3390/s23208531"
+  },
+  {
+    "index": 25,
+    "title": "An intelligent identification for pest and disease detection in wheat leaf based on environmental data using multimodal data fusion",
+    "url": "https://doi.org/10.3389/fpls.2025.1608515"
+  },
+  {
+    "index": 26,
+    "title": "PlantIF: Multimodal semantic interactive fusion via graph learning for plant disease diagnosis",
+    "url": "https://doi.org/10.1016/j.plaphe.2025.100132"
+  },
+  {
+    "index": 27,
+    "title": "Advances in Artificial Intelligence-Enabled Crop Pest and Disease Detection: A Systematic Review",
+    "url": "https://doi.org/10.3390/agriculture16121262"
+  },
+  {
+    "index": 28,
+    "title": "Uncovering bias in the PlantVillage dataset",
+    "url": "https://arxiv.org/abs/2206.04374"
+  },
+  {
+    "index": 29,
+    "title": "Deep learning networks-based tomato disease and pest detection: a first review of research studies using real field datasets",
+    "url": "https://doi.org/10.3389/fpls.2024.1493322"
+  },
+  {
+    "index": 30,
+    "title": "FieldPlant: A Dataset of Field Plant Images for Plant Disease Detection and Classification With Deep Learning",
+    "url": "https://doi.org/10.1109/ACCESS.2023.3263042"
+  },
+  {
+    "index": 31,
+    "title": "DDAN-RGAL: A Dual-Domain Adaptive Network With Reality-Gap Aware Learning for Field-Deployable Plant Disease Detection",
+    "url": "https://doi.org/10.1109/TAFE.2026.3667568"
+  },
+  {
+    "index": 32,
+    "title": "From Laboratory to Field: Unsupervised Domain Adaptation for Plant Disease Recognition in the Wild",
+    "url": "https://doi.org/10.34133/plantphenomics.0038"
+  },
+  {
+    "index": 33,
+    "title": "From Convolutional Networks to Vision Transformers: Evolution of Deep Learning in Agricultural Pest and Disease Identification",
+    "url": "https://doi.org/10.3390/agronomy15051079"
+  },
+  {
+    "index": 34,
+    "title": "Plant disease recognition datasets in the age of deep learning: challenges and opportunities",
+    "url": "https://doi.org/10.3389/fpls.2024.1452551"
+  }
+]
