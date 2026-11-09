@@ -1,0 +1,247 @@
+[
+  {
+    "index": 1,
+    "title": "Image feature analysis and computer-aided diagnosis in digital radiography. I. Automated detection of microcalcifications in mammography.",
+    "url": "https://doi.org/10.1118/1.596065"
+  },
+  {
+    "index": 2,
+    "title": "Improvement in radiologists' detection of clustered microcalcifications on mammograms. The potential of computer-aided diagnosis.",
+    "url": "https://doi.org/10.1097/00004424-199010000-00006"
+  },
+  {
+    "index": 3,
+    "title": "Computer-aided diagnosis in medical imaging: Historical review, current status and future potential",
+    "url": "https://doi.org/10.1016/j.compmedimag.2007.02.002"
+  },
+  {
+    "index": 4,
+    "title": "Influence of computer-aided detection on performance of screening mammography.",
+    "url": "https://doi.org/10.1056/NEJMOA066099"
+  },
+  {
+    "index": 5,
+    "title": "Diagnostic Accuracy of Digital Screening Mammography with and without Computer-aided Detection",
+    "url": "https://doi.org/10.1001/jamainternmed.2015.5231"
+  },
+  {
+    "index": 6,
+    "title": "Radiomics: Extracting more information from medical images using advanced feature analysis",
+    "url": "https://doi.org/10.1016/j.ejca.2011.11.036"
+  },
+  {
+    "index": 7,
+    "title": "Decoding tumour phenotype by noninvasive imaging using a quantitative radiomics approach",
+    "url": "https://doi.org/10.1038/ncomms5006"
+  },
+  {
+    "index": 8,
+    "title": "Mitosis Detection in Breast Cancer Histology Images with Deep Neural Networks",
+    "url": "https://doi.org/10.1007/978-3-642-40763-5_51"
+  },
+  {
+    "index": 9,
+    "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+    "url": "https://arxiv.org/abs/1505.04597"
+  },
+  {
+    "index": 10,
+    "title": "Deep Convolutional Neural Networks for Computer-Aided Detection: CNN Architectures, Dataset Characteristics and Transfer Learning",
+    "url": "https://arxiv.org/abs/1602.03409"
+  },
+  {
+    "index": 11,
+    "title": "Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs.",
+    "url": "https://doi.org/10.1001/jama.2016.17216"
+  },
+  {
+    "index": 12,
+    "title": "Dermatologist–level classification of skin cancer with deep neural networks",
+    "url": "https://doi.org/10.1038/nature21056"
+  },
+  {
+    "index": 13,
+    "title": "Diagnostic Assessment of Deep Learning Algorithms for Detection of Lymph Node Metastases in Women With Breast Cancer",
+    "url": "https://doi.org/10.1001/jama.2017.14585"
+  },
+  {
+    "index": 14,
+    "title": "A survey on deep learning in medical image analysis",
+    "url": "https://arxiv.org/abs/1702.05747"
+  },
+  {
+    "index": 15,
+    "title": "ChestX-Ray8: Hospital-Scale Chest X-Ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases",
+    "url": "https://arxiv.org/abs/1705.02315"
+  },
+  {
+    "index": 16,
+    "title": "CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning",
+    "url": "https://arxiv.org/abs/1711.05225"
+  },
+  {
+    "index": 17,
+    "title": "CheXpert: A Large Chest Radiograph Dataset with Uncertainty Labels and Expert Comparison",
+    "url": "https://arxiv.org/abs/1901.07031"
+  },
+  {
+    "index": 18,
+    "title": "MIMIC-CXR, a de-identified publicly available database of chest radiographs with free-text reports",
+    "url": "https://doi.org/10.1038/s41597-019-0322-0"
+  },
+  {
+    "index": 19,
+    "title": "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation",
+    "url": "https://doi.org/10.1038/s41592-020-01008-z"
+  },
+  {
+    "index": 20,
+    "title": "TotalSegmentator: Robust Segmentation of 104 Anatomic Structures in CT Images.",
+    "url": "https://arxiv.org/abs/2208.05868"
+  },
+  {
+    "index": 21,
+    "title": "Clinically applicable deep learning for diagnosis and referral in retinal disease",
+    "url": "https://doi.org/10.1038/s41591-018-0107-6"
+  },
+  {
+    "index": 22,
+    "title": "Pivotal trial of an autonomous AI-based diagnostic system for detection of diabetic retinopathy in primary care offices",
+    "url": "https://doi.org/10.1038/s41746-018-0040-6"
+  },
+  {
+    "index": 23,
+    "title": "End-to-end lung cancer screening with three-dimensional deep learning on low-dose chest computed tomography",
+    "url": "https://doi.org/10.1038/s41591-019-0447-x"
+  },
+  {
+    "index": 24,
+    "title": "International evaluation of an AI system for breast cancer screening",
+    "url": "https://doi.org/10.1038/s41586-019-1799-6"
+  },
+  {
+    "index": 25,
+    "title": "Variable generalization performance of a deep learning model to detect pneumonia in chest radiographs: A cross-sectional study",
+    "url": "https://arxiv.org/abs/1807.00431"
+  },
+  {
+    "index": 26,
+    "title": "Artificial intelligence versus clinicians: systematic review of design, reporting standards, and claims of deep learning studies",
+    "url": "https://doi.org/10.1136/bmj.m689"
+  },
+  {
+    "index": 27,
+    "title": "Underdiagnosis bias of artificial intelligence algorithms applied to chest radiographs in under-served patient populations",
+    "url": "https://doi.org/10.1038/s41591-021-01595-0"
+  },
+  {
+    "index": 28,
+    "title": "Toward robust mammography-based models for breast cancer risk",
+    "url": "https://doi.org/10.1126/scitranslmed.aba4373"
+  },
+  {
+    "index": 29,
+    "title": "TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation",
+    "url": "https://arxiv.org/abs/2102.04306"
+  },
+  {
+    "index": 30,
+    "title": "Contrastive Learning of Medical Visual Representations from Paired Images and Text",
+    "url": "https://arxiv.org/abs/2010.00747"
+  },
+  {
+    "index": 31,
+    "title": "Expert-level detection of pathologies from unannotated chest X-ray images via self-supervised learning",
+    "url": "https://doi.org/10.1038/s41551-022-00936-9"
+  },
+  {
+    "index": 32,
+    "title": "Foundation models for generalist medical artificial intelligence",
+    "url": "https://doi.org/10.1038/s41586-023-05881-4"
+  },
+  {
+    "index": 33,
+    "title": "Segment anything in medical images",
+    "url": "https://arxiv.org/abs/2304.12306"
+  },
+  {
+    "index": 34,
+    "title": "A foundation model for generalizable disease detection from retinal images",
+    "url": "https://doi.org/10.1038/s41586-023-06555-x"
+  },
+  {
+    "index": 35,
+    "title": "Towards a General-Purpose Foundation Model for Computational Pathology",
+    "url": "https://doi.org/10.1038/s41591-024-02857-3"
+  },
+  {
+    "index": 36,
+    "title": "Generalist foundation models from a multimodal dataset for 3D computed tomography.",
+    "url": "https://arxiv.org/abs/2403.17834"
+  },
+  {
+    "index": 37,
+    "title": "On the Automatic Generation of Medical Imaging Reports",
+    "url": "https://arxiv.org/abs/1711.08195"
+  },
+  {
+    "index": 38,
+    "title": "TieNet: Text-Image Embedding Network for Common Thorax Disease Classification and Reporting in Chest X-Rays",
+    "url": "https://arxiv.org/abs/1801.04334"
+  },
+  {
+    "index": 39,
+    "title": "Generating Radiology Reports via Memory-driven Transformer",
+    "url": "https://arxiv.org/abs/2010.16056"
+  },
+  {
+    "index": 40,
+    "title": "Evaluating progress in automatic chest X-ray radiology report generation",
+    "url": "https://doi.org/10.1016/j.patter.2023.100802"
+  },
+  {
+    "index": 41,
+    "title": "MAIRA-2: Grounded Radiology Report Generation",
+    "url": "https://arxiv.org/abs/2406.04449"
+  },
+  {
+    "index": 42,
+    "title": "CheXagent: Towards a Foundation Model for Chest X-Ray Interpretation",
+    "url": "https://arxiv.org/abs/2401.12208"
+  },
+  {
+    "index": 43,
+    "title": "Towards Generalist Biomedical AI",
+    "url": "https://arxiv.org/abs/2307.14334"
+  },
+  {
+    "index": 44,
+    "title": "MedGemma Technical Report",
+    "url": "https://arxiv.org/abs/2507.05201"
+  },
+  {
+    "index": 45,
+    "title": "Collaboration between clinicians and vision–language models in radiology report generation",
+    "url": "https://doi.org/10.1038/s41591-024-03302-1"
+  },
+  {
+    "index": 46,
+    "title": "Artificial intelligence-supported screen reading versus standard double reading in the Mammography Screening with Artificial Intelligence trial (MASAI): a clinical safety analysis of a randomised, controlled, non-inferiority, single-blinded, screening accuracy study.",
+    "url": "https://doi.org/10.1016/s1470-2045(23)00298-x"
+  },
+  {
+    "index": 47,
+    "title": "Interval cancer, sensitivity, and specificity comparing AI-supported mammography screening with standard double reading without AI in the MASAI study: a randomised, controlled, non-inferiority, single-blinded, population-based, screening-accuracy trial.",
+    "url": "https://doi.org/10.1016/s0140-6736(25)02464-x"
+  },
+  {
+    "index": 48,
+    "title": "Heterogeneity and predictors of the effects of AI assistance on radiologists",
+    "url": "https://doi.org/10.1038/s41591-024-02850-w"
+  },
+  {
+    "index": 49,
+    "title": "The Current and Future State of AI Interpretation of Medical Images.",
+    "url": "https://doi.org/10.1056/NEJMra2301725"
+  }
+]

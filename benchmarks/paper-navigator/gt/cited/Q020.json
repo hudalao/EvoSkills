@@ -1,0 +1,287 @@
+[
+ {
+  "index": 1,
+  "title": "Exploring the Capabilities and Limitations of Large Language Models in the Electric Energy Sector",
+  "url": "https://arxiv.org/abs/2403.09125"
+ },
+ {
+  "index": 2,
+  "title": "Large Language Models Meet Energy Systems: Opportunities, Challenges, and Future Perspectives",
+  "url": "https://doi.org/10.1016/j.apenergy.2025.127076"
+ },
+ {
+  "index": 3,
+  "title": "Large Language Model Applications in Power Systems: A Comprehensive Review and Outlook",
+  "url": "https://doi.org/10.35833/mpce.2025.000760"
+ },
+ {
+  "index": 4,
+  "title": "Large Language Models for Power System Applications: A Comprehensive Literature Survey",
+  "url": "https://arxiv.org/abs/2512.13004"
+ },
+ {
+  "index": 5,
+  "title": "A Review of Large Language Models for Energy Systems: Applications, Challenges, and Future Prospects",
+  "url": "https://doi.org/10.1109/ACCESS.2025.3610994"
+ },
+ {
+  "index": 6,
+  "title": "Large Language Models integration in Smart Grids",
+  "url": "https://arxiv.org/abs/2504.09059"
+ },
+ {
+  "index": 7,
+  "title": "Review of the opportunities and challenges to accelerate mass-scale application of smart grids with large-language models",
+  "url": "https://doi.org/10.1049/stg2.12191"
+ },
+ {
+  "index": 8,
+  "title": "A review of multimodal large language models for smart grids management and control",
+  "url": "https://doi.org/10.1016/j.segan.2026.102207"
+ },
+ {
+  "index": 9,
+  "title": "AI Large Models for Power System: A Survey and Outlook",
+  "url": "https://doi.org/10.1049/ses2.70000"
+ },
+ {
+  "index": 10,
+  "title": "Agentic Artificial Intelligence for Smart Grids: A Comprehensive Review of Autonomous, Safe, and Explainable Control Frameworks",
+  "url": "https://doi.org/10.3390/en19030617"
+ },
+ {
+  "index": 11,
+  "title": "PowerAgent: A Road Map Toward Agentic Intelligence in Power Systems: Foundation Model, Model Context Protocol, and Workflow",
+  "url": "https://doi.org/10.1109/MPE.2025.3579718"
+ },
+ {
+  "index": 12,
+  "title": "Operating smart grids by customizing large model agents",
+  "url": "https://doi.org/10.1038/s44172-026-00709-1"
+ },
+ {
+  "index": 13,
+  "title": "Application and prospects of large AI models in virtual power plants",
+  "url": "https://doi.org/10.1016/j.epsr.2024.111403"
+ },
+ {
+  "index": 14,
+  "title": "A Review of Safe Reinforcement Learning Methods for Modern Power Systems",
+  "url": "https://arxiv.org/abs/2407.00304"
+ },
+ {
+  "index": 15,
+  "title": "Safe reinforcement learning for power system control: A review",
+  "url": "https://doi.org/10.1016/j.rser.2025.116022"
+ },
+ {
+  "index": 16,
+  "title": "A critical review of safe reinforcement learning strategies in power and energy systems",
+  "url": "https://doi.org/10.1016/j.engappai.2025.110091"
+ },
+ {
+  "index": 17,
+  "title": "Reinforcement Learning Meets the Power Grid: A Contemporary Survey with Emphasis on Safety and Multi-agent Challenges",
+  "url": "https://doi.org/10.1561/3100000043"
+ },
+ {
+  "index": 18,
+  "title": "Artificial intelligence-based methods for renewable power system operation",
+  "url": "https://doi.org/10.1038/s44287-024-00018-9"
+ },
+ {
+  "index": 19,
+  "title": "Graph reinforcement learning for power grids: A comprehensive survey",
+  "url": "https://arxiv.org/abs/2407.04522"
+ },
+ {
+  "index": 20,
+  "title": "Optimizing Power Grid Topologies with Reinforcement Learning: A Survey of Methods and Challenges",
+  "url": "https://arxiv.org/abs/2504.08210"
+ },
+ {
+  "index": 21,
+  "title": "A comprehensive review of reinforcement learning-based voltage control in smart grids",
+  "url": "https://doi.org/10.1016/j.rser.2025.116526"
+ },
+ {
+  "index": 22,
+  "title": "Deep Reinforcement Learning in Power Systems Resilience: A Review",
+  "url": "https://doi.org/10.1109/TR.2025.3606215"
+ },
+ {
+  "index": 23,
+  "title": "Artificial Intelligence Applications for Energy Storage: A Comprehensive Review",
+  "url": "https://doi.org/10.3390/en18174718"
+ },
+ {
+  "index": 24,
+  "title": "Reinforcement learning-based optimal scheduling model of battery energy storage system at the building level",
+  "url": "https://doi.org/10.1016/j.rser.2023.114054"
+ },
+ {
+  "index": 25,
+  "title": "Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods",
+  "url": "https://arxiv.org/abs/2404.00282"
+ },
+ {
+  "index": 26,
+  "title": "Knowledge-Augmented Population-Based Deep Reinforcement Learning for Real-Time Network-Constrained Economic Dispatch of Large-Scale Power Grid",
+  "url": "https://doi.org/10.1109/TPWRS.2025.3577774"
+ },
+ {
+  "index": 27,
+  "title": "Real-Time Sequential Security-Constrained Optimal Power Flow: A Hybrid Knowledge-Data-Driven Reinforcement Learning Approach",
+  "url": "https://doi.org/10.1109/TPWRS.2023.3262843"
+ },
+ {
+  "index": 28,
+  "title": "Physics-Informed Reinforcement Learning for Real-Time Optimal Power Flow With Renewable Energy Resources",
+  "url": "https://doi.org/10.1109/TSTE.2024.3452489"
+ },
+ {
+  "index": 29,
+  "title": "Adaptive look-ahead economic dispatch based on deep reinforcement learning",
+  "url": "https://doi.org/10.1016/j.apenergy.2023.122121"
+ },
+ {
+  "index": 30,
+  "title": "Model-Free Economic Dispatch for Virtual Power Plants: An Adversarial Safe Reinforcement Learning Approach",
+  "url": "https://doi.org/10.1109/TPWRS.2023.3289334"
+ },
+ {
+  "index": 31,
+  "title": "Rethinking Safe Policy Learning for Complex Constraints Satisfaction: A Glimpse in Real-Time Security Constrained Economic Dispatch Integrating Energy Storage Units",
+  "url": "https://doi.org/10.1109/TPWRS.2024.3419894"
+ },
+ {
+  "index": 32,
+  "title": "Demonstrating Safe Deep Reinforcement Learning Based Coordinated Frequency Control in East China Power Grid",
+  "url": "https://doi.org/10.1109/PESIM67009.2026.11438274"
+ },
+ {
+  "index": 33,
+  "title": "Deep reinforcement learning for economic battery dispatch: A comprehensive comparison of algorithms and experiment design choices",
+  "url": "https://doi.org/10.1016/j.est.2025.115428"
+ },
+ {
+  "index": 34,
+  "title": "Long-Term and Short-Term Coordinated Scheduling for Wind-PV-Hydro-Storage Hybrid Energy System Based on Deep Reinforcement Learning",
+  "url": "https://doi.org/10.1109/TSTE.2025.3529215"
+ },
+ {
+  "index": 35,
+  "title": "Forecasting error-aware optimal dispatch of wind-storage integrated power systems: a soft-actor-critic deep reinforcement learning approach",
+  "url": "https://doi.org/10.1016/j.energy.2025.134798"
+ },
+ {
+  "index": 36,
+  "title": "Deep Reinforcement Learning for Voltage Control and Renewable Accommodation Using Spatial-Temporal Graph Information",
+  "url": "https://arxiv.org/abs/2401.15848"
+ },
+ {
+  "index": 37,
+  "title": "Graph Multi-Agent Reinforcement Learning for Inverter-Based Active Voltage Control",
+  "url": "https://doi.org/10.1109/TSG.2023.3298807"
+ },
+ {
+  "index": 38,
+  "title": "Multi-Objective Interval Optimization Dispatch of Microgrid via Deep Reinforcement Learning",
+  "url": "https://doi.org/10.1109/TSG.2023.3339541"
+ },
+ {
+  "index": 39,
+  "title": "Domain knowledge embedded constrained reinforcement learning for scheduling of renewable energy power system",
+  "url": "https://doi.org/10.1016/j.apenergy.2026.127621"
+ },
+ {
+  "index": 40,
+  "title": "Real-Time Optimal Power Flow With Linguistic Stipulations: Integrating GPT-Agent and Deep Reinforcement Learning",
+  "url": "https://doi.org/10.1109/TPWRS.2023.3338961"
+ },
+ {
+  "index": 41,
+  "title": "RL2: Reinforce Large Language Model to Assist Safe Reinforcement Learning for Energy Management of Active Distribution Networks",
+  "url": "https://arxiv.org/abs/2412.01303"
+ },
+ {
+  "index": 42,
+  "title": "Two-Stage Active Distribution Network Voltage Control via LLM-RL Collaboration: A Hybrid Knowledge-Data-Driven Approach",
+  "url": "https://arxiv.org/abs/2602.21715"
+ },
+ {
+  "index": 43,
+  "title": "Optimization of Energy and Carbon Emissions in Integrated Energy System Based on Deep Reinforcement Learning Assisted by Large Language Model",
+  "url": "https://doi.org/10.1109/TII.2025.3578123"
+ },
+ {
+  "index": 44,
+  "title": "Large Language Model as An Operator: An Experience-Driven Solution for Distribution Network Voltage Control",
+  "url": "https://arxiv.org/abs/2507.14800"
+ },
+ {
+  "index": 45,
+  "title": "A large language model for advanced power dispatch",
+  "url": "https://doi.org/10.1038/s41598-025-91940-x"
+ },
+ {
+  "index": 46,
+  "title": "Large Language Model Powered Automated Modeling and Optimization of Active Distribution Network Dispatch Problems",
+  "url": "https://arxiv.org/abs/2507.21162"
+ },
+ {
+  "index": 47,
+  "title": "Enhancing LLMs for Power System Simulations: A Feedback-Driven Multi-Agent Framework",
+  "url": "https://arxiv.org/abs/2411.16707"
+ },
+ {
+  "index": 48,
+  "title": "PowerGraph-LLM: Novel Power Grid Graph Embedding and Optimization With Large Language Models",
+  "url": "https://arxiv.org/abs/2501.07639"
+ },
+ {
+  "index": 49,
+  "title": "Large Language Model-based power dispatch agent: Framework, application and challenges",
+  "url": "https://doi.org/10.1016/j.ijepes.2026.111653"
+ },
+ {
+  "index": 50,
+  "title": "ElecBench: a Power Dispatch Evaluation Benchmark for Large Language Models",
+  "url": "https://arxiv.org/abs/2407.05365"
+ },
+ {
+  "index": 51,
+  "title": "ElecBench: A large language model benchmark in electric power domain",
+  "url": "https://doi.org/10.1016/j.engappai.2025.112310"
+ },
+ {
+  "index": 52,
+  "title": "RL2Grid: Benchmarking Reinforcement Learning in Power Grid Operations",
+  "url": "https://arxiv.org/abs/2503.23101"
+ },
+ {
+  "index": 53,
+  "title": "Learning to run a Power Network Challenge: a Retrospective Analysis",
+  "url": "https://arxiv.org/abs/2103.03104"
+ },
+ {
+  "index": 54,
+  "title": "Learning the Optimal Power Flow: Environment Design Matters",
+  "url": "https://arxiv.org/abs/2403.17831"
+ },
+ {
+  "index": 55,
+  "title": "ProOPF: Benchmarking and Improving LLMs for Professional-Grade Power Systems Optimization Modeling",
+  "url": "https://arxiv.org/abs/2602.03070"
+ },
+ {
+  "index": 56,
+  "title": "Power Systems Agent Benchmark: Executable Evaluation of AI Agents in Electric Power Engineering",
+  "url": "https://arxiv.org/abs/2606.20950"
+ },
+ {
+  "index": 57,
+  "title": "PowerAgentBench-SS: A Benchmark for Agentic AI in Power System Steady-State Studies",
+  "url": "https://arxiv.org/abs/2606.18789"
+ }
+]

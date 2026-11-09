@@ -1,0 +1,2824 @@
+{
+ "source": {
+  "xlsx": "豆包检索_70题.xlsx",
+  "gt_cited": "cited/Q001..Q070.json",
+  "queries_csv": "question_queries_70_same_discipline.csv"
+ },
+ "query_alignment": {
+  "checked": 70,
+  "identical": 70,
+  "mismatched": []
+ },
+ "overall": {
+  "gt_citations": 2774,
+  "doubao_papers": 421,
+  "doubao_matched_in_gt": 103,
+  "match_rate_doubao": 0.2447,
+  "gt_citations_corroborated": 103,
+  "gt_corroboration_rate": 0.0371,
+  "doubao_only": 318,
+  "identifier_distribution": {
+   "arXiv": 130,
+   "DOI": 108,
+   "其他": 95,
+   "未提供": 64,
+   "ACL Anthology": 23,
+   "PubMed ID": 1
+  }
+ },
+ "match_methods": {
+  "id": 53,
+  "title_exact": 47,
+  "title_fuzzy": 3
+ },
+ "per_query": [
+  {
+   "qid": "Q001",
+   "gt": 43,
+   "doubao": 5,
+   "matched": 2,
+   "doubao_only": 3,
+   "gt_corroborated": 2
+  },
+  {
+   "qid": "Q002",
+   "gt": 39,
+   "doubao": 5,
+   "matched": 3,
+   "doubao_only": 2,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q003",
+   "gt": 52,
+   "doubao": 5,
+   "matched": 3,
+   "doubao_only": 2,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q004",
+   "gt": 39,
+   "doubao": 5,
+   "matched": 3,
+   "doubao_only": 2,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q005",
+   "gt": 38,
+   "doubao": 5,
+   "matched": 2,
+   "doubao_only": 3,
+   "gt_corroborated": 2
+  },
+  {
+   "qid": "Q006",
+   "gt": 26,
+   "doubao": 5,
+   "matched": 3,
+   "doubao_only": 2,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q007",
+   "gt": 33,
+   "doubao": 5,
+   "matched": 1,
+   "doubao_only": 4,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q008",
+   "gt": 37,
+   "doubao": 5,
+   "matched": 0,
+   "doubao_only": 5,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q009",
+   "gt": 51,
+   "doubao": 5,
+   "matched": 0,
+   "doubao_only": 5,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q010",
+   "gt": 77,
+   "doubao": 5,
+   "matched": 3,
+   "doubao_only": 2,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q011",
+   "gt": 25,
+   "doubao": 4,
+   "matched": 1,
+   "doubao_only": 3,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q012",
+   "gt": 28,
+   "doubao": 5,
+   "matched": 0,
+   "doubao_only": 5,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q013",
+   "gt": 39,
+   "doubao": 5,
+   "matched": 3,
+   "doubao_only": 2,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q014",
+   "gt": 40,
+   "doubao": 6,
+   "matched": 3,
+   "doubao_only": 3,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q015",
+   "gt": 43,
+   "doubao": 6,
+   "matched": 2,
+   "doubao_only": 4,
+   "gt_corroborated": 2
+  },
+  {
+   "qid": "Q016",
+   "gt": 35,
+   "doubao": 6,
+   "matched": 3,
+   "doubao_only": 3,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q017",
+   "gt": 35,
+   "doubao": 6,
+   "matched": 0,
+   "doubao_only": 6,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q018",
+   "gt": 47,
+   "doubao": 6,
+   "matched": 4,
+   "doubao_only": 2,
+   "gt_corroborated": 4
+  },
+  {
+   "qid": "Q019",
+   "gt": 36,
+   "doubao": 6,
+   "matched": 0,
+   "doubao_only": 6,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q020",
+   "gt": 57,
+   "doubao": 6,
+   "matched": 1,
+   "doubao_only": 5,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q021",
+   "gt": 36,
+   "doubao": 6,
+   "matched": 2,
+   "doubao_only": 4,
+   "gt_corroborated": 2
+  },
+  {
+   "qid": "Q022",
+   "gt": 35,
+   "doubao": 6,
+   "matched": 1,
+   "doubao_only": 5,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q023",
+   "gt": 35,
+   "doubao": 6,
+   "matched": 3,
+   "doubao_only": 3,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q024",
+   "gt": 48,
+   "doubao": 6,
+   "matched": 1,
+   "doubao_only": 5,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q025",
+   "gt": 37,
+   "doubao": 6,
+   "matched": 0,
+   "doubao_only": 6,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q026",
+   "gt": 50,
+   "doubao": 6,
+   "matched": 2,
+   "doubao_only": 4,
+   "gt_corroborated": 2
+  },
+  {
+   "qid": "Q027",
+   "gt": 38,
+   "doubao": 6,
+   "matched": 2,
+   "doubao_only": 4,
+   "gt_corroborated": 2
+  },
+  {
+   "qid": "Q028",
+   "gt": 43,
+   "doubao": 6,
+   "matched": 3,
+   "doubao_only": 3,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q029",
+   "gt": 34,
+   "doubao": 7,
+   "matched": 1,
+   "doubao_only": 6,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q030",
+   "gt": 36,
+   "doubao": 7,
+   "matched": 3,
+   "doubao_only": 4,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q031",
+   "gt": 42,
+   "doubao": 7,
+   "matched": 2,
+   "doubao_only": 5,
+   "gt_corroborated": 2
+  },
+  {
+   "qid": "Q032",
+   "gt": 42,
+   "doubao": 7,
+   "matched": 2,
+   "doubao_only": 5,
+   "gt_corroborated": 2
+  },
+  {
+   "qid": "Q033",
+   "gt": 38,
+   "doubao": 6,
+   "matched": 1,
+   "doubao_only": 5,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q034",
+   "gt": 32,
+   "doubao": 8,
+   "matched": 4,
+   "doubao_only": 4,
+   "gt_corroborated": 4
+  },
+  {
+   "qid": "Q035",
+   "gt": 34,
+   "doubao": 6,
+   "matched": 1,
+   "doubao_only": 5,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q036",
+   "gt": 39,
+   "doubao": 6,
+   "matched": 2,
+   "doubao_only": 4,
+   "gt_corroborated": 2
+  },
+  {
+   "qid": "Q037",
+   "gt": 32,
+   "doubao": 7,
+   "matched": 0,
+   "doubao_only": 7,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q038",
+   "gt": 52,
+   "doubao": 5,
+   "matched": 3,
+   "doubao_only": 2,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q039",
+   "gt": 36,
+   "doubao": 7,
+   "matched": 2,
+   "doubao_only": 5,
+   "gt_corroborated": 2
+  },
+  {
+   "qid": "Q040",
+   "gt": 33,
+   "doubao": 7,
+   "matched": 0,
+   "doubao_only": 7,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q041",
+   "gt": 38,
+   "doubao": 8,
+   "matched": 3,
+   "doubao_only": 5,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q042",
+   "gt": 50,
+   "doubao": 6,
+   "matched": 1,
+   "doubao_only": 5,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q043",
+   "gt": 36,
+   "doubao": 6,
+   "matched": 3,
+   "doubao_only": 3,
+   "gt_corroborated": 3
+  },
+  {
+   "qid": "Q044",
+   "gt": 51,
+   "doubao": 6,
+   "matched": 0,
+   "doubao_only": 6,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q045",
+   "gt": 38,
+   "doubao": 6,
+   "matched": 0,
+   "doubao_only": 6,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q046",
+   "gt": 47,
+   "doubao": 6,
+   "matched": 5,
+   "doubao_only": 1,
+   "gt_corroborated": 5
+  },
+  {
+   "qid": "Q047",
+   "gt": 45,
+   "doubao": 7,
+   "matched": 5,
+   "doubao_only": 2,
+   "gt_corroborated": 5
+  },
+  {
+   "qid": "Q048",
+   "gt": 49,
+   "doubao": 7,
+   "matched": 1,
+   "doubao_only": 6,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q049",
+   "gt": 54,
+   "doubao": 7,
+   "matched": 1,
+   "doubao_only": 6,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q050",
+   "gt": 58,
+   "doubao": 7,
+   "matched": 1,
+   "doubao_only": 6,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q051",
+   "gt": 31,
+   "doubao": 7,
+   "matched": 1,
+   "doubao_only": 6,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q052",
+   "gt": 42,
+   "doubao": 6,
+   "matched": 0,
+   "doubao_only": 6,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q053",
+   "gt": 33,
+   "doubao": 7,
+   "matched": 1,
+   "doubao_only": 6,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q054",
+   "gt": 37,
+   "doubao": 6,
+   "matched": 0,
+   "doubao_only": 6,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q055",
+   "gt": 29,
+   "doubao": 7,
+   "matched": 0,
+   "doubao_only": 7,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q056",
+   "gt": 33,
+   "doubao": 7,
+   "matched": 0,
+   "doubao_only": 7,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q057",
+   "gt": 34,
+   "doubao": 5,
+   "matched": 0,
+   "doubao_only": 5,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q058",
+   "gt": 33,
+   "doubao": 6,
+   "matched": 0,
+   "doubao_only": 6,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q059",
+   "gt": 41,
+   "doubao": 5,
+   "matched": 0,
+   "doubao_only": 5,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q060",
+   "gt": 32,
+   "doubao": 6,
+   "matched": 1,
+   "doubao_only": 5,
+   "gt_corroborated": 1
+  },
+  {
+   "qid": "Q061",
+   "gt": 34,
+   "doubao": 5,
+   "matched": 0,
+   "doubao_only": 5,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q062",
+   "gt": 33,
+   "doubao": 5,
+   "matched": 0,
+   "doubao_only": 5,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q063",
+   "gt": 35,
+   "doubao": 6,
+   "matched": 0,
+   "doubao_only": 6,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q064",
+   "gt": 43,
+   "doubao": 5,
+   "matched": 0,
+   "doubao_only": 5,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q065",
+   "gt": 35,
+   "doubao": 6,
+   "matched": 0,
+   "doubao_only": 6,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q066",
+   "gt": 32,
+   "doubao": 6,
+   "matched": 2,
+   "doubao_only": 4,
+   "gt_corroborated": 2
+  },
+  {
+   "qid": "Q067",
+   "gt": 42,
+   "doubao": 6,
+   "matched": 2,
+   "doubao_only": 4,
+   "gt_corroborated": 2
+  },
+  {
+   "qid": "Q068",
+   "gt": 30,
+   "doubao": 6,
+   "matched": 0,
+   "doubao_only": 6,
+   "gt_corroborated": 0
+  },
+  {
+   "qid": "Q069",
+   "gt": 48,
+   "doubao": 7,
+   "matched": 2,
+   "doubao_only": 5,
+   "gt_corroborated": 2
+  },
+  {
+   "qid": "Q070",
+   "gt": 39,
+   "doubao": 7,
+   "matched": 2,
+   "doubao_only": 5,
+   "gt_corroborated": 2
+  }
+ ],
+ "doubao_only_papers": [
+  {
+   "qid": "Q001",
+   "title": "MEMREPAIR: Hierarchical Memory for Agentic Repository-Level Vulnerability Repair",
+   "identifier_type": "arXiv",
+   "identifier_value": "2605.17444",
+   "url": "https://arxiv.org/abs/2605.17444"
+  },
+  {
+   "qid": "Q001",
+   "title": "ContextSniper: Token-Efficient Code Memory for Repository-Level Program Repair",
+   "identifier_type": "arXiv",
+   "identifier_value": "2607.01916",
+   "url": "https://arxiv.org/abs/2607.01916"
+  },
+  {
+   "qid": "Q001",
+   "title": "A Survey of LLM-based Automated Program Repair: Taxonomies, Design Paradigms, and Applications",
+   "identifier_type": "arXiv",
+   "identifier_value": "2506.23749",
+   "url": "https://arxiv.org/abs/2506.23749"
+  },
+  {
+   "qid": "Q002",
+   "title": "RACE: Retrieval-Augmented Commit Message Generation",
+   "identifier_type": "ACL Anthology",
+   "identifier_value": "2022.emnlp-main.372",
+   "url": "https://aclanthology.org/2022.emnlp-main.372/"
+  },
+  {
+   "qid": "Q002",
+   "title": "Private-Library-Oriented Code Generation with Large Language Models",
+   "identifier_type": "arXiv",
+   "identifier_value": "2307.15370",
+   "url": "https://arxiv.org/abs/2307.15370"
+  },
+  {
+   "qid": "Q003",
+   "title": "An Analysis of the Automatic Bug Fixing Performance of ChatGPT",
+   "identifier_type": "arXiv",
+   "identifier_value": "2301.08653",
+   "url": "https://arxiv.org/abs/2301.08653"
+  },
+  {
+   "qid": "Q003",
+   "title": "Automated Repair of C Programs Using Large Language Models (SBFL + CoT)",
+   "identifier_type": "arXiv",
+   "identifier_value": "2509.01947",
+   "url": "https://arxiv.org/abs/2509.01947"
+  },
+  {
+   "qid": "Q004",
+   "title": "CodeTree: Agent-guided Tree Search for Code Generation with Large Language Models",
+   "identifier_type": "ACL Anthology",
+   "identifier_value": "2025.naacl-long.189",
+   "url": "https://aclanthology.org/2025.naacl-long.189/"
+  },
+  {
+   "qid": "Q004",
+   "title": "MaCTG: Multi-Agent Collaborative Thought Graph for Automatic Programming",
+   "identifier_type": "arXiv",
+   "identifier_value": "2410.19245",
+   "url": "https://arxiv.org/abs/2410.19245"
+  },
+  {
+   "qid": "Q005",
+   "title": "Merging Clinical Knowledge into Large Language Models for Medical Research and Applications: A Survey",
+   "identifier_type": "arXiv",
+   "identifier_value": "2502.20988",
+   "url": "https://arxiv.org/abs/2502.20988"
+  },
+  {
+   "qid": "Q005",
+   "title": "Large Language Models and Large Multimodal Models in Medical Imaging: A Primer for Physicians",
+   "identifier_type": "DOI",
+   "identifier_value": "10.2967/jnumed.124.268072",
+   "url": "https://jnm.snmjournals.org/content/early/2025/01/16/jnumed.124.268072"
+  },
+  {
+   "qid": "Q005",
+   "title": "SMMILE: An Expert-Driven Benchmark for Multimodal Medical In-Context Learning",
+   "identifier_type": "arXiv",
+   "identifier_value": "2506.21355",
+   "url": "https://arxiv.org/abs/2506.21355"
+  },
+  {
+   "qid": "Q006",
+   "title": "Extracting entities with attributes in clinical text via joint deep learning",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1093/jamia/ocz158",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7647140/"
+  },
+  {
+   "qid": "Q006",
+   "title": "A hybrid approach for named entity recognition in Chinese electronic medical record",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1186/s12911-019-0767-2",
+   "url": "https://link.springer.com/article/10.1186/s12911-019-0767-2"
+  },
+  {
+   "qid": "Q007",
+   "title": "Improving Medical Reasoning through Retrieval and Self-Reflection with Retrieval-Augmented Large Language Models (Self-BioRAG)",
+   "identifier_type": "arXiv",
+   "identifier_value": "2401.15269",
+   "url": "https://arxiv.org/abs/2401.15269"
+  },
+  {
+   "qid": "Q007",
+   "title": "KRAGEN: a knowledge graph-enhanced RAG framework for biomedical problem solving using large language models",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1093/bioinformatics/btae353",
+   "url": "https://academic.oup.com/bioinformatics/article/40/7/btae353/7713146"
+  },
+  {
+   "qid": "Q007",
+   "title": "VeReaFine: Iterative Verification Reasoning Refinement RAG for Hallucination-Resistant on Open-Ended Clinical QA",
+   "identifier_type": "ACL Anthology",
+   "identifier_value": "2025.bionlp-share.34",
+   "url": "https://aclanthology.org/2025.bionlp-share.34/"
+  },
+  {
+   "qid": "Q007",
+   "title": "JMLR: Joint Medical LLM and Retrieval Training for Enhancing Reasoning and Professional Question Answering Capability",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://openreview.net/forum?id=nrh06BSQks"
+  },
+  {
+   "qid": "Q008",
+   "title": "How does the artificial intelligence-based image-assisted technique help physicians in diagnosis of pulmonary adenocarcinoma? A randomized controlled experiment of multicenter physicians in China",
+   "identifier_type": "PubMed ID",
+   "identifier_value": "36228127",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/36228127/"
+  },
+  {
+   "qid": "Q008",
+   "title": "Deep learning improves physician accuracy in the comprehensive detection of abnormalities on chest X-rays",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1038/s41598-024-76608-3",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11502915/"
+  },
+  {
+   "qid": "Q008",
+   "title": "AI support for accurate and fast radiological diagnosis of COVID-19: an international multicenter, multivendor CT study",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1007/s00330-022-09335-9",
+   "url": "https://link.springer.com/article/10.1007/s00330-022-09335-9"
+  },
+  {
+   "qid": "Q008",
+   "title": "Effects of a comprehensive brain computed tomography deep learning model on radiologist detection accuracy",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1007/s00330-023-10074-8",
+   "url": "https://link.springer.com/article/10.1007/s00330-023-10074-8"
+  },
+  {
+   "qid": "Q008",
+   "title": "Autonomous artificial intelligence increases real-world specialist clinic productivity in a cluster-randomized trial",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1038/s41746-023-00931-7",
+   "url": "https://www.nature.com/articles/s41746-023-00931-7"
+  },
+  {
+   "qid": "Q009",
+   "title": "The generative era of medical AI",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1016/j.cell.2025.05.032",
+   "url": "https://www.cell.com/cell/fulltext/S0092-8674(25)00568-9"
+  },
+  {
+   "qid": "Q009",
+   "title": "Software as a Medical Practitioner—Is It Time to License Artificial Intelligence?",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://emergencymed.org.il/wp-content/uploads/2025/11/Software-as-a-Medical-Practitioner%E2%80%94Is-It-Time-to-License-Artificial-Intelligence.pdf"
+  },
+  {
+   "qid": "Q009",
+   "title": "Large Language Models in Medicine: Current Ethical Challenges",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://medet.rsmu.press/files/issues/medet.rsmu.press/2025/2/2025-2-1691_ru.pdf"
+  },
+  {
+   "qid": "Q009",
+   "title": "Economics and Equity of Large Language Models: Health Care Perspective",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://www.jmir.org/2024/1/e59505/"
+  },
+  {
+   "qid": "Q009",
+   "title": "Potential of Large Language Models in Health Care: Delphi Study",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://www.jmir.org/2023/1/e48568/"
+  },
+  {
+   "qid": "Q010",
+   "title": "Revolutionizing Finance with LLMs: An Overview of Applications and Insights",
+   "identifier_type": "arXiv",
+   "identifier_value": "2401.11641",
+   "url": "https://arxiv.org/abs/2401.11641"
+  },
+  {
+   "qid": "Q010",
+   "title": "A survey on the application and research progress of large language models in financial forecasting",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1063/5.0274031",
+   "url": "https://aip.scitation.org/doi/10.1063/5.0274031"
+  },
+  {
+   "qid": "Q011",
+   "title": "Stock market index prediction using deep Transformer model",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417422006933"
+  },
+  {
+   "qid": "Q011",
+   "title": "StockGPT: A GenAI Model for Stock Prediction and Trading",
+   "identifier_type": "arXiv",
+   "identifier_value": "2404.05101",
+   "url": "https://arxiv.org/abs/2404.05101"
+  },
+  {
+   "qid": "Q011",
+   "title": "A Comparative Study of Sequential Deep Learning Models in Financial Time Series Forecasting",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://ieeexplore.ieee.org/document/10851487"
+  },
+  {
+   "qid": "Q012",
+   "title": "FraudGT: A Simple, Effective, and Efficient Graph Transformer for Financial Fraud Detection",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://dspace.mit.edu/handle/1721.1/157762"
+  },
+  {
+   "qid": "Q012",
+   "title": "TitAnt: Online Real-time Transaction Fraud Detection in Ant Financial",
+   "identifier_type": "arXiv",
+   "identifier_value": "1906.07407",
+   "url": "https://arxiv.org/abs/1906.07407"
+  },
+  {
+   "qid": "Q012",
+   "title": "GRANDE: a neural model over directed multigraphs with application to anti-money laundering",
+   "identifier_type": "arXiv",
+   "identifier_value": "2302.02101",
+   "url": "https://arxiv.org/abs/2302.02101"
+  },
+  {
+   "qid": "Q012",
+   "title": "Intelligent financial fraud detection practices in post-pandemic era",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1016/j.xinn.2021.100154",
+   "url": "https://www.cell.com/the-innovation/fulltext/S2666-6758(21)00101-6"
+  },
+  {
+   "qid": "Q012",
+   "title": "Fraud Detection in Financial Transactions Using Deep Neural Networks (Hybrid GNN-Transformer)",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://www.semanticscholar.org/paper/Fraud-Detection-in-Financial-Transactions-Using-Coffie-Kim/a4cabbf1f9ad05f74244ee4a26ce997fec9cc37"
+  },
+  {
+   "qid": "Q013",
+   "title": "Privacy-Preserving Federated Learning over Vertically and Horizontally Partitioned Data for Financial Anomaly Detection (PV4FAD)",
+   "identifier_type": "arXiv",
+   "identifier_value": "2310.19304",
+   "url": "https://arxiv.org/abs/2310.19304"
+  },
+  {
+   "qid": "Q013",
+   "title": "Federated Semantic Web Framework for Enhanced Financial Risk Control and Data Analysis",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://www.semanticscholar.org/paper/Federated-Semantic-Web-Framework-for-Enhanced-Risk-Wang/f563239bc68513290d0fa7769a6cea44b0836592"
+  },
+  {
+   "qid": "Q014",
+   "title": "Is ChatGPT a Financial Expert? Evaluating Language Models on Financial Natural Language Processing (FinLMEval)",
+   "identifier_type": "ACL Anthology",
+   "identifier_value": "2023.findings-emnlp.58",
+   "url": "https://aclanthology.org/2023.findings-emnlp.58/"
+  },
+  {
+   "qid": "Q014",
+   "title": "BizBench: A Quantitative Reasoning Benchmark for Business and Finance",
+   "identifier_type": "ACL Anthology",
+   "identifier_value": "2024.acl-long.452",
+   "url": "https://aclanthology.org/2024.acl-long.452/"
+  },
+  {
+   "qid": "Q014",
+   "title": "Finance Language Model Evaluation (FLAME)",
+   "identifier_type": "ACL Anthology",
+   "identifier_value": "2025.findings-acl.1164",
+   "url": "https://aclanthology.org/2025.findings-acl.1164/"
+  },
+  {
+   "qid": "Q015",
+   "title": "Large Multi-modality Model-based V2X Communications",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://2024.ictc.org/sites/ictc2024/media?key=site/ictc2024/abs/D7-4.pdf"
+  },
+  {
+   "qid": "Q015",
+   "title": "CoMAL: Collaborative Multi-Agent Large Language Models for Mixed-Autonomy Traffic",
+   "identifier_type": "arXiv",
+   "identifier_value": "2410.14368",
+   "url": "https://arxiv.org/abs/2410.14368"
+  },
+  {
+   "qid": "Q015",
+   "title": "Senna: Bridging Large Vision-Language Models and End-to-End Autonomous Driving",
+   "identifier_type": "arXiv",
+   "identifier_value": "2410.22313",
+   "url": "https://arxiv.org/abs/2410.22313"
+  },
+  {
+   "qid": "Q015",
+   "title": "A Language Agent for Autonomous Driving",
+   "identifier_type": "arXiv",
+   "identifier_value": "2311.10813",
+   "url": "https://arxiv.org/abs/2311.10813"
+  },
+  {
+   "qid": "Q016",
+   "title": "Dual Radar: A Multi-modal Dataset with Dual 4D Radar for Autonomous Driving",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1038/s41597-025-04698-2",
+   "url": "https://www.nature.com/articles/s41597-025-04698-2"
+  },
+  {
+   "qid": "Q016",
+   "title": "MutualForce: Mutual-Aware Enhancement for 4D Radar-LiDAR 3D Object Detection",
+   "identifier_type": "arXiv",
+   "identifier_value": "2501.10266",
+   "url": "https://arxiv.org/abs/2501.10266"
+  },
+  {
+   "qid": "Q016",
+   "title": "Radars for Autonomous Driving: A Review of Deep Learning Methods and Challenges",
+   "identifier_type": "arXiv",
+   "identifier_value": "2306.09304",
+   "url": "https://arxiv.org/abs/2306.09304"
+  },
+  {
+   "qid": "Q017",
+   "title": "MASP: Scalable Graph-Based Planning Towards Multi-UAV Navigation",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://nicsefc.ee.tsinghua.edu.cn/nics_file/pdf/8e6935c3-9330-4d18-b1bc-b3ab68965ff4.pdf"
+  },
+  {
+   "qid": "Q017",
+   "title": "Generative AI-augmented Graph Reinforcement Learning for Adaptive UAV Swarm Optimization",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://cerc-ngct.ca/wp-content/uploads/2025/03/J-2025-IEEE-IoT-Generative-AI-augmented-Graph-Reinforcement-Learning-for-Adaptive-UAV-Swarm-Optimization.pdf"
+  },
+  {
+   "qid": "Q017",
+   "title": "Learning-to-Fly RL: Reinforcement Learning-based Collision Avoidance for Scalable Urban Air Mobility",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://sci-hub.ru/downloads/2020-12-21/06/jang2020.pdf"
+  },
+  {
+   "qid": "Q017",
+   "title": "Multi-UAV Navigation for Partially Observable Communication Coverage by Graph Reinforcement Learning",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.techrxiv.org/users/680557/articles/677198/master/file/data/bare_jrnl_compsoc/bare_jrnl_compsoc.pdf"
+  },
+  {
+   "qid": "Q017",
+   "title": "Attention-based Reinforcement Learning for Real-Time UAV Semantic Communication",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://oulurepo.oulu.fi/bitstream/10024/32677/1/nbnfi-fe2022032124247.pdf"
+  },
+  {
+   "qid": "Q017",
+   "title": "Multiple UAVs Path Planning Based on Deep Reinforcement Learning in Communication Denial Environment",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3390/math11020405",
+   "url": "https://www.mdpi.com/2227-7390/11/2/405"
+  },
+  {
+   "qid": "Q018",
+   "title": "Bench2Drive-R: Turning Real World Data into Reactive Closed-Loop Autonomous Driving Benchmark by Generative Model",
+   "identifier_type": "arXiv",
+   "identifier_value": "2412.09647",
+   "url": "https://arxiv.org/abs/2412.09647"
+  },
+  {
+   "qid": "Q018",
+   "title": "Decision Making for Autonomous Driving Stack: Shortening the Gap from Simulation to Real-World Implementations",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://ieeexplore.ieee.org/document/10588560"
+  },
+  {
+   "qid": "Q019",
+   "title": "UAVs Meet Agentic AI: A Multidomain Survey of Autonomous Aerial Intelligence and Agentic UAVs",
+   "identifier_type": "arXiv",
+   "identifier_value": "2506.08045",
+   "url": "https://arxiv.org/abs/2506.08045"
+  },
+  {
+   "qid": "Q019",
+   "title": "Managing the drone revolution: A systematic literature review into the current use of airborne drones and future strategic directions for their effective control",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7489224/"
+  },
+  {
+   "qid": "Q019",
+   "title": "Air Traffic Management for Collaborative Routing of Unmanned Aerial Vehicles via Potential Fields",
+   "identifier_type": "arXiv",
+   "identifier_value": "2403.11086",
+   "url": "https://arxiv.org/abs/2403.11086"
+  },
+  {
+   "qid": "Q019",
+   "title": "Delivery Drones - Just a Hype? Towards Autonomous Air Mobility Services at Scale",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://scholarspace.manoa.hawaii.edu/bitstreams/d61ffcf1-661c-4317-a5f9-1ac5c13b932f/download"
+  },
+  {
+   "qid": "Q019",
+   "title": "Drone-Aided Delivery Methods, Challenge, and the Future: A Methodological Review",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3390/drones7030191",
+   "url": "https://www.mdpi.com/2504-446X/7/3/191"
+  },
+  {
+   "qid": "Q019",
+   "title": "Autonomy Now?: Is It Time to Start Integrating (Autonomous) Urban Air Mobility Vehicles into the National Airspace System?",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://core.ac.uk/download/639357456.pdf"
+  },
+  {
+   "qid": "Q020",
+   "title": "Exploration of Multi-Element Collaborative Research and Application for Modern Power System Based on Generative Large Models",
+   "identifier_type": "arXiv",
+   "identifier_value": "2504.02855",
+   "url": "https://arxiv.org/abs/2504.02855"
+  },
+  {
+   "qid": "Q020",
+   "title": "Survey on AI and Machine Learning Techniques for Microgrid Energy Management Systems",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "http://ir.ia.ac.cn/bitstream/173211/51990/1/JAS-2023-0009.pdf"
+  },
+  {
+   "qid": "Q020",
+   "title": "Optimal Energy Scheduling for Battery and Hydrogen Storage Systems Using Reinforcement Learning",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://psecommunity.org/wp-content/plugins/wpor/includes/file/2506/LAPSE-2025.0345-1v1.pdf"
+  },
+  {
+   "qid": "Q020",
+   "title": "Reinforcement Learning Techniques in Optimizing Energy Systems",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3390/electronics13081459",
+   "url": "https://www.mdpi.com/2079-9292/13/8/1459"
+  },
+  {
+   "qid": "Q020",
+   "title": "Energy Management System for an Industrial Microgrid Using Optimization Algorithms-Based Reinforcement Learning Technique",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3390/en17163898",
+   "url": "https://www.mdpi.com/1996-1073/17/16/3898"
+  },
+  {
+   "qid": "Q021",
+   "title": "Application of Machine Learning for Shale Oil and Gas \"Sweet Spots\" Prediction",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3390/en17092191",
+   "url": "https://www.mdpi.com/1996-1073/17/9/2191"
+  },
+  {
+   "qid": "Q021",
+   "title": "Machine learning-informed ensemble framework for evaluating shale gas production potential: Case study in the Marcellus Shale",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.sciencedirect.com/science/article/abs/pii/S1875510020304667"
+  },
+  {
+   "qid": "Q021",
+   "title": "Machine Learning Algorithms for Lithofacies Classification of the Gulong Shale from the Songliao Basin, China",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3390/en16062581",
+   "url": "https://www.mdpi.com/1996-1073/16/6/2581"
+  },
+  {
+   "qid": "Q021",
+   "title": "A systematic review of data science and machine learning applications to the oil and gas industry",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1007/s13202-021-01302-2",
+   "url": "https://link.springer.com/article/10.1007/s13202-021-01302-2"
+  },
+  {
+   "qid": "Q022",
+   "title": "Wireless Ventilation Control for Large-Scale Systems: the Mining Industrial Case",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://hal.science/hal-00448406v1/file/IJRNC09_r23.pdf"
+  },
+  {
+   "qid": "Q022",
+   "title": "Modeling and Feedback Control for Air Flow Regulation in Deep Pits",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://hal.science/hal-00982820v1/file/11_CSP_Witrant.pdf"
+  },
+  {
+   "qid": "Q022",
+   "title": "Receding horizon climate control in metal mine extraction rooms",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "http://hal-supelec.archives-ouvertes.fr/docs/00/34/04/45/PDF/CASE08_0056_FI.pdf"
+  },
+  {
+   "qid": "Q022",
+   "title": "A Real-Time Control Approach for Mine Climate Regulation",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://hal.science/hal-00340442v1/file/icnpaa08_witrant.pdf"
+  },
+  {
+   "qid": "Q022",
+   "title": "Modeling and Control of Large Convective Flows with Time-Delays",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.gipsa-lab.grenoble-inp.fr/~emmanuel.witrant/papers/10_Witrant_MESA.pdf"
+  },
+  {
+   "qid": "Q023",
+   "title": "Netherlands Dataset: A New Public Dataset for Machine Learning in Seismic Interpretation",
+   "identifier_type": "arXiv",
+   "identifier_value": "1904.00770",
+   "url": "https://arxiv.org/abs/1904.00770"
+  },
+  {
+   "qid": "Q023",
+   "title": "Penobscot Dataset: Fostering Machine Learning Development for Seismic Interpretation",
+   "identifier_type": "arXiv",
+   "identifier_value": "1903.12060",
+   "url": "https://arxiv.org/abs/1903.12060"
+  },
+  {
+   "qid": "Q023",
+   "title": "Using relative geologic time to constrain convolutional neural network-based seismic interpretation and property estimation",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://library.seg.org/doi/10.1190/geo2019-0542.1"
+  },
+  {
+   "qid": "Q024",
+   "title": "AutoMate: Specialist and Generalist Assembly Policies over Diverse Geometries",
+   "identifier_type": "arXiv",
+   "identifier_value": "2407.08028",
+   "url": "https://arxiv.org/abs/2407.08028"
+  },
+  {
+   "qid": "Q024",
+   "title": "Autonomous Robotic Assembly: From Part Singulation to Precise Assembly",
+   "identifier_type": "arXiv",
+   "identifier_value": "2406.05331",
+   "url": "https://arxiv.org/abs/2406.05331"
+  },
+  {
+   "qid": "Q024",
+   "title": "IndustReal: Transferring Contact-Rich Assembly Tasks from Simulation to Reality",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://openreview.net/pdf/cccfecee06184a651debc5cf94f1fd587ce71317.pdf"
+  },
+  {
+   "qid": "Q024",
+   "title": "The e-Bike Motor Assembly: Towards Advanced Robotic Manipulation for Flexible Manufacturing",
+   "identifier_type": "arXiv",
+   "identifier_value": "2304.10595",
+   "url": "https://arxiv.org/abs/2304.10595"
+  },
+  {
+   "qid": "Q024",
+   "title": "Meta-Reinforcement Learning for Robotic Industrial Insertion Tasks",
+   "identifier_type": "arXiv",
+   "identifier_value": "2004.14404",
+   "url": "https://arxiv.org/abs/2004.14404"
+  },
+  {
+   "qid": "Q025",
+   "title": "Digital Twin Driven Service",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.elsevier.com/books/digital-twin-driven-service/tao/978-0-12-824002-1"
+  },
+  {
+   "qid": "Q025",
+   "title": "Real-time workshop digital twin scheduling platform for discrete manufacturing",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1088/1742-6596/1884/1/012006",
+   "url": "https://iopscience.iop.org/article/10.1088/1742-6596/1884/1/012006"
+  },
+  {
+   "qid": "Q025",
+   "title": "A digital twin-driven production management system for production workshop",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1007/s00170-020-05977-5",
+   "url": "https://link.springer.com/article/10.1007/s00170-020-05977-5"
+  },
+  {
+   "qid": "Q025",
+   "title": "The digital twin synchronization problem: Framework, formulations, and analysis",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.auto-twin-project.eu/s/The-digital-twin-synchronization-problem-Framework-formulations-and-analysis.pdf"
+  },
+  {
+   "qid": "Q025",
+   "title": "Optimizing operations of flexible assembly systems: demonstration of a digital twin concept with optimized planning and control, sensors and visualization",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1007/s10845-024-02537-6",
+   "url": "https://link.springer.com/article/10.1007/s10845-024-02537-6"
+  },
+  {
+   "qid": "Q025",
+   "title": "Digitalized Automation Engineering of Industry 4.0 Production Systems and Their Tight Cooperation with Digital Twins",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3390/pr10020404",
+   "url": "https://www.mdpi.com/2227-9717/10/2/404"
+  },
+  {
+   "qid": "Q026",
+   "title": "Sample-Efficient Robot Skill Learning for Construction Tasks: Benchmarking Hierarchical Reinforcement Learning and Vision-Language-Action VLA Model",
+   "identifier_type": "arXiv",
+   "identifier_value": "2512.14031",
+   "url": "https://arxiv.org/abs/2512.14031"
+  },
+  {
+   "qid": "Q026",
+   "title": "CO-RFT: Efficient Fine-Tuning of Vision-Language-Action Models through Chunked Offline Reinforcement Learning",
+   "identifier_type": "arXiv",
+   "identifier_value": "2508.02219",
+   "url": "https://arxiv.org/abs/2508.02219"
+  },
+  {
+   "qid": "Q026",
+   "title": "EXTRACT: Efficient Policy Learning by Extracting Transferable Robot Skills from Offline Data",
+   "identifier_type": "arXiv",
+   "identifier_value": "2406.17768",
+   "url": "https://arxiv.org/abs/2406.17768"
+  },
+  {
+   "qid": "Q026",
+   "title": "Posterior Behavioral Cloning: Pretraining BC Policies for Efficient RL Finetuning",
+   "identifier_type": "arXiv",
+   "identifier_value": "2512.16911",
+   "url": "https://arxiv.org/abs/2512.16911"
+  },
+  {
+   "qid": "Q027",
+   "title": "Interactive and Intelligent Root Cause Analysis in Manufacturing with Causal Bayesian Networks and Knowledge Graphs",
+   "identifier_type": "arXiv",
+   "identifier_value": "2402.00043",
+   "url": "https://arxiv.org/abs/2402.00043"
+  },
+  {
+   "qid": "Q027",
+   "title": "An Unsupervised Framework for Semantics Driven Causal Explanations for Anomalies",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2721/paper509.pdf"
+  },
+  {
+   "qid": "Q027",
+   "title": "Disentangled Causal Graph Learning for Online Unsupervised Root Cause Analysis",
+   "identifier_type": "arXiv",
+   "identifier_value": "2305.10638",
+   "url": "https://arxiv.org/abs/2305.10638"
+  },
+  {
+   "qid": "Q027",
+   "title": "Root Cause Analysis Using Anomaly Detection and Temporal Informed Causal Graphs",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://openhsu.ub.hsu-hh.de/bitstream/10.24405/15308/1/openHSU_15308.pdf"
+  },
+  {
+   "qid": "Q028",
+   "title": "Can Large Multimodal Models Understand Agricultural Scenes? Benchmarking with AgroMind",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://openreview.net/pdf/4bca61326b15930d24a443948be88a40782a61f0.pdf"
+  },
+  {
+   "qid": "Q028",
+   "title": "CMAViT: Integrating Climate, Management, and Remote Sensing Data for Crop Yield Estimation with Multimodel Vision Transformers",
+   "identifier_type": "arXiv",
+   "identifier_value": "2411.16989",
+   "url": "https://arxiv.org/abs/2411.16989"
+  },
+  {
+   "qid": "Q028",
+   "title": "Foundation Models for Generalist Geospatial Artificial Intelligence",
+   "identifier_type": "arXiv",
+   "identifier_value": "2310.18660",
+   "url": "https://arxiv.org/abs/2310.18660"
+  },
+  {
+   "qid": "Q029",
+   "title": "Are Transformers more Suitable for Plant Disease Identification than Convolutional Neural Networks?",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.researchsquare.com/article/rs-4284240/v1.pdf"
+  },
+  {
+   "qid": "Q029",
+   "title": "Mobile-assisted deep learning framework for identification of insect pests and diseases of maize from field images",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3389/fpls.2026.1803005",
+   "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2026.1803005/pdf"
+  },
+  {
+   "qid": "Q029",
+   "title": "Plant leaf disease detection using vision transformers for precision agriculture",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1038/s41598-025-05102-0",
+   "url": "https://www.nature.com/articles/s41598-025-05102-0.pdf"
+  },
+  {
+   "qid": "Q029",
+   "title": "Investigating attention mechanisms for plant disease identification in challenging environments",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1016/j.heliyon.2024.e33185",
+   "url": "https://www.cell.com/heliyon/pdf/S2405-8440(24)05833-X.pdf"
+  },
+  {
+   "qid": "Q029",
+   "title": "Automated Plant Disease and Pest Detection System Using Hybrid Lightweight CNN–MobileViT Models for Diagnosis of Indigenous Crops",
+   "identifier_type": "arXiv",
+   "identifier_value": "2512.11871",
+   "url": "https://arxiv.org/abs/2512.11871"
+  },
+  {
+   "qid": "Q029",
+   "title": "Time and Space Efficient Multi-Model Convolution Vision Transformer for Tomato Disease Detection from Leaf Images with Varied Backgrounds",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://cdn.techscience.cn/files/cmc/2024/TSP_CMC-79-1/TSP_CMC_48119/TSP_CMC_48119.pdf"
+  },
+  {
+   "qid": "Q030",
+   "title": "Process-guidance improves predictive performance of neural networks for carbon turnover in ecosystems",
+   "identifier_type": "arXiv",
+   "identifier_value": "2209.14229",
+   "url": "https://arxiv.org/abs/2209.14229"
+  },
+  {
+   "qid": "Q030",
+   "title": "A machine learning approach to emulation and biophysical parameter estimation with the Community Land Model, version 5",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://discovery.researcher.life/download/article/8ab7e76b898c3657bf8a4c7138f2f8b9/full-text"
+  },
+  {
+   "qid": "Q030",
+   "title": "Efficient surrogate modeling methods for large-scale Earth system models based on machine learning techniques",
+   "identifier_type": "arXiv",
+   "identifier_value": "1901.05125",
+   "url": "https://arxiv.org/abs/1901.05125"
+  },
+  {
+   "qid": "Q030",
+   "title": "Encoding diel hysteresis and the Birch effect in dryland soil respiration models through knowledge-guided deep learning",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3389/fenvs.2022.1035540",
+   "url": "https://www.frontiersin.org/articles/10.3389/fenvs.2022.1035540/pdf"
+  },
+  {
+   "qid": "Q031",
+   "title": "SkySense: A Multi-Modal Remote Sensing Foundation Model Towards Universal Interpretation for Earth Observation Imagery",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Guo_SkySense_A_Multi-Modal_Remote_Sensing_Foundation_Model_Towards_Universal_Interpretation_CVPR_2024_paper.pdf"
+  },
+  {
+   "qid": "Q031",
+   "title": "SSL4EO-S12: A Large-Scale Multi-Modal, Multi-Temporal Dataset for Self-Supervised Learning in Earth Observation",
+   "identifier_type": "arXiv",
+   "identifier_value": "2211.07044",
+   "url": "https://arxiv.org/abs/2211.07044"
+  },
+  {
+   "qid": "Q031",
+   "title": "REOBench: Benchmarking Robustness of Earth Observation Foundation Models",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/58af38e2fba04b5e00c3450018c56406-Paper-Datasets_and_Benchmarks_Track.pdf"
+  },
+  {
+   "qid": "Q031",
+   "title": "Cross-sensor self-supervised training and alignment for remote sensing",
+   "identifier_type": "arXiv",
+   "identifier_value": "未提供",
+   "url": "https://hal.science/hal-04576064v1/file/bare_jrnl.pdf"
+  },
+  {
+   "qid": "Q031",
+   "title": "RingMo: A Remote Sensing Foundation Model With Masked Image Modeling",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://static.aminer.cn/upload/pdf/1374/1819/1186/64c78b933fda6d7f06db1974_0.pdf"
+  },
+  {
+   "qid": "Q032",
+   "title": "Big Tech Meets Big Ag: Diversifying Epistemologies of Data and Power",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://blogs.cornell.edu/caisw/files/2023/10/Big-Tech-Meets-Big-Ag-Diversifying-Epistemologies-of-Data-and-Power.pdf"
+  },
+  {
+   "qid": "Q032",
+   "title": "New but for whom? Discourses of innovation in precision agriculture",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1007/s10460-021-10244-8",
+   "url": "https://link.springer.com/content/pdf/10.1007/s10460-021-10244-8.pdf"
+  },
+  {
+   "qid": "Q032",
+   "title": "Artificial intelligence, systemic risks, and sustainability",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1016/j.techsoc.2021.101678",
+   "url": "https://https-discovery-ucl-ac-uk-443.webvpn.ynu.edu.cn/id/eprint/10135411/1/1-s2.0-S0160791X21002165-main.pdf"
+  },
+  {
+   "qid": "Q032",
+   "title": "The ethics of big data in big agriculture",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://scispace.com/pdf/the-ethics-of-big-data-in-big-agriculture-4o8rd95j2n.pdf"
+  },
+  {
+   "qid": "Q032",
+   "title": "Can Distributed Ledgers Help to Overcome the Need of Labeled Data for Agricultural Machine Learning Tasks?",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://pdfs.semanticscholar.org/57e5/4dc1398a80c693f3f9f48d99b10bc9c348b1.pdf"
+  },
+  {
+   "qid": "Q033",
+   "title": "The Revolution Has Arrived: What the Current State of Large Language Models in Education Implies for the Future",
+   "identifier_type": "arXiv",
+   "identifier_value": "2507.02180",
+   "url": "https://arxiv.org/abs/2507.02180"
+  },
+  {
+   "qid": "Q033",
+   "title": "Optimizing E-Learning Environments: Leveraging Large Language Models for Personalized Education Pathways",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://www.atlantis-press.com/article/126002891.pdf"
+  },
+  {
+   "qid": "Q033",
+   "title": "GPT-4 as a Homework Tutor Can Improve Student Engagement and Learning Outcomes",
+   "identifier_type": "ACL Anthology",
+   "identifier_value": "2025.acl-long.1502",
+   "url": "https://preview.aclanthology.org/override-month/2025.acl-long.1502.pdf"
+  },
+  {
+   "qid": "Q033",
+   "title": "Exploring the Feasibility and Efficacy of ChatGPT-3 for Personalized Feedback in Teaching",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://pdfs.semanticscholar.org/30c1/5ab050dd868b951d39630423c5434ced6e19.pdf"
+  },
+  {
+   "qid": "Q033",
+   "title": "Reflections on Enhancing Higher Education Classroom Effectiveness Through the Introduction of Large Language Models",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://article.innovationforever.com/JMER/20240353.html"
+  },
+  {
+   "qid": "Q034",
+   "title": "Deep Knowledge Tracing and Dynamic Student Classification for Knowledge Tracing",
+   "identifier_type": "arXiv",
+   "identifier_value": "1809.08713",
+   "url": "https://arxiv.org/abs/1809.08713"
+  },
+  {
+   "qid": "Q034",
+   "title": "Knowledge Tracing with Sequential Key-Value Memory Networks",
+   "identifier_type": "arXiv",
+   "identifier_value": "1910.13197",
+   "url": "https://arxiv.org/abs/1910.13197"
+  },
+  {
+   "qid": "Q034",
+   "title": "Interpretable Knowledge Tracing: Simple and Efficient Student Modeling with Causal Relations",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://cdn.aaai.org/ojs/21560/21560-13-25573-1-2-20220628.pdf"
+  },
+  {
+   "qid": "Q034",
+   "title": "Empirical Evaluation of Deep Learning Models for Knowledge Tracing: Of Hyperparameters and Metrics on Performance and Replicability",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://zenodo.org/records/7086179/files/553Sarsa32To102.pdf"
+  },
+  {
+   "qid": "Q035",
+   "title": "Trustworthy journalism through AI",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://uis.brage.unit.no/uis-xmlui/bitstream/handle/11250/3075309/1-s2.0-S0169023X23000423-main.pdf"
+  },
+  {
+   "qid": "Q035",
+   "title": "Generative AI in Journalism: The Evolution of Newswork and Ethics in a Generative Information Ecosystem",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.rivista.ai/wp-content/uploads/2024/05/AP_Generative_AI_Report_April_2024.pdf"
+  },
+  {
+   "qid": "Q035",
+   "title": "Can LLMs Automate Fact-Checking Article Writing?",
+   "identifier_type": "ACL Anthology",
+   "identifier_value": "2026.tacl-1.23",
+   "url": "https://preview.aclanthology.org/updates/2026.tacl-1.23.pdf"
+  },
+  {
+   "qid": "Q035",
+   "title": "Addressing the Impact of Artificial Intelligence on Journalism: the perception of experts, journalists and academics",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://pdfs.semanticscholar.org/f865/51c72f957966c1946ff340f09ca0ef2fb934.pdf"
+  },
+  {
+   "qid": "Q035",
+   "title": "Automating Science Journalism Tasks: Emerging Opportunities",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://openaccess.city.ac.uk/id/eprint/30678/8/Automating%20Science%20Journalism%20Tasks%20Emerging%20Opportunities.pdf"
+  },
+  {
+   "qid": "Q036",
+   "title": "A study on the construction of knowledge graph of Yunjin video resources under productive conservation",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1186/s40494-023-00932-5",
+   "url": "https://link.springer.com/content/pdf/10.1186/s40494-023-00932-5.pdf"
+  },
+  {
+   "qid": "Q036",
+   "title": "Construction of Digital Resource Map and Intelligent Retrieval Algorithm for Narrative of Yangtze River Culture",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://ingegneriasismica.com/articles/2026/IS-E042.pdf"
+  },
+  {
+   "qid": "Q036",
+   "title": "Unsupervised Creation of Semantic Graphs to Navigate Intangible Cultural Heritage Using Transformers",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://pdfs.semanticscholar.org/5ada/48d778dbb4d80036ca5688d630794e309879.pdf"
+  },
+  {
+   "qid": "Q036",
+   "title": "A Multi-Modal Knowledge Graph for Classical Chinese Poetry",
+   "identifier_type": "ACL Anthology",
+   "identifier_value": "2022.findings-emnlp.171",
+   "url": "https://preview.aclanthology.org/json-schema/2022.findings-emnlp.171.pdf"
+  },
+  {
+   "qid": "Q037",
+   "title": "Effects of Varying LLM Access on Essay Writing Behavior",
+   "identifier_type": "ACL Anthology",
+   "identifier_value": "2026.bea-1.48",
+   "url": "https://aclanthology.org/anthology-files/anthology-files/pdf/bea/2026.bea-1.48.pdf"
+  },
+  {
+   "qid": "Q037",
+   "title": "The Impact of ChatGPT on Iraqi EFL University Students' Performance in Enhancing Writing Skills",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://ukrpublisher.com/wp-content/uploads/2025/11/UKRJAHSS-142-2025.pdf"
+  },
+  {
+   "qid": "Q037",
+   "title": "A Mixed-Method Study on the Effectiveness of Using ChatGPT in Academic Writing and Students' Perceived Experiences",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://ogarev-online.ru/2411-7390/article/download/297403/273846"
+  },
+  {
+   "qid": "Q037",
+   "title": "More polished, not necessarily more learned: LLMs and perceived text quality in higher education",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3389/frai.2025.1653992",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12702930/pdf/frai-08-1653992.pdf"
+  },
+  {
+   "qid": "Q037",
+   "title": "The impact of automated writing evaluation on second language writing skills of Chinese EFL learners: a randomized controlled trial",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3389/fpsyg.2023.1249991",
+   "url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1249991/pdf"
+  },
+  {
+   "qid": "Q037",
+   "title": "Adopting ChatGPT as a Writing Buddy in the Advanced L2 Writing Class",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "http://files.eric.ed.gov/fulltext/EJ1443997.pdf"
+  },
+  {
+   "qid": "Q037",
+   "title": "GPT-4 as a Homework Tutor Can Improve Student Engagement and Learning Outcomes",
+   "identifier_type": "ACL Anthology",
+   "identifier_value": "2025.acl-long.1502",
+   "url": "https://preview.aclanthology.org/override-month/2025.acl-long.1502.pdf"
+  },
+  {
+   "qid": "Q038",
+   "title": "RetailBench: Benchmarking long horizon reasoning and coherent decision making of LLM agents in realistic retail environments",
+   "identifier_type": "arXiv",
+   "identifier_value": "2606.15862",
+   "url": "https://arxiv.org/abs/2606.15862"
+  },
+  {
+   "qid": "Q038",
+   "title": "Transforming Supply chain: The impact of Emerging Technologies on Optimization and Resilience",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://ijcttjournal.org/2025/Volume-73%20Issue-3/IJCTT-V73I3P112.pdf"
+  },
+  {
+   "qid": "Q039",
+   "title": "Dynamic Causal Effects Evaluation in A/B Testing with a Reinforcement Learning Framework",
+   "identifier_type": "arXiv",
+   "identifier_value": "2002.01711",
+   "url": "https://arxiv.org/abs/2002.01711"
+  },
+  {
+   "qid": "Q039",
+   "title": "Offline Personalized Pricing with Censored Demand",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.zbw.eu/econis-archiv/bitstream/11159/507636/1/EBP085748366_0.pdf"
+  },
+  {
+   "qid": "Q039",
+   "title": "Dynamic Pricing and Learning with Long-term Reference Effects",
+   "identifier_type": "arXiv",
+   "identifier_value": "2402.12562",
+   "url": "https://arxiv.org/abs/2402.12562"
+  },
+  {
+   "qid": "Q039",
+   "title": "On Dynamic Pricing with Covariates",
+   "identifier_type": "arXiv",
+   "identifier_value": "2112.13254",
+   "url": "https://arxiv.org/abs/2112.13254"
+  },
+  {
+   "qid": "Q039",
+   "title": "Learning from Seller Experiments in Online Markets",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.nber.org/system/files/working_papers/w17385/w17385.pdf"
+  },
+  {
+   "qid": "Q040",
+   "title": "Together We Rise: Optimizing Real-Time Multi-Robot Task Allocation using Coordinated Heterogeneous Plays",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://ifaamas.csc.liv.ac.uk/Proceedings/aamas2025/pdfs/p1586.pdf"
+  },
+  {
+   "qid": "Q040",
+   "title": "Research on online scheduling and charging strategy of robots based on shortest path algorithm",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://www.sciencedirect.com/science/article/pii/S0360835221000012"
+  },
+  {
+   "qid": "Q040",
+   "title": "Decentral Task Allocation for Industrial AGV-Systems with Resource Constraints",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://lirias.kuleuven.be/bitstream/123456789/672361/2/Decentral%20Task%20Allocation%20For%20Industrial%20AGV%20Systems%20With%20Resource%20Constraints_Accepted.pdf"
+  },
+  {
+   "qid": "Q040",
+   "title": "Coordinating Large-Scale Robot Networks with Motion and Communication Uncertainties for Logistics Applications",
+   "identifier_type": "arXiv",
+   "identifier_value": "1904.01303",
+   "url": "https://arxiv.org/abs/1904.01303"
+  },
+  {
+   "qid": "Q040",
+   "title": "A prioritized planning algorithm of trajectory coordination based on time windows for multiple AGVs with delay disturbance",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1108/aa-03-2019-0054",
+   "url": "https://www.emerald.com/insight/content/doi/10.1108/aa-03-2019-0054/full/html"
+  },
+  {
+   "qid": "Q040",
+   "title": "Scheduling heterogeneous multi-load AGVs with battery constraints",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://discovery.researcher.life/download/article/110ea0b4363432299f4304aed90bc169/full-text"
+  },
+  {
+   "qid": "Q040",
+   "title": "Distributed Multi-Robot-Trailer Scheduling Based on Communication between Charging Stations for Robot Being Towed to Recharge",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3390/electronics12061402",
+   "url": "https://www.mdpi.com/2079-9292/12/6/1402/pdf"
+  },
+  {
+   "qid": "Q041",
+   "title": "Algorithmic Pricing and Competition",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.competitionpolicyinternational.com/wp-content/uploads/2023/06/3-ALGORITHMIC-PRICING-AND-COMPETITION-Robert-Clark-Daniel-Ershov.pdf"
+  },
+  {
+   "qid": "Q041",
+   "title": "Algorithmic Pricing Facilitates Tacit Collusion: Evidence from E-Commerce",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1145/3490486.3538239",
+   "url": "https://dl.acm.org/doi/pdf/10.1145/3490486.3538239"
+  },
+  {
+   "qid": "Q041",
+   "title": "Autonomous algorithmic collusion: Economic research and policy implications",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://hal.science/hal-03360129v1/file/wp_tse_1210.pdf"
+  },
+  {
+   "qid": "Q041",
+   "title": "Algorithmic Price Discrimination and Consumer Protection: A Digital Arms Race?",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://pure.mpg.de/rest/items/item_3377039_7/component/file_3379911/content?download=true"
+  },
+  {
+   "qid": "Q041",
+   "title": "Adversarial Competition and Collusion in Algorithmic Markets",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://core.ac.uk/download/564419281.pdf"
+  },
+  {
+   "qid": "Q042",
+   "title": "Global perspectives on digital twin smart cities: Innovations, challenges, and pathways to a sustainable urban future",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://hal.science/hal-05038899/file/Digital_Twin_Smart_City_Final_r2__arx_.pdf"
+  },
+  {
+   "qid": "Q042",
+   "title": "Improving the Resilience of Socio-technical Urban Critical Infrastructures with Digital Twins: Challenges, Concepts, and Modeling",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://elib.dlr.de/202394/2/JSAM_SI_ImprovingResilienceUCIwDT_accepted_outline_final.pdf"
+  },
+  {
+   "qid": "Q042",
+   "title": "A Digital Twin Framework to Improve Urban Sustainability and Resiliency: The Case Study of Venice",
+   "identifier_type": "DOI",
+   "identifier_value": "未提供",
+   "url": "https://air.iuav.it/retrieve/b0544615-28a6-4c6e-aa22-43c263ec0e19/land-14-00083-v2.pdf"
+  },
+  {
+   "qid": "Q042",
+   "title": "Trends in Digital Twin Framework Architectures for Smart Cities: A Case Study in Smart Mobility",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3390/s24051665",
+   "url": "https://www.mdpi.com/1424-8220/24/5/1665/pdf"
+  },
+  {
+   "qid": "Q042",
+   "title": "Towards Civic Digital Twins: Co-Design the Citizen-Centric Future of Bologna",
+   "identifier_type": "arXiv",
+   "identifier_value": "2412.06328",
+   "url": "https://arxiv.org/abs/2412.06328"
+  },
+  {
+   "qid": "Q043",
+   "title": "COMPARISON OF TWO MODELS FOR HUMAN EVACUATING SIMULATION IN LARGE BUILDING SPACES",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.aivc.org/sites/default/files/p909_final.pdf"
+  },
+  {
+   "qid": "Q043",
+   "title": "Validation of Evacuation Assessment Algorithm in Finding the Best Indoor Evacuation Model",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.semanticscholar.org/paper/Validation-of-Evacuation-Assessment-Algorithm-in-Halim-Samah/cb5356af7377a905b27b66666964f830797bb24b"
+  },
+  {
+   "qid": "Q043",
+   "title": "Pedestrian Dynamics in Real and Simulated World",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1061/(ASCE)UP.1943-5444.0000232",
+   "url": "https://core.ac.uk/download/33492956.pdf"
+  },
+  {
+   "qid": "Q044",
+   "title": "Spatially Explicit Assessments of Heat-Related Health Risks: A Literature Review",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.semanticscholar.org/paper/Spatially-Explicit-Assessments-of-Heat-Related-A-Yao-Lu/7eaa54427086c838d7e1b0bc508d1b7133d9b814"
+  },
+  {
+   "qid": "Q044",
+   "title": "Remote sensing for urban heat island research: Progress, current issues, and perspectives",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1016/j.rsase.2023.101081",
+   "url": "https://canng.github.io/assets/pdf/2023_RSASE_101081_review_uhi.pdf"
+  },
+  {
+   "qid": "Q044",
+   "title": "Hotspots, Heat Vulnerability and Urban Heat Islands: An Interdisciplinary Review of Research Methodologies",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1080/07038992.2020.1816815",
+   "url": "https://sci-hub.ru/downloads/2020-09-21/7c/10.1080@07038992.2020.1816815.pdf"
+  },
+  {
+   "qid": "Q044",
+   "title": "Heat waves and urban heat islands in Europe: A review of relevant drivers",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://daneshyari.com/article/preview/6320090.pdf"
+  },
+  {
+   "qid": "Q044",
+   "title": "Land-Use and Land-Cover Change, Urban Heat Island Phenomenon, and Health Implications: A Remote Sensing Approach",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.semanticscholar.org/paper/Land-Use-and-Land-Cover-Change,-Urban-Heat-Island-A-Lo-Quattrochi/72496ffb6d64687922ed4a6b69bc46f7ac37d89b"
+  },
+  {
+   "qid": "Q044",
+   "title": "The Challenge of the Urban Compact Form: Three-Dimensional Index Construction and Urban Land Surface Temperature Impacts",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://discovery.ucl.ac.uk/id/eprint/10125059/1/remotesensing-13-01067-v2.pdf"
+  },
+  {
+   "qid": "Q045",
+   "title": "Algorithmic Transparency for the Smart City",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://attachments.are.na/3799429/8d0c81878273769b3f3ec2d08bcbffc8.pdf"
+  },
+  {
+   "qid": "Q045",
+   "title": "Smart Cities: Striking a Balance Between Urban Resilience and Civil Liberties",
+   "identifier_type": "arXiv",
+   "identifier_value": "2303.14597",
+   "url": "https://arxiv.org/pdf/2303.14597"
+  },
+  {
+   "qid": "Q045",
+   "title": "Data Governance Frameworks for Smart Cities: Key Considerations for Data Management and Use",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://mcity.umich.edu/wp-content/uploads/2022/06/Mcity_Data-Governance-Frameworks-for-Smart-Cities_FINAL_June-2022.pdf"
+  },
+  {
+   "qid": "Q045",
+   "title": "Urban Governance (Chapter 15)",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1007/978-981-15-8983-6_15",
+   "url": "http://link.springer.com/content/pdf/10.1007/978-981-15-8983-6_15.pdf"
+  },
+  {
+   "qid": "Q045",
+   "title": "Smart Cities: Privacy, Transparency, and Community",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://sci-hub.ru/downloads/2019-01-26//08/10.0000@papers.ssrn.com@3156014.pdf"
+  },
+  {
+   "qid": "Q045",
+   "title": "AI-Driven Security Architecture in Smart Cities: Balancing Safety and Privacy",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://eajournals.org/ejcsit/wp-content/uploads/sites/21/2025/07/AI-Driven.pdf"
+  },
+  {
+   "qid": "Q046",
+   "title": "Sorting out online public opinion characteristics in major natural disasters investigation and assessment",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.semanticscholar.org/paper/International-Journal-of-Disaster-Risk-Reduction-Zhang-Zhang/c8834e1946a59a872005e84348c0ce1aa6893777"
+  },
+  {
+   "qid": "Q047",
+   "title": "Unified Software Engineering Agent as AI Software Engineer (USEagent)",
+   "identifier_type": "arXiv",
+   "identifier_value": "2506.14683",
+   "url": "https://arxiv.org/pdf/2506.14683v2"
+  },
+  {
+   "qid": "Q047",
+   "title": "A Comprehensive Survey on Benchmarks and Solutions in Software Engineering of LLM-Empowered Agentic System",
+   "identifier_type": "arXiv",
+   "identifier_value": "2510.09721",
+   "url": "https://arxiv.org/pdf/2510.09721"
+  },
+  {
+   "qid": "Q048",
+   "title": "Advances in Medical Image Analysis with Vision Transformers: A Comprehensive Review",
+   "identifier_type": "arXiv",
+   "identifier_value": "2301.03505",
+   "url": "https://arxiv.org/pdf/2301.03505"
+  },
+  {
+   "qid": "Q048",
+   "title": "MedVersa: A Generalist Foundation Model for Medical Image Interpretation",
+   "identifier_type": "arXiv",
+   "identifier_value": "2405.07988",
+   "url": "https://arxiv.org/pdf/2405.07988"
+  },
+  {
+   "qid": "Q048",
+   "title": "ELIXR: Towards a general purpose X-ray artificial intelligence system through alignment of large language models and radiology vision encoders",
+   "identifier_type": "arXiv",
+   "identifier_value": "2308.01317",
+   "url": "https://arxiv.org/pdf/2308.01317"
+  },
+  {
+   "qid": "Q048",
+   "title": "Advancing Multimodal Medical Capabilities of Gemini (Med-Gemini)",
+   "identifier_type": "arXiv",
+   "identifier_value": "2405.03162",
+   "url": "https://arxiv.org/pdf/2405.03162"
+  },
+  {
+   "qid": "Q048",
+   "title": "A medical multimodal large language model for future pandemics (Med-MLLM)",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1038/s41746-023-00952-2",
+   "url": "https://www.nature.com/articles/s41746-023-00952-2.pdf"
+  },
+  {
+   "qid": "Q048",
+   "title": "Taming Vision-Language Models for Medical Image Analysis: A Comprehensive Review",
+   "identifier_type": "arXiv",
+   "identifier_value": "2506.18378",
+   "url": "https://arxiv.org/pdf/2506.18378"
+  },
+  {
+   "qid": "Q049",
+   "title": "Intelligent financial fraud detection practices in post-pandemic era",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1016/j.xinn.2021.100164",
+   "url": "https://www.cell.com/the-innovation/pdf/S2666-6758(21)00101-6.pdf"
+  },
+  {
+   "qid": "Q049",
+   "title": "Graph Computing for Financial Crime and Fraud Detection: Trends, Challenges and Outlook",
+   "identifier_type": "arXiv",
+   "identifier_value": "2103.03227",
+   "url": "https://arxiv.org/pdf/2103.03227"
+  },
+  {
+   "qid": "Q049",
+   "title": "Multi-Relational Graph Representation Learning for Financial Statement Fraud Detection (FraudGCN)",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://xplorestaging.ieee.org/ielx8/8254253/10654612/10654667.pdf"
+  },
+  {
+   "qid": "Q049",
+   "title": "FraudGT: A Simple, Effective, and Efficient Graph Transformer for Financial Fraud Detection",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://dspace.mit.edu/bitstream/handle/1721.1/157762/3677052.3698648.pdf"
+  },
+  {
+   "qid": "Q049",
+   "title": "Year-over-Year Developments in Financial Fraud Detection via Deep Learning: A Systematic Literature Review",
+   "identifier_type": "arXiv",
+   "identifier_value": "2502.00201",
+   "url": "https://arxiv.org/pdf/2502.00201"
+  },
+  {
+   "qid": "Q049",
+   "title": "FraudGNN-RL: A Graph Neural Network With Reinforcement Learning for Adaptive Financial Fraud Detection",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://ieeexplore.ieee.org/iel8/8782664/9024218/10892045.pdf"
+  },
+  {
+   "qid": "Q050",
+   "title": "The Computational Paradigm of Cellular Automata in Crowd Evacuation",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1142/S0129054115400031",
+   "url": "https://www.worldscientific.com/doi/abs/10.1142/S0129054115400031"
+  },
+  {
+   "qid": "Q050",
+   "title": "Mathematical models and methods for crowd dynamics control",
+   "identifier_type": "arXiv",
+   "identifier_value": "1912.11628",
+   "url": "https://web3.arxiv.org/pdf/1912.11628"
+  },
+  {
+   "qid": "Q050",
+   "title": "A COMPUTATIONAL FRAMEWORK INCORPORATING HUMAN AND SOCIAL BEHAVIORS FOR OCCUPANT-CENTRIC EGRESS SIMULATION (SAFEgress)",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "http://eil.stanford.edu/publications/zan_chu/MLChu_dissertation-augmented.pdf"
+  },
+  {
+   "qid": "Q050",
+   "title": "Robot-Assisted Crowd Evacuation under Emergency Situations: A Survey",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "http://www.mdpi.com/2218-6581/6/2/8/pdf"
+  },
+  {
+   "qid": "Q050",
+   "title": "Agent-Based Simulation of Labour Emergency Evacuation in High-Rise Building Construction Sites",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://zero.sci-hub.st/4597/3032850160bc5db84e6e5b771472da26/said2012.pdf"
+  },
+  {
+   "qid": "Q050",
+   "title": "An Agent-Based Simulation of Pedestrian Dynamics: from Lane Formation to Auditorium Evacuation",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "http://inf.ufrgs.br/maslab/pergamus/pubs/Toyama+2006.pdf"
+  },
+  {
+   "qid": "Q051",
+   "title": "Zep: A Temporal Knowledge Graph Architecture for Agent Memory",
+   "identifier_type": "arXiv",
+   "identifier_value": "2501.13956",
+   "url": "https://arxiv.org/pdf/2501.13956"
+  },
+  {
+   "qid": "Q051",
+   "title": "Don't Do RAG: When Cache-Augmented Generation is All You Need for Knowledge Tasks",
+   "identifier_type": "arXiv",
+   "identifier_value": "2412.15605",
+   "url": "https://arxiv.org/pdf/2412.15605"
+  },
+  {
+   "qid": "Q051",
+   "title": "A HUMAN-INSPIRED READING AGENT WITH GIST MEMORY OF VERY LONG CONTEXTS (ReadAgent)",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://openreview.net/pdf?id=vRHrqXVTiQ"
+  },
+  {
+   "qid": "Q051",
+   "title": "AI-native Memory: A Pathway from LLMs Towards AGI",
+   "identifier_type": "arXiv",
+   "identifier_value": "2406.18312",
+   "url": "https://arxiv.org/pdf/2406.18312"
+  },
+  {
+   "qid": "Q051",
+   "title": "Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and Emerging Frontiers",
+   "identifier_type": "arXiv",
+   "identifier_value": "2603.07670",
+   "url": "https://arxiv.org/pdf/2603.07670"
+  },
+  {
+   "qid": "Q051",
+   "title": "Evaluating Long-Term Memory for Long-Context Question Answering",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://openreview.net/pdf?id=AQpZxBxBLR"
+  },
+  {
+   "qid": "Q052",
+   "title": "BUILDING THE FUTURE OF RESPONSIBLE AI: A REFERENCE ARCHITECTURE FOR DESIGNING LARGE LANGUAGE MODEL BASED AGENTS",
+   "identifier_type": "arXiv",
+   "identifier_value": "2311.13148",
+   "url": "https://arxiv.org/pdf/2311.13148"
+  },
+  {
+   "qid": "Q052",
+   "title": "Identity Management for Agentic AI: The new frontier of authorization, authentication, and security for an AI agent world",
+   "identifier_type": "arXiv",
+   "identifier_value": "2510.25819",
+   "url": "https://arxiv.org/pdf/2510.25819v1.pdf"
+  },
+  {
+   "qid": "Q052",
+   "title": "Agentic AI – Threats and Mitigations: OWASP Top 10 for LLM Apps & Gen AI Agentic Security Initiative",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.aigl.blog/content/files/2025/04/Agentic-AI---Threats-and-Mitigations.pdf"
+  },
+  {
+   "qid": "Q052",
+   "title": "Through the Chat Window and Into the Real World: Preparing for AI Agents",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://cset.georgetown.edu/wp-content/uploads/CSET-Through-the-Chat-Window-and-Into-the-Real-World.pdf"
+  },
+  {
+   "qid": "Q052",
+   "title": "Responsible Vibe Coding: Architecture, Opportunities, and Research Agenda",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1080/08874417.2026.2621186",
+   "url": "https://www.tandfonline.com/doi/permissions/10.1080/08874417.2026.2621186"
+  },
+  {
+   "qid": "Q052",
+   "title": "GPT Adoption and the Impact of Disclosure Policies",
+   "identifier_type": "arXiv",
+   "identifier_value": "2504.01566",
+   "url": "https://arxiv.org/pdf/2504.01566"
+  },
+  {
+   "qid": "Q053",
+   "title": "Adapted large language models can outperform medical experts in clinical text summarization",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11479659/pdf/nihms-2023710.pdf"
+  },
+  {
+   "qid": "Q053",
+   "title": "Enhancing Health Care Communication With Large Language Models—The Role, Challenges, and Future Directions",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://jamanetwork.com/journals/jamanetworkopen/articlepdf/2815872/raghu_subramanian_2024_ic_240010_1709070774.66806.pdf"
+  },
+  {
+   "qid": "Q053",
+   "title": "Large Language Models Are Poor Clinical Decision-Makers: A Comprehensive Benchmark (ClinicBench)",
+   "identifier_type": "ACL Anthology",
+   "identifier_value": "2024.emnlp-main.759",
+   "url": "https://www.aclanthology.org/2024.emnlp-main.759.pdf"
+  },
+  {
+   "qid": "Q053",
+   "title": "Assessing the usefulness of a large language model to query and summarize unstructured medical notes in intensive care",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1007/s00134-023-07128-2",
+   "url": "https://link.springer.com/content/pdf/10.1007/s00134-023-07128-2.pdf"
+  },
+  {
+   "qid": "Q053",
+   "title": "Risks from Language Models for Automated Mental Healthcare: Ethics and Structure for Implementation",
+   "identifier_type": "arXiv",
+   "identifier_value": "2406.11852",
+   "url": "https://arxiv.org/pdf/2406.11852"
+  },
+  {
+   "qid": "Q053",
+   "title": "A Survey of Clinicians' Views of the Utility of Large Language Models",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1055/a-2281-7092",
+   "url": "https://www.thieme-connect.de/products/ejournals/pdf/10.1055/a-2281-7092.pdf"
+  },
+  {
+   "qid": "Q054",
+   "title": "After Clearance Continuous Monitoring as the Foundation of Clinical AI Oversight",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.doctorswhocode.blog/downloads/lead-magnets/after-clearance-clinical-ai-oversight-executive-brief.pdf"
+  },
+  {
+   "qid": "Q054",
+   "title": "The oversight of autonomous artificial intelligence: lessons from nurse practitioners as physician extenders",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1093/jlb/lsac021",
+   "url": "https://academic.oup.com/jlb/article-pdf/9/2/lsac021/45322300/lsac021.pdf"
+  },
+  {
+   "qid": "Q054",
+   "title": "The ménage à trois of healthcare: the actors in after-AI era under patient consent",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10807288/pdf/fmed-10-1329087.pdf"
+  },
+  {
+   "qid": "Q054",
+   "title": "The inclusion of augmented intelligence in medicine: A framework for successful implementation",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1016/j.xcrm.2021.100419",
+   "url": "https://www.cell.com/cell-reports-medicine/pdf/S2666-3791(21)00357-8.pdf"
+  },
+  {
+   "qid": "Q054",
+   "title": "Trustworthy and ethical AI-enabled cardiovascular care: a rapid review",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1186/s12911-024-02653-6",
+   "url": "https://link.springer.com/article/10.1186/s12911-024-02653-6"
+  },
+  {
+   "qid": "Q054",
+   "title": "AI, Health, and Health Care Today and Tomorrow: The JAMA Summit Report on Artificial Intelligence",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://bsos.umd.edu/sites/bsos.umd.edu/files/2025-10/JAMA%20Summit%20Report%20on%20AI%20(1).pdf"
+  },
+  {
+   "qid": "Q055",
+   "title": "Deficiency of Large Language Models in Finance: An Empirical Examination of Hallucination",
+   "identifier_type": "arXiv",
+   "identifier_value": "2311.15548",
+   "url": "https://arxiv.org/pdf/2311.15548"
+  },
+  {
+   "qid": "Q055",
+   "title": "Multimodal Financial Foundation Models (MFFMs): Progress, Prospects, and Challenges",
+   "identifier_type": "arXiv",
+   "identifier_value": "2506.01973",
+   "url": "https://arxiv.org/pdf/2506.01973"
+  },
+  {
+   "qid": "Q055",
+   "title": "ChatGPT in finance: Applications, challenges, and solutions",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1016/j.heliyon.2024.e29458",
+   "url": "https://www.cell.com/heliyon/pdf/S2405-8440(24)00921-6.pdf"
+  },
+  {
+   "qid": "Q055",
+   "title": "CustomizedFinGPT Search Agents Using Foundation Models",
+   "identifier_type": "arXiv",
+   "identifier_value": "2410.15284",
+   "url": "https://arxiv.org/pdf/2410.15284"
+  },
+  {
+   "qid": "Q055",
+   "title": "GENERATIVE ARTIFICIAL INTELLIGENCE IN FINANCE",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.oecd-ilibrary.org/deliver/ac7149cc-en.pdf"
+  },
+  {
+   "qid": "Q055",
+   "title": "Regulating AI in the financial sector: recent developments and main challenges (FSI Insights No 63)",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.bis.org/fsi/publ/insights63.pdf"
+  },
+  {
+   "qid": "Q055",
+   "title": "Large Language Models for Financial Knowledge Extraction Analytical Insights and Corporate Planning Support",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://www.semanticscholar.org/paper/Large-Language-Models-for-Financial-Knowledge-and-Zhang-Wang/8dd640e8c2d469fb7a1d3286a0d7b14175b9234f"
+  },
+  {
+   "qid": "Q056",
+   "title": "AI AND ETHICS IN INSURANCE: A NEW SOLUTION TO MITIGATE PROXY DISCRIMINATION IN RISK MODELING",
+   "identifier_type": "arXiv",
+   "identifier_value": "2307.13616",
+   "url": "https://arxiv.org/pdf/2307.13616"
+  },
+  {
+   "qid": "Q056",
+   "title": "Keeping the (Good) Faith: Implications of Emerging Technologies for Consumer Insurance Contracts",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "http://classic.austlii.edu.au/cgi-bin/download.cgi/cgi-bin/download.cgi/download/au/journals/SydLawRw/2021/20.pdf"
+  },
+  {
+   "qid": "Q056",
+   "title": "Potential Applications of Explainable Artificial Intelligence to Actuarial Problems",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3390/math12050635",
+   "url": "https://www.mdpi.com/2227-7390/12/5/635/pdf"
+  },
+  {
+   "qid": "Q056",
+   "title": "Künstliche Intelligenz, Bias und Versicherungen – Eine technische und rechtliche Analyse (AI, Bias and Insurance: A Technical and Legal Analysis)",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1007/s12297-022-00528-1",
+   "url": "https://link.springer.com/content/pdf/10.1007/s12297-022-00528-1.pdf"
+  },
+  {
+   "qid": "Q056",
+   "title": "What Should an Actuary Know About Artificial Intelligence?",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://actuary.eu/wp-content/uploads/2024/05/TEA-38-What-should-an-actuary-know-about-Artificial-Intelligence.pdf"
+  },
+  {
+   "qid": "Q056",
+   "title": "Transforming Underwriting in the Life Insurance Industry",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://cdn.aaai.org/ojs/4985/4985-13-8048-1-10-20190709.pdf"
+  },
+  {
+   "qid": "Q056",
+   "title": "Artificial intelligence, solidarity and insurance in Europe and Canada: Roadmap for international cooperation",
+   "identifier_type": "其他",
+   "identifier_value": "未提供",
+   "url": "https://assets-global.website-files.com/5f1c22c0db81f12f7b91ff40/5fc4f57d66974abf1bfa6177_Full-Report-AI-Solidarity-and-Insurance-HTF-ENG-compressed.pdf"
+  },
+  {
+   "qid": "Q057",
+   "title": "Boosting Collaborative Vehicular Perception on the Edge with Vehicle-to-Vehicle Communication",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://ry4nzhu.github.io/publication/boosting_collaborative_vehicular_perception_on_the_edge_with_v2v_communication/boosting_collaborative_vehicular_perception_on_the_edge_with_v2v_communication.pdf"
+  },
+  {
+   "qid": "Q057",
+   "title": "EI-Drive: A Platform for Cooperative Perception with Realistic Communication Models",
+   "identifier_type": "arXiv",
+   "identifier_value": "2412.09782",
+   "url": "https://arxiv.org/pdf/2412.09782"
+  },
+  {
+   "qid": "Q057",
+   "title": "Vehicular Cloud Computing: A cost-effective alternative to Edge Computing in 5G networks",
+   "identifier_type": "arXiv",
+   "identifier_value": "2507.15670",
+   "url": "https://arxiv.org/pdf/2507.15670"
+  },
+  {
+   "qid": "Q057",
+   "title": "Enhancing Reliability in Infrastructure-Based Collective Perception: A Dual-Channel Hybrid Delivery Approach With Real-Time Monitoring",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://xplorestaging.ieee.org/ielx8/8782711/10345397/10637709.pdf?arnumber=10637709"
+  },
+  {
+   "qid": "Q057",
+   "title": "A Method for Mapping V2X Communication Requirements to Highly Automated and Autonomous Vehicle Functions",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.mdpi.com/1999-5903/16/4/108/pdf?version=1711357527"
+  },
+  {
+   "qid": "Q058",
+   "title": "Integrated Noise and Safety Management in UAM via A Unified Reinforcement Learning Framework",
+   "identifier_type": "arXiv",
+   "identifier_value": "2508.16440",
+   "url": "https://arxiv.org/pdf/2508.16440"
+  },
+  {
+   "qid": "Q058",
+   "title": "Mitigating Air Risk of Drone Operations in Low-level Airspace with a 4D Trajectory U-space Framework",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://hal.science/hal-04625700v1/file/DTIS2024-190.pdf"
+  },
+  {
+   "qid": "Q058",
+   "title": "Urban Air Mobility: Review and Challenges",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.techrxiv.org/users/706832/articles/1239287/master/file/data/UAM_Survey%20(1)/UAM_Survey%20(1).pdf"
+  },
+  {
+   "qid": "Q058",
+   "title": "Constrained Urban Airspace Design for Large-Scale Drone-Based Delivery Traffic",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://scispace.com/pdf/constrained-urban-airspace-design-for-large-scale-drone-379a5hg9ck.pdf"
+  },
+  {
+   "qid": "Q058",
+   "title": "Noise-Aware and Equitable Urban Air Traffic Management: An Optimization Approach",
+   "identifier_type": "arXiv",
+   "identifier_value": "2401.00806",
+   "url": "https://arxiv.org/pdf/2401.00806"
+  },
+  {
+   "qid": "Q058",
+   "title": "Lunch Peaks and Risk Singularities: Temporal Demand Concentration and Safety Limits in High-Density Urban Drone Logistics",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://pdf.ssci.cc/jlae/JLAE.2026.010102.pdf"
+  },
+  {
+   "qid": "Q059",
+   "title": "Dynamic virtual power plants: A comprehensive review of architectures, control strategies, and grid support capabilities",
+   "identifier_type": "DOI",
+   "identifier_value": "10.23919/IEN.2026.0004",
+   "url": "https://www.sciopen.com/local/article_pdf/10.23919/IEN.2026.0004.pdf"
+  },
+  {
+   "qid": "Q059",
+   "title": "Navigating the Physics of Virtual Power Plants to Unlock Their Full Potential: On the Physics of Virtual Power Plants: The Role of Devices, Controller Design and the Grid",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://madsalma.github.io/pubs/2025_pemag_vpp.pdf"
+  },
+  {
+   "qid": "Q059",
+   "title": "Managing Local Power Grid Constraints with Vehicle-to-Grid and Virtual Power Line Solutions",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.energy-proceedings.org/wp-content/uploads/resilient2025/1766047727.pdf"
+  },
+  {
+   "qid": "Q059",
+   "title": "Enhancing Power Grid Resilience Through Energy Storage And Demand Response",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://pathofscience.org/index.php/ps/article/download/3453/1655"
+  },
+  {
+   "qid": "Q059",
+   "title": "Frequency Regulation and Congestion Management by Virtual Storage Plants",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://scispace.com/pdf/frequency-regulation-and-congestion-management-by-virtual-2q1mpnwr.pdf"
+  },
+  {
+   "qid": "Q060",
+   "title": "Industry 4.0 Roadmap for the Mining Sector",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.mdpi.com/2673-4605/15/1/16/pdf?version=1697440490"
+  },
+  {
+   "qid": "Q060",
+   "title": "Human Aspects of Automation and New Technology in Mining: Integrating People and Technology Through Human-Centred Design",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://smi.uq.edu.au/files/105132/Human-Aspects-of-Automation-and-New-Technology-in-Mining-Integrating-People-and-Technology-Through-Human-Centred-Design_May-2024_white-paper.pdf"
+  },
+  {
+   "qid": "Q060",
+   "title": "Mining 4.0—the Impact of New Technology from a Work Place Perspective",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://scispace.com/pdf/mining-4-0-the-impact-of-new-technology-from-a-work-place-ggpm8e65w2.pdf"
+  },
+  {
+   "qid": "Q060",
+   "title": "Automation Experience with a Global Perspective – An Assessment of the Automation Impact on Worker Safety and Health",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://espace.library.uq.edu.au/view/UQ:501ec3a/NIOSH_BAA_report.pdf"
+  },
+  {
+   "qid": "Q060",
+   "title": "Research on the Construction of a Safety Risk Prevention and Control System for Open-Pit Coal Mine Transportation Operations Driven by Intelligent Technologies",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "http://ojs.s-p.sg/index.php/gcjsygl/article/download/31371/pdf"
+  },
+  {
+   "qid": "Q061",
+   "title": "具身智能驱动的智能制造应用发展研究 / Development of Intelligent Manufacturing Driven by Embodied Intelligence",
+   "identifier_type": "DOI",
+   "identifier_value": "10.15302/J-SSCAE-2025.04.016",
+   "url": "https://www.engineering.org.cn/sscae/EN/PDF/10.15302/J-SSCAE-2025.04.016"
+  },
+  {
+   "qid": "Q061",
+   "title": "Embodied AI Agents for Team Collaboration in Co-located Blue-Collar Work (CAI-BLUE)",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.nielsvanberkel.com/files/publications/chi2026f.pdf"
+  },
+  {
+   "qid": "Q061",
+   "title": "A support-design framework for cooperative robots systems in labor-intensive manufacturing processes",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://cris.unibo.it/retrieve/handle/11585/862613/e518efbc-09cb-4c8f-8064-bfa0c6f40e61/PP%20A%20support-design%20framework.pdf"
+  },
+  {
+   "qid": "Q061",
+   "title": "Advancing Human-Robot Collaboration: proposal of a methodology for the design of Symbiotic Assembly Workstations",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "http://www.qualityengineering.polito.it/content/download/1090/6031/file/final%20version.pdf"
+  },
+  {
+   "qid": "Q061",
+   "title": "Design and Control of Collaborative Robots For Smart Factories Under Industry 5.0 Paradigm",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.jetir.org/papers/JETIR2505520.pdf"
+  },
+  {
+   "qid": "Q062",
+   "title": "TRADE SECRET PROTECTION IN INDUSTRIAL IOT DATA SHARING: RISKS, REGULATORY GAPS, AND A CONCEPTUAL FRAMEWORK FOR PROTECTION",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://ijcope.org/wp-content/uploads/2026/06/TRADE-SECRET-PROTECTION-IN-INDUSTRIAL-IOT-DATA-SHARING-RISKS-REGULATORY-GAPS-AND-A-CONCEPTUAL-FRAMEWORK-FOR-PROTECTION.pdf"
+  },
+  {
+   "qid": "Q062",
+   "title": "Governance of IoT Data: Why the EU Data Act Will not Fulfill Its Objectives",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://academic.oup.com/grurint/article-pdf/72/2/120/49174428/ikac107.pdf"
+  },
+  {
+   "qid": "Q062",
+   "title": "Privacy-preserving and Secure Industrial Big Data Analytics: A Survey and the Research Framework",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://8.129.66.96/team/paper/iot2024.pdf"
+  },
+  {
+   "qid": "Q062",
+   "title": "When Your Thing Won't Behave: Security Governance in the Internet of Things",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://epub.uni-bayreuth.de/id/eprint/8261/1/s10796-024-10511-z.pdf"
+  },
+  {
+   "qid": "Q062",
+   "title": "Innovation and Consumer Protection in Internet of Things Ecosystems: Protecting End Users at the Crossroads between Consumer, Competition, and Data",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.law.kuleuven.be/ccm/PhD_Christof_Koolen/@@download/file/PhD%20-%20Innovation%20and%20Consumer%20Protection%20in%20IoT%20Ecosystems%20-%20Christof%20Koolen.pdf"
+  },
+  {
+   "qid": "Q063",
+   "title": "Precision Agriculture Using IoT and Remote Sensing: Enhancing Productivity and Resource Efficiency",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.agriculturescijournal.com/uploads/archives/20250616144856_3.pdf"
+  },
+  {
+   "qid": "Q063",
+   "title": "Applying IoT Sensors and Big Data to Improve Precision Crop Production: A Review",
+   "identifier_type": "DOI",
+   "identifier_value": "10.3390/agronomy13102603",
+   "url": "https://discovery.researcher.life/download/article/943abe382830352087f13ca8c11b2494/full-text"
+  },
+  {
+   "qid": "Q063",
+   "title": "Smart Sensors and Smart Data for Precision Agriculture: A Review",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.mdpi.com/1424-8220/24/8/2647/pdf?version=1713686700"
+  },
+  {
+   "qid": "Q063",
+   "title": "Robot-as-a-Service as a New Paradigm in Precision Farming",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://xplorestaging.ieee.org/ielx7/6287639/10380310/10478531.pdf?arnumber=10478531"
+  },
+  {
+   "qid": "Q063",
+   "title": "The integration of Internet of Things (IoT) in precision agriculture",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.abrinternationaljournal.org/articles/the-integration-of-internet-of-things-iot-in-precision-agriculture.pdf"
+  },
+  {
+   "qid": "Q063",
+   "title": "Precision Agriculture 2.0: Robotics, Sensors, and the Future of Smart Farming",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://agrimagazine.in/wp-content/uploads/2026/04/E-AGM-03-04-93-392-398.pdf"
+  },
+  {
+   "qid": "Q064",
+   "title": "Collaborative business model innovation to enable small farmers' access to smart farming technologies",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://cdn.sanity.io/files/uvdmji7k/production/76f7fdaf69064baac664f8e235c646e23a537043.pdf"
+  },
+  {
+   "qid": "Q064",
+   "title": "Economics of the Adoption of Artificial Intelligence–Based Digital Technologies in Agriculture",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1146/annurev-resource-101623-092515",
+   "url": "https://www.annualreviews.org/deliver/fulltext/resource/16/1/annurev-resource-101623-092515.pdf"
+  },
+  {
+   "qid": "Q064",
+   "title": "An overview of approaches and methodologies for supporting smallholders: ICT tools, blockchain, business models, sustainability indicators, simulation models",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://hal.science/hal-03938936/file/1-s2.0-S1877050922024784-main.pdf"
+  },
+  {
+   "qid": "Q064",
+   "title": "Farm digital tools: A systematic review of investments and environmental implications",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://pdfs.semanticscholar.org/9a7c/25c28790aa725f18a5192552de08df890745.pdf"
+  },
+  {
+   "qid": "Q064",
+   "title": "Landscape of the AgTech ecosystem for Smallholder Farmers in Colombia",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://dalberg.com/wp-content/uploads/2023/08/RF-AgTech-SHF-Col-landscape-Summary-Report.pdf"
+  },
+  {
+   "qid": "Q065",
+   "title": "Harnessing Generative AI (GenAI) for Automated Feedback in Higher Education: A Systematic Review",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://pdfs.semanticscholar.org/d715/54d003f7e5bcc08df89f0cc5b5c5ef51e3bc.pdf"
+  },
+  {
+   "qid": "Q065",
+   "title": "AI Assistance for Discretionary Work: Increasing Feedback Provision in Higher Education",
+   "identifier_type": "arXiv",
+   "identifier_value": "2606.03095",
+   "url": "https://arxiv.org/pdf/2606.03095.pdf"
+  },
+  {
+   "qid": "Q065",
+   "title": "LLteacher: A Tool for the Integration of Generative AI into Statistics Assignments",
+   "identifier_type": "arXiv",
+   "identifier_value": "2512.23053",
+   "url": "https://web3.arxiv.org/pdf/2512.23053"
+  },
+  {
+   "qid": "Q065",
+   "title": "A Tutorial on Teaching Data Analytics with Generative AI",
+   "identifier_type": "arXiv",
+   "identifier_value": "2411.07244",
+   "url": "https://arxiv.org/pdf/2411.07244"
+  },
+  {
+   "qid": "Q065",
+   "title": "GPT-4 as a Homework Tutor Can Improve Student Engagement and Learning Outcomes",
+   "identifier_type": "ACL Anthology",
+   "identifier_value": "2025.acl-long.1502",
+   "url": "https://preview.aclanthology.org/nschneid-metadata-dialog/2025.acl-long.1502.pdf"
+  },
+  {
+   "qid": "Q065",
+   "title": "Teaching Partner, Grading Assistant, Substitute Teacher: Three Ways Teachers Positioned an Artificial Intelligence Tool in Writing Instruction",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "http://files.eric.ed.gov/fulltext/ED671305.pdf"
+  },
+  {
+   "qid": "Q066",
+   "title": "The impact of generative AI on academic integrity of authentic assessments within a higher education context",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1111/bjet.13585",
+   "url": "https://bera-journals.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bjet.13585"
+  },
+  {
+   "qid": "Q066",
+   "title": "Not a Swiss Army Knife: Academics' Perceptions of Trade-Offs Around Generative Artificial Intelligence Use",
+   "identifier_type": "arXiv",
+   "identifier_value": "2405.00995",
+   "url": "https://arxiv.org/pdf/2405.00995"
+  },
+  {
+   "qid": "Q066",
+   "title": "Generative Artificial Intelligence in Tertiary Education: Assessment Redesign Principles and Considerations",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.mdpi.com/2227-7102/14/6/569/pdf?version=1716704365"
+  },
+  {
+   "qid": "Q066",
+   "title": "Reacting to Generative AI: Insights from Student and Faculty Discussions on Reddit",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://osf.io/h79ms/download"
+  },
+  {
+   "qid": "Q067",
+   "title": "Dynamic demand management and online tour planning for same-day delivery",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://af.unibw.de/download/143222/143222.pdf"
+  },
+  {
+   "qid": "Q067",
+   "title": "Data-driven dynamic pricing and inventory management of an omni-channel retailer in an uncertain demand environment",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://yanjiesong.github.io/files/eswa2023.pdf"
+  },
+  {
+   "qid": "Q067",
+   "title": "Dynamic Pricing and Demand Volatility: Evidence from Restaurant Food Delivery",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://pubwww.hbs.edu/faculty/Pages/download.aspx?name=23-007rev3-14-23.pdf"
+  },
+  {
+   "qid": "Q067",
+   "title": "Evaluating pricing strategies for premium delivery time windows",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.sciencedirect.com/science/article/pii/S2192437623000055"
+  },
+  {
+   "qid": "Q068",
+   "title": "Entry Into Two-Sided Markets Shaped By Platform-Guided Search",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://economics.princeton.edu/wp-content/uploads/2021/10/Entry_and_Platform_Guided_Search.pdf"
+  },
+  {
+   "qid": "Q068",
+   "title": "Algorithmic Harm in Consumer Markets",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://academic.oup.com/jla/article-pdf/15/1/1/51194257/laad003.pdf"
+  },
+  {
+   "qid": "Q068",
+   "title": "ALGORITHMIC SEARCH AND RECOMMENDER SYSTEMS IN THE DIGITAL SERVICES ACT",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.competitionpolicyinternational.com/wp-content/uploads/2022/12/6-ALGORITHMIC-SEARCH-AND-RECOMMENDER-SYSTEMS-IN-THE-DIGITAL-SERVICES-ACT-By-Oliver-Budzinski-Madlen-Karg.pdf"
+  },
+  {
+   "qid": "Q068",
+   "title": "From Algorithmic Transparency to Algorithmic Choice: European Perspectives on Recommender Systems and Platform Regulation",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1007/978-3-031-34804-4_3",
+   "url": "https://link.springer.com/content/pdf/10.1007/978-3-031-34804-4_3.pdf"
+  },
+  {
+   "qid": "Q068",
+   "title": "Recommenders' Originals: The Welfare Effects of the Dual Role of Platforms as Producers and Recommender Systems",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://discovery.ucl.ac.uk/id/eprint/10168774/1/Aridor%20Goncalves%202022,%20Recommenders%20Originals.pdf"
+  },
+  {
+   "qid": "Q068",
+   "title": "Data, Competition, and Digital Platforms",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://cowles.yale.edu/sites/default/files/2023-04/d2343r.pdf"
+  },
+  {
+   "qid": "Q069",
+   "title": "A Digital Twin Framework to Improve Urban Sustainability and Resiliency: The Case Study of Venice",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://air.iuav.it/retrieve/b0544615-28a6-4c6e-aa22-43c263ec0e19/land-14-00083-v2.pdf"
+  },
+  {
+   "qid": "Q069",
+   "title": "Digital Twins for Geospatial Decision-making",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://isprs-annals.copernicus.org/articles/X-4-2024/271/2024/isprs-annals-X-4-2024-271-2024.pdf"
+  },
+  {
+   "qid": "Q069",
+   "title": "Beyond Data, Towards Sustainability: a Sydney Case Study On Urban Digital Twins",
+   "identifier_type": "DOI",
+   "identifier_value": "10.1007/s41064-025-00337-y",
+   "url": "https://link.springer.com/content/pdf/10.1007/s41064-025-00337-y.pdf"
+  },
+  {
+   "qid": "Q069",
+   "title": "Smart city digital twins: a modular and adaptive architecture for real-time data-driven urban management",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://hal.science/hal-04714708/file/1571071812%20final.pdf"
+  },
+  {
+   "qid": "Q069",
+   "title": "Global perspectives on digital twin smart cities: Innovations, challenges, and pathways to a sustainable urban future",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://hal.science/hal-05038899/file/Digital_Twin_Smart_City_Final_r2__arx_.pdf"
+  },
+  {
+   "qid": "Q070",
+   "title": "AI-powered public surveillance systems: why we (might) need them and how we want them",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://mediatum.ub.tum.de/download/1768111/1768111.pdf"
+  },
+  {
+   "qid": "Q070",
+   "title": "BEING WATCHED: BEST PRACTICES FOR EMBEDDING ETHICS, TRANSPARENCY AND ACCOUNTABILITY IN SMART CITY SURVEILLANCE TECHNOLOGIES",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://texastipi.org/wp-content/uploads/2024/10/Being-Watched-Best-Practices-for-Embedding-Ethics-Transparency-and-Accountability-in-Smart-City-Surveillance-Technologies.pdf"
+  },
+  {
+   "qid": "Q070",
+   "title": "Privacy and Security Concerns in the Smart City",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://www.mdpi.com/2624-6511/6/1/27/pdf?version=1676018626"
+  },
+  {
+   "qid": "Q070",
+   "title": "FRT and access to public services: What acceptable uses in smart cities?",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://cris.unibo.it/retrieve/handle/11585/1035951/99df4af9-3ab3-46f7-b22a-cefa1a9f1646/NeroniRezende,+Public+service_clean_REVSpringer%20(1).pdf"
+  },
+  {
+   "qid": "Q070",
+   "title": "Governance Framework for Facial Recognition Systems in Japan",
+   "identifier_type": "未提供",
+   "identifier_value": "未提供",
+   "url": "https://hal.inria.fr/hal-03525276/file/497045_1_En_5_Chapter.pdf"
+  }
+ ]
+}

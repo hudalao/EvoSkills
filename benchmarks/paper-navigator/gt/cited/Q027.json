@@ -1,0 +1,192 @@
+[
+  {
+    "index": 1,
+    "title": "Intelligent Root Cause Localization in MicroService Systems: A Survey and New Perspectives",
+    "url": "https://doi.org/10.1145/3736755"
+  },
+  {
+    "index": 2,
+    "title": "Reconstruction-based contribution for process monitoring",
+    "url": "https://doi.org/10.1016/j.automatica.2009.02.027"
+  },
+  {
+    "index": 3,
+    "title": "Multivariate Time Series Anomaly Detection and Interpretation using Hierarchical Inter-Metric and Temporal Embedding",
+    "url": "https://doi.org/10.1145/3447548.3467075"
+  },
+  {
+    "index": 4,
+    "title": "Graph Neural Network-Based Anomaly Detection in Multivariate Time Series",
+    "url": "https://arxiv.org/abs/2106.06947"
+  },
+  {
+    "index": 5,
+    "title": "Measuring information transfer",
+    "url": "https://arxiv.org/abs/nlin/0001042"
+  },
+  {
+    "index": 6,
+    "title": "Finding the Direction of Disturbance Propagation in a Chemical Process Using Transfer Entropy",
+    "url": "https://doi.org/10.1109/TCST.2006.883234"
+  },
+  {
+    "index": 7,
+    "title": "Data-driven causal inference based on a modified transfer entropy",
+    "url": "https://doi.org/10.1016/j.compchemeng.2013.05.011"
+  },
+  {
+    "index": 8,
+    "title": "Root cause diagnosis of plant-wide oscillations using Granger causality",
+    "url": "https://doi.org/10.1016/j.jprocont.2013.11.009"
+  },
+  {
+    "index": 9,
+    "title": "Neural Granger Causality",
+    "url": "https://doi.org/10.1109/TPAMI.2021.3065601"
+  },
+  {
+    "index": 10,
+    "title": "Causal Inference-Based Root Cause Analysis for Online Service Systems with Intervention Recognition",
+    "url": "https://arxiv.org/abs/2206.05871"
+  },
+  {
+    "index": 11,
+    "title": "Causal structure based root cause analysis of outliers",
+    "url": "https://arxiv.org/abs/1912.02724"
+  },
+  {
+    "index": 12,
+    "title": "Root Cause Analysis of Outliers with Missing Structural Knowledge",
+    "url": "https://arxiv.org/abs/2406.05014"
+  },
+  {
+    "index": 13,
+    "title": "Counterfactual Root Cause Analysis via Anomaly Detection and Causal Graphs",
+    "url": "https://doi.org/10.1109/INDIN51400.2023.10218245"
+  },
+  {
+    "index": 14,
+    "title": "Root Cause Analysis In Microservice Using Neural Granger Causal Discovery",
+    "url": "https://arxiv.org/abs/2402.01140"
+  },
+  {
+    "index": 15,
+    "title": "A rule-based approach to fault diagnosis using the signed directed graph",
+    "url": "https://doi.org/10.1002/aic.690330703"
+  },
+  {
+    "index": 16,
+    "title": "Construction and Evolution of Fault Diagnosis Knowledge Graph in Industrial Process",
+    "url": "https://doi.org/10.1109/TIM.2022.3200429"
+  },
+  {
+    "index": 17,
+    "title": "Hybrid causal analysis combining a nonparametric multiplicative regression causality estimator with process connectivity information",
+    "url": "https://doi.org/10.1016/j.conengprac.2019.104140"
+  },
+  {
+    "index": 18,
+    "title": "Harnessing the Power of Knowledge Graphs to Improve Causal Discovery",
+    "url": "https://doi.org/10.1109/TETCI.2025.3540429"
+  },
+  {
+    "index": 19,
+    "title": "Ontology-Driven Learning of Bayesian Network for Causal Inference and Quality Assurance in Additive Manufacturing",
+    "url": "https://doi.org/10.1109/LRA.2021.3090020"
+  },
+  {
+    "index": 20,
+    "title": "Root-KGD: A Novel Framework for Root Cause Diagnosis Based on Knowledge Graph and Industrial Data",
+    "url": "https://arxiv.org/abs/2406.13664"
+  },
+  {
+    "index": 21,
+    "title": "A Novel Process Monitoring and Root Cause Diagnosis Strategy Based on Knowledge-Data-Integrated Causal Digraph for Complex Industrial Processes",
+    "url": "https://doi.org/10.1109/TIM.2024.3497056"
+  },
+  {
+    "index": 22,
+    "title": "Hierarchical Causal Graph-Based Fault Root Cause Diagnosis and Propagation Path Identification for Complex Industrial Process Monitoring",
+    "url": "https://doi.org/10.1109/TIM.2023.3268464"
+  },
+  {
+    "index": 23,
+    "title": "Causal Generative Model for Root-Cause Diagnosis and Fault Propagation Analysis in Industrial Processes",
+    "url": "https://doi.org/10.1109/TIM.2023.3273686"
+  },
+  {
+    "index": 24,
+    "title": "Chemical Process Alarm Root Cause Diagnosis Method Based on the Combination of Data-Knowledge-Driven Method and Time Retrospective Reasoning",
+    "url": "https://doi.org/10.1021/acsomega.2c01529"
+  },
+  {
+    "index": 25,
+    "title": "Combining informed data-driven anomaly detection with knowledge graphs for root cause analysis in predictive maintenance",
+    "url": "https://doi.org/10.1016/j.engappai.2025.110152"
+  },
+  {
+    "index": 26,
+    "title": "Root cause localization for wind turbines using physics guided multivariate graphical modeling and fault propagation analysis",
+    "url": "https://doi.org/10.1016/j.knosys.2024.111838"
+  },
+  {
+    "index": 27,
+    "title": "Hybrid TCDF with Knowledge Graph Verification for Temporal Causal Graphs in Industrial Systems",
+    "url": "https://doi.org/10.1109/RIVF68649.2025.11365038"
+  },
+  {
+    "index": 28,
+    "title": "TimeMKG: Knowledge-Infused Causal Reasoning for Multivariate Time Series Modeling",
+    "url": "https://arxiv.org/abs/2508.09630"
+  },
+  {
+    "index": 29,
+    "title": "Fusion Graph Structure Learning-Based Multivariate Time Series Anomaly Detection With Structured Prior Knowledge",
+    "url": "https://doi.org/10.1109/TIFS.2024.3459631"
+  },
+  {
+    "index": 30,
+    "title": "A Causality Mining and Knowledge Graph Based Method of Root Cause Diagnosis for Performance Anomaly in Cloud Applications",
+    "url": "https://doi.org/10.3390/app10062166"
+  },
+  {
+    "index": 31,
+    "title": "CausalKGPT: Industrial structure causal knowledge-enhanced large language model for cause analysis of quality problems in aerospace product manufacturing",
+    "url": "https://doi.org/10.1016/j.aei.2023.102333"
+  },
+  {
+    "index": 32,
+    "title": "Knowledge graph enhanced large language model framework for causal chain reasoning in industrial fault diagnosis",
+    "url": "https://doi.org/10.1016/j.eswa.2026.132027"
+  },
+  {
+    "index": 33,
+    "title": "Long causal chain-of-thought for compound fault diagnosis: enhancing hypergraph-based Causal-LLM intervention reasoning",
+    "url": "https://doi.org/10.1016/j.jmsy.2026.03.011"
+  },
+  {
+    "index": 34,
+    "title": "An adaptive causal path reasoning model for marine diesel engine fault diagnosis using knowledge graph",
+    "url": "https://doi.org/10.1016/j.knosys.2025.114772"
+  },
+  {
+    "index": 35,
+    "title": "PyRCA: A Library for Metric-based Root Cause Analysis",
+    "url": "https://arxiv.org/abs/2306.11417"
+  },
+  {
+    "index": 36,
+    "title": "DoWhy-GCM: An extension of DoWhy for causal inference in graphical causal models",
+    "url": "https://arxiv.org/abs/2206.06821"
+  },
+  {
+    "index": 37,
+    "title": "A plant-wide industrial process control problem",
+    "url": "https://doi.org/10.1016/0098-1354(93)80018-I"
+  },
+  {
+    "index": 38,
+    "title": "Causal discovery in a complex industrial system: A time series benchmark",
+    "url": "https://arxiv.org/abs/2310.18654"
+  }
+]

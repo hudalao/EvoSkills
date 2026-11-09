@@ -1,0 +1,182 @@
+[
+ {
+  "index": 1,
+  "title": "Analysis of factors controlling soil organic matter levels in Great Plains grasslands",
+  "url": "https://doi.org/10.2136/SSSAJ1987.03615995005100050015X"
+ },
+ {
+  "index": 2,
+  "title": "Global soil carbon projections are improved by modelling microbial processes",
+  "url": "https://doi.org/10.1038/NCLIMATE1951"
+ },
+ {
+  "index": 3,
+  "title": "Integrating microbial physiology and physio-chemical principles in soils with the MIcrobial-MIneral Carbon Stabilization (MIMICS) model",
+  "url": "https://doi.org/10.5194/BG-11-3899-2014"
+ },
+ {
+  "index": 4,
+  "title": "Toward more realistic projections of soil carbon dynamics by Earth system models",
+  "url": "https://doi.org/10.1002/2015GB005239"
+ },
+ {
+  "index": 5,
+  "title": "A semi-analytical solution to accelerate spin-up of a coupled carbon and nitrogen land model to steady state",
+  "url": "https://doi.org/10.5194/GMD-5-1259-2012"
+ },
+ {
+  "index": 6,
+  "title": "Matrix approach to land carbon cycle modeling: A case study with the Community Land Model",
+  "url": "https://doi.org/10.1111/gcb.13948"
+ },
+ {
+  "index": 7,
+  "title": "Matrix Approach to Land Carbon Cycle Modeling",
+  "url": "https://doi.org/10.1029/2022MS003008"
+ },
+ {
+  "index": 8,
+  "title": "Full Implementation of Matrix Approach to Biogeochemistry Module of CLM5",
+  "url": "https://doi.org/10.1029/2020MS002105"
+ },
+ {
+  "index": 9,
+  "title": "Matrix Approach to Accelerate Spin-Up of CLM5",
+  "url": "https://doi.org/10.1029/2023MS003625"
+ },
+ {
+  "index": 10,
+  "title": "Transient Traceability Analysis of Land Carbon Storage Dynamics: Procedures and Its Application to Two Forest Ecosystems",
+  "url": "https://doi.org/10.1002/2017MS001004"
+ },
+ {
+  "index": 11,
+  "title": "Machine learning for accelerating process-based computation of land biogeochemical cycles",
+  "url": "https://doi.org/10.1111/gcb.16623"
+ },
+ {
+  "index": 12,
+  "title": "Emulating grid-based forest carbon dynamics using machine learning: an LPJ-GUESS v4.1.1 application",
+  "url": "https://doi.org/10.5194/gmd-18-4317-2025"
+ },
+ {
+  "index": 13,
+  "title": "mLDNDCv1.0: a machine learning-based surrogate of LandscapeDNDC for optimising cropping systems in Denmark",
+  "url": "https://doi.org/10.5194/gmd-19-6335-2026"
+ },
+ {
+  "index": 14,
+  "title": "Mapping future soil carbon change and its uncertainty in croplands using simple surrogates of a complex farming system model",
+  "url": "https://doi.org/10.1016/J.GEODERMA.2018.09.041"
+ },
+ {
+  "index": 15,
+  "title": "Parameter calibration in global soil carbon models using surrogate-based optimization",
+  "url": "https://doi.org/10.5194/GMD-11-3027-2018"
+ },
+ {
+  "index": 16,
+  "title": "Parameter Optimization for Global Soil Carbon Simulations: Not a Simple Problem",
+  "url": "https://doi.org/10.1029/2024MS004577"
+ },
+ {
+  "index": 17,
+  "title": "Parameter Estimation in Land Surface Models: Challenges and Opportunities With Data Assimilation and Machine Learning",
+  "url": "https://doi.org/10.1029/2024MS004733"
+ },
+ {
+  "index": 18,
+  "title": "Deep Learning Optimizes Data-Driven Representation of Soil Organic Carbon in Earth System Model Over the Conterminous United States",
+  "url": "https://doi.org/10.3389/fdata.2020.00017"
+ },
+ {
+  "index": 19,
+  "title": "Microbial carbon use efficiency promotes global soil carbon storage",
+  "url": "https://doi.org/10.1038/s41586-023-06042-3"
+ },
+ {
+  "index": 20,
+  "title": "Biogeochemistry-Informed Neural Network (BINN v1.0) for improving accuracy of model prediction and scientific understanding of soil organic carbon storage",
+  "url": "https://doi.org/10.5194/gmd-19-6777-2026"
+ },
+ {
+  "index": 21,
+  "title": "Scientifically-Interpretable Reasoning Network (ScIReN): Discovering Hidden Relationships in the Carbon Cycle and Beyond",
+  "url": "https://arxiv.org/abs/2506.14054"
+ },
+ {
+  "index": 22,
+  "title": "KGML-ag: a modeling framework of knowledge-guided machine learning to simulate agroecosystems: a case study of estimating N2O emission using data from mesocosm experiments",
+  "url": "https://doi.org/10.5194/gmd-15-2839-2022"
+ },
+ {
+  "index": 23,
+  "title": "Knowledge-guided machine learning can improve carbon cycle quantification in agroecosystems",
+  "url": "https://doi.org/10.1038/s41467-023-43860-5"
+ },
+ {
+  "index": 24,
+  "title": "A flexible and efficient knowledge-guided machine learning data assimilation (KGML-DA) framework for agroecosystem prediction in the US Midwest",
+  "url": "https://doi.org/10.1016/j.rse.2023.113880"
+ },
+ {
+  "index": 25,
+  "title": "Differentiable modelling to unify machine learning and physical models for geosciences",
+  "url": "https://doi.org/10.1038/s43017-023-00450-9"
+ },
+ {
+  "index": 26,
+  "title": "From calibration to parameter learning: Harnessing the scaling effects of big data in geoscientific modeling",
+  "url": "https://arxiv.org/abs/2007.15751"
+ },
+ {
+  "index": 27,
+  "title": "Differentiable land model reveals global environmental controls on latent ecological functions",
+  "url": "https://doi.org/10.1038/s41467-026-73395-4"
+ },
+ {
+  "index": 28,
+  "title": "Coupling process-based models with machine learning for the prediction of soil carbon and nitrogen cycling",
+  "url": "https://doi.org/10.1016/j.envsoft.2026.107089"
+ },
+ {
+  "index": 29,
+  "title": "Using process-oriented model output to enhance machine learning-based soil organic carbon prediction in space and time",
+  "url": "https://doi.org/10.1016/j.scitotenv.2024.170778"
+ },
+ {
+  "index": 30,
+  "title": "Convergence in simulating global soil organic carbon by structurally different models after data assimilation",
+  "url": "https://doi.org/10.1111/gcb.17297"
+ },
+ {
+  "index": 31,
+  "title": "Using explainable AI to diagnose the representation of environmental drivers in process-based soil organic carbon models",
+  "url": "https://doi.org/10.5194/bg-22-7845-2025"
+ },
+ {
+  "index": 32,
+  "title": "Mining global soil carbon datasets: can modern machine learning uncover the missing pieces of process-based models?",
+  "url": "https://doi.org/10.1088/1748-9326/adfe83"
+ },
+ {
+  "index": 33,
+  "title": "Soil organic carbon models need independent time-series validation for reliable prediction",
+  "url": "https://doi.org/10.1038/s43247-023-00830-5"
+ },
+ {
+  "index": 34,
+  "title": "Learning vs. understanding: When does artificial intelligence outperform process-based modeling in soil organic carbon prediction?",
+  "url": "https://doi.org/10.1016/j.nbt.2024.03.001"
+ },
+ {
+  "index": 35,
+  "title": "Advancing Soil Organic Carbon Prediction: A Comprehensive Review of Technologies, AI, Process-Based and Hybrid Modelling Approaches",
+  "url": "https://doi.org/10.1002/advs.202504152"
+ },
+ {
+  "index": 36,
+  "title": "Deep learning and process understanding for data-driven Earth system science",
+  "url": "https://doi.org/10.1038/s41586-019-0912-1"
+ }
+]

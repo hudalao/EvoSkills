@@ -1,0 +1,242 @@
+[
+  {
+    "index": 1,
+    "title": "Digital twins in city planning",
+    "url": "https://doi.org/10.1038/s43588-024-00606-7"
+  },
+  {
+    "index": 2,
+    "title": "Navigating Urban Complexity: The Transformative Role of Digital Twins in Smart City Development",
+    "url": "https://doi.org/10.1016/j.scs.2024.105583"
+  },
+  {
+    "index": 3,
+    "title": "Trends in Digital Twin Framework Architectures for Smart Cities: A Case Study in Smart Mobility",
+    "url": "https://doi.org/10.3390/s24051665"
+  },
+  {
+    "index": 4,
+    "title": "A holistic approach to multi-scale and multi-perspective urban digital twin development",
+    "url": "https://doi.org/10.1016/j.compenvurbsys.2026.102432"
+  },
+  {
+    "index": 5,
+    "title": "Data integration across urban digital twin lifecycle: a comprehensive review of current initiatives",
+    "url": "https://doi.org/10.1080/19475683.2024.2416135"
+  },
+  {
+    "index": 6,
+    "title": "An OGC API–Based Framework for Scalable and Interoperable Urban Digital Twin Ecosystems: Insights from the OGC Urban Digital Twins Interoperability Pilot",
+    "url": "https://doi.org/10.5194/isprs-archives-xlviii-4-w15-2025-135-2025"
+  },
+  {
+    "index": 7,
+    "title": "Redefining urban digital twins for the federated data spaces ecosystem: A perspective",
+    "url": "https://doi.org/10.1177/23998083241302578"
+  },
+  {
+    "index": 8,
+    "title": "Common data environment for digital twins from building to city levels",
+    "url": "https://doi.org/10.1016/j.autcon.2025.106131"
+  },
+  {
+    "index": 9,
+    "title": "Multi-Domain Data Integration and Management for Enhancing Service-oriented Digital Twin for Infrastructure Operation and Maintenance",
+    "url": "https://doi.org/10.1016/j.dibe.2024.100475"
+  },
+  {
+    "index": 10,
+    "title": "The Development and Construction of City Information Modeling (CIM): A Survey from Data Perspective",
+    "url": "https://doi.org/10.3390/app15094696"
+  },
+  {
+    "index": 11,
+    "title": "Formalizing-modelling-utilizing ontology: A semantic framework for adaptive stakeholder-specific urban digital twins in urban planning processes",
+    "url": "https://doi.org/10.1177/23998083251329398"
+  },
+  {
+    "index": 12,
+    "title": "The Urban Model Platform: A Public Backbone for Modeling and Simulation in Urban Digital Twins",
+    "url": "https://arxiv.org/abs/2506.10964"
+  },
+  {
+    "index": 13,
+    "title": "Federated Digital Twins as an Enabling Technology for Collaborative Decision-Making",
+    "url": "https://doi.org/10.1145/3615979.3662152"
+  },
+  {
+    "index": 14,
+    "title": "Privacy and security challenges of the digital twin: systematic literature review",
+    "url": "https://doi.org/10.3897/jucs.114607"
+  },
+  {
+    "index": 15,
+    "title": "Digital twins in safety analysis, risk assessment and emergency management",
+    "url": "https://doi.org/10.1016/j.ress.2024.110040"
+  },
+  {
+    "index": 16,
+    "title": "Continuing from the Sendai Framework midterm: Opportunities for urban digital twins in disaster risk management",
+    "url": "https://doi.org/10.1016/j.ijdrr.2024.104310"
+  },
+  {
+    "index": 17,
+    "title": "Urban flooding digital twin system framework",
+    "url": "https://doi.org/10.1080/21642583.2025.2460432"
+  },
+  {
+    "index": 18,
+    "title": "City-scale digital twin framework for flood impact analysis: Integrating urban infrastructure and real-time data analytics",
+    "url": "https://doi.org/10.1016/j.uclim.2025.102640"
+  },
+  {
+    "index": 19,
+    "title": "Fire and smoke digital twin – A computational framework for modeling fire incident outcomes",
+    "url": "https://doi.org/10.1016/j.compenvurbsys.2024.102093"
+  },
+  {
+    "index": 20,
+    "title": "Digital twin representation of socio-technical systems through a distributed co-simulation approach for crisis management",
+    "url": "https://doi.org/10.1007/s10669-025-10035-0"
+  },
+  {
+    "index": 21,
+    "title": "Contaminant Dispersion Simulation in a Digital Twin Framework for Critical Infrastructure Protection",
+    "url": "https://arxiv.org/abs/2409.01253"
+  },
+  {
+    "index": 22,
+    "title": "Efficient urban flood control and drainage management framework based on digital twin technology and optimization scheduling algorithm",
+    "url": "https://doi.org/10.1016/j.watres.2025.123711"
+  },
+  {
+    "index": 23,
+    "title": "Participatory Framework for Urban Pluvial Flood Modeling in the Digital Twin Era",
+    "url": "https://doi.org/10.1016/j.scs.2024.105496"
+  },
+  {
+    "index": 24,
+    "title": "Exploring digital twins for transport planning: a review",
+    "url": "https://doi.org/10.1186/s12544-025-00713-0"
+  },
+  {
+    "index": 25,
+    "title": "Digital twin federation for urban mobility assessment: Definition, pillars, and a human-in-the-loop functional architecture",
+    "url": "https://doi.org/10.1016/j.tra.2026.105086"
+  },
+  {
+    "index": 26,
+    "title": "Scenario Modeling for Urban Road Emergency Management: A Cognitive Digital Twin-Based Method",
+    "url": "https://doi.org/10.1061/jccee5.cpeng-6190"
+  },
+  {
+    "index": 27,
+    "title": "Unjam: Closed-Loop Traffic Control with Digital Twins",
+    "url": "https://doi.org/10.23919/ECC65951.2025.11187066"
+  },
+  {
+    "index": 28,
+    "title": "MTRL-enhanced simulation-based optimization for improving traffic resilience to urban flooding",
+    "url": "https://doi.org/10.1080/21680566.2026.2686383"
+  },
+  {
+    "index": 29,
+    "title": "A digital twin framework for urban parking management and mobility forecasting",
+    "url": "https://doi.org/10.1038/s41467-025-65306-w"
+  },
+  {
+    "index": 30,
+    "title": "An AI-Reinforced Traffic Digital Twin for Testing Emergency Vehicle Interventions",
+    "url": "https://doi.org/10.1007/s42421-026-00166-4"
+  },
+  {
+    "index": 31,
+    "title": "Digital twin modelling approaches and applications in urban infrastructure operations and maintenance",
+    "url": "https://doi.org/10.1016/j.autcon.2025.106445"
+  },
+  {
+    "index": 32,
+    "title": "Digital twin for smart metro service platform: Evaluating long-term tunnel structural performance",
+    "url": "https://doi.org/10.1016/j.autcon.2024.105713"
+  },
+  {
+    "index": 33,
+    "title": "Modeling heterogeneous spatiotemporal pavement data for condition prediction and preventive maintenance in digital twin-enabled highway management",
+    "url": "https://doi.org/10.1016/j.autcon.2025.106134"
+  },
+  {
+    "index": 34,
+    "title": "Transforming the maintenance of underground infrastructure through Digital Twins: State of the art and outlook",
+    "url": "https://doi.org/10.1016/j.tust.2025.106508"
+  },
+  {
+    "index": 35,
+    "title": "Digital twin-based resilience analysis and emergency maintenance with generative AI of smart urban metro systems",
+    "url": "https://doi.org/10.1016/j.ress.2025.111537"
+  },
+  {
+    "index": 36,
+    "title": "Digital twin-based resilience evaluation and intelligent strategies of smart urban water distribution networks for emergency management",
+    "url": "https://doi.org/10.1016/j.rcns.2025.02.001"
+  },
+  {
+    "index": 37,
+    "title": "Connecting digital twins to control collections systems and water resource recovery facilities: From siloed to integrated urban (waste)water management",
+    "url": "https://doi.org/10.2166/wpt.2024.128"
+  },
+  {
+    "index": 38,
+    "title": "What Have Urban Digital Twins Contributed to Urban Planning and Decision Making? From a Systematic Literature Review Toward a Socio-Technical Research and Development Agenda",
+    "url": "https://doi.org/10.3390/smartcities8010032"
+  },
+  {
+    "index": 39,
+    "title": "Assessing governance implications of city digital twin technology: A maturity model approach",
+    "url": "https://doi.org/10.1016/j.techfore.2024.123409"
+  },
+  {
+    "index": 40,
+    "title": "Developing an assessment governance framework for urban digital twins: Insights from smart cities",
+    "url": "https://doi.org/10.1016/j.cities.2024.105558"
+  },
+  {
+    "index": 41,
+    "title": "Digital twin for supporting decision-making and stakeholder collaboration in urban decarbonization processes. A participatory development in Gothenburg",
+    "url": "https://doi.org/10.1177/23998083241286030"
+  },
+  {
+    "index": 42,
+    "title": "Data-Driven Urban Digital Twins and Critical Infrastructure Under Climate Change: A Review of Frameworks and Applications",
+    "url": "https://doi.org/10.17645/up.10109"
+  },
+  {
+    "index": 43,
+    "title": "Towards fully automated city operations: Integrating agentic AI with urban digital twins",
+    "url": "https://doi.org/10.1016/j.compenvurbsys.2026.102449"
+  },
+  {
+    "index": 44,
+    "title": "AI Agent-Based Intelligent Urban Digital Twin (I-UDT): Concept, Methodology, and Case Studies",
+    "url": "https://doi.org/10.3390/smartcities8010028"
+  },
+  {
+    "index": 45,
+    "title": "Insurmountable limitations of city-scale digital twins? On urban knowledge and planning",
+    "url": "https://doi.org/10.1007/s43762-025-00174-0"
+  },
+  {
+    "index": 46,
+    "title": "The evaluation of the national digital twin project in South Korea: Pilot project targeting 10 local governments",
+    "url": "https://doi.org/10.1016/j.cities.2026.107060"
+  },
+  {
+    "index": 47,
+    "title": "Representing and assessing distributed situation awareness in multi-agency disaster response: A hypergraph-based methodology",
+    "url": "https://doi.org/10.1016/j.ijdrr.2024.104747"
+  },
+  {
+    "index": 48,
+    "title": "Digital twin construction with a focus on human twin interfaces",
+    "url": "https://doi.org/10.1016/j.autcon.2024.105924"
+  }
+]

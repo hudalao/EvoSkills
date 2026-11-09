@@ -1,0 +1,207 @@
+[
+  {
+    "index": 1,
+    "title": "An Overview of Power System Flexibility: High Renewable Energy Penetration Scenarios",
+    "url": "https://doi.org/10.3390/en17246393"
+  },
+  {
+    "index": 2,
+    "title": "Improving Reliability and Stability of the Power Systems: A Comprehensive Review on the Role of Energy Storage Systems to Enhance Flexibility",
+    "url": "https://doi.org/10.1109/ACCESS.2024.3476959"
+  },
+  {
+    "index": 3,
+    "title": "Recent developments of demand-side management towards flexible DER-rich power systems: A systematic review",
+    "url": "https://doi.org/10.1049/gtd2.13204"
+  },
+  {
+    "index": 4,
+    "title": "Review of virtual power plant operations: Resource coordination and multidimensional interaction",
+    "url": "https://doi.org/10.1016/j.apenergy.2023.122284"
+  },
+  {
+    "index": 5,
+    "title": "Review on Virtual Power Plants/Virtual Aggregators: Concepts, applications, prospects and operation strategies",
+    "url": "https://doi.org/10.1016/j.rser.2024.115242"
+  },
+  {
+    "index": 6,
+    "title": "A systematic review of Virtual Power Plant configurations and their interaction with electricity, carbon, and flexibility markets",
+    "url": "https://doi.org/10.1016/j.rser.2025.116448"
+  },
+  {
+    "index": 7,
+    "title": "Emerging demand-side flexible resources accelerate China's power system transition toward carbon neutrality",
+    "url": "https://doi.org/10.1016/j.isci.2025.112372"
+  },
+  {
+    "index": 8,
+    "title": "Chinese power structure in 2050 considering energy storage and demand response under high renewable power penetration ratio",
+    "url": "https://doi.org/10.1016/j.jenvman.2024.123805"
+  },
+  {
+    "index": 9,
+    "title": "Establishing best practices for modeling multi-day energy storage in deeply decarbonized energy systems",
+    "url": "https://doi.org/10.1088/2753-3751/ad96bd"
+  },
+  {
+    "index": 10,
+    "title": "Stochastic Flexibility Evaluation for Virtual Power Plants by Aggregating Distributed Energy Resources",
+    "url": "https://doi.org/10.17775/cseejpes.2021.07410"
+  },
+  {
+    "index": 11,
+    "title": "Aggregated Feasible Active Power Region for Distributed Energy Resources With a Distributionally Robust Joint Probabilistic Guarantee",
+    "url": "https://doi.org/10.1109/tpwrs.2024.3392622"
+  },
+  {
+    "index": 12,
+    "title": "Real-time operation strategy of virtual power plants with optimal power disaggregation among heterogeneous resources",
+    "url": "https://doi.org/10.1016/j.apenergy.2024.122876"
+  },
+  {
+    "index": 13,
+    "title": "Robust decomposition and tracking strategy for demand response enhanced virtual power plants",
+    "url": "https://doi.org/10.1016/j.apenergy.2024.123944"
+  },
+  {
+    "index": 14,
+    "title": "Flexibility Aggregation and Power Disaggregation of Distributed Shared Energy Storage for Coordinating Virtual Power Plant in Regulation Market",
+    "url": "https://doi.org/10.1109/TSTE.2025.3604395"
+  },
+  {
+    "index": 15,
+    "title": "Multi-time scale scheduling for virtual power plants: Integrating the flexibility of power generation and multi-user loads while considering the capacity degradation of energy storage systems",
+    "url": "https://doi.org/10.1016/j.apenergy.2024.122980"
+  },
+  {
+    "index": 16,
+    "title": "Research on day-ahead optimal dispatching of virtual power plants considering the coordinated operation of diverse flexible loads and new energy",
+    "url": "https://doi.org/10.1016/j.energy.2024.131235"
+  },
+  {
+    "index": 17,
+    "title": "Coordinated Operation Strategy of Virtual Power Plant Based on Two-Layer Game Approach",
+    "url": "https://doi.org/10.1109/TSG.2024.3440315"
+  },
+  {
+    "index": 18,
+    "title": "Incentive Compatible Pricing for Enhancing the Controllability of Price-Based Demand Response",
+    "url": "https://doi.org/10.1109/TSG.2023.3279415"
+  },
+  {
+    "index": 19,
+    "title": "Stacking Revenues From Flexible DERs in Multi-Scale Markets Using Tri-Level Optimization",
+    "url": "https://doi.org/10.1109/TPWRS.2023.3286178"
+  },
+  {
+    "index": 20,
+    "title": "Aggregation Model and Market Mechanism for Virtual Power Plant Participation in Inertia and Primary Frequency Response",
+    "url": "https://arxiv.org/abs/2503.04854"
+  },
+  {
+    "index": 21,
+    "title": "Aggregator of Electric Vehicles Bidding in Nordic FCR-D Markets: A Chance-Constrained Program",
+    "url": "https://arxiv.org/abs/2404.12818"
+  },
+  {
+    "index": 22,
+    "title": "Optimal Planning of Multi-Microgrid System With Shared Energy Storage Based on Capacity Leasing and Energy Sharing",
+    "url": "https://doi.org/10.1109/TSG.2024.3452064"
+  },
+  {
+    "index": 23,
+    "title": "Research on interval optimization of power system considering shared energy storage and demand response",
+    "url": "https://doi.org/10.1016/j.est.2024.111273"
+  },
+  {
+    "index": 24,
+    "title": "Research on the collaborative operation strategy of shared energy storage and virtual power plant based on double layer optimization",
+    "url": "https://doi.org/10.1016/j.est.2024.113997"
+  },
+  {
+    "index": 25,
+    "title": "Optimal Operation with Dynamic Partitioning Strategy for Centralized Shared Energy Storage Station with Integration of Large-scale Renewable Energy",
+    "url": "https://doi.org/10.35833/mpce.2023.000345"
+  },
+  {
+    "index": 26,
+    "title": "Distributed Energy Resource and Energy Storage Investment for Enhancing Flexibility Under a TSO-DSO Coordination Framework",
+    "url": "https://doi.org/10.1109/TASE.2023.3272532"
+  },
+  {
+    "index": 27,
+    "title": "Real-Time Economic Dispatch Approach for Wholesale Energy Market With Multi-Transmission-Node DER Aggregation",
+    "url": "https://doi.org/10.1109/TPWRS.2024.3507750"
+  },
+  {
+    "index": 28,
+    "title": "Customer baseline load estimation for virtual power plants in demand response: An attention mechanism-based generative adversarial networks approach",
+    "url": "https://doi.org/10.1016/j.apenergy.2023.122544"
+  },
+  {
+    "index": 29,
+    "title": "Adaptive Horizontal Federated Learning-Based Demand Response Baseline Load Estimation",
+    "url": "https://doi.org/10.1109/TSG.2023.3318418"
+  },
+  {
+    "index": 30,
+    "title": "Distributed differentially private energy management of virtual power plants",
+    "url": "https://doi.org/10.1016/j.epsr.2024.110687"
+  },
+  {
+    "index": 31,
+    "title": "Harnessing Virtual Power Plants Reliably: Enabling tools for increased observability, controllability, operation, and aggregation of distributed energy resources",
+    "url": "https://doi.org/10.1109/MELE.2025.3534265"
+  },
+  {
+    "index": 32,
+    "title": "Large-Scale Interconnected and Heterogeneous Coordinated Virtual Power Plants in China: Carbon Reduction and Safe Supply",
+    "url": "https://doi.org/10.1109/MPE.2025.3591422"
+  },
+  {
+    "index": 33,
+    "title": "Beyond Demand Response: Integrating Aggregated DERs in Western Australia's Wholesale Electricity Market",
+    "url": "https://doi.org/10.1109/mpe.2024.3457542"
+  },
+  {
+    "index": 34,
+    "title": "Data centres as a source of flexibility for power systems",
+    "url": "https://doi.org/10.1016/j.egyr.2025.03.020"
+  },
+  {
+    "index": 35,
+    "title": "AI data centres as grid-interactive assets",
+    "url": "https://doi.org/10.1038/s41560-025-01927-1"
+  },
+  {
+    "index": 36,
+    "title": "Two-Stage TSO-DSO Services Provision Framework for Electric Vehicle Coordination",
+    "url": "https://arxiv.org/abs/2507.18110"
+  },
+  {
+    "index": 37,
+    "title": "A hierarchical optimization approach to maximize hosting capacity for electric vehicles and renewable energy sources through demand response and transmission expansion planning",
+    "url": "https://doi.org/10.1038/s41598-024-66688-5"
+  },
+  {
+    "index": 38,
+    "title": "Demand Response Potential Forecasting: A Systematic Review of Methods, Challenges, and Future Directions",
+    "url": "https://doi.org/10.3390/en18195217"
+  },
+  {
+    "index": 39,
+    "title": "Optimal Siting and Sizing of Hybrid Energy Storage Systems in High-Penetration Renewable Energy Systems",
+    "url": "https://doi.org/10.3390/en18092196"
+  },
+  {
+    "index": 40,
+    "title": "Research on Business Models of Virtual Power Plants and Roadmap for VPPs in China",
+    "url": "https://doi.org/10.1109/PowerCon66300.2025.11294496"
+  },
+  {
+    "index": 41,
+    "title": "Value-based Data Governance and Security Protection for Virtual Power Plants Aggregated by Demand-side Flexible Loads",
+    "url": "https://doi.org/10.35833/mpce.2025.000787"
+  }
+]

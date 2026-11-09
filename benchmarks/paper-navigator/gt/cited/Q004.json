@@ -1,0 +1,197 @@
+[
+ {
+  "index": 1,
+  "title": "Self-Refine: Iterative Refinement with Self-Feedback",
+  "url": "https://arxiv.org/abs/2303.17651"
+ },
+ {
+  "index": 2,
+  "title": "Reflexion: language agents with verbal reinforcement learning",
+  "url": "https://arxiv.org/abs/2303.11366"
+ },
+ {
+  "index": 3,
+  "title": "Is Self-Repair a Silver Bullet for Code Generation?",
+  "url": "https://arxiv.org/abs/2306.09896"
+ },
+ {
+  "index": 4,
+  "title": "Large Language Models Cannot Self-Correct Reasoning Yet",
+  "url": "https://arxiv.org/abs/2310.01798"
+ },
+ {
+  "index": 5,
+  "title": "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+  "url": "https://arxiv.org/abs/2305.11738"
+ },
+ {
+  "index": 6,
+  "title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate",
+  "url": "https://arxiv.org/abs/2305.14325"
+ },
+ {
+  "index": 7,
+  "title": "Self-Collaboration Code Generation via ChatGPT",
+  "url": "https://arxiv.org/abs/2304.07590"
+ },
+ {
+  "index": 8,
+  "title": "MetaGPT: Meta Programming for Multi-Agent Collaborative Framework",
+  "url": "https://arxiv.org/abs/2308.00352"
+ },
+ {
+  "index": 9,
+  "title": "ChatDev: Communicative Agents for Software Development",
+  "url": "https://arxiv.org/abs/2307.07924"
+ },
+ {
+  "index": 10,
+  "title": "MapCoder: Multi-Agent Code Generation for Competitive Problem Solving",
+  "url": "https://arxiv.org/abs/2405.11403"
+ },
+ {
+  "index": 11,
+  "title": "CodeR: Issue Resolving with Multi-Agent and Task Graphs",
+  "url": "https://arxiv.org/abs/2406.01304"
+ },
+ {
+  "index": 12,
+  "title": "MASAI: Modular Architecture for Software-engineering AI Agents",
+  "url": "https://arxiv.org/abs/2406.11638"
+ },
+ {
+  "index": 13,
+  "title": "Self-Organized Agents: A LLM Multi-Agent Framework toward Ultra Large-Scale Code Generation and Optimization",
+  "url": "https://arxiv.org/abs/2404.02183"
+ },
+ {
+  "index": 14,
+  "title": "Scaling Large-Language-Model-based Multi-Agent Collaboration",
+  "url": "https://arxiv.org/abs/2406.07155"
+ },
+ {
+  "index": 15,
+  "title": "Understanding and Bridging the Planner-Coder Gap: A Systematic Study on the Robustness of Multi-Agent Systems for Code Generation",
+  "url": "https://arxiv.org/abs/2510.10460"
+ },
+ {
+  "index": 16,
+  "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+  "url": "https://arxiv.org/abs/2210.03629"
+ },
+ {
+  "index": 17,
+  "title": "Executable Code Actions Elicit Better LLM Agents",
+  "url": "https://arxiv.org/abs/2402.01030"
+ },
+ {
+  "index": 18,
+  "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+  "url": "https://arxiv.org/abs/2405.15793"
+ },
+ {
+  "index": 19,
+  "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+  "url": "https://arxiv.org/abs/2308.08155"
+ },
+ {
+  "index": 20,
+  "title": "CodeT: Code Generation with Generated Tests",
+  "url": "https://arxiv.org/abs/2207.10397"
+ },
+ {
+  "index": 21,
+  "title": "Teaching Large Language Models to Self-Debug",
+  "url": "https://arxiv.org/abs/2304.05128"
+ },
+ {
+  "index": 22,
+  "title": "Debug like a Human: A Large Language Model Debugger via Verifying Runtime Execution Step by Step",
+  "url": "https://arxiv.org/abs/2402.16906"
+ },
+ {
+  "index": 23,
+  "title": "AgentCoder: Multi-Agent-based Code Generation with Iterative Testing and Optimisation",
+  "url": "https://arxiv.org/abs/2312.13010"
+ },
+ {
+  "index": 24,
+  "title": "Self-Evolving Multi-Agent Collaboration Networks for Software Development",
+  "url": "https://arxiv.org/abs/2410.16946"
+ },
+ {
+  "index": 25,
+  "title": "RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning",
+  "url": "https://arxiv.org/abs/2410.02089"
+ },
+ {
+  "index": 26,
+  "title": "SWT-Bench: Testing and Validating Real-World Bug-Fixes with Code Agents",
+  "url": "https://arxiv.org/abs/2406.12952"
+ },
+ {
+  "index": 27,
+  "title": "Rethinking the Value of Agent-Generated Tests for LLM-Based Software Engineering Agents",
+  "url": "https://arxiv.org/abs/2602.07900"
+ },
+ {
+  "index": 28,
+  "title": "Large Language Monkeys: Scaling Inference Compute with Repeated Sampling",
+  "url": "https://arxiv.org/abs/2407.21787"
+ },
+ {
+  "index": 29,
+  "title": "The Limits of Inference Scaling Through Resampling",
+  "url": "https://arxiv.org/abs/2411.17501"
+ },
+ {
+  "index": 30,
+  "title": "Are More LLM Calls All You Need? Towards Scaling Laws of Compound Inference Systems",
+  "url": "https://arxiv.org/abs/2403.02419"
+ },
+ {
+  "index": 31,
+  "title": "Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents",
+  "url": "https://arxiv.org/abs/2408.07060"
+ },
+ {
+  "index": 32,
+  "title": "Why Do Multi-Agent LLM Systems Fail?",
+  "url": "https://arxiv.org/abs/2503.13657"
+ },
+ {
+  "index": 33,
+  "title": "Agentless: Demystifying LLM-based Software Engineering Agents",
+  "url": "https://arxiv.org/abs/2407.01489"
+ },
+ {
+  "index": 34,
+  "title": "Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate",
+  "url": "https://arxiv.org/abs/2509.05396"
+ },
+ {
+  "index": 35,
+  "title": "Feedback Over Form: Why Execution Feedback Matters More Than Pipeline Topology in 1-3B Code Generation",
+  "url": "https://arxiv.org/abs/2604.21950"
+ },
+ {
+  "index": 36,
+  "title": "When Single-Agent with Skills Replace Multi-Agent Systems and When They Fail",
+  "url": "https://arxiv.org/abs/2601.04748"
+ },
+ {
+  "index": 37,
+  "title": "Enhancing LLM Code Generation: A Systematic Evaluation of Multi-Agent Collaboration and Runtime Debugging for Improved Accuracy, Reliability, and Latency",
+  "url": "https://arxiv.org/abs/2505.02133"
+ },
+ {
+  "index": 38,
+  "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+  "url": "https://arxiv.org/abs/2310.06770"
+ },
+ {
+  "index": 39,
+  "title": "LLM-Based Multi-Agent Systems for Software Engineering: Literature Review, Vision, and the Road Ahead",
+  "url": "https://arxiv.org/abs/2404.04834"
+ }
+]

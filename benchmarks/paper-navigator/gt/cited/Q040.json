@@ -1,0 +1,167 @@
+[
+  {
+    "index": 1,
+    "title": "Coordinating Hundreds of Cooperative, Autonomous Vehicles in Warehouses",
+    "url": "https://doi.org/10.1609/aimag.v29i1.2082"
+  },
+  {
+    "index": 2,
+    "title": "Robotized and Automated Warehouse Systems: Review and Recent Developments",
+    "url": "https://doi.org/10.1287/TRSC.2018.0873"
+  },
+  {
+    "index": 3,
+    "title": "Decision Rules for Robotic Mobile Fulfillment Systems",
+    "url": "https://arxiv.org/abs/1801.06703"
+  },
+  {
+    "index": 4,
+    "title": "Estimating performance in a Robotic Mobile Fulfillment System",
+    "url": "https://doi.org/10.1016/j.ejor.2016.06.063"
+  },
+  {
+    "index": 5,
+    "title": "Conflict-based search for optimal multi-agent pathfinding",
+    "url": "https://doi.org/10.1016/j.artint.2014.11.006"
+  },
+  {
+    "index": 6,
+    "title": "MAPF-LNS2: Fast Repairing for Multi-Agent Path Finding via Large Neighborhood Search",
+    "url": "https://doi.org/10.1609/aaai.v36i9.21266"
+  },
+  {
+    "index": 7,
+    "title": "LaCAM: Search-Based Algorithm for Quick Multi-Agent Pathfinding",
+    "url": "https://arxiv.org/abs/2211.13432"
+  },
+  {
+    "index": 8,
+    "title": "Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks",
+    "url": "https://arxiv.org/abs/1705.10868"
+  },
+  {
+    "index": 9,
+    "title": "Lifelong Multi-Agent Path Finding in Large-Scale Warehouses",
+    "url": "https://arxiv.org/abs/2005.07371"
+  },
+  {
+    "index": 10,
+    "title": "Windowed MAPF with Completeness Guarantees",
+    "url": "https://arxiv.org/abs/2410.01798"
+  },
+  {
+    "index": 11,
+    "title": "Traffic Flow Optimisation for Lifelong Multi-Agent Path Finding",
+    "url": "https://arxiv.org/abs/2308.11234"
+  },
+  {
+    "index": 12,
+    "title": "Guidance Graph Optimization for Lifelong Multi-Agent Path Finding",
+    "url": "https://arxiv.org/abs/2402.01446"
+  },
+  {
+    "index": 13,
+    "title": "Online Guidance Graph Optimization for Lifelong Multi-Agent Path Finding",
+    "url": "https://arxiv.org/abs/2411.16506"
+  },
+  {
+    "index": 14,
+    "title": "Multi-Robot Coordination and Layout Design for Automated Warehousing",
+    "url": "https://arxiv.org/abs/2305.06436"
+  },
+  {
+    "index": 15,
+    "title": "Congestion Prediction for Large Fleets of Mobile Robots",
+    "url": "https://doi.org/10.1109/ICRA48891.2023.10161554"
+  },
+  {
+    "index": 16,
+    "title": "Standby-Based Deadlock Avoidance Method for Multi-Agent Pickup and Delivery Tasks",
+    "url": "https://arxiv.org/abs/2201.06014"
+  },
+  {
+    "index": 17,
+    "title": "Decentralized Control of Multi-AGV Systems in Autonomous Warehousing Applications",
+    "url": "https://doi.org/10.1109/TASE.2016.2603781"
+  },
+  {
+    "index": 18,
+    "title": "Evaluating battery charging and swapping strategies in a robotic mobile fulfillment system",
+    "url": "https://doi.org/10.1016/j.ejor.2017.12.008"
+  },
+  {
+    "index": 19,
+    "title": "Does battery management matter? Performance evaluation and operating policies in a self-climbing robotic warehouse",
+    "url": "https://doi.org/10.1016/j.ejor.2023.06.025"
+  },
+  {
+    "index": 20,
+    "title": "The role of energy consumption in robotic mobile fulfillment systems: Performance evaluation and operating policies with dynamic priority",
+    "url": "https://doi.org/10.1016/j.omega.2024.103168"
+  },
+  {
+    "index": 21,
+    "title": "A matheuristic for AGV scheduling with battery constraints",
+    "url": "https://doi.org/10.1016/j.ejor.2021.08.008"
+  },
+  {
+    "index": 22,
+    "title": "Anytime Multi-Task Multi-Agent Pickup and Delivery Under Energy Constraint",
+    "url": "https://doi.org/10.1109/LRA.2024.3471389"
+  },
+  {
+    "index": 23,
+    "title": "Battery Management for Lifelong Operation of Warehouse Robots Under Dynamic Demand",
+    "url": "https://doi.org/10.1109/TASE.2026.3710140"
+  },
+  {
+    "index": 24,
+    "title": "Multiagent Q-Learning Approach for the Recharging Scheduling of Electric Automated Guided Vehicles in Container Terminals",
+    "url": "https://doi.org/10.1287/trsc.2022.0113"
+  },
+  {
+    "index": 25,
+    "title": "Market-based multiagent system for task allocation and battery charging of AGVs using collision-free path",
+    "url": "https://doi.org/10.1080/00207543.2025.2489752"
+  },
+  {
+    "index": 26,
+    "title": "Persistent and Robust Execution of MAPF Schedules in Warehouses",
+    "url": "https://doi.org/10.1109/LRA.2019.2894217"
+  },
+  {
+    "index": 27,
+    "title": "Receding Horizon Re-Ordering of Multi-Agent Execution Schedules",
+    "url": "https://arxiv.org/abs/2312.04190"
+  },
+  {
+    "index": 28,
+    "title": "A Real-Time Rescheduling Algorithm for Multi-robot Plan Execution",
+    "url": "https://arxiv.org/abs/2403.18145"
+  },
+  {
+    "index": 29,
+    "title": "Bidirectional Temporal Plan Graph: Enabling Switchable Passing Orders for More Efficient Multi-Agent Path Finding Plan Execution",
+    "url": "https://arxiv.org/abs/2401.00315"
+  },
+  {
+    "index": 30,
+    "title": "Integrated Task Assignment and Path Planning for Capacitated Multi-Agent Pickup and Delivery",
+    "url": "https://arxiv.org/abs/2110.14891"
+  },
+  {
+    "index": 31,
+    "title": "Flow-Based Task Assignment for Large-Scale Online Multi-Agent Pickup and Delivery",
+    "url": "https://arxiv.org/abs/2508.05890"
+  },
+  {
+    "index": 32,
+    "title": "Dynamic policies for resource reallocation in a robotic mobile fulfillment system with time-varying demand",
+    "url": "https://doi.org/10.1016/j.ejor.2021.09.001"
+  },
+  {
+    "index": 33,
+    "title": "Scaling Lifelong Multi-Agent Path Finding to More Realistic Settings: Research Challenges and Opportunities",
+    "url": "https://arxiv.org/abs/2404.16162"
+  }
+]

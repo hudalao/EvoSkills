@@ -1,0 +1,172 @@
+[
+  {
+    "index": 1,
+    "title": "Embodied Intelligence for Flexible Manufacturing: A Survey",
+    "url": "https://arxiv.org/abs/2602.06966"
+  },
+  {
+    "index": 2,
+    "title": "Embodied intelligent industrial robotics: Framework and techniques",
+    "url": "https://arxiv.org/abs/2505.09305"
+  },
+  {
+    "index": 3,
+    "title": "Towards embodied AI in manufacturing: Review, Evaluation, and Future directions",
+    "url": "https://doi.org/10.1016/j.rcim.2026.103372"
+  },
+  {
+    "index": 4,
+    "title": "Embodied AI: A Foundation for Intelligent and Autonomous Manufacturing",
+    "url": "https://doi.org/10.1016/j.eng.2025.12.026"
+  },
+  {
+    "index": 5,
+    "title": "Development of Intelligent Manufacturing Driven by Embodied Intelligence（具身智能驱动的智能制造应用发展研究）",
+    "url": "https://www.engineering.org.cn/sscae/CN/10.15302/J-SSCAE-2025.04.016"
+  },
+  {
+    "index": 6,
+    "title": "A Factory-Floor Deployment Case Study of VLA Pipelines for Industrial Packaging Task: Workflow, Failures, and Lessons",
+    "url": "https://arxiv.org/abs/2605.27461"
+  },
+  {
+    "index": 7,
+    "title": "Transferring Vision-Language-Action Models to Industry Applications: Architectures, Performance, and Challenges",
+    "url": "https://arxiv.org/abs/2509.23121"
+  },
+  {
+    "index": 8,
+    "title": "Embodied AI for Smart Robotic Cells in Manufacturing Applications",
+    "url": "https://doi.org/10.1609/aaai.v39i27.35088"
+  },
+  {
+    "index": 9,
+    "title": "A framework for reconfigurable production line changeover task planning based on large language model",
+    "url": "https://doi.org/10.1038/s41598-025-32657-9"
+  },
+  {
+    "index": 10,
+    "title": "Reconfigurable machine tending with collaborative robots: leveraging ISO 21919 for enhancing flexibility and safety",
+    "url": "https://doi.org/10.1080/0951192X.2025.2496901"
+  },
+  {
+    "index": 11,
+    "title": "Leveraging large language models for efficient scheduling in Human–Robot collaborative flexible manufacturing systems",
+    "url": "https://doi.org/10.1038/s44334-025-00061-w"
+  },
+  {
+    "index": 12,
+    "title": "LLM-enhanced embodied multi-agent manufacturing system: A novel self-organizing production paradigm for embodied perception, embodied analysis and embodied decision",
+    "url": "https://doi.org/10.1016/j.jmsy.2025.12.016"
+  },
+  {
+    "index": 13,
+    "title": "From Observation to Action: Latent Action-based Primitive Segmentation for VLA Pre-training in Industrial Settings",
+    "url": "https://arxiv.org/abs/2511.21428"
+  },
+  {
+    "index": 14,
+    "title": "Towards a Data Flywheel for Embodied Intelligence in Logistics",
+    "url": "https://arxiv.org/abs/2606.05960"
+  },
+  {
+    "index": 15,
+    "title": "Big Data Management and Quality Evaluation for the Implementation of AI Technologies in Smart Manufacturing",
+    "url": "https://doi.org/10.3390/app152211905"
+  },
+  {
+    "index": 16,
+    "title": "REASSEMBLE: A Multimodal Dataset for Contact-rich Robotic Assembly and Disassembly",
+    "url": "https://arxiv.org/abs/2502.05086"
+  },
+  {
+    "index": 17,
+    "title": "A mixed reality-assisted human-to-robot skill transfer approach for contact-rich assembly via visuomotor primitives",
+    "url": "https://doi.org/10.1016/j.rcim.2025.103208"
+  },
+  {
+    "index": 18,
+    "title": "Designing an ISO 23247-compliant Hybrid Digital Twin Architecture for industry",
+    "url": "https://doi.org/10.1016/j.infsof.2026.108039"
+  },
+  {
+    "index": 19,
+    "title": "A novel paradigm of robotic machining towards embodied intelligent manufacturing: Case study on paint defect repair",
+    "url": "https://doi.org/10.1016/j.rcim.2025.103184"
+  },
+  {
+    "index": 20,
+    "title": "Adaptive process parameters decision-making in robotic grinding based on meta-reinforcement learning",
+    "url": "https://doi.org/10.1016/j.jmapro.2025.02.005"
+  },
+  {
+    "index": 21,
+    "title": "AI-based Framework for Robust Model-Based Connector Mating in Robotic Wire Harness Installation",
+    "url": "https://arxiv.org/abs/2503.09409"
+  },
+  {
+    "index": 22,
+    "title": "On the Efficiency of LoRA Fine-Tuning for Vision-Language-Action Models in Industrial Robotic Manipulation",
+    "url": "https://arxiv.org/abs/2607.10172"
+  },
+  {
+    "index": 23,
+    "title": "Evolution of Safety Requirements in Industrial Robotics: Comparative Analysis of ISO 10218-1/2 (2011 vs. 2025) and Integration of ISO/TS 15066",
+    "url": "https://arxiv.org/abs/2602.17822"
+  },
+  {
+    "index": 24,
+    "title": "Embedding ISO 10218 Safety Compliance in Robots via Control Barrier Functions for Human-Robot Collaboration",
+    "url": "https://arxiv.org/abs/2606.13203"
+  },
+  {
+    "index": 25,
+    "title": "ARGOS: Automated Functional Safety Requirement Synthesis for Embodied AI via Attribute-Guided Combinatorial Reasoning",
+    "url": "https://arxiv.org/abs/2602.07007"
+  },
+  {
+    "index": 26,
+    "title": "ROBOGATE: Adaptive Failure Discovery for Safe Robot Policy Deployment via Two-Stage Boundary-Focused Sampling",
+    "url": "https://arxiv.org/abs/2603.22126"
+  },
+  {
+    "index": 27,
+    "title": "Digital twin-driven virtual commissioning for robotic machining enhanced by machine learning",
+    "url": "https://doi.org/10.1016/j.rcim.2024.102908"
+  },
+  {
+    "index": 28,
+    "title": "SAFE: Multitask Failure Detection for Vision-Language-Action Models",
+    "url": "https://arxiv.org/abs/2506.09937"
+  },
+  {
+    "index": 29,
+    "title": "Can We Detect Failures Without Failure Data? Uncertainty-Aware Runtime Failure Detection for Imitation Learning Policies",
+    "url": "https://arxiv.org/abs/2503.08558"
+  },
+  {
+    "index": 30,
+    "title": "Uncertainty-Calibrated Safety Gating for Vision–Language–Action Manipulation Under Domain Shift: Reliability Gains and Intervention–Efficiency Trade-Offs",
+    "url": "https://doi.org/10.3390/s26103140"
+  },
+  {
+    "index": 31,
+    "title": "Towards Trustworthy Embodied Intelligence: A Systems Framework and Graded Trustworthiness Levels",
+    "url": "https://arxiv.org/abs/2607.26121"
+  },
+  {
+    "index": 32,
+    "title": "Safe autonomous systems in a changing world: Operationalising dynamic safety cases",
+    "url": "https://doi.org/10.1016/j.ssci.2025.106965"
+  },
+  {
+    "index": 33,
+    "title": "Industrial-grade trustworthy embodied system for power battery disassembly based on the disassembly NeuroSymbolic World Model",
+    "url": "https://doi.org/10.1016/j.jmsy.2026.03.008"
+  },
+  {
+    "index": 34,
+    "title": "RoCo Challenge at AAAI 2026: Benchmarking Robotic Collaborative Manipulation for Assembly Towards Industrial Automation",
+    "url": "https://arxiv.org/abs/2603.15469"
+  }
+]

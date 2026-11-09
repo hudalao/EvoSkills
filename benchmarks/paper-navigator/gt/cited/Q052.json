@@ -1,0 +1,212 @@
+[
+  {
+    "index": 1,
+    "title": "On the Use of Agentic Coding: An Empirical Study of Pull Requests on GitHub",
+    "url": "https://arxiv.org/abs/2509.14745"
+  },
+  {
+    "index": 2,
+    "title": "When AI Agents Touch CI/CD Configurations: Frequency and Success",
+    "url": "https://arxiv.org/abs/2601.17413"
+  },
+  {
+    "index": 3,
+    "title": "AI Writes Faster Than Humans Can Review: A Longitudinal Study of an Enterprise 2x Mandate",
+    "url": "https://arxiv.org/abs/2607.01904"
+  },
+  {
+    "index": 4,
+    "title": "A focused survey of code agent security: Attacks, defenses, and evaluation",
+    "url": "https://doi.org/10.1016/j.infsof.2026.108288"
+  },
+  {
+    "index": 5,
+    "title": "TrustX Agent Risk Classification Framework (ARC): Risk-Tiering Internally Created Agentic AI Systems",
+    "url": "https://arxiv.org/abs/2607.09586"
+  },
+  {
+    "index": 6,
+    "title": "MI9: An Integrated Runtime Governance Framework for Agentic AI",
+    "url": "https://arxiv.org/abs/2508.03858"
+  },
+  {
+    "index": 7,
+    "title": "Authenticated Delegation and Authorized AI Agents",
+    "url": "https://arxiv.org/abs/2501.09674"
+  },
+  {
+    "index": 8,
+    "title": "Enterprise Identity Integration for AI-Assisted Developer Services: Architecture, Implementation, and Case Study",
+    "url": "https://arxiv.org/abs/2601.02698"
+  },
+  {
+    "index": 9,
+    "title": "Progent: Securing AI Agents with Privilege Control",
+    "url": "https://arxiv.org/abs/2504.11703"
+  },
+  {
+    "index": 10,
+    "title": "Taming Various Privilege Escalation in LLM-Based Agent Systems: A Mandatory Access Control Framework",
+    "url": "https://arxiv.org/abs/2601.11893"
+  },
+  {
+    "index": 11,
+    "title": "Evaluating Privilege Usage of Agents with Real-World Tools",
+    "url": "https://arxiv.org/abs/2603.28166"
+  },
+  {
+    "index": 12,
+    "title": "Lingering Authority: Revocable Resource-and-Effect Capabilities for Coding Agents",
+    "url": "https://arxiv.org/abs/2606.22504"
+  },
+  {
+    "index": 13,
+    "title": "Towards Verifiably Safe Tool Use for LLM Agents",
+    "url": "https://arxiv.org/abs/2601.08012"
+  },
+  {
+    "index": 14,
+    "title": "The Balkanization of Execution-Security Research for AI Coding Agents: Isolation, Access Control, and Time-of-Check-to-Time-of-Use Vulnerabilities",
+    "url": "https://arxiv.org/abs/2607.05743"
+  },
+  {
+    "index": 15,
+    "title": "Permission Denied: Policy-Graded Evaluation of Coding Agents in Hardened Environments",
+    "url": "https://arxiv.org/abs/2608.02670"
+  },
+  {
+    "index": 16,
+    "title": "Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks",
+    "url": "https://arxiv.org/abs/2605.18583"
+  },
+  {
+    "index": 17,
+    "title": "One Goal, Many Commands: Characterizing Denylist Fragility in AI Agents",
+    "url": "https://arxiv.org/abs/2606.15549"
+  },
+  {
+    "index": 18,
+    "title": "Human-Written vs. AI-Generated Code: A Large-Scale Study of Defects, Vulnerabilities, and Complexity",
+    "url": "https://arxiv.org/abs/2508.21634"
+  },
+  {
+    "index": 19,
+    "title": "Is Vibe Coding Safe? Benchmarking Vulnerability of Agent-Generated Code in Real-World Tasks",
+    "url": "https://arxiv.org/abs/2512.03262"
+  },
+  {
+    "index": 20,
+    "title": "Trust but Verify? Uncovering the Security Debt of Autonomous Coding Agents",
+    "url": "https://arxiv.org/abs/2607.12428"
+  },
+  {
+    "index": 21,
+    "title": "Prompt Injection Attacks on Agentic Coding Assistants: A Systematic Analysis of Vulnerabilities in Skills, Tools, and Protocol Ecosystems",
+    "url": "https://arxiv.org/abs/2601.17548"
+  },
+  {
+    "index": 22,
+    "title": "GitInject: Real-World Prompt Injection Attacks in AI-Powered CI/CD Pipelines",
+    "url": "https://arxiv.org/abs/2606.09935"
+  },
+  {
+    "index": 23,
+    "title": "Importing Phantoms: Measuring LLM Package Hallucination Vulnerabilities",
+    "url": "https://arxiv.org/abs/2501.19012"
+  },
+  {
+    "index": 24,
+    "title": "LiCoEval: Evaluating LLMs on License Compliance in Code Generation",
+    "url": "https://arxiv.org/abs/2408.02487"
+  },
+  {
+    "index": 25,
+    "title": "CodeCloak: A Method for Mitigating Code Leakage by LLM Code Assistants",
+    "url": "https://arxiv.org/abs/2404.09066"
+  },
+  {
+    "index": 26,
+    "title": "Agent-Sentry: Bounding LLM Agents via Execution Provenance",
+    "url": "https://arxiv.org/abs/2603.22868"
+  },
+  {
+    "index": 27,
+    "title": "ESAA-Security: An Event-Sourced, Verifiable Architecture for Agent-Assisted Security Audits of AI-Generated Code",
+    "url": "https://arxiv.org/abs/2603.06365"
+  },
+  {
+    "index": 28,
+    "title": "On Automated and Explainable Provenance of AI-Generated Code",
+    "url": "https://arxiv.org/abs/2608.02329"
+  },
+  {
+    "index": 29,
+    "title": "Can we trust the source? A systematic review of watermarking and attribution for AI-generated code",
+    "url": "https://doi.org/10.1016/j.infsof.2026.108157"
+  },
+  {
+    "index": 30,
+    "title": "Do AI Coding Agents Log Like Humans? An Empirical Study",
+    "url": "https://arxiv.org/abs/2604.09409"
+  },
+  {
+    "index": 31,
+    "title": "Accountable Agents in Software Engineering: An Analysis of Terms of Service and a Research Roadmap",
+    "url": "https://arxiv.org/abs/2605.04532"
+  },
+  {
+    "index": 32,
+    "title": "Whose Code Is It? How AI Autonomy Reshapes Ownership, Responsibility, and Disclosure in AI-Assisted Programming",
+    "url": "https://doi.org/10.1145/3742413.3789121"
+  },
+  {
+    "index": 33,
+    "title": "AI Policy, Disclosure, and Human in the Loop: How Are Contribution Guidelines Adapting to GenAI?",
+    "url": "https://arxiv.org/abs/2605.16706"
+  },
+  {
+    "index": 34,
+    "title": "Human oversight of agentic systems in practice: Examining the oversight work, challenges, and heuristics of developers using software agents",
+    "url": "https://arxiv.org/abs/2606.05391"
+  },
+  {
+    "index": 35,
+    "title": "Coding with \"Enemy\": Can Human Developers Detect AI Agent Sabotage?",
+    "url": "https://arxiv.org/abs/2606.05647"
+  },
+  {
+    "index": 36,
+    "title": "What You Approve Is What Executes: Consent Integrity for Black-Box LLM Agents",
+    "url": "https://arxiv.org/abs/2606.02668"
+  },
+  {
+    "index": 37,
+    "title": "Hedwig: Dynamic Autonomy for Coding Agents Under Local Oversight",
+    "url": "https://arxiv.org/abs/2605.11495"
+  },
+  {
+    "index": 38,
+    "title": "AgentDyn: Are Your Agent Security Defenses Deployable in Real-World Dynamic Environments?",
+    "url": "https://arxiv.org/abs/2602.03117"
+  },
+  {
+    "index": 39,
+    "title": "The Verifier Tax: Horizon Dependent Safety–Success Tradeoffs in Tool Using LLM Agents",
+    "url": "https://arxiv.org/abs/2603.19328"
+  },
+  {
+    "index": 40,
+    "title": "Between Policy and Practice: GenAI Adoption in Agile Software Development Teams",
+    "url": "https://arxiv.org/abs/2601.07051"
+  },
+  {
+    "index": 41,
+    "title": "Recommendations for efficient and responsible LLM adoption within industrial software development",
+    "url": "https://arxiv.org/abs/2604.26590"
+  },
+  {
+    "index": 42,
+    "title": "Usage, Effects and Requirements for AI Coding Assistants in the Enterprise: An Empirical Study",
+    "url": "https://arxiv.org/abs/2601.20112"
+  }
+]

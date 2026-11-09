@@ -1,0 +1,197 @@
+[
+  {
+    "index": 1,
+    "title": "Federated Machine Learning: Concept and Applications",
+    "url": "https://arxiv.org/abs/1902.04885"
+  },
+  {
+    "index": 2,
+    "title": "Vertical Federated Learning: Concepts, Advances, and Challenges",
+    "url": "https://arxiv.org/abs/2211.12814"
+  },
+  {
+    "index": 3,
+    "title": "FATE: An Industrial Grade Platform for Collaborative Learning With Data Protection",
+    "url": "https://www.semanticscholar.org/paper/3d73e21af71bde8dc7984bd72f7077fb691b2523"
+  },
+  {
+    "index": 4,
+    "title": "Private federated learning on vertically partitioned data via entity resolution and additively homomorphic encryption",
+    "url": "https://arxiv.org/abs/1711.10677"
+  },
+  {
+    "index": 5,
+    "title": "Multi-Party Private Set Intersection in Vertical Federated Learning",
+    "url": "https://doi.org/10.1109/TrustCom50675.2020.00098"
+  },
+  {
+    "index": 6,
+    "title": "Asymmetrical Vertical Federated Learning",
+    "url": "https://arxiv.org/abs/2004.07427"
+  },
+  {
+    "index": 7,
+    "title": "Differentially Private Set Intersection for Asymmetrical ID Alignment",
+    "url": "https://doi.org/10.1109/TIFS.2022.3207911"
+  },
+  {
+    "index": 8,
+    "title": "A Coupled Design of Exploiting Record Similarity for Practical Vertical Federated Learning",
+    "url": "https://arxiv.org/abs/2106.06312"
+  },
+  {
+    "index": 9,
+    "title": "Federated Transformer: Multi-Party Vertical Federated Learning on Practical Fuzzily Linked Data",
+    "url": "https://arxiv.org/abs/2410.17986"
+  },
+  {
+    "index": 10,
+    "title": "SecureBoost: A Lossless Federated Learning Framework",
+    "url": "https://arxiv.org/abs/1901.08755"
+  },
+  {
+    "index": 11,
+    "title": "VF2Boost: Very Fast Vertical Federated Gradient Boosting for Cross-Enterprise Learning",
+    "url": "https://doi.org/10.1145/3448016.3457241"
+  },
+  {
+    "index": 12,
+    "title": "A Quasi-Newton Method Based Vertical Federated Learning Framework for Logistic Regression",
+    "url": "https://arxiv.org/abs/1912.00513"
+  },
+  {
+    "index": 13,
+    "title": "When Homomorphic Encryption Marries Secret Sharing: Secure Large-Scale Sparse Logistic Regression and Applications in Risk Control",
+    "url": "https://arxiv.org/abs/2008.08753"
+  },
+  {
+    "index": 14,
+    "title": "A homomorphic-encryption-based vertical federated learning scheme for rick management",
+    "url": "https://doi.org/10.2298/csis190923022o"
+  },
+  {
+    "index": 15,
+    "title": "A Vertical Federated Learning Method for Interpretable Scorecard and Its Application in Credit Scoring",
+    "url": "https://arxiv.org/abs/2009.06218"
+  },
+  {
+    "index": 16,
+    "title": "FedV: Privacy-Preserving Federated Learning over Vertically Partitioned Data",
+    "url": "https://arxiv.org/abs/2103.03918"
+  },
+  {
+    "index": 17,
+    "title": "VertiBench: Advancing Feature Distribution Diversity in Vertical Federated Learning Benchmarks",
+    "url": "https://arxiv.org/abs/2307.02040"
+  },
+  {
+    "index": 18,
+    "title": "FedSDG-FS: Efficient and Secure Feature Selection for Vertical Federated Learning",
+    "url": "https://arxiv.org/abs/2302.10417"
+  },
+  {
+    "index": 19,
+    "title": "FedCVT: Semi-supervised Vertical Federated Learning with Cross-view Training",
+    "url": "https://arxiv.org/abs/2008.10838"
+  },
+  {
+    "index": 20,
+    "title": "A Hybrid Self-Supervised Learning Framework for Vertical Federated Learning",
+    "url": "https://arxiv.org/abs/2208.08934"
+  },
+  {
+    "index": 21,
+    "title": "A Secure Federated Transfer Learning Framework",
+    "url": "https://doi.org/10.1109/MIS.2020.2988525"
+  },
+  {
+    "index": 22,
+    "title": "Vertical Federated Learning with Missing Features During Training and Inference",
+    "url": "https://arxiv.org/abs/2410.22564"
+  },
+  {
+    "index": 23,
+    "title": "Flexible Vertical Federated Learning With Heterogeneous Parties",
+    "url": "https://arxiv.org/abs/2208.12672"
+  },
+  {
+    "index": 24,
+    "title": "Federated Optimization in Heterogeneous Networks",
+    "url": "https://arxiv.org/abs/1812.06127"
+  },
+  {
+    "index": 25,
+    "title": "Federated Learning on Non-IID Data Silos: An Experimental Study",
+    "url": "https://arxiv.org/abs/2102.02079"
+  },
+  {
+    "index": 26,
+    "title": "A novel federated learning approach with knowledge transfer for credit scoring",
+    "url": "https://doi.org/10.1016/j.dss.2023.114084"
+  },
+  {
+    "index": 27,
+    "title": "FedVI: Financial Cross-Domain Federated Learning with Scarce Overlapping Samples via Visual Representation of Heterogeneous Tabular Data and Meta-Optimization",
+    "url": "https://doi.org/10.3390/e28060637"
+  },
+  {
+    "index": 28,
+    "title": "The Effects of Data Imbalance Under a Federated Learning Approach for Credit Risk Forecasting",
+    "url": "https://arxiv.org/abs/2401.07234"
+  },
+  {
+    "index": 29,
+    "title": "Label Inference Attacks Against Vertical Federated Learning",
+    "url": "https://par.nsf.gov/biblio/10349127"
+  },
+  {
+    "index": 30,
+    "title": "Feature Inference Attack on Model Predictions in Vertical Federated Learning",
+    "url": "https://arxiv.org/abs/2010.10152"
+  },
+  {
+    "index": 31,
+    "title": "Comprehensive Analysis of Privacy Leakage in Vertical Federated Learning During Prediction",
+    "url": "https://doi.org/10.2478/popets-2022-0045"
+  },
+  {
+    "index": 32,
+    "title": "Is Vertical Logistic Regression Privacy-Preserving? A Comprehensive Privacy Analysis and Beyond",
+    "url": "https://arxiv.org/abs/2207.09087"
+  },
+  {
+    "index": 33,
+    "title": "HashVFL: Defending Against Data Reconstruction Attacks in Vertical Federated Learning",
+    "url": "https://arxiv.org/abs/2212.00325"
+  },
+  {
+    "index": 34,
+    "title": "Application Research of Vertical Federated Learning Technology in Banking Risk Control Model Strategy",
+    "url": "https://doi.org/10.1109/ISPA-BDCloud-SocialCom-SustainCom59178.2023.00103"
+  },
+  {
+    "index": 35,
+    "title": "Starlit: Privacy-Preserving Federated Learning to Enhance Financial Fraud Detection",
+    "url": "https://arxiv.org/abs/2401.10765"
+  },
+  {
+    "index": 36,
+    "title": "A Privacy-Preserving Hybrid Federated Learning Framework for Financial Crime Detection",
+    "url": "https://arxiv.org/abs/2302.03654"
+  },
+  {
+    "index": 37,
+    "title": "Federated Learning for Open Banking",
+    "url": "https://arxiv.org/abs/2108.10749"
+  },
+  {
+    "index": 38,
+    "title": "Bridging Data Silos in Finance via Federated Learning",
+    "url": "https://doi.org/10.1109/MNET.2025.3584806"
+  },
+  {
+    "index": 39,
+    "title": "Towards Federated Graph Learning for Collaborative Financial Crimes Detection",
+    "url": "https://arxiv.org/abs/1909.12946"
+  }
+]

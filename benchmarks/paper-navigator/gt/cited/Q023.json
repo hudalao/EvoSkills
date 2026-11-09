@@ -1,0 +1,177 @@
+[
+  {
+    "index": 1,
+    "title": "A Machine Learning Benchmark for Facies Classification",
+    "url": "https://arxiv.org/abs/1901.07659"
+  },
+  {
+    "index": 2,
+    "title": "An Open-Source Package for Deep-Learning-Based Seismic Facies Classification: Benchmarking Experiments on the SEG 2020 Open Data",
+    "url": "https://doi.org/10.1109/TGRS.2022.3144666"
+  },
+  {
+    "index": 3,
+    "title": "Deep learning seismic facies identification: the Total journey at SEAM AI hackathon",
+    "url": "https://doi.org/10.3997/2214-4609.202113221"
+  },
+  {
+    "index": 4,
+    "title": "cigFacies: a massive-scale benchmark dataset of seismic facies and its application",
+    "url": "https://doi.org/10.5194/essd-17-595-2025"
+  },
+  {
+    "index": 5,
+    "title": "FaultSeg3D: Using synthetic data sets to train an end-to-end convolutional neural network for 3D seismic fault segmentation",
+    "url": "https://doi.org/10.1190/GEO2018-0646.1"
+  },
+  {
+    "index": 6,
+    "title": "Deep convolutional neural network for automatic fault recognition from 3D seismic datasets",
+    "url": "https://doi.org/10.1016/j.cageo.2021.104776"
+  },
+  {
+    "index": 7,
+    "title": "A gigabyte interpreted seismic dataset for automatic fault recognition",
+    "url": "https://doi.org/10.1016/j.dib.2021.107219"
+  },
+  {
+    "index": 8,
+    "title": "CRACKS: Crowdsourcing Resources for Analysis and Categorization of Key Subsurface faults",
+    "url": "https://arxiv.org/abs/2408.11185"
+  },
+  {
+    "index": 9,
+    "title": "A Principled Benchmark for Seismic Data Segmentation",
+    "url": "https://doi.org/10.1109/TGRS.2025.3575336"
+  },
+  {
+    "index": 10,
+    "title": "Machine learning for subsurface geological feature identification from seismic data: Methods, datasets, challenges, and opportunities",
+    "url": "https://doi.org/10.1016/j.earscirev.2024.104887"
+  },
+  {
+    "index": 11,
+    "title": "A Large-Scale Benchmark on Geological Fault Delineation Models: Domain Shift, Training Dynamics, Generalizability, Evaluation, and Inferential Behavior",
+    "url": "https://arxiv.org/abs/2505.08585"
+  },
+  {
+    "index": 12,
+    "title": "Seismic Facies Analysis: A Deep Domain Adaptation Approach",
+    "url": "https://arxiv.org/abs/2011.10510"
+  },
+  {
+    "index": 13,
+    "title": "AdaSemSeg: An Adaptive Few-Shot Semantic Segmentation of Seismic Facies",
+    "url": "https://arxiv.org/abs/2501.16760"
+  },
+  {
+    "index": 14,
+    "title": "Toward generalized models for machine-learning-assisted salt interpretation in the Gulf of Mexico",
+    "url": "https://doi.org/10.1190/tle42060390.1"
+  },
+  {
+    "index": 15,
+    "title": "FaultSeg3D plus: a comprehensive study on evaluating and improving CNN-based seismic fault segmentation",
+    "url": "https://doi.org/10.1190/geo2022-0778.1"
+  },
+  {
+    "index": 16,
+    "title": "Learning from unlabelled real seismic data: Fault detection based on transfer learning",
+    "url": "https://doi.org/10.1111/1365-2478.13097"
+  },
+  {
+    "index": 17,
+    "title": "FaultSSL: Seismic Fault Detection via Semi-supervised learning",
+    "url": "https://arxiv.org/abs/2309.02930"
+  },
+  {
+    "index": 18,
+    "title": "Understanding the Effect of Different Prior Knowledge on CNN Fault Interpreter",
+    "url": "https://doi.org/10.1109/ACCESS.2023.3244683"
+  },
+  {
+    "index": 19,
+    "title": "Consistency and prior falsification of training data in seismic deep learning: Application to offshore deltaic reservoir characterization",
+    "url": "https://arxiv.org/abs/2108.13670"
+  },
+  {
+    "index": 20,
+    "title": "Seismic Foundation Model (SFM): a next generation deep learning model in geophysics",
+    "url": "https://arxiv.org/abs/2309.02791"
+  },
+  {
+    "index": 21,
+    "title": "A foundation model enpowered by a multi-modal prompt engine for universal seismic geobody interpretation across surveys",
+    "url": "https://arxiv.org/abs/2409.04962"
+  },
+  {
+    "index": 22,
+    "title": "The NCS-Model: A seismic foundation model trained on the Norwegian repository of public data",
+    "url": "https://arxiv.org/abs/2603.23211"
+  },
+  {
+    "index": 23,
+    "title": "PRISM: A Pre-Trained Foundation Model for Rapid Seismic Interpretation",
+    "url": "https://doi.org/10.2118/227546-ms"
+  },
+  {
+    "index": 24,
+    "title": "Geological Everything Model 3D: A Promptable Foundation Model for Unified and Zero-Shot Subsurface Understanding",
+    "url": "https://arxiv.org/abs/2507.00419"
+  },
+  {
+    "index": 25,
+    "title": "Accelerating seismic fault and stratigraphy interpretation with deep CNNs: A case study of the Taranaki Basin, New Zealand",
+    "url": "https://doi.org/10.1190/TLE39100727.1"
+  },
+  {
+    "index": 26,
+    "title": "Machine Learning Assisted Interpretation: Integrated Fault Prediction Extraction Case Study from the Groningen Gas Field, Netherlands",
+    "url": "https://doi.org/10.1190/int-2021-0137.1"
+  },
+  {
+    "index": 27,
+    "title": "Improving seismic fault mapping through data conditioning using a pre-trained deep convolutional neural network: A case study on Groningen field",
+    "url": "https://doi.org/10.1016/j.petrol.2022.110411"
+  },
+  {
+    "index": 28,
+    "title": "Deep transfer learning for seismic characterization of strike-slip faults in karstified carbonates from the northern Tarim basin",
+    "url": "https://doi.org/10.1038/s41598-025-94134-7"
+  },
+  {
+    "index": 29,
+    "title": "基于深度学习的高效构造解释技术研发及工业化应用",
+    "url": "https://html.rhhz.net/SYDQWLKT/2022-6-1265.htm"
+  },
+  {
+    "index": 30,
+    "title": "基于残差网络与迁移学习的断层自动识别",
+    "url": "https://html.rhhz.net/SYDQWLKT/2020-5-950.htm"
+  },
+  {
+    "index": 31,
+    "title": "Deep learning based 3D fault detection for carbon capture and storage (CCS)",
+    "url": "https://doi.org/10.1190/geo2022-0755.1"
+  },
+  {
+    "index": 32,
+    "title": "On the Performance Evaluation of Deep Learning Models for Seismic Facies Segmentation",
+    "url": "https://doi.org/10.1111/1365-2478.70104"
+  },
+  {
+    "index": 33,
+    "title": "Fault interpretation in seismic reflection data: an experiment analysing the impact of conceptual model anchoring and vertical exaggeration",
+    "url": "https://doi.org/10.5194/se-10-1651-2019"
+  },
+  {
+    "index": 34,
+    "title": "Quantifying fault interpretation uncertainties and their impact on fault seal and seismic hazard analysis",
+    "url": "https://doi.org/10.1016/j.jsg.2024.105158"
+  },
+  {
+    "index": 35,
+    "title": "Current state and future directions for deep learning based automatic seismic fault interpretation: A systematic review",
+    "url": "https://doi.org/10.1016/j.earscirev.2023.104509"
+  }
+]

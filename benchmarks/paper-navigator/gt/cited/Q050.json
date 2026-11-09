@@ -1,0 +1,292 @@
+[
+  {
+    "index": 1,
+    "title": "The Statistics of Crowd Fluids",
+    "url": "https://doi.org/10.1038/229381A0"
+  },
+  {
+    "index": 2,
+    "title": "A micro simulation model for pedestrian flows",
+    "url": "https://doi.org/10.1016/0378-4754(85)90027-8"
+  },
+  {
+    "index": 3,
+    "title": "Transporttechnik der Fussgänger",
+    "url": "https://doi.org/10.3929/ETHZ-A-000687810"
+  },
+  {
+    "index": 4,
+    "title": "A continuum theory for the flow of pedestrians",
+    "url": "https://doi.org/10.1016/S0191-2615(01)00015-7"
+  },
+  {
+    "index": 5,
+    "title": "Social force model for pedestrian dynamics",
+    "url": "https://arxiv.org/abs/cond-mat/9805244"
+  },
+  {
+    "index": 6,
+    "title": "Simulating dynamical features of escape panic",
+    "url": "https://arxiv.org/abs/cond-mat/0009448"
+  },
+  {
+    "index": 7,
+    "title": "Self-organized queuing and scale-free behavior in real escape panic",
+    "url": "https://doi.org/10.1073/pnas.2031912100"
+  },
+  {
+    "index": 8,
+    "title": "Specification of the Social Force Pedestrian Model by Evolutionary Adjustment to Video Tracking Data",
+    "url": "https://doi.org/10.1142/S0219525907001355"
+  },
+  {
+    "index": 9,
+    "title": "An experimental study of the \"faster-is-slower\" effect using mice under panic",
+    "url": "https://doi.org/10.1016/J.PHYSA.2016.02.017"
+  },
+  {
+    "index": 10,
+    "title": "Revisiting the paper \"Simulating dynamical features of escape panic\": What have we learnt since then?",
+    "url": "https://arxiv.org/abs/2310.20506"
+  },
+  {
+    "index": 11,
+    "title": "Jamming transition in pedestrian counter flow",
+    "url": "https://doi.org/10.1016/S0378-4371(99)00018-7"
+  },
+  {
+    "index": 12,
+    "title": "Simulation of pedestrian dynamics using a two dimensional cellular automaton",
+    "url": "https://arxiv.org/abs/cond-mat/0102397"
+  },
+  {
+    "index": 13,
+    "title": "Simulation of evacuation processes using a bionics-inspired cellular automaton model for pedestrian dynamics",
+    "url": "https://arxiv.org/abs/cond-mat/0203461"
+  },
+  {
+    "index": 14,
+    "title": "Evacuation behaviors at exit in CA model with force essentials: A comparison with social force model",
+    "url": "https://doi.org/10.1016/J.PHYSA.2006.03.027"
+  },
+  {
+    "index": 15,
+    "title": "Cellular automaton model for evacuation process with obstacles",
+    "url": "https://doi.org/10.1016/J.PHYSA.2007.04.006"
+  },
+  {
+    "index": 16,
+    "title": "Static floor field and exit choice for pedestrian evacuation in rooms with internal obstacles and multiple exits",
+    "url": "https://doi.org/10.1103/PHYSREVE.78.021131"
+  },
+  {
+    "index": 17,
+    "title": "Validation of CA Models of Pedestrian Dynamics with Fundamental Diagrams",
+    "url": "https://doi.org/10.1080/01969720902922400"
+  },
+  {
+    "index": 18,
+    "title": "A Multi-Grid Model for Evacuation Coupling with the Effects of Fire Products",
+    "url": "https://doi.org/10.1007/s10694-010-0173-x"
+  },
+  {
+    "index": 19,
+    "title": "Natural discretization of pedestrian movement in continuous space",
+    "url": "https://doi.org/10.1103/PHYSREVE.86.046108"
+  },
+  {
+    "index": 20,
+    "title": "New insights into discretization effects in cellular automata models for pedestrian evacuation",
+    "url": "https://doi.org/10.1016/J.PHYSA.2014.01.001"
+  },
+  {
+    "index": 21,
+    "title": "Calibrating floor field cellular automaton models for pedestrian dynamics by using likelihood function optimization",
+    "url": "https://doi.org/10.1016/J.PHYSA.2015.06.040"
+  },
+  {
+    "index": 22,
+    "title": "Simulation method of urban evacuation based on mesoscopic cellular automata",
+    "url": "https://arxiv.org/abs/2311.10554"
+  },
+  {
+    "index": 23,
+    "title": "Flocks, herds, and schools: a distributed behavioral model",
+    "url": "https://doi.org/10.1145/280811.281008"
+  },
+  {
+    "index": 24,
+    "title": "A review of the methodologies used in the computer simulation of evacuation from the built environment",
+    "url": "https://doi.org/10.1016/S0360-1323(98)00057-2"
+  },
+  {
+    "index": 25,
+    "title": "Modelling occupant interaction with fire conditions using the buildingEXODUS evacuation model",
+    "url": "https://doi.org/10.1016/S0379-7112(00)00060-6"
+  },
+  {
+    "index": 26,
+    "title": "Continuum crowds",
+    "url": "https://doi.org/10.1145/1179352.1142008"
+  },
+  {
+    "index": 27,
+    "title": "A multi-agent based framework for the simulation of human and social behaviors during emergency evacuations",
+    "url": "https://doi.org/10.1007/s00146-007-0126-1"
+  },
+  {
+    "index": 28,
+    "title": "Evacuation simulation models: challenges in modeling high rise building evacuation with cellular automata approaches",
+    "url": "https://doi.org/10.1016/J.AUTCON.2007.06.005"
+  },
+  {
+    "index": 29,
+    "title": "Modeling crowd evacuation of a building based on seven methodological approaches",
+    "url": "https://doi.org/10.1016/J.BUILDENV.2008.04.002"
+  },
+  {
+    "index": 30,
+    "title": "IFC-centric performance-based evaluation of building evacuations using fire dynamics simulation and agent-based modeling",
+    "url": "https://doi.org/10.1016/J.AUTCON.2019.01.007"
+  },
+  {
+    "index": 31,
+    "title": "Behavioral, data-driven, agent-based evacuation simulation for building safety design using machine learning and discrete choice models",
+    "url": "https://doi.org/10.1016/j.aei.2022.101827"
+  },
+  {
+    "index": 32,
+    "title": "Agent-based post-earthquake evacuation simulation to enhance early-stage architectural layout and non-structural design",
+    "url": "https://doi.org/10.1016/j.autcon.2024.105541"
+  },
+  {
+    "index": 33,
+    "title": "The fundamental diagram of pedestrian movement revisited",
+    "url": "https://arxiv.org/abs/physics/0506170"
+  },
+  {
+    "index": 34,
+    "title": "The Process of Verification and Validation of Building Fire Evacuation Models (NIST Technical Note 1822)",
+    "url": "https://doi.org/10.6028/NIST.TN.1822"
+  },
+  {
+    "index": 35,
+    "title": "A Method for the Analysis of Behavioural Uncertainty in Evacuation Modelling",
+    "url": "https://doi.org/10.1007/s10694-013-0352-7"
+  },
+  {
+    "index": 36,
+    "title": "The validation of evacuation simulation models through the analysis of behavioural uncertainty",
+    "url": "https://doi.org/10.1016/j.ress.2014.07.007"
+  },
+  {
+    "index": 37,
+    "title": "Empirical methods in pedestrian, crowd and evacuation dynamics: Part I. Experimental methods and emerging topics",
+    "url": "https://doi.org/10.1016/j.ssci.2020.104743"
+  },
+  {
+    "index": 38,
+    "title": "Empirical methods in pedestrian, crowd and evacuation dynamics: Part II. Field methods and controversial topics",
+    "url": "https://doi.org/10.1016/j.ssci.2020.104760"
+  },
+  {
+    "index": 39,
+    "title": "Multifactor Variance Assessment for Determining the Number of Repeat Simulation Runs in Evacuation Modelling",
+    "url": "https://doi.org/10.1007/s10694-021-01134-w"
+  },
+  {
+    "index": 40,
+    "title": "A pre-evacuation database for use in egress simulations",
+    "url": "https://doi.org/10.1016/J.FIRESAF.2018.12.009"
+  },
+  {
+    "index": 41,
+    "title": "An evacuation model validation data-set for high-rise construction sites",
+    "url": "https://doi.org/10.1016/j.firesaf.2020.103118"
+  },
+  {
+    "index": 42,
+    "title": "Using virtual reality to study pedestrian exit choice behaviour during evacuations",
+    "url": "https://doi.org/10.1016/J.SSCI.2021.105158"
+  },
+  {
+    "index": 43,
+    "title": "Dynamic calibration of agent-based models using data assimilation",
+    "url": "https://doi.org/10.1098/rsos.150703"
+  },
+  {
+    "index": 44,
+    "title": "Smart-Guided Pedestrian Emergency Evacuation in Slender-Shape Infrastructure with Digital Twin Simulations",
+    "url": "https://doi.org/10.3390/su12229701"
+  },
+  {
+    "index": 45,
+    "title": "Real Time Building Evacuation Modeling with an Improved Cellular Automata Method and Corresponding IoT System Implementation",
+    "url": "https://doi.org/10.3390/buildings12060718"
+  },
+  {
+    "index": 46,
+    "title": "Intelligent emergency digital twin system for monitoring building fire evacuation",
+    "url": "https://doi.org/10.1016/j.jobe.2023.107416"
+  },
+  {
+    "index": 47,
+    "title": "A Metaverse-Based Teaching Building Evacuation Training System With Deep Reinforcement Learning",
+    "url": "https://doi.org/10.1109/TSMC.2022.3231299"
+  },
+  {
+    "index": 48,
+    "title": "Digital twin of buildings and occupants for emergency evacuation: Framework, technologies, applications and trends",
+    "url": "https://doi.org/10.1016/j.aei.2025.103419"
+  },
+  {
+    "index": 49,
+    "title": "Unified and interoperable digital twin models for emergency evacuation using building simulation identity cards",
+    "url": "https://doi.org/10.1016/j.autcon.2025.106225"
+  },
+  {
+    "index": 50,
+    "title": "Digital-Twin Enabled Evacuation to Improve Individual and Community Resilience of Building Occupants against Indoor Fires: Framework and Route-Finding Algorithm",
+    "url": "https://doi.org/10.1016/j.dibe.2025.100672"
+  },
+  {
+    "index": 51,
+    "title": "Deep learning-driven digital twin system for pedestrian tracking and evacuation load assessment in public spaces",
+    "url": "https://doi.org/10.1016/j.engappai.2026.114440"
+  },
+  {
+    "index": 52,
+    "title": "Human-Centric Digital Twins for Spatial Sustainability: A Procedural VR Framework for Calibrating Agent-Based Evacuation Models in Diverse Urban Morphologies",
+    "url": "https://doi.org/10.3390/su18031482"
+  },
+  {
+    "index": 53,
+    "title": "Crowd disasters as systemic failures: analysis of the Love Parade disaster",
+    "url": "https://arxiv.org/abs/1206.5856"
+  },
+  {
+    "index": 54,
+    "title": "Assessing crowd management strategies for the 2010 Love Parade disaster using computer simulations and virtual reality",
+    "url": "https://doi.org/10.1098/rsif.2020.0116"
+  },
+  {
+    "index": 55,
+    "title": "An open multi-physics framework for modelling wildland-urban interface fire evacuations",
+    "url": "https://doi.org/10.1016/J.SSCI.2019.06.009"
+  },
+  {
+    "index": 56,
+    "title": "A novel agent-based model for tsunami evacuation simulation and risk assessment",
+    "url": "https://doi.org/10.1007/s11069-020-04389-8"
+  },
+  {
+    "index": 57,
+    "title": "Large-language-model-driven agents for fire evacuation simulation in a cellular automata environment",
+    "url": "https://doi.org/10.1016/j.ssci.2025.106935"
+  },
+  {
+    "index": 58,
+    "title": "Coordinating dynamic signage for evacuation guidance: A multi-agent reinforcement learning approach integrating mesoscopic crowd modeling and fire propagation",
+    "url": "https://doi.org/10.1016/j.chaos.2025.116246"
+  }
+]

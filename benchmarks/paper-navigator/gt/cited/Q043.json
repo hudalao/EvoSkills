@@ -1,0 +1,182 @@
+[
+  {
+    "index": 1,
+    "title": "Modeling crowd evacuation of a building based on seven methodological approaches",
+    "url": "https://doi.org/10.1016/j.buildenv.2008.04.002"
+  },
+  {
+    "index": 2,
+    "title": "State-of-the-art crowd motion simulation models",
+    "url": "https://doi.org/10.1016/j.trc.2013.02.005"
+  },
+  {
+    "index": 3,
+    "title": "Pedestrian evacuation simulation in indoor emergency situations: Approaches, models and tools",
+    "url": "https://doi.org/10.1016/j.ssci.2021.105378"
+  },
+  {
+    "index": 4,
+    "title": "Developing and validating evacuation models for fire safety engineering",
+    "url": "https://doi.org/10.1016/j.firesaf.2020.103020"
+  },
+  {
+    "index": 5,
+    "title": "A review of cellular automata models for crowd evacuation",
+    "url": "https://doi.org/10.1016/j.physa.2019.03.117"
+  },
+  {
+    "index": 6,
+    "title": "Evacuation simulation models: challenges in modeling high rise building evacuation with cellular automata approaches",
+    "url": "https://doi.org/10.1016/j.autcon.2007.06.005"
+  },
+  {
+    "index": 7,
+    "title": "An improved Cellular Automata model to simulate the behavior of high density crowd and validation by experimental data",
+    "url": "https://doi.org/10.1016/j.physa.2016.01.057"
+  },
+  {
+    "index": 8,
+    "title": "A modified cellular automaton model of pedestrian evacuation in a tunnel fire",
+    "url": "https://doi.org/10.1016/j.tust.2022.104673"
+  },
+  {
+    "index": 9,
+    "title": "A continuous floor field cellular automata model with interaction area for crowd evacuation",
+    "url": "https://doi.org/10.1016/j.physa.2021.126049"
+  },
+  {
+    "index": 10,
+    "title": "Large-language-model-driven agents for fire evacuation simulation in a cellular automata environment",
+    "url": "https://doi.org/10.1016/j.ssci.2025.106935"
+  },
+  {
+    "index": 11,
+    "title": "Evacuation behaviors at exit in CA model with force essentials: A comparison with social force model",
+    "url": "https://doi.org/10.1016/j.physa.2006.03.027"
+  },
+  {
+    "index": 12,
+    "title": "A modification of the Social Force Model can reproduce experimental data of pedestrian flows in normal conditions",
+    "url": "https://doi.org/10.1016/j.physa.2009.05.027"
+  },
+  {
+    "index": 13,
+    "title": "Pedestrian Flow at Bottlenecks - Validation and Calibration of Vissim's Social Force Model of Pedestrian Traffic and its Empirical Foundations",
+    "url": "https://arxiv.org/abs/0805.1788"
+  },
+  {
+    "index": 14,
+    "title": "A modified social force model with different categories of pedestrians for subway station evacuation",
+    "url": "https://doi.org/10.1016/j.tust.2021.103837"
+  },
+  {
+    "index": 15,
+    "title": "Risk of fire emergency evacuation in complex construction sites: Integration of 4D-BIM, social force modeling, and fire quantitative risk assessment",
+    "url": "https://doi.org/10.1016/j.aei.2021.101378"
+  },
+  {
+    "index": 16,
+    "title": "Height map-based social force model for stairway evacuation",
+    "url": "https://doi.org/10.1016/j.ssci.2020.105027"
+  },
+  {
+    "index": 17,
+    "title": "When 'push' does not come to 'shove': Revisiting 'faster is slower' in collective egress of human crowds",
+    "url": "https://doi.org/10.1016/j.tra.2019.02.007"
+  },
+  {
+    "index": 18,
+    "title": "Agent-based simulation for pedestrian evacuation: A systematic literature review",
+    "url": "https://doi.org/10.1016/j.ijdrr.2024.104705"
+  },
+  {
+    "index": 19,
+    "title": "Validation of an agent-based building evacuation model with a school drill",
+    "url": "https://doi.org/10.1016/j.trc.2018.10.010"
+  },
+  {
+    "index": 20,
+    "title": "An agent-based simulator for indoor crowd evacuation considering fire impacts",
+    "url": "https://doi.org/10.1016/j.autcon.2020.103395"
+  },
+  {
+    "index": 21,
+    "title": "Behavioral, data-driven, agent-based evacuation simulation for building safety design using machine learning and discrete choice models",
+    "url": "https://doi.org/10.1016/j.aei.2022.101827"
+  },
+  {
+    "index": 22,
+    "title": "Principles for Monte Carlo agent-based evacuation simulations including occupants who need assistance. From RSET to RiSET",
+    "url": "https://doi.org/10.1016/j.firesaf.2021.103510"
+  },
+  {
+    "index": 23,
+    "title": "Analysis of the use of behavioral data from virtual reality for calibration of agent-based evacuation models",
+    "url": "https://doi.org/10.1016/j.heliyon.2023.e14275"
+  },
+  {
+    "index": 24,
+    "title": "The Process of Verification and Validation of Building Fire Evacuation Models (NIST TN 1822)",
+    "url": "https://doi.org/10.6028/NIST.TN.1822"
+  },
+  {
+    "index": 25,
+    "title": "Assessing the Verification and Validation of Building Fire Evacuation Models",
+    "url": "https://doi.org/10.1007/s10694-014-0432-3"
+  },
+  {
+    "index": 26,
+    "title": "The validation of evacuation simulation models through the analysis of behavioural uncertainty",
+    "url": "https://doi.org/10.1016/j.ress.2014.07.007"
+  },
+  {
+    "index": 27,
+    "title": "Multifactor Variance Assessment for Determining the Number of Repeat Simulation Runs in Evacuation Modelling",
+    "url": "https://doi.org/10.1007/s10694-021-01134-w"
+  },
+  {
+    "index": 28,
+    "title": "A generalized trajectories-based evaluation approach for pedestrian evacuation models",
+    "url": "https://doi.org/10.1016/j.ssci.2021.105574"
+  },
+  {
+    "index": 29,
+    "title": "Crowd model calibration at strategic, tactical, and operational levels: Full-spectrum sensitivity analyses show bottleneck parameters are most critical, followed by exit-choice-changing parameters",
+    "url": "https://doi.org/10.1080/19427867.2023.2195729"
+  },
+  {
+    "index": 30,
+    "title": "Microscopic calibration and validation of pedestrian models — Cross-comparison of models using experimental data",
+    "url": "https://doi.org/10.1007/978-3-540-47641-2_29"
+  },
+  {
+    "index": 31,
+    "title": "Trial evacuation of an industrial premises and evacuation model comparison",
+    "url": "https://doi.org/10.1016/j.firesaf.2006.07.001"
+  },
+  {
+    "index": 32,
+    "title": "Experimental and numerical evacuation study in tall office building",
+    "url": "https://doi.org/10.1016/j.jobe.2023.107103"
+  },
+  {
+    "index": 33,
+    "title": "Numerical analysis and validation on the phased evacuation time in high-rise buildings",
+    "url": "https://doi.org/10.1177/1420326X231204512"
+  },
+  {
+    "index": 34,
+    "title": "Comparative analysis of two evacuation simulation tools when applied to high-rise residential buildings",
+    "url": "https://doi.org/10.1016/j.ssci.2024.106515"
+  },
+  {
+    "index": 35,
+    "title": "Comparative Study of SFPE and Steering Modes in Pathfinder to Optimise Evacuation Routes",
+    "url": "https://doi.org/10.3390/buildings14082361"
+  },
+  {
+    "index": 36,
+    "title": "Cellular automaton model for social forces interaction in building evacuation for sustainable society",
+    "url": "https://doi.org/10.1016/j.scs.2019.101913"
+  }
+]
