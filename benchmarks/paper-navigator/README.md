@@ -1,32 +1,145 @@
-# Paper Navigator: 70 Academic Search Queries
+# 搜读论文评测题集：70 道中文学术查询
 
-This dataset contains 70 Chinese academic-search queries (`Q001`–`Q070`) for evaluating `paper-navigator` across 10 industry domains and 9 task categories. It includes 38 queries that explicitly request papers and 32 queries with an implicit need for academic evidence.
+这套题集用于评估 `paper-navigator` 能否把自然语言问题转化为有依据的文献回答，覆盖论文发现、原始出处追溯、方法比较、机制解释、证据核验和综合分析等任务。
 
-## Files and format
+题集包含 **70 道查询（Q001–Q070）、10 个行业域、9 类任务**；其中 **38 题显式要求论文或文献，32 题隐含学术证据需求**。行业与任务类型是覆盖维度，70 题并未穷举所有组合。
 
-- [`question_queries_70_same_discipline.csv`](question_queries_70_same_discipline.csv): the query set and its task metadata, preserved from the existing benchmark snapshot.
-- Encoding: UTF-8 with BOM and CRLF line endings; one header row and 70 data rows. Use `encoding="utf-8-sig"` when reading it with Python. The local `.gitattributes` preserves the original line endings in Git.
-- SHA-256: `8bfdf453a68a7ba53e3249bb133dd09a0cad3e87540eddf6d5b314b6573bf2d1`.
+本目录提供题目和任务元数据，以及构建、校验和使用说明。历史参考答案、论文相关性标注、检索日志与评分执行器属于配套资产，未随本次题集导入。
 
-| Column | Meaning |
+## 一、数据集是怎么构建的
+
+### 1. 组织题面与评测要求
+
+题面按“行业域 × 问题类型 × 意图”组织，并为每题记录主题、时间范围、证据要求、期望输出和典型信息源。例如：
+
+- Q001 寻找代码智能体长期任务、仓库级修复和执行记忆方面的近期论文，同时关注 benchmark 与开源代码。
+- Q002 追溯检索增强代码生成的源头工作，考察年代核实与原始贡献识别。
+- Q003 询问 agentic debugging 相比静态分析、测试生成的优势，考察真实项目证据和方法比较。
+
+这些标注表达了每题希望考察的能力。题面最初的生成提示词、人工编辑过程及原始用户日志抽样记录尚未找到，因此目前不能确认其最初属于人工编写、模型辅助生成或生产流量抽样。
+
+目前能够追溯的构建记录从 **2026-08-06 将既有 CSV 导入原评测项目**开始。本次导入保持该版本题面、字段和文件字节不变。
+
+### 2. 为同一批题目采集参考答案候选
+
+历史构建记录中，每题由独立的深检索 agent 生成参考答案候选，运行配置标注为 **Opus 5、effort=max**。采集流程要求：
+
+1. 根据问题拆分研究对象、子主题、方法类别和证据需求。
+2. 结合 Semantic Scholar 关键词检索、批量检索、种子论文的引用/参考文献遍历，以及网页搜索和出版方页面补充证据；中文与政策类材料重点依赖网页通道。
+3. 使用独立的深检索指令采集候选答案，避免直接把被测 skill 的固定流程作为参考答案生成协议。
+4. 论文标题与链接必须在当次工具结果中得到确认；答案正文使用编号引用，文末参考文献与结构化引用表一一对应。
+5. 每题保存中文答案、结构化引用表和逐次检索日志；日志记录轮次、查询、检查过的结果及新增相关论文数量。
+
+先用 **6 题、最多 15 轮**试点。试点全部用满预算后，正式批调整为 **最多 18 轮，连续两轮没有新增相关论文时提前停止**，并把批量检索与引文遍历提前到第 2–4 轮。历史总报告记录了 **3,719 次检索、2,774 条引用**；引用数包含跨题重复，不能视为去重论文数。
+
+参考答案始终标记为 **GT 候选，等待整体人工复核**。这一步说明同一批题目的配套答案如何采集，不能据此反推题面最初如何生成。
+
+## 二、已经做过哪些校验
+
+### 1. 题集文件与本次导入校验
+
+本次导入已核对：
+
+- CSV 可正常解析，恰好 70 行数据、11 个字段，所有字段非空。
+- ID 连续且唯一，为 Q001–Q070；70 条查询文本无重复。
+- 行业、任务类型和显隐性分布与下方统计表一致。
+- 文件与原入库版本逐字节一致；UTF-8 BOM、CRLF 换行及校验值均保留。
+- 说明中的数据文件链接有效，Git 差异格式检查通过。
+
+文件：[`question_queries_70_same_discipline.csv`](question_queries_70_same_discipline.csv)。Python 读取时使用 `encoding="utf-8-sig"`；目录内的 `.gitattributes` 用于保留原始换行格式。
+
+SHA-256：`8bfdf453a68a7ba53e3249bb133dd09a0cad3e87540eddf6d5b314b6573bf2d1`。
+
+这些检查确认文件完整性和标注结构。题目是否有歧义、难度是否适当、证据要求是否合理，仍需要领域复核。
+
+### 2. 历史参考答案的引用核验
+
+以下为历史采集报告中的结果，本次题集导入未重新执行文献检索或链接核验。
+
+历史核验器按可用信息逐级检查：S2 官方标题与元数据 → arXiv → DOI 解析 → 出版方或落地页标题 → PDF 可达性或题名匹配。对 2,774 条引用的记录为：
+
+| 核验结果 | 条数 | 含义 |
+|---|---:|---|
+| 标题与链接对应（OK） | 2,748 | 占 99.06%，通过自动核验 |
+| DOI 可解析 | 19 | 出版方限制脚本读取标题，需进一步抽查 |
+| 标题变体或中英双语标题 | 5 | 报告记录已逐条人工确认为同篇论文 |
+| PDF 可达或存在性确认 | 2 | 通过 PDF 下载或题名匹配补充确认 |
+
+过程中修正过失效链接、转述式标题和未注册 DOI。**99.06% 衡量标题与链接的一致性，不能据此认定答案论述、数值或因果解释均正确**；这些内容需要回到正文或摘要核查。
+
+### 3. 独立引擎交叉验证
+
+2026-09-08，使用豆包对逐字一致的 70 道题独立检索，得到 **421 条论文结果**。历史比对记录中：
+
+- **103 条与参考答案引用重合**，占豆包结果的 24.5%；匹配使用标识符、标题精确匹配及标题模糊匹配。
+- **318 条仅出现在豆包结果中**，保留为补充候选，尚未直接并入 GT。
+
+这一步提供了独立来源的佐证和遗漏候选。两个系统的检索预算与输出数量不同，重合比例不能直接解释为答案准确率；未重合的论文需要单独判断相关性。
+
+### 4. 校验边界与历史依据
+
+- 历史报告记录，62/70 题在 18 轮上限时仍有新增结果，说明参考文献集合尚未穷尽。
+- 中文文献覆盖受到索引能力影响；付费墙论文中部分信息只能从摘要核实。
+- 引用存在性检查与个别异常人工确认，尚未替代全部答案的领域复核。
+- “没有找到某类研究”应当作为证据不足的候选判断；发现新论文后，应核实原文和检索时间范围，不能仅因其未被 GT 收录就判错。
+
+历史构建依据见原项目的[采集说明](https://github.com/hudalao/skill-opt/blob/cea3d3a33f3575ba61c0768048c4579d2eed12cc/evoskill/tests/paper-navigator/gt/README.md)、[试点报告](https://github.com/hudalao/skill-opt/blob/cea3d3a33f3575ba61c0768048c4579d2eed12cc/evoskill/tests/paper-navigator/gt/pilot_report.md)、[全量报告](https://github.com/hudalao/skill-opt/blob/cea3d3a33f3575ba61c0768048c4579d2eed12cc/evoskill/tests/paper-navigator/gt/final_report.md)及[采集指令](https://github.com/hudalao/skill-opt/blob/cea3d3a33f3575ba61c0768048c4579d2eed12cc/evoskill/tests/paper-navigator/harness/gt_make_batch_workflow.py)。这些链接需要原仓库访问权限。
+
+## 三、如何用于“搜读论文”评测
+
+### 1. 建立可比较的运行条件
+
+将 `query` 原文作为用户输入，用 `id` 关联答案与运行记录。其余字段作为评审上下文保存；若实验向被测系统提供这些字段，应单独记录该设置。
+
+比较“基础模型”与“基础模型 + skill”，或比较两个 skill 版本时，固定模型、工具、搜索源、日期口径和调用预算；逐题记录答案、检索结果及排名、实际阅读的论文、工具轨迹、耗时和 token 用量。相对时间和近期进展会随运行日期变化，需要记录明确的评测日期与可接受文献截止时间。
+
+### 2. 按能力检查输出
+
+| 能力 | 重点题型 | 可检查的证据 |
+|---|---|---|
+| 意图理解与拆解 | 显性/隐性查询、综合分析 | 是否识别研究对象、时间和证据约束；子问题是否覆盖原始诉求 |
+| 检索相关性与覆盖 | 最新论文、综述、奠基出处 | 返回论文是否直接相关，是否覆盖关键方法或阶段，能否识别原始贡献 |
+| 阅读与事实忠实性 | 方法比较、机制解释、证据核验 | 关键论断能否对应原文；数据集、指标、实验条件和局限是否准确 |
+| 综合与交付质量 | 行业应用、脉络梳理、综合分析 | 是否满足 `evidence_requirement` 与 `expected_output`，并形成有依据的比较或结论 |
+| 引用真实性与可追溯性 | 全部题目 | 标题与链接是否一致，引用是否支持对应论断，是否清楚标注证据缺口 |
+
+只返回论文列表可以评估检索能力；要评价“读”和“综合”，还需检查最终回答，并记录系统实际拿到的是全文、摘要还是标题。全文不可得时，结论应与可获得的证据范围一致。
+
+### 3. 当前题集即可开展的评测
+
+使用两个系统对同题的答案做匿名 A/B 评审，向评委提供题面、证据要求与期望输出，评价上述能力并保存理由及证据位置。可按题型、行业域、显性/隐性分别报告结果，定位具体薄弱项。
+
+建议逐维度采用 **0/1/2 分**：0 分表示未满足或出现关键错误，1 分表示部分满足且存在重要缺漏，2 分表示充分满足且证据可核查。这是建议的评审规则，需先用少量样例校准评委口径；它尚未成为题集既有的冻结评分标准。无法核实的条目单独记为待核查。
+
+这 70 题均面向学术证据需求，可观察适用请求中的 skill 触发情况；若要测误触发率，需另配不应使用该 skill 的负例。题集目前没有预设训练/开发/测试划分，若用于反复调优，应事先固定开发集与保留集。
+
+### 4. 补齐并复核配套 GT 后的量化评测
+
+- **检索**：对已确认的参考论文计算已知相关集合上的 Recall@K；对系统返回论文逐篇标注相关性后计算 Precision@K。评估排序质量时，先建立候选论文池及分级相关性标注，再计算 NDCG@K。
+- **阅读**：抽取答案中的关键论断，检查引文支持率、数值与实验条件准确率；结合逐题证据要求统计要点覆盖情况。
+- **效率**：在相同预算下比较上述质量指标，同时报告工具调用数、耗时及 token 用量。
+
+参考集合不完整时，Recall@K 只表示对已知相关论文的覆盖；GT 之外的新结果应进入补标流程。历史参考答案仍需人工复核，本目录当前提供的是题集与使用方法，尚未交付可直接运行的完整评分流水线。
+
+## 四、字段说明
+
+| 字段 | 含义 |
 |---|---|
-| `id` | Stable query identifier |
-| `problem_type` | Task category |
-| `intent_type` | User intent |
-| `paper_query_explicitness` | Explicit (`显性`) or implicit (`隐性`) literature request |
-| `industry_domain` | Industry domain |
-| `topic_area` | Research topic |
-| `time_scope` | Requested time range |
-| `evidence_requirement` | Evidence needed to answer the query |
-| `expected_output` | Expected answer format or content |
-| `source_pattern` | Suggested sources for the topic |
-| `query` | Original user-facing query text |
+| `id` | 稳定题目编号 |
+| `problem_type` | 问题类型 |
+| `intent_type` | 用户意图 |
+| `paper_query_explicitness` | 文献诉求显性或隐性 |
+| `industry_domain` | 行业域 |
+| `topic_area` | 研究主题 |
+| `time_scope` | 时间范围要求 |
+| `evidence_requirement` | 回答需要的证据 |
+| `expected_output` | 期望输出形态或内容 |
+| `source_pattern` | 该领域典型信息源 |
+| `query` | 原始查询文本 |
 
-## Coverage
+## 五、覆盖分布
 
-The categories below describe the distribution of these 70 queries; this is not a full factorial combination of domains and tasks.
-
-| Industry domain | Queries |
+| 行业域 | 题数 |
 |---|---:|
 | AI/软件工程 | 7 |
 | 医疗健康 | 8 |
@@ -38,9 +151,9 @@ The categories below describe the distribution of these 70 queries; this is not 
 | 教育/文化/传媒 | 7 |
 | 零售/物流/供应链 | 6 |
 | 建筑/城市治理/应急安全 | 8 |
-| **Total** | **70** |
+| **合计** | **70** |
 
-| Task category | Queries |
+| 问题类型 | 题数 |
 |---|---:|
 | 最新论文/SOTA/综述检索 | 10 |
 | 原始论文/奠基出处追溯 | 6 |
@@ -51,16 +164,4 @@ The categories below describe the distribution of these 70 queries; this is not 
 | 跨学科文献脉络梳理 | 3 |
 | 同学科脉络梳理 | 4 |
 | 综合分析 | 10 |
-| **Total** | **70** |
-
-## Using the queries
-
-Submit the `query` text as the user prompt and use `id` to associate each system output with its evaluation record. The other columns provide evaluator context. If an experiment also supplies these annotations to the system, report that input choice explicitly so comparisons use the same conditions.
-
-Keep the query wording and time constraints intact when comparing systems. Record the evaluation date, model and skill version, available tools, and search budget alongside the outputs; live search results and time-sensitive requests can change over time.
-
-This release contains queries and task metadata. Paper relevance labels, reference answers, and a scoring harness are separate evaluation assets. The metadata describes intended evidence and output requirements; it does not establish answer correctness or define an automatic score.
-
-## Provenance
-
-The file is imported byte-for-byte from the existing 70-query `paper-navigator` benchmark snapshot first committed on 2026-08-06. The original query-authoring prompts and any user-log sampling records are not documented in this snapshot, so it should not be described as a verified sample of production traffic.
+| **合计** | **70** |
