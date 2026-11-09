@@ -260,6 +260,8 @@ flowchart LR
 
 包含由 Semantic Scholar、arXiv（通过 DeepXiv SDK）、HuggingFace、GitHub 与 Jina Reader 驱动的 Python 脚本。
 
+评测题集：[70 道学术检索查询](benchmarks/paper-navigator/)，覆盖 10 个行业域与 9 类任务。
+
 ### 🌳 `paper-graph` — 用 Mermaid 图谱绘制研究领域脉络
 
 将一个研究主题或种子论文转化为 Markdown 报告，追溯领域的演化历程——挑战、解决方案与每条方案的引用脉络，全部渲染为内嵌 Mermaid 图：
